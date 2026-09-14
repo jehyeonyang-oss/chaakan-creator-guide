@@ -1,0 +1,228 @@
+<title>보배님 매장 촬영 가이드 (성수)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--paper:#FAFAF7;--ink:#1B1B1F;--mute:#5F6B7A;--line:#DDE1E6;--acc:#1F4E78;--acc-soft:#E8EFF6;--ok:#2E7D4F;--ok-soft:#E6F2EA;--no:#B3261E;--no-soft:#F8E7E5;--card:#FFFFFF;--code:#EEF1F4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141519;--ink:#ECEEF1;--mute:#9AA5B4;--line:#2A2F38;--acc:#7FB2E5;--acc-soft:#1B2A3A;--ok:#7CC79B;--ok-soft:#173225;--no:#F08A80;--no-soft:#3A1E1B;--card:#1B1D23;--code:#232730}}
+:root[data-theme="dark"]{--paper:#141519;--ink:#ECEEF1;--mute:#9AA5B4;--line:#2A2F38;--acc:#7FB2E5;--acc-soft:#1B2A3A;--ok:#7CC79B;--ok-soft:#173225;--no:#F08A80;--no-soft:#3A1E1B;--card:#1B1D23;--code:#232730}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 "Noto Sans KR",system-ui,sans-serif}
+a{color:var(--acc)} code{font:500 .9em "IBM Plex Mono",ui-monospace,monospace;background:var(--code);padding:1px 6px;border-radius:3px}
+.wrap{display:grid;grid-template-columns:200px minmax(0,820px);gap:40px;max-width:1100px;margin:0 auto;padding:32px 24px 80px}
+nav{position:sticky;top:24px;align-self:start;font-size:13px} nav a{display:block;padding:6px 0;color:var(--mute);text-decoration:none;border-left:2px solid var(--line);padding-left:12px} nav a:hover,nav a:focus-visible{color:var(--acc);border-color:var(--acc);outline:none}
+nav .brand{font-weight:900;color:var(--ink);font-size:14px;letter-spacing:.02em;margin-bottom:12px;border:0;padding-left:0}
+h1{font-size:30px;line-height:1.25;font-weight:900;margin:0 0 6px;text-wrap:balance} h2{font-size:20px;font-weight:700;margin:56px 0 16px;padding-top:16px;border-top:1px solid var(--line)} h3{font-size:17px;margin:0;font-weight:700}
+.lead{color:var(--mute);margin:0 0 24px}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0} .kv div{background:var(--card);border:1px solid var(--line);padding:12px 14px} .kv b{display:block;font-size:11px;letter-spacing:.08em;color:var(--mute);text-transform:uppercase;margin-bottom:4px} .kv span{font:500 18px "IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+.box{border:1px solid var(--line);background:var(--card);padding:16px 18px;margin:12px 0} .box.ok{border-color:var(--ok);background:var(--ok-soft)} .box.no{border-color:var(--no);background:var(--no-soft)}
+ul{margin:6px 0;padding-left:18px} li{margin:3px 0}
+table{width:100%;border-collapse:collapse;font-size:14px} th{background:var(--acc);color:#fff;text-align:left;padding:8px 10px;font-weight:700} td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top} .t{font:500 13px "IBM Plex Mono",monospace;white-space:nowrap}
+.tw{overflow-x:auto}
+.cut{background:var(--card);border:1px solid var(--line);margin:18px 0;padding:0 0 12px} .cut header{display:flex;align-items:center;gap:10px;padding:14px 18px 10px;flex-wrap:wrap} .num{font:700 20px "IBM Plex Mono",monospace;color:var(--acc)} .dur{margin-left:auto;font:500 13px "IBM Plex Mono",monospace;color:var(--mute)}
+.tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:2px;letter-spacing:.04em} .tag.must{background:var(--ok-soft);color:var(--ok)} .tag.opt{background:var(--acc-soft);color:var(--acc)}
+.clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;padding:0 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--code)}
+.clip{margin:8px 0} .clip video{display:block;width:100%;aspect-ratio:9/16;background:#000;object-fit:cover;border-radius:4px}
+.clip figcaption{font-size:11px;color:var(--mute);margin-top:4px;line-height:1.4}
+.frames{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;padding:10px 18px}
+.frame img{display:block;width:100%;border-radius:4px} .frame figcaption{font-size:11px;color:var(--mute);margin-top:4px}
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;padding:12px 18px;font-size:14px} .spec b{display:block;font-size:11px;letter-spacing:.08em;color:var(--mute);text-transform:uppercase;margin-bottom:2px} .spec p{margin:2px 0} .cam{color:var(--mute);font-size:13px} .ref{grid-column:1/-1;font-size:13px;color:var(--mute);border-top:1px dashed var(--line);padding-top:8px}
+.chk{display:inline-flex;gap:8px;align-items:center;margin:4px 18px 0;font-weight:500;cursor:pointer} .chk input{width:18px;height:18px;accent-color:var(--ok)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:800px){.wrap{grid-template-columns:1fr} nav{position:static} .spec,.two{grid-template-columns:1fr}}
+.foot{color:var(--mute);font-size:12px;margin-top:48px;border-top:1px solid var(--line);padding-top:12px}
+.small{font-size:13px;color:var(--mute)}
+</style>
+<div class="wrap">
+<nav><div class="brand">착한구두 성수</div>
+<a href="#s0">결론 한 장</a><a href="#ref">레퍼런스 2편 ★</a><a href="#s1">영상 흐름</a><a href="#s2">촬영 필수컷 5</a><a href="#s3">하지 말 것</a><a href="#s4">나레이션</a><a href="#s5">편집·업로드 (참고)</a><a href="#s5b">게시물 정보 제공</a><a href="#s6">제품·매장</a></nav>
+<main>
+<h1>보배님 매장 촬영 가이드 — 성수</h1>
+<p class="lead">아래 5구간을 순서 그대로 찍으시면 됩니다. 카드마다 영상이 바로 재생되니 눌러서 확인해 주세요.</p>
+
+<h2 id="s0">결론 한 장</h2>
+<div class="kv">
+<div><b>제품</b><span>부츠(택3)</span></div><div><b>착장</b><span>갈아입기 없음</span></div><div><b>러닝타임</b><span>36초 안팎</span></div><div><b>구간</b><span>5구간</span></div><div><b>매장</b><span>성수 플래그십</span></div><div><b>업로드</b><span>10/12</span></div>
+</div>
+<div class="box ok"><b>이 영상이 하는 말 한 줄</b><br>"부츠 하나로 무드·길이가 바뀌고, 통굽인데 편하고, 매장에서 직접 신어봤다."</div>
+<div class="box"><b>플로우는 아래 5구간 순서 그대로</b><ul><li>① 훅 — 거울 셀카+타이틀 → 매장 스침 2컷 → 피팅거울 2컷 → 부츠 하이앵글</li><li>② 매장 소개 — 외관+주소 자막 → 1층 쇼룸/지하 구조</li><li>③ 신발 고르기 — 매대 하이앵글·얼굴 셀카 → 손 클로즈업</li><li>④ 착장 — 거울 셀카 4컷, 부츠만 갈아신으며 자세 4종</li><li>⑤ 클로징 — 진열대 와이드 → 쇼핑백 손 → 거울 전신 → 쇼핑백 마무리+가격 자막</li></ul></div>
+
+<h2 id="ref">레퍼런스 2편 — 이 두 편이 기준입니다</h2>
+<div class="box ok"><b>한 줄</b><br>
+<b>제이드유 편</b> = 매장을 어떻게 보여줄지 · <b>ZARA 하울 편</b> = 신발과 코디를 어떻게 보여줄지.<br>
+아래 §촬영 필수컷 5는 전부 이 두 편을 쪼갠 것입니다. 두 편만 먼저 보고 오시면 나머지는 확인용입니다.</div>
+
+<div class="two">
+<div class="box"><b>레퍼런스 A — 매장 (제이드유)</b>
+<div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_1_hook.mp4"></video><figcaption>참고 영상</figcaption></figure></div>
+<p class="small">매장 진입 → 쇼룸 → 고르기 → 착용 → 클로징까지의 <b>동선과 페이싱</b>이 정본. <a href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">원본 보기</a></p></div>
+
+<div class="box"><b>레퍼런스 B — 신발 · 코디 (28초)</b>
+<div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_hook.mp4"></video><figcaption>참고 영상</figcaption></figure></div>
+<p class="small">매장 + 코디 + 신발 + 신발 디테일을 <b>한 편에 다 넣은</b> 구조. 신발이 안 보이는 컷이 하나도 없습니다. <a href="https://www.instagram.com/p/DcvuagksrmI/" target="_blank" rel="noopener">원본 보기</a></p></div>
+</div>
+
+<h3 style="margin:28px 0 10px">레퍼런스 B 28초 컷 분해</h3>
+<div class="tw"><table><tr><th>초</th><th>무엇을 하고 있나</th><th>우리가 가져갈 것</th></tr><tr><td class="t">0.0–3.5s</td><td><b>훅 — 프리뷰 몽타주 7컷</b><br>간판 로우앵글 → 피팅룸 전신 → 착장+작은 사진 인서트 → 신발 제품컷 → 착장 → 신발 신은 발등 → 계단 전신. 0.5초씩 끊어서 <b>뒤에 나올 장면을 미리 흘려줌</b>.</td><td>훅 3.5초를 '뒤에 나올 컷 모음'으로 만든다. 간판 단독으로 시작하지 않고 0.5초만 스친다.</td></tr><tr><td class="t">3.5–9.0s</td><td><b>아이템 ① — 전신 → 디테일 → 손</b><br>전신 1컷 → 카메라를 내려 허리·밑단 디테일 → 손으로 소재 만지기. 전신컷에서 <b>발이 한 번도 잘리지 않음</b>.</td><td>같은 흐름을 신발로: 전신 → 카메라 내려서 발 → 손으로 신발 만지기.</td></tr><tr><td class="t">9.0–15.0s</td><td><b>아이템 ② — 진열 → 착용</b><br>행거에 걸린 상태 1컷 → 창가 전신 → 거울 셀카 3~4컷. 컷마다 부츠가 화면 하단에 계속 걸림.</td><td>매대에 놓인 상태 1컷 → 신은 전신 → 거울 셀카 3컷. 발이 늘 프레임 안.</td></tr><tr><td class="t">15.0–19.5s</td><td><b>아이템 ③ — 전신 → 앉기 → 계단 → 보행</b><br>전신 3컷 → 가방 들고 앉는 컷 → 계단 전신 → 걸어가는 뒷모습·측면 트래킹.</td><td>앉는 컷·계단 컷·걸어가는 컷이 전부 신발이 제일 잘 보이는 각도. 그대로 가져간다.</td></tr><tr><td class="t">19.5–22.0s</td><td><b>레이어드 — 앞 아이템을 겹친 조합컷</b><br>앞에서 따로 보여준 아이템을 겹쳐 입고 2~3컷.</td><td>부츠 3종 중 2종을 나란히 놓고 비교하는 컷으로 치환.</td></tr><tr><td class="t">22.0–28.2s</td><td><b>신발 단독 블록 (6.2초 = 전체의 22%)</b><br>발밑 하이앵글 → 제품 바닥컷 → 손으로 집기 → 보행 POV + 코디 사진 인서트 2장 → 제품 회전 마무리.</td><td><b>이 블록이 이 영상의 핵심.</b> 길이·순서 그대로 마지막에 배치.</td></tr></table></div>
+
+<h3 style="margin:28px 0 10px">★ 신발 보이는 컷 4종 — 이건 그대로 갑니다</h3>
+<p>마지막 6초에 이 4컷이 연달아 나옵니다. 부츠로 바꿔서 <b>같은 앵글·같은 순서</b>로 찍어 주세요.</p>
+<div class="frames"><figure class="frame"><img src="../assets/frames/mh2_topdown.jpg" loading="lazy" alt="① 발밑 하이앵글 — 신은 채로 내려다보기. 발등·코 라인이 다 보임"><figcaption>① 발밑 하이앵글 — 신은 채로 내려다보기. 발등·코 라인이 다 보임</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_flat.jpg" loading="lazy" alt="② 제품 단독 바닥컷 — 두 짝을 비스듬히 놓고 위에서"><figcaption>② 제품 단독 바닥컷 — 두 짝을 비스듬히 놓고 위에서</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_hand.jpg" loading="lazy" alt="③ 손이 들어간 컷 — 손으로 집거나 가리키기 (크기감)"><figcaption>③ 손이 들어간 컷 — 손으로 집거나 가리키기 (크기감)</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_walk.jpg" loading="lazy" alt="④ 걸어가며 발등 — 보행 POV + 코디 사진 2장 인서트"><figcaption>④ 걸어가며 발등 — 보행 POV + 코디 사진 2장 인서트</figcaption></figure></div>
+<div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_shoeblock.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_walkpip.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_walk.mp4"></video><figcaption>참고 영상</figcaption></figure></div>
+
+<div class="box ok"><b>이 게시물이 지키는 규칙 4가지</b><ul>
+<li><b>전신컷에서 발을 자르지 않는다</b> — 28초 내내 발 잘린 컷 0개</li>
+<li><b>신발이 안 보이는 앵글은 아예 안 쓴다</b> — 상반신만 잡은 컷 0개</li>
+<li><b>신발 단독 블록을 끝에 6초 몰아서</b> — 제품컷 3종 + 보행 1종</li>
+<li><b>신발 컷 위에 코디 사진을 인서트로 얹는다</b> — "이 신발 + 이 옷"을 한 프레임에</li>
+</ul></div>
+
+<div class="box no"><b>레퍼런스 B에서 가져오지 않는 것</b><ul>
+<li>옷을 여러 벌 갈아입는 구성 — 저긴 옷 매장, 우리는 신발 매장입니다 (착장 규칙은 §촬영 필수컷 ④ 참조)</li>
+<li>화면에 박히는 브랜드 워터마크 · 타 브랜드 로고</li>
+<li>얼굴 가리는 스티커 · 모자이크</li>
+<li>앉은 컷에서 신발이 프레임 밖으로 나가는 각도</li>
+</ul></div>
+
+<h2 id="s1">영상 흐름 (초 단위)</h2>
+<p>전체 36초 안팎, 컷당 1초 안팎.</p>
+<div class="tw"><table><tr><th>구간</th><th>초</th><th>컷</th><th>보여야 하는 것</th></tr>
+<tr><td>훅</td><td class="t">0–3.7s</td><td>①</td><td>거울 전신 셀카 + 타이틀 자막 → 매장 스침 2컷 → 피팅거울 2컷 → 부츠 하이앵글</td></tr>
+<tr><td>매장 소개</td><td class="t">3.7–10s</td><td>②</td><td>외관+주소 자막 → 1층 쇼룸/지하 구조 컷</td></tr>
+<tr><td>신발 고르기</td><td class="t">10–17s</td><td>③</td><td>하이앵글·얼굴 셀카 3컷 + 손 클로즈업</td></tr>
+<tr><td>착장</td><td class="t">17–30s</td><td>④</td><td>거울 셀카 4컷, 같은 옷에 부츠만 갈아신기, 신발 보이는 자세 4종</td></tr>
+<tr><td>클로징</td><td class="t">30–36s</td><td>⑤</td><td>진열대 와이드 → 쇼핑백 손 → 거울 전신 → 쇼핑백 마무리+가격 자막</td></tr></table></div>
+
+<h2 id="s2">촬영 필수컷 5</h2>
+<p>캡처 영상은 "이렇게 보이면 된다"의 기준입니다. 배경·옷·표정은 자유, <b>프레이밍과 흐름은 그대로</b> 가져가 주시면 됩니다.</p>
+<p>자막·나레이션 문구는 전부 예시입니다. 보배님 말투로 바꾸시되 첫 프레임부터 자막이 뜨는 것과 가격·굽 수치만 지켜 주세요.</p>
+
+<article class="cut" id="c1">
+  <header><span class="num">①</span><h3>훅</h3><span class="tag must">필수</span><span class="dur">0–3.7초</span></header>
+  <div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_1_hook.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/sl_01.mp4"></video><figcaption>참고 영상</figcaption></figure></div>
+  <div class="frames"><figure class="frame"><img src="../assets/frames/jd_s01.jpg" loading="lazy" alt="거울 셀카 + 타이틀 자막"><figcaption>거울 셀카 + 타이틀 자막</figcaption></figure><figure class="frame"><img src="../assets/frames/jd_s02.jpg" loading="lazy" alt="매장 스치는 컷"><figcaption>매장 스치는 컷</figcaption></figure><figure class="frame"><img src="../assets/frames/sl_01_f1.jpg" loading="lazy" alt="통창 외관"><figcaption>통창 외관</figcaption></figure></div>
+  <div class="spec">
+    <div><b>화면에 꼭 보여야 하는 것</b><ul><li>거울 셀카 + 첫 프레임부터 타이틀 자막</li><li>매장 스치는 컷 2장</li><li>피팅 거울 2컷</li><li>부츠를 손에 든 하이앵글 1컷</li></ul></div>
+    <div><b>찍는 법</b><p>거울 앞 전신 셀피로 시작 → 매장 안쪽을 스치듯 2컷 → 피팅 거울 앞에서 2컷 → 부츠 하나를 손에 들고 위에서 내려찍는 하이앵글로 마무리.</p><p class="cam">핸드헬드 · 전신→매장 스침→하이앵글 · 매장 거울 앞</p></div>
+    <div><b>자막 (예시)</b><p>예) "성수에 이런 부츠 매장 생김" · "이 부츠 하나로 길이가 세 가지야"</p></div>
+    <div class="ref"><b>원본</b> <a href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">원본 보기</a></div>
+  </div>
+  <label class="chk"><input type="checkbox"> 이 컷 촬영 완료</label>
+</article>
+<article class="cut" id="c2">
+  <header><span class="num">②</span><h3>매장 소개</h3><span class="tag must">필수</span><span class="dur">3.7–10초</span></header>
+  <div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_2_store.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/sl_02.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh_store.mp4"></video><figcaption>참고 영상</figcaption></figure></div>
+  <div class="frames"><figure class="frame"><img src="../assets/frames/jd_s08.jpg" loading="lazy" alt="1층 쇼룸 구조"><figcaption>1층 쇼룸 구조</figcaption></figure><figure class="frame"><img src="../assets/frames/sl_02_f1.jpg" loading="lazy" alt="1층 쇼룸 내부"><figcaption>1층 쇼룸 내부</figcaption></figure><figure class="frame"><img src="../assets/frames/mh_s10.jpg" loading="lazy" alt="매장 내부 거울 반복"><figcaption>매장 내부 거울 반복</figcaption></figure><figure class="frame"><img src="../assets/frames/mh_s13.jpg" loading="lazy" alt="매장 내부 거울 반복 2"><figcaption>매장 내부 거울 반복 2</figcaption></figure></div>
+  <div class="spec">
+    <div><b>화면에 꼭 보여야 하는 것</b><ul><li>통창 외관 + 주소 자막</li><li>1층 쇼룸 전체감</li><li>지하 판매 공간으로 이어지는 동선</li></ul></div>
+    <div><b>찍는 법</b><p>외관 통창은 1~2초로 짧게 잡고 바로 입장 → 1층 쇼룸 전체감을 잡은 뒤 지하로 이어지는 동선까지.</p><p class="cam">핸드헬드 · 외관→입장→쇼룸 와이드 · 매장</p></div>
+    <div><b>자막 (예시)</b><p>예) "여기 착한구두 성수점인데 매장부터 예뻐" · "성수이로 58"</p></div>
+    <div class="ref"><b>원본</b> <a href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">원본 보기</a> · <a href="https://www.instagram.com/p/DcvuagksrmI/" target="_blank" rel="noopener">원본 보기</a></div>
+  </div>
+  <label class="chk"><input type="checkbox"> 이 컷 촬영 완료</label>
+</article>
+<article class="cut" id="c3">
+  <header><span class="num">③</span><h3>신발 고르기</h3><span class="tag must">필수</span><span class="dur">10–17초</span></header>
+  <div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_3_pick.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/sl_08.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/sl_09.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh_pick.mp4"></video><figcaption>참고 영상</figcaption></figure></div>
+  <div class="frames"><figure class="frame"><img src="../assets/frames/jd_s10.jpg" loading="lazy" alt="매대 훑는 하이앵글"><figcaption>매대 훑는 하이앵글</figcaption></figure><figure class="frame"><img src="../assets/frames/jd_s11.jpg" loading="lazy" alt="얼굴 리액션 클로즈업"><figcaption>얼굴 리액션 클로즈업</figcaption></figure><figure class="frame"><img src="../assets/frames/sl_09_f1.jpg" loading="lazy" alt="손으로 신발 집는 컷"><figcaption>손으로 신발 집는 컷</figcaption></figure><figure class="frame"><img src="../assets/frames/mh_s19.jpg" loading="lazy" alt="옷걸이째 들고 고르는 컷"><figcaption>옷걸이째 들고 고르는 컷</figcaption></figure><figure class="frame"><img src="../assets/frames/mh_pick_f2.jpg" loading="lazy" alt="옷걸이째 대보기 2"><figcaption>옷걸이째 대보기 2</figcaption></figure></div>
+  <div class="spec">
+    <div><b>화면에 꼭 보여야 하는 것</b><ul><li>매대를 훑는 하이앵글 1컷</li><li>얼굴 리액션 셀카</li><li>손으로 부츠 하나 집어 드는 클로즈업</li><li>부츠를 들고 몸 앞에 대보는 컷(선택)</li></ul></div>
+    <div><b>찍는 법</b><p>매대 앞에서 여러 부츠를 훑어보는 하이앵글 → 표정 리액션 → 마음에 드는 한 켤레를 손으로 집어 드는 클로즈업.</p><p class="cam">핸드헬드 · 하이앵글→얼굴 클로즈업→손 클로즈업 · 매장 매대</p></div>
+    <div><b>자막 (예시)</b><p>예) "부츠 하나로 길이를 세 가지로 바꿀 수 있어"</p></div>
+    <div class="ref"><b>원본</b> <a href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">원본 보기</a> · <a href="https://www.instagram.com/p/DcvuagksrmI/" target="_blank" rel="noopener">원본 보기</a></div>
+  </div>
+  <label class="chk"><input type="checkbox"> 이 컷 촬영 완료</label>
+</article>
+<article class="cut" id="c4">
+  <header><span class="num">④</span><h3>착장 — 신발 잘 보이는 자세</h3><span class="tag must">필수</span><span class="dur">17–30초</span></header>
+  <div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_4_tryon.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/sl_15.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/sl_16.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh_floor.mp4"></video><figcaption>참고 영상</figcaption></figure></div>
+  <div class="frames"><figure class="frame"><img src="../assets/frames/bobaerit_yello.jpg" loading="lazy" alt="보배님 옐로슈즈 방문 컷 — 소파에 다리 접고 앉아 부츠 클로즈업, 이 자세 그대로"><figcaption>보배님 옐로슈즈 방문 컷 — 소파에 다리 접고 앉아 부츠 클로즈업, 이 자세 그대로</figcaption></figure><figure class="frame"><img src="../assets/frames/pose_1.jpg" loading="lazy" alt="자세 1 — 앉아서 발 앞으로"><figcaption>자세 1 — 앉아서 발 앞으로</figcaption></figure><figure class="frame"><img src="../assets/frames/pose_2.jpg" loading="lazy" alt="자세 2 — 다리 들기"><figcaption>자세 2 — 다리 들기</figcaption></figure><figure class="frame"><img src="../assets/frames/pose_3.jpg" loading="lazy" alt="자세 3 — 한쪽 발 앞으로"><figcaption>자세 3 — 한쪽 발 앞으로</figcaption></figure><figure class="frame"><img src="../assets/frames/pose_4.jpg" loading="lazy" alt="자세 4 — 발 틸트"><figcaption>자세 4 — 발 틸트</figcaption></figure><figure class="frame"><img src="../assets/frames/mh_s16.jpg" loading="lazy" alt="플로어 거울 셀피"><figcaption>플로어 거울 셀피</figcaption></figure><figure class="frame"><img src="../assets/frames/mh_s18.jpg" loading="lazy" alt="플로어 거울 셀피 반복(뒤에 진열대·손님)"><figcaption>플로어 거울 셀피 반복(뒤에 진열대·손님)</figcaption></figure></div>
+  <div class="spec">
+    <div><b>화면에 꼭 보여야 하는 것</b><ul><li>거울 셀카 4컷, 같은 옷에 부츠만 갈아신기</li><li>매 컷 신발이 화면에 걸리는 각도</li><li>자세 4종: 앉아서 다리 접고 부츠 앞으로(본인 게시물 그대로) / 다리 들기 / 한쪽 발 앞으로 / 발 틸트</li><li>플로어 거울 셀피 반복(뒤에 진열대·손님)</li></ul></div>
+    <div><b>찍는 법</b><p>옷은 처음부터 끝까지 그대로 두고 부츠만 바꿔 신습니다. 거울 앞에서 자세 4종을 순서대로 잡고, 매번 발이 프레임 안에 확실히 걸리도록 각도를 확인하세요.</p><p class="cam">핸드헬드 · 거울 전신·자세 반복 · 매장 거울 앞</p></div>
+    <div><b>자막 (예시)</b><p>예) "이거 한 켤레로 길이가 세 개야" · "통굽인데 굽 3cm라 하루 종일 편해"</p></div>
+    <div class="ref"><b>원본</b> <a href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">원본 보기</a> · <a href="https://www.instagram.com/p/DcvuagksrmI/" target="_blank" rel="noopener">원본 보기</a> · <a href="https://www.instagram.com/p/DZx8bNmE0Uu/" target="_blank" rel="noopener">보배님 게시물</a></div>
+  </div>
+  <label class="chk"><input type="checkbox"> 이 컷 촬영 완료</label>
+</article>
+<article class="cut" id="c5">
+  <header><span class="num">⑤</span><h3>클로징</h3><span class="tag must">필수</span><span class="dur">30–36초</span></header>
+  <div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_5_closing.mp4"></video><figcaption>참고 영상</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/sl_18.mp4"></video><figcaption>참고 영상</figcaption></figure></div>
+  <div class="frames"><figure class="frame"><img src="../assets/frames/jd_s18.jpg" loading="lazy" alt="진열대 와이드"><figcaption>진열대 와이드</figcaption></figure><figure class="frame"><img src="../assets/frames/jd_s21.jpg" loading="lazy" alt="거울 전신"><figcaption>거울 전신</figcaption></figure><figure class="frame"><img src="../assets/frames/sl_18_f1.jpg" loading="lazy" alt="쇼핑백 마무리"><figcaption>쇼핑백 마무리</figcaption></figure></div>
+  <div class="spec">
+    <div><b>화면에 꼭 보여야 하는 것</b><ul><li>진열대 와이드 1컷</li><li>쇼핑백 담는 손 클로즈업</li><li>거울 앞 마지막 전신</li><li>쇼핑백 마무리 + 가격 자막</li></ul></div>
+    <div><b>찍는 법</b><p>진열대를 와이드로 한 번 훑고 → 쇼핑백에 담는 손 클로즈업 → 거울 앞 마지막 전신 → 쇼핑백을 든 채 가격 자막과 함께 마무리.</p><p class="cam">핸드헬드 · 와이드→손 클로즈업→전신→아웃 · 매장</p></div>
+    <div><b>자막 (예시)</b><p>예) "성수 갈 때 여기 저장해" · "위치랑 혜택은 캡션 확인" · <code>75,900원</code>(가격은 클로징에서만, 실제 굽·가격 수치로 교체)</p></div>
+    <div class="ref"><b>원본</b> <a href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">원본 보기</a></div>
+  </div>
+  <label class="chk"><input type="checkbox"> 이 컷 촬영 완료</label>
+</article>
+
+<h2 id="s3">절대 찍지 말 것</h2>
+<div class="box no"><ul>
+<li>외관만 3초 이상 잡기</li>
+<li>한산한 매장처럼 보이는 컷 · 지저분한 거울 노출</li>
+<li>정리 안 된 매대·재고박스 노출</li>
+<li>다른 매장·카페를 섞는 코스형 구성 (착한구두 분량이 묻히는 구성 금지)</li>
+<li>브랜드 로고만 크게 잡기 · 타 브랜드 로고·제품 동시 노출</li>
+<li>초대형·국내최대·평수 주장 등 과장된 규모 표현</li>
+<li>직원 정면 손인사 컷</li>
+<li>지난 이벤트 입간판 노출</li>
+<li>착화 컷 없이 "신으면 더 예쁘다"류 자막만 쓰기</li>
+<li>첫 컷을 간판 단독 또는 언박싱으로 시작</li>
+<li>촬영 중 옷 갈아입기 — 착장은 처음부터 끝까지 그대로, 부츠만 바뀝니다</li>
+<li>몸매·다리라인을 강조하는 문구</li>
+<li>씬 하나가 1.5초를 넘는 정지 컷</li>
+</ul></div>
+
+<h2 id="s4">🎙 나레이션 (예시)</h2>
+<p>브랜드 규격상 영상에 <b>음성(직접 말하는 내레이션) + 자막을 함께</b> 넣어야 합니다. 아래 8줄을 그대로 말하거나 참고해 자연스럽게 각색해 주세요. 억양은 자연스럽게, 가격은 화면의 가격 자막과 함께 말해 주세요. (브랜드명은 대문자 <code>CHAAKAN</code>)</p>
+<p>아래 문장은 예시입니다. 톤·표현은 보배님 말투로 자유롭게 바꾸시고, 가격·굽 수치만 화면과 맞춰 주세요.</p>
+<div class="tw"><table><tr><th>구간</th><th>대사</th></tr><tr><td class="t">훅 · 도입</td><td>"성수에서 진짜 예쁜 부츠 쇼룸 찾았어"</td></tr><tr><td class="t">훅 · 도입</td><td>"여기 부츠 다 예쁜데 신어보니까 더 좋아"</td></tr><tr><td class="t">매장 · 브랜드</td><td>"여기 착한구두 성수점인데 매장부터 예뻐"</td></tr><tr><td class="t">매장 · 브랜드</td><td>"부츠 하나로 길이를 세 가지로 바꿀 수 있어"</td></tr><tr><td class="t">제품</td><td>"이거 한 켤레로 길이가 세 개야"</td></tr><tr><td class="t">제품</td><td>"통굽인데 굽 3cm라 하루 종일 편해"</td></tr><tr><td class="t">마무리</td><td>"성수 갈 때 여기 저장해"</td></tr><tr><td class="t">마무리</td><td>"위치랑 혜택은 캡션 확인"</td></tr></table></div>
+
+<h2 id="s5">편집 · 업로드 (참고사항)</h2>
+<p>아래는 참고사항입니다. 업로드일(10/12)과 게시물 정보 제공만 지켜 주세요.</p>
+<div class="tw"><table><tr><th>항목</th><th>권장</th></tr>
+<tr><td>길이</td><td class="t">36초 안팎 권장</td></tr>
+<tr><td>컷당 길이</td><td class="t">1~1.5초 권장 · <a href="https://www.instagram.com/p/DcvuagksrmI/" target="_blank" rel="noopener">원본 보기</a></td></tr>
+<tr><td>비율 · 화질</td><td class="t">9:16 · 1080p 권장</td></tr>
+<tr><td>자막</td><td>가능하면 첫 프레임부터, 화면 하단 1/3 피해서 권장 (릴 UI가 가림)</td></tr>
+<tr><td>음성</td><td>내레이션 + 자막 함께 권장</td></tr></table></div>
+<div class="tw"><table><tr><th>일정</th><th>내용</th></tr>
+<tr><td class="t">9/10</td><td>가이드 전달</td></tr>
+<tr><td class="t">9/15</td><td>초안 공유</td></tr>
+<tr><td class="t">9/18</td><td>최종 컨펌</td></tr>
+<tr><td class="t">9/28–10/2</td><td>촬영 (매장 오픈 전 시간대, 사전 협의)</td></tr>
+<tr><td class="t">10/12</td><td>업로드</td></tr>
+<tr><td class="t">업로드 +2일</td><td>게시물 정보 제공 — <a href="#s5b">아래 참조</a></td></tr>
+<tr><td class="t">업로드 +7일</td><td>게시물 정보 제공 — <a href="#s5b">아래 참조</a></td></tr>
+<tr><td class="t">업로드 +14일</td><td>게시물 정보 제공 — <a href="#s5b">아래 참조</a></td></tr></table></div>
+
+<h2 id="s5b">게시물 정보 제공 (필수)</h2>
+<div class="tw"><table><tr><th>시점</th><th>제공 항목</th></tr>
+<tr><td class="t">업로드 +2일</td><td><ul><li>릴 링크</li><li>조회수 · 도달 · 계정 도달</li><li>좋아요 · 댓글 · 저장 · 공유 · 팔로우 증가</li></ul></td></tr>
+<tr><td class="t">업로드 +7일</td><td><ul><li>시청 유지(리텐션) 그래프 = 이탈률 (어느 초에 빠지는지)</li><li>평균 시청 시간 · 재생 완료율</li><li>유입 경로 (홈 / 탐색 / 릴스 / 프로필)</li></ul></td></tr>
+<tr><td class="t">업로드 +14일</td><td><ul><li>원본 영상 파일 (클린본, 자막 없는 버전)</li></ul></td></tr></table></div>
+<div class="box"><b>제공 방법</b><p>인스타그램 앱 → 릴 → 인사이트에서 <b>"개요" 화면</b>과 <b>"시청 유지" 그래프 화면</b> 스크린샷 2장을 그대로 보내 주시고, 위 수치들을 화면에 나온 그대로 함께 전달해 주시면 됩니다.</p></div>
+<div class="box ok"><b>이 정보를 부탁드리는 이유</b><br>
+이 영상이 어느 장면에서 잘 붙고 어디에서 빠지는지 보고, <b>다음 협업 때 더 잘 맞는 기획과 컷을 드리기 위한 참고 자료</b>입니다. 평가나 정산 조건이 아니고, 외부에 공유되지 않습니다.</div>
+
+<h2 id="s6">제품 · 매장 정보</h2>
+<div class="two">
+<div class="box"><b>제품 — 부츠 5종 중 보배님 선택 3종</b><ul>
+<li>블래티 스트랩 부츠 · 85,900원</li>
+<li>페탈 커스텀 멀티웨이 롱부츠 · 75,900원</li>
+<li>제퍼 부츠 · 79,900원</li>
+<li>렉터 부츠 · 85,900원</li>
+<li>카더 부츠 · 49,900원</li>
+</ul><p class="small">촬영 협의 시 3종 확정. 옷 갈아입기 없이 한 벌로 통일, 부츠만 바꿔 신습니다.</p></div>
+<div class="box"><b>매장</b><ul><li><b>성수 플래그십</b> 서울 성동구 성수이로 58</li><li>오픈 전 촬영 협의 (탈의실·거울 구역 필요)</li></ul></div>
+</div>
+<div class="box"><b>소구점</b><ul><li>부츠 하나로 무드·길이가 변형된다</li><li>통굽인데 편하다 (굽 3cm)</li><li>매장에서 직접 신어본다</li></ul></div>
+<div class="box"><b>해시태그 · 계정 태그</b><p><code>@chaakan_official</code> · <code>#착한구두</code> · <code>#CHAAKAN</code> · <code>#26AUTUMN</code></p></div>
+<div class="box"><b>참고 영상</b>
+<div class="tw"><table><tr><th>항목</th><th>무엇을 볼지</th><th>원본</th></tr>
+<tr><td>레퍼런스 A (메인)</td><td>매장 동선·페이싱 — <a href="#ref">위 레퍼런스 2편</a></td><td><a href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">원본 보기</a></td></tr>
+<tr><td>레퍼런스 B (메인)</td><td>신발·코디·신발 디테일 컷 4종 — <a href="#ref">위 레퍼런스 2편</a></td><td><a href="https://www.instagram.com/p/DcvuagksrmI/" target="_blank" rel="noopener">원본 보기</a></td></tr>
+<tr><td>보배님 게시물</td><td>착장 자세 참고 (앉아서 다리 접고 부츠 앞으로)</td><td><a href="https://www.instagram.com/p/DZx8bNmE0Uu/" target="_blank" rel="noopener">보배님 게시물</a></td></tr>
+</table></div></div>
+
+<div class="foot">보배님(@bobaerit) 착한구두 성수 매장 촬영 가이드 · 9/28–10/2 촬영 · 10/12 업로드</div>
+</main></div>
