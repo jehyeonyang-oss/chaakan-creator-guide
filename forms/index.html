@@ -1,0 +1,176 @@
+<title>착한구두 촬영 폼 가이드</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+table.seg td{vertical-align:top} td.vc{width:124px;padding:8px}
+td.vc video{width:112px;aspect-ratio:9/16;display:block;background:#000;border-radius:4px;object-fit:cover}
+.full{display:grid;grid-template-columns:220px 1fr;gap:18px;align-items:start;margin:14px 0;padding:14px;border:1px solid var(--line);background:var(--card)}
+.full video{width:100%;aspect-ratio:9/16;background:#000;border-radius:6px;object-fit:cover}
+.full p{margin:0;font-size:14px}
+@media(max-width:800px){.full{grid-template-columns:1fr} td.vc{width:84px} td.vc video{width:76px}}
+
+:root{--paper:#FAFAF7;--ink:#1B1B1F;--mute:#5F6B7A;--line:#DDE1E6;--acc:#1F4E78;--acc-soft:#E8EFF6;--ok:#2E7D4F;--ok-soft:#E6F2EA;--no:#B3261E;--no-soft:#F8E7E5;--card:#FFFFFF;--code:#EEF1F4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141519;--ink:#ECEEF1;--mute:#9AA5B4;--line:#2A2F38;--acc:#7FB2E5;--acc-soft:#1B2A3A;--ok:#7CC79B;--ok-soft:#173225;--no:#F08A80;--no-soft:#3A1E1B;--card:#1B1D23;--code:#232730}}
+:root[data-theme="dark"]{--paper:#141519;--ink:#ECEEF1;--mute:#9AA5B4;--line:#2A2F38;--acc:#7FB2E5;--acc-soft:#1B2A3A;--ok:#7CC79B;--ok-soft:#173225;--no:#F08A80;--no-soft:#3A1E1B;--card:#1B1D23;--code:#232730}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 "Noto Sans KR",system-ui,sans-serif}
+a{color:var(--acc)} code{font:500 .9em "IBM Plex Mono",ui-monospace,monospace;background:var(--code);padding:1px 6px;border-radius:3px}
+.wrap{display:grid;grid-template-columns:200px minmax(0,820px);gap:40px;max-width:1100px;margin:0 auto;padding:32px 24px 80px}
+nav{position:sticky;top:24px;align-self:start;font-size:13px} nav a{display:block;padding:6px 0;color:var(--mute);text-decoration:none;border-left:2px solid var(--line);padding-left:12px} nav a:hover,nav a:focus-visible{color:var(--acc);border-color:var(--acc);outline:none}
+nav .brand{font-weight:900;color:var(--ink);font-size:14px;letter-spacing:.02em;margin-bottom:12px;border:0;padding-left:0}
+h1{font-size:30px;line-height:1.25;font-weight:900;margin:0 0 6px;text-wrap:balance} h2{font-size:20px;font-weight:700;margin:56px 0 16px;padding-top:16px;border-top:1px solid var(--line)} h3{font-size:17px;margin:0;font-weight:700}
+.lead{color:var(--mute);margin:0 0 24px}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0} .kv div{background:var(--card);border:1px solid var(--line);padding:12px 14px} .kv b{display:block;font-size:11px;letter-spacing:.08em;color:var(--mute);text-transform:uppercase;margin-bottom:4px} .kv span{font:500 18px "IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+.box{border:1px solid var(--line);background:var(--card);padding:16px 18px;margin:12px 0} .box.ok{border-color:var(--ok);background:var(--ok-soft)} .box.no{border-color:var(--no);background:var(--no-soft)}
+ul{margin:6px 0;padding-left:18px} li{margin:3px 0}
+table{width:100%;border-collapse:collapse;font-size:14px} th{background:var(--acc);color:#fff;text-align:left;padding:8px 10px;font-weight:700} td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top} .t{font:500 13px "IBM Plex Mono",monospace;white-space:nowrap}
+.tw{overflow-x:auto}
+.cut{background:var(--card);border:1px solid var(--line);margin:18px 0;padding:0 0 12px} .cut header{display:flex;align-items:center;gap:10px;padding:14px 18px 10px;flex-wrap:wrap} .num{font:700 20px "IBM Plex Mono",monospace;color:var(--acc)} .dur{margin-left:auto;font:500 13px "IBM Plex Mono",monospace;color:var(--mute)}
+.tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:2px;letter-spacing:.04em} .tag.must{background:var(--ok-soft);color:var(--ok)} .tag.opt{background:var(--acc-soft);color:var(--acc)}
+.clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;padding:0 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--code)}
+.clip{margin:8px 0} .clip video{display:block;width:100%;aspect-ratio:9/16;background:#000;object-fit:cover;border-radius:4px}
+.clip figcaption{font-size:11px;color:var(--mute);margin-top:4px;line-height:1.4}
+.frames{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;padding:10px 18px}
+.frame img{display:block;width:100%;border-radius:4px} .frame figcaption{font-size:11px;color:var(--mute);margin-top:4px}
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;padding:12px 18px;font-size:14px} .spec b{display:block;font-size:11px;letter-spacing:.08em;color:var(--mute);text-transform:uppercase;margin-bottom:2px} .spec p{margin:2px 0} .cam{color:var(--mute);font-size:13px} .ref{grid-column:1/-1;font-size:13px;color:var(--mute);border-top:1px dashed var(--line);padding-top:8px}
+.chk{display:inline-flex;gap:8px;align-items:center;margin:4px 18px 0;font-weight:500;cursor:pointer} .chk input{width:18px;height:18px;accent-color:var(--ok)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:800px){.wrap{grid-template-columns:1fr} nav{position:static} .spec,.two{grid-template-columns:1fr}}
+.foot{color:var(--mute);font-size:12px;margin-top:48px;border-top:1px solid var(--line);padding-top:12px}
+.small{font-size:13px;color:var(--mute)}
+</style>
+<div class="wrap">
+<nav><div class="brand">착한구두 촬영 폼</div>
+<a href="#rule">공통 원칙 4</a><a href="#shoe4">신발 컷 4종 ★</a><a href="#pick">폼 고르기</a><a href="#fa">폼 A · 매장형</a><a href="#fb">폼 B · 신발·코디형</a><a href="#hook">훅 · 프리뷰 몽타주</a><a href="#gap">구멍 메우기 ★</a><a href="#fc">폼 C · 피팅룸 거울샷</a><a href="#no">하지 말 것</a><a href="#fill">채워 넣는 칸</a><a href="#data">게시물 정보 제공</a></nav>
+<main>
+<h1>착한구두 촬영 폼 가이드</h1>
+<p class="lead">매장과 신발을 <b>한 편에 동시에</b> 보여주는 폼을 모은 문서입니다. 캠페인마다 아래 폼 중 하나를 골라 쓰고, 매장·제품·일정만 갈아 끼웁니다.</p>
+
+<div class="box ok"><b>이 문서를 쓰는 법 — 3단계</b>
+<ol><li><b>공통 원칙 4가지</b>와 <b>신발 컷 4종</b>을 먼저 봅니다. 이건 폼과 무관하게 항상 같습니다.</li>
+<li>캠페인 목적에 맞는 <b>폼 A 또는 B</b>를 고릅니다.</li>
+<li>맨 아래 <b>채워 넣는 칸</b>에 이번 매장·제품·일정을 적어 크리에이터에게 전달합니다.</li></ol></div>
+
+<h2 id="rule">공통 원칙 4가지 — 폼과 무관하게 항상</h2>
+<p>레퍼런스 두 편을 초 단위로 뜯어서 공통으로 지켜지던 것만 남긴 목록입니다.</p>
+<div class="box ok"><ul>
+<li><b>전신컷에서 발을 자르지 않는다</b> — 레퍼런스 28초 내내 발 잘린 컷 0개</li>
+<li><b>신발이 안 보이는 앵글은 아예 쓰지 않는다</b> — 레퍼런스도 여기서 한 번 뚫립니다(18.5~21.75초, 3.25초). <a href="#gap">우리 버전은 이 구멍을 0초로 만듭니다</a></li>
+<li><b>신발 단독 블록을 영상 끝에 5~6초 몰아서</b> — 중간에 흩어 놓지 않음</li>
+<li><b>신발 컷 위에 코디 사진을 인서트로 얹는다</b> — 신발 클로즈업 하나가 코디컷 역할까지 함</li>
+</ul></div>
+
+<h2 id="shoe4">★ 신발 보이는 컷 4종 — 모든 폼의 공통 부품</h2>
+<p>영상 마지막에 이 4컷을 <b>①→②→③→④ 순서 그대로</b> 붙입니다. 배경·바닥 질감은 자유, 앵글과 순서는 고정입니다.</p>
+<div class="frames"><figure class="frame"><img src="../assets/frames/mh2_topdown.jpg" loading="lazy" alt="① 발밑 하이앵글 — 신은 채로 똑바로 내려다보기. 발등·코 라인이 다 보이게"><figcaption>① 발밑 하이앵글 — 신은 채로 똑바로 내려다보기. 발등·코 라인이 다 보이게</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_flat.jpg" loading="lazy" alt="② 제품 단독 바닥컷 — 두 짝을 살짝 비스듬히 놓고 위에서"><figcaption>② 제품 단독 바닥컷 — 두 짝을 살짝 비스듬히 놓고 위에서</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_hand.jpg" loading="lazy" alt="③ 손이 들어간 컷 — 손으로 집거나 가리키기. 손이 크기 기준이 됨"><figcaption>③ 손이 들어간 컷 — 손으로 집거나 가리키기. 손이 크기 기준이 됨</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_walk.jpg" loading="lazy" alt="④ 걸어가며 발등 — 보행 POV + 코디 사진 2장을 위에 인서트"><figcaption>④ 걸어가며 발등 — 보행 POV + 코디 사진 2장을 위에 인서트</figcaption></figure></div>
+<div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_shoeblock.mp4"></video><figcaption>4종 연속 6.2초</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_walkpip.mp4"></video><figcaption>④ 보행 + 코디 인서트</figcaption></figure><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_walk.mp4"></video><figcaption>④ 바닥 질감만 바꿔 반복</figcaption></figure></div>
+<div class="box"><b>④가 이 세트의 핵심입니다.</b><br>신발 클로즈업 위에 “이 신발을 신은 전신 코디” 사진 2장을 얹어서, <b>신발과 코디를 한 프레임에</b> 넣습니다. 신발컷 한 장이 코디컷 역할을 겸하기 때문에 짧은 영상에서 제일 효율이 좋습니다.</div>
+
+<h2 id="pick">폼 고르기 — 한 줄</h2>
+<div class="box ok"><b>매장을 더 보여줄 건가 → 폼 A · 신발과 코디를 더 보여줄 건가 → 폼 B</b><br><span class="small">착장을 고정하느냐 갈아입느냐는 폼을 가르는 기준이 아니라, 위 선택에서 따라 나오는 결과입니다.</span></div>
+<div class="tw"><table><tr><th>　</th><th>폼 A — 매장형 (매장을 더 보여줌)</th><th>폼 B — 신발·코디형 (신발과 코디를 더 보여줌)</th></tr>
+<tr><td class="t">언제</td><td>신규 매장 오픈 · 방문 유도 · 매장 자체가 소구점일 때</td><td>신발 한 켤레의 활용도(코디 폭)를 팔 때 · 팔로워가 코디 보러 오는 계정</td></tr>
+<tr><td class="t">엔진</td><td><b>동선</b> — 들어가서 고르고 신어보고 나옴</td><td><b>반복</b> — 착장을 바꿔가며 같은 신발을 계속 보여줌</td></tr>
+<tr><td class="t">착장 (결과)</td><td>옷 <b>고정</b>, 신발만 갈아신음 (신발 여러 켤레 비교)</td><td>옷 <b>교체</b>, 신발 고정 (한 켤레의 활용도)</td></tr>
+<tr><td class="t">러닝타임</td><td>36초 안팎</td><td>28초 안팎</td></tr>
+<tr><td class="t">준비물</td><td>매장 협조(오픈 전 시간대·거울 구역). 옷은 입고 온 한 벌</td><td>크리에이터가 <b>옷 2~3벌을 직접 챙겨와야 함</b></td></tr>
+<tr><td class="t">실측 레퍼런스</td><td><a href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">원본 보기</a></td><td><a href="https://www.instagram.com/p/DcvuagksrmI/" target="_blank" rel="noopener">원본 보기</a></td></tr>
+</table></div>
+
+<h2 id="fa">폼 A — 매장형 (매장을 더 보여줌)</h2>
+<div class="tw"><table class="seg"><tr><th>초</th><th>이 구간 영상</th><th>구간 · 보여야 하는 것</th></tr><tr><td class="t">0–4s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_1_hook.mp4"></video></td><td><b>훅</b><br>거울 전신 셀카 + 첫 프레임부터 자막 → 매장 스침 2컷 → 피팅거울 2컷 → 신발 손에 든 하이앵글</td></tr><tr><td class="t">4–10s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_2_store.mp4"></video></td><td><b>매장 소개</b><br>외관 통창 1~2초 + 주소 자막 → 입장 → 쇼룸 전체감 → 안쪽 동선</td></tr><tr><td class="t">10–17s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_3_pick.mp4"></video></td><td><b>고르기</b><br>매대 훑는 하이앵글 → 얼굴 리액션 → 한 켤레 집어 드는 손 클로즈업</td></tr><tr><td class="t">17–30s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_4_tryon.mp4"></video></td><td><b>착용</b><br>거울 셀카 4컷. <b>옷은 고정, 신발만 갈아신음</b>. 자세 4종(앉아서 발 앞으로 / 다리 들기 / 한쪽 발 앞으로 / 발 틸트)</td></tr><tr><td class="t">30–36s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/jd_5_closing.mp4"></video></td><td><b>클로징</b><br>진열대 와이드 → 쇼핑백 담는 손 → 거울 마지막 전신 → 쇼핑백 + 가격 자막</td></tr></table></div>
+<div class="frames"><figure class="frame"><img src="../assets/frames/pose_1.jpg" loading="lazy" alt="자세 1 — 앉아서 발 앞으로"><figcaption>자세 1 — 앉아서 발 앞으로</figcaption></figure><figure class="frame"><img src="../assets/frames/pose_2.jpg" loading="lazy" alt="자세 2 — 다리 들기"><figcaption>자세 2 — 다리 들기</figcaption></figure><figure class="frame"><img src="../assets/frames/pose_3.jpg" loading="lazy" alt="자세 3 — 한쪽 발 앞으로"><figcaption>자세 3 — 한쪽 발 앞으로</figcaption></figure><figure class="frame"><img src="../assets/frames/pose_4.jpg" loading="lazy" alt="자세 4 — 발 틸트"><figcaption>자세 4 — 발 틸트</figcaption></figure></div>
+<div class="box"><b>착용 구간이 이 폼의 승부처</b><br>옷은 처음부터 끝까지 그대로 두고 신발만 바꿔 신습니다. 거울 앞에서 위 자세 4종을 순서대로 잡되, 매 컷 발이 프레임 안에 확실히 걸리는지 확인하세요. 클로징 직전에 <a href="#shoe4">신발 컷 4종</a>을 붙입니다.</div>
+
+<h2 id="fb">폼 B — 신발·코디형 (신발과 코디를 더 보여줌)</h2>
+<p>실측 <b>28.23초 · 30컷</b>. 컷당 평균 <b>0.94초</b>(중앙값 0.97초), <b>54%가 1초 미만</b>, 훅 6컷은 0.33~0.67초입니다. 다만 <b>18.5~21.75초 3.25초(전체의 11.5%)는 신발이 프레임 밖으로 나갑니다</b> — 이 영상의 <b>유일한 구멍</b>이고, 우리는 <a href="#gap">이 구간을 바꿔 씁니다</a>.</p>
+<div class="kv">
+<div><b>러닝타임</b><span>28.23s</span></div><div><b>컷 수</b><span>30</span></div><div><b>컷당 평균</b><span>0.94s</span></div><div><b>1초 미만 컷</b><span>54%</span></div><div><b>신발 블록</b><span>22%</span></div><div><b>신발 안 보임</b><span>3.25s</span></div>
+</div>
+<div class="full"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_FULL.mp4"></video>
+<p><b>먼저 이걸 통으로 한 번 보세요 (28.2초 원본 전체).</b><br>아래 표는 이 영상을 구간별로 자른 것입니다. 표의 작은 영상은 <b>위 영상의 해당 초 구간 그대로</b>입니다 — 다른 영상이 아닙니다.</p></div>
+<div class="box ok"><b>장소는 자유입니다 — 구조만 가져갑니다</b><br>
+이 영상은 매장·계단·실내·야외를 계속 옮겨 다닙니다. 그러니 <b>어디서 찍었는지는 따라 할 필요가 없습니다.</b>
+가져갈 것은 <b>컷의 순서, 프레이밍, 길이</b>뿐입니다. (반대로 <a href="#fc">폼 C 거울샷</a>은 전부 한 장소에서 찍히므로 그쪽은 장소 선정이 핵심입니다.)</div>
+<div class="tw"><table class="seg"><tr><th>초</th><th>이 구간 영상</th><th>구간 · 무엇을 하고 있나</th></tr><tr><td class="t">0–3.5s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_hook.mp4"></video></td><td><b>훅 = 프리뷰 몽타주 7컷</b><br>뒤에 나올 컷을 0.33~0.67초씩 7개로 미리 흘립니다. <b>7컷 중 6컷이 본편에 실제로 다시 나옵니다.</b> <a href='#hook'>보여줄 제품이 많을 때 특히 강한 훅</a>입니다</td></tr><tr><td class="t">3.5–9s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_item1.mp4"></video></td><td><b>아이템 ① — 전신 → 디테일 → 손</b><br><b>전신 1컷 → 카메라를 내려 하체 → 클로즈업</b> 3단. 카메라가 내려갈수록 신발이 화면에서 커집니다</td></tr><tr><td class="t">9–15s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_item2.mp4"></video></td><td><b>아이템 ② — 진열 → 착용</b><br><b>제품이 놓여 있는 상태 1컷 → 착용 전신 → 거울 셀카 3~4컷.</b> 안 신은 상태와 신은 상태를 붙여 보여줍니다</td></tr><tr><td class="t">15–18.5s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_item3.mp4"></video></td><td><b>아이템 ③ — 전신 → 앉기 → 단차</b><br><b>전신 3컷 → 앉는 컷 → 단차에 올라선 전신.</b> 앉는 컷과 단차 컷이 신발이 제일 잘 보이는 자세입니다 — 계단이든 문턱이든 턱이 있으면 됩니다</td></tr><tr><td class="t">18.5–21.75s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_gap.mp4"></video></td><td><b><b>보행 + 겹쳐 입기 — 여기가 유일한 구멍</b></b><br>보행 뒷모습 4컷은 종아리 아래에서, 겹쳐 입기 9컷은 무릎~허벅지에서 잘립니다. 3.25초 동안 신발이 안 보임 → <a href='#gap'>우리는 이 구간을 바꿉니다</a></td></tr><tr><td class="t">22–28.2s</td><td class="vc"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_shoeblock.mp4"></video></td><td><b><b>신발 단독 블록 (6.2초 = 전체의 22%)</b></b><br>위 <a href='#shoe4'>신발 컷 4종</a>을 ①→②→③→④ 순서로. 마지막은 제품 회전컷으로 닫음</td></tr></table></div>
+<div class="frames"><figure class="frame"><img src="../assets/frames/mh2_sign.jpg" loading="lazy" alt="0.0s — 첫 컷은 0.5초만 스칩니다 (원본은 간판)"><figcaption>0.0s — 첫 컷은 0.5초만 스칩니다 (원본은 간판)</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_pip.jpg" loading="lazy" alt="1.0s — 착장 전신 + 작은 사진 인서트"><figcaption>1.0s — 착장 전신 + 작은 사진 인서트</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_detail.jpg" loading="lazy" alt="5.5s — 카메라를 내릴수록 신발이 화면에서 커짐"><figcaption>5.5s — 카메라를 내릴수록 신발이 화면에서 커짐</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_stair.jpg" loading="lazy" alt="18.5s — 단차에 올라선 전신 (원본은 계단)"><figcaption>18.5s — 단차에 올라선 전신 (원본은 계단)</figcaption></figure></div>
+<div class="box"><b>이 폼을 우리 걸로 바꿀 때</b><ul>
+<li>원본은 <b>옷</b>이 주인공이고 신발이 깔려 있는 구조입니다. 우리는 뒤집어서 <b>신발이 주인공</b>, 옷은 신발을 살리는 배경으로 씁니다.</li>
+<li>아이템 ①②③ 자리에 <b>착장 2~3벌</b>을 넣되, 전부 <b>같은 신발</b>을 신습니다. 옷은 신발이 잘 보이는 길이(미디·미니·숏)로 고릅니다.</li>
+<li>아이템별 “전신 → 카메라 내려 디테일 → 손” 흐름을 <b>신발 기준</b>으로 바꿉니다: 전신 → 카메라 내려 발 → 손으로 신발 만지기.</li>
+<li>마지막 6초 <a href="#shoe4">신발 컷 4종</a>은 길이·순서 그대로 둡니다. <b>여기가 이 폼을 채택한 이유입니다.</b></li>
+</ul></div>
+<div class="box no"><b>이 레퍼런스에서 가져오지 않는 것</b><ul>
+<li>화면에 박히는 브랜드 워터마크 · 타 브랜드 로고</li>
+<li>얼굴 가리는 스티커 · 모자이크</li>
+<li>앉은 컷에서 신발이 프레임 밖으로 나가는 각도</li>
+<li>옷 소재·품절 이야기에 시간을 쓰는 것 — 우리 영상에서 말할 것은 신발입니다</li>
+</ul></div>
+
+
+
+<h2 id="hook">훅 = 프리뷰 몽타주 — 보여줄 게 많을 때 쓰는 훅</h2>
+<div class="full"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_hook.mp4"></video>
+<p><b>3.5초에 7컷.</b> 컷당 0.33~0.67초로, 뒤에 나올 장면을 미리 한 번씩 흘립니다.<br>
+제품이 여러 개일 때 특히 셉니다 — <b>하나라도 취향에 걸리는 사람이 끝까지 봅니다.</b></p></div>
+
+<div class="box ok"><b>지켜야 할 규칙 하나 — 훅에 넣은 컷은 본편에 반드시 다시 나온다</b><br>
+원본은 훅 7컷 중 <b>6컷이 본편에 그대로 재등장</b>합니다(외관컷 하나만 예외).
+훅에서 보여주고 본편에서 안 주면 낚시가 되고, 이탈은 그 지점에서 납니다.
+<b>훅은 예고편이지 별도 영상이 아닙니다.</b></div>
+
+<div class="box ok"><b>제품이 많을 때 — 이 몽타주를 본편에 한 번 더 씁니다</b>
+<p>제품이 늘면 제품을 줄일 게 아니라, <b>훅과 같은 방식의 몽타주 구간을 본편에 하나 더</b> 넣습니다.
+전 제품을 0.4~0.6초씩 빠르게 훑어 <b>“이만큼 있다”를 먼저 보여주고</b>, 그중 대표 2~3개만 깊게 들어갑니다.
+원본의 마지막 신발 블록도 같은 원리입니다 — 한 제품을 앵글만 바꿔 빠르게 돌립니다.</p>
+<div class="tw"><table><tr><th>제품 수</th><th>구성</th><th>시간 배분 (28초 기준)</th></tr>
+<tr><td class="t">2~3개</td><td>제품당 한 구간씩 — <b>원본 구조 그대로</b></td><td>제품당 6~9초</td></tr>
+<tr><td class="t">4~6개</td><td><b>몽타주 구간 추가</b> → 전 제품 0.5초씩 훑기 + 대표 3개만 깊게</td><td>6개 기준: 몽타주 3.0초 + 대표 3개 × 5.1초</td></tr>
+<tr><td class="t">7개 이상</td><td>몽타주를 0.4초로 당기고 대표는 2개만</td><td>8개 기준: 몽타주 3.2초 + 대표 2개 × 7.5초</td></tr>
+</table></div>
+<p class="small">훅 3.5초 + 신발 단독 블록 6.2초는 고정이고, 본편 18.3초를 위처럼 나눕니다. 몽타주 구간은 <b>훅 직후</b> 또는 <b>신발 블록 직전</b>에 넣습니다.</p></div>
+
+<div class="box"><b>몽타주로 훑을 때 지킬 것</b><ul>
+<li><b>프레이밍을 통일한다</b> — 같은 거리·같은 각도로 제품만 바뀌어야 빠르게 넘겨도 눈이 따라옵니다. 매 컷 앵글이 바뀌면 그냥 정신없어집니다</li>
+<li><b>0.4초 밑으로는 내리지 않는다</b> — 원본 최단 컷이 0.33초입니다. 그 아래는 뭐가 지나갔는지 안 남습니다</li>
+<li><b>몽타주에 나온 제품 중 최소 2개는 뒤에서 깊게 준다</b> — 훑기만 하고 끝나면 훅과 같은 낚시가 됩니다</li>
+<li><b>몽타주에도 발은 들어간다</b> — 제품을 바닥에 놓고 훑든, 신은 발을 훑든 신발이 화면에 있어야 합니다</li>
+</ul></div>
+
+<h2 id="gap">이 구간만 바꿉니다 — 18.5~21.75초</h2>
+<p>레퍼런스를 <b>정본으로 그대로 쓰되</b>, 신발이 프레임 밖으로 나가는 이 3.25초만 바꿔 찍습니다. 나머지 24.98초는 손대지 않습니다.</p>
+<div class="two">
+<div class="box no"><b>원본 — 이렇게 나옵니다</b>
+<div class="frames"><figure class="frame"><img src="../assets/frames/mh2_gap1.jpg" loading="lazy" alt="19.0s 보행 뒷모습 — 종아리 아래에서 잘림"><figcaption>19.0s 보행 뒷모습 — 종아리 아래에서 잘림</figcaption></figure><figure class="frame"><img src="../assets/frames/mh2_gap2.jpg" loading="lazy" alt="20.5s 겹쳐 입기 — 무릎에서 잘림"><figcaption>20.5s 겹쳐 입기 — 무릎에서 잘림</figcaption></figure></div>
+<div class="clips"><figure class="clip"><video controls muted playsinline preload="metadata" src="../assets/clips/mh2_gap.mp4"></video><figcaption>문제 구간 3.3초 그대로</figcaption></figure></div>
+<p class="small">옷 매장 영상이라 이 구간에서 옷만 보여주면 됐던 겁니다. 우리는 신발이 주인공이라 이대로 두면 안 됩니다.</p></div>
+
+<div class="box ok"><b>바꾸는 법 — 셋 중 하나</b>
+<ol>
+<li><b>한 걸음 물러서서 전신으로</b> — 제일 쉽습니다. 같은 자리, 같은 자세, 프레임만 발끝까지. 머리 위 여백을 줄이고 아래를 확보하세요.</li>
+<li><b>보행은 뒤에서 따라가며 하이앵글로</b> — 뒷모습 트래킹을 눈높이가 아니라 살짝 위에서 잡으면 걸을 때 발등이 계속 들어옵니다.</li>
+<li><b>겹쳐 입기 비교는 앉아서</b> — 서서 겹쳐 입는 대신 앉아서 다리를 접고 신발을 앞으로. 겉옷 비교와 신발이 한 프레임에 들어옵니다.</li>
+</ol>
+<p class="small">셋 다 컷 수·길이는 그대로입니다. 프레임과 앉고 서는 것만 바뀝니다.</p></div>
+</div>
+<div class="box"><b>바꾸고 나면</b><br>신발이 안 보이는 시간 <b>3.25초 → 0초</b>. 28초 내내 신발이 화면에 있는 영상이 됩니다. 원본이 못 한 걸 우리가 하는 지점입니다.</div>
+
+<h2 id="fc">폼 C — 피팅룸 거울샷 <span class="tag opt">수집 중</span></h2>
+<div class="box"><b>자리만 잡아 둔 폼입니다.</b><br>
+유니클로·자라 같은 대형 SPA 매장의 <b>피팅룸 거울샷 릴</b>이 실제로 많이 돌고 있어, 이걸 세 번째 폼으로 정리할 예정입니다.
+레퍼런스 링크가 들어오는 대로 폼 A·B와 같은 형식(초 단위 컷 분해 + 우리가 가져갈 것)으로 채웁니다.<br>
+<b>폼 A·B와 다른 점: 거울샷은 모든 컷이 한 장소에서 찍힙니다.</b> 그래서 이 폼만큼은 <b>장소(거울·조명·배경 정리)가 결과를 좌우</b>하고, 가이드에도 장소 조건을 적게 됩니다.
+<p class="small">폼으로 확정하려면 <b>같은 구조의 실측 레퍼런스 3건</b>이 필요합니다. 현재 0건.</p></div>
+
+<h2 id="no">절대 찍지 말 것 (공통)</h2>
+<div class="box no"><ul><li>전신컷에서 발을 자르기 (제일 흔한 실수)</li><li>무릎·종아리에서 잘리는 프레임 — 신발이 화면 밖으로 나갑니다 (레퍼런스도 여기서 뚫림)</li><li>외관·간판만 3초 이상 잡기 / 첫 컷을 간판 단독이나 언박싱으로 시작</li><li>한산한 매장·지저분한 거울·정리 안 된 매대·재고박스 노출</li><li>타 브랜드 로고·제품 동시 노출, 화면에 박히는 워터마크</li><li>다른 매장·카페를 섞는 코스형 구성 (착한구두 분량이 묻힘)</li><li>착화 컷 없이 “신으면 더 예쁘다”류 자막만 쓰기</li><li>몸매·다리라인을 강조하는 문구</li><li>씬 하나가 1.5초를 넘는 정지 컷</li><li>초대형·국내최대·평수 주장 등 과장된 규모 표현</li></ul></div>
+
+<h2 id="fill">채워 넣는 칸 — 캠페인마다 여기만 바꿉니다</h2>
+<div class="tw"><table><tr><th>항목</th><th>적을 것</th></tr><tr><td class="t">매장</td><td>지점명 · 주소 · 촬영 가능 시간대</td></tr><tr><td class="t">제품</td><td>품번 · 제품명 · 가격 (촬영 전 확정, 몇 켤레인지 포함)</td></tr><tr><td class="t">수치</td><td>굽 높이 등 자막에 박을 숫자 — 가격과 굽만 정확히, 나머지는 자유</td></tr><tr><td class="t">소구점 3줄</td><td>이 캠페인이 팔 것 3개 (예: 하나로 무드가 바뀐다 / 통굽인데 편하다 / 매장에서 직접 신어봤다)</td></tr><tr><td class="t">해시태그</td><td><code>@chaakan_official</code> · <code>#착한구두</code> · <code>#CHAAKAN</code> + 시즌 태그</td></tr><tr><td class="t">일정</td><td>가이드 전달 → 초안 공유 → 최종 컨펌 → 촬영 → 업로드</td></tr></table></div>
+<p class="small">자막·나레이션 문구는 전부 예시입니다. 크리에이터 말투로 바꾸되 <b>첫 프레임부터 자막이 뜨는 것</b>과 <b>가격·굽 수치</b>만 지켜 주세요.</p>
+
+<h2 id="data">게시물 정보 제공 (필수)</h2>
+<div class="tw"><table><tr><th>시점</th><th>제공 항목</th></tr><tr><td class="t">업로드 +2일</td><td>릴 링크 · 조회수 · 도달 · 계정 도달 · 좋아요 · 댓글 · 저장 · 공유 · 팔로우 증가</td></tr><tr><td class="t">업로드 +7일</td><td>시청 유지(리텐션) 그래프 = 어느 초에 빠지는지 · 평균 시청 시간 · 재생 완료율 · 유입 경로(홈/탐색/릴스/프로필)</td></tr><tr><td class="t">업로드 +14일</td><td>원본 영상 파일 (자막 없는 클린본)</td></tr></table></div>
+<div class="box"><b>제공 방법</b><p>인스타그램 앱 → 릴 → 인사이트에서 <b>“개요” 화면</b>과 <b>“시청 유지” 그래프 화면</b> 스크린샷 2장을 그대로 보내 주시고, 위 수치들을 화면에 나온 그대로 함께 전달해 주시면 됩니다.</p></div>
+<div class="box ok"><b>이 정보를 부탁드리는 이유</b><br>영상이 어느 장면에서 잘 붙고 어디에서 빠지는지 보고, <b>다음 협업 때 더 맞는 폼과 컷을 드리기 위한 참고 자료</b>입니다. 평가나 정산 조건이 아니고, 외부에 공유되지 않습니다.</div>
+
+<div class="foot">착한구두 촬영 폼 가이드 · 폼 A(매장형) · 폼 B(신발·코디형) · 폼 C(피팅룸 거울샷, 수집 중) · 실측 레퍼런스 2편 기준</div>
+</main></div>
