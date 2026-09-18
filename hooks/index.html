@@ -1,114 +1,128 @@
 <title>착한구두 3초 후킹 가이드</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root{
-  --paper:#F5F1E8; --paper-2:#EDE7DA; --ink:#171310; --ink-2:#6E655A;
-  --rule:#D9D1C1; --accent:#7B2230;
-  --serif:'Gowun Batang','Nanum Myeongjo',Georgia,serif;
-  --sans:'Noto Sans KR',system-ui,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
+  --bg:#FFFFFF; --soft:#FAF8F5; --tint:#FDF1EE;
+  --ink:#111113; --ink-2:#55555E; --ink-3:#8B8B94;
+  --line:#E8E5DF; --line-2:#F1EEE9;
+  --accent:#E4432B; --accent-deep:#C0301B; --accent-wash:#FCEDE9; --on-accent:#FFFFFF;
+  --card:#FFFFFF;
+  --sh:0 1px 2px rgba(17,17,19,.04),0 10px 26px -14px rgba(17,17,19,.20);
+  --sh-lift:0 2px 6px rgba(17,17,19,.06),0 22px 44px -18px rgba(17,17,19,.30);
+  --r:18px; --r-sm:12px;
+  --sans:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+  /* 하위호환: 옛 변수명을 새 토큰으로 매핑 (마크업 클래스는 그대로, 값만 교체) */
+  --paper:var(--bg); --paper-2:var(--soft); --rule:var(--line);
+  --serif:var(--sans);
 }
-@media (prefers-color-scheme: dark){
-  :root{--paper:#14120E;--paper-2:#1D1A15;--ink:#EDE7DA;--ink-2:#978D7F;--rule:#332E26;--accent:#C96E78}
-}
+/* ponytail: 라이트 고정 — chaakan-creator-guide 정본과 동일하게 다크모드 override 없음 */
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;overflow-x:hidden}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.72;letter-spacing:-.005em;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 ::selection{background:var(--accent);color:#fff}
 main,header{max-width:1180px;margin:0 auto;padding:0 24px}
-a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+a{color:var(--accent-deep);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2.5px solid var(--accent-deep);outline-offset:3px;border-radius:6px}
+img,video{max-width:100%}
 
-.overline{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-2);margin:44px 0 14px}
-hr.hairline{border:0;border-top:1px solid var(--ink);margin:0}
-h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,5.6vw,58px);line-height:1.2;letter-spacing:-.018em;margin:36px 0 0;max-width:18ch}
-.brand{font-family:var(--sans);font-size:13.5px;letter-spacing:.02em;color:var(--ink-2);margin:20px 0 0}
+.overline{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-deep);margin:44px 0 14px}
+hr.hairline{border:0;border-top:1px solid var(--line);margin:0;opacity:.9}
+h1{font-family:var(--sans);font-weight:800;font-size:clamp(30px,5.6vw,54px);line-height:1.12;letter-spacing:-.03em;margin:30px 0 0;max-width:18ch;word-break:keep-all}
+.brand{font-family:var(--sans);font-size:13.5px;font-weight:600;letter-spacing:-.005em;color:var(--ink-3);margin:18px 0 0}
 
-.navgrid{display:flex;flex-wrap:wrap;margin:46px 0 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
-.navitem{flex:1 1 0;min-width:110px;display:flex;align-items:baseline;gap:10px;padding:16px 14px;text-decoration:none;color:var(--ink);border-right:1px solid var(--rule);transition:color .18s}
-.navitem:first-child{padding-left:0}
-.navitem:last-child{border-right:0}
-.navitem em{font-family:var(--mono);font-style:normal;font-size:11px;letter-spacing:.12em;color:var(--ink-2);transition:color .18s}
-.navitem b{font-weight:500;font-size:13.5px;line-height:1.35}
-.navitem:hover,.navitem:hover em{color:var(--accent)}
+.navgrid{display:flex;flex-wrap:wrap;gap:8px;margin:40px 0 0;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.navitem{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px 8px 8px;transition:border-color .18s,background .18s,color .18s,transform .18s}
+.navitem em{font-family:var(--mono);font-style:normal;font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--on-accent);background:var(--accent-deep);border-radius:999px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;transition:background .18s}
+.navitem b{font-weight:600;font-size:13.5px;letter-spacing:-.01em;line-height:1.3}
+.navitem:hover{border-color:var(--accent);background:var(--accent-wash);color:var(--accent-deep);transform:translateY(-1px)}
 
-section{margin-top:110px;border-top:1px solid var(--ink)}
-.sechead{position:relative;min-height:100px;display:flex;align-items:flex-end;padding-top:40px;margin:0 0 16px}
-.stepnum{position:absolute;left:-5px;top:6px;font-family:var(--serif);font-style:italic;font-weight:700;font-size:clamp(70px,9vw,120px);line-height:.82;letter-spacing:-.05em;color:var(--ink);opacity:.1;pointer-events:none;user-select:none}
-.stepnum.accent{color:var(--accent);opacity:.22}
-.sechead h2{position:relative;font-family:var(--serif);font-weight:700;font-size:clamp(22px,3vw,32px);letter-spacing:-.012em;margin:0;padding-left:6px}
-h3{font-family:var(--serif);font-weight:700;font-size:19px;letter-spacing:-.01em;margin:0 0 10px}
-h4{font-family:var(--serif);font-weight:700;font-size:15.5px;letter-spacing:-.005em;margin:0 0 2px}
-.lede{font-size:16px;color:var(--ink-2);max-width:66ch;margin:0}
-.evidence{font-family:var(--mono);font-size:12.5px;letter-spacing:.02em;color:var(--accent);max-width:70ch;margin:10px 0 0}
-.blocklabel{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);font-weight:500;margin:34px 0 0;padding-top:16px;border-top:1px dotted var(--rule)}
-.notecard{margin-top:18px;padding:14px 16px;border:1px dashed var(--rule);color:var(--ink-2);font-size:13.5px;max-width:60ch}
+section.band{position:relative;padding:64px 0 72px;margin:0}
+section.band::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:transparent}
+section.band.soft::before{background:var(--soft)}
+section.band.tint::before{background:var(--tint)}
+.sechead{position:relative;display:flex;flex-direction:column;gap:14px;margin:0 0 16px}
+.chip{display:inline-block;background:var(--accent-deep);color:var(--on-accent);font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;padding:6px 12px;border-radius:999px;width:fit-content}
+.chip.bad{background:var(--ink);color:var(--bg)}
+.sechead h2{position:relative;font-family:var(--sans);font-weight:800;font-size:clamp(22px,3vw,32px);letter-spacing:-.028em;margin:0;max-width:26ch;word-break:keep-all}
+h3{font-family:var(--sans);font-weight:700;font-size:19px;letter-spacing:-.015em;margin:0 0 10px;word-break:keep-all}
+h4{font-family:var(--sans);font-weight:700;font-size:15.5px;letter-spacing:-.01em;margin:0 0 2px;word-break:keep-all}
+.lede{font-size:16px;color:var(--ink-2);max-width:66ch;margin:0;word-break:keep-all}
+.lede strong{color:var(--ink);font-weight:700}
+.evidence{font-family:var(--mono);font-size:12.5px;letter-spacing:.01em;color:var(--accent-deep);max-width:70ch;margin:10px 0 0;word-break:keep-all}
+.blocklabel{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin:34px 0 0;padding-top:16px;border-top:1px solid var(--line-2)}
+.notecard{margin-top:18px;padding:14px 16px;background:var(--soft);border:1px dashed var(--line);border-radius:var(--r-sm);color:var(--ink-2);font-size:13.5px;max-width:64ch;word-break:keep-all}
 
-.callout{margin-top:26px;padding:2px 0 2px 20px;border-left:2px solid var(--accent);font-size:15px;max-width:74ch}
-.callout strong{color:var(--accent);font-weight:700}
+.callout{margin-top:26px;padding:18px 22px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--r);box-shadow:var(--sh);font-size:15px;line-height:1.65;max-width:74ch;word-break:keep-all}
+.callout strong{color:var(--accent-deep);font-weight:700}
 .slotbox{max-width:none}
 .slotlist{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 32px;font-size:14.5px;color:var(--ink-2)}
 .slotlist b{color:var(--ink);font-family:var(--sans)}
 .slotlist em{color:var(--ink-2);font-style:normal}
 .slothero{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:22px}
-.slotherolabel{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--ink-2);display:block;margin-bottom:8px}
+.slotherolabel{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--ink-3);display:block;margin-bottom:8px}
 .thumbrow{display:flex;gap:10px}
 .herothumb{flex:1;margin:0}
 .herothumb .frame{aspect-ratio:9/16}
-.herothumb figcaption{margin-top:6px;padding-top:0;border-top:0;font-family:var(--mono);font-size:11px;display:flex;justify-content:space-between}
+.herothumb figcaption{margin-top:8px;padding-top:0;border-top:0;font-family:var(--mono);font-size:11px;display:flex;justify-content:space-between}
 
 .chipgrid{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.chip{font-family:var(--mono);font-size:12px;letter-spacing:.01em;color:var(--ink-2);border:1px solid var(--rule);border-radius:100px;padding:6px 12px}
+.chipgrid .chip{font-weight:600}
 
 .cardgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:24px}
-.card{margin:0}
-.frame{position:relative;aspect-ratio:9/16;overflow:hidden;background:var(--ink);border:1px solid var(--rule);border-radius:2px}
+.card{margin:0;min-width:0}
+.frame{position:relative;aspect-ratio:9/16;overflow:hidden;background:#0C0C0E;border-radius:16px;border:1px solid var(--line);box-shadow:var(--sh);transition:box-shadow .24s ease,transform .24s ease}
 .frame video,.frame img{width:100%;height:100%;object-fit:cover;display:block}
 .frame.novideo{display:flex;align-items:center;justify-content:center}
-.textnote{font-family:var(--mono);font-size:12px;color:var(--paper-2);letter-spacing:.04em}
-.tag{position:absolute;top:0;left:0;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;padding:4px 8px;z-index:2}
-.tag.inline{position:static;display:inline-block;margin-bottom:10px}
-figcaption{margin-top:12px;padding-top:10px;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:5px;font-size:13.5px;line-height:1.55}
-figcaption .who{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ink-2)}
+.card:hover .frame{transform:translateY(-3px);box-shadow:var(--sh-lift)}
+.textnote{font-family:var(--mono);font-size:12px;color:#fff;letter-spacing:.04em;opacity:.7}
+.tag{position:absolute;top:10px;left:10px;background:rgba(12,12,14,.6);color:#fff;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.02em;padding:5px 9px;border-radius:999px;z-index:2}
+.tag.inline{position:static;display:inline-flex;align-items:center;align-self:flex-start;width:fit-content;margin-bottom:10px;padding:4px 8px;font-size:11px;background:var(--accent-deep);color:var(--on-accent);-webkit-backdrop-filter:none;backdrop-filter:none}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.tagrow .tag.inline{margin-bottom:0}
+figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:13.5px;line-height:1.55;word-break:keep-all}
+figcaption .who{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:-.005em;color:var(--ink-3)}
 figcaption .ourline{color:var(--ink);font-style:italic}
-.srclink{font-family:var(--mono);font-size:11.5px;color:var(--accent)}
-.srclink.muted{color:var(--ink-2)}
-.fullbtn{margin-top:6px;align-self:flex-start;font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;background:none;border:1px solid var(--ink);color:var(--ink);padding:6px 10px;cursor:pointer;border-radius:2px;transition:background .15s,color .15s}
-.fullbtn:hover{background:var(--ink);color:var(--paper)}
-.fullbtn.playing{border-color:var(--accent);color:var(--accent)}
+.srclink{font-family:var(--mono);font-size:11.5px;font-weight:600;color:var(--accent-deep)}
+.srclink.muted{color:var(--ink-3)}
+.fullbtn{margin-top:6px;align-self:flex-start;font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.01em;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:7px 12px;cursor:pointer;border-radius:999px;transition:background .15s,color .15s,border-color .15s}
+.fullbtn:hover{background:var(--accent-wash);border-color:var(--accent);color:var(--accent-deep)}
+.fullbtn.playing{border-color:var(--accent);color:var(--accent-deep);background:var(--accent-wash)}
 
-.viewsbig{font-family:var(--mono);font-weight:700;font-size:15px;color:var(--ink)}
-.viewsred{font-family:var(--mono);font-weight:700;font-size:15px;color:var(--accent)}
-.heronote{color:var(--ink-2);font-size:12.5px;margin:2px 0 0}
+.viewsbig{font-family:var(--mono);font-weight:700;font-size:14.5px;color:var(--ink)}
+.viewsred{font-family:var(--mono);font-weight:700;font-size:14.5px;color:var(--accent-deep)}
+.heronote{color:var(--ink-2);font-size:12.5px;margin:2px 0 0;word-break:keep-all}
 
-.card.bad .frame{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
-.card.counter .frame::after{content:"✕ 반례";position:absolute;left:0;right:0;bottom:0;background:var(--accent);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;padding:6px 8px;text-align:center;z-index:2}
-.card.failcard .frame::after{content:"✕ 안된 것";position:absolute;left:0;right:0;bottom:0;background:var(--accent);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;padding:6px 8px;text-align:center;z-index:2}
-.card.bad figcaption{border-top-color:var(--accent)}
-.badnote{color:var(--accent);font-size:13px;margin:2px 0 0}
+.card.bad .frame{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-wash),var(--sh)}
+.card.bad:hover .frame{box-shadow:0 0 0 2px var(--accent-wash),var(--sh-lift)}
+.card.counter .frame::after{content:"✕ 반례";position:absolute;left:10px;bottom:10px;background:var(--accent-deep);color:var(--on-accent);font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.02em;padding:5px 10px;border-radius:999px;z-index:2}
+.card.failcard .frame::after{content:"✕ 안된 것";position:absolute;left:10px;bottom:10px;background:var(--accent-deep);color:var(--on-accent);font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.02em;padding:5px 10px;border-radius:999px;z-index:2}
+.card.bad figcaption .who{color:var(--accent-deep)}
+.badnote{color:var(--accent-deep);font-weight:600;font-size:13px;margin:2px 0 0;word-break:keep-all}
 
-.fullcase{display:grid;grid-template-columns:340px 1fr;gap:38px;margin-top:46px;align-items:start}
-.fullcase .frame{max-width:320px;margin:9px;border-color:var(--ink);outline:1px solid var(--ink);outline-offset:8px}
+.fullcase{display:grid;grid-template-columns:280px 1fr;gap:30px;margin-top:36px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--sh)}
+.fullcase .frame{max-width:260px}
 .fullinfo h3{margin-top:2px}
-.fullinfo .meta{font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:var(--ink-2);margin:2px 0 12px}
-.fullinfo>a{font-family:var(--mono);font-size:12px}
+.fullinfo .meta{font-family:var(--mono);font-size:12px;letter-spacing:.03em;color:var(--ink-3);margin:2px 0 12px}
+.fullinfo>a{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent-deep)}
 table.timeline{width:100%;border-collapse:collapse;margin-top:20px;font-size:13.5px}
-table.timeline caption{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-align:left;color:var(--ink-2);margin-bottom:8px}
-table.timeline th,table.timeline td{border-top:1px solid var(--rule);padding:10px 10px 10px 0;text-align:left;vertical-align:top}
-table.timeline th{width:90px;font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--ink-2)}
+table.timeline caption{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-align:left;color:var(--ink-3);margin-bottom:8px}
+table.timeline th,table.timeline td{border-top:1px solid var(--line-2);padding:10px 10px 10px 0;text-align:left;vertical-align:top;word-break:keep-all}
+table.timeline th{width:90px;font-family:var(--mono);font-size:11.5px;font-weight:600;color:var(--accent-deep)}
 table.timeline em{color:var(--ink-2);font-style:normal}
 
-.beatblock{margin-top:40px;padding-top:20px;border-top:1px dotted var(--rule)}
+.beatblock{margin-top:36px;padding-top:22px;border-top:1px solid var(--line-2)}
 .beathead{display:flex;align-items:baseline;gap:12px}
-.beatnum{font-family:var(--serif);font-style:italic;font-weight:700;font-size:26px;color:var(--accent)}
-.beatsheetlabel{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--ink-2);margin:24px 0 0}
+.beatnum{font-family:var(--sans);font-weight:800;font-size:22px;color:var(--accent-deep)}
+.beatsheetlabel{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ink-3);margin:24px 0 0}
 
-footer{margin:36px 0 90px}
-.note{color:var(--ink-2);font-size:13px;margin-top:14px}
+footer{margin:40px 0 90px;padding-top:24px;border-top:1px solid var(--line)}
+.note{color:var(--ink-3);font-size:13.5px;margin-top:14px;word-break:keep-all}
 
 @media (max-width:980px){
-  section{margin-top:80px}
+  section.band{padding:48px 0 56px}
   .cardgrid{grid-template-columns:repeat(2,1fr)}
   .fullcase{grid-template-columns:1fr}
   .fullcase .frame{max-width:280px}
@@ -118,89 +132,90 @@ footer{margin:36px 0 90px}
 @media (max-width:620px){
   main,header{padding:0 18px}
   .cardgrid{grid-template-columns:1fr}
-  .navgrid{display:block}
-  .navitem{border-right:0;border-bottom:1px solid var(--rule);padding:13px 0}
-  .navitem:last-child{border-bottom:0}
-  .fullcase .frame{max-width:100%;margin:6px}
+  .navgrid{display:flex;flex-wrap:wrap}
+  .fullcase{grid-template-columns:1fr;padding:14px}
+  .fullcase .frame{max-width:100%;margin:0}
   .thumbrow{flex-direction:column}
 }
 
-/* 탭 */
-.tabbar{position:sticky;top:0;z-index:10;display:flex;background:var(--paper);border-bottom:1px solid var(--ink);max-width:1180px;margin:0 auto;padding:0 24px}
-.tabbtn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;background:none;border:0;border-bottom:2px solid transparent;color:var(--ink-2);padding:16px 18px 14px;cursor:pointer;transition:color .15s,border-color .15s}
+/* 탭 — 루트 minibar 톤의 고정 필 내비 */
+.tabbar{position:sticky;top:0;z-index:10;display:flex;gap:2px;background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line);max-width:1180px;margin:0 auto;padding:0 24px}
+.tabbtn{font-family:var(--sans);font-size:13.5px;font-weight:600;letter-spacing:-.01em;background:none;border:0;border-bottom:2.5px solid transparent;color:var(--ink-2);padding:16px 16px 13.5px;cursor:pointer;transition:color .15s,border-color .15s}
 .tabbtn:hover{color:var(--ink)}
-.tabbtn.active{color:var(--ink);border-bottom-color:var(--accent);font-weight:700}
+.tabbtn.active{color:var(--accent-deep);border-bottom-color:var(--accent-deep);font-weight:700}
 .tabpanel[hidden]{display:none}
 
 /* EDIT 인힐 카드 */
-.editgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
-.editcard{border:1px solid var(--rule);display:flex;flex-direction:column}
-.editstrip{display:flex;overflow-x:auto;aspect-ratio:3/4;background:var(--ink)}
+.editgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
+.editcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);display:flex;flex-direction:column;overflow:hidden}
+.editstrip{display:flex;overflow-x:auto;aspect-ratio:3/4;background:#0C0C0E;scroll-snap-type:x mandatory}
 .editstrip img{height:100%;flex:none;object-fit:cover;scroll-snap-align:start}
-.editstrip{scroll-snap-type:x mandatory}
-.editinfo{padding:16px;display:flex;flex-direction:column;gap:6px}
+.editinfo{padding:18px;display:flex;flex-direction:column;gap:6px}
 .editinfo h3{font-size:18px;margin:2px 0 0;display:flex;align-items:baseline;gap:8px}
-.editcode{font-family:var(--mono);font-size:11px;color:var(--ink-2);font-weight:400}
-.editinfo .meta{font-family:var(--mono);font-size:12.5px;color:var(--ink-2);margin:0}
+.editcode{font-family:var(--mono);font-size:11px;color:var(--ink-3);font-weight:500}
+.editinfo .meta{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);margin:0}
 .heelspec{font-size:14px;margin:2px 0}
-.heelspec strong{color:var(--accent)}
-.concept{font-size:13px;color:var(--ink-2);margin:0}
-.seedbadge{font-family:var(--mono);font-size:11px;letter-spacing:.03em;padding:4px 9px;border-radius:100px;width:fit-content;margin-top:4px}
-.seedbadge.seed-yes{background:var(--ink);color:var(--paper)}
-.seedbadge.seed-no{border:1px solid var(--rule);color:var(--ink-2)}
+.heelspec strong{color:var(--accent-deep)}
+.concept{font-size:13px;color:var(--ink-2);margin:0;word-break:keep-all}
+.seedbadge{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.02em;padding:4px 10px;border-radius:999px;width:fit-content;margin-top:4px}
+.seedbadge.seed-yes{background:var(--accent-deep);color:var(--on-accent)}
+.seedbadge.seed-no{border:1px solid var(--line);color:var(--ink-3)}
 
 /* 일반 키높이 그리드 */
 .pgroup{margin-top:36px}
 .pgroup h3{display:flex;align-items:baseline;gap:10px}
-.pcount{font-family:var(--mono);font-size:11px;color:var(--ink-2);font-weight:400}
-.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:14px}
+.pcount{font-family:var(--mono);font-size:11px;color:var(--ink-3);font-weight:500}
+.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:14px}
 .pcard{margin:0}
-.pcard .frame{aspect-ratio:1/1}
+.pcard .frame{aspect-ratio:1/1;background:var(--soft)}
 .pcard h4{font-size:13.5px;margin:0}
 .pcard .claim{font-size:12px;color:var(--ink);font-style:italic}
-.pcard .unjudged{font-family:var(--mono);font-size:11px;color:var(--ink-2);border:1px dashed var(--rule);padding:2px 6px;width:fit-content}
+.pcard .unjudged{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);border:1px dashed var(--line);border-radius:999px;padding:2px 8px;width:fit-content}
 
 /* 26FW 큰 카드 */
-.biggrid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:24px}
-.bigcard{border:1px solid var(--rule);display:grid;grid-template-columns:220px 1fr}
-.bigstrip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;background:var(--ink)}
-.bigstrip img{width:220px;flex:none;object-fit:cover;scroll-snap-align:start}
+.biggrid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:24px}
+.bigcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);display:grid;grid-template-columns:200px 1fr;overflow:hidden}
+.bigstrip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;background:#0C0C0E}
+.bigstrip img{width:200px;flex:none;object-fit:cover;scroll-snap-align:start}
 .biginfo{padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0}
 .biginfo h3{margin:4px 0 0;font-size:19px}
-.tag.kh{background:var(--accent)}
+.tag.kh{background:var(--accent-deep);position:static;-webkit-backdrop-filter:none;backdrop-filter:none}
 .optrow{font-size:12.5px;display:flex;gap:8px;color:var(--ink-2)}
-.optrow .optlabel{font-family:var(--mono);min-width:40px;color:var(--ink)}
-.claimlist{list-style:none;padding:0;margin:6px 0 0;font-size:13.5px;display:flex;flex-direction:column;gap:4px}
-.claimlist li.unjudged{font-family:var(--mono);font-size:11px;color:var(--ink-2);border:1px dashed var(--rule);padding:2px 6px;width:fit-content;list-style:none}
+.optrow .optlabel{font-family:var(--mono);min-width:40px;color:var(--ink);font-weight:600}
+.claimlist{list-style:none;padding:0;margin:6px 0 0;font-size:13.5px;display:flex;flex-direction:column;gap:4px;word-break:keep-all}
+.claimlist li.unjudged{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);border:1px dashed var(--line);border-radius:999px;padding:2px 8px;width:fit-content;list-style:none}
 .mono{font-family:var(--mono)}
+/* 제품 카드 안 피처 칩은 STEP/아이디어 칩(.chip 필드)과 달리 중립톤 — 라이트 카드에서 과다한 빨강 방지 */
+.biginfo .chipgrid,.editinfo .chipgrid{gap:6px}
+.biginfo .chipgrid .chip,.editinfo .chipgrid .chip{background:var(--card);color:var(--ink-2);border:1px solid var(--line);font-weight:500;font-size:11.5px}
 
-/* 종아리 판정 */
+/* 종아리 판정 — 라이트 표 (배경으로 읽히는 배지 톤) */
 table.calftable{width:100%;border-collapse:collapse;margin-top:20px;font-size:13.5px}
-table.calftable caption{text-align:left;font-family:var(--serif);font-weight:700;font-size:17px;margin-bottom:10px}
-table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:10px 10px 10px 0;text-align:left;vertical-align:top}
-.verdict-ok{color:#2e7d32;font-weight:700}
-.verdict-cond{color:#b8860b;font-weight:700}
-.verdict-no{color:var(--accent);font-weight:700}
-.verdict-limited{color:var(--ink-2);font-weight:700}
-@media (prefers-color-scheme: dark){.verdict-ok{color:#7cc47f}}
-:root[data-theme="dark"] .verdict-ok{color:#7cc47f}
+table.calftable caption{text-align:left;font-family:var(--sans);font-weight:800;font-size:18px;letter-spacing:-.02em;margin-bottom:12px}
+table.calftable th,table.calftable td{border-top:1px solid var(--line-2);padding:11px 10px 11px 0;text-align:left;vertical-align:top;word-break:keep-all}
+table.calftable td.verdict{padding-top:8px}
+.verdict-ok,.verdict-cond,.verdict-no,.verdict-limited{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:-.005em;padding:4px 11px;border-radius:999px}
+.verdict-ok{color:#1E7A3C;background:#E9F6ED}
+.verdict-cond{color:#A5690C;background:#FBF0DC}
+.verdict-no{color:var(--accent-deep);background:var(--accent-wash)}
+.verdict-limited{color:var(--ink-2);background:var(--line-2)}
 .calfref{margin-top:20px;max-width:640px}
-.calfref img{width:100%;border:1px solid var(--rule)}
-.calfref figcaption{margin-top:8px;font-size:12.5px;color:var(--ink-2)}
-.calfthumb{width:44px;height:44px;object-fit:cover;border:1px solid var(--rule);display:block}
+.calfref img{width:100%;border:1px solid var(--line);border-radius:var(--r-sm)}
+.calfref figcaption{margin-top:8px;font-size:12.5px;color:var(--ink-3)}
+.calfthumb{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:8px;display:block}
 .lookgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:20px}
-.lookstep{border-top:2px solid var(--ink);padding-top:10px}
-.looknum{font-family:var(--serif);font-style:italic;font-weight:700;font-size:22px;color:var(--accent)}
+.lookstep{border-top:2px solid var(--accent);padding-top:10px}
+.looknum{font-family:var(--sans);font-weight:800;font-size:20px;color:var(--accent-deep)}
 .lookstep h4{font-size:13.5px;margin:4px 0 4px}
 .lookdevice{font-size:12px;color:var(--ink-2);margin:0}
-.lookcover{display:inline-block;margin-top:6px;font-family:var(--mono);font-size:10.5px;border:1px solid var(--rule);padding:2px 7px;border-radius:100px;color:var(--ink-2)}
+.lookcover{display:inline-block;margin-top:6px;font-family:var(--mono);font-size:10.5px;border:1px solid var(--line);padding:2px 8px;border-radius:999px;color:var(--ink-3)}
 
 @media (max-width:980px){
   .editgrid{grid-template-columns:repeat(2,1fr)}
   .pgrid{grid-template-columns:repeat(3,1fr)}
   .biggrid{grid-template-columns:1fr}
-  .bigcard{grid-template-columns:160px 1fr}
-  .bigstrip img{width:160px}
+  .bigcard{grid-template-columns:150px 1fr}
+  .bigstrip img{width:150px}
   .lookgrid{grid-template-columns:repeat(3,1fr)}
 }
 @media (max-width:620px){
@@ -236,8 +251,8 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </nav>
 </header>
 <main>
-<section id="step0" aria-labelledby="step0-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">00</span><h2 id="step0-h">제품 3종 슬롯</h2></div>
+<section id="step0" class="band" aria-labelledby="step0-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 00</span><h2 id="step0-h">제품 3종 슬롯</h2></div>
 <div class="callout slotbox">
 <h3>제품 3종 슬롯</h3>
 <ul class="slotlist">
@@ -276,8 +291,8 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </div>
 </div>
 </section>
-<section id="stepA" aria-labelledby="stepA-h">
-<div class="sechead"><span class="stepnum accent" aria-hidden="true">A</span><h2 id="stepA-h">정석 구조 — 초반에 키 대비부터</h2></div>
+<section id="stepA" class="band soft" aria-labelledby="stepA-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP A</span><h2 id="stepA-h">정석 구조 — 초반에 키 대비부터</h2></div>
 <p class="lede">잘된 영상 대부분이 시작부터 키 대비를 보여주고 들어간다. HEI 좌우 스플릿 88% · 디퍼슈는 수치훅×전신×삼각대정면 38%(메모리 hei-vs-differ-keyheight-patterns).</p>
 <p class="evidence">좌우 스플릿 히어로 10 / 안된 0 · 제품단독 히어로 0 / 안된 4 · 안된 22건 중 상당수가 3초 안에 신발이 없다(③ 매트릭스).</p>
 <div class="beatblock">
@@ -531,8 +546,8 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 
 </div>
 </section>
-<section id="step1" aria-labelledby="step1-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">01</span><h2 id="step1-h">문제해결</h2></div>
+<section id="step1" class="band" aria-labelledby="step1-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 01</span><h2 id="step1-h">문제해결</h2></div>
 <p class="lede">비율은 공통 소구. 바지 끌림·기장 문제를 신발로 해결하는 흐름. 승무원·바지vs치마 축은 실측 0건.</p>
 <p class="evidence">비율·다리 축은 히어로 6건 + 시트 3건이고, “비율”이 0초 자막에 그대로 박힌 게 3건이다.</p>
 <h3 class="blocklabel">레퍼런스 (시트, 재생)</h3>
@@ -662,8 +677,8 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 <div class="notecard">안된 것: ④에 특정 배치 없음 — STEP X 「안된 것 전체」 갤러리 참고</div>
 <div class="chipgrid"><span class="chip">승무원인데 키 작아서(사실 비율 좋아 보이는 것)</span><span class="chip">오래 서 있는 직군 편하고 티 안 나게</span><span class="chip">바지수선</span><span class="chip">종아리알</span><span class="chip">바지에 예쁜 것 vs 치마에만 예쁜 것</span><span class="chip">"티 안 나게 150대→160대 되는 법"</span></div>
 </section>
-<section id="step2" aria-labelledby="step2-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">02</span><h2 id="step2-h">시각적 대비</h2></div>
+<section id="step2" class="band soft" aria-labelledby="step2-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 02</span><h2 id="step2-h">시각적 대비</h2></div>
 <p class="lede">선·합성·발목 표시로 키 차이를 한 프레임에서 증명.</p>
 <p class="evidence">좌우 스플릿 10건은 안된 쪽 22건에 단 1건도 없다.</p>
 <h3 class="blocklabel">레퍼런스 (시트, 재생)</h3>
@@ -859,8 +874,8 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 <div class="notecard">안된 것: ④에 특정 배치 없음 — STEP X 「안된 것 전체」 갤러리 참고</div>
 <div class="chipgrid"><span class="chip">본인 한 명으로 키 대비, 선을 잘 보이게</span><span class="chip">친구랑</span><span class="chip">150·155·160 핏 비교</span><span class="chip">키 비슷한 사람</span></div>
 </section>
-<section id="step3" aria-labelledby="step3-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">03</span><h2 id="step3-h">정보성</h2></div>
+<section id="step3" class="band" aria-labelledby="step3-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 03</span><h2 id="step3-h">정보성</h2></div>
 <p class="lede">키작은 콘텐츠를 하는 사람이 키높이 아이템을 추천하는 형식.</p>
 <p class="evidence">정보성 히어로 5건 + 오프라인 매장 히어로 2건, “오래 서 있는 직군” 소구는 실측 0건이다.</p>
 <h3 class="blocklabel">레퍼런스 (시트, 재생)</h3>
@@ -1059,8 +1074,8 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </div>
 <div class="chipgrid"><span class="chip">가격 저렴한데 가볍고 편해요</span><span class="chip">오프라인 매장 있으니 신어보고 구매</span></div>
 </section>
-<section id="step4" aria-labelledby="step4-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">04</span><h2 id="step4-h">밈 · 상황극</h2></div>
+<section id="step4" class="band soft" aria-labelledby="step4-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 04</span><h2 id="step4-h">밈 · 상황극</h2></div>
 <p class="lede">자동문·알바생 같은 짧은 상황극으로 훅을 만든다.</p>
 <p class="evidence">히어로 밈은 3건뿐이고 베라 알바생 밈은 실측 0건이다.</p>
 <h3 class="blocklabel">레퍼런스 (시트, 재생)</h3>
@@ -1133,8 +1148,8 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 <h3 class="blocklabel">안된 것</h3>
 <div class="notecard">안된 것: ④에 특정 배치 없음 — STEP X 「안된 것 전체」 갤러리 참고</div>
 </section>
-<section id="step5" aria-labelledby="step5-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">05</span><h2 id="step5-h">폼(매장 · 코디)</h2></div>
+<section id="step5" class="band" aria-labelledby="step5-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 05</span><h2 id="step5-h">폼(매장 · 코디)</h2></div>
 <p class="lede">착장 고정 + 신발 교체(매장형) / 신발 고정 + 착장 교체(코디형). 원본 컷 구조를 그대로 따른다.</p>
 <div class="fullcase formcase">
 <div class="frame">
@@ -1255,8 +1270,8 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </div>
 </div>
 </section>
-<section id="stepX" aria-labelledby="stepX-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">X</span><h2 id="stepX-h">안된 것 전체</h2></div>
+<section id="stepX" class="band tint" aria-labelledby="stepX-h">
+<div class="sechead"><span class="chip bad" aria-hidden="true">STEP X</span><h2 id="stepX-h">안된 것 전체</h2></div>
 <p class="lede">위 섹션에 배치가 적힌 것(정보성의 poseganch 1건)을 뺀 나머지 안된 것 전체. 조회수 오름차순.</p>
 <div class="cardgrid ">
 <figure class="card bad failcard">
@@ -1580,7 +1595,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 <p class="brand">EDIT 인힐 5종 + 자사몰 키높이 카테고리 100건</p>
 </header>
 <main>
-<section id="kh-edit" aria-labelledby="kh-edit-h">
+<section id="kh-edit" class="band" aria-labelledby="kh-edit-h">
 <div class="sechead"><h2 id="kh-edit-h">EDIT 인힐 5종</h2></div>
 <p class="lede">겉굽은 데일리 슈즈처럼 낮게, 속굽으로 보이지 않게 키높이를 더한 협업 라인. 파라·놀킨만 시딩 대상.</p>
 <div class="editgrid"><article class="editcard">
@@ -1640,7 +1655,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </div>
 </article></div>
 </section>
-<section id="kh-general" aria-labelledby="kh-general-h">
+<section id="kh-general" class="band soft" aria-labelledby="kh-general-h">
 <div class="sechead"><h2 id="kh-general-h">일반 키높이 100건</h2></div>
 <p class="lede">유형별 그룹, 그룹 안 가격 오름차순. 굽 cm·소구는 비전 판독값 — 판독 전 항목은 "상세 미판독".</p>
 <div class="pgroup">
@@ -2473,13 +2488,13 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 <p class="brand">"DIFFERENT VIBES, SAME NOISE" — 서로 다른 두 개의 무드, 하나의 새로운 사운드.</p>
 </header>
 <main>
-<section id="fw-cards" aria-labelledby="fw-cards-h">
+<section id="fw-cards" class="band" aria-labelledby="fw-cards-h">
 <div class="sechead"><h2 id="fw-cards-h">26FW 상품 10건</h2></div>
 <p class="lede">키높이 라인과 겹치는 상품은 배지 둘 다.</p>
 <div class="biggrid"><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4850_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4850_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4850_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span>
+<div class="tagrow"><span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span></div>
 <h3>홀랜드 벨크로 메리제인 로퍼</h3>
 <p class="meta">39,900원 · <span class="mono">PMSDR3i150, PMSDR3i508</span> · 굽 판독 미확보</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙(PMSDR3i150), 브라운(PMSDR3i150), 베이지(PMSDR3i150)</span></div>
@@ -2490,7 +2505,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </article><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4651_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4651_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4651_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span>
+<div class="tagrow"><span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span></div>
 <h3>커니스 플랫폼 메리제인 로퍼 PMLTR3i149</h3>
 <p class="meta">49,900원 · <span class="mono">PMLTR3i149</span> · 굽 판독 미확보</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙, 리벳블랙</span></div>
@@ -2501,7 +2516,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </article><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4380_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4380_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4380_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span>
+<div class="tagrow"><span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span></div>
 <h3>카더 플랫폼 롱&amp;앵클부츠</h3>
 <p class="meta">52,900원 · <span class="mono">BSLTS4h846, BLLTS4i157</span> · 굽 판독 미확보</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙-앵클(BSLTS4h846), 브라운-앵클(BSLTS4h846), 아이보리-앵클(BSLTS4h846), 블랙-롱(BLLTS4i157), 브라운-롱(BLLTS4i157)</span></div>
@@ -2512,7 +2527,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </article><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4649_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4649_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4649_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span>
+<div class="tagrow"><span class="tag inline">FW26</span></div>
 <h3>테이퍼 트리플 스트랩 로퍼 LFLTR3i147</h3>
 <p class="meta">55,900원 · <span class="mono">LFLTR3i147</span> · 굽 판독 미확보</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙, 브라운</span></div>
@@ -2523,7 +2538,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </article><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4652_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4652_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4652_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span>
+<div class="tagrow"><span class="tag inline">FW26</span></div>
 <h3>벌키 플랫폼 스니커즈 SNSDR3i151</h3>
 <p class="meta">65,900원 · <span class="mono">SNSDR3i151</span> · 굽 판독 미확보</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙, 차콜, 브라운, 틸</span></div>
@@ -2534,7 +2549,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </article><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4677_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4677_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4677_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span>
+<div class="tagrow"><span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span></div>
 <h3>무비 슬라우치 부츠 BSSDR4i156</h3>
 <p class="meta">69,900원 · <span class="mono">BSSDR4i156</span> · 굽 총 7.5cm</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙, 다크브라운, 코코아</span></div>
@@ -2545,7 +2560,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </article><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4655_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4655_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4655_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span>
+<div class="tagrow"><span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span></div>
 <h3>페탈 커스텀 멀티웨이 롱부츠</h3>
 <p class="meta">75,900원 · <span class="mono">BLLTS4i159, WTLTS4i184, WTSDS4i187</span> · 굽 판독 미확보</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙-레더(BLLTS4i159), 브라운-레더(BLLTS4i159), 차콜-레더(BLLTS4i159)</span></div>
@@ -2556,7 +2571,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </article><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4657_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4657_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4657_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span>
+<div class="tagrow"><span class="tag inline">FW26</span></div>
 <h3>제퍼 레이스업 플랫폼 롱부츠 BLLTR4i161</h3>
 <p class="meta">79,900원 · <span class="mono">BLLTR4i161</span> · 굽 판독 미확보</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙</span></div>
@@ -2567,7 +2582,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </article><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4653_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4653_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4653_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span>
+<div class="tagrow"><span class="tag inline">FW26</span> <span class="tag inline kh">키높이</span></div>
 <h3>블래티 슬라우치 부츠</h3>
 <p class="meta">85,900원 · <span class="mono">BSLTR4i155, BLLTR4i158, BSSDR4i194, BLSDR4i195</span> · 굽 총 3.5cm</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙-레더-Short(BSLTR4i155), 블랙-스웨이드-Short(BSSDR4i194), 베이지-스웨이드-Short(BSSDR4i194), 블랙-레더-Long(BLLTR4i158), 블랙-스웨이드-Long(BLSDR4i195), 베이지-스웨이드-Long(BLSDR4i195)</span></div>
@@ -2578,7 +2593,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </article><article class="bigcard">
 <div class="bigstrip"><img src="assets/products/detail/4656_01.jpg" loading="lazy" alt=""><img src="assets/products/detail/4656_02.jpg" loading="lazy" alt=""><img src="assets/products/detail/4656_03.jpg" loading="lazy" alt=""></div>
 <div class="biginfo">
-<span class="tag inline">FW26</span>
+<div class="tagrow"><span class="tag inline">FW26</span></div>
 <h3>렉터 하네스 플랫폼 롱부츠 BLLTR4i160</h3>
 <p class="meta">85,900원 · <span class="mono">BLLTR4i160</span> · 굽 판독 미확보</p>
 <div class="optrow"><span class="optlabel">사이즈</span><span>225, 230, 235, 240, 245, 250</span></div><div class="optrow"><span class="optlabel">색상</span><span>블랙</span></div>
@@ -2588,7 +2603,7 @@ table.calftable th,table.calftable td{border-top:1px solid var(--rule);padding:1
 </div>
 </article></div>
 </section>
-<section id="fw-calf" aria-labelledby="fw-calf-h">
+<section id="fw-calf" class="band soft" aria-labelledby="fw-calf-h">
 <div class="sechead"><h2 id="fw-calf-h">종아리 커버 소구 판정</h2></div>
 <p class="lede">레퍼런스: #광고 기호(khiho_official) · 45초 · 좋아요 653 — 0~2초 맨다리 정면 '종아리 때문에 부츠만 신는 핫걸들?' + '둘레 : 35cm' 자막 — 본인 종아리를 수치로 먼저 깐다 <a class="srclink" href="https://www.instagram.com/reel/DcU5c0MT9uQ/" target="_blank" rel="noopener">레퍼런스 릴 ↗</a></p>
 <div class="lookgrid"><div class="lookstep">
