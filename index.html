@@ -1,162 +1,384 @@
 <title>착한구두 촬영 가이드 v2</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root{
-  --paper:#F5F1E8; --paper-2:#EDE7DA; --ink:#171310; --ink-2:#6E655A;
-  --rule:#D9D1C1; --accent:#7B2230;
-  --serif:'Gowun Batang','Nanum Myeongjo',Georgia,serif;
-  --sans:'Noto Sans KR',system-ui,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
+  --bg:#FFFFFF; --soft:#FAF8F5; --tint:#FDF1EE;
+  --ink:#111113; --ink-2:#55555E; --ink-3:#8B8B94;
+  --line:#E8E5DF; --line-2:#F1EEE9;
+  --accent:#E4432B; --accent-deep:#C0301B; --accent-wash:#FCEDE9; --on-accent:#FFFFFF;
+  --card:#FFFFFF;
+  --sh:0 1px 2px rgba(17,17,19,.04),0 10px 26px -14px rgba(17,17,19,.20);
+  --sh-lift:0 2px 6px rgba(17,17,19,.06),0 22px 44px -18px rgba(17,17,19,.30);
+  --r:18px; --r-sm:12px;
+  --sans:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
 }
 @media (prefers-color-scheme: dark){
-  :root{--paper:#14120E;--paper-2:#1D1A15;--ink:#EDE7DA;--ink-2:#978D7F;--rule:#332E26;--accent:#C96E78}
+  :root{
+    --bg:#121215; --soft:#191A1D; --tint:#231719;
+    --ink:#F3F3F5; --ink-2:#A9A9B2; --ink-3:#7C7C86;
+    --line:#2B2C31; --line-2:#232428;
+    --accent:#FF6F52; --accent-deep:#FF6F52; --accent-wash:#2A1B18; --on-accent:#141416;
+    --card:#1B1C20;
+    --sh:0 1px 2px rgba(0,0,0,.4),0 10px 26px -14px rgba(0,0,0,.7);
+    --sh-lift:0 2px 6px rgba(0,0,0,.5),0 22px 44px -18px rgba(0,0,0,.8);
+  }
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;overflow-x:hidden}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:86px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.68;letter-spacing:-.005em;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;font-feature-settings:'tnum' 0}
 ::selection{background:var(--accent);color:#fff}
-main,header{max-width:1180px;margin:0 auto;padding:0 24px}
-a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
-a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-
-/* hero */
-.overline{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-2);margin:44px 0 14px}
-hr.hairline{border:0;border-top:1px solid var(--ink);margin:0}
-h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,6.4vw,66px);line-height:1.2;letter-spacing:-.018em;margin:36px 0 0;max-width:16ch}
-h1 mark{background:none;color:var(--accent);padding:0;box-shadow:inset 0 -.07em 0 var(--accent)}
-.brand{font-family:var(--sans);font-size:13.5px;letter-spacing:.02em;color:var(--ink-2);margin:20px 0 0}
-
-/* nav */
-.navgrid{display:flex;flex-wrap:wrap;margin:46px 0 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
-.navitem{flex:1 1 0;min-width:150px;display:flex;align-items:baseline;gap:10px;padding:16px 14px;text-decoration:none;color:var(--ink);border-right:1px solid var(--rule);transition:color .18s}
-.navitem:first-child{padding-left:0}
-.navitem:last-child{border-right:0}
-.navitem em{font-family:var(--mono);font-style:normal;font-size:11px;letter-spacing:.12em;color:var(--ink-2);transition:color .18s}
-.navitem b{font-weight:500;font-size:15px;line-height:1.35}
-.navitem:hover,.navitem:hover em{color:var(--accent)}
-
-/* section */
-section{margin-top:120px;border-top:1px solid var(--ink)}
-section>h2{font-family:var(--serif);font-weight:700;font-size:clamp(24px,3.4vw,36px);letter-spacing:-.012em;margin:46px 0 12px}
-.sechead{position:relative;min-height:120px;display:flex;align-items:flex-end;padding-top:46px;margin:0 0 16px}
-.stepnum{position:absolute;left:-5px;top:8px;font-family:var(--serif);font-style:italic;font-weight:700;font-size:clamp(92px,12vw,150px);line-height:.82;letter-spacing:-.05em;color:var(--ink);opacity:.1;pointer-events:none;user-select:none}
-.stepnum.accent{color:var(--accent);opacity:.24}
-.sechead h2{position:relative;font-family:var(--serif);font-weight:700;font-size:clamp(24px,3.4vw,36px);letter-spacing:-.012em;margin:0;padding-left:6px}
-h3{font-family:var(--serif);font-weight:700;font-size:20px;letter-spacing:-.01em;margin:38px 0 6px}
-.lede{font-size:16.5px;color:var(--ink-2);max-width:66ch;margin:0}
-.lede strong{color:var(--ink);font-weight:700}
-
-/* callout */
-.callout{margin-top:26px;padding:2px 0 2px 20px;border-left:2px solid var(--accent);font-size:15px;max-width:74ch}
-.callout strong{color:var(--accent);font-weight:700}
-.callout.rule{border-left-color:var(--ink)}
-.rulelabel{display:block;font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.06em;color:var(--ink);margin-bottom:5px}
-
-/* cards */
-.cardgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:24px}
-.cardgrid.three{grid-template-columns:repeat(3,1fr)}
-.hookbox{margin-top:40px;padding-top:20px;border-top:1px solid var(--rule)}
-.hookbox h3{margin:0}
-.hookbox p{color:var(--ink-2);font-size:14.5px;margin:4px 0 0;max-width:62ch}
-.card{margin:0}
-.frame{position:relative;aspect-ratio:9/16;overflow:hidden;background:var(--ink);border:1px solid var(--rule);border-radius:2px;transition:border-color .2s}
-.frame video,.frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .2s ease}
-.card:hover .frame{border-color:var(--ink)}
-.card:hover .frame video,.card:hover .frame img{transform:scale(1.02)}
-.card:hover figcaption .who,.card:hover figcaption .when{color:var(--accent)}
-.card:hover figcaption .when{border-left-color:var(--accent)}
-.tag{position:absolute;top:0;left:0;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;padding:4px 8px}
-figcaption{margin-top:12px;padding-top:10px;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:6px;font-size:13.5px;line-height:1.55}
-figcaption .who{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--ink-2);transition:color .2s}
-figcaption .when{font-family:var(--mono);font-size:11px;color:var(--ink-2);border-left:2px solid var(--rule);padding-left:8px;width:fit-content;transition:color .2s,border-color .2s}
-
-/* bad */
-.card.bad .frame{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
-.card.bad .frame::after{content:"✕  이러면 넘겨요";position:absolute;left:0;right:0;bottom:0;background:var(--accent);color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;padding:6px 8px;text-align:center}
-.card.bad figcaption{border-top-color:var(--accent)}
-.card.bad figcaption .who::before{content:"✕  ";color:var(--accent)}
-.dontlist{list-style:none;padding:0;margin-top:16px;columns:2;column-gap:44px;font-size:14.5px;color:var(--ink-2)}
-.dontlist li{break-inside:avoid;margin-bottom:10px;padding-left:20px;position:relative}
-.dontlist li::before{content:"✕";position:absolute;left:0;color:var(--accent);font-size:11px}
-.note{color:var(--ink-2);font-size:13px;margin-top:14px}
-
-/* checklist */
-.checklist{list-style:none;padding:0;margin-top:28px;border-top:1px solid var(--ink)}
-.checklist li{border-bottom:1px solid var(--rule)}
-.checklist label{display:flex;align-items:baseline;gap:14px;cursor:pointer;font-size:14.5px;padding:15px 2px}
-.checklist input{width:16px;height:16px;flex:none;accent-color:var(--accent);align-self:center;margin:0}
-.clabel{font-family:var(--mono);font-size:12px;letter-spacing:.03em;color:var(--ink-2);flex:none;min-width:70px;transition:opacity .2s}
-.clabel.c-bad{color:var(--accent)}
-.ctext{flex:0 1 auto;transition:color .2s}
-.dots{flex:1 1 24px;min-width:16px;border-bottom:1px dotted var(--rule);transform:translateY(-5px)}
-.cnum{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--ink-2);flex:none;transition:color .2s}
-.checklist input:checked ~ .ctext{text-decoration:line-through;text-decoration-color:var(--accent);color:var(--ink-2)}
-.checklist input:checked ~ .clabel{opacity:.4}
-.checklist input:checked ~ .cnum{color:var(--accent)}
-
-/* full cases */
-.fullcase{display:grid;grid-template-columns:398px 1fr;gap:38px;margin-top:46px;align-items:start}
-.fullcase .frame{max-width:380px;margin:9px;border-color:var(--ink);outline:1px solid var(--ink);outline-offset:8px}
-.fullinfo h3{margin-top:8px}
-.fullinfo .meta{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--ink-2);margin:2px 0 12px}
-.story{list-style:none;padding:14px 0 0;margin-top:16px;border-top:1px solid var(--rule);font-size:14.5px;display:flex;flex-direction:column;gap:10px}
-.story b{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.03em;color:var(--ink-2);display:inline-block;min-width:58px}
-
-/* tables */
-table{width:100%;border-collapse:collapse;margin-top:36px;font-size:14.5px}
-table caption{font-family:var(--serif);font-weight:700;font-size:18px;text-align:left;margin-bottom:10px;color:var(--ink)}
-table th,table td{border-top:1px solid var(--rule);padding:13px 12px 13px 0;text-align:left;vertical-align:top}
-table th{width:150px;font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.03em;color:var(--ink-2);padding-top:15px}
-footer{margin:36px 0 90px}
+a{color:var(--accent-deep);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{
+  outline:2.5px solid var(--accent-deep);outline-offset:3px;border-radius:6px}
+img,video{max-width:100%}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 
+/* ---------- layout ---------- */
+.inner,.heroinner,.mininner,.stepper ol{max-width:1200px;margin:0 auto;padding:0 28px}
+section.band{position:relative;padding:82px 0 92px}
+section.band::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;
+  width:100vw;transform:translateX(-50%);background:transparent}
+section.band.soft::before{background:var(--soft)}
+section.band.tint::before{background:var(--tint)}
+
+/* ---------- mini nav ---------- */
+.minibar{position:fixed;top:0;left:0;right:0;z-index:50;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line);
+  transform:translateY(-102%);transition:transform .28s cubic-bezier(.4,0,.2,1)}
+.minibar.show{transform:none}
+.mininner{display:flex;align-items:center;gap:22px;height:58px}
+.minibrand{font-size:13.5px;font-weight:700;letter-spacing:-.01em;white-space:nowrap;flex:none}
+.minilinks{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+.minilinks::-webkit-scrollbar{display:none}
+.minilinks a{display:flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;
+  font-size:13.5px;font-weight:600;color:var(--ink-2);text-decoration:none;white-space:nowrap;
+  transition:background .18s,color .18s}
+.minilinks a em{font-family:var(--mono);font-style:normal;font-size:11px;font-weight:600;
+  color:var(--ink-3);transition:color .18s}
+.minilinks a:hover{background:var(--line-2);color:var(--ink)}
+.minilinks a.active{background:var(--accent-deep);color:var(--on-accent)}
+.minilinks a.active em{color:var(--on-accent);opacity:.72}
+
+/* ---------- hero ---------- */
+.hero{padding:48px 0 0;position:relative}
+.hero::before{content:"";position:absolute;z-index:-1;inset:0 auto auto 50%;
+  width:100vw;height:100%;transform:translateX(-50%);
+  background:radial-gradient(120% 90% at 82% 0%,var(--accent-wash) 0%,transparent 62%)}
+.heroinner{display:grid;grid-template-columns:minmax(0,1fr) 336px;gap:56px;align-items:center}
+.overline{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent-deep);margin:0 0 20px}
+h1{font-weight:800;font-size:clamp(36px,6vw,72px);line-height:1.08;letter-spacing:-.035em;
+  margin:0;max-width:14ch;word-break:keep-all}
+h1 mark{background:linear-gradient(transparent 58%,var(--accent-wash) 58%);color:var(--ink);
+  padding:0 .04em;box-shadow:inset 0 -.1em 0 var(--accent)}
+.brand{font-size:14px;font-weight:600;color:var(--ink-3);margin:22px 0 0;letter-spacing:-.01em}
+.herovid{padding-top:6px}
+.herocard{margin:0}
+.herocard .frame{aspect-ratio:9/16;border-radius:var(--r)}
+.herocard figcaption{margin-top:14px}
+
+/* ---------- stepper ---------- */
+.stepper{margin-top:30px;padding-bottom:22px}
+.stepper ol{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;
+  margin:0;position:relative}
+.stepper li{position:relative;min-width:0}
+.stepper li::after{content:"";position:absolute;top:19px;left:calc(50% + 24px);right:calc(-50% + 24px);
+  height:2px;background:var(--line);border-radius:2px}
+.stepper li:last-child::after{display:none}
+.stepper a{display:flex;flex-direction:column;align-items:center;gap:11px;text-decoration:none;
+  color:var(--ink);padding:4px 2px 8px;border-radius:14px}
+.snum{width:38px;height:38px;flex:none;display:grid;place-items:center;border-radius:50%;
+  background:var(--bg);border:2px solid var(--line);font-family:var(--mono);font-size:13px;
+  font-weight:600;color:var(--ink-2);position:relative;z-index:1;
+  transition:background .2s,border-color .2s,color .2s,transform .2s}
+.stitle{font-size:14.5px;font-weight:600;letter-spacing:-.015em;text-align:center;line-height:1.35}
+.stepper a:hover .snum{border-color:var(--accent);color:var(--accent-deep);transform:translateY(-2px)}
+.stepper li:last-child .snum{border-color:var(--accent);color:var(--accent-deep)}
+.stepper li:last-child a:hover .snum{background:var(--accent-deep);color:var(--on-accent)}
+
+/* ---------- section head ---------- */
+.sechead{margin:0 0 18px}
+.chip{display:inline-block;background:var(--accent-deep);color:var(--on-accent);
+  font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.14em;
+  padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.chip.bad{background:var(--ink);color:var(--bg)}
+h2{font-weight:800;font-size:clamp(27px,3.6vw,42px);line-height:1.2;letter-spacing:-.032em;
+  margin:0;max-width:20ch;word-break:keep-all}
+.lede{font-size:17px;color:var(--ink-2);max-width:68ch;margin:0;word-break:keep-all}
+.lede strong{color:var(--ink);font-weight:700}
+h3{font-weight:700;font-size:19px;letter-spacing:-.022em;margin:0}
+.subhead{margin:56px 0 0;font-size:21px}
+.note{color:var(--ink-3);font-size:13.5px;margin-top:16px}
+
+/* ---------- callout ---------- */
+.callout{margin-top:26px;padding:20px 24px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r);box-shadow:var(--sh);font-size:15px;max-width:74ch;
+  line-height:1.65;word-break:keep-all}
+.callout strong{color:var(--accent-deep);font-weight:700}
+.callout.face,.callout.rule{margin-top:32px;border-left:4px solid var(--accent)}
+.rulelabel{display:inline-block;background:var(--ink);color:var(--bg);font-family:var(--mono);
+  font-size:11px;font-weight:600;letter-spacing:.1em;padding:4px 10px;border-radius:999px;
+  margin-right:10px;vertical-align:1px}
+.callout.rule strong{color:var(--ink)}
+
+/* ---------- cards ---------- */
+.cardgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:30px}
+.cardgrid.three{grid-template-columns:repeat(3,1fr)}
+.card{margin:0;min-width:0}
+.frame{position:relative;aspect-ratio:9/16;overflow:hidden;background:#0C0C0E;
+  border-radius:16px;border:1px solid var(--line);box-shadow:var(--sh);
+  transition:box-shadow .24s ease,transform .24s ease,border-color .24s ease}
+.frame video,.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.card:hover .frame{transform:translateY(-4px);box-shadow:var(--sh-lift)}
+.tag{position:absolute;top:10px;left:10px;background:rgba(12,12,14,.58);color:#fff;
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.01em;
+  padding:5px 10px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+figcaption{margin-top:13px;display:flex;flex-direction:column;gap:6px;
+  font-size:14.5px;line-height:1.5;word-break:keep-all}
+figcaption .who{font-size:12.5px;font-weight:600;color:var(--ink-3);letter-spacing:-.01em}
+figcaption .who .views{font-family:var(--mono);font-weight:600;font-size:12.5px;color:var(--ink-2)}
+figcaption .desc{color:var(--ink);font-size:14.5px}
+figcaption .desc strong{font-weight:700}
+figcaption .when{align-self:flex-start;margin-top:2px;font-size:12px;
+  font-weight:600;color:var(--ink-2);background:var(--line-2);border-radius:999px;padding:4px 11px;
+  letter-spacing:-.01em}
+
+/* hook boxes */
+.hookboxes{margin-top:34px;display:flex;flex-direction:column;gap:22px}
+.hookbox{background:var(--card);border:1px solid var(--line);border-radius:22px;
+  padding:26px 26px 30px;box-shadow:var(--sh)}
+.hookhead{border-left:3px solid var(--accent);padding-left:14px}
+.hookhead p{color:var(--ink-2);font-size:14.5px;margin:5px 0 0;max-width:64ch;word-break:keep-all}
+.hookbox .cardgrid{margin-top:22px}
+
+/* bad cards */
+.card.bad .frame{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-wash),var(--sh)}
+.card.bad:hover .frame{box-shadow:0 0 0 2px var(--accent-wash),var(--sh-lift)}
+.card.bad .tag{background:var(--accent-deep);color:var(--on-accent)}
+.card.bad .frame::after{content:"✕ 이러면 넘겨요";position:absolute;left:10px;bottom:10px;
+  background:var(--accent-deep);color:var(--on-accent);font-size:11.5px;font-weight:700;
+  letter-spacing:-.01em;padding:5px 11px;border-radius:999px}
+.card.bad figcaption .who{color:var(--accent-deep)}
+.card.bad figcaption .who .views{color:var(--accent-deep)}
+
+.dontlist{list-style:none;padding:0;margin-top:22px;columns:2;column-gap:40px;font-size:14.5px}
+.dontlist li{break-inside:avoid;margin-bottom:12px;padding:11px 14px 11px 38px;position:relative;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm);
+  color:var(--ink-2);word-break:keep-all}
+.dontlist li::before{content:"✕";position:absolute;left:14px;top:11px;color:var(--accent-deep);
+  font-size:12px;font-weight:800}
+
+/* ---------- checklist ---------- */
+.checklist{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:10px;max-width:920px}
+.citem label{display:flex;align-items:flex-start;gap:15px;cursor:pointer;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:18px 20px;transition:border-color .18s,box-shadow .18s,background .18s}
+.citem label:hover{border-color:var(--ink-3);box-shadow:var(--sh)}
+.citem input{appearance:none;-webkit-appearance:none;flex:none;margin:1px 0 0;
+  width:24px;height:24px;border:2px solid var(--ink-3);border-radius:8px;background:var(--bg);
+  display:grid;place-items:center;cursor:pointer;transition:background .16s,border-color .16s}
+.citem input:checked{background:var(--accent-deep);border-color:var(--accent-deep)}
+.citem input:checked::after{content:"";width:11px;height:6px;
+  border-left:2.5px solid var(--on-accent);border-bottom:2.5px solid var(--on-accent);
+  transform:rotate(-45deg) translate(1px,-2px)}
+.cbody{display:flex;flex-direction:column;gap:5px;min-width:0}
+.clabel{font-size:12px;font-weight:700;letter-spacing:-.005em;color:var(--ink-3)}
+.clabel.c-bad{color:var(--accent-deep)}
+.ctext{font-size:15.5px;font-weight:500;letter-spacing:-.015em;word-break:keep-all;
+  transition:color .18s}
+.cnum{margin-left:auto;align-self:center;font-family:var(--mono);font-size:12px;
+  color:var(--ink-3);flex:none}
+.citem input:checked ~ .cbody .ctext{text-decoration:line-through;
+  text-decoration-color:var(--accent);text-decoration-thickness:2px;color:var(--ink-3)}
+.citem input:checked ~ .cbody .clabel{opacity:.5}
+.citem:has(input:checked) label{background:var(--accent-wash);border-color:var(--accent)}
+#count{font-family:var(--sans);font-weight:600;color:var(--ink-2)}
+
+/* ---------- full cases ---------- */
+.fullgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:30px}
+.fullcase{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);
+  border-radius:22px;padding:18px;box-shadow:var(--sh);min-width:0}
+.fullcase .frame{aspect-ratio:9/16;width:100%}
+.fullcase:hover .frame{transform:none;box-shadow:var(--sh)}
+.fullinfo{display:flex;flex-direction:column;flex:1;padding:18px 2px 2px}
+.fullinfo h3{font-size:20px}
+.fullinfo .meta{font-family:var(--mono);font-size:12.5px;letter-spacing:.02em;color:var(--ink-3);
+  margin:7px 0 0}
+.fullinfo .meta .fviews{color:var(--ink-2);font-weight:600}
+.story{list-style:none;padding:18px 0 0;margin:18px 0 0;border-top:1px solid var(--line);
+  font-size:14.5px;display:flex;flex-direction:column;gap:12px}
+.story li{display:flex;gap:14px;align-items:flex-start;word-break:keep-all}
+.story b{flex:none;min-width:62px;font-size:11.5px;font-weight:700;letter-spacing:.04em;
+  color:var(--accent-deep);background:var(--accent-wash);border-radius:999px;
+  padding:4px 10px;text-align:center;margin-top:2px}
+.iglink{display:inline-flex;align-items:center;align-self:flex-start;margin-top:auto;
+  font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);
+  border:1px solid var(--line);border-radius:999px;padding:9px 18px;
+  transition:border-color .18s,color .18s,background .18s}
+.story{margin-bottom:22px}
+.iglink:hover{border-color:var(--accent);color:var(--accent-deep);background:var(--accent-wash)}
+
+/* ---------- tables ---------- */
+.tablegrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-top:8px;
+  align-items:start}
+.tablewrap{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px 28px 10px;box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+table caption{font-weight:800;font-size:18px;letter-spacing:-.02em;text-align:left;
+  margin-bottom:16px;color:var(--ink);word-break:keep-all}
+table th,table td{border-top:1px solid var(--line-2);padding:13px 0;text-align:left;
+  vertical-align:top;word-break:keep-all}
+table tr:first-child th,table tr:first-child td{border-top:0}
+table th{width:110px;padding-right:16px;font-size:12.5px;font-weight:700;letter-spacing:.02em;
+  color:var(--accent-deep)}
+table td{color:var(--ink-2)}
+.tablewrap .note{margin:14px 0 16px}
+footer{margin:46px 0 0;padding-top:26px;border-top:1px solid var(--line)}
+footer .note{margin:0}
+
+/* ---------- motion ---------- */
+.rv{opacity:0;transform:translateY(16px);
+  transition:opacity .55s cubic-bezier(.22,.7,.3,1),transform .55s cubic-bezier(.22,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@keyframes heroUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.herotext>*,.herovid,.stepper li{animation:heroUp .7s cubic-bezier(.22,.7,.3,1) both}
+.herotext>.overline{animation-delay:.02s}
+.herotext>h1{animation-delay:.08s}
+.herotext>.brand{animation-delay:.16s}
+.herotext>.callout{animation-delay:.22s}
+.herovid{animation-delay:.18s}
+.stepper li:nth-child(1){animation-delay:.28s}
+.stepper li:nth-child(2){animation-delay:.34s}
+.stepper li:nth-child(3){animation-delay:.40s}
+.stepper li:nth-child(4){animation-delay:.46s}
+.stepper li:nth-child(5){animation-delay:.52s}
+
 @media (prefers-reduced-motion: reduce){
-  .frame video,.frame img{transition:none}
-  .card:hover .frame video,.card:hover .frame img{transform:none}
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .rv{opacity:1;transform:none}
+  .card:hover .frame{transform:none}
 }
-@media (max-width:980px){
-  section{margin-top:88px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .heroinner{grid-template-columns:minmax(0,1fr) 290px;gap:40px}
+  .cardgrid{gap:18px}
+}
+@media (max-width:900px){
+  section.band{padding:62px 0 70px}
+  .heroinner{grid-template-columns:1fr;gap:34px}
+  .herovid{max-width:300px}
+  h1{max-width:18ch}
   .cardgrid,.cardgrid.three{grid-template-columns:repeat(2,1fr)}
-  .fullcase{grid-template-columns:1fr}
-  .fullcase .frame{max-width:300px}
+  .fullgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tablegrid{grid-template-columns:1fr}
+  .stepper ol{grid-template-columns:repeat(5,1fr);gap:6px}
+  .stitle{font-size:12.5px}
+  .stepper li::after{left:calc(50% + 20px);right:calc(-50% + 20px)}
 }
 @media (max-width:620px){
-  main,header{padding:0 18px}
-  .cardgrid,.cardgrid.three{grid-template-columns:1fr}
+  body{font-size:15.5px}
+  .inner,.heroinner,.mininner,.stepper ol{padding:0 18px}
+  .hero{padding-top:46px}
+  section.band{padding:52px 0 58px}
+  .heroinner{gap:28px}
+  .herovid{max-width:100%}
+  .cardgrid,.cardgrid.three{grid-template-columns:repeat(2,1fr);gap:14px}
+  .hookbox{padding:20px 16px 22px;border-radius:18px}
+  figcaption{font-size:13.5px}
+  figcaption .desc{font-size:13.5px}
   .dontlist{columns:1}
-  .navgrid{display:block}
-  .navitem{border-right:0;border-bottom:1px solid var(--rule);padding:13px 0}
-  .navitem:last-child{border-bottom:0}
-  .sechead{min-height:98px;padding-top:38px}
-  .checklist label{flex-wrap:wrap;gap:10px}
-  .dots{display:none}
-  .cnum{margin-left:auto}
-  .fullcase .frame{max-width:100%;margin:6px}
+  .stepper{margin-top:40px}
+  .stepper ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;
+    padding-left:18px;padding-right:18px}
+  .stepper li::after{display:none}
+  .stepper a{flex-direction:row;justify-content:flex-start;gap:10px;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;padding:9px 12px}
+  .stitle{text-align:left}
+  .snum{width:30px;height:30px;font-size:12px}
+  .stitle{font-size:13.5px}
+  .minibrand{display:none}
+  .mininner{height:52px;gap:0}
+  .minilinks{margin-left:0}
+  .minilinks a span{display:none}
+  .minilinks a{padding:8px 13px}
+  .minilinks a em{font-size:12.5px}
+  .fullgrid{grid-template-columns:1fr;gap:18px}
+  .fullcase{padding:14px;border-radius:18px}
+  .citem label{padding:15px 16px;gap:12px}
+  .ctext{font-size:14.5px}
+  .cnum{display:none}
+  .tablewrap{padding:20px 18px 6px}
+  table th{width:88px;padding-right:12px}
+}
+@media (max-width:360px){
+  .cardgrid,.cardgrid.three{grid-template-columns:1fr}
 }
 
 </style>
-<header>
+<div class="minibar" id="minibar">
+<div class="mininner">
+<span class="minibrand">착한구두 촬영 가이드</span>
+<nav class="minilinks" aria-label="스텝 바로가기">
+<a href="#step1" data-sec="step1"><em>01</em><span>0~3초 훅</span></a>
+<a href="#step2" data-sec="step2"><em>02</em><span>3초 뒤 매장</span></a>
+<a href="#step3" data-sec="step3"><em>03</em><span>중간 신어보기</span></a>
+<a href="#step4" data-sec="step4"><em>04</em><span>마지막 신발 블록</span></a>
+<a href="#step5" data-sec="step5"><em>X</em><span>하지 마세요</span></a>
+</nav>
+</div>
+</div>
+<header class="hero">
+<div class="heroinner">
+<div class="herotext">
 <p class="overline">CHAAKAN · SHOOTING GUIDE</p>
-<hr class="hairline">
 <h1>매장에서 신발 영상, 이 <mark>순서</mark>로 찍어요</h1>
 <p class="brand">착한구두 촬영 가이드</p>
-<nav class="navgrid" aria-label="스텝 이동">
-<a href="#step1" class="navitem"><em>01</em><b>0~3초 훅</b></a>
-<a href="#step2" class="navitem"><em>02</em><b>3초 뒤 매장</b></a>
-<a href="#step3" class="navitem"><em>03</em><b>중간 신어보기</b></a>
-<a href="#step4" class="navitem"><em>04</em><b>마지막 신발 블록</b></a>
-<a href="#step5" class="navitem"><em>X</em><b>하지 마세요</b></a>
-</nav>
 <div class="callout">폼은 둘, 순서는 같아요: 매장을 더 보여줄 거면 <strong>폼 A</strong> = 옷 고정·신발만 갈아 신음(36초 안팎). 신발 한 켤레의 코디 폭을 보여줄 거면 <strong>폼 B</strong> = 신발 고정·옷 교체(28초 안팎). 어느 쪽이든 아래 1→2→3→4 순서는 같습니다.</div>
+</div>
+<div class="herovid">
+<figure class="herocard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/hook_so0syl.jpg" src="assets/c/hook_so0syl.mp4"></video>
+<span class="tag">0~3초 훅</span>
+</div>
+<figcaption>
+<span class="who">SPA 매장 · <b class="views">44.7만</b></span>
+<span class="desc">착용샷 5컷 0.6초씩 → 4초에 매장으로</span>
+</figcaption>
+</figure>
+</div>
+</div>
+<nav class="stepper" aria-label="스텝 이동">
+<ol>
+<li><a href="#step1"><span class="snum">01</span><span class="stitle">0~3초 훅</span></a></li>
+<li><a href="#step2"><span class="snum">02</span><span class="stitle">3초 뒤 매장</span></a></li>
+<li><a href="#step3"><span class="snum">03</span><span class="stitle">중간 신어보기</span></a></li>
+<li><a href="#step4"><span class="snum">04</span><span class="stitle">마지막 신발 블록</span></a></li>
+<li><a href="#step5"><span class="snum">X</span><span class="stitle">하지 마세요</span></a></li>
+</ol>
+</nav>
 </header>
 <main>
-<section id="step1" aria-labelledby="step1-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">01</span><h2 id="step1-h">훅: 셋 중 하나로 시작해요</h2></div>
+<section id="step1" class="band" aria-labelledby="step1-h">
+<div class="inner">
+<div class="sechead"><span class="chip">STEP 01</span><h2 id="step1-h">훅: 셋 중 하나로 시작해요</h2></div>
 <p class="lede">매장 릴 25편을 초 단위로 뜯었어요. <strong>16편 중 15편이 첫 프레임(0~1초)에 자막이 떠 있었고</strong>, 시작 방식은 아래 셋 중 하나였어요. 영상은 실제 0~3초예요.</p>
+<div class="hookboxes">
 <div class="hookbox">
+<div class="hookhead">
 <h3>거울 셀피 + 자막 한 줄</h3>
 <p>25편 중 48%가 이걸로 시작. 옷·신발 여러 개를 0.5~1초씩 갈아 끼우며 보여줘요.</p>
+</div>
 <div class="cardgrid three">
 <figure class="card ">
 <div class="frame">
@@ -164,8 +386,8 @@ footer{margin:36px 0 90px}
 
 </div>
 <figcaption>
-<span class="who">SPA 매장 · 44.7만</span>
-<span>착용샷 5컷 0.6초씩 → 4초에 매장으로</span>
+<span class="who">SPA 매장 · <b class="views">44.7만</b></span>
+<span class="desc">착용샷 5컷 0.6초씩 → 4초에 매장으로</span>
 
 </figcaption>
 </figure>
@@ -175,8 +397,8 @@ footer{margin:36px 0 90px}
 
 </div>
 <figcaption>
-<span class="who">SPA 매장 · 23.3만</span>
-<span>거울 전신 3착장 0.9초씩</span>
+<span class="who">SPA 매장 · <b class="views">23.3만</b></span>
+<span class="desc">거울 전신 3착장 0.9초씩</span>
 
 </figcaption>
 </figure>
@@ -186,15 +408,17 @@ footer{margin:36px 0 90px}
 
 </div>
 <figcaption>
-<span class="who">SPA 매장 · 29.6만</span>
-<span>0.2초 거울 → 카운터 로고 → 거울</span>
+<span class="who">SPA 매장 · <b class="views">29.6만</b></span>
+<span class="desc">0.2초 거울 → 카운터 로고 → 거울</span>
 
 </figcaption>
 </figure>
 </div>
 </div><div class="hookbox">
+<div class="hookhead">
 <h3>매장·신발 먼저 + 뭘 볼지 한 줄</h3>
 <p>간판은 0.6~2.3초만. 바로 진열대·신발로.</p>
+</div>
 <div class="cardgrid three">
 <figure class="card ">
 <div class="frame">
@@ -202,8 +426,8 @@ footer{margin:36px 0 90px}
 
 </div>
 <figcaption>
-<span class="who">SPA 신발 · 67.7만</span>
-<span>간판 0.6초 → 진열대 → 손에 든 신발 2.6초</span>
+<span class="who">SPA 신발 · <b class="views">67.7만</b></span>
+<span class="desc">간판 0.6초 → 진열대 → 손에 든 신발 2.6초</span>
 
 </figcaption>
 </figure>
@@ -213,8 +437,8 @@ footer{margin:36px 0 90px}
 
 </div>
 <figcaption>
-<span class="who">신발 편집숍 · 41.6만</span>
-<span>"알고 계셨나요?" 자막 + 외관 2.3초</span>
+<span class="who">신발 편집숍 · <b class="views">41.6만</b></span>
+<span class="desc">"알고 계셨나요?" 자막 + 외관 2.3초</span>
 
 </figcaption>
 </figure>
@@ -224,15 +448,17 @@ footer{margin:36px 0 90px}
 
 </div>
 <figcaption>
-<span class="who">스포츠 아울렛 · 38.2만</span>
-<span>행사 배너 + "실시간" 자막</span>
+<span class="who">스포츠 아울렛 · <b class="views">38.2만</b></span>
+<span class="desc">행사 배너 + "실시간" 자막</span>
 
 </figcaption>
 </figure>
 </div>
 </div><div class="hookbox">
+<div class="hookhead">
 <h3>프리뷰 몽타주</h3>
 <p>뒤에 나올 컷을 0.3~0.5초씩 미리 흘려요. 훅에 넣은 컷은 본편에 꼭 다시 나와야 해요.</p>
+</div>
 <div class="cardgrid three">
 <figure class="card ">
 <div class="frame">
@@ -241,7 +467,7 @@ footer{margin:36px 0 90px}
 </div>
 <figcaption>
 <span class="who">신발·코디형 원본</span>
-<span>3.5초 7컷, 6컷이 본편 재등장</span>
+<span class="desc">3.5초 7컷, 6컷이 본편 재등장</span>
 
 </figcaption>
 </figure>
@@ -251,8 +477,8 @@ footer{margin:36px 0 90px}
 
 </div>
 <figcaption>
-<span class="who">SPA 매장 · 10만</span>
-<span>4착장 0.4초씩 1.5초</span>
+<span class="who">SPA 매장 · <b class="views">10만</b></span>
+<span class="desc">4착장 0.4초씩 1.5초</span>
 
 </figcaption>
 </figure>
@@ -263,16 +489,19 @@ footer{margin:36px 0 90px}
 </div>
 <figcaption>
 <span class="who">매장형 원본</span>
-<span>3초 5컷, 간판 단독 컷 없음</span>
+<span class="desc">3초 5컷, 간판 단독 컷 없음</span>
 
 </figcaption>
 </figure>
 </div>
 </div>
+</div>
 <div class="callout face"><strong>+ 첫 프레임부터 자막.</strong> 어느 훅을 고르든 0초에 글자가 떠 있어야 해요. 인사·언박싱·간판 단독으로 시작한 영상은 잘된 25편에 없었어요.</div>
+</div>
 </section>
-<section id="step2" aria-labelledby="step2-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">02</span><h2 id="step2-h">3초 뒤엔 매장 안이에요</h2></div>
+<section id="step2" class="band soft" aria-labelledby="step2-h">
+<div class="inner">
+<div class="sechead"><span class="chip">STEP 02</span><h2 id="step2-h">3초 뒤엔 매장 안이에요</h2></div>
 <p class="lede">잘된 영상은 <strong>매장 컷이 90% 이상</strong>이에요. 간판·외관은 <strong>1~2초</strong>만 잡고 바로 안으로 들어가요.</p>
 <div class="cardgrid">
 <figure class="card ">
@@ -282,7 +511,7 @@ footer{margin:36px 0 90px}
 </div>
 <figcaption>
 <span class="who">매장형 원본</span>
-<span>통창 외관 1초 → 입장 → 쇼룸 전체 → 안쪽 동선</span>
+<span class="desc">통창 외관 1초 → 입장 → 쇼룸 전체 → 안쪽 동선</span>
 <span class="when">외관 1~2초</span>
 </figcaption>
 </figure>
@@ -292,8 +521,8 @@ footer{margin:36px 0 90px}
 <span class="tag">2.8~9.7초</span>
 </div>
 <figcaption>
-<span class="who">신발 편집숍 · 41.6만</span>
-<span>소품 박스 → 신발 벽 → 손에 든 신발 3켤레 0.7~1초씩</span>
+<span class="who">신발 편집숍 · <b class="views">41.6만</b></span>
+<span class="desc">소품 박스 → 신발 벽 → 손에 든 신발 3켤레 0.7~1초씩</span>
 <span class="when">제품 3개 연속</span>
 </figcaption>
 </figure>
@@ -303,8 +532,8 @@ footer{margin:36px 0 90px}
 <span class="tag">4~11.3초</span>
 </div>
 <figcaption>
-<span class="who">SPA 매장 · 44.7만</span>
-<span>랙 넘기는 손 → 창고형 와이드 → 통로 워크인 "Follow me"</span>
+<span class="who">SPA 매장 · <b class="views">44.7만</b></span>
+<span class="desc">랙 넘기는 손 → 창고형 와이드 → 통로 워크인 "Follow me"</span>
 <span class="when">손 → 와이드 → 워크인</span>
 </figcaption>
 </figure>
@@ -314,15 +543,17 @@ footer{margin:36px 0 90px}
 <span class="tag">3~7.5초</span>
 </div>
 <figcaption>
-<span class="who">성수 팝업 · 8.8만</span>
-<span>간판 1.8초 → 입구에서 내부 전경 → 매장 안 장면</span>
+<span class="who">성수 팝업 · <b class="views">8.8만</b></span>
+<span class="desc">간판 1.8초 → 입구에서 내부 전경 → 매장 안 장면</span>
 <span class="when">간판 1.8초</span>
 </figcaption>
 </figure>
 </div>
+</div>
 </section>
-<section id="step3" aria-labelledby="step3-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">03</span><h2 id="step3-h">고르고 신어봐요 — 발이 화면에 있어야 해요</h2></div>
+<section id="step3" class="band" aria-labelledby="step3-h">
+<div class="inner">
+<div class="sechead"><span class="chip">STEP 03</span><h2 id="step3-h">고르고 신어봐요 — 발이 화면에 있어야 해요</h2></div>
 <p class="lede">여기가 신발 영상의 승부처예요. <strong>전신컷은 발끝까지, 신발 안 보이는 앵글은 0초.</strong> 잘된 신발 영상은 발 클로즈업을 2~5컷 넣었어요.</p>
 <div class="cardgrid">
 <figure class="card ">
@@ -331,8 +562,8 @@ footer{margin:36px 0 90px}
 <span class="tag">3.7~8초</span>
 </div>
 <figcaption>
-<span class="who">SPA 신발 · 67.7만</span>
-<span>손에 든 신발 → 신은 발(가격표) → 측면 디테일 → 걷는 발</span>
+<span class="who">SPA 신발 · <b class="views">67.7만</b></span>
+<span class="desc">손에 든 신발 → 신은 발(가격표) → 측면 디테일 → 걷는 발</span>
 <span class="when">발 클로즈업 3컷 연속</span>
 </figcaption>
 </figure>
@@ -342,8 +573,8 @@ footer{margin:36px 0 90px}
 <span class="tag">15.3~19.2초</span>
 </div>
 <figcaption>
-<span class="who">스포츠 아울렛 · 38.2만</span>
-<span>진열 → 신은 발 → 걷는 발 → 다음 제품+가격</span>
+<span class="who">스포츠 아울렛 · <b class="views">38.2만</b></span>
+<span class="desc">진열 → 신은 발 → 걷는 발 → 다음 제품+가격</span>
 <span class="when">신은 발 → 걷는 발</span>
 </figcaption>
 </figure>
@@ -353,8 +584,8 @@ footer{margin:36px 0 90px}
 <span class="tag">37.2~40.8초</span>
 </div>
 <figcaption>
-<span class="who">신발 편집숍 · 41.6만</span>
-<span>진열대 → 신은 발 → 제품 단독 → 손에 든 신발</span>
+<span class="who">신발 편집숍 · <b class="views">41.6만</b></span>
+<span class="desc">진열대 → 신은 발 → 제품 단독 → 손에 든 신발</span>
 <span class="when">진열 → 착용 → 손</span>
 </figcaption>
 </figure>
@@ -365,15 +596,17 @@ footer{margin:36px 0 90px}
 </div>
 <figcaption>
 <span class="who">매장형 원본</span>
-<span>거울 셀카 4자세. 옷 고정, 신발만 갈아 신음</span>
+<span class="desc">거울 셀카 4자세. 옷 고정, 신발만 갈아 신음</span>
 <span class="when">자세 4종</span>
 </figcaption>
 </figure>
 </div>
 <div class="callout rule"><span class="rulelabel">규칙</span>거울 셀피는 카메라를 <strong>허리 높이</strong>로 내려요. 실측 43만 영상은 <strong>얼굴을 자르고 발을 살린</strong> 목 아래~발 프레이밍이었어요. 반대로 무릎·종아리에서 잘리면 그 컷은 없는 컷이에요.</div>
+</div>
 </section>
-<section id="step4" aria-labelledby="step4-h">
-<div class="sechead"><span class="stepnum" aria-hidden="true">04</span><h2 id="step4-h">마지막 5~6초는 신발만</h2></div>
+<section id="step4" class="band soft" aria-labelledby="step4-h">
+<div class="inner">
+<div class="sechead"><span class="chip">STEP 04</span><h2 id="step4-h">마지막 5~6초는 신발만</h2></div>
 <p class="lede">신발 단독 블록을 <strong>영상 끝에 5~6초 몰아서</strong> 넣고, 가격·굽 수치·매장 위치 자막으로 닫아요. 중간에 흩어 놓지 않아요.</p>
 <div class="cardgrid">
 <figure class="card ">
@@ -383,7 +616,7 @@ footer{margin:36px 0 90px}
 </div>
 <figcaption>
 <span class="who">신발·코디형 원본</span>
-<span>①발밑 하이앵글 → ②바닥 단독 → ③손 → ④걷는 발등. 6.2초 = 전체의 22%</span>
+<span class="desc">①발밑 하이앵글 → ②바닥 단독 → ③손 → ④걷는 발등. 6.2초 = 전체의 22%</span>
 <span class="when">①②③④ 순서 고정</span>
 </figcaption>
 </figure>
@@ -393,8 +626,8 @@ footer{margin:36px 0 90px}
 <span class="tag">8.9~15.8초</span>
 </div>
 <figcaption>
-<span class="who">SPA 신발 · 67.7만</span>
-<span>뒤꿈치 접는 손 → 걷는 발 → 소재 매크로 → 진열대 "무조건 신어보세요"</span>
+<span class="who">SPA 신발 · <b class="views">67.7만</b></span>
+<span class="desc">뒤꿈치 접는 손 → 걷는 발 → 소재 매크로 → 진열대 "무조건 신어보세요"</span>
 <span class="when">시연 → CTA</span>
 </figcaption>
 </figure>
@@ -405,7 +638,7 @@ footer{margin:36px 0 90px}
 </div>
 <figcaption>
 <span class="who">매장형 원본</span>
-<span>진열대 와이드 → 쇼핑백 담는 손 → 거울 전신 → 가격 자막</span>
+<span class="desc">진열대 와이드 → 쇼핑백 담는 손 → 거울 전신 → 가격 자막</span>
 <span class="when">가격 자막으로 닫음</span>
 </figcaption>
 </figure>
@@ -415,34 +648,36 @@ footer{margin:36px 0 90px}
 <span class="tag">37.2~41.8초</span>
 </div>
 <figcaption>
-<span class="who">SPA 매장 · 29.6만</span>
-<span>거울 전신 → "댓글에 [8] 남기면 링크" → 다음 예고</span>
+<span class="who">SPA 매장 · <b class="views">29.6만</b></span>
+<span class="desc">거울 전신 → "댓글에 [8] 남기면 링크" → 다음 예고</span>
 <span class="when">댓글 CTA</span>
 </figcaption>
 </figure>
 </div>
-<h3>신발 보이는 컷 4종 — 이 순서로</h3>
+<h3 class="subhead">신발 보이는 컷 4종 — 이 순서로</h3>
 <div class="cardgrid">
 <figure class="card imgcard">
 <div class="frame"><img src="assets/frames/mh2_topdown.jpg" alt="① 발밑 하이앵글 — 신은 채로 내려다보기" loading="lazy"></div>
-<figcaption><span>① 발밑 하이앵글 — 신은 채로 내려다보기</span></figcaption>
+<figcaption><span class="desc">① 발밑 하이앵글 — 신은 채로 내려다보기</span></figcaption>
 </figure>
 <figure class="card imgcard">
 <div class="frame"><img src="assets/frames/mh2_flat.jpg" alt="② 제품 단독 바닥컷 — 두 짝 비스듬히" loading="lazy"></div>
-<figcaption><span>② 제품 단독 바닥컷 — 두 짝 비스듬히</span></figcaption>
+<figcaption><span class="desc">② 제품 단독 바닥컷 — 두 짝 비스듬히</span></figcaption>
 </figure>
 <figure class="card imgcard">
 <div class="frame"><img src="assets/frames/mh2_hand.jpg" alt="③ 손이 들어간 컷 — 손이 크기 기준" loading="lazy"></div>
-<figcaption><span>③ 손이 들어간 컷 — 손이 크기 기준</span></figcaption>
+<figcaption><span class="desc">③ 손이 들어간 컷 — 손이 크기 기준</span></figcaption>
 </figure>
 <figure class="card imgcard">
 <div class="frame"><img src="assets/frames/mh2_walk.jpg" alt="④ 걷는 발등 + 코디 사진 2장 인서트" loading="lazy"></div>
-<figcaption><span>④ 걷는 발등 + 코디 사진 2장 인서트</span></figcaption>
+<figcaption><span class="desc">④ 걷는 발등 + 코디 사진 2장 인서트</span></figcaption>
 </figure>
 </div>
+</div>
 </section>
-<section id="step5" aria-labelledby="step5-h">
-<div class="sechead"><span class="stepnum accent" aria-hidden="true">X</span><h2 id="step5-h">이러면 넘겨요</h2></div>
+<section id="step5" class="band tint" aria-labelledby="step5-h">
+<div class="inner">
+<div class="sechead"><span class="chip bad">STEP X</span><h2 id="step5-h">이러면 넘겨요</h2></div>
 <p class="lede">조회수가 낮은 영상은 이렇게 했어요. <strong>이것만 피하세요.</strong></p>
 <div class="cardgrid">
 <figure class="card bad">
@@ -452,7 +687,7 @@ footer{margin:36px 0 90px}
 </div>
 <figcaption>
 <span class="who">신발·코디형 원본</span>
-<span><strong>X 종아리·무릎에서 잘림</strong> — 3.25초 동안 신발이 화면 밖</span>
+<span class="desc"><strong>X 종아리·무릎에서 잘림</strong> — 3.25초 동안 신발이 화면 밖</span>
 <span class="when">신발 안 보임 3.25초</span>
 </figcaption>
 </figure>
@@ -462,8 +697,8 @@ footer{margin:36px 0 90px}
 <span class="tag">2.4~8.1초</span>
 </div>
 <figcaption>
-<span class="who">SPA 매장 · 2.2만</span>
-<span><strong>X 화면에 박힌 브랜드 로고 워터마크</strong> + 거울 셀피가 상반신으로 올라가 발이 프레임 밖</span>
+<span class="who">SPA 매장 · <b class="views">2.2만</b></span>
+<span class="desc"><strong>X 화면에 박힌 브랜드 로고 워터마크</strong> + 거울 셀피가 상반신으로 올라가 발이 프레임 밖</span>
 <span class="when">로고 상시 노출 · 발 안 보임</span>
 </figcaption>
 </figure>
@@ -473,8 +708,8 @@ footer{margin:36px 0 90px}
 <span class="tag">0~11.4초</span>
 </div>
 <figcaption>
-<span class="who">SPA 매장 · 1.2만</span>
-<span><strong>X 탈의실 거울만 11초</strong> — 매장 컷·발 컷 0, 신발은 끝까지 프레임 밖</span>
+<span class="who">SPA 매장 · <b class="views">1.2만</b></span>
+<span class="desc"><strong>X 탈의실 거울만 11초</strong> — 매장 컷·발 컷 0, 신발은 끝까지 프레임 밖</span>
 <span class="when">매장 컷 0 · 발 컷 0</span>
 </figcaption>
 </figure>
@@ -484,108 +719,118 @@ footer{margin:36px 0 90px}
 <span class="tag">0~6초</span>
 </div>
 <figcaption>
-<span class="who">옷가게 · 6.3만</span>
-<span><strong>X 0.6초 컷 29개, 착용 0</strong> — 손에 든 제품만 지나감</span>
+<span class="who">옷가게 · <b class="views">6.3만</b></span>
+<span class="desc"><strong>X 0.6초 컷 29개, 착용 0</strong> — 손에 든 제품만 지나감</span>
 <span class="when">착용 컷 0</span>
 </figcaption>
 </figure>
 </div>
 <p class="note">잘 안된 영상 조회수는 참고용이에요. 원인이 하나라는 뜻은 아니에요.</p>
-<h3>하지 말 것</h3>
+<h3 class="subhead">하지 말 것</h3>
 <ul class="dontlist">
 <li>전신컷에서 발 자르기</li><li>무릎·종아리에서 잘리는 프레임</li><li>간판·외관 3초 이상, 첫 컷을 간판 단독·언박싱으로</li><li>한산한 매장·지저분한 거울·재고박스 노출</li><li>타 브랜드 로고·제품 동시 노출, 워터마크</li><li>다른 매장·카페 섞는 코스형</li><li>착화 컷 없이 자막만</li><li>몸매·다리라인 강조 문구</li><li>1.5초 넘는 정지컷</li><li>초대형·국내최대 등 과장 표현</li>
 </ul>
+</div>
 </section>
-<section id="check" aria-labelledby="check-h">
-<h2 id="check-h">올리기 전에 체크</h2>
+<section id="check" class="band" aria-labelledby="check-h">
+<div class="inner">
+<div class="sechead"><h2 id="check-h">올리기 전에 체크</h2></div>
 <p class="lede" id="count">7개 중 0개 체크했어요.</p>
 <ul class="checklist">
-<li><label><input type="checkbox"><span class="clabel c-hook">1 훅</span><span class="ctext">0~3초가 거울 셀피·매장/신발·몽타주 중 하나로 시작하고, 첫 프레임에 자막이 있나요?</span><span class="dots" aria-hidden="true"></span><span class="cnum" aria-hidden="true">01</span></label></li>
-<li><label><input type="checkbox"><span class="clabel c-store">2 매장</span><span class="ctext">간판·외관은 2초 이내이고, 3초 뒤엔 매장 안인가요?</span><span class="dots" aria-hidden="true"></span><span class="cnum" aria-hidden="true">02</span></label></li>
-<li><label><input type="checkbox"><span class="clabel c-try">3 신어보기</span><span class="ctext">전신컷이 전부 발끝까지 들어갔나요? (무릎·종아리에서 잘린 컷 0)</span><span class="dots" aria-hidden="true"></span><span class="cnum" aria-hidden="true">03</span></label></li>
-<li><label><input type="checkbox"><span class="clabel c-try">3 신어보기</span><span class="ctext">신은 발 클로즈업·걷는 발 컷이 있나요?</span><span class="dots" aria-hidden="true"></span><span class="cnum" aria-hidden="true">04</span></label></li>
-<li><label><input type="checkbox"><span class="clabel c-end">4 마지막</span><span class="ctext">끝에 신발 단독 블록 5~6초가 ①②③④ 순서로 있나요?</span><span class="dots" aria-hidden="true"></span><span class="cnum" aria-hidden="true">05</span></label></li>
-<li><label><input type="checkbox"><span class="clabel c-end">4 마지막</span><span class="ctext">가격·굽 수치·매장 위치 자막이 들어갔나요?</span><span class="dots" aria-hidden="true"></span><span class="cnum" aria-hidden="true">06</span></label></li>
-<li><label><input type="checkbox"><span class="clabel c-bad">X</span><span class="ctext">1.5초 넘는 정지컷, 타 브랜드 로고, 인사·언박싱 오프닝이 없나요?</span><span class="dots" aria-hidden="true"></span><span class="cnum" aria-hidden="true">07</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-hook">1 훅</span><span class="ctext">0~3초가 거울 셀피·매장/신발·몽타주 중 하나로 시작하고, 첫 프레임에 자막이 있나요?</span></span><span class="cnum" aria-hidden="true">01</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-store">2 매장</span><span class="ctext">간판·외관은 2초 이내이고, 3초 뒤엔 매장 안인가요?</span></span><span class="cnum" aria-hidden="true">02</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-try">3 신어보기</span><span class="ctext">전신컷이 전부 발끝까지 들어갔나요? (무릎·종아리에서 잘린 컷 0)</span></span><span class="cnum" aria-hidden="true">03</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-try">3 신어보기</span><span class="ctext">신은 발 클로즈업·걷는 발 컷이 있나요?</span></span><span class="cnum" aria-hidden="true">04</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-end">4 마지막</span><span class="ctext">끝에 신발 단독 블록 5~6초가 ①②③④ 순서로 있나요?</span></span><span class="cnum" aria-hidden="true">05</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-end">4 마지막</span><span class="ctext">가격·굽 수치·매장 위치 자막이 들어갔나요?</span></span><span class="cnum" aria-hidden="true">06</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-bad">X</span><span class="ctext">1.5초 넘는 정지컷, 타 브랜드 로고, 인사·언박싱 오프닝이 없나요?</span></span><span class="cnum" aria-hidden="true">07</span></label></li>
 </ul>
+</div>
 </section>
-<section id="full" aria-labelledby="full-h">
-<h2 id="full-h">잘된 영상 전편 5편</h2>
+<section id="full" class="band soft" aria-labelledby="full-h">
+<div class="inner">
+<div class="sechead"><h2 id="full-h">잘된 영상 전편 5편</h2></div>
 <p class="lede">누르면 소리와 함께 처음부터 재생돼요.</p>
-<div class="fullcase">
+<div class="fullgrid">
+<article class="fullcase">
 <div class="frame">
 <video class="full" controls playsinline preload="none" poster="assets/p/full_jinsim_big.jpg" src="assets/v/full_jinsim.mp4"></video>
 </div>
 <div class="fullinfo">
 <h3>SPA 신발</h3>
-<p class="meta">0:16 · 67.7만</p>
-<a href="https://www.instagram.com/reel/DX5wyK4PBAC/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
+<p class="meta"><span class="dur">0:16</span> · <span class="fviews">67.7만</span></p>
 <ul class="story">
-<li><b>훅</b> 간판 0.6초 → 진열대 → 손에 든 신발</li>
-<li><b>중간</b> 신은 발·측면·걷는 발 클로즈업 3연속</li>
-<li><b>마지막</b> 뒤꿈치 접기 시연 → "자라 가면 무조건 신어보세요"</li>
+<li><b>훅</b><span>간판 0.6초 → 진열대 → 손에 든 신발</span></li>
+<li><b>중간</b><span>신은 발·측면·걷는 발 클로즈업 3연속</span></li>
+<li><b>마지막</b><span>뒤꿈치 접기 시연 → "자라 가면 무조건 신어보세요"</span></li>
 </ul>
+<a class="iglink" href="https://www.instagram.com/reel/DX5wyK4PBAC/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
 </div>
-</div><div class="fullcase">
+</article><article class="fullcase">
 <div class="frame">
 <video class="full" controls playsinline preload="none" poster="assets/p/full_jey_big.jpg" src="assets/v/full_jey.mp4"></video>
 </div>
 <div class="fullinfo">
 <h3>신발 편집숍</h3>
-<p class="meta">1:05 · 41.6만</p>
-<a href="https://www.instagram.com/reel/DTXrOc1jw3k/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
+<p class="meta"><span class="dur">1:05</span> · <span class="fviews">41.6만</span></p>
 <ul class="story">
-<li><b>훅</b> "알고 계셨나요?" + 외관</li>
-<li><b>중간</b> 브랜드 코너 순회, 손에 든 신발 반복, 층 이동 POV</li>
-<li><b>마지막</b> 이벤트 안내 → 외관 마무리</li>
+<li><b>훅</b><span>"알고 계셨나요?" + 외관</span></li>
+<li><b>중간</b><span>브랜드 코너 순회, 손에 든 신발 반복, 층 이동 POV</span></li>
+<li><b>마지막</b><span>이벤트 안내 → 외관 마무리</span></li>
 </ul>
+<a class="iglink" href="https://www.instagram.com/reel/DTXrOc1jw3k/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
 </div>
-</div><div class="fullcase">
+</article><article class="fullcase">
 <div class="frame">
 <video class="full" controls playsinline preload="none" poster="assets/p/full_sson_big.jpg" src="assets/v/full_sson.mp4"></video>
 </div>
 <div class="fullinfo">
 <h3>스포츠 아울렛</h3>
-<p class="meta">0:30 · 38.2만</p>
-<a href="https://www.instagram.com/reel/DUwwnBHgW2m/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
+<p class="meta"><span class="dur">0:30</span> · <span class="fviews">38.2만</span></p>
 <ul class="story">
-<li><b>훅</b> 행사 배너 + 실시간 자막</li>
-<li><b>중간</b> 가격표 클로즈업 반복, 신은 발 → 걷는 발</li>
-<li><b>마지막</b> "오길 잘했다" 배너</li>
+<li><b>훅</b><span>행사 배너 + 실시간 자막</span></li>
+<li><b>중간</b><span>가격표 클로즈업 반복, 신은 발 → 걷는 발</span></li>
+<li><b>마지막</b><span>"오길 잘했다" 배너</span></li>
 </ul>
+<a class="iglink" href="https://www.instagram.com/reel/DUwwnBHgW2m/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
 </div>
-</div><div class="fullcase">
+</article><article class="fullcase">
 <div class="frame">
 <video class="full" controls playsinline preload="none" poster="assets/p/full_jd_big.jpg" src="assets/v/full_jd.mp4"></video>
 </div>
 <div class="fullinfo">
 <h3>매장형 원본(폼 A)</h3>
-<p class="meta">0:36 · 조회수 미확인</p>
-<a href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
+<p class="meta"><span class="dur">0:36</span> · <span class="fviews">조회수 미확인</span></p>
 <ul class="story">
-<li><b>훅</b> 거울 셀카 + 타이틀, 3초 5컷</li>
-<li><b>중간</b> 매대 하이앵글 → 집는 손 → 거울 4자세</li>
-<li><b>마지막</b> 쇼핑백 → 가격 자막</li>
+<li><b>훅</b><span>거울 셀카 + 타이틀, 3초 5컷</span></li>
+<li><b>중간</b><span>매대 하이앵글 → 집는 손 → 거울 4자세</span></li>
+<li><b>마지막</b><span>쇼핑백 → 가격 자막</span></li>
 </ul>
+<a class="iglink" href="https://www.instagram.com/reel/DXT9HmoEu2Q/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
 </div>
-</div><div class="fullcase">
+</article><article class="fullcase">
 <div class="frame">
 <video class="full" controls playsinline preload="none" poster="assets/p/full_mh_big.jpg" src="assets/v/full_mh.mp4"></video>
 </div>
 <div class="fullinfo">
 <h3>신발·코디형 원본(폼 B)</h3>
-<p class="meta">0:28 · 조회수 미확인</p>
-<a href="https://www.instagram.com/p/DcvuagksrmI/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
+<p class="meta"><span class="dur">0:28</span> · <span class="fviews">조회수 미확인</span></p>
 <ul class="story">
-<li><b>훅</b> 프리뷰 몽타주 7컷</li>
-<li><b>중간</b> 아이템 3개 × 전신→디테일→손</li>
-<li><b>마지막</b> 신발 단독 블록 6.2초</li>
+<li><b>훅</b><span>프리뷰 몽타주 7컷</span></li>
+<li><b>중간</b><span>아이템 3개 × 전신→디테일→손</span></li>
+<li><b>마지막</b><span>신발 단독 블록 6.2초</span></li>
 </ul>
+<a class="iglink" href="https://www.instagram.com/p/DcvuagksrmI/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
+</div>
+</article>
 </div>
 </div>
 </section>
-<section id="footer-tables" aria-labelledby="footer-tables-h">
+<section id="footer-tables" class="band" aria-labelledby="footer-tables-h">
+<div class="inner">
 <h2 id="footer-tables-h" class="sr-only">부록</h2>
+<div class="tablegrid">
+<div class="tablewrap">
 <table class="fill">
 <caption>채워 넣는 칸 — 캠페인마다 여기만 바꿔요</caption>
 <tr><th>매장</th><td>지점명·주소·촬영 가능 시간대</td></tr>
@@ -595,6 +840,8 @@ footer{margin:36px 0 90px}
 <tr><th>해시태그</th><td>@chaakan_official · #착한구두 · #CHAAKAN + 시즌 태그</td></tr>
 <tr><th>일정</th><td>가이드 → 초안 → 컨펌 → 촬영 → 업로드</td></tr>
 </table>
+</div>
+<div class="tablewrap">
 <table class="deliver">
 <caption>게시물 정보 제공 (필수)</caption>
 <tr><th>+2일</th><td>릴 링크·조회수·도달·좋아요·댓글·저장·공유·팔로우 증가</td></tr>
@@ -602,7 +849,10 @@ footer{margin:36px 0 90px}
 <tr><th>+14일</th><td>자막 없는 클린본 원본</td></tr>
 </table>
 <p class="note">인사이트 개요·시청 유지 화면 스크린샷 2장이면 돼요. 평가·정산 조건이 아니에요.</p>
+</div>
+</div>
 <footer><p class="note">조회수는 2026-09-07 수집 기준. 원본 표기가 없는 클립은 참고 영상이에요.</p><p class="note">폼 A·B 구간표(초 단위) 세부 → <a href="forms/">폼 가이드</a> · 보배님 전용본 → <a href="bobaerit/">bobaerit</a></p></footer>
+</div>
 </section>
 </main>
 <script>
@@ -616,6 +866,8 @@ function updateCount(){
 document.querySelectorAll('#check input').forEach(function(cb){ cb.addEventListener('change', updateCount); });
 
 var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* 뷰포트에 들어온 클립만 재생 */
 document.querySelectorAll('.frame video:not(.full)').forEach(function(v){
   if(reduced){ v.controls = true; return; }
   var io = new IntersectionObserver(function(entries){
@@ -627,9 +879,58 @@ document.querySelectorAll('.frame video:not(.full)').forEach(function(v){
   io.observe(v);
 });
 
+/* 전편은 하나만 */
 document.addEventListener('play', function(e){
   if(!(e.target instanceof HTMLVideoElement)) return;
   document.querySelectorAll('video.full').forEach(function(v){ if(v !== e.target) v.pause(); });
 }, true);
+
+/* 스크롤 진입 페이드업 */
+if(!reduced && 'IntersectionObserver' in window){
+  var rv = document.querySelectorAll('.cardgrid > .card, .hookbox, .fullcase, .citem, .tablewrap, .callout, .dontlist > li');
+  rv.forEach(function(el){
+    el.classList.add('rv');
+    var sibs = el.parentNode.children;
+    var idx = Array.prototype.indexOf.call(sibs, el);
+    el.style.transitionDelay = Math.min(idx, 5) * 55 + 'ms';
+  });
+  var rvio = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); rvio.unobserve(e.target); }
+    });
+  }, {rootMargin:'160px 0px 160px 0px', threshold:0.02});
+  rv.forEach(function(el){ rvio.observe(el); });
+}
+
+/* 상단 미니 내비 */
+var minibar = document.getElementById('minibar');
+var heroEl = document.querySelector('.hero');
+function onScroll(){
+  var y = window.pageYOffset || document.documentElement.scrollTop;
+  if(y > heroEl.offsetHeight - 80){ minibar.classList.add('show'); }
+  else { minibar.classList.remove('show'); }
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+/* 현재 섹션 하이라이트 */
+if('IntersectionObserver' in window){
+  var links = {};
+  document.querySelectorAll('.minilinks a').forEach(function(a){ links[a.dataset.sec] = a; });
+  var secio = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var a = links[e.target.id];
+      if(!a) return;
+      if(e.isIntersecting){
+        for(var k in links){ links[k].classList.remove('active'); }
+        a.classList.add('active');
+      }
+    });
+  }, {rootMargin:'-58px 0px -62% 0px', threshold:0});
+  ['step1','step2','step3','step4','step5'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) secio.observe(el);
+  });
+}
 
 </script>
