@@ -322,16 +322,33 @@ footer .note{margin:0}
 
 
 /* ── custom-cases 전용 ── */
-.frame{aspect-ratio:4/5;display:block;text-decoration:none;background:var(--soft)}
-.noimg{display:grid;place-items:center;height:100%;color:var(--ink-3);font-size:13px}
+.cardgrid{grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:900px){.cardgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.cardgrid{grid-template-columns:1fr}}
+.frame{aspect-ratio:3/4;display:block;text-decoration:none;background:var(--soft)}
+.frame .cell{position:relative;width:100%;height:100%;overflow:hidden}
+.frame.two{display:grid;grid-template-rows:1fr 1fr;gap:3px;background:var(--line)}
+.frame.two .cell{background:var(--soft)}
+.frame .cell img{width:100%;height:100%;object-fit:cover;display:block}
+.frame .lbl{position:absolute;left:8px;bottom:8px;background:rgba(12,12,14,.62);color:#fff;font-size:11px;font-weight:600;padding:3px 8px;border-radius:999px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.cell.noimg{display:grid;place-items:center;color:var(--ink-3);font-size:12.5px}
 figcaption .proof{color:var(--ink-2);font-size:13.5px}
 figcaption .caveat{color:var(--accent-deep);font-size:12.5px;font-weight:600}
 figcaption .when a{color:var(--ink-2);text-decoration:none}
 figcaption .when a:hover{color:var(--accent-deep)}
 .card.ref .frame{border-style:dashed}
 .card.ref .tag{background:var(--ink)}
+.tag.lv{left:auto;right:10px;background:rgba(255,255,255,.92);color:var(--ink);font-weight:700}
+.tag.lv-store{color:var(--accent-deep)}
+.tag.lv-shop{color:var(--ink-3)}
+.rulegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+.rulebox{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--sh);position:relative}
+.rulebox b{font-family:var(--mono);font-size:12px;color:var(--accent-deep);background:var(--accent-wash);border-radius:999px;padding:4px 10px}
+.rulebox h3{margin:14px 0 10px;font-size:19px}
+.rulebox p{margin:0;color:var(--ink-2);font-size:14.5px;word-break:keep-all}
+@media (max-width:900px){.rulegrid{grid-template-columns:1fr}}
 .heroinner{grid-template-columns:1fr}
-.stepper ol{grid-template-columns:repeat(4,1fr)}
+.stepper ol{grid-template-columns:repeat(5,1fr)}
 .dontlist{columns:1;max-width:820px}
 .dontlist li::before{content:"–"}
 @media (max-width:620px){.stepper ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -346,15 +363,16 @@ figcaption .when a:hover{color:var(--accent-deep)}
 <a href="#shoes" data-sec="shoes"><em>02</em><span>신발 커스텀</span></a>
 <a href="#case" data-sec="case"><em>03</em><span>폰케이스·소품 꾸미기</span></a>
 <a href="#gear" data-sec="gear"><em>04</em><span>에어팟·기기 도색</span></a>
+<a href="#ours" data-sec="ours"><em>★</em><span>우리 식으로</span></a>
 </nav>
 </div></div>
 <header class="hero">
 <div class="heroinner">
 <div class="herotext">
 <p class="overline">CHAAKAN · REFERENCE</p>
-<h1>연예인이 쓴 <mark>커스텀</mark> 제품, 화제된 사례 21건</h1>
-<p class="brand">인스타·공항·방송에서 찍힌 것 중 기성품에 각인·도색·데코를 얹어 이슈된 것만</p>
-<div class="callout">기준: <strong>출처 URL이 실제로 있는 것만</strong> 넣었어요. 품절·주문 수치는 기사나 커뮤니티 본문에 있는 그대로이고, 커뮤니티발 미확인 수치는 카드에 ⚠로 표시했어요. 공식 협업 컬렉션(제니 아디다스, 정국 CK 등)은 커스텀이 아니라 뺐어요. 2026-09-19 기준.</div>
+<h1>연예인이 쓴 <mark>커스텀</mark> 제품, 화제된 사례 20건</h1>
+<p class="brand">기성품에 각인·도색·데코를 얹어 이슈된 것만 · 원본이 주인공이었는지, 커스텀 업체가 주인공이었는지로 읽어요</p>
+<div class="callout"><strong>읽는 법:</strong> 커스텀이 화제되면 사람들은 "어디서 했어?"를 물어요. 그 답이 <strong>커스텀 업체</strong>면 업체만 돈 벌고, <strong>원본 브랜드·매장</strong>이면 우리 거예요. 그래서 카드마다 <strong>매장에서 가능</strong>(각인·참·지비츠·끈)인지 <strong>업체 필요</strong>(도색·페인팅·보석)인지 붙였어요.<br><br>기준: <strong>출처 URL이 실제로 있는 것만</strong> 넣었어요. 품절·주문 수치는 기사나 커뮤니티 본문에 있는 그대로이고, 커뮤니티발 미확인 수치는 카드에 ⚠로 표시했어요. 공식 협업 컬렉션(제니 아디다스, 정국 CK 등)은 커스텀이 아니라 뺐어요. 2026-09-19 기준.</div>
 </div>
 </div>
 <nav class="stepper" aria-label="섹션 이동"><ol>
@@ -362,16 +380,17 @@ figcaption .when a:hover{color:var(--accent-deep)}
 <li><a href="#shoes"><span class="snum">02</span><span class="stitle">신발 커스텀</span></a></li>
 <li><a href="#case"><span class="snum">03</span><span class="stitle">폰케이스·소품 꾸미기</span></a></li>
 <li><a href="#gear"><span class="snum">04</span><span class="stitle">에어팟·기기 도색</span></a></li>
+<li><a href="#ours"><span class="snum">★</span><span class="stitle">우리 식으로</span></a></li>
 </ol></nav>
 </header>
 <main>
 <section id="engrave" class="band" aria-labelledby="engrave-h">
 <div class="inner">
-<div class="sechead"><span class="chip">01 · 이름·이니셜 각인</span><h2 id="engrave-h">&quot;이 사람만을 위한 것&quot;이라는 게 보이면 매체가 먼저 &#x27;정체&#x27;를 파요</h2></div>
-<p class="lede">각인 자체가 기사 소재가 된 케이스. 해외는 주얼리, 국내는 스포츠 장비가 많아요.</p>
+<div class="sechead"><span class="chip">01 · 이름·이니셜 각인</span><h2 id="engrave-h">각인은 원본을 안 가려요 — 브랜드가 그대로 보인 채로 화제가 돼요</h2></div>
+<p class="lede">이니셜·이름 새기기는 손이 제일 덜 가는 커스텀이라, 매장에서 그 자리에서 해줄 수 있는 수준이에요. 화제가 나면 &#x27;어디 신발이야&#x27;로 흐르지 &#x27;어디서 각인했어&#x27;로는 안 흘러요.</p>
 <div class="cardgrid">
 <figure class="card">
-<a class="frame" href="https://www.insight.co.kr/news/452417" target="_blank" rel="noopener"><img src="assets/leekangin.jpg" alt="이강인" loading="lazy"><span class="tag">국내</span></a>
+<a class="frame two" href="https://www.insight.co.kr/news/452417" target="_blank" rel="noopener"><div class="cell"><img src="assets/leekangin_p.jpg" alt="이강인 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/leekangin_s.jpg" alt="이강인 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">국내</span><span class="tag lv lv-store">매장에서 가능</span></a>
 <figcaption>
 <span class="who">이강인</span>
 <span class="desc"><strong>축구화·신가드·반지에 가족 이니셜 WSJSK 각인, 신가드에 태극기·스페인기·가족사진</strong></span>
@@ -381,7 +400,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://v.daum.net/v/ZrZp7QTN0p" target="_blank" rel="noopener"><img src="assets/son.jpg" alt="손흥민" loading="lazy"><span class="tag">국내</span></a>
+<a class="frame two" href="https://v.daum.net/v/ZrZp7QTN0p" target="_blank" rel="noopener"><div class="cell"><img src="assets/son_p.jpg" alt="손흥민 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/son_s.jpg" alt="손흥민 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">국내</span><span class="tag lv lv-store">매장에서 가능</span></a>
 <figcaption>
 <span class="who">손흥민</span>
 <span class="desc"><strong>아디다스 시그니처 축구화 SON 각인·태극기 4색 반영</strong></span>
@@ -391,7 +410,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://www.allurekorea.com/2023/01/26/%EB%89%B4%EC%A7%84%EC%8A%A4%EC%9D%98-%ED%86%A0%EB%81%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%EC%96%B4%EB%94%94%EA%BA%BC%EC%A7%80/" target="_blank" rel="noopener"><img src="assets/newjeans.jpg" alt="뉴진스 5인" loading="lazy"><span class="tag">국내</span></a>
+<a class="frame two" href="https://www.allurekorea.com/2023/01/26/%EB%89%B4%EC%A7%84%EC%8A%A4%EC%9D%98-%ED%86%A0%EB%81%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%EC%96%B4%EB%94%94%EA%BA%BC%EC%A7%80/" target="_blank" rel="noopener"><div class="cell"><img src="assets/newjeans_p.jpg" alt="뉴진스 5인 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/newjeans_s.jpg" alt="뉴진스 5인 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">국내</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">뉴진스 5인</span>
 <span class="desc"><strong>멤버별 상징색 크리스털 토끼 목걸이 1:1 제작 (디자이너 지원초이)</strong></span>
@@ -401,7 +420,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://www.popdust.com/hailey-bieber-initial-necklace-2668540701" target="_blank" rel="noopener"><img src="assets/hailey.jpg" alt="헤일리 비버" loading="lazy"><span class="tag">해외</span></a>
+<a class="frame two" href="https://www.popdust.com/hailey-bieber-initial-necklace-2668540701" target="_blank" rel="noopener"><div class="cell"><img src="assets/hailey_p.jpg" alt="헤일리 비버 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/hailey_s.jpg" alt="헤일리 비버 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">해외</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">헤일리 비버</span>
 <span class="desc"><strong>아들 이니셜 JBB 버블 폰트 다이아 목걸이 (Alex Moss)</strong></span>
@@ -411,7 +430,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://renatocipullo.com/blogs/news/rihanna-wears-her-splendente-r-pendant" target="_blank" rel="noopener"><img src="assets/rihanna.jpg" alt="리한나" loading="lazy"><span class="tag">해외</span></a>
+<a class="frame two" href="https://renatocipullo.com/blogs/news/rihanna-wears-her-splendente-r-pendant" target="_blank" rel="noopener"><div class="cell"><img src="assets/rihanna_p.jpg" alt="리한나 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/rihanna_s.jpg" alt="리한나 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">해외</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">리한나</span>
 <span class="desc"><strong>이니셜 R 레트로 펜던트 $7,950 (Renato Cipullo)</strong></span>
@@ -420,13 +439,13 @@ figcaption .when a:hover{color:var(--accent-deep)}
 <span class="when">2026 · <a href="https://renatocipullo.com/blogs/news/rihanna-wears-her-splendente-r-pendant" target="_blank" rel="noopener">Renato Cipullo ↗</a></span>
 </figcaption>
 </figure>
-<figure class="card">
-<a class="frame" href="https://www.inverse.com/input/style/rosalia-nike-air-force-1-espadrille-collaboration-snkrs-release-date" target="_blank" rel="noopener"><img src="assets/rosalia.jpg" alt="로잘리아" loading="lazy"><span class="tag">해외</span></a>
+<figure class="card ref">
+<a class="frame two" href="https://www.inverse.com/input/style/rosalia-nike-air-force-1-espadrille-collaboration-snkrs-release-date" target="_blank" rel="noopener"><div class="cell"><img src="assets/rosalia_p.jpg" alt="로잘리아 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/rosalia_s.jpg" alt="로잘리아 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">해외</span><span class="tag lv lv-store">매장에서 가능</span></a>
 <figcaption>
 <span class="who">로잘리아</span>
 <span class="desc"><strong>나이키 AF1 인솔에 &#x27;We did it Rosalia&#x27; 금박 각인</strong></span>
 <span class="proof">본인 인스타 영상 → 나이키 협업설 확산</span>
-
+<span class="caveat">⚠ 사진엔 인솔 각인이 안 보임 (기사 서술만)</span>
 <span class="when">2021 · <a href="https://www.inverse.com/input/style/rosalia-nike-air-force-1-espadrille-collaboration-snkrs-release-date" target="_blank" rel="noopener">Inverse ↗</a></span>
 </figcaption>
 </figure>
@@ -435,11 +454,11 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </section>
 <section id="shoes" class="band soft" aria-labelledby="shoes-h">
 <div class="inner">
-<div class="sechead"><span class="chip">02 · 신발 커스텀</span><h2 id="shoes-h">페인팅·보석·지비츠, 신발은 손대는 방식이 제일 다양해요</h2></div>
-<p class="lede">직접 만든 것부터 아티스트 제작까지. 국내는 김신영 건이 유일하게 기사화됐어요.</p>
+<div class="sechead"><span class="chip">02 · 신발 커스텀</span><h2 id="shoes-h">신발은 둘로 갈려요 — 참·지비츠·끈은 매장에서, 도색·보석은 업체 몫</h2></div>
+<p class="lede">페인팅·금도금은 아티스트가 주인공이 돼서 원본 브랜드가 묻혀요. 반대로 지비츠(비버)처럼 끼우는 커스텀은 원본이 그대로 보여요. 국내는 김신영 건이 유일하게 기사화됐어요.</p>
 <div class="cardgrid">
 <figure class="card">
-<a class="frame" href="https://www.xportsnews.com/article/2135322" target="_blank" rel="noopener"><img src="assets/kimshinyoung.jpg" alt="김신영" loading="lazy"><span class="tag">국내</span></a>
+<a class="frame two" href="https://www.xportsnews.com/article/2135322" target="_blank" rel="noopener"><div class="cell"><img src="assets/kimshinyoung_p.jpg" alt="김신영 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/kimshinyoung_s.jpg" alt="김신영 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">국내</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">김신영</span>
 <span class="desc"><strong>4년째 직접 만든 커스텀 운동화, 디자인등록 7개</strong></span>
@@ -449,7 +468,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://www.cnn.com/style/article/justin-bieber-crocs-intl-scli" target="_blank" rel="noopener"><img src="assets/bieber_crocs.jpg" alt="저스틴 비버" loading="lazy"><span class="tag">해외</span></a>
+<a class="frame two" href="https://www.cnn.com/style/article/justin-bieber-crocs-intl-scli" target="_blank" rel="noopener"><div class="cell"><img src="assets/bieber_crocs_p.jpg" alt="저스틴 비버 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/bieber_crocs_s.jpg" alt="저스틴 비버 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">해외</span><span class="tag lv lv-store">매장에서 가능</span></a>
 <figcaption>
 <span class="who">저스틴 비버</span>
 <span class="desc"><strong>크록스 클로그 + 본인 브랜드 drew house 지비츠 8종 직접 디자인</strong></span>
@@ -459,7 +478,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://www.si.com/onsi/athlete-lifestyle/fashion/travis-hunter-one-of-a-kind-nikes-9-hour-excruciating-works-of-art" target="_blank" rel="noopener"><img src="assets/hunter.jpg" alt="트래비스 헌터" loading="lazy"><span class="tag">해외</span></a>
+<a class="frame" href="https://www.si.com/onsi/athlete-lifestyle/fashion/travis-hunter-one-of-a-kind-nikes-9-hour-excruciating-works-of-art" target="_blank" rel="noopener"><div class="cell"><img src="assets/hunter_p.jpg" alt="트래비스 헌터 제품" loading="lazy"><span class="lbl">제품</span></div><span class="tag">해외</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">트래비스 헌터</span>
 <span class="desc"><strong>미식축구 클릿 골드 커스텀 페인팅, 9시간 작업</strong></span>
@@ -469,7 +488,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://www.cnbc.com/2018/09/04/photos-24-karat-gold-nike-lebron-15-sneaker-worth-over-100000.html" target="_blank" rel="noopener"><img src="assets/lebron.jpg" alt="르브론 제임스" loading="lazy"><span class="tag">해외</span></a>
+<a class="frame" href="https://www.cnbc.com/2018/09/04/photos-24-karat-gold-nike-lebron-15-sneaker-worth-over-100000.html" target="_blank" rel="noopener"><div class="cell"><img src="assets/lebron_p.jpg" alt="르브론 제임스 제품" loading="lazy"><span class="lbl">제품</span></div><span class="tag">해외</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">르브론 제임스</span>
 <span class="desc"><strong>르브론15 금도금·악어가죽·다이아 각인 (Shoe Surgeon)</strong></span>
@@ -479,7 +498,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://en.wikipedia.org/wiki/Satan_Shoes" target="_blank" rel="noopener"><img src="assets/satan.jpg" alt="릴 나스 엑스" loading="lazy"><span class="tag">해외</span></a>
+<a class="frame two" href="https://en.wikipedia.org/wiki/Satan_Shoes" target="_blank" rel="noopener"><div class="cell"><img src="assets/satan_p.jpg" alt="릴 나스 엑스 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/satan_s.jpg" alt="릴 나스 엑스 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">해외</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">릴 나스 엑스</span>
 <span class="desc"><strong>MSCHF 커스텀 에어맥스97 &#x27;사탄 슈즈&#x27; 666켤레</strong></span>
@@ -493,11 +512,11 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </section>
 <section id="case" class="band" aria-labelledby="case-h">
 <div class="inner">
-<div class="sechead"><span class="chip">03 · 폰케이스·소품 꾸미기</span><h2 id="case-h">케이스·백참·인형, 작은 물건일수록 &#x27;따라하기&#x27;로 번져요</h2></div>
-<p class="lede">직접 디자인하거나 데코한 것만 넣었어요. 기성품 케이스 착용 품절은 맨 끝에 참고로 1건.</p>
+<div class="sechead"><span class="chip">03 · 폰케이스·소품 꾸미기</span><h2 id="case-h">작은 소품은 원본이 있어야 해요 — 케이스도, 백참도 &#x27;뭐에 달았는지&#x27;가 같이 찍혀요</h2></div>
+<p class="lede">뷔 백참은 셀린 가방이, 카일리 케이스는 아이폰이 같이 보여요. 소품 커스텀은 &#x27;붙이는 것&#x27;이라 매장에서 참·스트랩을 달아주는 형태로 옮길 수 있어요. 기성품 착용 품절은 맨 끝에 참고로 1건.</p>
 <div class="cardgrid">
 <figure class="card">
-<a class="frame" href="https://www.gqkorea.co.kr/2024/05/03/%EC%A0%80-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%AD%90%EC%95%BC-%EB%82%A8%EC%9E%90-%EC%95%84%EC%9D%B4%EB%8F%8C%EC%9D%98-%ED%9C%B4%EB%8C%80%ED%8F%B0-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EC%B6%94%EC%B2%9C-5/" target="_blank" rel="noopener"><img src="assets/baekhyun.jpg" alt="EXO 백현" loading="lazy"><span class="tag">국내</span></a>
+<a class="frame two" href="https://www.gqkorea.co.kr/2024/05/03/%EC%A0%80-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%AD%90%EC%95%BC-%EB%82%A8%EC%9E%90-%EC%95%84%EC%9D%B4%EB%8F%8C%EC%9D%98-%ED%9C%B4%EB%8C%80%ED%8F%B0-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EC%B6%94%EC%B2%9C-5/" target="_blank" rel="noopener"><div class="cell"><img src="assets/baekhyun_p.jpg" alt="EXO 백현 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/baekhyun_s.jpg" alt="EXO 백현 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">국내</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">EXO 백현</span>
 <span class="desc"><strong>본인이 직접 디자인한 캐릭터 &#x27;터래기&#x27; 폰케이스 (어프어프)</strong></span>
@@ -507,17 +526,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://www.harpersbazaar.co.kr/article/53236" target="_blank" rel="noopener"><img src="assets/jennie_wiggle.jpg" alt="블랙핑크 제니" loading="lazy"><span class="tag">국내</span></a>
-<figcaption>
-<span class="who">블랙핑크 제니</span>
-<span class="desc"><strong>위글위글 투명 케이스 + 곰돌이 그립톡 조합</strong></span>
-<span class="proof">하퍼스바자 &#x27;폰케이스 꾸미는 패피&#x27; 기사</span>
-
-<span class="when">2021.02 · <a href="https://www.harpersbazaar.co.kr/article/53236" target="_blank" rel="noopener">Harper&#x27;s BAZAAR ↗</a></span>
-</figcaption>
-</figure>
-<figure class="card">
-<a class="frame" href="https://www.cosmopolitan.co.kr/article/1889587" target="_blank" rel="noopener"><img src="assets/v_hirono.jpg" alt="BTS 뷔" loading="lazy"><span class="tag">국내</span></a>
+<a class="frame two" href="https://www.cosmopolitan.co.kr/article/1889587" target="_blank" rel="noopener"><div class="cell"><img src="assets/v_hirono_p.jpg" alt="BTS 뷔 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/v_hirono_s.jpg" alt="BTS 뷔 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">국내</span><span class="tag lv lv-store">매장에서 가능</span></a>
 <figcaption>
 <span class="who">BTS 뷔</span>
 <span class="desc"><strong>팝마트 히로노 피규어를 직접 커스텀해 셀린 가방에 백참으로</strong></span>
@@ -527,7 +536,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://www.tennis.com/news/articles/from-andre-swagassi-to-billie-jean-bling-meet-naomi-osaka-s-labubu-crew" target="_blank" rel="noopener"><img src="assets/osaka.jpg" alt="나오미 오사카" loading="lazy"><span class="tag">해외</span></a>
+<a class="frame two" href="https://www.tennis.com/news/articles/from-andre-swagassi-to-billie-jean-bling-meet-naomi-osaka-s-labubu-crew" target="_blank" rel="noopener"><div class="cell"><img src="assets/osaka_p.jpg" alt="나오미 오사카 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/osaka_s.jpg" alt="나오미 오사카 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">해외</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">나오미 오사카</span>
 <span class="desc"><strong>라부부에 스와로브스키 1,000개+ 박아 경기복과 매칭 (A-Morir)</strong></span>
@@ -537,7 +546,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://thecharmeedit.com/blogs/news/kylie-jenners-bedazzled-birthday-trend-meet-king-kylie" target="_blank" rel="noopener"><img src="assets/kylie_beads.jpg" alt="카일리 제너" loading="lazy"><span class="tag">해외</span></a>
+<a class="frame two" href="https://thecharmeedit.com/blogs/news/kylie-jenners-bedazzled-birthday-trend-meet-king-kylie" target="_blank" rel="noopener"><div class="cell"><img src="assets/kylie_beads_p.jpg" alt="카일리 제너 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/kylie_beads_s.jpg" alt="카일리 제너 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">해외</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">카일리 제너</span>
 <span class="desc"><strong>&#x27;King Kylie&#x27; 보석 전면 비즈 폰케이스 (The Charmé Edit)</strong></span>
@@ -547,7 +556,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://www.aol.com/spotted-kylie-jenner-sporting-64-181100036.html" target="_blank" rel="noopener"><img src="assets/kylie_casetify.jpg" alt="카일리 제너" loading="lazy"><span class="tag">해외</span></a>
+<a class="frame two" href="https://www.aol.com/spotted-kylie-jenner-sporting-64-181100036.html" target="_blank" rel="noopener"><div class="cell"><img src="assets/kylie_casetify_p.jpg" alt="카일리 제너 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/kylie_casetify_s.jpg" alt="카일리 제너 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">해외</span><span class="tag lv lv-store">매장에서 가능</span></a>
 <figcaption>
 <span class="who">카일리 제너</span>
 <span class="desc"><strong>케이스티파이 미러 케이스에 본인 이름 모노그램 + Octobuddy 부착</strong></span>
@@ -557,7 +566,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card ref">
-<a class="frame" href="https://economist.co.kr/article/view/ecn202306080036" target="_blank" rel="noopener"><img src="assets/hansohee.jpg" alt="한소희 (참고)" loading="lazy"><span class="tag">국내</span></a>
+<a class="frame two" href="https://economist.co.kr/article/view/ecn202306080036" target="_blank" rel="noopener"><div class="cell"><img src="assets/hansohee_p.jpg" alt="한소희 (참고) 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/hansohee_s.jpg" alt="한소희 (참고) 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">국내</span></a>
 <figcaption>
 <span class="who">한소희 (참고)</span>
 <span class="desc"><strong>케이스티파이 &#x27;Summer Lilacs&#x27; 착용 — 커스텀 아닌 기성품</strong></span>
@@ -571,11 +580,11 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </section>
 <section id="gear" class="band soft" aria-labelledby="gear-h">
 <div class="inner">
-<div class="sechead"><span class="chip">04 · 에어팟·기기 도색</span><h2 id="gear-h">흰색 정품을 도색 업체에 맡겨 색 바꾼 게 그대로 밈이 됐어요</h2></div>
-<p class="lede">커뮤니티가 방송·SNS 사진을 모아 재게시하는 식으로 퍼졌어요. 품절 기사는 없고 커뮤니티 반응이 근거예요.</p>
+<div class="sechead"><span class="chip">04 · 에어팟·기기 도색</span><h2 id="gear-h">도색은 업체가 돈 버는 커스텀이에요 — 원본은 애플이고, 주문은 도색집으로 갔어요</h2></div>
+<p class="lede">차은우 건은 &#x27;천 건 주문&#x27;이 애플이 아니라 도색 업체로 갔다는 얘기예요. 우리가 피해야 할 방향의 사례로 두고, 품절 기사는 없고 커뮤니티 반응만 근거예요.</p>
 <div class="cardgrid">
 <figure class="card ref">
-<a class="frame" href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener"><div class="noimg">이미지 없음</div><span class="tag">국내</span></a>
+<a class="frame two" href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener"><div class="cell"><img src="assets/airpods_cha_p.jpg" alt="차은우 제품" loading="lazy"><span class="lbl">제품</span></div><div class="cell"><img src="assets/airpods_cha_s.jpg" alt="차은우 찍힌 장면" loading="lazy"><span class="lbl">찍힌 장면</span></div><span class="tag">국내</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">차은우</span>
 <span class="desc"><strong>에어팟 좌우를 서로 다른 색 그라데이션으로 도색</strong></span>
@@ -585,7 +594,7 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener"><div class="noimg">이미지 없음</div><span class="tag">국내</span></a>
+<a class="frame" href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener"><div class="cell noimg">이미지 없음</div><span class="tag">국내</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
 <span class="who">김채원·장원영·김민주·서현·EXID 하니·엑시·경리·은지</span>
 <span class="desc"><strong>각자 에어팟을 하늘색·베이지·레드 단색/투톤 도색</strong></span>
@@ -595,10 +604,10 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </figcaption>
 </figure>
 <figure class="card">
-<a class="frame" href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener"><div class="noimg">이미지 없음</div><span class="tag">국내</span></a>
+<a class="frame" href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener"><div class="cell"><img src="assets/airpods_idols_p.jpg" alt="육성재·펜타곤 여원·홍석·양요섭·기리보이 제품" loading="lazy"><span class="lbl">제품</span></div><span class="tag">국내</span><span class="tag lv lv-shop">업체 필요</span></a>
 <figcaption>
-<span class="who">육성재·양요섭·하성운·홍석·기리보이</span>
-<span class="desc"><strong>유광·무광·그림 도색 (기리보이는 &#x27;돌돌이아빠&#x27; 그림)</strong></span>
+<span class="who">육성재·펜타곤 여원·홍석·양요섭·기리보이</span>
+<span class="desc"><strong>이름 각인+단색 도색, 기리보이는 &#x27;돌돌이아빠&#x27; 그림 (사진 4장 모두 제품에 이름 각인으로 인물 확인)</strong></span>
 <span class="proof">같은 모음글에 디자인별 소개</span>
 
 <span class="when">미확인 · <a href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener">다음카페 ↗</a></span>
@@ -607,11 +616,23 @@ figcaption .when a:hover{color:var(--accent-deep)}
 </div>
 </div>
 </section>
+<section id="ours" class="band tint" aria-labelledby="ours-h">
+<div class="inner">
+<div class="sechead"><span class="chip">우리 식으로</span><h2 id="ours-h">원본은 우리 신발, 커스텀은 매장에서</h2></div>
+<p class="lede">위 사례를 그대로 따라하면 커스텀 업체 홍보가 돼요. 다르게 풀면 이렇게 돼요.</p>
+<div class="rulegrid">
+<div class="rulebox"><b>1</b><h3>원본이 먼저 보여야 해요</h3><p>각인(이강인·손흥민·로잘리아)과 지비츠(비버)는 브랜드가 그대로 남아요. 도색·페인팅(차은우·헌터·르브론)은 만든 사람이 주인공이 돼요. 우리는 앞쪽만 해요.</p></div>
+<div class="rulebox"><b>2</b><h3>간단한 건 매장에서 해줘요</h3><p>이니셜 각인, 참·스트랩 달기, 끈 교체는 매장에서 몇 분이면 돼요. "어디서 했어?"의 답이 <strong>착한구두 매장</strong>이 되게요. 크리에이터가 매장에서 커스텀하는 장면 자체가 컷이 돼요.</p></div>
+<div class="rulebox"><b>3</b><h3>업체가 필요한 건 참고만</h3><p>도색·보석·페인팅 사례는 화제 크기의 참고이지 따라할 포맷이 아니에요. 그 방향으로 가면 주문이 업체로 가요(차은우 에어팟이 그 사례).</p></div>
+</div>
+</div>
+</section>
 <section id="notfound" class="band" aria-labelledby="nf-h">
 <div class="inner">
 <div class="sechead"><span class="chip bad">못 찾은 것</span><h2 id="nf-h">찾아봤지만 근거가 없던 것</h2></div>
 <p class="lede">검색은 했는데 특정 연예인 사례로 확인이 안 된 항목. "없다"가 아니라 "못 찾았다"예요.</p>
 <ul class="dontlist">
+<li>블랙핑크 제니 투명케이스+곰돌이 그립톡(하퍼스바자 2021.02) — 기사에 브랜드명 없음, 착용 사진은 IG 임베드뿐이라 카드에서 제외</li>
 <li>아이돌 폰케이스 비즈·스티커 데코를 <b>본인이 직접 만들어</b> 화제된 건 — DIY 트렌드 글만 있고 개별 사례 없음</li>
 <li>뉴에라 등 모자·가방 이름 자수·와펜 — 제작 업체 소개만, 연예인 착용 화제 기사 없음</li>
 <li>명품 리폼 가방(샤넬·루이비통) 착용 연예인 — 리폼 산업 기사만</li>
