@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>연예인 커스텀 제품, 화제된 사례</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root{
+  --bg:#FFFFFF; --soft:#FAF8F5; --tint:#FDF1EE;
+  --ink:#111113; --ink-2:#55555E; --ink-3:#8B8B94;
+  --line:#E8E5DF; --line-2:#F1EEE9;
+  --accent:#E4432B; --accent-deep:#C0301B; --accent-wash:#FCEDE9; --on-accent:#FFFFFF;
+  --card:#FFFFFF;
+  --sh:0 1px 2px rgba(17,17,19,.04),0 10px 26px -14px rgba(17,17,19,.20);
+  --sh-lift:0 2px 6px rgba(17,17,19,.06),0 22px 44px -18px rgba(17,17,19,.30);
+  --r:18px; --r-sm:12px;
+  --sans:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+}
+/* ponytail: 라이트 고정 — 9/18 다크 톤 반려, OS 다크모드에서도 흰 배경 */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:86px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.68;letter-spacing:-.005em;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;font-feature-settings:'tnum' 0}
+::selection{background:var(--accent);color:#fff}
+a{color:var(--accent-deep);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{
+  outline:2.5px solid var(--accent-deep);outline-offset:3px;border-radius:6px}
+img,video{max-width:100%}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+
+/* ---------- layout ---------- */
+.inner,.heroinner,.mininner,.stepper ol{max-width:1200px;margin:0 auto;padding:0 28px}
+section.band{position:relative;padding:82px 0 92px}
+section.band::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;
+  width:100vw;transform:translateX(-50%);background:transparent}
+section.band.soft::before{background:var(--soft)}
+section.band.tint::before{background:var(--tint)}
+
+/* ---------- mini nav ---------- */
+.minibar{position:fixed;top:0;left:0;right:0;z-index:50;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line);
+  transform:translateY(-102%);transition:transform .28s cubic-bezier(.4,0,.2,1)}
+.minibar.show{transform:none}
+.mininner{display:flex;align-items:center;gap:22px;height:58px}
+.minibrand{font-size:13.5px;font-weight:700;letter-spacing:-.01em;white-space:nowrap;flex:none}
+.minilinks{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+.minilinks::-webkit-scrollbar{display:none}
+.minilinks a{display:flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;
+  font-size:13.5px;font-weight:600;color:var(--ink-2);text-decoration:none;white-space:nowrap;
+  transition:background .18s,color .18s}
+.minilinks a em{font-family:var(--mono);font-style:normal;font-size:11px;font-weight:600;
+  color:var(--ink-3);transition:color .18s}
+.minilinks a:hover{background:var(--line-2);color:var(--ink)}
+.minilinks a.active{background:var(--accent-deep);color:var(--on-accent)}
+.minilinks a.active em{color:var(--on-accent);opacity:.72}
+
+/* ---------- hero ---------- */
+.hero{padding:48px 0 0;position:relative}
+.hero::before{content:"";position:absolute;z-index:-1;inset:0 auto auto 50%;
+  width:100vw;height:100%;transform:translateX(-50%);
+  background:radial-gradient(120% 90% at 82% 0%,var(--accent-wash) 0%,transparent 62%)}
+.heroinner{display:grid;grid-template-columns:minmax(0,1fr) 336px;gap:56px;align-items:center}
+.overline{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent-deep);margin:0 0 20px}
+h1{font-weight:800;font-size:clamp(36px,6vw,72px);line-height:1.08;letter-spacing:-.035em;
+  margin:0;max-width:14ch;word-break:keep-all}
+h1 mark{background:linear-gradient(transparent 58%,var(--accent-wash) 58%);color:var(--ink);
+  padding:0 .04em;box-shadow:inset 0 -.1em 0 var(--accent)}
+.brand{font-size:14px;font-weight:600;color:var(--ink-3);margin:22px 0 0;letter-spacing:-.01em}
+.herovid{padding-top:6px}
+.herocard{margin:0}
+.herocard .frame{aspect-ratio:9/16;border-radius:var(--r)}
+.herocard figcaption{margin-top:14px}
+
+/* ---------- stepper ---------- */
+.stepper{margin-top:30px;padding-bottom:22px}
+.stepper ol{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;
+  margin:0;position:relative}
+.stepper li{position:relative;min-width:0}
+.stepper li::after{content:"";position:absolute;top:19px;left:calc(50% + 24px);right:calc(-50% + 24px);
+  height:2px;background:var(--line);border-radius:2px}
+.stepper li:last-child::after{display:none}
+.stepper a{display:flex;flex-direction:column;align-items:center;gap:11px;text-decoration:none;
+  color:var(--ink);padding:4px 2px 8px;border-radius:14px}
+.snum{width:38px;height:38px;flex:none;display:grid;place-items:center;border-radius:50%;
+  background:var(--bg);border:2px solid var(--line);font-family:var(--mono);font-size:13px;
+  font-weight:600;color:var(--ink-2);position:relative;z-index:1;
+  transition:background .2s,border-color .2s,color .2s,transform .2s}
+.stitle{font-size:14.5px;font-weight:600;letter-spacing:-.015em;text-align:center;line-height:1.35}
+.stepper a:hover .snum{border-color:var(--accent);color:var(--accent-deep);transform:translateY(-2px)}
+.stepper li:last-child .snum{border-color:var(--accent);color:var(--accent-deep)}
+.stepper li:last-child a:hover .snum{background:var(--accent-deep);color:var(--on-accent)}
+
+/* ---------- section head ---------- */
+.sechead{margin:0 0 18px}
+.chip{display:inline-block;background:var(--accent-deep);color:var(--on-accent);
+  font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.14em;
+  padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.chip.bad{background:var(--ink);color:var(--bg)}
+h2{font-weight:800;font-size:clamp(27px,3.6vw,42px);line-height:1.2;letter-spacing:-.032em;
+  margin:0;max-width:20ch;word-break:keep-all}
+.lede{font-size:17px;color:var(--ink-2);max-width:68ch;margin:0;word-break:keep-all}
+.lede strong{color:var(--ink);font-weight:700}
+h3{font-weight:700;font-size:19px;letter-spacing:-.022em;margin:0}
+.subhead{margin:56px 0 0;font-size:21px}
+.note{color:var(--ink-3);font-size:13.5px;margin-top:16px}
+
+/* ---------- callout ---------- */
+.callout{margin-top:26px;padding:20px 24px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r);box-shadow:var(--sh);font-size:15px;max-width:74ch;
+  line-height:1.65;word-break:keep-all}
+.callout strong{color:var(--accent-deep);font-weight:700}
+.callout.face,.callout.rule{margin-top:32px;border-left:4px solid var(--accent)}
+.rulelabel{display:inline-block;background:var(--ink);color:var(--bg);font-family:var(--mono);
+  font-size:11px;font-weight:600;letter-spacing:.1em;padding:4px 10px;border-radius:999px;
+  margin-right:10px;vertical-align:1px}
+.callout.rule strong{color:var(--ink)}
+
+/* ---------- cards ---------- */
+.cardgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:30px}
+.cardgrid.three{grid-template-columns:repeat(3,1fr)}
+.card{margin:0;min-width:0}
+.frame{position:relative;aspect-ratio:9/16;overflow:hidden;background:#0C0C0E;
+  border-radius:16px;border:1px solid var(--line);box-shadow:var(--sh);
+  transition:box-shadow .24s ease,transform .24s ease,border-color .24s ease}
+.frame video,.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.card:hover .frame{transform:translateY(-4px);box-shadow:var(--sh-lift)}
+.tag{position:absolute;top:10px;left:10px;background:rgba(12,12,14,.58);color:#fff;
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.01em;
+  padding:5px 10px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+figcaption{margin-top:13px;display:flex;flex-direction:column;gap:6px;
+  font-size:14.5px;line-height:1.5;word-break:keep-all}
+figcaption .who{font-size:12.5px;font-weight:600;color:var(--ink-3);letter-spacing:-.01em}
+figcaption .who .views{font-family:var(--mono);font-weight:600;font-size:12.5px;color:var(--ink-2)}
+figcaption .desc{color:var(--ink);font-size:14.5px}
+figcaption .desc strong{font-weight:700}
+figcaption .when{align-self:flex-start;margin-top:2px;font-size:12px;
+  font-weight:600;color:var(--ink-2);background:var(--line-2);border-radius:999px;padding:4px 11px;
+  letter-spacing:-.01em}
+
+/* hook boxes */
+.hookboxes{margin-top:34px;display:flex;flex-direction:column;gap:22px}
+.hookbox{background:var(--card);border:1px solid var(--line);border-radius:22px;
+  padding:26px 26px 30px;box-shadow:var(--sh)}
+.hookhead{border-left:3px solid var(--accent);padding-left:14px}
+.hookhead p{color:var(--ink-2);font-size:14.5px;margin:5px 0 0;max-width:64ch;word-break:keep-all}
+.hookbox .cardgrid{margin-top:22px}
+
+/* bad cards */
+.card.bad .frame{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-wash),var(--sh)}
+.card.bad:hover .frame{box-shadow:0 0 0 2px var(--accent-wash),var(--sh-lift)}
+.card.bad .tag{background:var(--accent-deep);color:var(--on-accent)}
+.card.bad .frame::after{content:"✕ 이러면 넘겨요";position:absolute;left:10px;bottom:10px;
+  background:var(--accent-deep);color:var(--on-accent);font-size:11.5px;font-weight:700;
+  letter-spacing:-.01em;padding:5px 11px;border-radius:999px}
+.card.bad figcaption .who{color:var(--accent-deep)}
+.card.bad figcaption .who .views{color:var(--accent-deep)}
+
+.dontlist{list-style:none;padding:0;margin-top:22px;columns:2;column-gap:40px;font-size:14.5px}
+.dontlist li{break-inside:avoid;margin-bottom:12px;padding:11px 14px 11px 38px;position:relative;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm);
+  color:var(--ink-2);word-break:keep-all}
+.dontlist li::before{content:"✕";position:absolute;left:14px;top:11px;color:var(--accent-deep);
+  font-size:12px;font-weight:800}
+
+/* ---------- checklist ---------- */
+.checklist{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:10px;max-width:920px}
+.citem label{display:flex;align-items:flex-start;gap:15px;cursor:pointer;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:18px 20px;transition:border-color .18s,box-shadow .18s,background .18s}
+.citem label:hover{border-color:var(--ink-3);box-shadow:var(--sh)}
+.citem input{appearance:none;-webkit-appearance:none;flex:none;margin:1px 0 0;
+  width:24px;height:24px;border:2px solid var(--ink-3);border-radius:8px;background:var(--bg);
+  display:grid;place-items:center;cursor:pointer;transition:background .16s,border-color .16s}
+.citem input:checked{background:var(--accent-deep);border-color:var(--accent-deep)}
+.citem input:checked::after{content:"";width:11px;height:6px;
+  border-left:2.5px solid var(--on-accent);border-bottom:2.5px solid var(--on-accent);
+  transform:rotate(-45deg) translate(1px,-2px)}
+.cbody{display:flex;flex-direction:column;gap:5px;min-width:0}
+.clabel{font-size:12px;font-weight:700;letter-spacing:-.005em;color:var(--ink-3)}
+.clabel.c-bad{color:var(--accent-deep)}
+.ctext{font-size:15.5px;font-weight:500;letter-spacing:-.015em;word-break:keep-all;
+  transition:color .18s}
+.cnum{margin-left:auto;align-self:center;font-family:var(--mono);font-size:12px;
+  color:var(--ink-3);flex:none}
+.citem input:checked ~ .cbody .ctext{text-decoration:line-through;
+  text-decoration-color:var(--accent);text-decoration-thickness:2px;color:var(--ink-3)}
+.citem input:checked ~ .cbody .clabel{opacity:.5}
+.citem:has(input:checked) label{background:var(--accent-wash);border-color:var(--accent)}
+#count{font-family:var(--sans);font-weight:600;color:var(--ink-2)}
+
+/* ---------- full cases ---------- */
+.fullgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:30px}
+.fullcase{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);
+  border-radius:22px;padding:18px;box-shadow:var(--sh);min-width:0}
+.fullcase .frame{aspect-ratio:9/16;width:100%}
+.fullcase:hover .frame{transform:none;box-shadow:var(--sh)}
+.fullinfo{display:flex;flex-direction:column;flex:1;padding:18px 2px 2px}
+.fullinfo h3{font-size:20px}
+.fullinfo .meta{font-family:var(--mono);font-size:12.5px;letter-spacing:.02em;color:var(--ink-3);
+  margin:7px 0 0}
+.fullinfo .meta .fviews{color:var(--ink-2);font-weight:600}
+.story{list-style:none;padding:18px 0 0;margin:18px 0 0;border-top:1px solid var(--line);
+  font-size:14.5px;display:flex;flex-direction:column;gap:12px}
+.story li{display:flex;gap:14px;align-items:flex-start;word-break:keep-all}
+.story b{flex:none;min-width:62px;font-size:11.5px;font-weight:700;letter-spacing:.04em;
+  color:var(--accent-deep);background:var(--accent-wash);border-radius:999px;
+  padding:4px 10px;text-align:center;margin-top:2px}
+.iglink{display:inline-flex;align-items:center;align-self:flex-start;margin-top:auto;
+  font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);
+  border:1px solid var(--line);border-radius:999px;padding:9px 18px;
+  transition:border-color .18s,color .18s,background .18s}
+.story{margin-bottom:22px}
+.iglink:hover{border-color:var(--accent);color:var(--accent-deep);background:var(--accent-wash)}
+
+/* ---------- tables ---------- */
+.tablegrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-top:8px;
+  align-items:start}
+.tablewrap{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px 28px 10px;box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+table caption{font-weight:800;font-size:18px;letter-spacing:-.02em;text-align:left;
+  margin-bottom:16px;color:var(--ink);word-break:keep-all}
+table th,table td{border-top:1px solid var(--line-2);padding:13px 0;text-align:left;
+  vertical-align:top;word-break:keep-all}
+table tr:first-child th,table tr:first-child td{border-top:0}
+table th{width:110px;padding-right:16px;font-size:12.5px;font-weight:700;letter-spacing:.02em;
+  color:var(--accent-deep)}
+table td{color:var(--ink-2)}
+.tablewrap .note{margin:14px 0 16px}
+footer{margin:46px 0 0;padding-top:26px;border-top:1px solid var(--line)}
+footer .note{margin:0}
+
+/* ---------- motion ---------- */
+.rv{opacity:0;transform:translateY(16px);
+  transition:opacity .55s cubic-bezier(.22,.7,.3,1),transform .55s cubic-bezier(.22,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@keyframes heroUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.herotext>*,.herovid,.stepper li{animation:heroUp .7s cubic-bezier(.22,.7,.3,1) both}
+.herotext>.overline{animation-delay:.02s}
+.herotext>h1{animation-delay:.08s}
+.herotext>.brand{animation-delay:.16s}
+.herotext>.callout{animation-delay:.22s}
+.herovid{animation-delay:.18s}
+.stepper li:nth-child(1){animation-delay:.28s}
+.stepper li:nth-child(2){animation-delay:.34s}
+.stepper li:nth-child(3){animation-delay:.40s}
+.stepper li:nth-child(4){animation-delay:.46s}
+.stepper li:nth-child(5){animation-delay:.52s}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .rv{opacity:1;transform:none}
+  .card:hover .frame{transform:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .heroinner{grid-template-columns:minmax(0,1fr) 290px;gap:40px}
+  .cardgrid{gap:18px}
+}
+@media (max-width:900px){
+  section.band{padding:62px 0 70px}
+  .heroinner{grid-template-columns:1fr;gap:34px}
+  .herovid{max-width:300px}
+  h1{max-width:18ch}
+  .cardgrid,.cardgrid.three{grid-template-columns:repeat(2,1fr)}
+  .fullgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tablegrid{grid-template-columns:1fr}
+  .stepper ol{grid-template-columns:repeat(5,1fr);gap:6px}
+  .stitle{font-size:12.5px}
+  .stepper li::after{left:calc(50% + 20px);right:calc(-50% + 20px)}
+}
+@media (max-width:620px){
+  body{font-size:15.5px}
+  .inner,.heroinner,.mininner,.stepper ol{padding:0 18px}
+  .hero{padding-top:46px}
+  section.band{padding:52px 0 58px}
+  .heroinner{gap:28px}
+  .herovid{max-width:100%}
+  .cardgrid,.cardgrid.three{grid-template-columns:repeat(2,1fr);gap:14px}
+  .hookbox{padding:20px 16px 22px;border-radius:18px}
+  figcaption{font-size:13.5px}
+  figcaption .desc{font-size:13.5px}
+  .dontlist{columns:1}
+  .stepper{margin-top:40px}
+  .stepper ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;
+    padding-left:18px;padding-right:18px}
+  .stepper li::after{display:none}
+  .stepper a{flex-direction:row;justify-content:flex-start;gap:10px;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;padding:9px 12px}
+  .stitle{text-align:left}
+  .snum{width:30px;height:30px;font-size:12px}
+  .stitle{font-size:13.5px}
+  .minibrand{display:none}
+  .mininner{height:52px;gap:0}
+  .minilinks{margin-left:0}
+  .minilinks a span{display:none}
+  .minilinks a{padding:8px 13px}
+  .minilinks a em{font-size:12.5px}
+  .fullgrid{grid-template-columns:1fr;gap:18px}
+  .fullcase{padding:14px;border-radius:18px}
+  .citem label{padding:15px 16px;gap:12px}
+  .ctext{font-size:14.5px}
+  .cnum{display:none}
+  .tablewrap{padding:20px 18px 6px}
+  table th{width:88px;padding-right:12px}
+}
+@media (max-width:360px){
+  .cardgrid,.cardgrid.three{grid-template-columns:1fr}
+}
+
+
+
+/* ── custom-cases 전용 ── */
+.frame{aspect-ratio:4/5;display:block;text-decoration:none;background:var(--soft)}
+.noimg{display:grid;place-items:center;height:100%;color:var(--ink-3);font-size:13px}
+figcaption .proof{color:var(--ink-2);font-size:13.5px}
+figcaption .caveat{color:var(--accent-deep);font-size:12.5px;font-weight:600}
+figcaption .when a{color:var(--ink-2);text-decoration:none}
+figcaption .when a:hover{color:var(--accent-deep)}
+.card.ref .frame{border-style:dashed}
+.card.ref .tag{background:var(--ink)}
+.heroinner{grid-template-columns:1fr}
+.stepper ol{grid-template-columns:repeat(4,1fr)}
+.dontlist{columns:1;max-width:820px}
+.dontlist li::before{content:"–"}
+@media (max-width:620px){.stepper ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+</style>
+</head>
+<body>
+<div class="minibar" id="minibar"><div class="mininner">
+<span class="minibrand">커스텀 화제 사례</span>
+<nav class="minilinks" aria-label="섹션 바로가기">
+<a href="#engrave" data-sec="engrave"><em>01</em><span>이름·이니셜 각인</span></a>
+<a href="#shoes" data-sec="shoes"><em>02</em><span>신발 커스텀</span></a>
+<a href="#case" data-sec="case"><em>03</em><span>폰케이스·소품 꾸미기</span></a>
+<a href="#gear" data-sec="gear"><em>04</em><span>에어팟·기기 도색</span></a>
+</nav>
+</div></div>
+<header class="hero">
+<div class="heroinner">
+<div class="herotext">
+<p class="overline">CHAAKAN · REFERENCE</p>
+<h1>연예인이 쓴 <mark>커스텀</mark> 제품, 화제된 사례 21건</h1>
+<p class="brand">인스타·공항·방송에서 찍힌 것 중 기성품에 각인·도색·데코를 얹어 이슈된 것만</p>
+<div class="callout">기준: <strong>출처 URL이 실제로 있는 것만</strong> 넣었어요. 품절·주문 수치는 기사나 커뮤니티 본문에 있는 그대로이고, 커뮤니티발 미확인 수치는 카드에 ⚠로 표시했어요. 공식 협업 컬렉션(제니 아디다스, 정국 CK 등)은 커스텀이 아니라 뺐어요. 2026-09-19 기준.</div>
+</div>
+</div>
+<nav class="stepper" aria-label="섹션 이동"><ol>
+<li><a href="#engrave"><span class="snum">01</span><span class="stitle">이름·이니셜 각인</span></a></li>
+<li><a href="#shoes"><span class="snum">02</span><span class="stitle">신발 커스텀</span></a></li>
+<li><a href="#case"><span class="snum">03</span><span class="stitle">폰케이스·소품 꾸미기</span></a></li>
+<li><a href="#gear"><span class="snum">04</span><span class="stitle">에어팟·기기 도색</span></a></li>
+</ol></nav>
+</header>
+<main>
+<section id="engrave" class="band" aria-labelledby="engrave-h">
+<div class="inner">
+<div class="sechead"><span class="chip">01 · 이름·이니셜 각인</span><h2 id="engrave-h">&quot;이 사람만을 위한 것&quot;이라는 게 보이면 매체가 먼저 &#x27;정체&#x27;를 파요</h2></div>
+<p class="lede">각인 자체가 기사 소재가 된 케이스. 해외는 주얼리, 국내는 스포츠 장비가 많아요.</p>
+<div class="cardgrid">
+<figure class="card">
+<a class="frame" href="https://www.insight.co.kr/news/452417" target="_blank" rel="noopener"><img src="assets/leekangin.jpg" alt="이강인" loading="lazy"><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">이강인</span>
+<span class="desc"><strong>축구화·신가드·반지에 가족 이니셜 WSJSK 각인, 신가드에 태극기·스페인기·가족사진</strong></span>
+<span class="proof">인사이트·터보뉴스가 &#x27;의문의 알파벳 정체&#x27; 기사화</span>
+
+<span class="when">지속 · <a href="https://www.insight.co.kr/news/452417" target="_blank" rel="noopener">인사이트 ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://v.daum.net/v/ZrZp7QTN0p" target="_blank" rel="noopener"><img src="assets/son.jpg" alt="손흥민" loading="lazy"><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">손흥민</span>
+<span class="desc"><strong>아디다스 시그니처 축구화 SON 각인·태극기 4색 반영</strong></span>
+<span class="proof">다수 언론 보도 (판매 수치는 없음)</span>
+
+<span class="when">2024~25 · <a href="https://v.daum.net/v/ZrZp7QTN0p" target="_blank" rel="noopener">다음뉴스 ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.allurekorea.com/2023/01/26/%EB%89%B4%EC%A7%84%EC%8A%A4%EC%9D%98-%ED%86%A0%EB%81%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%EC%96%B4%EB%94%94%EA%BA%BC%EC%A7%80/" target="_blank" rel="noopener"><img src="assets/newjeans.jpg" alt="뉴진스 5인" loading="lazy"><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">뉴진스 5인</span>
+<span class="desc"><strong>멤버별 상징색 크리스털 토끼 목걸이 1:1 제작 (디자이너 지원초이)</strong></span>
+<span class="proof">얼루어 코리아가 &#x27;어디꺼&#x27; 별도 기사</span>
+
+<span class="when">2023.01 OMG 활동 · <a href="https://www.allurekorea.com/2023/01/26/%EB%89%B4%EC%A7%84%EC%8A%A4%EC%9D%98-%ED%86%A0%EB%81%BC-%EB%AA%A9%EA%B1%B8%EC%9D%B4-%EC%96%B4%EB%94%94%EA%BA%BC%EC%A7%80/" target="_blank" rel="noopener">Allure Korea ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.popdust.com/hailey-bieber-initial-necklace-2668540701" target="_blank" rel="noopener"><img src="assets/hailey.jpg" alt="헤일리 비버" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">헤일리 비버</span>
+<span class="desc"><strong>아들 이니셜 JBB 버블 폰트 다이아 목걸이 (Alex Moss)</strong></span>
+<span class="proof">공개 직후 바이럴, 다수 브랜드가 카피본 양산</span>
+
+<span class="when">2025 · <a href="https://www.popdust.com/hailey-bieber-initial-necklace-2668540701" target="_blank" rel="noopener">Popdust ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://renatocipullo.com/blogs/news/rihanna-wears-her-splendente-r-pendant" target="_blank" rel="noopener"><img src="assets/rihanna.jpg" alt="리한나" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">리한나</span>
+<span class="desc"><strong>이니셜 R 레트로 펜던트 $7,950 (Renato Cipullo)</strong></span>
+<span class="proof">브랜드 백오더 4~6주</span>
+
+<span class="when">2026 · <a href="https://renatocipullo.com/blogs/news/rihanna-wears-her-splendente-r-pendant" target="_blank" rel="noopener">Renato Cipullo ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.inverse.com/input/style/rosalia-nike-air-force-1-espadrille-collaboration-snkrs-release-date" target="_blank" rel="noopener"><img src="assets/rosalia.jpg" alt="로잘리아" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">로잘리아</span>
+<span class="desc"><strong>나이키 AF1 인솔에 &#x27;We did it Rosalia&#x27; 금박 각인</strong></span>
+<span class="proof">본인 인스타 영상 → 나이키 협업설 확산</span>
+
+<span class="when">2021 · <a href="https://www.inverse.com/input/style/rosalia-nike-air-force-1-espadrille-collaboration-snkrs-release-date" target="_blank" rel="noopener">Inverse ↗</a></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="shoes" class="band soft" aria-labelledby="shoes-h">
+<div class="inner">
+<div class="sechead"><span class="chip">02 · 신발 커스텀</span><h2 id="shoes-h">페인팅·보석·지비츠, 신발은 손대는 방식이 제일 다양해요</h2></div>
+<p class="lede">직접 만든 것부터 아티스트 제작까지. 국내는 김신영 건이 유일하게 기사화됐어요.</p>
+<div class="cardgrid">
+<figure class="card">
+<a class="frame" href="https://www.xportsnews.com/article/2135322" target="_blank" rel="noopener"><img src="assets/kimshinyoung.jpg" alt="김신영" loading="lazy"><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">김신영</span>
+<span class="desc"><strong>4년째 직접 만든 커스텀 운동화, 디자인등록 7개</strong></span>
+<span class="proof">나 혼자 산다 방영 후 다수 매체 기사</span>
+
+<span class="when">2026.04 · <a href="https://www.xportsnews.com/article/2135322" target="_blank" rel="noopener">엑스포츠뉴스 ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.cnn.com/style/article/justin-bieber-crocs-intl-scli" target="_blank" rel="noopener"><img src="assets/bieber_crocs.jpg" alt="저스틴 비버" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">저스틴 비버</span>
+<span class="desc"><strong>크록스 클로그 + 본인 브랜드 drew house 지비츠 8종 직접 디자인</strong></span>
+<span class="proof">크록스 공식몰 솔드아웃, CNN·Forbes 보도</span>
+
+<span class="when">2020.10 · <a href="https://www.cnn.com/style/article/justin-bieber-crocs-intl-scli" target="_blank" rel="noopener">CNN ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.si.com/onsi/athlete-lifestyle/fashion/travis-hunter-one-of-a-kind-nikes-9-hour-excruciating-works-of-art" target="_blank" rel="noopener"><img src="assets/hunter.jpg" alt="트래비스 헌터" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">트래비스 헌터</span>
+<span class="desc"><strong>미식축구 클릿 골드 커스텀 페인팅, 9시간 작업</strong></span>
+<span class="proof">SI·야드바커 별도 보도</span>
+
+<span class="when">2024~25 · <a href="https://www.si.com/onsi/athlete-lifestyle/fashion/travis-hunter-one-of-a-kind-nikes-9-hour-excruciating-works-of-art" target="_blank" rel="noopener">Sports Illustrated ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.cnbc.com/2018/09/04/photos-24-karat-gold-nike-lebron-15-sneaker-worth-over-100000.html" target="_blank" rel="noopener"><img src="assets/lebron.jpg" alt="르브론 제임스" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">르브론 제임스</span>
+<span class="desc"><strong>르브론15 금도금·악어가죽·다이아 각인 (Shoe Surgeon)</strong></span>
+<span class="proof">$10만+ 평가, 전세계 기사</span>
+
+<span class="when">2018 · <a href="https://www.cnbc.com/2018/09/04/photos-24-karat-gold-nike-lebron-15-sneaker-worth-over-100000.html" target="_blank" rel="noopener">CNBC ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://en.wikipedia.org/wiki/Satan_Shoes" target="_blank" rel="noopener"><img src="assets/satan.jpg" alt="릴 나스 엑스" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">릴 나스 엑스</span>
+<span class="desc"><strong>MSCHF 커스텀 에어맥스97 &#x27;사탄 슈즈&#x27; 666켤레</strong></span>
+<span class="proof">1분 내 완판, 나이키 소송</span>
+
+<span class="when">2021.03 · <a href="https://en.wikipedia.org/wiki/Satan_Shoes" target="_blank" rel="noopener">Wikipedia ↗</a></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="case" class="band" aria-labelledby="case-h">
+<div class="inner">
+<div class="sechead"><span class="chip">03 · 폰케이스·소품 꾸미기</span><h2 id="case-h">케이스·백참·인형, 작은 물건일수록 &#x27;따라하기&#x27;로 번져요</h2></div>
+<p class="lede">직접 디자인하거나 데코한 것만 넣었어요. 기성품 케이스 착용 품절은 맨 끝에 참고로 1건.</p>
+<div class="cardgrid">
+<figure class="card">
+<a class="frame" href="https://www.gqkorea.co.kr/2024/05/03/%EC%A0%80-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%AD%90%EC%95%BC-%EB%82%A8%EC%9E%90-%EC%95%84%EC%9D%B4%EB%8F%8C%EC%9D%98-%ED%9C%B4%EB%8C%80%ED%8F%B0-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EC%B6%94%EC%B2%9C-5/" target="_blank" rel="noopener"><img src="assets/baekhyun.jpg" alt="EXO 백현" loading="lazy"><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">EXO 백현</span>
+<span class="desc"><strong>본인이 직접 디자인한 캐릭터 &#x27;터래기&#x27; 폰케이스 (어프어프)</strong></span>
+<span class="proof">GQ Korea 기사 수록</span>
+
+<span class="when">2024.05 · <a href="https://www.gqkorea.co.kr/2024/05/03/%EC%A0%80-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%AD%90%EC%95%BC-%EB%82%A8%EC%9E%90-%EC%95%84%EC%9D%B4%EB%8F%8C%EC%9D%98-%ED%9C%B4%EB%8C%80%ED%8F%B0-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EC%B6%94%EC%B2%9C-5/" target="_blank" rel="noopener">GQ Korea ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.harpersbazaar.co.kr/article/53236" target="_blank" rel="noopener"><img src="assets/jennie_wiggle.jpg" alt="블랙핑크 제니" loading="lazy"><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">블랙핑크 제니</span>
+<span class="desc"><strong>위글위글 투명 케이스 + 곰돌이 그립톡 조합</strong></span>
+<span class="proof">하퍼스바자 &#x27;폰케이스 꾸미는 패피&#x27; 기사</span>
+
+<span class="when">2021.02 · <a href="https://www.harpersbazaar.co.kr/article/53236" target="_blank" rel="noopener">Harper&#x27;s BAZAAR ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.cosmopolitan.co.kr/article/1889587" target="_blank" rel="noopener"><img src="assets/v_hirono.jpg" alt="BTS 뷔" loading="lazy"><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">BTS 뷔</span>
+<span class="desc"><strong>팝마트 히로노 피규어를 직접 커스텀해 셀린 가방에 백참으로</strong></span>
+<span class="proof">팝마트 공식몰 24시간 500개 완판, 전세계 품절</span>
+
+<span class="when">2025.10 · <a href="https://www.cosmopolitan.co.kr/article/1889587" target="_blank" rel="noopener">Cosmopolitan Korea ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.tennis.com/news/articles/from-andre-swagassi-to-billie-jean-bling-meet-naomi-osaka-s-labubu-crew" target="_blank" rel="noopener"><img src="assets/osaka.jpg" alt="나오미 오사카" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">나오미 오사카</span>
+<span class="desc"><strong>라부부에 스와로브스키 1,000개+ 박아 경기복과 매칭 (A-Morir)</strong></span>
+<span class="proof">매 경기 후 공개, 개당 13시간 제작 보도, 이후 $495 일반판매</span>
+
+<span class="when">2025 US Open · <a href="https://www.tennis.com/news/articles/from-andre-swagassi-to-billie-jean-bling-meet-naomi-osaka-s-labubu-crew" target="_blank" rel="noopener">Tennis.com ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://thecharmeedit.com/blogs/news/kylie-jenners-bedazzled-birthday-trend-meet-king-kylie" target="_blank" rel="noopener"><img src="assets/kylie_beads.jpg" alt="카일리 제너" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">카일리 제너</span>
+<span class="desc"><strong>&#x27;King Kylie&#x27; 보석 전면 비즈 폰케이스 (The Charmé Edit)</strong></span>
+<span class="proof">비즈 장식 검색량 전년比 729%↑ (Cosmopolitan India 인용)</span>
+
+<span class="when">2026.08 · <a href="https://thecharmeedit.com/blogs/news/kylie-jenners-bedazzled-birthday-trend-meet-king-kylie" target="_blank" rel="noopener">The Charmé Edit ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://www.aol.com/spotted-kylie-jenner-sporting-64-181100036.html" target="_blank" rel="noopener"><img src="assets/kylie_casetify.jpg" alt="카일리 제너" loading="lazy"><span class="tag">해외</span></a>
+<figcaption>
+<span class="who">카일리 제너</span>
+<span class="desc"><strong>케이스티파이 미러 케이스에 본인 이름 모노그램 + Octobuddy 부착</strong></span>
+<span class="proof">AOL 등 &#x27;Spotted&#x27; 보도</span>
+
+<span class="when">2025 골든글로브 · <a href="https://www.aol.com/spotted-kylie-jenner-sporting-64-181100036.html" target="_blank" rel="noopener">AOL ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card ref">
+<a class="frame" href="https://economist.co.kr/article/view/ecn202306080036" target="_blank" rel="noopener"><img src="assets/hansohee.jpg" alt="한소희 (참고)" loading="lazy"><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">한소희 (참고)</span>
+<span class="desc"><strong>케이스티파이 &#x27;Summer Lilacs&#x27; 착용 — 커스텀 아닌 기성품</strong></span>
+<span class="proof">&quot;착용해 품절 대란&quot; (기사 본문)</span>
+<span class="caveat">⚠ 기성품 착용 건, 커스텀 아님</span>
+<span class="when">2023.06 · <a href="https://economist.co.kr/article/view/ecn202306080036" target="_blank" rel="noopener">이코노미스트 ↗</a></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="gear" class="band soft" aria-labelledby="gear-h">
+<div class="inner">
+<div class="sechead"><span class="chip">04 · 에어팟·기기 도색</span><h2 id="gear-h">흰색 정품을 도색 업체에 맡겨 색 바꾼 게 그대로 밈이 됐어요</h2></div>
+<p class="lede">커뮤니티가 방송·SNS 사진을 모아 재게시하는 식으로 퍼졌어요. 품절 기사는 없고 커뮤니티 반응이 근거예요.</p>
+<div class="cardgrid">
+<figure class="card ref">
+<a class="frame" href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener"><div class="noimg">이미지 없음</div><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">차은우</span>
+<span class="desc"><strong>에어팟 좌우를 서로 다른 색 그라데이션으로 도색</strong></span>
+<span class="proof">커뮤니티 글: &quot;업체 주문 천 건 넘게 쇄도&quot;. 인스티즈·뽐뿌·펨코 반복 재게시</span>
+<span class="caveat">⚠ 천 건 수치는 커뮤니티 주장, 원 기사 없음</span>
+<span class="when">2019년 이전 · <a href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener">다음카페 ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener"><div class="noimg">이미지 없음</div><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">김채원·장원영·김민주·서현·EXID 하니·엑시·경리·은지</span>
+<span class="desc"><strong>각자 에어팟을 하늘색·베이지·레드 단색/투톤 도색</strong></span>
+<span class="proof">팬 커뮤니티 모음글, 댓글 100개+</span>
+
+<span class="when">2019~21년경 · <a href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener">다음카페 ↗</a></span>
+</figcaption>
+</figure>
+<figure class="card">
+<a class="frame" href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener"><div class="noimg">이미지 없음</div><span class="tag">국내</span></a>
+<figcaption>
+<span class="who">육성재·양요섭·하성운·홍석·기리보이</span>
+<span class="desc"><strong>유광·무광·그림 도색 (기리보이는 &#x27;돌돌이아빠&#x27; 그림)</strong></span>
+<span class="proof">같은 모음글에 디자인별 소개</span>
+
+<span class="when">미확인 · <a href="https://m.cafe.daum.net/subdued20club/ReHf/2407435" target="_blank" rel="noopener">다음카페 ↗</a></span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="notfound" class="band" aria-labelledby="nf-h">
+<div class="inner">
+<div class="sechead"><span class="chip bad">못 찾은 것</span><h2 id="nf-h">찾아봤지만 근거가 없던 것</h2></div>
+<p class="lede">검색은 했는데 특정 연예인 사례로 확인이 안 된 항목. "없다"가 아니라 "못 찾았다"예요.</p>
+<ul class="dontlist">
+<li>아이돌 폰케이스 비즈·스티커 데코를 <b>본인이 직접 만들어</b> 화제된 건 — DIY 트렌드 글만 있고 개별 사례 없음</li>
+<li>뉴에라 등 모자·가방 이름 자수·와펜 — 제작 업체 소개만, 연예인 착용 화제 기사 없음</li>
+<li>명품 리폼 가방(샤넬·루이비통) 착용 연예인 — 리폼 산업 기사만</li>
+<li>아이돌 컨버스 낙서·페인팅, 끈 교체 — 근거 0건</li>
+<li>아이유·제니·지수 이니셜 각인 주얼리 — 전부 명품 협찬 기사, 개인 각인 아님</li>
+<li>손흥민·김연아·오타니 골프채·스케이트·배트 각인 — 없음</li>
+<li>뉴진스 해린 고양이 폰케이스(뉴센 2024.02) — 제목만 확인, 본문 로드 실패</li>
+<li>장원영·리사 라부부·크라이베이비 키링 — 기성 캐릭터 굿즈라 커스텀에서 제외</li>
+</ul>
+<footer><p class="note">빌드 research/연예인_커스텀_사례_20260919/build.py · 이미지는 각 출처 기사 대표 이미지, 저작권은 원 매체에 있어요.</p></footer>
+</div>
+</section>
+</main>
+<script>
+var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduced && 'IntersectionObserver' in window){
+  var rv = document.querySelectorAll('.cardgrid > .card, .callout, .dontlist > li');
+  rv.forEach(function(el){ el.classList.add('rv'); var i=Array.prototype.indexOf.call(el.parentNode.children, el); el.style.transitionDelay=Math.min(i,5)*55+'ms'; });
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'160px 0px', threshold:0.02});
+  rv.forEach(function(el){ io.observe(el); });
+}
+var minibar=document.getElementById('minibar'), heroEl=document.querySelector('.hero');
+var secs=[].slice.call(document.querySelectorAll('main section[id]'));
+var links=[].slice.call(document.querySelectorAll('.minilinks a'));
+function onScroll(){
+  var y=window.pageYOffset||document.documentElement.scrollTop;
+  minibar.classList.toggle('show', y>heroEl.offsetHeight-80);
+  var cur=null; secs.forEach(function(s){ if(s.offsetTop-120<=y) cur=s.id; });
+  links.forEach(function(a){ a.classList.toggle('active', a.dataset.sec===cur); });
+}
+window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+</script>
+</body>
+</html>
