@@ -55,6 +55,31 @@ h4{font-family:var(--sans);font-weight:700;font-size:15.5px;letter-spacing:-.01e
 .blocklabel{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin:34px 0 0;padding-top:16px;border-top:1px solid var(--line-2)}
 .notecard{margin-top:18px;padding:14px 16px;background:var(--soft);border:1px dashed var(--line);border-radius:var(--r-sm);color:var(--ink-2);font-size:13.5px;max-width:64ch;word-break:keep-all}
 
+/* 안된 것 공통 이유 — 카드 목록 앞의 집계 블록 */
+.whybox{margin:26px 0 34px;padding:24px 26px 20px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh)}
+.whyboxlabel{margin:0;font-size:12px;font-family:var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep)}
+.whyone{margin:10px 0 0;font-size:15.5px;line-height:1.7;color:var(--ink);max-width:80ch;word-break:keep-all}
+.whylist{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-direction:column;gap:20px;counter-reset:why}
+.whyrow{padding-top:18px;border-top:1px solid var(--line-2)}
+.whyrow:first-child{padding-top:0;border-top:0}
+.whyhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.whyrank{flex:none;width:22px;height:22px;border-radius:999px;background:var(--accent-wash);color:var(--accent-deep);font-family:var(--mono);font-size:11px;font-weight:700;display:grid;place-items:center}
+.whytitle{font-size:16px;line-height:1.4;color:var(--ink);word-break:keep-all}
+.whycount{margin-left:auto;font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--accent-deep);white-space:nowrap}
+.whypct{color:var(--ink-3);font-weight:500}
+.whybar{margin-top:9px;height:5px;background:var(--line-2);border-radius:999px;overflow:hidden}
+.whybar i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.whydetail{margin:11px 0 0;font-size:14px;line-height:1.7;color:var(--ink-2);max-width:78ch;word-break:keep-all}
+.whyfix{margin:8px 0 0;font-size:14px;line-height:1.7;color:var(--ink);max-width:78ch;word-break:keep-all}
+.whyfix b{color:var(--accent-deep);font-weight:700;margin-right:6px}
+.whyev{margin:8px 0 0;font-size:11.5px;color:var(--ink-3);word-break:break-all}
+.whyalso{margin-top:24px;padding-top:18px;border-top:1px solid var(--line)}
+.whyalsolabel{margin:0;font-size:12px;font-family:var(--mono);letter-spacing:.04em;color:var(--ink-3)}
+.whyalsolist{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 28px;font-size:13.5px;color:var(--ink-2)}
+.whyalsolist b{color:var(--ink);font-weight:600}
+.whyalsolist .mono{color:var(--accent-deep);font-weight:700}
+.whyunknown{margin:16px 0 0;font-size:12.5px;line-height:1.65;color:var(--ink-3);word-break:keep-all}
+@media (max-width:700px){.whyalsolist{grid-template-columns:1fr}.whybox{padding:20px 18px 16px}}
 .callout{margin-top:26px;padding:18px 22px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--r);box-shadow:var(--sh);font-size:15px;line-height:1.65;max-width:74ch;word-break:keep-all}
 .callout strong{color:var(--accent-deep);font-weight:700}
 .slotbox{max-width:none}
@@ -85,6 +110,7 @@ h4{font-family:var(--sans);font-weight:700;font-size:15.5px;letter-spacing:-.01e
 figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:13.5px;line-height:1.55;word-break:keep-all}
 figcaption .who{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:-.005em;color:var(--ink-3)}
 figcaption .ourline{color:var(--ink);font-style:italic}
+.beatblock>p.ourline{margin:14px 0 0;padding:12px 14px;border-left:3px solid var(--accent-deep);background:var(--soft,rgba(127,127,127,.08));font-style:italic;color:var(--ink)}
 .srclink{font-family:var(--mono);font-size:11.5px;font-weight:600;color:var(--accent-deep)}
 .srclink.muted{color:var(--ink-3)}
 .fullbtn{margin-top:6px;align-self:flex-start;font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.01em;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:7px 12px;cursor:pointer;border-radius:999px;transition:background .15s,color .15s,border-color .15s}
@@ -1884,7 +1910,7 @@ table.calftable td.verdict{padding-top:8px}
 <section id="step4" class="band soft" aria-labelledby="step4-h">
 <div class="sechead"><span class="chip" aria-hidden="true">STEP 04</span><h2 id="step4-h">밈 · 상황극</h2></div>
 <p class="lede">자동문이나 아르바이트 같은 짧은 상황극으로 시작해요.</p>
-<p class="evidence">밈으로 시작해 잘된 영상은 3개뿐이고, 알바생 밈은 아직 참고할 만한 사례를 못 찾았어요.</p>
+<p class="evidence">밈으로 시작해 잘된 신발 영상은 3개뿐이에요. 대신 키 작은 사람 밈 자체는 캐릭터 키 대조·공감 나열·상황극·소품 높이 개그 네 구조로 돌고, 아래 8편은 조회수 10만~95만이 나온 실제 사례예요.</p>
 <h3 class="blocklabel">참고 영상</h3>
 <div class="cardgrid ">
 <figure class="card" data-post-id="sheet-02">
@@ -1922,7 +1948,8 @@ table.calftable td.verdict{padding-top:8px}
 <figcaption>
 <h4>키 작은 베라 알바생 → 아이스크림</h4>
 <span class="who">밈 · 상황극</span>
-<span>“키 작은 베라 알바생이 아이스크림 푸는 것” — 같은 구조로 정리. 링크 확보되면 hook/full/poster 채우고 카드 전환.</span>
+<span>키 작은 아르바이트생이 깊은 아이스크림 통에 팔을 뻗어 퍼내는 장면으로 시작해요. 상황 제시 → 반전 → 신발 연결, 같은 구조로 써요. 영상은 로그인해야 보여서 아직 못 받았어요.</span>
+<a class="srclink" href="https://www.instagram.com/reel/DKmRSTwSVzp/" target="_blank" rel="noopener">원본 ↗</a>
 <div class="commentblock">
 <button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
 <div class="cpanel" hidden>
@@ -1937,6 +1964,235 @@ table.calftable td.verdict{padding-top:8px}
 </div>
 </figcaption>
 </figure>
+</div>
+<h3 class="blocklabel">밈 유형별 참고 — 키 작은 사람 밈은 이 네 가지 구조로 돌아요</h3>
+<div class="beatblock">
+<div class="beathead"><span class="beatnum">밈</span><h3>캐릭터 키 대조</h3></div>
+<p class="lede">'설마 얘보다 작은 애 있어?' — 키가 알려진 캐릭터의 프로필 카드와 숫자를 띄우고 친구를 태그하게 만들어요. 정지 화면 한 장으로도 돌아가는 가장 단순한 형태예요.</p>
+<div class="cardgrid ">
+<figure class="card" data-post-id="meme-DNFzquzyyv0">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/meme/poster/DNFzquzyyv0.jpg" src="assets/meme/hook/DNFzquzyyv0.mp4"></video>
+<span class="tag">밈</span>
+</div>
+<figcaption>
+<span class="viewsbig">조회수 94.9만</span>
+<h4>여기 루피보다 키 작은 사람 손 들어</h4>
+<span>루피 프로필 카드(158cm)와 '손 들어' 자막이 정지 화면으로 뜨고, 아래에 '나……✋'만 붙어요.</span>
+<a class="srclink" href="https://www.instagram.com/reel/DNFzquzyyv0/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/meme/hook/DNFzquzyyv0.mp4" data-full="assets/meme/full/DNFzquzyyv0.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="meme-DTkRMihEUsc">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/meme/poster/DTkRMihEUsc.jpg" src="assets/meme/hook/DTkRMihEUsc.mp4"></video>
+<span class="tag">밈</span>
+</div>
+<figcaption>
+<span class="viewsbig">조회수 27.4만</span>
+<h4>설마 루피보다 키 작은 애 있어?</h4>
+<span>같은 루피 카드에 '158cm인 루피보다 작은 친구 있으면 태그' 문구. 12초 내내 화면 변화가 없어요.</span>
+<a class="srclink" href="https://www.instagram.com/reel/DTkRMihEUsc/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/meme/hook/DTkRMihEUsc.mp4" data-full="assets/meme/full/DTkRMihEUsc.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="meme-DTfS6p2CfLS">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/meme/poster/DTfS6p2CfLS.jpg" src="assets/meme/hook/DTfS6p2CfLS.mp4"></video>
+<span class="tag">밈</span>
+</div>
+<figcaption>
+<span class="viewsbig">조회수 17.4만</span>
+<h4>설마 올라프보다 키 작은 애 있어?</h4>
+<span>올라프 위키 캡처와 '162.56cm' 숫자. 루피 판의 캐릭터만 바꾼 변주예요.</span>
+<a class="srclink" href="https://www.instagram.com/reel/DTfS6p2CfLS/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/meme/hook/DTfS6p2CfLS.mp4" data-full="assets/meme/full/DTfS6p2CfLS.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+</div>
+<p class="ourline">"루피(158cm)보다 작았는데, 오늘부터 루피 넘어요" — 캐릭터 카드 옆에 숫자 자막으로 시작해 신발로 넘어가요.</p>
+</div>
+<div class="beatblock">
+<div class="beathead"><span class="beatnum">밈</span><h3>키작 공감 나열</h3></div>
+<p class="lede">'키 작은 사람 특징', '키작녀가 받는 오해'처럼 항목을 번호로 넘겨요. 보는 사람이 자기 얘기라고 느끼는 지점에서 멈추게 하는 구조예요.</p>
+<div class="cardgrid ">
+<figure class="card" data-post-id="meme-DSU8mwlk0K1">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/meme/poster/DSU8mwlk0K1.jpg" src="assets/meme/hook/DSU8mwlk0K1.mp4"></video>
+<span class="tag">밈</span>
+</div>
+<figcaption>
+<span class="viewsbig">좋아요 1,635</span>
+<h4>키작녀가 받는 오해들</h4>
+<span>정면 전신으로 서서 '키작녀가 받는 오해' 자막, 이어서 '작다고 약하게 보는데 → 절대 아님!', '2. 비율 안 좋다?'로 번호가 넘어가요.</span>
+<a class="srclink" href="https://www.instagram.com/reel/DSU8mwlk0K1/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/meme/hook/DSU8mwlk0K1.mp4" data-full="assets/meme/full/DSU8mwlk0K1.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="meme-DbTTXLJvZAK">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/meme/poster/DbTTXLJvZAK.jpg" src="assets/meme/hook/DbTTXLJvZAK.mp4"></video>
+<span class="tag">밈</span>
+</div>
+<figcaption>
+<span class="viewsbig">좋아요 4,536</span>
+<h4>키 작은 사람 특징 (160cm 미만)</h4>
+<span>만화 컷으로 '머리 조심이 뭔지 모름', '안전벨트 목에 걸림', '결혼사진 맨 앞줄'이 차례로 나와요.</span>
+<a class="srclink" href="https://www.instagram.com/reel/DbTTXLJvZAK/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/meme/hook/DbTTXLJvZAK.mp4" data-full="assets/meme/full/DbTTXLJvZAK.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="meme-DVGDDCvkVXz">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/meme/poster/DVGDDCvkVXz.jpg" src="assets/meme/hook/DVGDDCvkVXz.mp4"></video>
+<span class="tag">밈</span>
+</div>
+<figcaption>
+<span class="viewsbig">조회수 10.1만</span>
+<h4>키 작다는 표현보다 상처 덜 주는 표현</h4>
+<span>12개 문장이 한 화면에 목록으로 떠 있어요. '공간 활용 끝판왕', '비 오면 제일 늦게 맞겠네' 같은 문장이 그대로 자막 소재예요.</span>
+<a class="srclink" href="https://www.instagram.com/reel/DVGDDCvkVXz/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/meme/hook/DVGDDCvkVXz.mp4" data-full="assets/meme/full/DVGDDCvkVXz.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+</div>
+<p class="ourline">"키작녀가 받는 오해 3가지" — 1·2번은 공감으로 가고, 3번 '비율 안 좋다?'에서 신발을 신고 반박해요.</p>
+</div>
+<div class="beatblock">
+<div class="beathead"><span class="beatnum">밈</span><h3>상황극</h3></div>
+<p class="lede">키 작아서 생기는 장면을 한 컷씩 보여주고 마지막에 제품으로 넘어가요. 자동문, 아르바이트, 데이트가 같은 계열이에요.</p>
+<div class="cardgrid ">
+<figure class="card" data-post-id="meme-DP1EF5okqGc">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/meme/poster/DP1EF5okqGc.jpg" src="assets/meme/hook/DP1EF5okqGc.mp4"></video>
+<span class="tag">밈</span>
+</div>
+<figcaption>
+<span class="viewsbig">조회수 58.8만</span>
+<h4>키 작은 여자친구랑 데이트하면 생기는 일</h4>
+<span>남자친구 시점으로 에스컬레이터 위에서 여자친구를 내려다보며 '1. 키가 작아서 많이 내려봐야 함' 자막. 이 밈 구조로 시작해 화장품 광고까지 이어진 사례예요.</span>
+<a class="srclink" href="https://www.instagram.com/reel/DP1EF5okqGc/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/meme/hook/DP1EF5okqGc.mp4" data-full="assets/meme/full/DP1EF5okqGc.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+</div>
+<p class="ourline">"키 작은 여자친구랑 데이트하면 생기는 일" — 1. 에스컬레이터에서 내려다봄 2. 진열대 위 칸 못 봄 3. 신발 신고 눈높이 맞춤, 순서로 가요.</p>
+</div>
+<div class="beatblock">
+<div class="beathead"><span class="beatnum">밈</span><h3>소품 높이 개그</h3></div>
+<p class="lede">물건의 높이와 키를 붙여서 웃겨요. 벽돌 위에 서기(12번)와 같은 계열이라, 벽돌 원본 대신 참고할 수 있어요.</p>
+<div class="cardgrid ">
+<figure class="card" data-post-id="meme-DFp8PC6S2p0">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/meme/poster/DFp8PC6S2p0.jpg" src="assets/meme/hook/DFp8PC6S2p0.mp4"></video>
+<span class="tag">밈</span>
+</div>
+<figcaption>
+<span class="viewsbig">조회수 52만</span>
+<h4>키작은 사람은 못 넘는다는 뜀틀빵</h4>
+<span>길에 빵 여러 개를 뜀틀처럼 쌓아 두고 멀리서 뛰어와 넘어요. 물건 높이가 키를 대신 말해 주는 구조예요.</span>
+<a class="srclink" href="https://www.instagram.com/reel/DFp8PC6S2p0/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/meme/hook/DFp8PC6S2p0.mp4" data-full="assets/meme/full/DFp8PC6S2p0.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+</div>
+<p class="ourline">"벽돌은 집에 두고 갈게요" — 소품 위에 선 정면 전신으로 시작해 '이걸 신고 다닐 순 없으니까'로 신발에 연결해요(12번 시나리오 그대로).</p>
 </div>
 <h3 class="blocklabel">잘된 것</h3>
 <div class="cardgrid ">
@@ -2170,6 +2426,65 @@ table.calftable td.verdict{padding-top:8px}
 <section id="stepX" class="band tint" aria-labelledby="stepX-h">
 <div class="sechead"><span class="chip bad" aria-hidden="true">STEP X</span><h2 id="stepX-h">안된 것 전체</h2></div>
 <p class="lede">위에서 이미 보여준 사례 1건을 뺀 나머지 안 된 영상 전부예요. 조회수가 적은 순서예요.</p>
+<div class="whybox">
+<h3 class="whyboxlabel">안 된 공통 이유 — 29건 전수 분류</h3>
+<p class="whyone">29건 중 17건(59%)이 "신고 서 있는 전신"이 3초 안에 없거나 애초에 신발 영상이 아니어서 실패했습니다. 나머지는 비교 화면을 만들어놓고 머리끝을 자르거나 긴 치마로 다리를 덮거나 1~2초에 끊어서, 키가 커진 걸 눈으로 확인할 수 없게 만든 경우입니다.</p>
+<ol class="whylist"><li class="whyrow">
+<div class="whyhead"><span class="whyrank">1</span><b class="whytitle">3초 안에 "신고 서 있는 전신"이 없다</b>
+<span class="whycount">9건<span class="whypct"> · 31%</span></span></div>
+<div class="whybar" aria-hidden="true"><i style="width:31%"></i></div>
+<p class="whydetail">신발만 바닥·진열대·신문지 위에 놓고 찍거나, 손에 들고만 있거나, 앉아 있거나, 오려 붙인 사진으로 대체했어요. 키가 커진 걸 눈으로 확인할 대상 자체가 화면에 없습니다.</p>
+<p class="whyfix"><b>이렇게 찍으면 됩니다</b> 0초에 신은 사람 전신을 세워 놓고 시작하세요. 신발은 발에 있어야 합니다.</p>
+<p class="whyev">근거 9건 · <span class="mono">Cx90wg_RlKz, DY0wOgEKvU6, CvgWYQSNsH-, DGU9dxxTGZg, CxaBEzTv3Ut, DYea2tSx6qP, DQHLRYMgVPD, DXoYIZdEr2L, Dcs1qY5zH7d</span></p>
+</li><li class="whyrow">
+<div class="whyhead"><span class="whyrank">2</span><b class="whytitle">애초에 신발 영상이 아니다</b>
+<span class="whycount">8건<span class="whypct"> · 28%</span></span></div>
+<div class="whybar" aria-hidden="true"><i style="width:28%"></i></div>
+<p class="whydetail">옷 하울·코디 소개·화장 영상·상황극·몰래카메라예요. 신발이 여러 물건 중 네 번째 순서로 밀리거나 끝에 잠깐 나오고, 자막도 상의·화장품을 가리킵니다.</p>
+<p class="whyfix"><b>이렇게 찍으면 됩니다</b> 신발 영상으로 기획하세요. 옷 소개에 신발을 끼워 넣으면 신발 이야기가 남지 않습니다.</p>
+<p class="whyev">근거 8건 · <span class="mono">C0mUYTEP8SE, C4E16CVRuaN, DYHBq42yXee, DZgj0_Ni--D, Dac5-Vcvu7q, DaABEeHxOGL, DVKrfybkXPp, DWgeewEkRPC</span></p>
+</li><li class="whyrow">
+<div class="whyhead"><span class="whyrank">3</span><b class="whytitle">비교 화면을 만들어놓고 조건을 깨뜨렸다</b>
+<span class="whycount">5건<span class="whypct"> · 17%</span></span></div>
+<div class="whybar" aria-hidden="true"><i style="width:17%"></i></div>
+<p class="whydetail">머리끝이 화면 밖으로 잘리거나, 긴 치마·원피스가 다리를 덮거나, 옆모습으로 찍거나, 두 컷의 크기·위치가 서로 다르거나, '전' 쪽에도 굽 있는 신발을 신고 있어요. cm 숫자는 써 놨는데 눈으로는 확인이 안 됩니다.</p>
+<p class="whyfix"><b>이렇게 찍으면 됩니다</b> 머리끝~발끝이 한 프레임에 들어오게, 정면으로, 양쪽 조건을 같게. '전'은 맨발이나 양말이어야 합니다.</p>
+<p class="whyev">근거 5건 · <span class="mono">DVc6OZMEWdv, DbSmLwdTJHC, DcN0QTihi_U, Db4gHKqyXJk, DRyIYtOAeCP</span></p>
+</li><li class="whyrow">
+<div class="whyhead"><span class="whyrank">4</span><b class="whytitle">몇 cm 커지는지를 안 알려준다</b>
+<span class="whycount">2건<span class="whypct"> · 7%</span></span></div>
+<div class="whybar" aria-hidden="true"><i style="width:7%"></i></div>
+<p class="whydetail">'키작녀 운동화 추천'처럼 쓰거나, 키 재는 눈금판을 세워놓고 정작 숫자를 화면에 안 보여줘요.</p>
+<p class="whyfix"><b>이렇게 찍으면 됩니다</b> 숫자를 신은 사람 전신 위에 얹으세요. 장치만 놓는 것으로는 전달되지 않습니다.</p>
+<p class="whyev">근거 2건 · <span class="mono">DbaPHF4z6Gz, DTfJySLAdso</span></p>
+</li><li class="whyrow">
+<div class="whyhead"><span class="whyrank">5</span><b class="whytitle">가장 센 비교 화면을 1~2초에 끊고 버린다</b>
+<span class="whycount">2건<span class="whypct"> · 7%</span></span></div>
+<div class="whybar" aria-hidden="true"><i style="width:7%"></i></div>
+<p class="whydetail">'164cm / 171cm' 같은 비교 컷을 띄워놓고 2초 만에 접어 포장 상자 자랑으로 넘어가요. 같은 계정에서 4배 더 나온 영상은 같은 비교 화면을 4초 넘게 붙잡고 키 재는 동작까지 이어갑니다.</p>
+<p class="whyfix"><b>이렇게 찍으면 됩니다</b> 제일 센 컷을 끝까지 붙잡으세요. 같은 계정 안에서 이것만으로 4배가 갈렸습니다.</p>
+<p class="whyev">근거 2건 · <span class="mono">DbsVk34zaNN, DbK2LxcB2Sy</span></p>
+</li><li class="whyrow">
+<div class="whyhead"><span class="whyrank">6</span><b class="whytitle">정지·빈 화면으로 시작한다</b>
+<span class="whycount">2건<span class="whypct"> · 7%</span></span></div>
+<div class="whybar" aria-hidden="true"><i style="width:7%"></i></div>
+<p class="whydetail">4초 동안 사진처럼 멈춰 있거나, 기둥 뒤에 숨는 연출이라 1초쯤엔 텅 빈 흰 벽이에요.</p>
+<p class="whyfix"><b>이렇게 찍으면 됩니다</b> 0초부터 움직이세요. 숨기는 연출은 궁금하게 만드는 자막이 같이 있을 때만 성립합니다.</p>
+<p class="whyev">근거 2건 · <span class="mono">DOVtIDfD8UF, DZbx0VuTV-O</span></p>
+</li><li class="whyrow">
+<div class="whyhead"><span class="whyrank">7</span><b class="whytitle">3초 안에 보이는 신발이 우리 제품이 아니다</b>
+<span class="whycount">1건<span class="whypct"> · 3%</span></span></div>
+<div class="whybar" aria-hidden="true"><i style="width:3%"></i></div>
+<p class="whydetail">첫 2초가 남의 브랜드가 잔뜩 뜨는 쇼핑앱 검색화면이고, 3초째에 보이는 것도 우리 신발이 아니라 쪼리예요.</p>
+<p class="whyfix"><b>이렇게 찍으면 됩니다</b> 3초 안에 화면에 있는 신발은 우리 제품이어야 합니다.</p>
+<p class="whyev">근거 1건 · <span class="mono">DaXE1teBSko</span></p>
+</li></ol>
+<div class="whyalso">
+<h4 class="whyalsolabel">겹쳐서 나타난 원인 (위 분류와 중복 집계)</h4>
+<ul class="whyalsolist"><li><b>cm 숫자가 3초 안에 없다</b> <span class="mono">5건</span></li><li><b>비교 조건이 깨져 눈으로 확인 불가</b> <span class="mono">6건</span></li><li><b>남의 브랜드·제품컷이 먼저 나온다</b> <span class="mono">3건</span></li><li><b>센 컷을 버리고 포장 상자 자랑으로 넘어간다</b> <span class="mono">3건</span></li></ul>
+</div>
+<p class="whyunknown">특정 못 한 것 1건 — <span class="mono">DVKrfybkXPp</span> 거의 같은 코디 오프닝으로 67만 회 나온 영상이 따로 있어서, 왜 이것만 안 됐는지는 특정하지 못했습니다. 확신도 낮음으로 남깁니다.</p>
+</div>
 <div class="cardgrid ">
 <figure class="card bad failcard" data-post-id="fail-Cx90wg_RlKz">
 <div class="frame">
