@@ -110,6 +110,21 @@ h4{font-family:var(--sans);font-weight:700;font-size:15.5px;letter-spacing:-.01e
 figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:13.5px;line-height:1.55;word-break:keep-all}
 figcaption .who{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:-.005em;color:var(--ink-3)}
 figcaption .ourline{color:var(--ink);font-style:italic}
+.pfcond{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.pfc{background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.pfc b{font-size:15px}.pfc span{font-size:13.5px;color:var(--ink-2);line-height:1.55}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.colhead{font-family:var(--mono);font-size:12px;letter-spacing:.06em;font-weight:700;margin:0 0 10px}
+.keeplist,.droplist,.checklist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.keeplist li,.checklist li{display:flex;flex-direction:column;gap:2px}.keeplist li b,.checklist li b{font-size:14.5px}.keeplist li span,.checklist li span{font-size:13px;color:var(--ink-2)}
+.droplist li{font-size:14px;padding-left:14px;text-indent:-14px}.droplist li::before{content:"× ";color:var(--accent-deep);font-weight:700}
+.notecard.bad{border-color:var(--accent-deep)}
+.checklist{margin-top:16px}
+.strip{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:14px}
+.sframe{margin:0}.sframe img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
+.sframe figcaption{display:flex;flex-direction:column;gap:2px;margin-top:6px;font-size:12px;color:var(--ink-2);line-height:1.4}.sframe figcaption b{color:var(--ink);font-size:12.5px}.stime{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.beathead h3 .viewsbig{margin-left:8px;font-size:13px}
+@media(max-width:820px){.pfcond,.twocol{grid-template-columns:1fr}.strip{grid-template-columns:repeat(4,1fr)}}
 .beatblock>p.ourline{margin:14px 0 0;padding:12px 14px;border-left:3px solid var(--accent-deep);background:var(--soft,rgba(127,127,127,.08));font-style:italic;color:var(--ink)}
 .srclink{font-family:var(--mono);font-size:11.5px;font-weight:600;color:var(--accent-deep)}
 .srclink.muted{color:var(--ink-3)}
@@ -322,6 +337,7 @@ table.calftable td:first-child{width:96px;min-width:96px}
 <button type="button" class="tabbtn active" data-tab="hooks" role="tab" aria-selected="true">3초 후킹</button>
 <button type="button" class="tabbtn" data-tab="keyheight" role="tab" aria-selected="false">키높이 라인</button>
 <button type="button" class="tabbtn" data-tab="fw26" role="tab" aria-selected="false">26FW 시즌</button>
+<button type="button" class="tabbtn" data-tab="perf" role="tab" aria-selected="false">퍼포용 시딩</button>
 <div class="commentsummary">
 <button type="button" id="commentSummaryBtn" class="csummarybtn">전체 코멘트 0</button>
 <div id="commentSummaryMenu" class="csummarymenu" hidden></div>
@@ -3723,6 +3739,329 @@ table.calftable td:first-child{width:96px;min-width:96px}
 </section>
 </main>
 </div>
+<div id="panel-perf" class="tabpanel" hidden>
+<header>
+<p class="overline">CHAAKAN · PERFORMANCE SEEDING</p>
+<hr class="hairline">
+<h1>퍼포용 시딩</h1>
+<p class="brand">시딩에서 잘 나온 영상은 그대로 광고로 돌려요. 그래서 처음부터 광고 규격으로 찍어 주세요.</p>
+</header>
+<main>
+<section id="pf-rule" class="band" aria-labelledby="pf-rule-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 01</span><h2 id="pf-rule-h">한 줄 원리 + 촬영 조건 3가지</h2></div>
+<p class="lede">퍼포용 = 평소 영상에서 <b>소구점 장면만 남기고 나머지를 다 덜어낸 것</b>이에요. 새 폼이 아니라, 3초 후킹 탭의 구조에 아래 조건만 얹으면 돼요. 길이는 18~23초.</p>
+<div class="pfcond">
+<div class="pfc"><b>① 삼각대 고정 원본 유지</b><span>손 흔들림 없이. 광고 편집 때 컷을 잘라 쓰기 위해서예요.</span></div>
+<div class="pfc"><b>② 자막·음악 없는 클린본 함께 납품</b><span>올린 버전과 별도로 원본 파일을 주세요. 자막은 광고에서 다시 입혀요.</span></div>
+<div class="pfc"><b>③ 2차 활용 동의</b><span>브리프에 적힌 대로, 광고 소재로 쓰는 것에 동의해 주세요.</span></div>
+</div>
+</section>
+
+<section id="pf-keep" class="band soft" aria-labelledby="pf-keep-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 02</span><h2 id="pf-keep-h">남길 7장면 vs 덜어낼 것</h2></div>
+<div class="twocol">
+<div class="notecard"><p class="colhead">✅ 남길 것 — 키높이 소구점</p><ul class="keeplist"><li><b>① 첫 2초 숫자로 신기 전·후</b><span>158→165처럼 숫자. 이게 없으면 광고로 못 써요.</span></li><li><b>② 역설 훅</b><span>'통굽인데 깃털처럼 편함', '160인데 다리 길어 보이는데 안 아파'</span></li><li><b>③ 착화감 물리 시연</b><span>손으로 꾹 누르기, 걷기. 말로만 하면 감점이에요.</span></li><li><b>④ 신발이 주인공</b><span>속굽·굽 단독 클로즈업 한 컷은 꼭.</span></li><li><b>⑤ 가격 숫자</b><span>중반에 한 번. 댓글·DM으로 넘기는 폼이면 화면엔 없어도 돼요.</span></li><li><b>⑥ 댓글→DM</b><span>자막과 캡션에 둘 다.</span></li><li><b>⑦ 범용성 한 줄</b><span>출근·데이트·하객 중 하나.</span></li></ul></div>
+<div class="notecard bad"><p class="colhead">🗑 덜어낼 것 — 광고엔 노이즈</p><ul class="droplist"><li>굽 안 보이는 롱샷만 — 속굽은 굽 클로즈업으로 증명해야 해요</li><li>감성 전신샷 · 무드 자막만 · 얼굴로 시작하는 오프닝</li><li>느린 템포 · 장면 전환 없음</li><li>신기 전·후 없이 '예뻐요'만</li><li>룩북·코디에 신발이 묻힘</li><li>TTS만 연속 · 자막이 굽·비율을 가림</li></ul></div>
+</div>
+</section>
+
+<section id="pf-hooks" class="band" aria-labelledby="pf-hooks-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 03</span><h2 id="pf-hooks-h">키높이에만 들어가는 훅 4종</h2></div>
+<p class="lede">3초 후킹 탭에 있는 영상 중 광고로 그대로 넘어가는 훅만 골랐어요. 가격은 다섯 번째 장치인데, 화면 중반에 숫자로 한 번이면 돼요.</p>
+<div class="beatblock">
+<div class="beathead"><span class="beatnum">훅</span><h3>숫자로 신기 전·후 ★</h3></div>
+<p class="lede">'158 → 165'를 나란히. 숫자가 첫 2초 스크롤을 멈춰요. 첫 컷 필수.</p>
+<div class="cardgrid ">
+<figure class="card herocard" data-post-id="hero-DPTbHC6CLs9">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/hero/DPTbHC6CLs9_1.jpg" src="assets/hero_hook/DPTbHC6CLs9.mp4"></video>
+<span class="tag">잘된 것</span>
+</div>
+<figcaption>
+<span class="viewsbig">426만</span>
+<span>남녀 커플이 건물 입구에 서서 '무려7cm나커질 수' 텍스트가 뜬다.</span>
+<a class="srclink" href="https://www.instagram.com/p/DPTbHC6CLs9/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/hero_hook/DPTbHC6CLs9.mp4" data-full="assets/hero_full/DPTbHC6CLs9.mp4">전편 ▶</button>
+
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+<figure class="card herocard" data-post-id="hero-DVLNp1IE9VC">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/hero/DVLNp1IE9VC_1.jpg" src="assets/hero_hook/DVLNp1IE9VC.mp4"></video>
+<span class="tag">잘된 것</span>
+</div>
+<figcaption>
+<span class="viewsbig">60.5만</span>
+<span>전신 다이나믹 포즈 위에 'Look Book 키작녀 신발 추첸! +7cm'와 '158cm➡️165cm 키높이 미쳤어요' 텍스트가 겹쳐 뜬다.</span>
+<a class="srclink" href="https://www.instagram.com/p/DVLNp1IE9VC/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/hero_hook/DVLNp1IE9VC.mp4" data-full="assets/hero_full/DVLNp1IE9VC.mp4">전편 ▶</button>
+
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+</div>
+</div><div class="beatblock">
+<div class="beathead"><span class="beatnum">훅</span><h3>역설 — 통굽인데 편함</h3></div>
+<p class="lede">'통굽인데 깃털처럼', '160인데 다리 길어 보이는데 안 아파'.</p>
+<div class="cardgrid ">
+<figure class="card herocard" data-post-id="hero-DSWnkVjk8BL">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/hero/DSWnkVjk8BL_1.jpg" src="assets/hero_hook/DSWnkVjk8BL.mp4"></video>
+<span class="tag">잘된 것</span>
+</div>
+<figcaption>
+<span class="viewsbig">314만</span>
+<span>"로퍼 안에 하이힐급 굽이 들어있다고요?" 의문형 수치훅, 만화 스피드라인</span>
+<a class="srclink" href="https://www.instagram.com/p/DSWnkVjk8BL/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/hero_hook/DSWnkVjk8BL.mp4" data-full="assets/hero_full/DSWnkVjk8BL.mp4">전편 ▶</button>
+
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+</div>
+</div><div class="beatblock">
+<div class="beathead"><span class="beatnum">훅</span><h3>티 안 남 (속굽)</h3></div>
+<p class="lede">겉은 플랫·단화·부츠 같은데 속굽으로 +Ncm. '말 안 하면 아무도 몰라요'.</p>
+<div class="cardgrid ">
+<figure class="card" data-post-id="sheet-14">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/poster/14.jpg" src="assets/hook/14.mp4"></video>
+<span class="tag">14 · 메리제인</span>
+</div>
+<figcaption>
+<span class="viewsbig">좋아요 1,240</span>
+<h4>플랫같은데 → 키높이광고</h4>
+<span class="who">28초 · 퍼포 · 직접 설명형</span>
+<span>키 커지는 신발이라는 직접 훅</span>
+<span class="ourline">"플랫처럼 생겼는데, 키높이예요."</span>
+<a class="srclink" href="https://www.instagram.com/p/DIdgq3RJ3Nw/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/hook/14.mp4" data-full="assets/full/14.mp4">전편 ▶</button>
+
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+</div>
+</div><div class="beatblock">
+<div class="beathead"><span class="beatnum">훅</span><h3>한쪽만 신어 비교</h3></div>
+<p class="lede">맨발과 신은 발을 한 프레임에. 신기 전·후 중 가장 센 형태예요.</p>
+<div class="cardgrid ">
+<figure class="card herocard" data-post-id="hero-DcLPgS6hvPY">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/hero/DcLPgS6hvPY_1.jpg" src="assets/hero_hook/DcLPgS6hvPY.mp4"></video>
+<span class="tag">잘된 것</span>
+</div>
+<figcaption>
+<span class="viewsbig">8.7만</span>
+<span>흰 붙박이장 앞 좌우 분할 전신, 왼쪽 양말 오른쪽 메리제인 착용, 얼굴 모자이크, 자막 신자마자 7cm 커지기</span>
+<a class="srclink" href="https://www.instagram.com/p/DcLPgS6hvPY/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/hero_hook/DcLPgS6hvPY.mp4" data-full="assets/hero_full/DcLPgS6hvPY.mp4">전편 ▶</button>
+
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="sheet-15">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/poster/15.jpg" src="assets/hook/15.mp4"></video>
+<span class="tag">15 · 메리제인</span>
+</div>
+<figcaption>
+<span class="viewsbig" title="댓글 430·재확인 필요">좋아요 74</span>
+<h4>한쪽만 → 신어보면</h4>
+<span class="who">시딩 · 한쪽 발 비교</span>
+<span>한쪽만 신은 뒷모습 비교</span>
+<span class="ourline">"한쪽만 신어보면 바로 보여요."</span>
+<a class="srclink" href="https://www.instagram.com/p/DWQzuVGk3K5/" target="_blank" rel="noopener">원본 ↗</a>
+<button type="button" class="fullbtn" data-hook="assets/hook/15.mp4" data-full="assets/full/15.mp4">전편 ▶</button>
+
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section id="pf-golden" class="band soft" aria-labelledby="pf-golden-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 04</span><h2 id="pf-golden-h">우리 시딩에서 광고로 넘어간 원본 3편</h2></div>
+<p class="lede">여름 라인 시딩 원본이에요. 세 편 다 첫 2초에 훅을 박고, 신발 단독 컷과 댓글 유도까지 있어요. 이 밀도로 찍어 주세요.</p>
+<div class="cardgrid ">
+<figure class="card" data-post-id="perf-g1">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/perf/poster/g1.jpg" src="assets/perf/hook/g1.mp4"></video>
+<span class="tag">우리 원본</span>
+</div>
+<figcaption>
+<h4>탈부착 여름 롱부츠</h4>
+<span class="who">광고로 돌렸을 때 성과 1위 원본 · 26초</span>
+<span>첫 2초 '탈부착 가능한 여름 롱부츠' 자막 → 버튼 탈부착 시연 → 신발 단독 클로즈업 → 착화감 한 줄 → 부츠·샌들 두 가지 룩 → 댓글 '대릴' 유도.</span>
+<span class="ourline">제품 기믹을 첫 컷에 글자와 동작으로 박고, 사람 얼굴은 거의 안 나와요. 가격은 화면에 없고 댓글·DM으로 넘겨요.</span>
+<button type="button" class="fullbtn" data-hook="assets/perf/hook/g1.mp4" data-full="assets/perf/full/g1.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="perf-g2">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/perf/poster/g2.jpg" src="assets/perf/hook/g2.mp4"></video>
+<span class="tag">우리 원본</span>
+</div>
+<figcaption>
+<h4>160인데 다리 길어보이는 여름신발</h4>
+<span class="who">역설 훅 원본 · 23초</span>
+<span>첫 컷 정면 전신 + '160인데 다리 길어보이는' 자막 → 신발 1 클로즈업(제품명·가격) → 스커트 착화 → 신발 2 클로즈업 → 착화 → 댓글 '여름' 남기면 할인코드.</span>
+<span class="ourline">키 숫자와 '다리 길어보이는'을 한 문장에 넣은 역설 훅이에요. 신발마다 제품명·가격을 화면에 그대로 적었어요.</span>
+<button type="button" class="fullbtn" data-hook="assets/perf/hook/g2.mp4" data-full="assets/perf/full/g2.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="perf-g3">
+<div class="frame">
+<video preload="metadata" playsinline controls poster="assets/perf/poster/g3.jpg" src="assets/perf/hook/g3.mp4"></video>
+<span class="tag">우리 원본</span>
+</div>
+<figcaption>
+<h4>내 다리 2M 여름슈즈 추천</h4>
+<span class="who">언박싱 + 수치 훅 원본 · 18초</span>
+<span>첫 컷 거울 전신 + '15% 할인쿠폰 · 내다리 2M' 자막 → 박스 개봉 → 착화 전신 → 발 클로즈업 → 박스 다시 → '이 가격에 이 퀄리티?' → 신발 들어 마무리.</span>
+<span class="ourline">언박싱을 하되 2초 안에 수치 훅을 먼저 박았어요. 굽·아웃솔을 손에 들고 단독으로 보여주는 컷이 두 번 있어요.</span>
+<button type="button" class="fullbtn" data-hook="assets/perf/hook/g3.mp4" data-full="assets/perf/full/g3.mp4">전편 ▶</button>
+<div class="commentblock">
+<button type="button" class="ctoggle" aria-expanded="false">💬 코멘트<span class="cbadge" hidden>0</span></button>
+<div class="cpanel" hidden>
+<div class="clist"></div>
+<div class="cform">
+<input type="text" class="cname" placeholder="담당자 이름" maxlength="30">
+<textarea class="ctext" placeholder="코멘트 남기기(Ctrl+Enter 전송) · 잘못 쓴 건 새 코멘트로 정정해 주세요" maxlength="1000" rows="2"></textarea>
+<button type="button" class="csubmit" disabled>남기기</button>
+<span class="cerror" hidden>저장 실패, 다시 시도</span>
+</div>
+</div>
+</div>
+</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="pf-forms" class="band" aria-labelledby="pf-forms-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 05</span><h2 id="pf-forms-h">두 가지 폼 — 장면 순서 그대로</h2></div>
+<p class="lede">키높이 광고를 가장 많이 돌리는 브랜드의 잘된 편 세 개를 장면 단위로 풀었어요. 숫자 훅이 강해서 A가 특히 잘 붙고, 언박싱이 자연스러운 분만 B예요.</p>
+<div class="beatblock">
+<div class="beathead"><span class="beatnum">A</span><h3>수치 훅형 <span class="viewsbig">328만</span></h3></div>
+<p class="lede">닫힌 신발 키높이 브랜드 광고 · 26초 — 제품이 주인공이라 사람이 화면을 가리지 않아요. 역설 공감 → 숫자 → 활용도 순서예요. 복제가 쉬워서 광고 재활용 1순위예요.</p>
+<div class="strip"><figure class="sframe"><img src="assets/perf/strip/s7_1.jpg" loading="lazy" alt="역설 공감 훅"><figcaption><span class="stime">0:01</span><b>역설 공감 훅</b><span>단화 들고 아쉬운 표정 — '편한데 키가…'</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s7_2.jpg" loading="lazy" alt="해결책 등장"><figcaption><span class="stime">0:05</span><b>해결책 등장</b><span>5cm 히든굽 메리제인 들고 만족</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s7_3.jpg" loading="lazy" alt="수치 훅 ★"><figcaption><span class="stime">0:08</span><b>수치 훅 ★</b><span>측면 5cm 히든굽을 손가락으로 강조</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s7_4.jpg" loading="lazy" alt="활용도 ①"><figcaption><span class="stime">0:13</span><b>활용도 ①</b><span>롱스커트 — 다리 길어 보이는 비율</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s7_5.jpg" loading="lazy" alt="활용도 ②"><figcaption><span class="stime">0:16</span><b>활용도 ②</b><span>출근룩에도 매치</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s7_6.jpg" loading="lazy" alt="착화감 시연"><figcaption><span class="stime">0:18</span><b>착화감 시연</b><span>발 움직임 클로즈업 — 하루 종일 편함</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s7_7.jpg" loading="lazy" alt="마무리"><figcaption><span class="stime">0:25</span><b>마무리</b><span>편함·디자인·키높이 요약</span></figcaption></figure></div>
+</div><div class="beatblock">
+<div class="beathead"><span class="beatnum">A′</span><h3>수치 훅형 · 초단순 <span class="viewsbig">500만</span></h3></div>
+<p class="lede">같은 브랜드 · 31초 · 가장 많이 퍼진 편 — 위와 같은 구조인데 더 단순하고 빨라요. 0:04의 '한쪽만 신어 맨발과 비교'가 신기 전·후를 보여주는 가장 센 형태예요.</p>
+<div class="strip"><figure class="sframe"><img src="assets/perf/strip/s8_1.jpg" loading="lazy" alt="수치 훅 ★"><figcaption><span class="stime">0:01</span><b>수치 훅 ★</b><span>'+7cm 비율사기템' 신발을 카메라로 내밀기</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s8_2.jpg" loading="lazy" alt="한쪽만 신어 비교 ★"><figcaption><span class="stime">0:04</span><b>한쪽만 신어 비교 ★</b><span>맨발과 극적인 높이 차</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s8_3.jpg" loading="lazy" alt="역설 훅"><figcaption><span class="stime">0:07</span><b>역설 훅</b><span>'7cm 인솔이 숨어 있음' 비밀 공개</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s8_4.jpg" loading="lazy" alt="착화감 시연"><figcaption><span class="stime">0:12</span><b>착화감 시연</b><span>신고 걷기 — 길어진 다리 비율</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s8_5.jpg" loading="lazy" alt="굽 클로즈업"><figcaption><span class="stime">0:21</span><b>굽 클로즈업</b><span>발 들어 아웃솔·디자인 노출</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s8_6.jpg" loading="lazy" alt="활용도"><figcaption><span class="stime">0:25</span><b>활용도</b><span>원피스·스커트·바지 코디 연속</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s8_7.jpg" loading="lazy" alt="마무리"><figcaption><span class="stime">0:31</span><b>마무리</b><span>신발 다시 들고 구매 유도</span></figcaption></figure></div>
+</div><div class="beatblock">
+<div class="beathead"><span class="beatnum">B</span><h3>언박싱형 <span class="viewsbig">279만</span></h3></div>
+<p class="lede">같은 브랜드 · 22초 · 댓글 6.5천 — 박스 개봉과 굽 디테일 설명이 생명이에요. 언박싱을 자연스럽게 하는 분에게만 맞아요. '속굽인데 이 키높이'를 말로 꼭 짚어요.</p>
+<div class="strip"><figure class="sframe"><img src="assets/perf/strip/s10_1.jpg" loading="lazy" alt="수치 훅 ★"><figcaption><span class="stime">0:01</span><b>수치 훅 ★</b><span>'신자마자 +7cm' 자막 + 신발 상자</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s10_2.jpg" loading="lazy" alt="언박싱"><figcaption><span class="stime">0:03</span><b>언박싱</b><span>상자 열어 스니커즈 꺼내기</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s10_3.jpg" loading="lazy" alt="소재 디테일"><figcaption><span class="stime">0:05</span><b>소재 디테일</b><span>데님·스티치 클로즈업</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s10_4.jpg" loading="lazy" alt="굽 클로즈업"><figcaption><span class="stime">0:10</span><b>굽 클로즈업</b><span>티 안 나는 인솔 굽 손가락 강조</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s10_5.jpg" loading="lazy" alt="역설 훅"><figcaption><span class="stime">0:14</span><b>역설 훅</b><span>'심플한데 키 커짐' 측면 노출</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s10_6.jpg" loading="lazy" alt="한 줄 요약"><figcaption><span class="stime">0:19</span><b>한 줄 요약</b><span>'키작녀 필수템' 3줄</span></figcaption></figure><figure class="sframe"><img src="assets/perf/strip/s10_7.jpg" loading="lazy" alt="활용도·걷기"><figcaption><span class="stime">0:22</span><b>활용도·걷기</b><span>야외 착샷 — 좋아진 비율</span></figcaption></figure></div>
+</div>
+</section>
+
+<section id="pf-check" class="band soft" aria-labelledby="pf-check-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 06</span><h2 id="pf-check-h">보내기 전 체크 6가지</h2></div>
+<ul class="checklist"><li><b>☐ 첫 2초에 숫자가 있나요?</b><span>신기 전→후 cm 숫자. 없으면 광고로 못 넘어가요.</span></li><li><b>☐ 역설 훅이 있나요?</b><span>'통굽인데 편함' 같은 반전. 없으면 그냥 예쁜 신발 영상이에요.</span></li><li><b>☐ 티 안 난다고 말했나요?</b><span>겉은 평범한데 속굽으로 +Ncm. 이게 우리 무기예요.</span></li><li><b>☐ 굽 단독 클로즈업이 있나요?</b><span>속굽·굽만 나오는 컷으로 높이를 증명해요.</span></li><li><b>☐ 가격 숫자가 있나요?</b><span>중반에 한 번. 댓글·DM 폼이면 캡션에.</span></li><li><b>☐ 착화감 시연 + 댓글→DM?</b><span>손으로 꾹·걷기, 마지막에 댓글 유도까지.</span></li></ul>
+<p class="evidence">판정: 숫자·역설 있고 군더더기 적음 → 그대로 광고 / 있는데 군더더기 많음 → 재편집 / 첫 2초 숫자 없음 → 광고 불가</p>
+</section>
+
+<section id="pf-msg" class="band" aria-labelledby="pf-msg-h">
+<div class="sechead"><span class="chip" aria-hidden="true">STEP 07</span><h2 id="pf-msg-h">요청 문구 그대로 쓰기</h2></div>
+<div class="twocol">
+<div class="notecard"><p class="colhead">🎬 신규 촬영 요청</p><p>"키높이 퍼포라 군더더기 다 빼고 소구점만! 첫 2초에 신기 전·후를 나란히 박아주세요 — '151→156'처럼 숫자로. 통굽·속굽인데 편한 걸 손으로 꾹 눌러 보여주고, '속굽이라 티 안 나는데 +Ncm'을 강조해 주세요. 감성 전신샷·브이로그는 빼고, 가격은 중반에 한 번, 마지막은 댓글→DM. 18~23초. 자막 없는 원본도 같이 보내주세요."</p></div>
+<div class="notecard"><p class="colhead">✂ 재편집 요청 (원본 있을 때)</p><p>"받은 영상에서 키높이 소구점만 남기고 덜어내면 광고용이 됩니다. 첫 컷을 신기 전·후 숫자로 당기고, 감성 전신샷·느린 구간·캡처 화면을 쳐내주세요. '속굽이라 티 안 나는데 +Ncm'은 꼭 살려 주세요."</p></div>
+</div>
+</section>
+</main>
+</div>
 <script>
 
 (function(){
@@ -3730,7 +4069,8 @@ table.calftable td:first-child{width:96px;min-width:96px}
   var panels = {
     hooks: document.getElementById('panel-hooks'),
     keyheight: document.getElementById('panel-keyheight'),
-    fw26: document.getElementById('panel-fw26')
+    fw26: document.getElementById('panel-fw26'),
+    perf: document.getElementById('panel-perf')
   };
   function show(name){
     if(!panels[name]) name = 'hooks';
