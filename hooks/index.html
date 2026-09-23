@@ -193,7 +193,7 @@ footer{margin:40px 0 90px;padding-top:24px;border-top:1px solid var(--line)}
 
 /* 탭 — 루트 minibar 톤의 고정 필 내비 */
 .tabbar{position:sticky;top:0;z-index:10;display:flex;gap:2px;background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line);max-width:1180px;margin:0 auto;padding:0 24px}
-.tabbtn{font-family:var(--sans);font-size:13.5px;font-weight:600;letter-spacing:-.01em;background:none;border:0;border-bottom:2.5px solid transparent;color:var(--ink-2);padding:16px 16px 13.5px;cursor:pointer;transition:color .15s,border-color .15s}
+.tabbtn{white-space:nowrap;flex-shrink:0;font-family:var(--sans);font-size:13.5px;font-weight:600;letter-spacing:-.01em;background:none;border:0;border-bottom:2.5px solid transparent;color:var(--ink-2);padding:16px 16px 13.5px;cursor:pointer;transition:color .15s,border-color .15s}
 .tabbtn:hover{color:var(--ink)}
 .tabbtn.active{color:var(--accent-deep);border-bottom-color:var(--accent-deep);font-weight:700}
 .tabpanel[hidden]{display:none}
@@ -4628,6 +4628,7 @@ table.calftable td:first-child{width:96px;min-width:96px}
     if(name === 'perf') showSub(sub);
   }
   window.__hooksShowTab = show;
+  (function(){ var tb=document.querySelector('.tabbar'), sb=document.querySelector('.subtabbar'); if(!tb||!sb) return; function fit(){ sb.style.top = tb.offsetHeight + 'px'; } fit(); window.addEventListener('resize', fit); })();
   tabs.forEach(function(b){
     b.addEventListener('click', function(){ location.hash = b.dataset.tab; });
   });
