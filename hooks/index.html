@@ -122,6 +122,7 @@ figcaption .ourline{color:var(--ink);font-style:italic}
 .droplist li{font-size:14px;padding-left:14px;text-indent:-14px}.droplist li::before{content:"× ";color:var(--accent-deep);font-weight:700}
 .notecard.bad{border-color:var(--accent-deep)}
 .checklist{margin-top:16px}
+.checklist label{display:flex;align-items:center;gap:10px;cursor:pointer}.checklist input[type=checkbox]{width:20px;height:20px;margin:0;accent-color:var(--accent-deep);cursor:pointer;flex-shrink:0}.checklist li:has(input:checked) b{color:var(--ink-3);text-decoration:line-through}
 .strip{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:14px}
 .sframe{margin:0}.sframe img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
 .sframe figcaption{display:flex;flex-direction:column;gap:2px;margin-top:6px;font-size:12px;color:var(--ink-2);line-height:1.4}.sframe figcaption b{color:var(--ink);font-size:12.5px}.stime{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
@@ -4583,7 +4584,7 @@ table.calftable td:first-child{width:96px;min-width:96px}
 <div id="sub-perf-check" class="subpanel" hidden>
 <section id="pf-check" class="band soft" aria-labelledby="pf-check-h">
 <div class="sechead"><span class="chip" aria-hidden="true">STEP 06</span><h2 id="pf-check-h">보내기 전 체크 6가지</h2></div>
-<ul class="checklist"><li><b>☐ 첫 2초에 숫자가 있나요?</b><span>신기 전→후 cm 숫자. 없으면 광고로 못 넘어가요.</span></li><li><b>☐ 역설 훅이 있나요?</b><span>'통굽인데 편함' 같은 반전. 없으면 그냥 예쁜 신발 영상이에요.</span></li><li><b>☐ 티 안 난다고 말했나요?</b><span>겉은 평범한데 속굽으로 +Ncm. 이게 우리 무기예요.</span></li><li><b>☐ 굽 단독 클로즈업이 있나요?</b><span>속굽·굽만 나오는 컷으로 높이를 증명해요.</span></li><li><b>☐ 가격 숫자가 있나요?</b><span>중반에 한 번. 댓글·DM 폼이면 캡션에.</span></li><li><b>☐ 착화감 시연 + 댓글→DM?</b><span>손으로 꾹·걷기, 마지막에 댓글 유도까지.</span></li></ul>
+<ul class="checklist"><li><label><input type="checkbox" data-check="pf0"><b>첫 2초에 숫자가 있나요?</b></label><span>신기 전→후 cm 숫자. 없으면 광고로 못 넘어가요.</span></li><li><label><input type="checkbox" data-check="pf1"><b>역설 훅이 있나요?</b></label><span>'통굽인데 편함' 같은 반전. 없으면 그냥 예쁜 신발 영상이에요.</span></li><li><label><input type="checkbox" data-check="pf2"><b>티 안 난다고 말했나요?</b></label><span>겉은 평범한데 속굽으로 +Ncm. 이게 우리 무기예요.</span></li><li><label><input type="checkbox" data-check="pf3"><b>굽 단독 클로즈업이 있나요?</b></label><span>속굽·굽만 나오는 컷으로 높이를 증명해요.</span></li><li><label><input type="checkbox" data-check="pf4"><b>가격 숫자가 있나요?</b></label><span>중반에 한 번. 댓글·DM 폼이면 캡션에.</span></li><li><label><input type="checkbox" data-check="pf5"><b>착화감 시연 + 댓글→DM?</b></label><span>손으로 꾹·걷기, 마지막에 댓글 유도까지.</span></li></ul>
 <p class="evidence">판정: 숫자·역설 있고 군더더기 적음 → 그대로 광고 / 있는데 군더더기 많음 → 재편집 / 첫 2초 숫자 없음 → 광고 불가</p>
 </section>
 
@@ -4634,6 +4635,7 @@ table.calftable td:first-child{width:96px;min-width:96px}
     if(name === 'perf') showSub(sub);
   }
   window.__hooksShowTab = show;
+  document.querySelectorAll('.checklist input[data-check]').forEach(function(cb){ var k='hooks_check_'+cb.dataset.check; try{ cb.checked = localStorage.getItem(k)==='1'; }catch(e){} cb.addEventListener('change', function(){ try{ localStorage.setItem(k, cb.checked?'1':'0'); }catch(e){} }); });
   (function(){ var tb=document.querySelector('.tabbar'), sb=document.querySelector('.subtabbar'); if(!tb||!sb) return; function fit(){ sb.style.top = tb.offsetHeight + 'px'; } fit(); window.addEventListener('resize', fit); })();
   tabs.forEach(function(b){
     b.addEventListener('click', function(){ location.hash = b.dataset.tab; });
