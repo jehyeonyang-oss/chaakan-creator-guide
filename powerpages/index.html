@@ -1,0 +1,446 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>파워페이지 연예인 광고 분석</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root{
+  --bg:#FFFFFF; --soft:#FAF8F5; --tint:#FDF1EE;
+  --ink:#111113; --ink-2:#55555E; --ink-3:#8B8B94;
+  --line:#E8E5DF; --line-2:#F1EEE9;
+  --accent:#E4432B; --accent-deep:#C0301B; --accent-wash:#FCEDE9; --on-accent:#FFFFFF;
+  --card:#FFFFFF;
+  --sh:0 1px 2px rgba(17,17,19,.04),0 10px 26px -14px rgba(17,17,19,.20);
+  --sh-lift:0 2px 6px rgba(17,17,19,.06),0 22px 44px -18px rgba(17,17,19,.30);
+  --r:18px; --r-sm:12px;
+  --sans:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.72;letter-spacing:-.005em;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#fff}
+main,header{max-width:1180px;margin:0 auto;padding:0 24px}
+a{color:var(--accent-deep);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2.5px solid var(--accent-deep);outline-offset:3px;border-radius:6px}
+img,video{max-width:100%}
+
+.overline{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-deep);margin:44px 0 14px}
+hr.hairline{border:0;border-top:1px solid var(--line);margin:0;opacity:.9}
+h1{font-family:var(--sans);font-weight:800;font-size:clamp(30px,5.6vw,54px);line-height:1.12;letter-spacing:-.03em;margin:30px 0 0;max-width:18ch;word-break:keep-all}
+.brand{font-family:var(--sans);font-size:13.5px;font-weight:600;letter-spacing:-.005em;color:var(--ink-3);margin:18px 0 0}
+
+.navgrid{display:flex;flex-wrap:wrap;gap:8px;margin:40px 0 0;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.navitem{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px;transition:border-color .18s,background .18s,color .18s,transform .18s;white-space:nowrap}
+.navitem b{font-weight:600;font-size:13.5px;letter-spacing:-.01em;line-height:1.3}
+.navitem:hover{border-color:var(--accent);background:var(--accent-wash);color:var(--accent-deep);transform:translateY(-1px)}
+
+section.band{position:relative;padding:64px 0 72px;margin:0}
+section.band::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:transparent}
+section.band.soft::before{background:var(--soft)}
+section.band.tint::before{background:var(--tint)}
+.sechead{position:relative;display:flex;flex-direction:column;gap:14px;margin:0 0 16px}
+.chip{display:inline-block;background:var(--accent-deep);color:var(--on-accent);font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;padding:6px 12px;border-radius:999px;width:fit-content}
+.sechead h2{position:relative;font-family:var(--sans);font-weight:800;font-size:clamp(22px,3vw,32px);letter-spacing:-.028em;margin:0;max-width:26ch;word-break:keep-all}
+h3{font-family:var(--sans);font-weight:700;font-size:19px;letter-spacing:-.015em;margin:0 0 10px;word-break:keep-all}
+h4{font-family:var(--sans);font-weight:700;font-size:15.5px;letter-spacing:-.01em;margin:0 0 2px;word-break:keep-all}
+.lede{font-size:16px;color:var(--ink-2);max-width:66ch;margin:0;word-break:keep-all}
+.blocklabel{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin:34px 0 0;padding-top:16px;border-top:1px solid var(--line-2)}
+.notecard{margin-top:14px;padding:14px 16px;background:var(--card);border:1px dashed var(--line);border-radius:var(--r-sm);color:var(--ink-2);font-size:13.5px;max-width:74ch;word-break:keep-all}
+
+.sumlist{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:10px;font-size:15.5px;color:var(--ink);max-width:70ch}
+.sumlist li{padding-left:18px;text-indent:-18px}
+.sumlist li::before{content:"— ";color:var(--accent-deep);font-weight:700}
+
+table.camptable{width:100%;border-collapse:collapse;margin-top:22px;font-size:13.5px}
+table.camptable th,table.camptable td{border-top:1px solid var(--line-2);padding:10px 12px 10px 0;text-align:left;vertical-align:top;word-break:keep-all}
+table.camptable th{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ink-3);font-weight:600}
+
+.campblock{margin-top:36px;padding-top:24px;border-top:1px solid var(--line-2)}
+.campblock:first-of-type{margin-top:24px}
+.campheadrow{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.campheadrow h3{margin:0}
+.meta{font-family:var(--mono);font-size:12px;color:var(--ink-3);margin:6px 0 0}
+
+.cardgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:18px}
+.card{margin:0;min-width:0}
+.frame{position:relative;aspect-ratio:9/16;overflow:hidden;background:#0C0C0E;border-radius:16px;border:1px solid var(--line);box-shadow:var(--sh);transition:box-shadow .24s ease,transform .24s ease}
+.frame video,.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.frame.novideo{display:flex;align-items:center;justify-content:center}
+.card:hover .frame{transform:translateY(-3px);box-shadow:var(--sh-lift)}
+.textnote{font-family:var(--mono);font-size:12px;color:#fff;letter-spacing:.04em;opacity:.7}
+.tag{position:absolute;top:10px;left:10px;background:rgba(12,12,14,.6);color:#fff;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.02em;padding:5px 9px;border-radius:999px;z-index:2}
+figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:13px;line-height:1.55;word-break:keep-all}
+.cardtop{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.viewsbig{font-family:var(--mono);font-weight:700;font-size:14px;color:var(--ink)}
+.adbadge{font-family:var(--mono);font-size:10px;font-weight:700;background:var(--accent-deep);color:var(--on-accent);padding:3px 8px;border-radius:999px}
+.samebadge{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink-3);border:1px solid var(--line);padding:3px 8px;border-radius:999px}
+.caption{color:var(--ink);margin:2px 0 0}
+.composition{color:var(--ink-2);font-size:12px;margin:0}
+.chipgrid{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip.sm{background:var(--card);color:var(--ink-2);border:1px solid var(--line);font-weight:500;font-size:11px;padding:4px 9px}
+
+.fullbtn{margin-top:8px;align-self:flex-start;font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.01em;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:7px 12px;cursor:pointer;border-radius:999px;transition:background .15s,color .15s,border-color .15s}
+.fullbtn:hover{background:var(--accent-wash);border-color:var(--accent);color:var(--accent-deep)}
+.fullbtn.playing{border-color:var(--accent);color:var(--accent-deep);background:var(--accent-wash)}
+
+.stepgrid{display:flex;flex-direction:column;gap:0;margin-top:24px}
+.stepcard{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--line-2)}
+.stepcard:first-child{border-top:0;padding-top:0}
+.stepnum{font-family:var(--sans);font-weight:800;font-size:26px;color:var(--accent-deep)}
+.stepbody p{margin:4px 0 0;color:var(--ink-2);word-break:keep-all}
+.examplelist{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
+.examplelist li{font-size:13.5px;color:var(--ink);background:var(--soft);border-radius:var(--r-sm);padding:9px 12px;word-break:keep-all}
+
+.calloutgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.callout{padding:16px 18px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--r);box-shadow:var(--sh);font-size:14px;line-height:1.65;word-break:keep-all}
+table.pricetable{max-width:640px}
+
+.confirmbox{margin-top:20px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm)}
+.confirmbox summary{cursor:pointer;font-weight:700;font-size:14px}
+.confirmbox ul{margin:12px 0 0;padding-left:18px;color:var(--ink-2);font-size:13.5px;display:flex;flex-direction:column;gap:6px;word-break:keep-all}
+
+footer{margin:40px 0 90px;padding-top:24px;border-top:1px solid var(--line)}
+.note{color:var(--ink-3);font-size:13.5px;margin-top:14px;word-break:keep-all}
+
+@media (max-width:980px){
+  section.band{padding:48px 0 56px}
+  .cardgrid{grid-template-columns:repeat(2,1fr)}
+  .calloutgrid{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  main,header{padding:0 18px}
+  .cardgrid{grid-template-columns:1fr}
+  .navgrid{display:flex;flex-wrap:wrap}
+  .stepcard{grid-template-columns:36px 1fr}
+}
+
+</style>
+<header>
+<p class="overline">POWER PAGE · CELEBRITY AD ANALYSIS</p>
+<hr class="hairline">
+<h1>파워페이지 연예인 광고 분석</h1>
+<p class="brand">2026-10-01 · 밈 페이지 19계정 확인 · 연예인 광고 13건(확정 12 · 유튜버 1)</p>
+<nav class="navgrid" aria-label="섹션 이동">
+<a href="#summary" class="navitem"><b>한눈에</b></a>
+<a href="#campaigns" class="navitem"><b>캠페인별 영상</b></a>
+<a href="#formula" class="navitem"><b>소재 공식</b></a>
+<a href="#cost" class="navitem"><b>단가와 성과</b></a>
+</nav>
+</header>
+<main>
+<section id="summary" class="band" aria-labelledby="summary-h">
+<div class="sechead"><span class="chip" aria-hidden="true">01</span><h2 id="summary-h">한눈에</h2></div>
+<ul class="sumlist">
+<li>연예인 광고 캠페인은 3개, 단독 사례 1개로 모두 11개 계정에서 돌았어요.</li>
+<li>소재 공식은 다섯 단계예요. 연예인 본인 클립을 가져와 운영자 말투로 후기를 붙이고 해시태그로 검색을 유도해요.</li>
+<li>조회수 1회당 단가는 3~4원대예요. 우리 시딩 기준 10원의 3분의 1 수준이에요.</li>
+</ul>
+<table class="camptable">
+<thead><tr><th>연예인</th><th>제품</th><th>노출 계정</th><th>시기</th><th>소재 출처</th></tr></thead>
+<tbody><tr><td>소유</td><td>올리브영 세럼 (파넬세럼 / 9월 4일 건은 시카마누로 다른 이름)</td><td>7개</td><td>1차 9월 4일, 2차 9월 25일~30일</td><td>소유 유튜브 클립 재게시</td></tr>
+<tr><td>이경실</td><td>관절 영양제 (제품명 비공개)</td><td>3개</td><td>9월 9일~11일</td><td>본인 유튜브(솔티스) 클립</td></tr>
+<tr><td>카디비</td><td>세르프 리프팅 디바이스</td><td>1개</td><td>9월 17일</td><td>무관한 해외 인터뷰 클립을 리프팅 맥락으로 재편집</td></tr>
+<tr><td>조혜련</td><td>다이어트 보조제</td><td>1개</td><td>9월 16일</td><td>본인 출연 클립, 계정에 "협찬 광고" 표시가 붙은 유일한 사례</td></tr></tbody>
+</table>
+</section>
+<section id="campaigns" class="band soft" aria-labelledby="campaigns-h">
+<div class="sechead"><span class="chip" aria-hidden="true">02</span><h2 id="campaigns-h">캠페인별 영상</h2></div>
+<p class="lede">같은 소재를 여러 계정에 동시에 돌려요. 카드를 누르면 전체 영상이 재생돼요.</p>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 A</span><h3>소유 · 올리브영 세럼 (파넬세럼 / 9월 4일 건은 시카마누로 다른 이름)</h3></div>
+<p class="meta">노출 계정 7개 · 1차 9월 4일, 2차 9월 25일~30일 · 소재 출처: 소유 유튜브 클립 재게시</p>
+<div class="cardgrid">
+<figure class="card" data-post-id="ad-Dc2Q12shG2A">
+<div class="frame" data-sc="Dc2Q12shG2A">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dc2Q12shG2A.jpg" src="assets/hook/Dc2Q12shG2A.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/Dc2Q12shG2A.mp4" data-full="assets/full/Dc2Q12shG2A.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 95</span></div>
+<h4>@melon__paper · 2026-09-04</h4>
+<p class="caption">대박;;; 오늘부터 소유 관리법 손민수간다 소유 세럼은 올영에 시카마누 검색ㄱㄱ</p>
+<p class="composition">소유 다이어트/운동 클립 재게시 → 피부관리 세럼 소개 → 올영 검색 유도</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#동안</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-Dd0y31Gyrgh">
+<div class="frame" data-sc="Dd0y31Gyrgh">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dd0y31Gyrgh.jpg" src="assets/hook/Dd0y31Gyrgh.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/Dd0y31Gyrgh.mp4" data-full="assets/full/Dd0y31Gyrgh.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">조회수 13.1만</span></div>
+<h4>@luna.player · 2026-09-29(2일전)</h4>
+<p class="caption">연예인들 중에서도 소유가 피부 진짜 좋기로 유명하다고함..ㄷㄷ 매번 쟁여두는 템이라고 언급해서 궁금했는데 호빵맨 콜라보한다니까…</p>
+<p class="composition">소유 유튜브 본인 피부관리 클립 재게시 → 세럼 소개 → 올영 세일/호빵맨 콜라보 해시태그로 연결</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영호빵맨</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-Dd232Kvz3o0">
+<div class="frame" data-sc="Dd232Kvz3o0">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dd232Kvz3o0.jpg" src="assets/hook/Dd232Kvz3o0.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/Dd232Kvz3o0.mp4" data-full="assets/full/Dd232Kvz3o0.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">조회수 7.7만</span></div>
+<h4>@good_tip_magazine · 2026-09-29(2일전)</h4>
+<p class="caption">이거 아이돌 내돈내산템으로 유명해서 사고싶었는데 이번에 올영에서 호빵맨 콜라보 하나봐 미쳤따ㄷㄷㄷ 증정품으로 피크닉매트 주는거…</p>
+<p class="composition">소유 민낯 피부 클립 → 세럼 브랜딩 노출 → 올영 세일/콜라보 해시태그로 구매유도</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영호빵맨</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-Dd6K5ABzUZ-">
+<div class="frame" data-sc="Dd6K5ABzUZ-">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dd6K5ABzUZ-.jpg" src="assets/hook/Dd6K5ABzUZ-.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/Dd6K5ABzUZ-.mp4" data-full="assets/full/Dd6K5ABzUZ-.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">조회수 12.2만</span></div>
+<h4>@one_star_video · 2026-09-30(20시간전)</h4>
+<p class="caption">소유가 쟁여두고 쓴다길래 세일할때 사봤는데 ㄹㅇ개좋음.. 마침 다 써가는데 올영에서 호빵맨 피크닉매트까지 준다니 개이득</p>
+<p class="composition">소유 유튜브 피부상태 클립 재게시 → 세일시즌 구매후기 1인칭 서술 → 파넬세럼 브랜드 해시태그로 연결</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#아이돌</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#환절기세럼</span> <span class="chip sm">#파넬세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#호빵맨</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-DdxfRNzTQIn">
+<div class="frame" data-sc="DdxfRNzTQIn">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdxfRNzTQIn.jpg" src="assets/hook/DdxfRNzTQIn.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/DdxfRNzTQIn.mp4" data-full="assets/full/DdxfRNzTQIn.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 479</span></div>
+<h4>@dotori_channel · 2026-09-27(4일전)</h4>
+<p class="caption">저번에도 언급하더니 찐템인가봄ㅋㅋ 생각보다 가성비 좋던데 한번 사볼까</p>
+<p class="composition">luna.player/good_tip_magazine/one_star_video와 동일 소유 클립 재게시 → 세럼 가성비 후기 → 올영 해시태그</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-Dd2phx-v52N">
+<div class="frame" data-sc="Dd2phx-v52N">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dd2phx-v52N.jpg" src="assets/hook/Dd2phx-v52N.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/Dd2phx-v52N.mp4" data-full="assets/full/Dd2phx-v52N.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">조회수 7.4만</span><span class="samebadge">캡션 동일 · luna.player</span></div>
+<h4>@comedy.1989__ · 2026-09-29(2일전)</h4>
+<p class="caption">연예인들 중에서도 소유가 피부 진짜 좋기로 유명하다고함..ㄷㄷ 매번 쟁여두는 템이라고 언급해서 궁금했는데 호빵맨 콜라보한다니까…</p>
+<p class="composition">luna.player와 완전 동일 소재(캡션까지 동일) 재게시 → 세럼 소개 → 올영 해시태그</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영호빵맨</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-DdslB76x7ZV">
+<div class="frame" data-sc="DdslB76x7ZV">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdslB76x7ZV.jpg" src="assets/hook/DdslB76x7ZV.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/DdslB76x7ZV.mp4" data-full="assets/full/DdslB76x7ZV.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 432</span></div>
+<h4>@happing_box · 2026-09-25(6일전)</h4>
+<p class="caption">소유 피부 개좋아서 피부과 다니는줄 알았는데 의외로 가성비템 많이 쓰네 ㅋㅋ 올영갔더니 일부 매장은 벌써 품절;;</p>
+<p class="composition">소유 얼굴/피부 변화 클립 재게시 → 가성비 세럼 후기 → 올영 품절 임박 문구로 구매 유도</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 B</span><h3>이경실 · 관절 영양제 (제품명 비공개)</h3></div>
+<p class="meta">노출 계정 3개 · 9월 9일~11일 · 소재 출처: 본인 유튜브(솔티스) 클립</p>
+<div class="cardgrid">
+<figure class="card" data-post-id="ad-DdDWTkGx19e">
+<div class="frame" data-sc="DdDWTkGx19e">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdDWTkGx19e.jpg" src="assets/hook/DdDWTkGx19e.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/DdDWTkGx19e.mp4" data-full="assets/full/DdDWTkGx19e.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">조회수 1.8만</span></div>
+<h4>@orange__funny · 2026-09-09</h4>
+<p class="caption">이경실이 조깅 전 꼭 챙겨먹는다고</p>
+<p class="composition">이경실 본인 출연 유튜브 클립 재게시 → 조깅 전 챙겨먹는 관절 영양제 언급 → 제품명은 비공개</p>
+<div class="chipgrid"><span class="chip sm">#이경실#관절연골#무릎</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-DdDWk3WhaAs">
+<div class="frame" data-sc="DdDWk3WhaAs">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdDWk3WhaAs.jpg" src="assets/hook/DdDWk3WhaAs.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/DdDWk3WhaAs.mp4" data-full="assets/full/DdDWk3WhaAs.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 94</span></div>
+<h4>@melon__paper · 2026-09-09</h4>
+<p class="caption">요즘은 관절엔 콘드로이친보단 이게 더 유명함</p>
+<p class="composition">이경실 출연 클립 재게시 → 기존 성분(콘드로이친) 대비 우위 주장 → 제품명 비공개</p>
+<div class="chipgrid"><span class="chip sm">#이경실</span> <span class="chip sm">#관절연골</span> <span class="chip sm">#무릎</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-DdJEK22qGKg">
+<div class="frame" data-sc="DdJEK22qGKg">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdJEK22qGKg.jpg" src="assets/hook/DdJEK22qGKg.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/DdJEK22qGKg.mp4" data-full="assets/full/DdJEK22qGKg.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">조회수 6.8만(추정, 인접타일값)</span></div>
+<h4>@malangping_zzal · 2026-09-11</h4>
+<p class="caption">파스랑은 진짜 차원이 다름;;;</p>
+<p class="composition">이경실 관절 통증 개선 클립 재게시 → 파스 대비 효과 강조 → 실구매 댓글 유도</p>
+<div class="chipgrid"><span class="chip sm">#이경실</span> <span class="chip sm">#관절연골</span> <span class="chip sm">#건강관리</span></div>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 C</span><h3>카디비 · 세르프 리프팅 디바이스</h3></div>
+<p class="meta">노출 계정 1개 · 9월 17일 · 소재 출처: 무관한 해외 인터뷰 클립을 리프팅 맥락으로 재편집</p>
+<div class="cardgrid">
+<figure class="card" data-post-id="ad-DdYRxqVvAG3">
+<div class="frame" data-sc="DdYRxqVvAG3">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdYRxqVvAG3.jpg" src="assets/hook/DdYRxqVvAG3.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/DdYRxqVvAG3.mp4" data-full="assets/full/DdYRxqVvAG3.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">조회수 7만</span></div>
+<h4>@blue_fun_diary · 2026-09-17</h4>
+<p class="caption">빌보드 1위 카디비 피부비결은 K-리프팅?!</p>
+<p class="composition">카디비의 무관한 인터뷰 클립을 재편집 → "피부비결은 K리프팅" 자막으로 연결 → 세르프 브랜드 해시태그 삽입</p>
+<div class="chipgrid"><span class="chip sm">#세르프</span> <span class="chip sm">#세르프효과</span> <span class="chip sm">#K리프팅</span> <span class="chip sm">#카디비</span> <span class="chip sm">#통증없는리프팅</span></div>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">단독 사례</span><h3>조혜련 · 다이어트 보조제</h3></div>
+<p class="meta">노출 계정 1개 · 9월 16일 · 소재 출처: 본인 출연 클립, 계정에 "협찬 광고" 표시가 붙은 유일한 사례</p>
+<div class="cardgrid">
+<figure class="card" data-post-id="ad-DdWHsAkuDs0">
+<div class="frame" data-sc="DdWHsAkuDs0">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdWHsAkuDs0.jpg" src="assets/hook/DdWHsAkuDs0.mp4"></video>
+<span class="tag">릴 보기</span>
+</div>
+<button type="button" class="fullbtn" data-hook="assets/hook/DdWHsAkuDs0.mp4" data-full="assets/full/DdWHsAkuDs0.mp4">전체 재생 ▶</button>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">조회수 6.8만</span><span class="adbadge">협찬 광고 라벨</span></div>
+<h4>@tree.humor · 2026-09-16</h4>
+<p class="caption">ㅋㅋㅋㅋㅋ다이어트할때 중요하긴함</p>
+<p class="composition">조혜련 본인 출연 클립(출처-조회련:조혜련) → 8kg 감량 비결로 특정 제품 언급 → 다이어트 효과 소구</p>
+<div class="chipgrid"><span class="chip sm">#조혜련</span> <span class="chip sm">#다이어트</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#정보</span></div>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="formula" class="band" aria-labelledby="formula-h">
+<div class="sechead"><span class="chip" aria-hidden="true">03</span><h2 id="formula-h">소재 공식</h2></div>
+<p class="lede">12건 전부 같은 다섯 단계를 따라요.</p>
+<div class="stepgrid">
+<div class="stepcard">
+<div class="stepnum">1</div>
+<div class="stepbody">
+<h3>연예인 본인 클립에서 시작해요</h3>
+<p>본인이 나온 유튜브나 방송 클립 앞 3~5초를 가져와 가십성 자막을 붙여요.</p>
+<ul class="examplelist"><li>"최근 뼈말라된 소유 충격적인 피부 상태ㄷㄷ"</li><li>"파스와 침을 달고 살던 이경실 단 5일 만에 관절이 달라진 이유"</li></ul>
+</div>
+</div>
+<div class="stepcard">
+<div class="stepnum">2</div>
+<div class="stepbody">
+<h3>출처를 하단에 작게 표시해요</h3>
+<p>"출처 – ○○ Youtube"로만 표시하고 광고 라벨은 달지 않아요. 리포스트 밈처럼 보이게 둬요.</p>
+<ul class="examplelist"><li>"출처-소유기 Youtube"</li></ul>
+</div>
+</div>
+<div class="stepcard">
+<div class="stepnum">3</div>
+<div class="stepbody">
+<h3>캡션은 운영자가 직접 써본 것처럼 1인칭으로 써요</h3>
+<p>계정 운영자가 궁금해서 사봤다는 말투로 후기를 붙여요.</p>
+<ul class="examplelist"><li>"쟁여두고 쓴다길래 세일할 때 사봤는데 ㄹㅇ개좋음"</li><li>"올영 갔더니 일부 매장 품절"</li></ul>
+</div>
+</div>
+<div class="stepcard">
+<div class="stepnum">4</div>
+<div class="stepbody">
+<h3>해시태그가 CTA예요</h3>
+<p>링크 없이 해시태그와 검색어로 구매처를 유도해요.</p>
+<ul class="examplelist"><li>#소유세럼 #올리브영 #올영세일 #올영호빵맨</li><li>"올영에 시카마누 검색ㄱㄱ"</li></ul>
+</div>
+</div>
+<div class="stepcard">
+<div class="stepnum">5</div>
+<div class="stepbody">
+<h3>같은 소재를 캡션만 바꿔 여러 계정에 뿌려요</h3>
+<p>한 캠페인을 캡션 3~4종으로 변주해 계정별로 동시에 배포해요.</p>
+<ul class="examplelist"><li>luna.player·comedy.1989__는 캡션까지 동일하게 재게시됐어요.</li></ul>
+</div>
+</div>
+</div>
+</section>
+<section id="cost" class="band soft" aria-labelledby="cost-h">
+<div class="sechead"><span class="chip" aria-hidden="true">04</span><h2 id="cost-h">단가와 성과</h2></div>
+<table class="camptable pricetable">
+<thead><tr><th>계정</th><th>단가</th><th>조회수</th><th>뷰당</th></tr></thead>
+<tbody><tr><td>luna.player</td><td>400,000원</td><td>131,000</td><td>3.1원</td></tr>
+<tr><td>one_star_video</td><td>400,000원</td><td>122,000</td><td>3.3원</td></tr>
+<tr><td>dotori_channel</td><td>400,000원</td><td>127,000</td><td>3.1원</td></tr>
+<tr><td>good_tip_magazine</td><td>250,000원</td><td>77,000</td><td>3.2원</td></tr>
+<tr><td>comedy.1989__</td><td>250,000원</td><td>74,000</td><td>3.4원</td></tr>
+<tr><td>blue_fun_diary (카디비)</td><td>250,000원</td><td>70,000</td><td>3.6원</td></tr>
+<tr><td>tree.humor (조혜련)</td><td>250,000원</td><td>68,000</td><td>3.7원</td></tr>
+<tr><td>orange__funny (이경실)</td><td>100,000원</td><td>18,000</td><td>5.6원</td></tr></tbody>
+</table>
+<div class="calloutgrid">
+<div class="callout">조회수 1회당 단가는 3~4원대예요. 우리 시딩 기준 10원의 3분의 1 수준이지만, 밈 페이지 구매 의도는 시딩 릴보다 낮게 봐야 해요. 댓글은 3~5개 수준이고 "다들 피피엘이네" 같은 반응도 나와요.</div>
+<div class="callout">조회수는 그 계정이 평소에 받던 수준과 비슷해요. 연예인이 조회수를 끌어올리는 게 아니라, 계정이 원래 가진 도달을 그대로 사고 광고 티만 지우는 포장에 가까워요.</div>
+<div class="callout">실제 구매로 이어진 흔적도 있어요. malangping_zzal 댓글에 "이경실씨보고 구매했어요"라는 반응이 달렸어요.</div>
+</div>
+<h3 class="blocklabel">광고를 안 받는 계정 (같은 표본 안에서)</h3>
+<div class="chipgrid"><span class="chip sm">nato.tving</span><span class="chip sm">hana.zzal</span><span class="chip sm">easy.playlist</span><span class="chip sm">on_ggul_tip</span><span class="chip sm">jolly__humor</span><span class="chip sm">8282__humor</span><span class="chip sm">tteokbokki__zip</span><span class="chip sm">posilping_humor</span></div>
+</section>
+<section class="band tint" aria-labelledby="apply-h">
+<div class="sechead"><span class="chip" aria-hidden="true">05</span><h2 id="apply-h">우리 적용</h2></div>
+<div class="notecard">글로우덤 기미크림은 같은 포맷으로 바로 바꿔볼 수 있어요. 연예인 피부 가십 클립에 운영자 1인칭 후기, 검색용 해시태그를 붙이는 방식이에요.</div>
+<div class="notecard">착한구두 쪽은 이 표본에 신발·패션 광고가 한 건도 없었어요. 지금까지는 뷰티·건강식품 광고만 확인됐어요.</div>
+<div class="notecard">사려면 캠페인 A가 쓴 계정 세트가 검증된 목록이에요. luna.player·one_star_video·dotori_channel은 40만원대, good_tip_magazine·comedy.1989__·happing_box는 25만~35만원대예요.</div>
+<details class="confirmbox">
+<summary>확인 필요한 부분 3가지</summary>
+<ul>
+<li>7개 계정에 동시 배포된 게 한 대행사 패키지인지, 계정 운영사가 같은 곳인지는 아직 확인 못 했어요.</li>
+<li>조회수 미확인 4건이 있어요 (dotori_channel·happing_box·melon__paper 2건).</li>
+<li>comedy.1989__ 계정의 "이미안 샴푸&헤어팩" 타일은 아직 열어보지 못했어요. 추가 캠페인일 수 있어요.</li>
+</ul>
+</details>
+</section>
+<footer><p class="note">자료 출처: 19개 계정 화면을 직접 확인, 2026년 10월 1일 기준.</p></footer>
+</main>
+<script>
+
+document.querySelectorAll('.fullbtn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.card');
+    var video = card ? card.querySelector('video') : null;
+    if(!video) return;
+    video.src = btn.dataset.full;
+    video.loop = false;
+    video.muted = false;
+    video.play().catch(function(){});
+    btn.classList.add('playing');
+  });
+});
+document.addEventListener('play', function(e){
+  if(!(e.target instanceof HTMLVideoElement)) return;
+  document.querySelectorAll('video').forEach(function(v){ if(v !== e.target) v.pause(); });
+}, true);
+
+</script>
