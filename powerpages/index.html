@@ -275,16 +275,19 @@ figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:
 }
 .campnote p{margin:0;font-size:14.5px;line-height:1.78;color:var(--ink-2);max-width:54ch;word-break:keep-all}
 
-.fullbtn{
-  margin-top:9px;align-self:flex-start;
+.btnrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.fullbtn,.pausebtn{
   font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:-.01em;
-  background:var(--surface);border:1px solid var(--line);color:var(--ink);
-  padding:7px 13px;cursor:pointer;border-radius:999px;
+  padding:7px 13px;cursor:pointer;border-radius:999px;white-space:nowrap;
   transition:background .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .12s var(--ease);
 }
+.fullbtn{background:var(--surface);border:1px solid var(--line);color:var(--ink)}
 .fullbtn:hover{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
-.fullbtn:active{transform:scale(.97)}
+.fullbtn:active,.pausebtn:active{transform:scale(.97)}
 .fullbtn.playing{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.pausebtn{background:transparent;border:1px solid var(--line-2);color:var(--ink-3);font-weight:500}
+.pausebtn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.pausebtn:disabled{opacity:.42;cursor:default;transform:none}
 
 /* ---------- 단가 ---------- */
 .costgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
@@ -327,7 +330,6 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 }
 .budgettable tbody tr:first-child th{border-top:0}
 .budgettable td.unk{color:var(--ink-3);font-variant-numeric:normal}
-.budgettable tbody tr:last-child td{border-bottom:1px solid var(--ink)}
 
 .capgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
 .capcard{
@@ -573,7 +575,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dc2Q12shG2A.jpg" src="assets/hook/Dc2Q12shG2A.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/Dc2Q12shG2A.mp4" data-full="assets/full/Dc2Q12shG2A.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">좋아요 95</span></div>
 <h4>@melon__paper · 2026-09-04</h4>
@@ -587,7 +592,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dd0y31Gyrgh.jpg" src="assets/hook/Dd0y31Gyrgh.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/Dd0y31Gyrgh.mp4" data-full="assets/full/Dd0y31Gyrgh.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">조회수 13.1만</span></div>
 <h4>@luna.player · 2026-09-29(2일전)</h4>
@@ -601,7 +609,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dd232Kvz3o0.jpg" src="assets/hook/Dd232Kvz3o0.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/Dd232Kvz3o0.mp4" data-full="assets/full/Dd232Kvz3o0.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">조회수 7.7만</span></div>
 <h4>@good_tip_magazine · 2026-09-29(2일전)</h4>
@@ -615,7 +626,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dd6K5ABzUZ-.jpg" src="assets/hook/Dd6K5ABzUZ-.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/Dd6K5ABzUZ-.mp4" data-full="assets/full/Dd6K5ABzUZ-.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">조회수 12.2만</span></div>
 <h4>@one_star_video · 2026-09-30(20시간전)</h4>
@@ -629,7 +643,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdxfRNzTQIn.jpg" src="assets/hook/DdxfRNzTQIn.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/DdxfRNzTQIn.mp4" data-full="assets/full/DdxfRNzTQIn.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">좋아요 479</span></div>
 <h4>@dotori_channel · 2026-09-27(4일전)</h4>
@@ -643,7 +660,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dd2phx-v52N.jpg" src="assets/hook/Dd2phx-v52N.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/Dd2phx-v52N.mp4" data-full="assets/full/Dd2phx-v52N.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">조회수 7.4만</span><span class="samebadge">캡션 동일 · luna.player</span></div>
 <h4>@comedy.1989__ · 2026-09-29(2일전)</h4>
@@ -657,7 +677,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdslB76x7ZV.jpg" src="assets/hook/DdslB76x7ZV.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/DdslB76x7ZV.mp4" data-full="assets/full/DdslB76x7ZV.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">좋아요 432</span></div>
 <h4>@happing_box · 2026-09-25(6일전)</h4>
@@ -677,7 +700,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdDWTkGx19e.jpg" src="assets/hook/DdDWTkGx19e.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/DdDWTkGx19e.mp4" data-full="assets/full/DdDWTkGx19e.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">조회수 1.8만</span></div>
 <h4>@orange__funny · 2026-09-09</h4>
@@ -691,7 +717,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdDWk3WhaAs.jpg" src="assets/hook/DdDWk3WhaAs.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/DdDWk3WhaAs.mp4" data-full="assets/full/DdDWk3WhaAs.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">좋아요 94</span></div>
 <h4>@melon__paper · 2026-09-09</h4>
@@ -705,7 +734,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdJEK22qGKg.jpg" src="assets/hook/DdJEK22qGKg.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/DdJEK22qGKg.mp4" data-full="assets/full/DdJEK22qGKg.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">조회수 6.8만(추정, 인접타일값)</span></div>
 <h4>@malangping_zzal · 2026-09-11</h4>
@@ -725,7 +757,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdYRxqVvAG3.jpg" src="assets/hook/DdYRxqVvAG3.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/DdYRxqVvAG3.mp4" data-full="assets/full/DdYRxqVvAG3.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">조회수 7만</span></div>
 <h4>@blue_fun_diary · 2026-09-17</h4>
@@ -746,7 +781,10 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdWHsAkuDs0.jpg" src="assets/hook/DdWHsAkuDs0.mp4"></video>
 <span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
 <button type="button" class="fullbtn" data-hook="assets/hook/DdWHsAkuDs0.mp4" data-full="assets/full/DdWHsAkuDs0.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
 <figcaption>
 <div class="cardtop"><span class="viewsbig">조회수 6.8만</span><span class="adbadge">협찬 광고 라벨</span></div>
 <h4>@tree.humor · 2026-09-16</h4>
@@ -947,7 +985,28 @@ document.querySelectorAll('.fullbtn').forEach(function(btn){
     video.muted = false;
     video.play().catch(function(){});
     btn.classList.add('playing');
+    var pause = card.querySelector('.pausebtn');
+    if(pause) pause.disabled = false;
   });
+});
+document.querySelectorAll('.pausebtn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var card = btn.closest('.card');
+    var video = card ? card.querySelector('video') : null;
+    if(!video) return;
+    if(video.paused) video.play().catch(function(){});
+    else video.pause();
+  });
+});
+document.querySelectorAll('.card').forEach(function(card){
+  var video = card.querySelector('video');
+  var btn = card.querySelector('.pausebtn');
+  if(!video || !btn) return;
+  var sync = function(){
+    if(btn.disabled) return;
+    btn.textContent = video.paused ? '이어 재생' : '일시정지';
+  };
+  ['play','pause','ended'].forEach(function(ev){ video.addEventListener(ev, sync); });
 });
 document.addEventListener('play', function(e){
   if(!(e.target instanceof HTMLVideoElement)) return;
