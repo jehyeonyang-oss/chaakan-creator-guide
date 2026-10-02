@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>파워페이지 연예인 광고 분석</title>
+<title>페이지에 연예인광고 하기</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -316,12 +316,44 @@ figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:
 footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 .note{color:var(--ink-3);font-size:13px;margin:0;word-break:keep-all}
 
+/* ---------- 김가연으로 간다 ---------- */
+.lede.tight{margin:10px 0 0;font-size:14.5px}
+.fnum.sm{font-size:clamp(17px,2.1vw,24px);line-height:1.2}
+.budgettable{min-width:480px}
+.budgettable .waverow th{
+  border-bottom:1px solid var(--line-2);border-top:1px solid var(--line-2);
+  padding:14px 16px 10px 0;color:var(--accent);
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.04em;
+}
+.budgettable tbody tr:first-child th{border-top:0}
+.budgettable td.unk{color:var(--ink-3);font-variant-numeric:normal}
+.budgettable tbody tr:last-child td{border-bottom:1px solid var(--ink)}
+
+.capgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+.capcard{
+  min-width:0;padding:8px;background:var(--surface-2);
+  border:1px solid var(--line);border-radius:calc(var(--r) + 8px);
+}
+.capcore{
+  height:100%;display:flex;flex-direction:column;align-items:flex-start;gap:13px;
+  padding:22px 24px 24px;background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--r);box-shadow:var(--sh);
+}
+.captext{margin:0;font-size:14.5px;line-height:1.82;color:var(--ink);word-break:keep-all}
+.capcta{
+  margin:0;padding-left:13px;border-left:2px solid var(--accent);
+  font-size:13.5px;font-weight:700;color:var(--accent);
+  letter-spacing:-.015em;word-break:keep-all;
+}
+.captags{margin-top:auto;padding-top:4px}
+
 /* ---------- 반응형 ---------- */
 @media (max-width:1080px){
   .cardgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
   .campnote{grid-column:span 2 !important}
   .costgrid{grid-template-columns:1fr;gap:28px}
   .notegrid{grid-template-columns:1fr}
+  .capgrid{grid-template-columns:1fr}
 }
 @media (max-width:860px){
   .mast,main{padding:0 24px}
@@ -343,6 +375,7 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
   .fstat{border-bottom:1px solid var(--line-2);padding-right:12px}
   .fstat:nth-child(even){border-right:0}
   .fstat:nth-last-child(-n+2){border-bottom:0}
+  .capcore{padding:20px 19px 22px}
   .stepcard{grid-template-columns:40px 1fr;gap:14px}
   .stepnum{font-size:24px}
   .navrow{gap:4px 18px}
@@ -357,7 +390,7 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 </style>
 <header class="mast">
 <p class="eyebrow">Power Page · Celebrity Ad Teardown</p>
-<h1>연예인 얼굴을 빌려<br>광고 티를 지우는 법</h1>
+<h1>페이지에<br>연예인광고 하기</h1>
 <p class="standfirst">밈 페이지 19개 계정을 열어 광고 릴 13건을 추려냈어요. 이 가운데 12건이 연예인 광고고, 자막 한 줄부터 해시태그까지 전부 같은 틀을 씁니다.</p>
 <div class="mstats">
 <div class="mstat"><span class="mnum">13</span><span class="mlab">분석한 광고 릴</span></div>
@@ -370,7 +403,7 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <a href="#formula">자막 공식</a>
 <a href="#campaigns">캠페인별 영상</a>
 <a href="#cost">단가와 성과</a>
-<a href="#apply">우리 적용</a>
+<a href="#apply">김가연으로 간다</a>
 </nav>
 </header>
 <main>
@@ -756,23 +789,141 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 </section>
 <section id="apply" class="band" aria-labelledby="apply-h">
 <div class="sechead">
-<h2 id="apply-h">우리 적용</h2>
-<p class="lede">바로 옮겨볼 수 있는 쪽과, 이 표본으로는 답이 안 나오는 쪽이 갈려요.</p>
+<h2 id="apply-h">김가연으로 간다</h2>
+<p class="lede">이 포맷을 그대로 김가연 기미 서사에 얹어요. 자막 13안, 계정 세트와 예산, 운영자 캡션 4종까지 바로 쓰는 형태로 정리했어요.</p>
 </div>
-<div class="notegrid">
-<div class="notecard">
-<h3>글로우덤 기미크림</h3>
-<p>같은 포맷으로 바로 바꿔볼 수 있어요. 연예인 피부 가십 클립에 운영자 1인칭 후기, 검색용 해시태그를 붙이는 방식이에요.</p>
+
+<div class="formula">
+<div class="formula-core">
+<h3 class="formula-title">같은 세 칸에 김가연을 넣어요</h3>
+<p class="formula-line">
+<span class="s-mod">권위 · 변화 수식어</span><span class="plus">+</span><span class="s-name">김가연</span><span class="plus">+</span><span class="s-res">가려진 결과</span>
+</p>
+<p class="formula-note">본인이 직접 한 말에서 수식어를 뽑아요. "기미는 레이저 하면 더 번진다", 딸이랑 같이 쓴다, 헤라 모델 출신, 면봉으로 발라 보이는 장면이 전부 수식어 칸 재료예요. 마지막 칸은 원본과 똑같이 비결 · 이유 · 이것 · 그 OO로 가리고, 제품 이름은 한 건도 쓰지 않아요.</p>
+<ul class="subs">
+<li class="subrow">
+<span class="subacct">원본 @melon__paper</span>
+<span class="subline"><span class="s-mod">레이저 한 번 안 한</span> <span class="s-name">김가연</span> <span class="s-res">'기미는 이것만 쓴다'</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @good_tip_magazine</span>
+<span class="subline"><span class="s-name">김가연</span> <span class="s-mod">55세 쌩얼 무슨 일;;</span> <span class="s-res">엄마들이 다 쓴다는 그 OO</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @one_star_video</span>
+<span class="subline"><span class="s-mod">"기미는 레이저 하면 더 번진다"는</span> <span class="s-name">김가연</span> <span class="s-res">그럼 뭘로 지웠냐면ㄷㄷ</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @happing_box</span>
+<span class="subline"><span class="s-name">김가연</span> <span class="s-mod">기미 다 걷힌</span> <span class="s-res">이유</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @luna.player</span>
+<span class="subline"><span class="s-gen">배우들</span> <span class="s-mod">기미 없는 얼굴은</span> <span class="s-res">다 레이저인 줄 알았는데...</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @comedy.1989__</span>
+<span class="subline"><span class="s-gen">50대 여배우</span> <span class="s-mod">동안 피부는</span> <span class="s-res">다 시술인 줄 알았는데...</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @dotori_channel</span>
+<span class="subline"><span class="s-mod">약국에서 품절났다는</span> <span class="s-gen">OO 배우</span> <span class="s-res">기미 관리 필수템?!</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @tree.humor</span>
+<span class="subline"><span class="s-mod">기미 싹 걷고 리즈 찍은</span> <span class="s-name">김가연</span> <span class="s-res">동안 비결 = 면봉?</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @orange__funny</span>
+<span class="subline"><span class="s-mod">바르는 것만큼은 깐깐한</span> <span class="s-name">김가연</span> <span class="s-res">기미에 좋다고 콕 찍은 이것</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @melon__paper</span>
+<span class="subline"><span class="s-name">김가연</span> <span class="s-mod">딸이랑 같이 쓴다는</span> <span class="s-res">'모녀 동안 크림 하나'</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @malangping_zzal</span>
+<span class="subline"><span class="s-mod">커버 화장을 달고 살던</span> <span class="s-name">김가연</span> <span class="s-res">맨얼굴로 다니게 된 이유</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @blue_fun_diary</span>
+<span class="subline"><span class="s-mod">헤라 모델 출신</span> <span class="s-name">김가연</span> <span class="s-res">기미 비결은 약국템?!</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">원본 @hana.zzal</span>
+<span class="subline"><span class="s-mod">산후 기미 20년 끌다가?</span> <span class="s-res">'본살이 치즈 구멍처럼 돌아왔다'</span></span>
+</li>
+</ul>
 </div>
-<div class="notecard">
-<h3>착한구두</h3>
-<p>이 표본에 신발·패션 광고가 한 건도 없었어요. 지금까지 확인된 건 뷰티와 건강식품뿐이에요.</p>
 </div>
-<div class="notecard">
-<h3>계정을 산다면</h3>
-<p>캠페인 A가 쓴 세트가 검증된 목록이에요. luna.player·one_star_video·dotori_channel은 40만원대, good_tip_magazine·comedy.1989__·happing_box는 25만~35만원대예요.</p>
+
+<h3 class="steplabel">계정 세트와 예산 · 2주 2차 배포</h3>
+<p class="lede tight">캠페인 A가 9월 4일과 9월 25~30일 두 차례에 걸쳐 돈 구조를 그대로 가정했어요. 1차에 4계정, 2주 뒤 2차에 3계정이에요.</p>
+<div class="fstats">
+<div class="fstat"><span class="fnum sm">195만~205만원</span><span class="flab">7계정 2차 배포 총 예산</span></div>
+<div class="fstat"><span class="fnum sm">53.1만</span><span class="flab">합산 예상 조회수</span></div>
+<div class="fstat"><span class="fnum sm">3.7~3.9원</span><span class="flab">조회수 1회당 단가</span></div>
+<div class="fstat"><span class="fnum sm">531만원</span><span class="flab">같은 도달을 시딩 10원으로 사면</span></div>
+</div>
+<div class="costgrid">
+<div class="tablewrap">
+<table class="camptable pricetable budgettable">
+<thead><tr><th>계정</th><th>단가</th><th>예상 조회수</th><th>뷰당</th></tr></thead>
+<tbody><tr class="waverow"><th colspan="4" scope="colgroup">1차 · 집행 1주차 · 4개 계정</th></tr>
+<tr><td>luna.player</td><td>400,000원</td><td>131,000</td><td class="cpv">3.1원</td></tr>
+<tr><td>one_star_video</td><td>400,000원</td><td>122,000</td><td class="cpv">3.3원</td></tr>
+<tr><td>dotori_channel</td><td>400,000원</td><td>127,000</td><td class="cpv">3.1원</td></tr>
+<tr><td>good_tip_magazine</td><td>250,000원</td><td>77,000</td><td class="cpv">3.2원</td></tr>
+<tr class="waverow"><th colspan="4" scope="colgroup">2차 · 집행 3주차 · 3개 계정</th></tr>
+<tr><td>comedy.1989__</td><td>250,000원</td><td>74,000</td><td class="cpv">3.4원</td></tr>
+<tr><td>happing_box</td><td>25만~35만원</td><td class="unk">미확인</td><td class="unk">—</td></tr>
+<tr><td>melon__paper</td><td class="unk">단가 미확인</td><td class="unk">미확인</td><td class="unk">—</td></tr></tbody>
+</table>
+</div>
+<div class="calloutcol">
+<p class="callout">뷰당 3.7~3.9원이에요. 우리 시딩 기준 10원으로 같은 53.1만 도달을 사면 531만원이라, 2배 반 넘게 차이가 나요.</p>
+<p class="callout">happing_box는 단가가 안 잡혀서 같은 급 계정 구간인 25만~35만원으로 넣었고, melon__paper는 단가·조회수 둘 다 안 잡혀 총액에서 뺐어요. 조회수 미확인 2계정이 합산에서 빠져 있으니 실제 뷰당 단가는 이 숫자보다 낮게 나와요.</p>
+<p class="callout">이 표본에서 광고가 확인된 카테고리는 뷰티와 건강식품이에요. 기미크림은 캠페인 A가 돌린 뷰티 소재와 같은 칸이라 계정 세트를 그대로 가져가도 맞아요.</p>
 </div>
 </div>
+
+<h3 class="steplabel">운영자 1인칭 캡션 4종</h3>
+<p class="lede tight">캡션 본문에는 링크를 넣지 않아요. 해시태그와 마지막 한 줄이 CTA고, 구매처는 올영이 아니라 약국과 자사몰 행사예요.</p>
+<div class="capgrid">
+<div class="capcard">
+<div class="capcore">
+<span class="chip">레이저 반박</span>
+<p class="captext">김가연이 기미는 피부과에서 레이저로 하는 거 아니라고 오히려 번진다고 함..ㄷㄷ 나도 두 번 받고 더 올라와서 접었는데 이 말 듣고 바르는 걸로 갈아탐 3주차에 광대 쪽부터 먼저 흐려지는 중</p>
+<p class="capcta">약국에서 기미크림 찾을 때 성분부터 보고 고르기ㄱㄱ</p>
+<div class="chipgrid captags"><span class="chip sm">#김가연</span><span class="chip sm">#김가연기미</span><span class="chip sm">#기미크림</span><span class="chip sm">#약국기미크림</span><span class="chip sm">#트라넥삼산</span><span class="chip sm">#기미레이저</span><span class="chip sm">#동안피부</span><span class="chip sm">#40대피부관리</span></div>
+</div>
+</div>
+<div class="capcard">
+<div class="capcore">
+<span class="chip">모녀 동안</span>
+<p class="captext">딸이랑 같은 화장품 쓴다는 말 그냥 하는 소리인 줄 알았는데 김가연은 가족이 다 같이 쓴다고 함ㅋㅋ 엄마 쓰는 걸 딸이 가져가 쓰는 게 더 신기하다 목에도 발라도 된다길래 나도 목까지 같이 발라봄</p>
+<p class="capcta">모녀로 같이 쓸 거면 큰 용량으로ㄱㄱ</p>
+<div class="chipgrid captags"><span class="chip sm">#김가연</span><span class="chip sm">#모녀동안</span><span class="chip sm">#기미크림</span><span class="chip sm">#약국기미크림</span><span class="chip sm">#동안피부</span><span class="chip sm">#게임부부</span><span class="chip sm">#50대피부</span><span class="chip sm">#목관리</span></div>
+</div>
+</div>
+<div class="capcard">
+<div class="capcore">
+<span class="chip">약국 품절</span>
+<p class="captext">명동 약국 갔더니 그 기미크림 자리만 비어 있던데;; 성수 쪽도 물어보니까 들어오는 대로 나간다고 함 김가연 나온 거 보고 찾는 사람 늘었다는 말이 진짜였네 결국 다음날 다시 가서 집어왔음</p>
+<p class="capcta">약국 가기 전에 재고 있는지 전화로 물어보고 가기ㄱㄱ</p>
+<div class="chipgrid captags"><span class="chip sm">#김가연</span><span class="chip sm">#김가연기미</span><span class="chip sm">#기미크림</span><span class="chip sm">#약국기미크림</span><span class="chip sm">#명동약국</span><span class="chip sm">#성수약국</span><span class="chip sm">#품절템</span><span class="chip sm">#기미관리</span></div>
+</div>
+</div>
+<div class="capcard">
+<div class="capcore">
+<span class="chip">이벤트 받아옴</span>
+<p class="captext">김가연이 대표한테 직접 말해서 이벤트 받아왔다고 호통치는 거 보고 웃었는데 들어가 보니까 진짜 하나 더 주는 행사중이더라 쟁여두는 사람들은 이럴 때 사는 거구나 싶었음 나도 이번엔 두 개 샀다</p>
+<p class="capcta">행사 끝나기 전에 OO 검색해서 남았는지 확인ㄱㄱ</p>
+<div class="chipgrid captags"><span class="chip sm">#김가연</span><span class="chip sm">#여왕김가연</span><span class="chip sm">#기미크림</span><span class="chip sm">#트라넥삼산</span><span class="chip sm">#증정행사</span><span class="chip sm">#기미</span><span class="chip sm">#동안피부</span><span class="chip sm">#약국기미크림</span></div>
+</div>
+</div>
+</div>
+
 <details class="confirmbox">
 <summary>아직 확인 못 한 것 3가지</summary>
 <ul>
