@@ -275,6 +275,37 @@ figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:
 }
 .campnote p{margin:0;font-size:14.5px;line-height:1.78;color:var(--ink-2);max-width:54ch;word-break:keep-all}
 
+.campnote.flat{grid-column:auto !important;margin-top:18px}
+.fmtbadge{
+  font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.04em;
+  background:var(--accent);color:var(--on-accent);
+  padding:2.5px 7px;border-radius:999px;white-space:nowrap;
+}
+.fmtbadge.big{font-family:var(--sans);font-size:11.5px;padding:4px 11px;letter-spacing:-.01em}
+.frame.novideo.wide img{object-fit:contain;background:#000}
+
+/* ---------- 영상 미확보 건 — 계정 칩 + 머리 한 줄 ---------- */
+.extrabox{
+  margin-top:22px;padding:20px 22px;background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--r);
+}
+.extrabox.span{margin-top:40px}
+.extrahead{
+  margin:0 0 12px;font-size:13px;font-weight:700;letter-spacing:-.01em;color:var(--ink);
+  padding-bottom:10px;border-bottom:1px solid var(--line-2);
+}
+.extralist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.extralist li{
+  display:grid;grid-template-columns:168px 92px minmax(0,1fr);gap:12px;align-items:baseline;
+  font-size:13.5px;word-break:keep-all;
+}
+.extralist li:has(.exacct+.exline){grid-template-columns:168px minmax(0,1fr)}
+.exacct{font-family:var(--mono);font-size:11.5px;color:var(--accent);letter-spacing:-.01em}
+.exdate{font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.exline{color:var(--ink-2);line-height:1.6}
+.pricetable tr.outlier td{color:var(--ink-3)}
+.viewsbig.unk{color:var(--ink-3);font-weight:600}
+
 .btnrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
 .fullbtn,.pausebtn{
   font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:-.01em;
@@ -393,12 +424,12 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <header class="mast">
 <p class="eyebrow">Power Page · Celebrity Ad Teardown</p>
 <h1>페이지에<br>연예인광고 하기</h1>
-<p class="standfirst">밈 페이지 19개 계정을 열어 광고 릴 13건을 추려냈어요. 이 가운데 12건이 연예인 광고고, 자막 한 줄부터 해시태그까지 전부 같은 틀을 씁니다.</p>
+<p class="standfirst">단가표에 올라 있는 밈 페이지 56개 계정을 전부 열어 연예인 광고 42건을 추려냈어요. 광고를 받는 계정은 30개고, 캠페인 11개가 자막 한 줄부터 해시태그까지 같은 틀을 씁니다.</p>
 <div class="mstats">
-<div class="mstat"><span class="mnum">13</span><span class="mlab">분석한 광고 릴</span></div>
-<div class="mstat"><span class="mnum">12</span><span class="mlab">연예인 광고 확정</span></div>
-<div class="mstat"><span class="mnum">19</span><span class="mlab">확인한 밈 계정</span></div>
-<div class="mstat"><span class="mnum">3~4원</span><span class="mlab">조회수 1회당 단가</span></div>
+<div class="mstat"><span class="mnum">56</span><span class="mlab">열어 본 밈 계정</span></div>
+<div class="mstat"><span class="mnum">30</span><span class="mlab">광고를 받는 계정</span></div>
+<div class="mstat"><span class="mnum">42</span><span class="mlab">연예인 광고 게시물</span></div>
+<div class="mstat"><span class="mnum">11</span><span class="mlab">캠페인</span></div>
 </div>
 <nav class="navrow" aria-label="섹션 이동">
 <a href="#summary">한눈에</a>
@@ -412,21 +443,30 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <section id="summary" class="band" aria-labelledby="summary-h">
 <div class="sechead">
 <h2 id="summary-h">한눈에</h2>
-<p class="lede">연예인 광고 캠페인 3개와 단독 사례 1개가 같은 계정 풀 위에서 돌아갔어요.</p>
+<p class="lede">캠페인 11개가 같은 계정 풀 위에서 돌아갔어요. 큰 캠페인 하나가 계정 19개를 혼자 씁니다.</p>
 </div>
 <ul class="sumlist">
-<li>연예인 광고 캠페인은 3개, 단독 사례 1개로 모두 11개 계정에서 돌았어요.</li>
-<li>상단 자막은 수식어 + 연예인 이름 + 가린 결과, 딱 한 틀이에요. 브랜드명은 13건 모두 0건이에요.</li>
-<li>소재 공식은 다섯 단계예요. 연예인 본인 클립을 가져와 운영자 말투로 후기를 붙이고 해시태그로 검색을 유도해요.</li>
+<li>계정 56개 가운데 30개가 연예인 광고를 받고, 26개는 한 건도 없어요. 광고 받는 계정과 안 받는 계정이 갈려 있어요.</li>
+<li>캠페인은 11개예요. 가장 큰 소유 세럼 캠페인 하나가 게시물 21건·계정 19개로 퍼졌어요.</li>
+<li>상단 자막은 수식어 + 연예인 이름 + 가린 결과, 딱 한 틀이에요. 모아 본 자막 33건 모두 브랜드명이 없어요.</li>
+<li>형태는 릴 40건, 캐러셀 2건이에요. 사진 한 장짜리 광고는 없어요.</li>
+<li>카테고리는 뷰티 29건, 건강식품 12건, 생활용품 1건이에요. 신발·패션은 0건이에요.</li>
 <li>조회수 1회당 단가는 3~4원대예요. 우리 시딩 기준 10원의 3분의 1 수준이에요.</li>
 </ul>
 <div class="tablewrap">
 <table class="camptable">
-<thead><tr><th>연예인</th><th>제품</th><th>노출 계정</th><th>시기</th><th>소재 출처</th></tr></thead>
-<tbody><tr><td>소유</td><td>올리브영 세럼 (파넬세럼 / 9월 4일 건은 시카마누로 다른 이름)</td><td>7개</td><td>1차 9월 4일, 2차 9월 25일~30일</td><td>소유 유튜브 클립 재게시</td></tr>
-<tr><td>이경실</td><td>관절 영양제 (제품명 비공개)</td><td>3개</td><td>9월 9일~11일</td><td>본인 유튜브(솔티스) 클립</td></tr>
-<tr><td>카디비</td><td>세르프 리프팅 디바이스</td><td>1개</td><td>9월 17일</td><td>무관한 해외 인터뷰 클립을 리프팅 맥락으로 재편집</td></tr>
-<tr><td>조혜련</td><td>다이어트 보조제</td><td>1개</td><td>9월 16일</td><td>본인 출연 클립, 계정에 "협찬 광고" 표시가 붙은 유일한 사례</td></tr></tbody>
+<thead><tr><th>캠페인</th><th>연예인</th><th>제품</th><th>게시물</th><th>계정</th><th>시기</th><th>카테고리</th><th>형태</th></tr></thead>
+<tbody><tr><td>A</td><td>소유</td><td>올리브영 세럼 (파넬세럼 · 시카마누)</td><td>21건</td><td>19개</td><td>8월 30일~10월 1일</td><td>뷰티</td><td>릴</td></tr>
+<tr><td>B</td><td>이경실</td><td>관절 영양제 (솔티스)</td><td>5건</td><td>5개</td><td>9월 8일~11일</td><td>건강식품</td><td>릴</td></tr>
+<tr><td>C</td><td>카디비 · 킴 카다시안 · 나는솔로 영수</td><td>세르프 리프팅</td><td>5건</td><td>5개</td><td>9월 8일~30일</td><td>뷰티</td><td>릴</td></tr>
+<tr><td>D</td><td>조혜련</td><td>다이어트 보조제</td><td>2건</td><td>2개</td><td>9월 16일</td><td>건강식품</td><td>릴</td></tr>
+<tr><td>E</td><td>한선화 · 박가을</td><td>미백 패치 (브랜드 가림)</td><td>2건</td><td>2개</td><td>9월 4일</td><td>뷰티</td><td>릴</td></tr>
+<tr><td>F</td><td>이경실</td><td>눈건강 영양제 (브랜드 가림)</td><td>2건</td><td>2개</td><td>8월 31일~9월 10일</td><td>건강식품</td><td>릴</td></tr>
+<tr><td>G</td><td>이경실</td><td>간 · 숙취 영양제 (브랜드 가림)</td><td>1건</td><td>1개</td><td>8월 31일</td><td>건강식품</td><td>릴</td></tr>
+<tr><td>H</td><td>박원숙</td><td>약국 혈관 영양제 (브랜드 가림)</td><td>1건</td><td>1개</td><td>9월 14일</td><td>건강식품</td><td>릴</td></tr>
+<tr><td>I</td><td>이혜정</td><td>프리미엄 오메가3</td><td>1건</td><td>1개</td><td>9월 29일</td><td>건강식품</td><td>릴</td></tr>
+<tr><td>J</td><td>제나</td><td>한스킨 PDRN 핑크볼 광채세럼</td><td>1건</td><td>1개</td><td>9월 23일</td><td>뷰티</td><td>캐러셀 · 사진 9장</td></tr>
+<tr><td>K</td><td>이민정</td><td>CLNL 바디 와입</td><td>1건</td><td>1개</td><td>9월 17일</td><td>생활용품</td><td>캐러셀 · 사진 8장</td></tr></tbody>
 </table>
 </div>
 </section>
@@ -441,16 +481,16 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <p class="formula-line">
 <span class="s-mod">권위 · 변화 수식어</span><span class="plus">+</span><span class="s-name">연예인 이름</span><span class="plus">+</span><span class="s-res">가려진 결과</span>
 </p>
-<p class="formula-note">마지막 칸은 비결 · 이유 · 이것 · 그 OO처럼 늘 가려 둬요. 제품이 뭔지는 끝까지 말하지 않고, 브랜드명은 한 건도 쓰지 않아요.</p>
+<p class="formula-note">마지막 칸은 비결 · 이유 · 이것 · 그 OO처럼 늘 가려 둬요. 자막에 브랜드명을 쓴 건은 한 건도 없어요. 브랜드는 해시태그에만 나오고, 화면에 제품 박스 로고가 그대로 보인 건 peach__paper 관절 영양제 1건뿐이에요.</p>
 <div class="fstats">
 <div class="fstat">
-<span class="fnum">13</span><span class="flab">분석한 상단 자막</span>
+<span class="fnum">33</span><span class="flab">모아 본 상단 자막</span>
 </div>
 <div class="fstat">
-<span class="fnum">9</span><span class="flab">연예인 이름 직접 노출</span>
+<span class="fnum">27</span><span class="flab">연예인 이름 직접 노출</span>
 </div>
 <div class="fstat">
-<span class="fnum">3</span><span class="flab">'연예인·아이돌' 통칭</span>
+<span class="fnum">5</span><span class="flab">'연예인·아이돌' 통칭</span>
 </div>
 <div class="fstat zero">
 <span class="fnum">0</span><span class="flab">브랜드명 노출</span>
@@ -514,6 +554,86 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <span class="subacct">@hana.zzal</span>
 <span class="subline"><span class="s-mod">추석동안 -5kg 가능?</span> <span class="s-res">효과 미쳤다는 단기 디톡스 주스</span></span>
 </li>
+<li class="subrow">
+<span class="subacct">@luna.djing</span>
+<span class="subline"><span class="s-gen">여돌들</span> <span class="s-mod">사이에서 이미 소문난</span> <span class="s-res">올영 1위 품절대란 ㅇㅇ?</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@luna.humor</span>
+<span class="subline"><span class="s-mod">나인원한남 사는</span> <span class="s-name">소유</span> <span class="s-res">피부과에 돈 안쓰는 이유</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@hana.humor</span>
+<span class="subline"><span class="s-mod">20kg 급감량 후 충격적인</span> <span class="s-name">소유</span> <span class="s-res">피부 상태</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@showing_box</span>
+<span class="subline"><span class="s-mod">비싼 화장품 소용없음!!</span> <span class="s-name">소유</span> <span class="s-res">피부광 살려준 구원템</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@bibimbap__zip</span>
+<span class="subline"><span class="s-name">소유</span> <span class="s-mod">처럼 살 빼고 싶다면</span> <span class="s-res">절대 빼먹지 말아야하는 것?</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@grape__paper</span>
+<span class="subline"><span class="s-name">소유</span> <span class="s-mod">성형설 도는</span> <span class="s-res">이유</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@reply.1989__</span>
+<span class="subline"><span class="s-mod">위고비를 할 필요가 없어</span> <span class="s-gen">연예인들</span> <span class="s-res">간증후기 난리남</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@lemon__paper</span>
+<span class="subline"><span class="s-name">이경실</span> <span class="s-mod">도 임상 결과 보고 인정한</span> <span class="s-res">단 5일 관절 개선 영양제</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@peach__paper</span>
+<span class="subline"><span class="s-name">이경실</span> <span class="s-mod">도 챙긴다는</span> <span class="s-res">관절 영양제 진짜 제대로 깎아옴</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@apple__paper</span>
+<span class="subline"><span class="s-mod">노안으로 생명의 위협받은</span> <span class="s-name">이경실</span> <span class="s-res">루테X 대신 먹는다는 이것</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@grape__paper</span>
+<span class="subline"><span class="s-mod">운전하다 눈 때문에 식겁한</span> <span class="s-name">이경실</span> <span class="s-res">이 품절될까봐 박스째 쟁인 '이것'</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@mango__paper</span>
+<span class="subline"><span class="s-mod">얼마나 좋길래...</span> <span class="s-name">이경실</span> <span class="s-res">이 못참고 나눠준 간영양제</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@nato.iove</span>
+<span class="subline"><span class="s-mod">혈관 나이 20년 전으로 회춘 시켜버린</span> <span class="s-name">이경실</span> <span class="s-res">도 극찬한 약국 혈관 세트</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@hana.tving</span>
+<span class="subline"><span class="s-mod">건강에 진심인</span> <span class="s-name">이혜정</span> <span class="s-res">이 추천하는 최상의 1% 프리미엄 오메가</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@apple__paper</span>
+<span class="subline"><span class="s-name">한선화</span> <span class="s-mod">PICK</span> <span class="s-res">미백패치</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@peach__paper</span>
+<span class="subline"><span class="s-mod">이게 스티커여 미백템이여?</span> <span class="s-name">한선화, 박가을</span> <span class="s-res">도 떨어지면 불안해서</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@chachaping_zzal</span>
+<span class="subline"><span class="s-mod">한국인이 되고 싶다는</span> <span class="s-name">카디비</span> <span class="s-res">가 선택한 K-리프팅</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@hana.humor</span>
+<span class="subline"><span class="s-mod">나는솔로 29기</span> <span class="s-name">영수</span> <span class="s-res">도 받았다는 'K-리프팅'</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@ddonutping_zzal</span>
+<span class="subline"><span class="s-mod">헤어지고 관리 받더니 확 달라진</span> <span class="s-name">나솔 29기 영수</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@luna.besty</span>
+<span class="subline"><span class="s-name">이민정</span> <span class="s-mod">이 알려준</span> <span class="s-res">운동 후 상쾌한 루틴</span></span>
+</li>
 </ul>
 </div>
 </div>
@@ -555,8 +675,8 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <div class="stepnum">5</div>
 <div class="stepbody">
 <h3>같은 소재를 캡션만 바꿔 여러 계정에 뿌려요</h3>
-<p>한 캠페인을 캡션 3~4종으로 변주해 계정별로 동시에 배포해요.</p>
-<ul class="examplelist"><li>luna.player·comedy.1989__는 캡션까지 동일하게 재게시됐어요.</li></ul>
+<p>한 캠페인을 캡션 3~4종으로 변주해 계정별로 동시에 배포해요. 소유 세럼 캠페인은 계정 19개까지 늘어났어요.</p>
+<ul class="examplelist"><li>luna.player·comedy.1989__는 캡션까지 동일하게 재게시됐어요.</li><li>grape__paper·lemon__paper 10월 1일 두 건도 캡션이 글자 하나까지 같아요.</li></ul>
 </div>
 </div>
 </div>
@@ -564,29 +684,12 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <section id="campaigns" class="band" aria-labelledby="campaigns-h">
 <div class="sechead">
 <h2 id="campaigns-h">캠페인별 영상</h2>
-<p class="lede">같은 소재를 여러 계정에 동시에 돌려요. 카드 아래 버튼을 누르면 전체 영상이 재생돼요.</p>
+<p class="lede">같은 소재를 여러 계정에 동시에 돌려요. 카드 아래 버튼을 누르면 전체 영상이 재생돼요. 화면을 못 받아 둔 건은 계정과 머리 한 줄만 적어 뒀어요.</p>
 </div>
 <div class="campblock">
-<div class="campheadrow"><span class="chip">캠페인 A</span><h3>소유 · 올리브영 세럼 (파넬세럼 / 9월 4일 건은 시카마누로 다른 이름)</h3></div>
-<p class="meta">노출 계정 7개 · 1차 9월 4일, 2차 9월 25일~30일 · 소재 출처: 소유 유튜브 클립 재게시</p>
+<div class="campheadrow"><span class="chip">캠페인 A</span><h3>소유 · 올리브영 세럼 (파넬세럼 · 시카마누)</h3></div>
+<p class="meta">게시물 21건 · 노출 계정 19개 · 8월 30일~10월 1일 · 뷰티 · 소재 출처: 소유 유튜브 클립 재게시</p>
 <div class="cardgrid">
-<figure class="card" data-post-id="ad-Dc2Q12shG2A">
-<div class="frame" data-sc="Dc2Q12shG2A">
-<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dc2Q12shG2A.jpg" src="assets/hook/Dc2Q12shG2A.mp4"></video>
-<span class="tag">릴 보기</span>
-</div>
-<div class="btnrow">
-<button type="button" class="fullbtn" data-hook="assets/hook/Dc2Q12shG2A.mp4" data-full="assets/full/Dc2Q12shG2A.mp4">전체 재생 ▶</button>
-<button type="button" class="pausebtn" disabled>일시정지</button>
-</div>
-<figcaption>
-<div class="cardtop"><span class="viewsbig">좋아요 95</span></div>
-<h4>@melon__paper · 2026-09-04</h4>
-<p class="caption">대박;;; 오늘부터 소유 관리법 손민수간다 소유 세럼은 올영에 시카마누 검색ㄱㄱ</p>
-<p class="composition">소유 다이어트/운동 클립 재게시 → 피부관리 세럼 소개 → 올영 검색 유도</p>
-<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#동안</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
-</figcaption>
-</figure>
 <figure class="card" data-post-id="ad-Dd0y31Gyrgh">
 <div class="frame" data-sc="Dd0y31Gyrgh">
 <video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dd0y31Gyrgh.jpg" src="assets/hook/Dd0y31Gyrgh.mp4"></video>
@@ -689,11 +792,113 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
 </figcaption>
 </figure>
+<figure class="card" data-post-id="ad-Dc2Q12shG2A">
+<div class="frame" data-sc="Dc2Q12shG2A">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/Dc2Q12shG2A.jpg" src="assets/hook/Dc2Q12shG2A.mp4"></video>
+<span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
+<button type="button" class="fullbtn" data-hook="assets/hook/Dc2Q12shG2A.mp4" data-full="assets/full/Dc2Q12shG2A.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 95</span></div>
+<h4>@melon__paper · 2026-09-04</h4>
+<p class="caption">대박;;; 오늘부터 소유 관리법 손민수간다 소유 세럼은 올영에 시카마누 검색ㄱㄱ</p>
+<p class="composition">소유 다이어트/운동 클립 재게시 → 피부관리 세럼 소개 → 올영 검색 유도</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#동안</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-Ddu_hqfhijX">
+<div class="frame novideo">
+<img src="shots/luna.djing_Ddu_hqfhijX.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 404</span></div>
+<h4>@luna.djing · 6일전(~2026-09-26 추정)</h4>
+<p class="caption">여돌들 사이에서 이미 소문난 올영 1위 품절대란 ㅇㅇ? 피부 좋기로 유명한 ...</p>
+<p class="composition">여성 아이돌 클립(소유 추정) 재편집 + 자막 + 올영 품절 소구 해시태그</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-DdsWQjGhlUW">
+<div class="frame novideo">
+<img src="shots/luna.humor_DdsWQjGhlUW.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 279</span></div>
+<h4>@luna.humor · 7일전(~2026-09-25)</h4>
+<p class="caption">나인원한남 사는 소유가 피부과에 돈 안쓰는 이유. 돈 개많은 연예인들도 올영템 쓰는거 싱기...</p>
+<p class="composition">여성 인물 피부 클로즈업 자막형 릴</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-Dd8gqYHz9k_">
+<div class="frame novideo">
+<img src="shots/hana.humor_Dd8gqYHz9k_.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 317</span></div>
+<h4>@hana.humor · 20시간전</h4>
+<p class="caption">20kg 급감량 후 충격적인 소유 피부 상태. 내가 56kg라고??! ...</p>
+<p class="composition">다이어트 전후 소유 클립 재편집 자막형, Instagram 'AI 콘텐츠' 라벨 부착</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#아이돌</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영추천</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-Ddv1x3lTMJL">
+<div class="frame novideo">
+<img src="shots/hana.tving_Ddv1x3lTMJL.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 97</span></div>
+<h4>@hana.tving · 5일전</h4>
+<p class="caption">소유 얼굴 확 달라진 이유, 성형인 줄 알았는데... 소유 성형했다고. 출처-@SBS Entertainment</p>
+<p class="composition">SBS 예능 클립 재편집 + 소유세럼 해시태그 결합</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-DdvI00FzR9B">
+<div class="frame novideo">
+<img src="shots/showing_box_DdvI00FzR9B.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 429</span></div>
+<h4>@showing_box · 6일전</h4>
+<p class="caption">비싼 화장품 소용없음!! 소유 피부광 살려준 구원템. 피부 컨디션.</p>
+<p class="composition">여성 인물 클로즈업 자막형 릴+댓글에 제품명 특정(검색 유도)</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#동안</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-DdtGG5wJPun">
+<div class="frame novideo">
+<img src="shots/tving_box_DdtGG5wJPun.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 424</span></div>
+<h4>@tving_box · 6일전</h4>
+<p class="caption">올영에서 난리난 OO 아이돌 자기관리 필수템?!</p>
+<p class="composition">드라마 클립 재편집+자막, 계정 'AI 콘텐츠' 라벨</p>
+<div class="chipgrid"><span class="chip sm">#뷰티</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#소유세럼</span> <span class="chip sm">#올리브영</span> <span class="chip sm">#올영</span> <span class="chip sm">#올영세일</span> <span class="chip sm">#올영추천</span> <span class="chip sm">#아이돌</span></div>
+</figcaption>
+</figure>
+</div>
+<div class="extrabox">
+<h4 class="extrahead">추가로 확인된 배포 계정 8개</h4>
+<ul class="extralist">
+<li><span class="exacct">@bibimbap__zip</span><span class="exdate">5일전</span><span class="exline">소유처럼 살 빼고 싶다면 절대 빼먹지 말아야하는 것? 소유 파우치템으로 유명한 이유.</span></li><li><span class="exacct">@green_fun_diary</span><span class="exdate">3일전</span><span class="exline">소유 쌩얼 무슨 일:: 여돌들이 다 쓴다는 그 OO. 이거 아이돌 내돈내산템으로 유명해서 사고싶었는데…</span></li><li><span class="exacct">@apple__paper</span><span class="exdate">2026-09-04</span><span class="exline">대박;;; 오늘부터 소유 관리법 손민수간다 소유 세럼은 올영에 시카마누 검색 ㄱㄱ</span></li><li><span class="exacct">@grape__paper</span><span class="exdate">2026-10-01</span><span class="exline">연예인들 중에서도 소유가 피부 진짜 좋기로 유명하다고함..ㄷㄷ 매번 쟁여두는 템이라고 언급해서 궁금했…</span></li><li><span class="exacct">@grape__paper</span><span class="exdate">2026-09-11</span><span class="exline">이게 되네ㄷㄷ 근데 진짜 여태까지 소유 유툽 보고 따라산것중에 실패한템 없음 영상 속 제품은 올리브영…</span></li><li><span class="exacct">@lemon__paper</span><span class="exdate">2026-10-01</span><span class="exline">연예인들 중에서도 소유가 피부 진짜 좋기로 유명하다고함..ㄷㄷ 매번 쟁여두는 템이라고 언급해서 궁금했…</span></li><li><span class="exacct">@lemon__paper</span><span class="exdate">2026-08-30</span><span class="exline">대박;;; 오늘부터 소유 관리법 손민수간다</span></li><li><span class="exacct">@mango__paper</span><span class="exdate">2026-09-04</span><span class="exline">소유가 진짜 자기관리 겁나 빡세게 하던데 의외로 가성비템 많이 써서 나같은 일반인이 따라사기 좋음ㅋ…</span></li>
+</ul>
+</div>
+<div class="campnote flat"><p>표본에서 가장 큰 캠페인이에요. 같은 소유 클립을 캡션만 바꿔 19개 계정에 뿌렸고, 10월 1일 grape__paper·lemon__paper 두 건은 캡션이 글자 하나까지 같아요. 제품 이름은 8~9월에 시카마누, 9월 말부터 파넬세럼으로 바뀌어요.</p></div>
 </div>
 <div class="campblock">
-<div class="campheadrow"><span class="chip">캠페인 B</span><h3>이경실 · 관절 영양제 (제품명 비공개)</h3></div>
-<p class="meta">노출 계정 3개 · 9월 9일~11일 · 소재 출처: 본인 유튜브(솔티스) 클립</p>
+<div class="campheadrow"><span class="chip">캠페인 B</span><h3>이경실 · 관절 영양제 (솔티스)</h3></div>
+<p class="meta">게시물 5건 · 노출 계정 5개 · 9월 8일~11일 · 건강식품 · 소재 출처: 본인 유튜브 클립</p>
 <div class="cardgrid">
 <figure class="card" data-post-id="ad-DdDWTkGx19e">
 <div class="frame" data-sc="DdDWTkGx19e">
@@ -710,23 +915,6 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <p class="caption">이경실이 조깅 전 꼭 챙겨먹는다고</p>
 <p class="composition">이경실 본인 출연 유튜브 클립 재게시 → 조깅 전 챙겨먹는 관절 영양제 언급 → 제품명은 비공개</p>
 <div class="chipgrid"><span class="chip sm">#이경실#관절연골#무릎</span></div>
-</figcaption>
-</figure>
-<figure class="card" data-post-id="ad-DdDWk3WhaAs">
-<div class="frame" data-sc="DdDWk3WhaAs">
-<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdDWk3WhaAs.jpg" src="assets/hook/DdDWk3WhaAs.mp4"></video>
-<span class="tag">릴 보기</span>
-</div>
-<div class="btnrow">
-<button type="button" class="fullbtn" data-hook="assets/hook/DdDWk3WhaAs.mp4" data-full="assets/full/DdDWk3WhaAs.mp4">전체 재생 ▶</button>
-<button type="button" class="pausebtn" disabled>일시정지</button>
-</div>
-<figcaption>
-<div class="cardtop"><span class="viewsbig">좋아요 94</span></div>
-<h4>@melon__paper · 2026-09-09</h4>
-<p class="caption">요즘은 관절엔 콘드로이친보단 이게 더 유명함</p>
-<p class="composition">이경실 출연 클립 재게시 → 기존 성분(콘드로이친) 대비 우위 주장 → 제품명 비공개</p>
-<div class="chipgrid"><span class="chip sm">#이경실</span> <span class="chip sm">#관절연골</span> <span class="chip sm">#무릎</span></div>
 </figcaption>
 </figure>
 <figure class="card" data-post-id="ad-DdJEK22qGKg">
@@ -746,11 +934,35 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <div class="chipgrid"><span class="chip sm">#이경실</span> <span class="chip sm">#관절연골</span> <span class="chip sm">#건강관리</span></div>
 </figcaption>
 </figure>
+<figure class="card" data-post-id="ad-DdDWk3WhaAs">
+<div class="frame" data-sc="DdDWk3WhaAs">
+<video class="hookvid" autoplay muted loop playsinline poster="assets/poster/DdDWk3WhaAs.jpg" src="assets/hook/DdDWk3WhaAs.mp4"></video>
+<span class="tag">릴 보기</span>
 </div>
+<div class="btnrow">
+<button type="button" class="fullbtn" data-hook="assets/hook/DdDWk3WhaAs.mp4" data-full="assets/full/DdDWk3WhaAs.mp4">전체 재생 ▶</button>
+<button type="button" class="pausebtn" disabled>일시정지</button>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 94</span></div>
+<h4>@melon__paper · 2026-09-09</h4>
+<p class="caption">요즘은 관절엔 콘드로이친보단 이게 더 유명함</p>
+<p class="composition">이경실 출연 클립 재게시 → 기존 성분(콘드로이친) 대비 우위 주장 → 제품명 비공개</p>
+<div class="chipgrid"><span class="chip sm">#이경실</span> <span class="chip sm">#관절연골</span> <span class="chip sm">#무릎</span></div>
+</figcaption>
+</figure>
+</div>
+<div class="extrabox">
+<h4 class="extrahead">추가로 확인된 배포 계정 2개</h4>
+<ul class="extralist">
+<li><span class="exacct">@peach__paper</span><span class="exdate">2026-09-08</span><span class="exline">이경실도 챙긴다는 관절 영양제 진짜 제대로 깎아옴</span></li><li><span class="exacct">@lemon__paper</span><span class="exdate">2026-09-11</span><span class="exline">무릎관절 아작나기 전에 먼저 ㄱㄱ</span></li>
+</ul>
+</div>
+<div class="campnote flat"><p>다섯 건 가운데 네 건은 제품을 "이것"으로만 부르고 브랜드를 가려요. peach__paper 한 건에서만 제품 박스에 솔티스 로고가 그대로 보여요. 표본 전체에서 브랜드가 화면에 드러난 유일한 건이에요.</p></div>
 </div>
 <div class="campblock">
-<div class="campheadrow"><span class="chip">캠페인 C</span><h3>카디비 · 세르프 리프팅 디바이스</h3></div>
-<p class="meta">노출 계정 1개 · 9월 17일 · 소재 출처: 무관한 해외 인터뷰 클립을 리프팅 맥락으로 재편집</p>
+<div class="campheadrow"><span class="chip">캠페인 C</span><h3>카디비 · 킴 카다시안 · 나는솔로 영수 · 세르프 리프팅</h3></div>
+<p class="meta">게시물 5건 · 노출 계정 5개 · 9월 8일~30일 · 뷰티 · 소재 출처: 해외 인터뷰·예능 클립을 리프팅 맥락으로 재편집</p>
 <div class="cardgrid">
 <figure class="card" data-post-id="ad-DdYRxqVvAG3">
 <div class="frame" data-sc="DdYRxqVvAG3">
@@ -769,12 +981,44 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <div class="chipgrid"><span class="chip sm">#세르프</span> <span class="chip sm">#세르프효과</span> <span class="chip sm">#K리프팅</span> <span class="chip sm">#카디비</span> <span class="chip sm">#통증없는리프팅</span></div>
 </figcaption>
 </figure>
-<div class="campnote" style="grid-column:span 3"><p>원본은 리프팅과 아무 상관 없는 해외 인터뷰 클립이에요. 자막만 "피부비결은 K-리프팅?!"으로 새로 붙여 한국 뷰티 소재로 바꿔 놨어요. 계정 1개에만 올라간 단발 집행이라 캠페인 A·B처럼 동시 배포한 흔적은 없어요.</p></div>
+<figure class="card" data-post-id="ad-DddlmyWpEZX">
+<div class="frame novideo">
+<img src="shots/chachaping_zzal_DddlmyWpEZX.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
 </div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 263</span></div>
+<h4>@chachaping_zzal · 9월19일</h4>
+<p class="caption">한국인이 되고 싶다는 카디비가 선택한 K-리프팅.</p>
+<p class="composition">해외 셀럽 본인 추정 영상 클립 + 브랜드 해시태그 결합</p>
+<div class="chipgrid"><span class="chip sm">#세르프</span> <span class="chip sm">#세르프효과</span> <span class="chip sm">#K리프팅</span> <span class="chip sm">#카디비</span> <span class="chip sm">#통증없는리프팅</span></div>
+</figcaption>
+</figure>
+<figure class="card" data-post-id="ad-Dd0l-fdzTsB">
+<div class="frame novideo">
+<img src="shots/hana.humor_Dd0l-fdzTsB.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 376</span></div>
+<h4>@hana.humor · 3일전</h4>
+<p class="caption">나는솔로 29기 영수도 받았다는 'K-리프팅'.</p>
+<p class="composition">예능 출연자 얼굴 클로즈업 + 리프팅 시술 받았다는 자막 + 브랜드 해시태그</p>
+<div class="chipgrid"><span class="chip sm">#나는솔로</span> <span class="chip sm">#29기영수</span> <span class="chip sm">#나솔</span> <span class="chip sm">#영수근황</span> <span class="chip sm">#세르프</span> <span class="chip sm">#세르프효과</span></div>
+</figcaption>
+</figure>
+</div>
+<div class="extrabox">
+<h4 class="extrahead">추가로 확인된 배포 계정 2개</h4>
+<ul class="extralist">
+<li><span class="exacct">@ddonutping_zzal</span><span class="exdate">2일전</span><span class="exline">헤어지고 관리 받더니 확 달라진 나솔 29기 영수.</span></li><li><span class="exacct">@yellow_fun_diary</span><span class="exdate">2026-09-08</span><span class="exline">해외 스타들 사랑받고 엘르 어워드 1등 먹은 세르프</span></li>
+</ul>
+</div>
+<div class="campnote flat"><p>한 브랜드가 인물 셋을 동시에 씁니다. 카디비·킴 카다시안은 리프팅과 상관없는 해외 클립을 가져와 자막으로 엮고, 나는솔로 영수는 예능 근황 톤으로 붙여요. 다른 캠페인과 달리 브랜드명을 해시태그에 그대로 적어요.</p></div>
 </div>
 <div class="campblock">
-<div class="campheadrow"><span class="chip">단독 사례</span><h3>조혜련 · 다이어트 보조제</h3></div>
-<p class="meta">노출 계정 1개 · 9월 16일 · 소재 출처: 본인 출연 클립, 계정에 "협찬 광고" 표시가 붙은 유일한 사례</p>
+<div class="campheadrow"><span class="chip">캠페인 D</span><h3>조혜련 · 다이어트 보조제</h3></div>
+<p class="meta">게시물 2건 · 노출 계정 2개 · 9월 16일 · 건강식품 · 소재 출처: 본인 출연 클립</p>
 <div class="cardgrid">
 <figure class="card" data-post-id="ad-DdWHsAkuDs0">
 <div class="frame" data-sc="DdWHsAkuDs0">
@@ -793,8 +1037,145 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <div class="chipgrid"><span class="chip sm">#조혜련</span> <span class="chip sm">#다이어트</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#정보</span></div>
 </figcaption>
 </figure>
-<div class="campnote" style="grid-column:span 3"><p>13건 가운데 계정에 "협찬 광고" 표시가 달린 유일한 건이에요. 나머지 12건은 전부 라벨 없이 리포스트 밈처럼 올라갔어요. 같은 소재라도 라벨을 다는 계정과 안 다는 계정이 갈린다는 뜻이에요.</p></div>
+<figure class="card" data-post-id="ad-DdWH9IBQR8g">
+<div class="frame novideo">
+<img src="shots/reply.1989__DdWH9IBQR8g.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
 </div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 198</span><span class="adbadge">협찬 광고 라벨</span></div>
+<h4>@reply.1989__ · 9월16일</h4>
+<p class="caption">위고비를 할 필요가 없어, 연예인들 간증후기 난리남. 56세 배우 조혜련도 -8KG 뺐다고.</p>
+<p class="composition">배우 본인 드레스룸에서 직접 체험담 전달하는 릴, 상단 '협찬 광고' 라벨</p>
+<div class="chipgrid"><span class="chip sm">#조혜련</span> <span class="chip sm">#다이어트</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#정보</span></div>
+</figcaption>
+</figure>
+<div class="campnote" style="grid-column:span 2"><p>42건 가운데 계정에 "협찬 광고" 표시가 붙은 건은 이 두 건뿐이에요. 나머지 40건은 전부 라벨 없이 리포스트 밈처럼 올라갔어요. 같은 소재라도 라벨을 다는 계정과 안 다는 계정이 갈린다는 뜻이에요.</p></div>
+</div>
+</div>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 E</span><h3>한선화 · 박가을 · 미백 패치 (브랜드 가림)</h3></div>
+<p class="meta">게시물 2건 · 노출 계정 2개 · 9월 4일 · 뷰티 · 소재 출처: 스트리머 방송 화면 캡처</p>
+
+<div class="extrabox">
+<h4 class="extrahead">추가로 확인된 배포 계정 2개</h4>
+<ul class="extralist">
+<li><span class="exacct">@apple__paper</span><span class="exdate">2026-09-04</span><span class="exline">피부과 끊을 정도면 얼마나 좋은거야ㅋㅋㅋ</span></li><li><span class="exacct">@peach__paper</span><span class="exdate">2026-09-04</span><span class="exline">진짜 신박한데 효과는 확실한듯</span></li>
+</ul>
+</div>
+<div class="campnote flat"><p>두 건이 같은 날 같은 소재로 올라갔어요. 글루타치온 주사 가격을 먼저 말하고 패치를 대안으로 놓는 구성이에요. 댓글에는 떼어낼 때 자국이 남는지 묻는 실구매 문의가 달려 있어요.</p></div>
+</div>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 F</span><h3>이경실 · 눈건강 영양제 (브랜드 가림)</h3></div>
+<p class="meta">게시물 2건 · 노출 계정 2개 · 8월 31일~9월 10일 · 건강식품 · 소재 출처: 본인 출연 클립</p>
+
+<div class="extrabox">
+<h4 class="extrahead">추가로 확인된 배포 계정 2개</h4>
+<ul class="extralist">
+<li><span class="exacct">@apple__paper</span><span class="exdate">2026-08-31</span><span class="exline">이게 요새 루테인 다음 뜨는 거인듯</span></li><li><span class="exacct">@grape__paper</span><span class="exdate">2026-09-10</span><span class="exline">품절될까봐 이경실도 박스째 쟁인다고</span></li>
+</ul>
+</div>
+<div class="campnote flat"><p>같은 인물로 관절·눈·간까지 축을 갈아 끼웁니다. 자막은 "루테X 대신 먹는다는 이것"처럼 경쟁 성분을 먼저 깎고 제품은 가려요.</p></div>
+</div>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 G</span><h3>이경실 · 간 · 숙취 영양제 (브랜드 가림)</h3></div>
+<p class="meta">게시물 1건 · 노출 계정 1개 · 8월 31일 · 건강식품 · 소재 출처: 본인 출연 클립</p>
+
+<div class="extrabox">
+<h4 class="extrahead">추가로 확인된 배포 계정 1개</h4>
+<ul class="extralist">
+<li><span class="exacct">@mango__paper</span><span class="exdate">2026-08-31</span><span class="exline">이경실 반응 진짜 찐텐인듯 ㅋㅋㅋㅋ</span></li>
+</ul>
+</div>
+</div>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 H</span><h3>박원숙 · 약국 혈관 영양제 (브랜드 가림)</h3></div>
+<p class="meta">게시물 1건 · 노출 계정 1개 · 9월 14일 · 건강식품 · 소재 출처: 본인 출연 클립</p>
+<div class="cardgrid">
+<figure class="card" data-post-id="ad-DdQDuC6hQj7">
+<div class="frame novideo">
+<img src="shots/nato.iove_DdQDuC6hQj7.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 103</span></div>
+<h4>@nato.iove · 9월14일</h4>
+<p class="caption">혈관 나이 20년 전으로 회춘 시켜버린 이경실도 극찬한 약국 혈관 세트. 연예인들은 다 챙기는 혈관 영양제라고</p>
+<p class="composition">배우가 직접 소개하는 형식의 릴, 영상 내 \"해당 업체의 동의하에 발췌 사용\" 고지 삽입</p>
+<div class="chipgrid"><span class="chip sm">#박원숙</span> <span class="chip sm">#연예인추천템</span> <span class="chip sm">#자기관리</span></div>
+</figcaption>
+</figure>
+<div class="campnote" style="grid-column:span 3"><p>영상 안에 "해당 업체의 동의하에 영상 일부를 발췌하여 사용했습니다"라는 고지가 들어가 있어요. 광고 라벨 대신 쓰는 표기로, 캠페인 B의 lemon__paper 건에도 같은 문장이 들어 있어요.</p></div>
+</div>
+</div>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 I</span><h3>이혜정 · 프리미엄 오메가3</h3></div>
+<p class="meta">게시물 1건 · 노출 계정 1개 · 9월 29일 · 건강식품 · 소재 출처: 본인 주방에서 직접 추천</p>
+<div class="cardgrid">
+<figure class="card" data-post-id="ad-Dd2vPz8z4KX">
+<div class="frame novideo">
+<img src="shots/hana.tving_Dd2vPz8z4KX.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 91</span></div>
+<h4>@hana.tving · 3일전</h4>
+<p class="caption">건강에 진심인 이혜정이 추천하는 최상의 1% 프리미엄 오메가.</p>
+<p class="composition">본인 주방에서 직접 추천 멘트하는 릴</p>
+<div class="chipgrid"><span class="chip sm">#오메가3</span> <span class="chip sm">#빅마마이혜정</span> <span class="chip sm">#영양제추천</span></div>
+</figcaption>
+</figure>
+</div>
+</div>
+<h3 class="steplabel">릴이 아닌 유일한 2건 · 캐러셀</h3>
+<p class="lede tight">42건 가운데 40건이 릴이에요. 남은 2건만 사진을 넘기는 캐러셀이고, 둘 다 가십 훅 없이 브랜드가 앞에 나섭니다.</p>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 J</span><h3>제나 · 한스킨 PDRN 핑크볼 광채세럼</h3><span class="fmtbadge big">캐러셀 · 사진 9장</span></div>
+<p class="meta">게시물 1건 · 노출 계정 1개 · 9월 23일 · 뷰티 · 소재 출처: 촬영 비하인드 멘트 + 제품 클로즈업</p>
+<div class="cardgrid">
+<figure class="card" data-post-id="ad-DdnmffEHz6d">
+<div class="frame novideo wide">
+<img src="shots/luna.humor_DdnmffEHz6d.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 349</span><span class="fmtbadge">캐러셀</span></div>
+<h4>@luna.humor · 9월23일</h4>
+<p class="caption">촬영 때 처음 만난 세럼이 촬영 끝난 뒤에도 계속 쓰고 있다는 제나 ... 일명 제나세럼인 PDRN 핑크볼 광채세럼 ... 라…</p>
+<p class="composition">브랜드명×인물명 오버레이 인트로 + 촬영 비하인드 멘트 + 제품 클로즈업 캐러셀</p>
+<div class="chipgrid"><span class="chip sm">#피부</span> <span class="chip sm">#PDRN</span> <span class="chip sm">#제나세럼</span> <span class="chip sm">#핑크볼광채세럼</span> <span class="chip sm">#연꽃PDRN</span></div>
+</figcaption>
+</figure>
+<div class="campnote" style="grid-column:span 3"><p>릴 40건과 포맷이 완전히 달라요. 계정 이름 대신 "HANSKIN × ZENA" 브랜드 오버레이로 시작하고, 사진 9장을 넘기며 제품을 보여줘요. 가십 훅도 가린 결과도 없고, 구매처로 무신사뷰티 세일을 지목해요.</p></div>
+</div>
+</div>
+<div class="campblock">
+<div class="campheadrow"><span class="chip">캠페인 K</span><h3>이민정 · CLNL 바디 와입</h3><span class="fmtbadge big">캐러셀 · 사진 8장</span></div>
+<p class="meta">게시물 1건 · 노출 계정 1개 · 9월 17일 · 생활용품 · 소재 출처: 왓츠인마이백 포맷</p>
+<div class="cardgrid">
+<figure class="card" data-post-id="ad-DdYZL1Cn3kc">
+<div class="frame novideo wide">
+<img src="shots/luna.besty_DdYZL1Cn3kc.jpg" alt="게시물 화면" loading="lazy">
+<span class="tag">화면만</span>
+</div>
+<figcaption>
+<div class="cardtop"><span class="viewsbig">좋아요 231</span><span class="fmtbadge">캐러셀</span></div>
+<h4>@luna.besty · 9월17일</h4>
+<p class="caption">이민정이 알려준 운동 후 상쾌한 루틴. 어쩐지 땀냄새도 안날거 같더라</p>
+<p class="composition">배우가 직접 제품 박스 들고 소개하는 왓츠인마이백 포맷 캐러셀</p>
+<div class="chipgrid"><span class="chip sm">#이민정</span> <span class="chip sm">#왓츠인마이백</span> <span class="chip sm">#CLNL</span> <span class="chip sm">#씨엘엔엘</span> <span class="chip sm">#골프템</span></div>
+</figcaption>
+</figure>
+<div class="campnote" style="grid-column:span 3"><p>배우가 제품 박스를 직접 들고 소개해요. 골프·운동 루틴에 얹는 구성이라 가십 훅이 필요 없어요. 표본에서 뷰티·건강식품이 아닌 카테고리는 이 한 건뿐이에요.</p></div>
+</div>
+</div>
+<div class="extrabox span">
+<h4 class="extrahead">연예인이 안 나와서 42건에서 뺀 광고</h4>
+<ul class="extralist">
+<li><span class="exacct">@luna.humor</span><span class="exline">크록스 팝업스토어 캐러셀 — 계정 캡션에 "#광고"를 직접 붙인 유일한 건인데, 연예인이 안 나와요.</span></li>
+<li><span class="exacct">@video.1989__</span><span class="exline">멜라닌 크림 캐러셀 — 브랜드가 단독으로 나오고 판매 수치를 앞세워요. 연예인이 없어요.</span></li>
+<li><span class="exacct">@hana.zzal · chachaping_zzal</span><span class="exline">디톡스 주스 릴 2건 — 출연자가 다이어트 유튜버라 배우·아이돌·방송인 기준에 안 들어가요.</span></li>
+</ul>
 </div>
 </section>
 <section id="cost" class="band soft" aria-labelledby="cost-h">
@@ -813,17 +1194,22 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <tr><td>comedy.1989__</td><td>250,000원</td><td>74,000</td><td class="cpv">3.4원</td></tr>
 <tr><td>blue_fun_diary (카디비)</td><td>250,000원</td><td>70,000</td><td class="cpv">3.6원</td></tr>
 <tr><td>tree.humor (조혜련)</td><td>250,000원</td><td>68,000</td><td class="cpv">3.7원</td></tr>
-<tr><td>orange__funny (이경실)</td><td>100,000원</td><td>18,000</td><td class="cpv">5.6원</td></tr></tbody>
+<tr><td>malangping_zzal (이경실)</td><td>250,000원</td><td>68,000</td><td class="cpv">3.7원</td></tr>
+<tr><td>orange__funny (이경실)</td><td>100,000원</td><td>18,000</td><td class="cpv">5.6원</td></tr>
+<tr class="outlier"><td>peach__paper (한선화 · 박가을)</td><td>100,000원</td><td>1,456,678</td><td class="cpv unk">재확인</td></tr></tbody>
 </table>
 </div>
 <div class="calloutcol">
+<p class="callout">단가는 56개 계정 전부 확인했어요. 10만원에서 40만원 사이고, 팔로워가 많은 계정이 그대로 비싸요. 뷰당을 계산할 수 있는 건 게시물 조회수가 화면에 뜬 9개 계정뿐이에요. 나머지 21개는 조회수가 안 떠서 빠졌어요.</p>
+<p class="callout">peach__paper 미백 패치 건에 적힌 조회수 145만은 다른 건들과 20배 이상 벌어져요. 그 숫자가 이 게시물 것인지 가져온 원본 영상 것인지 다시 봐야 해서 뷰당 계산에서 뺐어요.</p>
 <p class="callout">우리 시딩 기준 10원의 3분의 1 수준이지만, 밈 페이지 구매 의도는 시딩 릴보다 낮게 봐야 해요. 댓글은 3~5개 수준이고 "다들 피피엘이네" 같은 반응도 나와요.</p>
 <p class="callout">조회수는 그 계정이 평소에 받던 수준과 비슷해요. 연예인이 조회수를 끌어올리는 게 아니라, 계정이 원래 가진 도달을 그대로 사고 광고 티만 지우는 포장에 가까워요.</p>
-<p class="callout">실제 구매로 이어진 흔적도 있어요. malangping_zzal 댓글에 "이경실씨보고 구매했어요"라는 반응이 달렸어요.</p>
+<p class="callout">실제 구매로 이어진 흔적도 있어요. malangping_zzal 댓글에 "이경실씨보고 구매했어요", peach__paper 미백 패치 댓글에는 떼어낼 때 자국이 남는지 묻는 문의가 달렸어요.</p>
 </div>
 </div>
-<h3 class="steplabel">같은 표본 안에서 광고를 안 받는 계정</h3>
-<div class="chipgrid wide"><span class="chip sm">nato.tving</span><span class="chip sm">hana.zzal</span><span class="chip sm">easy.playlist</span><span class="chip sm">on_ggul_tip</span><span class="chip sm">jolly__humor</span><span class="chip sm">8282__humor</span><span class="chip sm">tteokbokki__zip</span><span class="chip sm">posilping_humor</span></div>
+<h3 class="steplabel">같은 표본 안에서 연예인 광고를 안 받는 계정 26개</h3>
+<p class="lede tight">이 가운데 hana.zzal과 video.1989__ 두 계정은 광고를 받긴 받아요. 다이어트 유튜버 영상과 브랜드 단독 캐러셀이라 연예인 광고에서 뺐어요.</p>
+<div class="chipgrid wide"><span class="chip sm">luna.tip</span><span class="chip sm">luna.playlist__</span><span class="chip sm">luna.daily__</span><span class="chip sm">nato.tving</span><span class="chip sm">nato.humor</span><span class="chip sm">nato.healing</span><span class="chip sm">nato.zzal</span><span class="chip sm">nato.funny</span><span class="chip sm">nato.tip</span><span class="chip sm">nato.pick</span><span class="chip sm">hana.zzal</span><span class="chip sm">tree.zzal</span><span class="chip sm">tree.tving</span><span class="chip sm">tree.playlist</span><span class="chip sm">easy.playlist</span><span class="chip sm">on_ggul_tip</span><span class="chip sm">jolly__humor</span><span class="chip sm">8282__humor</span><span class="chip sm">video.1989__</span><span class="chip sm">dding_box</span><span class="chip sm">tteokbokki__zip</span><span class="chip sm">hachuping_humor</span><span class="chip sm">shashaping_humor</span><span class="chip sm">posilping_humor</span><span class="chip sm">purple_fun_diary</span><span class="chip sm">pink_fun_diary</span></div>
 </section>
 <section id="apply" class="band" aria-labelledby="apply-h">
 <div class="sechead">
@@ -895,12 +1281,16 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 </div>
 </div>
 
+<h3 class="steplabel">광고가 확인된 계정 30개</h3>
+<p class="lede tight">56개 계정을 전부 열어 보니 30개가 연예인 광고를 받고 있었어요. 뷰티 캠페인을 실제로 받아 본 계정이라 기미크림을 올려도 거절될 가능성이 낮은 쪽이에요. 가장 큰 소유 세럼 캠페인 하나가 이 가운데 19개를 썼어요.</p>
+<div class="chipgrid wide"><span class="chip sm">apple__paper</span><span class="chip sm">bibimbap__zip</span><span class="chip sm">blue_fun_diary</span><span class="chip sm">chachaping_zzal</span><span class="chip sm">comedy.1989__</span><span class="chip sm">ddonutping_zzal</span><span class="chip sm">dotori_channel</span><span class="chip sm">good_tip_magazine</span><span class="chip sm">grape__paper</span><span class="chip sm">green_fun_diary</span><span class="chip sm">hana.humor</span><span class="chip sm">hana.tving</span><span class="chip sm">happing_box</span><span class="chip sm">lemon__paper</span><span class="chip sm">luna.besty</span><span class="chip sm">luna.djing</span><span class="chip sm">luna.humor</span><span class="chip sm">luna.player</span><span class="chip sm">malangping_zzal</span><span class="chip sm">mango__paper</span><span class="chip sm">melon__paper</span><span class="chip sm">nato.iove</span><span class="chip sm">one_star_video</span><span class="chip sm">orange__funny</span><span class="chip sm">peach__paper</span><span class="chip sm">reply.1989__</span><span class="chip sm">showing_box</span><span class="chip sm">tree.humor</span><span class="chip sm">tving_box</span><span class="chip sm">yellow_fun_diary</span></div>
+
 <h3 class="steplabel">계정 세트와 예산 · 2주 2차 배포</h3>
-<p class="lede tight">캠페인 A가 9월 4일과 9월 25~30일 두 차례에 걸쳐 돈 구조를 그대로 가정했어요. 1차에 4계정, 2주 뒤 2차에 3계정이에요.</p>
+<p class="lede tight">캠페인 A가 9월 초와 9월 말 두 차례에 걸쳐 돈 구조를 그대로 가정했어요. 1차에 4계정, 2주 뒤 2차에 3계정이에요.</p>
 <div class="fstats">
-<div class="fstat"><span class="fnum sm">195만~205만원</span><span class="flab">7계정 2차 배포 총 예산</span></div>
+<div class="fstat"><span class="fnum sm">215만원</span><span class="flab">7계정 2차 배포 총 예산</span></div>
 <div class="fstat"><span class="fnum sm">53.1만</span><span class="flab">합산 예상 조회수</span></div>
-<div class="fstat"><span class="fnum sm">3.7~3.9원</span><span class="flab">조회수 1회당 단가</span></div>
+<div class="fstat"><span class="fnum sm">4.0원</span><span class="flab">조회수 1회당 단가</span></div>
 <div class="fstat"><span class="fnum sm">531만원</span><span class="flab">같은 도달을 시딩 10원으로 사면</span></div>
 </div>
 <div class="costgrid">
@@ -914,14 +1304,14 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 <tr><td>good_tip_magazine</td><td>250,000원</td><td>77,000</td><td class="cpv">3.2원</td></tr>
 <tr class="waverow"><th colspan="4" scope="colgroup">2차 · 집행 3주차 · 3개 계정</th></tr>
 <tr><td>comedy.1989__</td><td>250,000원</td><td>74,000</td><td class="cpv">3.4원</td></tr>
-<tr><td>happing_box</td><td>25만~35만원</td><td class="unk">미확인</td><td class="unk">—</td></tr>
-<tr><td>melon__paper</td><td class="unk">단가 미확인</td><td class="unk">미확인</td><td class="unk">—</td></tr></tbody>
+<tr><td>happing_box</td><td>350,000원</td><td class="unk">미확인</td><td class="unk">—</td></tr>
+<tr><td>melon__paper</td><td>100,000원</td><td class="unk">미확인</td><td class="unk">—</td></tr></tbody>
 </table>
 </div>
 <div class="calloutcol">
-<p class="callout">뷰당 3.7~3.9원이에요. 우리 시딩 기준 10원으로 같은 53.1만 도달을 사면 531만원이라, 2배 반 넘게 차이가 나요.</p>
-<p class="callout">happing_box는 단가가 안 잡혀서 같은 급 계정 구간인 25만~35만원으로 넣었고, melon__paper는 단가·조회수 둘 다 안 잡혀 총액에서 뺐어요. 조회수 미확인 2계정이 합산에서 빠져 있으니 실제 뷰당 단가는 이 숫자보다 낮게 나와요.</p>
-<p class="callout">이 표본에서 광고가 확인된 카테고리는 뷰티와 건강식품이에요. 기미크림은 캠페인 A가 돌린 뷰티 소재와 같은 칸이라 계정 세트를 그대로 가져가도 맞아요.</p>
+<p class="callout">뷰당 4.0원이에요. 우리 시딩 기준 10원으로 같은 53.1만 도달을 사면 531만원이라, 2.5배 차이가 나요.</p>
+<p class="callout">7계정 단가는 모두 단가표에서 확인한 값이에요. happing_box 35만원·melon__paper 10만원도 들어가 있어요. 다만 이 두 계정은 게시물 조회수가 안 떠서 분모에서 빠져 있어요. 실제 뷰당 단가는 4.0원보다 낮게 나와요.</p>
+<p class="callout">이 표본에서 광고가 확인된 카테고리는 뷰티 29건, 건강식품 12건, 생활용품 1건이에요. 기미크림은 뷰티 쪽과 같은 칸이라 계정 세트를 그대로 가져가도 맞아요.</p>
 </div>
 </div>
 
@@ -963,15 +1353,17 @@ footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
 </div>
 
 <details class="confirmbox">
-<summary>아직 확인 못 한 것 3가지</summary>
+<summary>아직 확인 못 한 것 5가지</summary>
 <ul>
-<li>7개 계정에 동시 배포된 게 한 대행사 패키지인지, 계정 운영사가 같은 곳인지는 아직 확인 못 했어요.</li>
-<li>조회수 미확인 4건이 있어요 (dotori_channel·happing_box·melon__paper 2건).</li>
+<li>소유 세럼 캠페인이 계정 19개에 동시 배포된 게 한 대행사 패키지인지, 계정 운영사가 같은 곳인지는 아직 확인 못 했어요. 핸들 생김새로 보면 luna · nato · hana · tree · ping · box · fun_diary · paper 계열로 묶이지만 확인된 건 아니에요.</li>
+<li>조회수는 42건 가운데 10건만 화면에 떠 있었어요. 나머지 32건은 뷰당 계산에서 빠져 있어요.</li>
+<li>peach__paper 미백 패치 건의 조회수 145만이 이 게시물 것인지, 가져온 원본 영상 것인지 다시 봐야 해요. 다른 건들과 20배 이상 벌어져요.</li>
+<li>파넬세럼과 시카마누가 같은 제품인지, 브랜드와 제품 이름 관계인지는 확인 못 했어요. 화면에 로고 클로즈업이 없어요.</li>
 <li>comedy.1989__ 계정의 "이미안 샴푸&헤어팩" 타일은 아직 열어보지 못했어요. 추가 캠페인일 수 있어요.</li>
 </ul>
 </details>
 </section>
-<footer><p class="note">19개 계정 화면을 직접 열어 정리했어요. 2026년 10월 1일 기준.</p></footer>
+<footer><p class="note">단가표에 올라 있는 56개 계정 화면을 전부 열어 정리했어요. 2026년 10월 2일 기준.</p></footer>
 </main>
 <script>
 
