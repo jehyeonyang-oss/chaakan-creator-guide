@@ -413,6 +413,22 @@ ul.tl time{font-family:var(--mono);font-size:11px;color:var(--accent);font-weigh
 @media (max-width:860px){.cardgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.trow{grid-template-columns:1fr;gap:8px}.tspan{text-align:left}.mstats{grid-template-columns:repeat(2,minmax(0,1fr))}.mast,main{padding:0 18px}}
 @media (max-width:560px){.tlgrid{grid-template-columns:1fr}}
 
+/* ---------- 소스 귀속 ---------- */
+.attr{padding:26px 0 30px;border-top:1px solid var(--line-2)}
+.attr:first-of-type{border-top:0;padding-top:6px}
+.attrhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.attrhead h3{margin:0;font-size:17px}
+.reuse{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-left:auto;letter-spacing:.01em}
+.abar{display:flex;height:28px;margin:16px 0 0;border-radius:8px;overflow:hidden;background:var(--surface-2);border:1px solid var(--line-2)}
+.abar i{display:block;height:100%}
+.aleg{list-style:none;display:flex;flex-wrap:wrap;gap:6px 22px;margin:12px 0 0;padding:0;font-size:13px;color:var(--ink-2)}
+.aleg li{display:flex;align-items:center;gap:7px}
+.aleg b{width:12px;height:12px;border-radius:3px;display:inline-block;border:1px solid rgba(20,24,31,.12)}
+.aleg strong{color:var(--ink);font-variant-numeric:tabular-nums}
+.averdict{margin:14px 0 0;font-size:14.5px;line-height:1.75;color:var(--ink);max-width:76ch;word-break:keep-all}
+.sheet{margin-top:16px;overflow-x:auto;border-radius:10px;border:1px solid var(--line-2);background:#000}
+.sheet img{display:block;height:150px;max-width:none;width:auto}
+
 </style></head><body>
 <header class="mast">
   <p class="eyebrow">Glowderm · 기미크림 AI 광고영상 · 2026-10-02</p>
@@ -424,7 +440,7 @@ ul.tl time{font-family:var(--mono);font-size:11px;color:var(--accent);font-weigh
     <div class="mstat"><span class="mnum">4일</span><span class="mlab">웹디 시나리오1 1차 완성 (8/31→9/4)</span></div>
     <div class="mstat"><span class="mnum">0건</span><span class="mlab">메타 광고 실제 집행</span></div>
   </div>
-  <nav class="navrow"><a href="#finals">최종본</a><a href="#time">제작 소요</a><a href="#issues">지금 문제</a><a href="#run">집행 순서</a></nav>
+  <nav class="navrow"><a href="#finals">최종본</a><a href="#time">제작 소요</a><a href="#attr">소스 귀속</a><a href="#issues">지금 문제</a><a href="#run">집행 순서</a></nav>
 </header>
 <main>
 <section class="band" id="finals">
@@ -567,7 +583,40 @@ ul.tl time{font-family:var(--mono);font-size:11px;color:var(--accent);font-weigh
 </div></div>
   <div class="tlgrid"><div class="tlcol"><h4>유라 · 시나리오1</h4><ul class="tl"><li><time>8/31</time><span>시나리오1 제작 요청</span></li><li><time>9/2</time><span>AI가 기미 전후 묘사 거부 → 세포모션 CG로 우회</span></li><li><time>9/4</time><span>1차 완성</span></li><li><time>9/10</time><span>480P 화질 이슈, 인물 9컷 교체 요청</span></li><li><time>9/15</time><span>인물 교체본 확정</span></li><li><time>9/29</time><span>TTS 상업이용 이슈로 음성 교체(SunHi)</span></li></ul><p class="fb">화질 480P→720P 이상, 인물 컷 교체, 무료 TTS 상업이용 불가</p></div><div class="tlcol"><h4>유라 · 시나리오2</h4><ul class="tl"><li><time>9/22</time><span>아스트라+힉스필드 연동 자동화 테스트 시작</span></li><li><time>9/28</time><span>시나리오2 소스 전달</span></li><li><time>9/29</time><span>레이저 시술·제품 들고 있는 장면 추가 소스</span></li><li><time>9/30</time><span>완성본 전달 (50초)</span></li><li><time>10/1</time><span>제현이 배속·장면 편집으로 39초</span></li></ul><p class="fb">빠진 장면(레이저·제품·CTA) 보강, 길이 50초→39초, 앞으로 30~40초 기준</p></div><div class="tlcol"><h4>연수 · 시나리오1</h4><ul class="tl"><li><time>9/2</time><span>BX에 공식 제작 요청</span></li><li><time>9/15</time><span>매대·패키지 작업으로 1차 연기, 캡컷 TTS 사용 합의</span></li><li><time>9/17</time><span>힉스필드 컷 생성 시작</span></li><li><time>9/29</time><span>시나리오1 전달본 완성</span></li></ul><p class="fb">슬랙에 연수 명의 전달 기록은 없음. 작업 폴더 날짜 기준 소요.</p></div><div class="tlcol"><h4>영은 파트장 · 0929</h4><ul class="tl"><li><time>9/18</time><span>힉스필드 생성컷 공유, 심의 우려 질문</span></li><li><time>9/29</time><span>1차 초안 전달</span></li><li><time>10/1</time><span>2차본 공유 — 중간에 멈춘 상태, 캡션 수정 예정</span></li><li><time>10/1</time><span>제현이 애프터컷·엔딩 추가한 자체 편집본 공유</span></li></ul><p class="fb">장면·음성 지적 0건. 마지막 장면만 아쉬워 제현이 직접 보강.</p></div></div>
 </section>
-<section class="band" id="issues">
+<section class="band" id="attr">
+  <div class="sechead"><h2>소스 귀속</h2><p class="lede">최종본 4편을 컷 단위로 쪼개 프레임을 대조했습니다. 내가 보낸 소스 폴더, 제작자 본인 생성 폴더, 대행사 소재 중 어디서 온 컷인지, 그리고 이전 편집본을 얼마나 그대로 썼는지.</p></div>
+  
+<div class="attr">
+  <div class="attrhead"><h3>웹디 · 시나리오1 학부모 썰</h3><span class="chip">유라</span><span class="reuse">9/11 유라 편집본 97.5% 그대로</span></div>
+  <div class="abar"><i style="width:83.4%;background:var(--accent)" title="내가 준 소스 83.4%"></i><i style="width:16.6%;background:var(--line)" title="미확인 16.6%"></i></div>
+  <ul class="aleg"><li><b style="background:var(--accent)"></b>내가 준 소스 <strong>83.4%</strong></li><li><b style="background:var(--line)"></b>미확인 <strong>16.6%</strong></li></ul>
+  <p class="averdict">소스 생성은 0, 편집만. 9/10 내가 보낸 콘텐츠 영상(0911)·기획영상 컷을 재배열하고 음성만 바뀐 구조. 미확인 17%는 줌·리프레임된 같은 컷일 가능성.</p>
+  <div class="sheet"><img src="attribution/contact_webd_parent.jpg" alt="" loading="lazy"></div>
+</div>
+<div class="attr">
+  <div class="attrhead"><h3>웹디 · 시나리오2 39초</h3><span class="chip">유라</span><span class="reuse">9/30 작업물 88.5% (내 v1/v2 초안은 0%)</span></div>
+  <div class="abar"><i style="width:34.4%;background:var(--accent)" title="내가 준 소스 34.4%"></i><i style="width:54.0%;background:var(--ink)" title="유라 생성 54.0%"></i><i style="width:11.6%;background:var(--line)" title="미확인 11.6%"></i></div>
+  <ul class="aleg"><li><b style="background:var(--accent)"></b>내가 준 소스 <strong>34.4%</strong></li><li><b style="background:var(--ink)"></b>유라 생성 <strong>54.0%</strong></li><li><b style="background:var(--line)"></b>미확인 <strong>11.6%</strong></li></ul>
+  <p class="averdict">유라 자체 생성 컷이 절반 넘음. 레이저·진열대·제품 들고 있는 컷은 유라 아스트라 폴더에서 나옴. 내 9/21 v1/v2 편집은 전혀 승계하지 않고 새로 짬. 유라 생성 54% 중 31%는 유라 작업물 안에만 있고 소스 폴더엔 없는 컷.</p>
+  <div class="sheet"><img src="attribution/contact_webd_scenario2_39s.jpg" alt="" loading="lazy"></div>
+</div>
+<div class="attr">
+  <div class="attrhead"><h3>BX · 시나리오1</h3><span class="chip">연수</span><span class="reuse">이전 편집본 7.6%</span></div>
+  <div class="abar"><i style="width:92.5%;background:var(--ink)" title="BX 생성 92.5%"></i><i style="width:7.5%;background:var(--line)" title="미확인 7.5%"></i></div>
+  <ul class="aleg"><li><b style="background:var(--ink)"></b>BX 생성 <strong>92.5%</strong></li><li><b style="background:var(--line)"></b>미확인 <strong>7.5%</strong></li></ul>
+  <p class="averdict">BX 원본 폴더 27컷으로 처음부터 새로 짠 편집. 내가 보낸 소스는 한 컷도 안 씀.</p>
+  <div class="sheet"><img src="attribution/contact_bx_scenario1.jpg" alt="" loading="lazy"></div>
+</div>
+<div class="attr">
+  <div class="attrhead"><h3>BX · 0929 비포애프터</h3><span class="chip">영은 파트장</span><span class="reuse">9/29 1차본 30% 승계 + 신규 컷</span></div>
+  <div class="abar"><i style="width:5.3%;background:var(--accent)" title="내가 준 소스 5.3%"></i><i style="width:94.7%;background:var(--ink)" title="BX 생성 94.7%"></i></div>
+  <ul class="aleg"><li><b style="background:var(--accent)"></b>내가 준 소스 <strong>5.3%</strong></li><li><b style="background:var(--ink)"></b>BX 생성 <strong>94.7%</strong></li></ul>
+  <p class="averdict">약국 진열대·손글씨 메모·논문 캡처·솜 바르는 손 등 실사 UGC풍 컷이 전부 어느 소스 폴더에도 없음. BX가 따로 만든 소스로 판단(폴더 미공유). 내 소스는 크림 클로즈업 1컷.</p>
+  <div class="sheet"><img src="attribution/contact_bx_0929_ba.jpg" alt="" loading="lazy"></div>
+</div>
+  <p class="note" style="margin-top:26px">대행사(CCFM) 소재 113개는 4편 어디에도 0%. 판정은 프레임 해시 거리 12/256 이하, 미확인은 상한값. 오디오·자막은 대조 안 함.</p>
+</section>
+<section class="band soft" id="issues">
   <div class="sechead"><h2>지금 문제</h2><p class="lede">10/1 기준 슬랙에서 확인되는 미해결 항목. 굵은 테두리는 집행에 직접 걸리는 것.</p></div>
   <div class="notegrid">
 <div class="notecard hot">
@@ -595,7 +644,7 @@ ul.tl time{font-family:var(--mono);font-size:11px;color:var(--accent);font-weigh
   <p class="owner">담당 · 영은 파트장</p>
 </div></div>
 </section>
-<section class="band soft" id="run">
+<section class="band" id="run">
   <div class="sechead"><h2>집행 순서</h2><p class="lede">지금 바로 돌릴 수 있는 순서. 뒤로 갈수록 손봐야 할 게 있습니다.</p></div>
   <ol class="runlist"><li><b>웹디 시나리오2 · 39초</b> 길이·음성 모두 문제 없음. 가장 먼저 집행.</li><li><b>콘텐츠기획 피캄 연습5 · 44초</b> 음성·라벨 정리 끝. 웹디 시나리오2와 같은 날 바로 집행 가능.</li><li><b>웹디 시나리오1 · 학부모 썰 57초</b> 음성 교체 완료. 57초는 합의 기준(30~40초)보다 길어 성과 보고 컷 다운 여부 결정.</li><li><b>BX 시나리오1 · 45초</b> 전달본 그대로 집행 가능. 캡컷 TTS 톤만 한 번 확인.</li><li><b>BX 0929 · 비포애프터 24초</b> 영은 파트장 캡션 수정본 받은 뒤 집행. 짧고 훅이 강해 수정만 끝나면 상위 후보.</li><li><b>콘텐츠기획 시나리오2 v2</b> 대행사 음성이 얹혀 있어 자체 TTS로 교체한 뒤에만 집행.</li></ol>
 </section>
