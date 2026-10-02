@@ -1,142 +1,391 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>파워페이지 연예인 광고 분석</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root{
-  --bg:#0F1420; --soft:#161C2B; --tint:#1B2236;
-  --ink:#F2EDE4; --ink-2:#B8BFCF; --ink-3:#7F889C;
-  --line:#28324A; --line-2:#1F283B;
-  --accent:#FF7A59; --accent-deep:#FF9B82; --accent-wash:#2A2430; --on-accent:#1A0F0A;
-  --card:#182034;
-  --sh:0 1px 2px rgba(0,0,0,.3),0 10px 26px -14px rgba(0,0,0,.6);
-  --sh-lift:0 2px 6px rgba(0,0,0,.35),0 22px 44px -18px rgba(0,0,0,.7);
-  --r:18px; --r-sm:12px;
+  color-scheme:light;
+  --paper:#E9EBEF;
+  --paper-2:#E1E4EA;
+  --surface:#FFFFFF;
+  --surface-2:#F4F5F8;
+  --ink:#14181F;
+  --ink-2:#4B525C;
+  --ink-3:#5E6670;
+  --line:#CFD4DC;
+  --line-2:#DCE0E7;
+  --accent:#1536D9;
+  --accent-deep:#0F27A3;
+  --accent-wash:#E4E8FB;
+  --on-accent:#FFFFFF;
+  --mark:#FBE9A8;
+  --mark-edge:#E8C64A;
+  --sh:0 1px 1px rgba(20,24,31,.05),0 10px 24px -16px rgba(20,24,31,.42);
+  --sh-lift:0 2px 4px rgba(20,24,31,.07),0 22px 40px -20px rgba(20,24,31,.55);
+  --r:16px; --r-sm:10px;
+  --ease:cubic-bezier(.22,.8,.26,1);
   --sans:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
-  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+  --display:'Gothic A1','Pretendard Variable',Pretendard,'Apple SD Gothic Neo',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:16px}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.72;letter-spacing:-.005em;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-::selection{background:var(--accent);color:#fff}
-main,header{max-width:1180px;margin:0 auto;padding:0 24px}
-a{color:var(--accent-deep);text-decoration-thickness:1px;text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:2.5px solid var(--accent-deep);outline-offset:3px;border-radius:6px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:24px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.72;letter-spacing:-.005em;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--accent);color:var(--on-accent)}
+.mast,main{max-width:1200px;margin:0 auto;padding:0 32px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:4px}
 img,video{max-width:100%}
 
-.overline{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-deep);margin:44px 0 14px}
-hr.hairline{border:0;border-top:1px solid var(--line);margin:0;opacity:.9}
-h1{font-family:var(--sans);font-weight:800;font-size:clamp(30px,5.6vw,54px);line-height:1.12;letter-spacing:-.03em;margin:30px 0 0;max-width:18ch;word-break:keep-all}
-.brand{font-family:var(--sans);font-size:13.5px;font-weight:600;letter-spacing:-.005em;color:var(--ink-3);margin:18px 0 0}
+/* ---------- 마스트헤드 ---------- */
+.mast{padding-top:64px;padding-bottom:0}
+.eyebrow{
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);margin:0 0 26px;
+  padding-bottom:14px;border-bottom:1px solid var(--line);
+}
+h1{
+  font-family:var(--display);font-weight:900;
+  font-size:clamp(34px,6.2vw,66px);line-height:1.08;letter-spacing:-.035em;
+  margin:0;max-width:16ch;word-break:keep-all;text-wrap:balance;
+}
+.standfirst{
+  font-size:17px;line-height:1.7;color:var(--ink-2);
+  max-width:56ch;margin:22px 0 0;word-break:keep-all;
+}
+.mstats{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:0;margin:44px 0 0;border-top:1px solid var(--line);
+}
+.mstat{
+  display:flex;flex-direction:column;gap:2px;
+  padding:18px 20px 20px 0;border-right:1px solid var(--line-2);
+}
+.mstat:last-child{border-right:0}
+.mnum{
+  font-family:var(--display);font-weight:900;font-size:clamp(26px,3.4vw,40px);
+  line-height:1.05;letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+}
+.mlab{font-size:12.5px;color:var(--ink-3);letter-spacing:-.01em;word-break:keep-all}
+.navrow{
+  display:flex;flex-wrap:wrap;gap:4px 26px;
+  margin:0;padding:18px 0 22px;border-top:1px solid var(--line);
+}
+.navrow a{
+  font-size:13.5px;font-weight:600;color:var(--ink-2);text-decoration:none;
+  padding-bottom:2px;border-bottom:2px solid transparent;
+  transition:color .2s var(--ease),border-color .2s var(--ease);
+}
+.navrow a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
-.navgrid{display:flex;flex-wrap:wrap;gap:8px;margin:40px 0 0;padding-bottom:26px;border-bottom:1px solid var(--line)}
-.navitem{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px;transition:border-color .18s,background .18s,color .18s,transform .18s;white-space:nowrap}
-.navitem b{font-weight:600;font-size:13.5px;letter-spacing:-.01em;line-height:1.3}
-.navitem:hover{border-color:var(--accent);background:var(--accent-wash);color:var(--accent-deep);transform:translateY(-1px)}
+/* ---------- 섹션 ---------- */
+section.band{position:relative;padding:72px 0 80px}
+section.band::before{
+  content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;
+  width:100vw;transform:translateX(-50%);background:transparent;
+}
+section.band.soft::before{background:var(--paper-2)}
+section.band + section.band::after{
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;background:var(--line);
+}
+.sechead{display:flex;flex-direction:column;gap:12px;margin:0 0 30px;max-width:70ch}
+.sechead h2{
+  font-family:var(--display);font-weight:900;
+  font-size:clamp(24px,3.4vw,38px);letter-spacing:-.032em;line-height:1.16;
+  margin:0;max-width:22ch;word-break:keep-all;text-wrap:balance;
+}
+.lede{font-size:15.5px;color:var(--ink-2);max-width:62ch;margin:0;word-break:keep-all}
+h3{font-family:var(--sans);font-weight:700;font-size:18px;letter-spacing:-.018em;margin:0 0 8px;word-break:keep-all}
+h4{font-family:var(--sans);font-weight:700;font-size:14.5px;letter-spacing:-.012em;margin:0;word-break:keep-all}
+.steplabel{
+  font-family:var(--sans);font-weight:700;font-size:15px;color:var(--ink-2);
+  letter-spacing:-.015em;margin:52px 0 0;padding-top:20px;border-top:1px solid var(--line);
+}
 
-section.band{position:relative;padding:64px 0 72px;margin:0}
-section.band::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:transparent}
-section.band.soft::before{background:var(--soft)}
-section.band.tint::before{background:var(--tint)}
-.sechead{position:relative;display:flex;flex-direction:column;gap:14px;margin:0 0 16px}
-.chip{display:inline-block;background:var(--accent-deep);color:var(--on-accent);font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.12em;padding:6px 12px;border-radius:999px;width:fit-content}
-.sechead h2{position:relative;font-family:var(--sans);font-weight:800;font-size:clamp(22px,3vw,32px);letter-spacing:-.028em;margin:0;max-width:26ch;word-break:keep-all}
-h3{font-family:var(--sans);font-weight:700;font-size:19px;letter-spacing:-.015em;margin:0 0 10px;word-break:keep-all}
-h4{font-family:var(--sans);font-weight:700;font-size:15.5px;letter-spacing:-.01em;margin:0 0 2px;word-break:keep-all}
-.lede{font-size:16px;color:var(--ink-2);max-width:66ch;margin:0;word-break:keep-all}
-.blocklabel{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin:34px 0 0;padding-top:16px;border-top:1px solid var(--line-2)}
-.notecard{margin-top:14px;padding:14px 16px;background:var(--card);border:1px dashed var(--line);border-radius:var(--r-sm);color:var(--ink-2);font-size:13.5px;max-width:74ch;word-break:keep-all}
+.sumlist{
+  list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;
+  font-size:15.5px;color:var(--ink);max-width:72ch;
+}
+.sumlist li{padding-left:22px;position:relative;word-break:keep-all}
+.sumlist li::before{
+  content:"";position:absolute;left:0;top:.72em;
+  width:10px;height:2px;background:var(--accent);
+}
 
-.sumlist{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:10px;font-size:15.5px;color:var(--ink);max-width:70ch}
-.sumlist li{padding-left:18px;text-indent:-18px}
-.sumlist li::before{content:"— ";color:var(--accent-deep);font-weight:700}
+.tablewrap{overflow-x:auto;margin-top:30px}
+table.camptable{width:100%;min-width:560px;border-collapse:collapse;font-size:13.5px}
+table.camptable th,table.camptable td{
+  border-bottom:1px solid var(--line-2);padding:11px 16px 11px 0;
+  text-align:left;vertical-align:top;word-break:keep-all;
+}
+table.camptable thead th{
+  border-bottom:1px solid var(--ink);
+  font-size:11.5px;letter-spacing:.01em;
+  color:var(--ink-3);font-weight:600;padding-bottom:9px;
+}
+table.camptable tbody tr:last-child td{border-bottom:0}
+table.pricetable{min-width:420px}
+table.pricetable td{font-variant-numeric:tabular-nums}
+td.cpv{font-family:var(--mono);font-weight:600;color:var(--accent)}
 
-table.camptable{width:100%;border-collapse:collapse;margin-top:22px;font-size:13.5px}
-table.camptable th,table.camptable td{border-top:1px solid var(--line-2);padding:10px 12px 10px 0;text-align:left;vertical-align:top;word-break:keep-all}
-table.camptable th{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ink-3);font-weight:600}
+/* ---------- 자막 공식 패널 ---------- */
+.formula{
+  margin:0 0 8px;padding:8px;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:calc(var(--r) + 8px);
+}
+.formula-core{
+  padding:34px 34px 30px;background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--r);box-shadow:var(--sh);
+}
+.formula-title{
+  font-family:var(--display);font-weight:900;font-size:clamp(19px,2.4vw,26px);
+  letter-spacing:-.03em;margin:0 0 20px;word-break:keep-all;
+}
+.formula-line{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;
+  font-family:var(--display);font-weight:900;
+  font-size:clamp(18px,3.1vw,33px);line-height:1.45;letter-spacing:-.03em;
+  margin:0;word-break:keep-all;
+}
+.plus{color:var(--ink-3);font-weight:700;font-size:.72em}
+.formula-note{
+  font-size:14.5px;color:var(--ink-2);max-width:60ch;
+  margin:22px 0 0;word-break:keep-all;
+}
 
-.campblock{margin-top:36px;padding-top:24px;border-top:1px solid var(--line-2)}
-.campblock:first-of-type{margin-top:24px}
-.campheadrow{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.campheadrow h3{margin:0}
-.meta{font-family:var(--mono);font-size:12px;color:var(--ink-3);margin:6px 0 0}
+.s-mod{color:var(--ink-2);border-bottom:2px dotted var(--ink-3);padding-bottom:1px}
+.s-name{color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:1px}
+.s-gen{color:var(--accent);border-bottom:2px dashed var(--accent);padding-bottom:1px}
+.s-res{
+  color:var(--ink);background:var(--mark);
+  box-shadow:inset 0 -2px 0 var(--mark-edge);
+  padding:1px 5px;border-radius:3px;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
+}
 
-.cardgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:18px}
-.card{margin:0;min-width:0}
-.frame{position:relative;aspect-ratio:9/16;overflow:hidden;background:#1C1720;border-radius:16px;border:1px solid var(--line);box-shadow:var(--sh);transition:box-shadow .24s ease,transform .24s ease}
+.fstats{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;
+  margin:30px 0 0;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2);
+}
+.fstat{display:flex;flex-direction:column;gap:1px;padding:16px 16px 18px 0;border-right:1px solid var(--line-2)}
+.fstat:last-child{border-right:0}
+.fnum{
+  font-family:var(--display);font-weight:900;font-size:30px;line-height:1.1;
+  letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+}
+.fstat.zero .fnum{color:var(--accent)}
+.flab{font-size:12px;color:var(--ink-3);word-break:keep-all;line-height:1.45}
+
+.legend{
+  list-style:none;display:flex;flex-wrap:wrap;gap:8px 24px;
+  margin:20px 0 0;padding:0;font-size:12.5px;color:var(--ink-3);
+}
+.legend li{display:flex;align-items:center;gap:7px;word-break:keep-all}
+.legend .s-mod,.legend .s-name,.legend .s-gen,.legend .s-res{font-size:12.5px;font-weight:600}
+
+.subs{
+  list-style:none;margin:26px 0 0;padding:22px 0 0;border-top:1px solid var(--line-2);
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 32px;
+}
+.subrow{
+  display:flex;flex-direction:column;gap:3px;
+  padding:11px 0;border-bottom:1px solid var(--line-2);min-width:0;
+}
+.subacct{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);letter-spacing:.01em}
+.subline{font-size:14.5px;line-height:1.95;word-break:keep-all}
+.subline span{margin-right:3px}
+
+/* ---------- 다섯 단계 ---------- */
+.stepgrid{display:flex;flex-direction:column;gap:0;margin-top:22px}
+.stepcard{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line-2)}
+.stepcard:last-child{border-bottom:0}
+.stepnum{
+  font-family:var(--display);font-weight:900;font-size:30px;line-height:1;
+  color:var(--accent);letter-spacing:-.03em;
+}
+.stepbody p{margin:0;color:var(--ink-2);max-width:60ch;word-break:keep-all}
+.examplelist{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.examplelist li{
+  font-size:13.5px;color:var(--ink);background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--r-sm);
+  padding:9px 13px;word-break:keep-all;max-width:62ch;
+}
+
+/* ---------- 캠페인 카드 ---------- */
+.campblock{margin-top:44px;padding-top:26px;border-top:1px solid var(--line)}
+.campblock:first-of-type{margin-top:8px;padding-top:0;border-top:0}
+.campheadrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.campheadrow h3{margin:0;font-size:17.5px}
+.chip{
+  display:inline-block;background:var(--ink);color:var(--surface);
+  font-size:11px;font-weight:600;letter-spacing:.02em;
+  padding:5px 12px;border-radius:999px;width:fit-content;white-space:nowrap;
+}
+.meta{font-size:12.5px;color:var(--ink-3);margin:8px 0 0;line-height:1.6;word-break:keep-all}
+
+.cardgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 24px;margin-top:22px}
+.card{margin:0;min-width:0;display:flex;flex-direction:column}
+.frame{
+  position:relative;aspect-ratio:9/16;overflow:hidden;background:#0A0A0C;
+  border-radius:12px;box-shadow:var(--sh);
+  transition:box-shadow .32s var(--ease),transform .32s var(--ease);
+}
 .frame video,.frame img{width:100%;height:100%;object-fit:cover;display:block}
 .frame.novideo{display:flex;align-items:center;justify-content:center}
-.card:hover .frame{transform:translateY(-3px);box-shadow:var(--sh-lift)}
-.textnote{font-family:var(--mono);font-size:12px;color:#fff;letter-spacing:.04em;opacity:.7}
-.tag{position:absolute;top:10px;left:10px;background:rgba(12,12,14,.6);color:#fff;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.02em;padding:5px 9px;border-radius:999px;z-index:2}
-figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:13px;line-height:1.55;word-break:keep-all}
-.cardtop{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.viewsbig{font-family:var(--mono);font-weight:700;font-size:14px;color:var(--ink)}
-.adbadge{font-family:var(--mono);font-size:10px;font-weight:700;background:var(--accent-deep);color:var(--on-accent);padding:3px 8px;border-radius:999px}
-.samebadge{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink-3);border:1px solid var(--line);padding:3px 8px;border-radius:999px}
-.caption{color:var(--ink);margin:2px 0 0}
-.composition{color:var(--ink-2);font-size:12px;margin:0}
-.chipgrid{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
-.chip.sm{background:var(--card);color:var(--ink-2);border:1px solid var(--line);font-weight:500;font-size:11px;padding:4px 9px}
-
-.fullbtn{margin-top:8px;align-self:flex-start;font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.01em;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:7px 12px;cursor:pointer;border-radius:999px;transition:background .15s,color .15s,border-color .15s}
-.fullbtn:hover{background:var(--accent-wash);border-color:var(--accent);color:var(--accent-deep)}
-.fullbtn.playing{border-color:var(--accent);color:var(--accent-deep);background:var(--accent-wash)}
-
-.stepgrid{display:flex;flex-direction:column;gap:0;margin-top:24px}
-.stepcard{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--line-2)}
-.stepcard:first-child{border-top:0;padding-top:0}
-.stepnum{font-family:var(--sans);font-weight:800;font-size:26px;color:var(--accent-deep)}
-.stepbody p{margin:4px 0 0;color:var(--ink-2);word-break:keep-all}
-.examplelist{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
-.examplelist li{font-size:13.5px;color:var(--ink);background:var(--soft);border-radius:var(--r-sm);padding:9px 12px;word-break:keep-all}
-
-.calloutgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
-.callout{padding:16px 18px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--r);box-shadow:var(--sh);font-size:14px;line-height:1.65;word-break:keep-all}
-table.pricetable{max-width:640px}
-
-.confirmbox{margin-top:20px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm)}
-.confirmbox summary{cursor:pointer;font-weight:700;font-size:14px}
-.confirmbox ul{margin:12px 0 0;padding-left:18px;color:var(--ink-2);font-size:13.5px;display:flex;flex-direction:column;gap:6px;word-break:keep-all}
-
-footer{margin:40px 0 90px;padding-top:24px;border-top:1px solid var(--line)}
-.note{color:var(--ink-3);font-size:13.5px;margin-top:14px;word-break:keep-all}
-
-@media (max-width:980px){
-  section.band{padding:48px 0 56px}
-  .cardgrid{grid-template-columns:repeat(2,1fr)}
-  .calloutgrid{grid-template-columns:1fr}
+.card:hover .frame{transform:translateY(-4px);box-shadow:var(--sh-lift)}
+.textnote{font-size:12.5px;color:#fff;opacity:.65}
+.tag{
+  position:absolute;top:9px;left:9px;background:rgba(10,10,12,.62);color:#fff;
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  font-size:10.5px;font-weight:600;letter-spacing:.01em;
+  padding:4px 10px;border-radius:999px;z-index:2;
 }
-@media (max-width:620px){
-  main,header{padding:0 18px}
-  .cardgrid{grid-template-columns:1fr}
-  .navgrid{display:flex;flex-wrap:wrap}
-  .stepcard{grid-template-columns:36px 1fr}
+figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:13px;line-height:1.56;word-break:keep-all}
+.cardtop{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.viewsbig{font-weight:700;font-size:13.5px;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.adbadge{
+  font-size:10px;font-weight:600;letter-spacing:.01em;
+  background:var(--accent);color:var(--on-accent);padding:3px 9px;border-radius:999px;white-space:nowrap;
+}
+.samebadge{
+  font-size:10px;font-weight:500;color:var(--ink-3);letter-spacing:.01em;
+  border:1px solid var(--line);padding:3px 9px;border-radius:999px;white-space:nowrap;
+}
+.caption{color:var(--ink);margin:2px 0 0}
+.composition{color:var(--ink-3);font-size:12px;margin:0;line-height:1.55}
+.chipgrid{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.chipgrid.wide{margin-top:18px;gap:7px}
+.chip.sm{
+  background:transparent;color:var(--ink-3);border:1px solid var(--line);
+  font-weight:500;font-size:11px;padding:4px 10px;letter-spacing:0;
+}
+.campnote{
+  align-self:start;min-width:0;
+  padding:24px 26px 26px;background:var(--surface);
+  border:1px solid var(--line-2);border-left:3px solid var(--ink);
+  border-radius:var(--r);box-shadow:var(--sh);
+}
+.campnote p{margin:0;font-size:14.5px;line-height:1.78;color:var(--ink-2);max-width:54ch;word-break:keep-all}
+
+.fullbtn{
+  margin-top:9px;align-self:flex-start;
+  font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:-.01em;
+  background:var(--surface);border:1px solid var(--line);color:var(--ink);
+  padding:7px 13px;cursor:pointer;border-radius:999px;
+  transition:background .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .12s var(--ease);
+}
+.fullbtn:hover{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fullbtn:active{transform:scale(.97)}
+.fullbtn.playing{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+
+/* ---------- 단가 ---------- */
+.costgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.costgrid>*{min-width:0}
+.costgrid .tablewrap{margin-top:0}
+.calloutcol{display:flex;flex-direction:column;gap:14px}
+.callout{
+  margin:0;padding:16px 18px;background:var(--surface);
+  border:1px solid var(--line-2);border-left:3px solid var(--accent);
+  border-radius:var(--r-sm);box-shadow:var(--sh);
+  font-size:14px;line-height:1.68;word-break:keep-all;
+}
+
+/* ---------- 우리 적용 ---------- */
+.notegrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.notecard{
+  padding:22px 22px 24px;background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--r);box-shadow:var(--sh);
+}
+.notecard h3{font-size:15.5px;margin:0 0 8px}
+.notecard p{margin:0;color:var(--ink-2);font-size:14px;line-height:1.68;word-break:keep-all}
+.confirmbox{
+  margin-top:26px;padding:18px 22px;background:transparent;
+  border:1px dashed var(--line);border-radius:var(--r-sm);max-width:80ch;
+}
+.confirmbox summary{cursor:pointer;font-weight:700;font-size:14.5px;letter-spacing:-.015em}
+.confirmbox ul{margin:14px 0 0;padding-left:20px;color:var(--ink-2);font-size:13.5px;display:flex;flex-direction:column;gap:7px;word-break:keep-all}
+
+footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
+.note{color:var(--ink-3);font-size:13px;margin:0;word-break:keep-all}
+
+/* ---------- 반응형 ---------- */
+@media (max-width:1080px){
+  .cardgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .campnote{grid-column:span 2 !important}
+  .costgrid{grid-template-columns:1fr;gap:28px}
+  .notegrid{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .mast,main{padding:0 24px}
+  section.band{padding:52px 0 60px}
+  .subs{grid-template-columns:1fr;gap:0}
+  .formula-core{padding:26px 22px 24px}
+  .mstats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mstat{border-right:0;border-bottom:1px solid var(--line-2);padding-right:12px}
+  .mstat:nth-child(odd){border-right:1px solid var(--line-2)}
+  .mstat:nth-last-child(-n+2){border-bottom:0}
+}
+@media (max-width:640px){
+  .mast,main{padding:0 18px}
+  .mast{padding-top:40px}
+  body{font-size:15.5px}
+  .cardgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+  .campnote{grid-column:1 / -1 !important;padding:20px 20px}
+  .fstats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fstat{border-bottom:1px solid var(--line-2);padding-right:12px}
+  .fstat:nth-child(even){border-right:0}
+  .fstat:nth-last-child(-n+2){border-bottom:0}
+  .stepcard{grid-template-columns:40px 1fr;gap:14px}
+  .stepnum{font-size:24px}
+  .navrow{gap:4px 18px}
+  figcaption{font-size:12.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
+  .card:hover .frame{transform:none}
 }
 
 </style>
-<header>
-<p class="overline">POWER PAGE · CELEBRITY AD ANALYSIS</p>
-<hr class="hairline">
-<h1>파워페이지 연예인 광고 분석</h1>
-<p class="brand">2026-10-01 · 밈 페이지 19계정 확인 · 연예인 광고 13건(확정 12 · 유튜버 1)</p>
-<nav class="navgrid" aria-label="섹션 이동">
-<a href="#summary" class="navitem"><b>한눈에</b></a>
-<a href="#campaigns" class="navitem"><b>캠페인별 영상</b></a>
-<a href="#formula" class="navitem"><b>소재 공식</b></a>
-<a href="#cost" class="navitem"><b>단가와 성과</b></a>
+<header class="mast">
+<p class="eyebrow">Power Page · Celebrity Ad Teardown</p>
+<h1>연예인 얼굴을 빌려<br>광고 티를 지우는 법</h1>
+<p class="standfirst">밈 페이지 19개 계정을 열어 광고 릴 13건을 추려냈어요. 이 가운데 12건이 연예인 광고고, 자막 한 줄부터 해시태그까지 전부 같은 틀을 씁니다.</p>
+<div class="mstats">
+<div class="mstat"><span class="mnum">13</span><span class="mlab">분석한 광고 릴</span></div>
+<div class="mstat"><span class="mnum">12</span><span class="mlab">연예인 광고 확정</span></div>
+<div class="mstat"><span class="mnum">19</span><span class="mlab">확인한 밈 계정</span></div>
+<div class="mstat"><span class="mnum">3~4원</span><span class="mlab">조회수 1회당 단가</span></div>
+</div>
+<nav class="navrow" aria-label="섹션 이동">
+<a href="#summary">한눈에</a>
+<a href="#formula">자막 공식</a>
+<a href="#campaigns">캠페인별 영상</a>
+<a href="#cost">단가와 성과</a>
+<a href="#apply">우리 적용</a>
 </nav>
 </header>
 <main>
 <section id="summary" class="band" aria-labelledby="summary-h">
-<div class="sechead"><span class="chip" aria-hidden="true">01</span><h2 id="summary-h">한눈에</h2></div>
+<div class="sechead">
+<h2 id="summary-h">한눈에</h2>
+<p class="lede">연예인 광고 캠페인 3개와 단독 사례 1개가 같은 계정 풀 위에서 돌아갔어요.</p>
+</div>
 <ul class="sumlist">
 <li>연예인 광고 캠페인은 3개, 단독 사례 1개로 모두 11개 계정에서 돌았어요.</li>
+<li>상단 자막은 수식어 + 연예인 이름 + 가린 결과, 딱 한 틀이에요. 브랜드명은 13건 모두 0건이에요.</li>
 <li>소재 공식은 다섯 단계예요. 연예인 본인 클립을 가져와 운영자 말투로 후기를 붙이고 해시태그로 검색을 유도해요.</li>
 <li>조회수 1회당 단가는 3~4원대예요. 우리 시딩 기준 10원의 3분의 1 수준이에요.</li>
 </ul>
+<div class="tablewrap">
 <table class="camptable">
 <thead><tr><th>연예인</th><th>제품</th><th>노출 계정</th><th>시기</th><th>소재 출처</th></tr></thead>
 <tbody><tr><td>소유</td><td>올리브영 세럼 (파넬세럼 / 9월 4일 건은 시카마누로 다른 이름)</td><td>7개</td><td>1차 9월 4일, 2차 9월 25일~30일</td><td>소유 유튜브 클립 재게시</td></tr>
@@ -144,10 +393,144 @@ footer{margin:40px 0 90px;padding-top:24px;border-top:1px solid var(--line)}
 <tr><td>카디비</td><td>세르프 리프팅 디바이스</td><td>1개</td><td>9월 17일</td><td>무관한 해외 인터뷰 클립을 리프팅 맥락으로 재편집</td></tr>
 <tr><td>조혜련</td><td>다이어트 보조제</td><td>1개</td><td>9월 16일</td><td>본인 출연 클립, 계정에 "협찬 광고" 표시가 붙은 유일한 사례</td></tr></tbody>
 </table>
+</div>
 </section>
-<section id="campaigns" class="band soft" aria-labelledby="campaigns-h">
-<div class="sechead"><span class="chip" aria-hidden="true">02</span><h2 id="campaigns-h">캠페인별 영상</h2></div>
-<p class="lede">같은 소재를 여러 계정에 동시에 돌려요. 카드를 누르면 전체 영상이 재생돼요.</p>
+<section id="formula" class="band soft" aria-labelledby="formula-h">
+<div class="sechead">
+<h2 id="formula-h">소재 공식</h2>
+<p class="lede">자막 한 줄이 공식의 출발점이고, 그 뒤로 제작부터 배포까지 다섯 단계가 이어져요.</p>
+</div>
+<div class="formula">
+<div class="formula-core">
+<h3 class="formula-title">상단 자막은 세 칸짜리 빈칸 채우기예요</h3>
+<p class="formula-line">
+<span class="s-mod">권위 · 변화 수식어</span><span class="plus">+</span><span class="s-name">연예인 이름</span><span class="plus">+</span><span class="s-res">가려진 결과</span>
+</p>
+<p class="formula-note">마지막 칸은 비결 · 이유 · 이것 · 그 OO처럼 늘 가려 둬요. 제품이 뭔지는 끝까지 말하지 않고, 브랜드명은 한 건도 쓰지 않아요.</p>
+<div class="fstats">
+<div class="fstat">
+<span class="fnum">13</span><span class="flab">분석한 상단 자막</span>
+</div>
+<div class="fstat">
+<span class="fnum">9</span><span class="flab">연예인 이름 직접 노출</span>
+</div>
+<div class="fstat">
+<span class="fnum">3</span><span class="flab">'연예인·아이돌' 통칭</span>
+</div>
+<div class="fstat zero">
+<span class="fnum">0</span><span class="flab">브랜드명 노출</span>
+</div>
+</div>
+<ul class="legend">
+<li><span class="s-mod">수식어</span> 권위나 변화 폭을 숫자·상태로 박아요</li>
+<li><span class="s-name">이름</span> 직접 쓰거나 <span class="s-gen">통칭</span>으로 돌려요</li>
+<li><span class="s-res">가린 결과</span> 끝까지 안 알려주는 칸이에요</li>
+</ul>
+<ul class="subs">
+<li class="subrow">
+<span class="subacct">@melon__paper</span>
+<span class="subline"><span class="s-mod">20kg 다이어트 성공한</span> <span class="s-name">소유</span> <span class="s-res">'이건 꼭 지킨다'</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@good_tip_magazine</span>
+<span class="subline"><span class="s-name">소유</span> <span class="s-mod">쌩얼 무슨 일;;</span> <span class="s-res">여돌들이 다 쓴다는 그 OO</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@one_star_video</span>
+<span class="subline"><span class="s-mod">최근 뼈말라된</span> <span class="s-name">소유</span> <span class="s-res">충격적인 피부 상태ㄷㄷ</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@happing_box</span>
+<span class="subline"><span class="s-name">소유</span> <span class="s-mod">얼굴 확 달라진</span> <span class="s-res">이유</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@luna.player</span>
+<span class="subline"><span class="s-gen">연예인</span> <span class="s-mod">피부광은</span> <span class="s-res">다 피부과인 줄 알았는데...</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@comedy.1989__</span>
+<span class="subline"><span class="s-gen">연예인</span> <span class="s-mod">피부광은</span> <span class="s-res">다 피부과인 줄 알았는데...</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@dotori_channel</span>
+<span class="subline"><span class="s-mod">올영에서 난리난</span> <span class="s-gen">OO 아이돌</span> <span class="s-res">자기관리 필수템?!</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@tree.humor</span>
+<span class="subline"><span class="s-mod">8키로 빼고 리즈 찍은</span> <span class="s-name">조혜련</span> <span class="s-res">다이어트 성공 비결 = 💩?</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@orange__funny</span>
+<span class="subline"><span class="s-mod">먹는 것만큼은 신중한</span> <span class="s-name">이경실</span> <span class="s-res">관절에 좋다고 콕 찍은 이것</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@melon__paper</span>
+<span class="subline"><span class="s-name">이경실</span> <span class="s-mod">못 끊는다는</span> <span class="s-res">'5일 관절 개선 영양제'</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@malangping_zzal</span>
+<span class="subline"><span class="s-mod">파스와 침을 달고 살던</span> <span class="s-name">이경실</span> <span class="s-res">단 5일 만에 관절이 달라진 이유</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@blue_fun_diary</span>
+<span class="subline"><span class="s-mod">빌보드 1위</span> <span class="s-name">카디비</span> <span class="s-res">피부비결은 K-리프팅?!</span></span>
+</li>
+<li class="subrow">
+<span class="subacct">@hana.zzal</span>
+<span class="subline"><span class="s-mod">추석동안 -5kg 가능?</span> <span class="s-res">효과 미쳤다는 단기 디톡스 주스</span></span>
+</li>
+</ul>
+</div>
+</div>
+<h3 class="steplabel">자막 다음에 오는 다섯 단계</h3>
+<div class="stepgrid">
+<div class="stepcard">
+<div class="stepnum">1</div>
+<div class="stepbody">
+<h3>연예인 본인 클립에서 시작해요</h3>
+<p>본인이 나온 유튜브나 방송 클립 앞 3~5초를 가져와 가십성 자막을 붙여요.</p>
+<ul class="examplelist"><li>"최근 뼈말라된 소유 충격적인 피부 상태ㄷㄷ"</li><li>"파스와 침을 달고 살던 이경실 단 5일 만에 관절이 달라진 이유"</li></ul>
+</div>
+</div>
+<div class="stepcard">
+<div class="stepnum">2</div>
+<div class="stepbody">
+<h3>출처를 하단에 작게 표시해요</h3>
+<p>"출처 – ○○ Youtube"로만 표시하고 광고 라벨은 달지 않아요. 리포스트 밈처럼 보이게 둬요.</p>
+<ul class="examplelist"><li>"출처-소유기 Youtube"</li></ul>
+</div>
+</div>
+<div class="stepcard">
+<div class="stepnum">3</div>
+<div class="stepbody">
+<h3>캡션은 운영자가 직접 써본 것처럼 1인칭으로 써요</h3>
+<p>계정 운영자가 궁금해서 사봤다는 말투로 후기를 붙여요.</p>
+<ul class="examplelist"><li>"쟁여두고 쓴다길래 세일할 때 사봤는데 ㄹㅇ개좋음"</li><li>"올영 갔더니 일부 매장 품절"</li></ul>
+</div>
+</div>
+<div class="stepcard">
+<div class="stepnum">4</div>
+<div class="stepbody">
+<h3>해시태그가 CTA예요</h3>
+<p>링크 없이 해시태그와 검색어로 구매처를 유도해요.</p>
+<ul class="examplelist"><li>#소유세럼 #올리브영 #올영세일 #올영호빵맨</li><li>"올영에 시카마누 검색ㄱㄱ"</li></ul>
+</div>
+</div>
+<div class="stepcard">
+<div class="stepnum">5</div>
+<div class="stepbody">
+<h3>같은 소재를 캡션만 바꿔 여러 계정에 뿌려요</h3>
+<p>한 캠페인을 캡션 3~4종으로 변주해 계정별로 동시에 배포해요.</p>
+<ul class="examplelist"><li>luna.player·comedy.1989__는 캡션까지 동일하게 재게시됐어요.</li></ul>
+</div>
+</div>
+</div>
+</section>
+<section id="campaigns" class="band" aria-labelledby="campaigns-h">
+<div class="sechead">
+<h2 id="campaigns-h">캠페인별 영상</h2>
+<p class="lede">같은 소재를 여러 계정에 동시에 돌려요. 카드 아래 버튼을 누르면 전체 영상이 재생돼요.</p>
+</div>
 <div class="campblock">
 <div class="campheadrow"><span class="chip">캠페인 A</span><h3>소유 · 올리브영 세럼 (파넬세럼 / 9월 4일 건은 시카마누로 다른 이름)</h3></div>
 <p class="meta">노출 계정 7개 · 1차 9월 4일, 2차 9월 25일~30일 · 소재 출처: 소유 유튜브 클립 재게시</p>
@@ -318,6 +701,7 @@ footer{margin:40px 0 90px;padding-top:24px;border-top:1px solid var(--line)}
 <div class="chipgrid"><span class="chip sm">#세르프</span> <span class="chip sm">#세르프효과</span> <span class="chip sm">#K리프팅</span> <span class="chip sm">#카디비</span> <span class="chip sm">#통증없는리프팅</span></div>
 </figcaption>
 </figure>
+<div class="campnote" style="grid-column:span 3"><p>원본은 리프팅과 아무 상관 없는 해외 인터뷰 클립이에요. 자막만 "피부비결은 K-리프팅?!"으로 새로 붙여 한국 뷰티 소재로 바꿔 놨어요. 계정 1개에만 올라간 단발 집행이라 캠페인 A·B처럼 동시 배포한 흔적은 없어요.</p></div>
 </div>
 </div>
 <div class="campblock">
@@ -338,83 +722,59 @@ footer{margin:40px 0 90px;padding-top:24px;border-top:1px solid var(--line)}
 <div class="chipgrid"><span class="chip sm">#조혜련</span> <span class="chip sm">#다이어트</span> <span class="chip sm">#꿀팁</span> <span class="chip sm">#정보</span></div>
 </figcaption>
 </figure>
-</div>
-</div>
-</section>
-<section id="formula" class="band" aria-labelledby="formula-h">
-<div class="sechead"><span class="chip" aria-hidden="true">03</span><h2 id="formula-h">소재 공식</h2></div>
-<p class="lede">12건 전부 같은 다섯 단계를 따라요.</p>
-<div class="stepgrid">
-<div class="stepcard">
-<div class="stepnum">1</div>
-<div class="stepbody">
-<h3>연예인 본인 클립에서 시작해요</h3>
-<p>본인이 나온 유튜브나 방송 클립 앞 3~5초를 가져와 가십성 자막을 붙여요.</p>
-<ul class="examplelist"><li>"최근 뼈말라된 소유 충격적인 피부 상태ㄷㄷ"</li><li>"파스와 침을 달고 살던 이경실 단 5일 만에 관절이 달라진 이유"</li></ul>
-</div>
-</div>
-<div class="stepcard">
-<div class="stepnum">2</div>
-<div class="stepbody">
-<h3>출처를 하단에 작게 표시해요</h3>
-<p>"출처 – ○○ Youtube"로만 표시하고 광고 라벨은 달지 않아요. 리포스트 밈처럼 보이게 둬요.</p>
-<ul class="examplelist"><li>"출처-소유기 Youtube"</li></ul>
-</div>
-</div>
-<div class="stepcard">
-<div class="stepnum">3</div>
-<div class="stepbody">
-<h3>캡션은 운영자가 직접 써본 것처럼 1인칭으로 써요</h3>
-<p>계정 운영자가 궁금해서 사봤다는 말투로 후기를 붙여요.</p>
-<ul class="examplelist"><li>"쟁여두고 쓴다길래 세일할 때 사봤는데 ㄹㅇ개좋음"</li><li>"올영 갔더니 일부 매장 품절"</li></ul>
-</div>
-</div>
-<div class="stepcard">
-<div class="stepnum">4</div>
-<div class="stepbody">
-<h3>해시태그가 CTA예요</h3>
-<p>링크 없이 해시태그와 검색어로 구매처를 유도해요.</p>
-<ul class="examplelist"><li>#소유세럼 #올리브영 #올영세일 #올영호빵맨</li><li>"올영에 시카마누 검색ㄱㄱ"</li></ul>
-</div>
-</div>
-<div class="stepcard">
-<div class="stepnum">5</div>
-<div class="stepbody">
-<h3>같은 소재를 캡션만 바꿔 여러 계정에 뿌려요</h3>
-<p>한 캠페인을 캡션 3~4종으로 변주해 계정별로 동시에 배포해요.</p>
-<ul class="examplelist"><li>luna.player·comedy.1989__는 캡션까지 동일하게 재게시됐어요.</li></ul>
-</div>
+<div class="campnote" style="grid-column:span 3"><p>13건 가운데 계정에 "협찬 광고" 표시가 달린 유일한 건이에요. 나머지 12건은 전부 라벨 없이 리포스트 밈처럼 올라갔어요. 같은 소재라도 라벨을 다는 계정과 안 다는 계정이 갈린다는 뜻이에요.</p></div>
 </div>
 </div>
 </section>
 <section id="cost" class="band soft" aria-labelledby="cost-h">
-<div class="sechead"><span class="chip" aria-hidden="true">04</span><h2 id="cost-h">단가와 성과</h2></div>
+<div class="sechead">
+<h2 id="cost-h">단가와 성과</h2>
+<p class="lede">계정 단가는 10만원에서 40만원 사이, 조회수로 나누면 전부 3~4원대로 모여요.</p>
+</div>
+<div class="costgrid">
+<div class="tablewrap">
 <table class="camptable pricetable">
 <thead><tr><th>계정</th><th>단가</th><th>조회수</th><th>뷰당</th></tr></thead>
-<tbody><tr><td>luna.player</td><td>400,000원</td><td>131,000</td><td>3.1원</td></tr>
-<tr><td>one_star_video</td><td>400,000원</td><td>122,000</td><td>3.3원</td></tr>
-<tr><td>dotori_channel</td><td>400,000원</td><td>127,000</td><td>3.1원</td></tr>
-<tr><td>good_tip_magazine</td><td>250,000원</td><td>77,000</td><td>3.2원</td></tr>
-<tr><td>comedy.1989__</td><td>250,000원</td><td>74,000</td><td>3.4원</td></tr>
-<tr><td>blue_fun_diary (카디비)</td><td>250,000원</td><td>70,000</td><td>3.6원</td></tr>
-<tr><td>tree.humor (조혜련)</td><td>250,000원</td><td>68,000</td><td>3.7원</td></tr>
-<tr><td>orange__funny (이경실)</td><td>100,000원</td><td>18,000</td><td>5.6원</td></tr></tbody>
+<tbody><tr><td>luna.player</td><td>400,000원</td><td>131,000</td><td class="cpv">3.1원</td></tr>
+<tr><td>one_star_video</td><td>400,000원</td><td>122,000</td><td class="cpv">3.3원</td></tr>
+<tr><td>dotori_channel</td><td>400,000원</td><td>127,000</td><td class="cpv">3.1원</td></tr>
+<tr><td>good_tip_magazine</td><td>250,000원</td><td>77,000</td><td class="cpv">3.2원</td></tr>
+<tr><td>comedy.1989__</td><td>250,000원</td><td>74,000</td><td class="cpv">3.4원</td></tr>
+<tr><td>blue_fun_diary (카디비)</td><td>250,000원</td><td>70,000</td><td class="cpv">3.6원</td></tr>
+<tr><td>tree.humor (조혜련)</td><td>250,000원</td><td>68,000</td><td class="cpv">3.7원</td></tr>
+<tr><td>orange__funny (이경실)</td><td>100,000원</td><td>18,000</td><td class="cpv">5.6원</td></tr></tbody>
 </table>
-<div class="calloutgrid">
-<div class="callout">조회수 1회당 단가는 3~4원대예요. 우리 시딩 기준 10원의 3분의 1 수준이지만, 밈 페이지 구매 의도는 시딩 릴보다 낮게 봐야 해요. 댓글은 3~5개 수준이고 "다들 피피엘이네" 같은 반응도 나와요.</div>
-<div class="callout">조회수는 그 계정이 평소에 받던 수준과 비슷해요. 연예인이 조회수를 끌어올리는 게 아니라, 계정이 원래 가진 도달을 그대로 사고 광고 티만 지우는 포장에 가까워요.</div>
-<div class="callout">실제 구매로 이어진 흔적도 있어요. malangping_zzal 댓글에 "이경실씨보고 구매했어요"라는 반응이 달렸어요.</div>
 </div>
-<h3 class="blocklabel">광고를 안 받는 계정 (같은 표본 안에서)</h3>
-<div class="chipgrid"><span class="chip sm">nato.tving</span><span class="chip sm">hana.zzal</span><span class="chip sm">easy.playlist</span><span class="chip sm">on_ggul_tip</span><span class="chip sm">jolly__humor</span><span class="chip sm">8282__humor</span><span class="chip sm">tteokbokki__zip</span><span class="chip sm">posilping_humor</span></div>
+<div class="calloutcol">
+<p class="callout">우리 시딩 기준 10원의 3분의 1 수준이지만, 밈 페이지 구매 의도는 시딩 릴보다 낮게 봐야 해요. 댓글은 3~5개 수준이고 "다들 피피엘이네" 같은 반응도 나와요.</p>
+<p class="callout">조회수는 그 계정이 평소에 받던 수준과 비슷해요. 연예인이 조회수를 끌어올리는 게 아니라, 계정이 원래 가진 도달을 그대로 사고 광고 티만 지우는 포장에 가까워요.</p>
+<p class="callout">실제 구매로 이어진 흔적도 있어요. malangping_zzal 댓글에 "이경실씨보고 구매했어요"라는 반응이 달렸어요.</p>
+</div>
+</div>
+<h3 class="steplabel">같은 표본 안에서 광고를 안 받는 계정</h3>
+<div class="chipgrid wide"><span class="chip sm">nato.tving</span><span class="chip sm">hana.zzal</span><span class="chip sm">easy.playlist</span><span class="chip sm">on_ggul_tip</span><span class="chip sm">jolly__humor</span><span class="chip sm">8282__humor</span><span class="chip sm">tteokbokki__zip</span><span class="chip sm">posilping_humor</span></div>
 </section>
-<section class="band tint" aria-labelledby="apply-h">
-<div class="sechead"><span class="chip" aria-hidden="true">05</span><h2 id="apply-h">우리 적용</h2></div>
-<div class="notecard">글로우덤 기미크림은 같은 포맷으로 바로 바꿔볼 수 있어요. 연예인 피부 가십 클립에 운영자 1인칭 후기, 검색용 해시태그를 붙이는 방식이에요.</div>
-<div class="notecard">착한구두 쪽은 이 표본에 신발·패션 광고가 한 건도 없었어요. 지금까지는 뷰티·건강식품 광고만 확인됐어요.</div>
-<div class="notecard">사려면 캠페인 A가 쓴 계정 세트가 검증된 목록이에요. luna.player·one_star_video·dotori_channel은 40만원대, good_tip_magazine·comedy.1989__·happing_box는 25만~35만원대예요.</div>
+<section id="apply" class="band" aria-labelledby="apply-h">
+<div class="sechead">
+<h2 id="apply-h">우리 적용</h2>
+<p class="lede">바로 옮겨볼 수 있는 쪽과, 이 표본으로는 답이 안 나오는 쪽이 갈려요.</p>
+</div>
+<div class="notegrid">
+<div class="notecard">
+<h3>글로우덤 기미크림</h3>
+<p>같은 포맷으로 바로 바꿔볼 수 있어요. 연예인 피부 가십 클립에 운영자 1인칭 후기, 검색용 해시태그를 붙이는 방식이에요.</p>
+</div>
+<div class="notecard">
+<h3>착한구두</h3>
+<p>이 표본에 신발·패션 광고가 한 건도 없었어요. 지금까지 확인된 건 뷰티와 건강식품뿐이에요.</p>
+</div>
+<div class="notecard">
+<h3>계정을 산다면</h3>
+<p>캠페인 A가 쓴 세트가 검증된 목록이에요. luna.player·one_star_video·dotori_channel은 40만원대, good_tip_magazine·comedy.1989__·happing_box는 25만~35만원대예요.</p>
+</div>
+</div>
 <details class="confirmbox">
-<summary>확인 필요한 부분 3가지</summary>
+<summary>아직 확인 못 한 것 3가지</summary>
 <ul>
 <li>7개 계정에 동시 배포된 게 한 대행사 패키지인지, 계정 운영사가 같은 곳인지는 아직 확인 못 했어요.</li>
 <li>조회수 미확인 4건이 있어요 (dotori_channel·happing_box·melon__paper 2건).</li>
@@ -422,7 +782,7 @@ footer{margin:40px 0 90px;padding-top:24px;border-top:1px solid var(--line)}
 </ul>
 </details>
 </section>
-<footer><p class="note">자료 출처: 19개 계정 화면을 직접 확인, 2026년 10월 1일 기준.</p></footer>
+<footer><p class="note">19개 계정 화면을 직접 열어 정리했어요. 2026년 10월 1일 기준.</p></footer>
 </main>
 <script>
 
