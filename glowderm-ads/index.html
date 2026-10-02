@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>글로우덤 기미크림 AI 광고영상 최종본</title>
+<meta name="robots" content="noindex">
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+:root{
+  color-scheme:light;
+  --paper:#E9EBEF;
+  --paper-2:#E1E4EA;
+  --surface:#FFFFFF;
+  --surface-2:#F4F5F8;
+  --ink:#14181F;
+  --ink-2:#4B525C;
+  --ink-3:#5E6670;
+  --line:#CFD4DC;
+  --line-2:#DCE0E7;
+  --accent:#1536D9;
+  --accent-deep:#0F27A3;
+  --accent-wash:#E4E8FB;
+  --on-accent:#FFFFFF;
+  --mark:#FBE9A8;
+  --mark-edge:#E8C64A;
+  --sh:0 1px 1px rgba(20,24,31,.05),0 10px 24px -16px rgba(20,24,31,.42);
+  --sh-lift:0 2px 4px rgba(20,24,31,.07),0 22px 40px -20px rgba(20,24,31,.55);
+  --r:16px; --r-sm:10px;
+  --ease:cubic-bezier(.22,.8,.26,1);
+  --sans:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --display:'Gothic A1','Pretendard Variable',Pretendard,'Apple SD Gothic Neo',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:24px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.72;letter-spacing:-.005em;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--accent);color:var(--on-accent)}
+.mast,main{max-width:1200px;margin:0 auto;padding:0 32px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:4px}
+img,video{max-width:100%}
+
+/* ---------- 마스트헤드 ---------- */
+.mast{padding-top:64px;padding-bottom:0}
+.eyebrow{
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);margin:0 0 26px;
+  padding-bottom:14px;border-bottom:1px solid var(--line);
+}
+h1{
+  font-family:var(--display);font-weight:900;
+  font-size:clamp(34px,6.2vw,66px);line-height:1.08;letter-spacing:-.035em;
+  margin:0;max-width:16ch;word-break:keep-all;text-wrap:balance;
+}
+.standfirst{
+  font-size:17px;line-height:1.7;color:var(--ink-2);
+  max-width:56ch;margin:22px 0 0;word-break:keep-all;
+}
+.mstats{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:0;margin:44px 0 0;border-top:1px solid var(--line);
+}
+.mstat{
+  display:flex;flex-direction:column;gap:2px;
+  padding:18px 20px 20px 0;border-right:1px solid var(--line-2);
+}
+.mstat:last-child{border-right:0}
+.mnum{
+  font-family:var(--display);font-weight:900;font-size:clamp(26px,3.4vw,40px);
+  line-height:1.05;letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+}
+.mlab{font-size:12.5px;color:var(--ink-3);letter-spacing:-.01em;word-break:keep-all}
+.navrow{
+  display:flex;flex-wrap:wrap;gap:4px 26px;
+  margin:0;padding:18px 0 22px;border-top:1px solid var(--line);
+}
+.navrow a{
+  font-size:13.5px;font-weight:600;color:var(--ink-2);text-decoration:none;
+  padding-bottom:2px;border-bottom:2px solid transparent;
+  transition:color .2s var(--ease),border-color .2s var(--ease);
+}
+.navrow a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* ---------- 섹션 ---------- */
+section.band{position:relative;padding:72px 0 80px}
+section.band::before{
+  content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;
+  width:100vw;transform:translateX(-50%);background:transparent;
+}
+section.band.soft::before{background:var(--paper-2)}
+section.band + section.band::after{
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;background:var(--line);
+}
+.sechead{display:flex;flex-direction:column;gap:12px;margin:0 0 30px;max-width:70ch}
+.sechead h2{
+  font-family:var(--display);font-weight:900;
+  font-size:clamp(24px,3.4vw,38px);letter-spacing:-.032em;line-height:1.16;
+  margin:0;max-width:22ch;word-break:keep-all;text-wrap:balance;
+}
+.lede{font-size:15.5px;color:var(--ink-2);max-width:62ch;margin:0;word-break:keep-all}
+h3{font-family:var(--sans);font-weight:700;font-size:18px;letter-spacing:-.018em;margin:0 0 8px;word-break:keep-all}
+h4{font-family:var(--sans);font-weight:700;font-size:14.5px;letter-spacing:-.012em;margin:0;word-break:keep-all}
+.steplabel{
+  font-family:var(--sans);font-weight:700;font-size:15px;color:var(--ink-2);
+  letter-spacing:-.015em;margin:52px 0 0;padding-top:20px;border-top:1px solid var(--line);
+}
+
+.sumlist{
+  list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;
+  font-size:15.5px;color:var(--ink);max-width:72ch;
+}
+.sumlist li{padding-left:22px;position:relative;word-break:keep-all}
+.sumlist li::before{
+  content:"";position:absolute;left:0;top:.72em;
+  width:10px;height:2px;background:var(--accent);
+}
+
+.tablewrap{overflow-x:auto;margin-top:30px}
+table.camptable{width:100%;min-width:560px;border-collapse:collapse;font-size:13.5px}
+table.camptable th,table.camptable td{
+  border-bottom:1px solid var(--line-2);padding:11px 16px 11px 0;
+  text-align:left;vertical-align:top;word-break:keep-all;
+}
+table.camptable thead th{
+  border-bottom:1px solid var(--ink);
+  font-size:11.5px;letter-spacing:.01em;
+  color:var(--ink-3);font-weight:600;padding-bottom:9px;
+}
+table.camptable tbody tr:last-child td{border-bottom:0}
+table.pricetable{min-width:420px}
+table.pricetable td{font-variant-numeric:tabular-nums}
+td.cpv{font-family:var(--mono);font-weight:600;color:var(--accent)}
+
+/* ---------- 자막 공식 패널 ---------- */
+.formula{
+  margin:0 0 8px;padding:8px;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:calc(var(--r) + 8px);
+}
+.formula-core{
+  padding:34px 34px 30px;background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--r);box-shadow:var(--sh);
+}
+.formula-title{
+  font-family:var(--display);font-weight:900;font-size:clamp(19px,2.4vw,26px);
+  letter-spacing:-.03em;margin:0 0 20px;word-break:keep-all;
+}
+.formula-line{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;
+  font-family:var(--display);font-weight:900;
+  font-size:clamp(18px,3.1vw,33px);line-height:1.45;letter-spacing:-.03em;
+  margin:0;word-break:keep-all;
+}
+.plus{color:var(--ink-3);font-weight:700;font-size:.72em}
+.formula-note{
+  font-size:14.5px;color:var(--ink-2);max-width:60ch;
+  margin:22px 0 0;word-break:keep-all;
+}
+
+.s-mod{color:var(--ink-2);border-bottom:2px dotted var(--ink-3);padding-bottom:1px}
+.s-name{color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:1px}
+.s-gen{color:var(--accent);border-bottom:2px dashed var(--accent);padding-bottom:1px}
+.s-res{
+  color:var(--ink);background:var(--mark);
+  box-shadow:inset 0 -2px 0 var(--mark-edge);
+  padding:1px 5px;border-radius:3px;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
+}
+
+.fstats{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;
+  margin:30px 0 0;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2);
+}
+.fstat{display:flex;flex-direction:column;gap:1px;padding:16px 16px 18px 0;border-right:1px solid var(--line-2)}
+.fstat:last-child{border-right:0}
+.fnum{
+  font-family:var(--display);font-weight:900;font-size:30px;line-height:1.1;
+  letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+}
+.fstat.zero .fnum{color:var(--accent)}
+.flab{font-size:12px;color:var(--ink-3);word-break:keep-all;line-height:1.45}
+
+.legend{
+  list-style:none;display:flex;flex-wrap:wrap;gap:8px 24px;
+  margin:20px 0 0;padding:0;font-size:12.5px;color:var(--ink-3);
+}
+.legend li{display:flex;align-items:center;gap:7px;word-break:keep-all}
+.legend .s-mod,.legend .s-name,.legend .s-gen,.legend .s-res{font-size:12.5px;font-weight:600}
+
+.subs{
+  list-style:none;margin:26px 0 0;padding:22px 0 0;border-top:1px solid var(--line-2);
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 32px;
+}
+.subrow{
+  display:flex;flex-direction:column;gap:3px;
+  padding:11px 0;border-bottom:1px solid var(--line-2);min-width:0;
+}
+.subacct{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);letter-spacing:.01em}
+.subline{font-size:14.5px;line-height:1.95;word-break:keep-all}
+.subline span{margin-right:3px}
+
+/* ---------- 다섯 단계 ---------- */
+.stepgrid{display:flex;flex-direction:column;gap:0;margin-top:22px}
+.stepcard{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line-2)}
+.stepcard:last-child{border-bottom:0}
+.stepnum{
+  font-family:var(--display);font-weight:900;font-size:30px;line-height:1;
+  color:var(--accent);letter-spacing:-.03em;
+}
+.stepbody p{margin:0;color:var(--ink-2);max-width:60ch;word-break:keep-all}
+.examplelist{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.examplelist li{
+  font-size:13.5px;color:var(--ink);background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--r-sm);
+  padding:9px 13px;word-break:keep-all;max-width:62ch;
+}
+
+/* ---------- 캠페인 카드 ---------- */
+.campblock{margin-top:44px;padding-top:26px;border-top:1px solid var(--line)}
+.campblock:first-of-type{margin-top:8px;padding-top:0;border-top:0}
+.campheadrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.campheadrow h3{margin:0;font-size:17.5px}
+.chip{
+  display:inline-block;background:var(--ink);color:var(--surface);
+  font-size:11px;font-weight:600;letter-spacing:.02em;
+  padding:5px 12px;border-radius:999px;width:fit-content;white-space:nowrap;
+}
+.meta{font-size:12.5px;color:var(--ink-3);margin:8px 0 0;line-height:1.6;word-break:keep-all}
+
+.cardgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 24px;margin-top:22px}
+.card{margin:0;min-width:0;display:flex;flex-direction:column}
+.frame{
+  position:relative;aspect-ratio:9/16;overflow:hidden;background:#0A0A0C;
+  border-radius:12px;box-shadow:var(--sh);
+  transition:box-shadow .32s var(--ease),transform .32s var(--ease);
+}
+.frame video,.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.frame.novideo{display:flex;align-items:center;justify-content:center}
+.card:hover .frame{transform:translateY(-4px);box-shadow:var(--sh-lift)}
+.textnote{font-size:12.5px;color:#fff;opacity:.65}
+.tag{
+  position:absolute;top:9px;left:9px;background:rgba(10,10,12,.62);color:#fff;
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  font-size:10.5px;font-weight:600;letter-spacing:.01em;
+  padding:4px 10px;border-radius:999px;z-index:2;
+}
+figcaption{margin-top:13px;display:flex;flex-direction:column;gap:5px;font-size:13px;line-height:1.56;word-break:keep-all}
+.cardtop{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.viewsbig{font-weight:700;font-size:13.5px;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.adbadge{
+  font-size:10px;font-weight:600;letter-spacing:.01em;
+  background:var(--accent);color:var(--on-accent);padding:3px 9px;border-radius:999px;white-space:nowrap;
+}
+.samebadge{
+  font-size:10px;font-weight:500;color:var(--ink-3);letter-spacing:.01em;
+  border:1px solid var(--line);padding:3px 9px;border-radius:999px;white-space:nowrap;
+}
+.caption{color:var(--ink);margin:2px 0 0}
+.composition{color:var(--ink-3);font-size:12px;margin:0;line-height:1.55}
+.chipgrid{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.chipgrid.wide{margin-top:18px;gap:7px}
+.chip.sm{
+  background:transparent;color:var(--ink-3);border:1px solid var(--line);
+  font-weight:500;font-size:11px;padding:4px 10px;letter-spacing:0;
+}
+.campnote{
+  align-self:start;min-width:0;
+  padding:24px 26px 26px;background:var(--surface);
+  border:1px solid var(--line-2);border-left:3px solid var(--ink);
+  border-radius:var(--r);box-shadow:var(--sh);
+}
+.campnote p{margin:0;font-size:14.5px;line-height:1.78;color:var(--ink-2);max-width:54ch;word-break:keep-all}
+
+.fullbtn{
+  margin-top:9px;align-self:flex-start;
+  font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:-.01em;
+  background:var(--surface);border:1px solid var(--line);color:var(--ink);
+  padding:7px 13px;cursor:pointer;border-radius:999px;
+  transition:background .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .12s var(--ease);
+}
+.fullbtn:hover{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fullbtn:active{transform:scale(.97)}
+.fullbtn.playing{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+
+/* ---------- 단가 ---------- */
+.costgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.costgrid>*{min-width:0}
+.costgrid .tablewrap{margin-top:0}
+.calloutcol{display:flex;flex-direction:column;gap:14px}
+.callout{
+  margin:0;padding:16px 18px;background:var(--surface);
+  border:1px solid var(--line-2);border-left:3px solid var(--accent);
+  border-radius:var(--r-sm);box-shadow:var(--sh);
+  font-size:14px;line-height:1.68;word-break:keep-all;
+}
+
+/* ---------- 우리 적용 ---------- */
+.notegrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.notecard{
+  padding:22px 22px 24px;background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--r);box-shadow:var(--sh);
+}
+.notecard h3{font-size:15.5px;margin:0 0 8px}
+.notecard p{margin:0;color:var(--ink-2);font-size:14px;line-height:1.68;word-break:keep-all}
+.confirmbox{
+  margin-top:26px;padding:18px 22px;background:transparent;
+  border:1px dashed var(--line);border-radius:var(--r-sm);max-width:80ch;
+}
+.confirmbox summary{cursor:pointer;font-weight:700;font-size:14.5px;letter-spacing:-.015em}
+.confirmbox ul{margin:14px 0 0;padding-left:20px;color:var(--ink-2);font-size:13.5px;display:flex;flex-direction:column;gap:7px;word-break:keep-all}
+
+footer{margin:0 0 96px;padding-top:26px;border-top:1px solid var(--line)}
+.note{color:var(--ink-3);font-size:13px;margin:0;word-break:keep-all}
+
+/* ---------- 김가연으로 간다 ---------- */
+.lede.tight{margin:10px 0 0;font-size:14.5px}
+.fnum.sm{font-size:clamp(17px,2.1vw,24px);line-height:1.2}
+.budgettable{min-width:480px}
+.budgettable .waverow th{
+  border-bottom:1px solid var(--line-2);border-top:1px solid var(--line-2);
+  padding:14px 16px 10px 0;color:var(--accent);
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.04em;
+}
+.budgettable tbody tr:first-child th{border-top:0}
+.budgettable td.unk{color:var(--ink-3);font-variant-numeric:normal}
+.budgettable tbody tr:last-child td{border-bottom:1px solid var(--ink)}
+
+.capgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+.capcard{
+  min-width:0;padding:8px;background:var(--surface-2);
+  border:1px solid var(--line);border-radius:calc(var(--r) + 8px);
+}
+.capcore{
+  height:100%;display:flex;flex-direction:column;align-items:flex-start;gap:13px;
+  padding:22px 24px 24px;background:var(--surface);
+  border:1px solid var(--line-2);border-radius:var(--r);box-shadow:var(--sh);
+}
+.captext{margin:0;font-size:14.5px;line-height:1.82;color:var(--ink);word-break:keep-all}
+.capcta{
+  margin:0;padding-left:13px;border-left:2px solid var(--accent);
+  font-size:13.5px;font-weight:700;color:var(--accent);
+  letter-spacing:-.015em;word-break:keep-all;
+}
+.captags{margin-top:auto;padding-top:4px}
+
+/* ---------- 반응형 ---------- */
+@media (max-width:1080px){
+  .cardgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .campnote{grid-column:span 2 !important}
+  .costgrid{grid-template-columns:1fr;gap:28px}
+  .notegrid{grid-template-columns:1fr}
+  .capgrid{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .mast,main{padding:0 24px}
+  section.band{padding:52px 0 60px}
+  .subs{grid-template-columns:1fr;gap:0}
+  .formula-core{padding:26px 22px 24px}
+  .mstats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mstat{border-right:0;border-bottom:1px solid var(--line-2);padding-right:12px}
+  .mstat:nth-child(odd){border-right:1px solid var(--line-2)}
+  .mstat:nth-last-child(-n+2){border-bottom:0}
+}
+@media (max-width:640px){
+  .mast,main{padding:0 18px}
+  .mast{padding-top:40px}
+  body{font-size:15.5px}
+  .cardgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+  .campnote{grid-column:1 / -1 !important;padding:20px 20px}
+  .fstats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fstat{border-bottom:1px solid var(--line-2);padding-right:12px}
+  .fstat:nth-child(even){border-right:0}
+  .fstat:nth-last-child(-n+2){border-bottom:0}
+  .capcore{padding:20px 19px 22px}
+  .stepcard{grid-template-columns:40px 1fr;gap:14px}
+  .stepnum{font-size:24px}
+  .navrow{gap:4px 18px}
+  figcaption{font-size:12.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
+  .card:hover .frame{transform:none}
+}
+
+/* ---------- 제작 소요 ---------- */
+.tgrid{display:flex;flex-direction:column;gap:0;margin-top:10px;border-top:1px solid var(--line)}
+.trow{display:grid;grid-template-columns:200px 1fr 190px;gap:22px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line-2)}
+.tname{display:flex;flex-direction:column;gap:2px;min-width:0}
+.tname b{font-size:15px;letter-spacing:-.015em}
+.tname span{font-size:12px;color:var(--ink-3)}
+.tbar{position:relative;height:34px;background:var(--surface);border:1px solid var(--line-2);border-radius:8px;overflow:hidden}
+.tbar i{display:block;height:100%;background:var(--accent);opacity:.92}
+.tbar em{position:absolute;left:12px;top:0;line-height:34px;font-style:normal;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--on-accent);mix-blend-mode:difference}
+.tspan{font-size:12.5px;color:var(--ink-3);text-align:right;font-variant-numeric:tabular-nums;word-break:keep-all}
+.tlgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:40px}
+.tlcol{min-width:0;padding:20px 20px 22px;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r);box-shadow:var(--sh)}
+.tlcol h4{font-size:15px;margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid var(--line-2)}
+ul.tl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+ul.tl li{display:grid;grid-template-columns:44px 1fr;gap:10px;font-size:13px;line-height:1.55;word-break:keep-all}
+ul.tl time{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:600;padding-top:2px}
+.fb{margin:14px 0 0;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--ink-2);line-height:1.6;word-break:keep-all}
+
+/* ---------- 문제·집행 ---------- */
+.notecard.hot{border-left:3px solid var(--accent)}
+.owner{margin-top:10px !important;font-family:var(--mono);font-size:11px !important;color:var(--ink-3) !important;letter-spacing:.02em}
+.runlist{margin:0;padding-left:0;list-style:none;counter-reset:r;display:flex;flex-direction:column;gap:12px;max-width:76ch}
+.runlist li{counter-increment:r;position:relative;padding:16px 20px 16px 62px;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r-sm);box-shadow:var(--sh);font-size:14.5px;line-height:1.7;word-break:keep-all}
+.runlist li::before{content:counter(r);position:absolute;left:20px;top:14px;font-family:var(--display);font-weight:900;font-size:24px;color:var(--accent);line-height:1}
+.runlist li b{display:block;font-size:15px;margin-bottom:2px}
+@media (max-width:1080px){.tlgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){.cardgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.trow{grid-template-columns:1fr;gap:8px}.tspan{text-align:left}.mstats{grid-template-columns:repeat(2,minmax(0,1fr))}.mast,main{padding:0 18px}}
+@media (max-width:560px){.tlgrid{grid-template-columns:1fr}}
+
+</style></head><body>
+<header class="mast">
+  <p class="eyebrow">Glowderm · 기미크림 AI 광고영상 · 2026-10-02</p>
+  <h1>AI 광고영상 6편, 지금 돌릴 수 있는 것부터</h1>
+  <p class="standfirst">웹디·BX·콘텐츠기획 세 라인이 한 달간 만든 기미크림 AI 광고영상 최종본을 한 곳에 모았습니다. 각 편의 상태, 라인별 제작 소요, 아직 막혀 있는 것, 집행 순서까지.</p>
+  <div class="mstats">
+    <div class="mstat"><span class="mnum">6편</span><span class="mlab">최종본 (웹디 2 · BX 2 · 콘텐츠기획 2)</span></div>
+    <div class="mstat"><span class="mnum">4시간</span><span class="mlab">최단 제작 — BX 영은 파트장</span></div>
+    <div class="mstat"><span class="mnum">15일</span><span class="mlab">최장 제작 — 웹디 시나리오1</span></div>
+    <div class="mstat"><span class="mnum">0건</span><span class="mlab">메타 광고 실제 집행</span></div>
+  </div>
+  <nav class="navrow"><a href="#finals">최종본</a><a href="#time">제작 소요</a><a href="#issues">지금 문제</a><a href="#run">집행 순서</a></nav>
+</header>
+<main>
+<section class="band" id="finals">
+  <div class="sechead"><h2>최종본 6편</h2><p class="lede">소리 없이 자동 재생됩니다. 버튼을 누르면 소리를 켜고 처음부터 한 번 재생합니다.</p></div>
+  
+<div class="campblock">
+  <div class="campheadrow"><h3>웹디자인팀 · 유라</h3><span class="chip">아스트라 + 힉스필드</span></div>
+  <p class="meta">유라 제작본을 제현이 마지막에 손봐서 전달한 최종본. TTS 상업이용 이슈는 음성 교체로 해소.</p>
+  <div class="cardgrid">
+<figure class="card">
+  <div class="frame">
+    <span class="tag">웹디</span>
+    <video preload="metadata" playsinline muted loop poster="videos/webd_parent.jpg" src="videos/webd_parent.mp4"></video>
+  </div>
+  <figcaption>
+    <div class="cardtop"><span class="viewsbig">시나리오1 · 학부모 썰</span><span class="adbadge">집행 가능</span><span class="samebadge">57초</span></div>
+    <p class="caption">TTS 썰형. 상업이용 불가였던 무료 음성을 SunHi로 교체한 수정본.</p>
+    <p class="composition">8/31 요청 → 9/4 1차 → 9/15 인물 9컷 교체 확정 → 9/29 음성 교체</p>
+    <button class="fullbtn" type="button">소리 켜고 재생</button>
+  </figcaption>
+</figure>
+<figure class="card">
+  <div class="frame">
+    <span class="tag">웹디</span>
+    <video preload="metadata" playsinline muted loop poster="videos/webd_scenario2_39s.jpg" src="videos/webd_scenario2_39s.mp4"></video>
+  </div>
+  <figcaption>
+    <div class="cardtop"><span class="viewsbig">시나리오2 · 39초</span><span class="adbadge">집행 가능</span><span class="samebadge">39초</span></div>
+    <p class="caption">9/30 완성본(50초)이 길어 배속·장면 편집으로 39초로 줄인 버전. 앞으로 30~40초 기준 합의.</p>
+    <p class="composition">9/28 소스 전달 → 9/30 완성 → 10/1 길이 조정</p>
+    <button class="fullbtn" type="button">소리 켜고 재생</button>
+  </figcaption>
+</figure></div>
+</div>
+<div class="campblock">
+  <div class="campheadrow"><h3>BX팀 · 연수 / 영은 파트장</h3><span class="chip">힉스필드 + 캡컷</span></div>
+  <p class="meta">시나리오1은 BX 작업 폴더에서 2주에 걸쳐, 0929 BA편은 영은 파트장이 약 4시간 만에 제작. 0929는 2차본이 미완 상태로 공유됨.</p>
+  <div class="cardgrid">
+<figure class="card">
+  <div class="frame">
+    <span class="tag">BX</span>
+    <video preload="metadata" playsinline muted loop poster="videos/bx_scenario1.jpg" src="videos/bx_scenario1.mp4"></video>
+  </div>
+  <figcaption>
+    <div class="cardtop"><span class="viewsbig">시나리오1 · BX본</span><span class="adbadge">집행 가능</span><span class="samebadge">45초</span></div>
+    <p class="caption">BX 시나리오1 전달본. 힉스필드 생성컷 기반.</p>
+    <p class="composition">9/17 컷 생성 시작 → 9/29 전달</p>
+    <button class="fullbtn" type="button">소리 켜고 재생</button>
+  </figcaption>
+</figure>
+<figure class="card">
+  <div class="frame">
+    <span class="tag">BX</span>
+    <video preload="metadata" playsinline muted loop poster="videos/bx_0929_ba.jpg" src="videos/bx_0929_ba.mp4"></video>
+  </div>
+  <figcaption>
+    <div class="cardtop"><span class="viewsbig">0929 · 비포애프터</span><span class="adbadge">캡션 수정 필요</span><span class="samebadge">24초</span></div>
+    <p class="caption">영은 파트장 제작. 10/1 2차본이 "중간에 멈춰서" 공유된 상태, 자동생성 캡션 오탈자 수정 예정.</p>
+    <p class="composition">9/2 요청 → 9/29 1차 → 10/1 2차(미완) · 실제 작업 약 4시간</p>
+    <button class="fullbtn" type="button">소리 켜고 재생</button>
+  </figcaption>
+</figure></div>
+</div>
+<div class="campblock">
+  <div class="campheadrow"><h3>콘텐츠기획 · 제현</h3><span class="chip">아스트라 단독</span></div>
+  <p class="meta">아스트라로 한 번에 뽑은 시나리오2 초안 2벌. v2는 대행사 음성을 참고용으로 얹은 버전.</p>
+  <div class="cardgrid">
+<figure class="card">
+  <div class="frame">
+    <span class="tag">콘텐츠기획</span>
+    <video preload="metadata" playsinline muted loop poster="videos/plan_scenario2_v1.jpg" src="videos/plan_scenario2_v1.mp4"></video>
+  </div>
+  <figcaption>
+    <div class="cardtop"><span class="viewsbig">시나리오2 · 편집초안 v1</span><span class="samebadge">42초</span></div>
+    <p class="caption">아스트라 자동 조립 초안.</p>
+    <p class="composition">9/21 제작</p>
+    <button class="fullbtn" type="button">소리 켜고 재생</button>
+  </figcaption>
+</figure>
+<figure class="card">
+  <div class="frame">
+    <span class="tag">콘텐츠기획</span>
+    <video preload="metadata" playsinline muted loop poster="videos/plan_scenario2_v2.jpg" src="videos/plan_scenario2_v2.mp4"></video>
+  </div>
+  <figcaption>
+    <div class="cardtop"><span class="viewsbig">시나리오2 · 대행사음성 v2</span><span class="adbadge">음성 교체 전제</span><span class="samebadge">42초</span></div>
+    <p class="caption">대행사 음성 참고본. 집행하려면 음성을 자체 TTS로 교체해야 함.</p>
+    <p class="composition">9/21 제작</p>
+    <button class="fullbtn" type="button">소리 켜고 재생</button>
+  </figcaption>
+</figure></div>
+</div>
+</section>
+<section class="band soft" id="time">
+  <div class="sechead"><h2>제작 소요</h2><p class="lede">최초 요청(또는 소스 전달)부터 최종본이 손에 들어오기까지. 슬랙 기록 기준이며, 연수·영은 파트장 소요는 사용자 확인 수치입니다.</p></div>
+  <div class="tgrid">
+<div class="trow">
+  <div class="tname"><b>유라 · 시나리오1</b><span>웹디자인팀</span></div>
+  <div class="tbar"><i style="width:100%"></i><em>15일</em></div>
+  <div class="tspan">8/31 요청 → 9/15 확정</div>
+</div>
+<div class="trow">
+  <div class="tname"><b>유라 · 시나리오2</b><span>웹디자인팀</span></div>
+  <div class="tbar"><i style="width:13%"></i><em>2일 + 조정 1일</em></div>
+  <div class="tspan">9/28 소스 → 9/30 완성 → 10/1 조정</div>
+</div>
+<div class="trow">
+  <div class="tname"><b>연수 · 시나리오1</b><span>BX팀</span></div>
+  <div class="tbar"><i style="width:80%"></i><em>약 12일</em></div>
+  <div class="tspan">9/17 컷 생성 → 9/29 전달</div>
+</div>
+<div class="trow">
+  <div class="tname"><b>영은 파트장 · 0929</b><span>BX팀</span></div>
+  <div class="tbar"><i style="width:4%"></i><em>약 4시간</em></div>
+  <div class="tspan">9/29 1차 → 10/1 2차(미완)</div>
+</div></div>
+  <div class="tlgrid"><div class="tlcol"><h4>유라 · 시나리오1</h4><ul class="tl"><li><time>8/31</time><span>시나리오1 제작 요청</span></li><li><time>9/2</time><span>AI가 기미 전후 묘사 거부 → 세포모션 CG로 우회</span></li><li><time>9/4</time><span>1차 완성</span></li><li><time>9/10</time><span>480P 화질 이슈, 인물 9컷 교체 요청</span></li><li><time>9/15</time><span>인물 교체본 확정</span></li><li><time>9/29</time><span>TTS 상업이용 이슈로 음성 교체(SunHi)</span></li></ul><p class="fb">화질 480P→720P 이상, 인물 컷 교체, 무료 TTS 상업이용 불가</p></div><div class="tlcol"><h4>유라 · 시나리오2</h4><ul class="tl"><li><time>9/22</time><span>아스트라+힉스필드 연동 자동화 테스트 시작</span></li><li><time>9/28</time><span>시나리오2 소스 전달</span></li><li><time>9/29</time><span>레이저 시술·제품 들고 있는 장면 추가 소스</span></li><li><time>9/30</time><span>완성본 전달 (50초)</span></li><li><time>10/1</time><span>제현이 배속·장면 편집으로 39초</span></li></ul><p class="fb">빠진 장면(레이저·제품·CTA) 보강, 길이 50초→39초, 앞으로 30~40초 기준</p></div><div class="tlcol"><h4>연수 · 시나리오1</h4><ul class="tl"><li><time>9/2</time><span>BX에 공식 제작 요청</span></li><li><time>9/15</time><span>매대·패키지 작업으로 1차 연기, 캡컷 TTS 사용 합의</span></li><li><time>9/17</time><span>힉스필드 컷 생성 시작</span></li><li><time>9/29</time><span>시나리오1 전달본 완성</span></li></ul><p class="fb">슬랙에 연수 명의 전달 기록은 없음. 작업 폴더 날짜 기준 소요.</p></div><div class="tlcol"><h4>영은 파트장 · 0929</h4><ul class="tl"><li><time>9/18</time><span>힉스필드 생성컷 공유, 심의 우려 질문</span></li><li><time>9/29</time><span>1차 초안 전달</span></li><li><time>10/1</time><span>2차본 공유 — 중간에 멈춘 상태, 캡션 수정 예정</span></li><li><time>10/1</time><span>제현이 애프터컷·엔딩 추가한 자체 편집본 공유</span></li></ul><p class="fb">장면·음성 지적 0건. 마지막 장면만 아쉬워 제현이 직접 보강.</p></div></div>
+</section>
+<section class="band" id="issues">
+  <div class="sechead"><h2>지금 문제</h2><p class="lede">10/1 기준 슬랙에서 확인되는 미해결 항목. 굵은 테두리는 집행에 직접 걸리는 것.</p></div>
+  <div class="notegrid">
+<div class="notecard hot">
+  <h3>메타 광고 집행 기록 0건</h3><p>우리 제작 영상이 실제로 집행됐다는 기록이 없습니다. 9/10·9/28에 집행 의향만 언급. 대행사 채널로 넘어간 흔적도 없음.</p>
+  <p class="owner">담당 · 제현</p>
+</div>
+<div class="notecard hot">
+  <h3>BX 0929 최종본 미전달</h3><p>10/1 2차본이 "중간에 멈춰서" 공유된 뒤 완성 메시지 없음. 자동생성 캡션 오탈자 수정이 남아 있음.</p>
+  <p class="owner">담당 · 영은 파트장</p>
+</div>
+<div class="notecard hot">
+  <h3>아스트라 결제 한도</h3><p>9/29 200불 플랜 결제가 막힘. 도구를 계속 쓸지 미결. 공용 계정이라 권한 충돌(9/22)도 있었음.</p>
+  <p class="owner">담당 · 제현 · 유라</p>
+</div>
+<div class="notecard ">
+  <h3>힉스필드 크레딧·공용계정 결제</h3><p>9/23 크레딧 소진, 9/4·9/7 공용계정 결제 사고 2회(제현 카드로 재충전). 부서별 비용 귀속 미정리.</p>
+  <p class="owner">담당 · 제현</p>
+</div>
+<div class="notecard ">
+  <h3>TTS 상업이용 — 웹디 라인은 해소</h3><p>타입캐스트 무료 음성 상업이용 불가 → 9/29 SunHi로 교체. BX는 캡컷 TTS 별도. 목소리 톤 품질은 "반복하며 잡자"로 미확정.</p>
+  <p class="owner">담당 · 유라 · 백지현</p>
+</div>
+<div class="notecard ">
+  <h3>AI 심의·캡컷 좌석</h3><p>9/18 심의 우려는 "아직 단계 아님"으로 보류. 캡컷 무제한권을 BX 계정으로 결제했는데 콘텐츠팀도 같이 쓰고 있어 좌석 정리 필요.</p>
+  <p class="owner">담당 · 영은 파트장</p>
+</div></div>
+</section>
+<section class="band soft" id="run">
+  <div class="sechead"><h2>집행 순서</h2><p class="lede">지금 바로 돌릴 수 있는 순서. 뒤로 갈수록 손봐야 할 게 있습니다.</p></div>
+  <ol class="runlist"><li><b>웹디 시나리오2 · 39초</b> 길이·음성 모두 문제 없음. 가장 먼저 집행.</li><li><b>웹디 시나리오1 · 학부모 썰 57초</b> 음성 교체 완료. 57초는 합의 기준(30~40초)보다 길어 성과 보고 컷 다운 여부 결정.</li><li><b>BX 시나리오1 · 45초</b> 전달본 그대로 집행 가능. 캡컷 TTS 톤만 한 번 확인.</li><li><b>BX 0929 · 비포애프터 24초</b> 영은 파트장 캡션 수정본 받은 뒤 집행. 짧고 훅이 강해 수정만 끝나면 상위 후보.</li><li><b>콘텐츠기획 시나리오2 v2</b> 대행사 음성이 얹혀 있어 자체 TTS로 교체한 뒤에만 집행.</li></ol>
+</section>
+<footer><p class="note">최종본 원본은 드랍박스 글로우덤광고 › 최종본 폴더에 웹디 · BX · 콘텐츠기획으로 나뉘어 있습니다.</p></footer>
+</main>
+<script>
+document.querySelectorAll('.card').forEach(c=>{
+  const v=c.querySelector('video'),b=c.querySelector('.fullbtn');
+  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ if(v.muted) v.play().catch(()=>{}); } else v.pause(); }),{threshold:.4});
+  io.observe(v);
+  b.addEventListener('click',()=>{
+    const on=!v.muted;
+    document.querySelectorAll('.card video').forEach(o=>{ if(o!==v){o.muted=true;o.loop=true;} });
+    document.querySelectorAll('.fullbtn').forEach(o=>{o.classList.remove('playing');o.textContent='소리 켜고 재생';});
+    if(on){ v.muted=true; v.loop=true; }
+    else { v.muted=false; v.loop=false; v.currentTime=0; v.play(); b.classList.add('playing'); b.textContent='소리 끄기'; }
+  });
+  v.addEventListener('ended',()=>{ v.muted=true; v.loop=true; v.play(); b.classList.remove('playing'); b.textContent='소리 켜고 재생'; });
+});
+</script>
+</body></html>
