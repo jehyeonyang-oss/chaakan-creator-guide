@@ -319,6 +319,12 @@ footer .note{margin:0}
 .hookhead p.fit b{color:var(--accent-deep)}
 .noshare{margin:18px 0 0;padding:16px 18px;border:2px solid var(--accent);background:var(--accent-wash);border-radius:12px;color:var(--ink);font-size:16px;line-height:1.6;font-weight:500;word-break:keep-all}
 .noshare b{color:var(--accent-deep)}
+.blocklabel{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin:34px 0 0;padding-top:16px;border-top:1px solid var(--line-2)}
+.card.bad .frame{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-wash),var(--sh)}
+.card.bad:hover .frame{box-shadow:0 0 0 2px var(--accent-wash),var(--sh-lift)}
+.failcard .frame::after{content:"✕ 안된 것";position:absolute;left:10px;bottom:10px;background:var(--accent-deep);color:var(--on-accent);font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.02em;padding:5px 10px;border-radius:999px;z-index:2}
+.card.bad figcaption .who{color:var(--accent-deep)}
+.badnote{color:var(--accent-deep);font-weight:600;font-size:13px;margin:2px 0 0;word-break:keep-all}
 </style>
 <div class="minibar" id="minibar">
 <div class="mininner">
@@ -402,39 +408,27 @@ footer .note{margin:0}
 <p>첫 번째 영상이 바로 이 구도예요. 카메라를 <strong>문 앞 바닥 가까이</strong> 두고 무릎 아래만 잡아요. 와이드 데님 밑단 아래로 <strong>키높이 신은 발을 한 걸음 앞으로</strong> 내딛는 게 첫 장면. 자막은 매릴리님이 늘 쓰시는 <strong>POV 스타일(흰 글씨 + 검은 박스, 화면 위쪽)</strong>로 얹어요.</p>
 <p class="fit"><b>이 구도엔 →</b> 자막 후보 — <strong>"POV: 바지 기장 안 줄였는데 밑단이 안 끌림"</strong> / <strong>"POV: 163인데 165 같다는 소리 들음"</strong> / <strong>"POV: 신발 하나 바꿨는데 다리 길어 보인다는 소리 들음"</strong> / <strong>"진짜 내 와이드 데님 구원템 소개함"</strong></p>
 </div>
-<div class="cardgrid three">
-<figure class="card ">
+<div class="cardgrid three"><figure class="card goodcard">
 <div class="frame">
 <video muted loop playsinline preload="metadata" poster="assets/p/k_dcnz.jpg" src="assets/c/k_dcnz.mp4"></video>
-<span class="tag">0~6초</span>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
 <span class="desc">문 앞 바닥에 카메라를 두고 와이드 데님 밑단 + 검은 신발. 위에 "To. 키작녀들에게 / 티 안 나게 +7cm 커지는 신발" → "바지 밑단 줄여줘" → 한 발 내딛으며 "진짜 내 구원템 소개시켜드림"</span>
 <span class="when">로우앵글 밑단 + 한 발</span>
 </figcaption>
-</figure><figure class="card ">
+</figure><figure class="card goodcard">
 <div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_10.jpg" src="assets/c/k_10.mp4"></video>
-<span class="tag">0~6초</span>
+<video muted loop playsinline preload="metadata" poster="assets/p/k_dcn0.jpg" src="assets/c/k_dcn0.mp4"></video>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
-<span class="desc">와이드 데님 밑단이 바닥에 닿는 화면에 공감 한 줄 → 같은 바지로 바로 비교. 밑단 끝에서 신발이 보이는 순간이 핵심</span>
-<span class="when">밑단 비교</span>
+<span class="desc">"pov. 쇼핑몰 1위 바지 샀는데 바닥 청소하는 157" — 바닥에 끌리는 와이드 바지 전신에 POV 한 줄</span>
+<span class="when">POV + 끌리는 밑단</span>
 </figcaption>
-</figure><figure class="card ">
-<div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_01.jpg" src="assets/c/k_01.mp4"></video>
-<span class="tag">0~6초</span>
-</div>
-<figcaption>
-<span class="who">참고 영상</span>
-<span class="desc">"바지 질질 girl들 주목" → 같은 자리에서 before / after. 밑단이 바닥에서 떨어지는 게 한 화면에 보여요</span>
-<span class="when">before → after</span>
-</figcaption>
-</figure>
-</div>
+</figure></div>
 </div>
 <div class="hookbox">
 <div class="hookhead">
@@ -442,8 +436,7 @@ footer .note{margin:0}
 <p>착한구두 샌들편에서 하셨던 첫 장면이에요. <strong>한쪽만 키높이를 신고, 맨발 쪽은 앞꿈치를 들어</strong> 높이를 맞춰요. 샌들 → 키높이로 신발만 바뀌고 구도는 똑같아요. 옆 영상처럼 <strong>좌우 비교 + cm 숫자</strong>를 붙이면 더 빨리 읽혀요.</p>
 <p class="fit"><b>이 구도엔 →</b> 자막 후보 — <strong>"POV: 한쪽만 신었는데 다리 길이가 달라짐"</strong> / <strong>"키작녀를 위한 +○cm 키높이 추천"</strong></p>
 </div>
-<div class="cardgrid three">
-<figure class="card ">
+<div class="cardgrid three"><figure class="card ">
 <div class="frame">
 <video muted loop playsinline preload="metadata" poster="assets/p/mr_onefoot.jpg" src="assets/c/mr_onefoot.mp4"></video>
 <span class="tag">0~1.4초</span>
@@ -453,48 +446,53 @@ footer .note{margin:0}
 <span class="desc">한쪽만 샌들을 신고, 맨발 쪽은 앞꿈치를 들어 올려요. 신은 쪽과 안 신은 쪽 높이 차이가 첫 화면에 바로 보여요</span>
 <span class="when">한쪽만 신기</span>
 </figcaption>
-</figure><figure class="card ">
-<div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_15.jpg" src="assets/c/k_15.mp4"></video>
-<span class="tag">0~6초</span>
-</div>
-<figcaption>
-<span class="who">참고 영상</span>
-<span class="desc">신기 전·후를 좌우로 붙이고 머리 위에 cm 숫자. 그다음 바로 신발로 넘어가요</span>
-<span class="when">좌우 + cm 숫자</span>
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="hookbox">
-<div class="hookhead">
-<h3>③ 더 세게 가고 싶으면 — 신발 한 짝 vs 책 몇 권 (선택)</h3>
-<p>②를 한 단계 키운 버전이에요. 한쪽은 키높이를 신고, <strong>맨발 쪽은 발밑에 책을 쌓아 밟고</strong> 높이를 맞춰요. "신발 한 짝 = 책 n권"이 한 화면에 보이게요. 벽돌로 한 예시는 있지만 <strong>책으로 해 본 영상은 아직 없어서</strong>, ①이나 ②로 찍은 뒤 여유 있을 때 한 번 더 찍어 보는 걸로 가요.</p>
-<p class="fit"><b>이 구도엔 →</b> 찍는 법 — ② 구도 그대로, 맨발 쪽 발밑에 책을 한 권씩 쌓아서 <strong>양쪽 무릎 높이가 같아지는 순간</strong>에 멈춰요. 책 권수는 직접 쌓아 보고 자막에 — <strong>"신발 하나 = 책 n권 높이"</strong></p>
-</div>
-<div class="cardgrid three">
-<figure class="card ">
-<div class="frame">
-<img src="assets/p/k_12brick.jpg" alt="참고 영상 첫 화면" loading="lazy">
-<span class="tag">첫 화면</span>
-</div>
-<figcaption>
-<span class="who">참고 영상</span>
-<span class="desc">한쪽은 키높이, 다른 쪽 발은 벽돌 위에. "이걸 신고 다닐 순 없으니까"로 신발에 연결해요. 벽돌 대신 책을 쌓으면 매릴리님 버전</span>
-<span class="when">소품으로 높이 맞추기</span>
-</figcaption>
-</figure><figure class="card ">
+</figure><figure class="card goodcard">
 <div class="frame">
 <video muted loop playsinline preload="metadata" poster="assets/p/k_db5n.jpg" src="assets/c/k_db5n.mp4"></video>
-<span class="tag">0~6초</span>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
 <span class="desc">"pov. 숨겨진 7센치 찾아주는 신발 찾음" → 같은 사람 전신을 좌우로 나란히 + "+7cm!"</span>
 <span class="when">POV + 좌우 전신</span>
 </figcaption>
-</figure>
+</figure></div>
 </div>
+<div class="hookbox">
+<div class="hookhead">
+<h3>③ 더 세게 가고 싶으면 — 신발 한 짝 vs 책 몇 권 (선택)</h3>
+<p>②를 한 단계 키운 버전이에요. 한쪽은 키높이를 신고, <strong>맨발 쪽은 발밑에 책을 쌓아 밟고</strong> 높이를 맞춰요. "신발 한 짝 = 책 n권"이 한 화면에 보이게요. <strong>아직 해 본 영상이 없는 방식</strong>이라, ①이나 ②로 찍은 뒤 여유 있을 때 한 번 더 찍어 보는 걸로 가요.</p>
+<p class="fit"><b>이 구도엔 →</b> 찍는 법 — ② 구도 그대로, 맨발 쪽 발밑에 책을 한 권씩 쌓아서 <strong>양쪽 무릎 높이가 같아지는 순간</strong>에 멈춰요. 책 권수는 직접 쌓아 보고 자막에 — <strong>"신발 하나 = 책 n권 높이"</strong></p>
+</div>
+
+</div>
+<div class="hookbox">
+<div class="hookhead">
+<h3>이렇게 시작하면 안 돼요 — 비교·숫자가 안 읽히는 첫 화면</h3>
+<p>둘 다 첫 3초에 키 이야기를 꺼냈는데 <strong>'전'이 맨발이 아니거나, 숫자가 아예 없어서</strong> 차이가 안 보였어요.</p>
+
+</div>
+<div class="cardgrid three"><figure class="card bad failcard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/x_dbsm.jpg" src="assets/c/x_dbsm.mp4"></video>
+<span class="tag">안된 것</span>
+</div>
+<figcaption>
+<span class="who">안 된 예시</span>
+<span class="badnote">'162cm → 169cm' 양쪽 비교 화면인데 왼쪽 '전'에도 굽 두꺼운 슬리퍼를 신고 있어요. 두 사진의 크기·위치도 달라서 키가 커진 게 눈에 안 들어와요.</span>
+<span class="when">'전'에도 굽 있는 신발</span>
+</figcaption>
+</figure><figure class="card bad failcard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/x_dtfj.jpg" src="assets/c/x_dtfj.mp4"></video>
+<span class="tag">안된 것</span>
+</div>
+<figcaption>
+<span class="who">안 된 예시</span>
+<span class="badnote">'키작녀 운동화 추천'이라고만 쓰고 몇 cm 커지는지 숫자가 없어요. 신은 모습은 첫 1초 다리컷뿐이고 나머지는 손에 들고 보여주는 클로즈업이에요.</span>
+<span class="when">숫자 없이 '추천'만</span>
+</figcaption>
+</figure></div>
 </div>
 <div class="callout face"><strong>고르는 법:</strong> 하나만 찍는다면 <strong>①</strong>. 두 가지 찍을 여유가 있으면 <strong>① + ②</strong>(①로 열고 바로 ② 한쪽만 신기로 증명). ③은 책 높이가 맞아야 살아나는 장면이라 <strong>찍어 보고 마음에 들 때만</strong> 써요.</div>
 <div class="callout rule"><span class="rulelabel">규칙</span>첫 프레임에 <strong>자막 + 신발</strong>이 둘 다 없으면 다시 찍어요. 자막은 늘 쓰시던 <strong>흰 글씨 + 검은 박스, 화면 위쪽</strong>. cm 숫자는 제품 확정 후 채움 칸 그대로 써요.</div>
@@ -503,39 +501,65 @@ footer .note{margin:0}
 <section id="step2" class="band soft" aria-labelledby="step2-h">
 <div class="inner">
 <div class="sechead"><span class="chip">STEP 02</span><h2 id="step2-h">증명: 손에 들고 + cm 숫자</h2></div>
-<p class="lede">훅 다음엔 <strong>숫자로 증명</strong>해요. 신발을 손에 들고 굽을 보여주거나, 신기 전·후 키 숫자를 띄워요. 겉으로 굽이 안 보이는 키높이라면 <strong>손가락으로 굽·안쪽 높이를 짚는 컷</strong>이 꼭 있어야 숫자가 믿겨요.</p>
+<p class="lede">훅 다음엔 <strong>숫자로 증명</strong>해요. 아래 세 장면 중 두 개 이상 넣어요 — <strong>ⓐ 신발을 손에 들고 굽 두께 보여주기 · ⓑ 손가락으로 굽 높이 짚기 · ⓒ 신기 전·후 키 숫자.</strong> 겉으로 굽이 안 보이는 키높이라면 ⓑ가 꼭 있어야 숫자가 믿겨요.</p>
+<h3 class="blocklabel">잘된 것</h3>
 <div class="cardgrid three">
-<figure class="card ">
+<figure class="card goodcard">
 <div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_dzur.jpg" src="assets/c/k_dzur.mp4"></video>
-<span class="tag">0~6초</span>
+<video muted loop playsinline preload="metadata" poster="assets/p/p_hold.jpg" src="assets/c/p_hold.mp4"></video>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
-<span class="desc">신발을 손에 들고 얼굴 옆에. 자막에 <strong>+7cm</strong>를 바로 넣고 "티 안 나는" 한 줄</span>
-<span class="when">손에 들고 + cm</span>
+<span class="desc">신발을 손에 들고 옆으로 돌려 <strong>굽 두께</strong>를 카메라에 보여줘요</span>
+<span class="when">ⓐ 손에 들고 굽</span>
 </figcaption>
 </figure>
-<figure class="card ">
+<figure class="card goodcard">
 <div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_db6h.jpg" src="assets/c/k_db6h.mp4"></video>
-<span class="tag">0~6초</span>
+<video muted loop playsinline preload="metadata" poster="assets/p/p_point.jpg" src="assets/c/p_point.mp4"></video>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
-<span class="desc">신기 전·후 전신을 나란히 두고 <strong>164cm → 172cm</strong> 숫자 → 신발을 들고 굽을 보여줘요</span>
-<span class="when">전·후 키 숫자 → 굽</span>
+<span class="desc">한 손으로 신발을 잡고 다른 손가락으로 <strong>굽 높이를 짚으며</strong> "무려 7cm 굽!"</span>
+<span class="when">ⓑ 손가락으로 굽 짚기</span>
 </figcaption>
 </figure>
-<figure class="card ">
+<figure class="card goodcard">
 <div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_dbiw.jpg" src="assets/c/k_dbiw.mp4"></video>
-<span class="tag">0~6초</span>
+<video muted loop playsinline preload="metadata" poster="assets/p/p_cm.jpg" src="assets/c/p_cm.mp4"></video>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
-<span class="desc">전·후 전신에 <strong>167cm → 175cm</strong>를 띄운 뒤 박스를 열어 신발로. 숫자가 먼저, 제품이 바로 뒤</span>
-<span class="when">키 숫자 → 언박싱</span>
+<span class="desc">신기 전·후 전신을 나란히 두고 머리 위에 <strong>164cm / 172cm</strong>, 아래에 "무려 티 안 나는 8cm 키높이!?"</span>
+<span class="when">ⓒ 전·후 키 숫자</span>
+</figcaption>
+</figure>
+</div>
+<h3 class="blocklabel">안된 것</h3>
+<div class="cardgrid three">
+<figure class="card bad failcard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/x_dyea.jpg" src="assets/c/x_dyea.mp4"></video>
+<span class="tag">안된 것</span>
+</div>
+<figcaption>
+<span class="who">안 된 예시</span>
+<span class="badnote">'+7cm' 자막은 있는데 신발을 손에 들고만 있고, 2초부터는 포장 상자 자랑으로 넘어가요. 신은 모습이 없으니 7cm가 눈에 안 보여요.</span>
+<span class="when">숫자만 있고 신은 모습 없음</span>
+</figcaption>
+</figure>
+<figure class="card bad failcard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/x_db4g.jpg" src="assets/c/x_db4g.mp4"></video>
+<span class="tag">안된 것</span>
+</div>
+<figcaption>
+<span class="who">안 된 예시</span>
+<span class="badnote">'7cm' 전·후 비교를 옆모습으로 찍고 긴 치마가 다리를 덮어서 차이가 거의 안 보여요. (추정)</span>
+<span class="when">옆모습 + 긴 치마로 비교</span>
 </figcaption>
 </figure>
 </div>
@@ -550,82 +574,58 @@ footer .note{margin:0}
 <div class="hookbox">
 <div class="hookhead">
 <h3>밑단 — 바닥 높이에서, 와이드 데님이 주인공</h3>
-<p>키높이는 <strong>바지 밑단과 같이 찍어야 효과가 보여요.</strong> 밑단이 바닥에 끌리다가 → 신발을 바꾸면 떨어지는 게 한 화면에 들어오면 돼요.</p>
+<p>키높이는 <strong>바지 밑단과 같이 찍어야 효과가 보여요.</strong> 밑단이 바닥에 안 끌리는 게 한 화면에 들어오면 돼요.</p>
 <p class="fit"><b>이 구도엔 →</b> 바지는 <strong>와이드 데님 · 부츠컷 데님</strong> 중 평소 제일 많이 입는 걸로. 밑단이 신발 앞코를 살짝 덮는 기장이 제일 예뻐요</p>
 </div>
-<div class="cardgrid three">
-<figure class="card ">
+<div class="cardgrid three"><figure class="card goodcard">
 <div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_05.jpg" src="assets/c/k_05.mp4"></video>
-<span class="tag">0~6초</span>
+<video muted loop playsinline preload="metadata" poster="assets/p/s_cm163.jpg" src="assets/c/s_cm163.mp4"></video>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
-<span class="desc">"pov. 키작녀 빡치는 상황" — 바닥에 끌리는 와이드 바지 밑단을 바닥 높이에서. 공감 다음에 신발</span>
-<span class="when">POV + 밑단</span>
+<span class="desc">와이드 데님 밑단 정면 → "이거 신으면 자신감이 막 생기고" → "밑단? 당연히 안 끌림"</span>
+<span class="when">밑단 안 끌림</span>
 </figcaption>
-</figure><figure class="card ">
+</figure><figure class="card goodcard">
 <div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_dcn0.jpg" src="assets/c/k_dcn0.mp4"></video>
-<span class="tag">0~6초</span>
+<video muted loop playsinline preload="metadata" poster="assets/p/s_hem2.jpg" src="assets/c/s_hem2.mp4"></video>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
-<span class="desc">"pov. 쇼핑몰 1위 바지 샀는데 바닥 청소하는 157" → 같은 바지에 신발만 바꿔 <strong>+7cm</strong> 전신 비교</span>
-<span class="when">POV + 와이드 바지 전신</span>
+<span class="desc">바닥 가까이에서 와이드 바지 밑단 아래 신발로 한 발씩 걸어 나와요</span>
+<span class="when">로우앵글 걷기</span>
 </figcaption>
-</figure><figure class="card ">
-<div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_06.jpg" src="assets/c/k_06.mp4"></video>
-<span class="tag">0~6초</span>
-</div>
-<figcaption>
-<span class="who">참고 영상</span>
-<span class="desc">와이드 데님 전신 고정 위에 자막으로 이야기를 풀어요 — "지나가던 여성분이 청바지 어디서 샀냐고" → "정보 따였어요"</span>
-<span class="when">정보 따인 썰</span>
-</figcaption>
-</figure>
-</div>
+</figure></div>
 </div>
 <div class="hookbox">
 <div class="hookhead">
 <h3>전신 — 키 숫자는 전신 위에</h3>
-<p>발끝까지 들어오는 전신에 <strong>키 숫자(○○cm → ○○cm)</strong>를 얹어요. 좌우로 붙이거나, 누군가 옆에 세워 두면 차이가 바로 읽혀요.</p>
+<p>발끝까지 들어오는 전신에 <strong>키 숫자(○○cm → ○○cm)</strong>를 얹어요. 좌우로 붙이면 차이가 바로 읽혀요.</p>
 
 </div>
-<div class="cardgrid three">
-<figure class="card ">
+<div class="cardgrid three"><figure class="card goodcard">
 <div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_dsth.jpg" src="assets/c/k_dsth.mp4"></video>
-<span class="tag">0~6초</span>
+<video muted loop playsinline preload="metadata" poster="assets/p/s_dsth.jpg" src="assets/c/s_dsth.mp4"></video>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
 <span class="desc">전신으로 걷다가 정면에 서서 <strong>158cm → 165.5cm</strong> 한 줄. 마지막에 신발만 가까이</span>
 <span class="when">전신 + 키 숫자</span>
 </figcaption>
-</figure><figure class="card ">
+</figure><figure class="card goodcard">
 <div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_dbnm.jpg" src="assets/c/k_dbnm.mp4"></video>
-<span class="tag">0~6초</span>
+<video muted loop playsinline preload="metadata" poster="assets/p/s_dbnm.jpg" src="assets/c/s_dbnm.mp4"></video>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
 <span class="desc">거울 셀피 전신을 <strong>156cm / 164cm</strong>로 나란히 → "저 이제 키작녀 아니에요"</span>
 <span class="when">거울 전신 좌우</span>
 </figcaption>
-</figure><figure class="card ">
-<div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/k_11.jpg" src="assets/c/k_11.mp4"></video>
-<span class="tag">0~6초</span>
-</div>
-<figcaption>
-<span class="who">참고 영상</span>
-<span class="desc">"Pov: 내가 7cm 키높이 운동화를 신어도 남친 키가 더 클 때" — 둘이 나란히 서서 <strong>+0cm / +7cm</strong></span>
-<span class="when">POV + 나란히</span>
-</figcaption>
-</figure>
-</div>
+</figure></div>
 </div>
 <div class="callout face"><strong>최소 3컷:</strong> 바닥 가까이 밑단 + 신발 → 손에 들고 +○cm → 발끝까지 들어오는 전신. 전신은 <strong>골목 옆모습</strong>이나 <strong>현관 정면</strong> 중 편한 곳으로.</div>
 </div>
@@ -635,10 +635,10 @@ footer .note{margin:0}
 <div class="sechead"><span class="chip">STEP 04</span><h2 id="step4-h">마무리: 댓글 → 링크 + 할인코드 DM</h2></div>
 <p class="lede">매릴리님은 늘 <strong>"정보 필요하면 댓글"</strong>로 닫으시죠. 이번에도 똑같이, 글(캡션)과 화면 자막 양쪽에 <strong>"댓글에 [키워드] 남겨주시면 구매 링크랑 15% 할인코드 보내드릴게요"</strong>를 넣어요. 키워드는 매릴리님이 편한 단어로 정해 주세요. 마지막 장면은 <strong>첫 장면 구도로 돌아오면</strong> 제일 깔끔해요.</p>
 <div class="cardgrid three">
-<figure class="card ">
+<figure class="card goodcard">
 <div class="frame">
 <video muted loop playsinline preload="metadata" poster="assets/p/e_dcnz.jpg" src="assets/c/e_dcnz.mp4"></video>
-<span class="tag">끝 3초</span>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
@@ -646,21 +646,10 @@ footer .note{margin:0}
 <span class="when">오프닝 구도로 복귀</span>
 </figcaption>
 </figure>
-<figure class="card ">
-<div class="frame">
-<video muted loop playsinline preload="metadata" poster="assets/p/e_06.jpg" src="assets/c/e_06.mp4"></video>
-<span class="tag">끝 3초</span>
-</div>
-<figcaption>
-<span class="who">참고 영상</span>
-<span class="desc">같은 전신 고정 위에 "구매링크 알려드림" → 가격 한 줄로 닫아요. 댓글 고정 안내까지</span>
-<span class="when">링크 안내로 닫음</span>
-</figcaption>
-</figure>
-<figure class="card ">
+<figure class="card goodcard">
 <div class="frame">
 <video muted loop playsinline preload="metadata" poster="assets/p/e_dptb.jpg" src="assets/c/e_dptb.mp4"></video>
-<span class="tag">끝 1.5초</span>
+<span class="tag">잘된 것</span>
 </div>
 <figcaption>
 <span class="who">참고 영상</span>
@@ -677,8 +666,55 @@ footer .note{margin:0}
 <div class="sechead"><span class="chip bad">STEP X</span><h2 id="step5-h">이러면 넘겨요</h2></div>
 <p class="lede">키높이 영상에서 <strong>이것만 피하세요.</strong></p>
 <ul class="dontlist">
-<li>얼굴 토킹·인사로 시작 (0초에 자막 + 신발 없이)</li><li>자막 없는 컷 — 컷마다 한 줄</li><li>밑단에 신발이 다 가려지는 기장</li><li>신발이 발끝에서 잘린 전신</li><li>+○cm 숫자 자막 없이 끝나기</li><li>다른 브랜드 신발을 같은 영상에 같이 노출</li><li>굽·키높이·가격을 틀리게 쓰기 — 채워 넣는 칸 그대로</li><li>댓글 안내 없이 끝내기</li>
+<li>얼굴 토킹·인사로 시작 (0초에 자막 + 신발 없이)</li><li>자막 없는 컷 — 컷마다 한 줄</li><li>밑단에 신발이 다 가려지는 기장</li><li>신발이 발끝에서 잘린 전신</li><li>+○cm 숫자 자막 없이 끝나기</li><li>전·후 비교에서 '전'에도 굽 있는 신발 신기 — '전'은 맨발·양말이나 플랫으로</li><li>숫자 자막만 띄우고 신은 모습 없이 상자·손에 든 컷으로 넘어가기</li><li>전·후 비교를 옆모습·긴 치마로 찍기 — 정면, 발끝까지</li><li>다른 브랜드 신발을 같은 영상에 같이 노출</li><li>굽·키높이·가격을 틀리게 쓰기 — 채워 넣는 칸 그대로</li><li>댓글 안내 없이 끝내기</li>
 </ul>
+<h3 class="blocklabel">안된 것 — 이렇게 하면 넘겨요</h3>
+<div class="cardgrid">
+<figure class="card bad failcard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/x_dbsm.jpg" src="assets/c/x_dbsm.mp4"></video>
+<span class="tag">안된 것</span>
+</div>
+<figcaption>
+<span class="who">안 된 예시</span>
+<span class="badnote">'162cm → 169cm' 양쪽 비교 화면인데 왼쪽 '전'에도 굽 두꺼운 슬리퍼를 신고 있어요. 두 사진의 크기·위치도 달라서 키가 커진 게 눈에 안 들어와요.</span>
+<span class="when">'전'에도 굽 있는 신발</span>
+</figcaption>
+</figure>
+<figure class="card bad failcard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/x_dtfj.jpg" src="assets/c/x_dtfj.mp4"></video>
+<span class="tag">안된 것</span>
+</div>
+<figcaption>
+<span class="who">안 된 예시</span>
+<span class="badnote">'키작녀 운동화 추천'이라고만 쓰고 몇 cm 커지는지 숫자가 없어요. 신은 모습은 첫 1초 다리컷뿐이고 나머지는 손에 들고 보여주는 클로즈업이에요.</span>
+<span class="when">숫자 없이 '추천'만</span>
+</figcaption>
+</figure>
+<figure class="card bad failcard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/x_dyea.jpg" src="assets/c/x_dyea.mp4"></video>
+<span class="tag">안된 것</span>
+</div>
+<figcaption>
+<span class="who">안 된 예시</span>
+<span class="badnote">'+7cm' 자막은 있는데 신발을 손에 들고만 있고, 2초부터는 포장 상자 자랑으로 넘어가요. 신은 모습이 없으니 7cm가 눈에 안 보여요.</span>
+<span class="when">숫자만 있고 신은 모습 없음</span>
+</figcaption>
+</figure>
+<figure class="card bad failcard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/x_db4g.jpg" src="assets/c/x_db4g.mp4"></video>
+<span class="tag">안된 것</span>
+</div>
+<figcaption>
+<span class="who">안 된 예시</span>
+<span class="badnote">'7cm' 전·후 비교를 옆모습으로 찍고 긴 치마가 다리를 덮어서 차이가 거의 안 보여요. (추정)</span>
+<span class="when">옆모습 + 긴 치마로 비교</span>
+</figcaption>
+</figure>
+</div>
 </div>
 </section>
 <section id="check" class="band" aria-labelledby="check-h">
