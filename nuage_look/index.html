@@ -1,0 +1,758 @@
+<title>착한구두 × 니아쥬 촬영 가이드</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root{
+  --bg:#FFFFFF; --soft:#FAF8F5; --tint:#FDF1EE;
+  --ink:#111113; --ink-2:#55555E; --ink-3:#8B8B94;
+  --line:#E8E5DF; --line-2:#F1EEE9;
+  --accent:#E4432B; --accent-deep:#C0301B; --accent-wash:#FCEDE9; --on-accent:#FFFFFF;
+  --card:#FFFFFF;
+  --sh:0 1px 2px rgba(17,17,19,.04),0 10px 26px -14px rgba(17,17,19,.20);
+  --sh-lift:0 2px 6px rgba(17,17,19,.06),0 22px 44px -18px rgba(17,17,19,.30);
+  --r:18px; --r-sm:12px;
+  --sans:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+}
+/* ponytail: 라이트 고정 — 9/18 다크 톤 반려, OS 다크모드에서도 흰 배경 */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:86px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.68;letter-spacing:-.005em;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;font-feature-settings:'tnum' 0}
+::selection{background:var(--accent);color:#fff}
+a{color:var(--accent-deep);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{
+  outline:2.5px solid var(--accent-deep);outline-offset:3px;border-radius:6px}
+img,video{max-width:100%}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+
+/* ---------- layout ---------- */
+.inner,.heroinner,.mininner,.stepper ol{max-width:1200px;margin:0 auto;padding:0 28px}
+section.band{position:relative;padding:82px 0 92px}
+section.band::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;
+  width:100vw;transform:translateX(-50%);background:transparent}
+section.band.soft::before{background:var(--soft)}
+section.band.tint::before{background:var(--tint)}
+
+/* ---------- mini nav ---------- */
+.minibar{position:fixed;top:0;left:0;right:0;z-index:50;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line);
+  transform:translateY(-102%);transition:transform .28s cubic-bezier(.4,0,.2,1)}
+.minibar.show{transform:none}
+.mininner{display:flex;align-items:center;gap:22px;height:58px}
+.minibrand{font-size:13.5px;font-weight:700;letter-spacing:-.01em;white-space:nowrap;flex:none}
+.minilinks{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+.minilinks::-webkit-scrollbar{display:none}
+.minilinks a{display:flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;
+  font-size:13.5px;font-weight:600;color:var(--ink-2);text-decoration:none;white-space:nowrap;
+  transition:background .18s,color .18s}
+.minilinks a em{font-family:var(--mono);font-style:normal;font-size:11px;font-weight:600;
+  color:var(--ink-3);transition:color .18s}
+.minilinks a:hover{background:var(--line-2);color:var(--ink)}
+.minilinks a.active{background:var(--accent-deep);color:var(--on-accent)}
+.minilinks a.active em{color:var(--on-accent);opacity:.72}
+
+/* ---------- hero ---------- */
+.hero{padding:48px 0 0;position:relative}
+.hero::before{content:"";position:absolute;z-index:-1;inset:0 auto auto 50%;
+  width:100vw;height:100%;transform:translateX(-50%);
+  background:radial-gradient(120% 90% at 82% 0%,var(--accent-wash) 0%,transparent 62%)}
+.heroinner{display:grid;grid-template-columns:minmax(0,1fr) 336px;gap:56px;align-items:center}
+.overline{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent-deep);margin:0 0 20px}
+h1{font-weight:800;font-size:clamp(36px,6vw,72px);line-height:1.08;letter-spacing:-.035em;
+  margin:0;max-width:14ch;word-break:keep-all}
+h1 mark{background:linear-gradient(transparent 58%,var(--accent-wash) 58%);color:var(--ink);
+  padding:0 .04em;box-shadow:inset 0 -.1em 0 var(--accent)}
+.brand{font-size:14px;font-weight:600;color:var(--ink-3);margin:22px 0 0;letter-spacing:-.01em}
+.herovid{padding-top:6px}
+.herocard{margin:0}
+.herocard .frame{aspect-ratio:9/16;border-radius:var(--r)}
+.herocard figcaption{margin-top:14px}
+
+/* ---------- stepper ---------- */
+.stepper{margin-top:30px;padding-bottom:22px}
+.stepper ol{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;
+  margin:0;position:relative}
+.stepper li{position:relative;min-width:0}
+.stepper li::after{content:"";position:absolute;top:19px;left:calc(50% + 24px);right:calc(-50% + 24px);
+  height:2px;background:var(--line);border-radius:2px}
+.stepper li:last-child::after{display:none}
+.stepper a{display:flex;flex-direction:column;align-items:center;gap:11px;text-decoration:none;
+  color:var(--ink);padding:4px 2px 8px;border-radius:14px}
+.snum{width:38px;height:38px;flex:none;display:grid;place-items:center;border-radius:50%;
+  background:var(--bg);border:2px solid var(--line);font-family:var(--mono);font-size:13px;
+  font-weight:600;color:var(--ink-2);position:relative;z-index:1;
+  transition:background .2s,border-color .2s,color .2s,transform .2s}
+.stitle{font-size:14.5px;font-weight:600;letter-spacing:-.015em;text-align:center;line-height:1.35}
+.stepper a:hover .snum{border-color:var(--accent);color:var(--accent-deep);transform:translateY(-2px)}
+.stepper li:last-child .snum{border-color:var(--accent);color:var(--accent-deep)}
+.stepper li:last-child a:hover .snum{background:var(--accent-deep);color:var(--on-accent)}
+
+/* ---------- section head ---------- */
+.sechead{margin:0 0 18px}
+.chip{display:inline-block;background:var(--accent-deep);color:var(--on-accent);
+  font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.14em;
+  padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.chip.bad{background:var(--ink);color:var(--bg)}
+h2{font-weight:800;font-size:clamp(27px,3.6vw,42px);line-height:1.2;letter-spacing:-.032em;
+  margin:0;max-width:20ch;word-break:keep-all}
+.lede{font-size:17px;color:var(--ink-2);max-width:68ch;margin:0;word-break:keep-all}
+.lede strong{color:var(--ink);font-weight:700}
+h3{font-weight:700;font-size:19px;letter-spacing:-.022em;margin:0}
+.subhead{margin:56px 0 0;font-size:21px}
+.note{color:var(--ink-3);font-size:13.5px;margin-top:16px}
+
+/* ---------- callout ---------- */
+.callout{margin-top:26px;padding:20px 24px;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--r);box-shadow:var(--sh);font-size:15px;max-width:74ch;
+  line-height:1.65;word-break:keep-all}
+.callout strong{color:var(--accent-deep);font-weight:700}
+.callout.face,.callout.rule{margin-top:32px;border-left:4px solid var(--accent)}
+.rulelabel{display:inline-block;background:var(--ink);color:var(--bg);font-family:var(--mono);
+  font-size:11px;font-weight:600;letter-spacing:.1em;padding:4px 10px;border-radius:999px;
+  margin-right:10px;vertical-align:1px}
+.callout.rule strong{color:var(--ink)}
+
+/* ---------- cards ---------- */
+.cardgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:30px}
+.cardgrid.three{grid-template-columns:repeat(3,1fr)}
+.card{margin:0;min-width:0}
+.frame{position:relative;aspect-ratio:9/16;overflow:hidden;background:#0C0C0E;
+  border-radius:16px;border:1px solid var(--line);box-shadow:var(--sh);
+  transition:box-shadow .24s ease,transform .24s ease,border-color .24s ease}
+.frame video,.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.card:hover .frame{transform:translateY(-4px);box-shadow:var(--sh-lift)}
+.tag{position:absolute;top:10px;left:10px;background:rgba(12,12,14,.58);color:#fff;
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.01em;
+  padding:5px 10px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+figcaption{margin-top:13px;display:flex;flex-direction:column;gap:6px;
+  font-size:14.5px;line-height:1.5;word-break:keep-all}
+figcaption .who{font-size:12.5px;font-weight:600;color:var(--ink-3);letter-spacing:-.01em}
+figcaption .who .views{font-family:var(--mono);font-weight:600;font-size:12.5px;color:var(--ink-2)}
+figcaption .desc{color:var(--ink);font-size:14.5px}
+figcaption .desc strong{font-weight:700}
+figcaption .when{align-self:flex-start;margin-top:2px;font-size:12px;
+  font-weight:600;color:var(--ink-2);background:var(--line-2);border-radius:999px;padding:4px 11px;
+  letter-spacing:-.01em}
+
+/* hook boxes */
+.hookboxes{margin-top:34px;display:flex;flex-direction:column;gap:22px}
+.hookbox{background:var(--card);border:1px solid var(--line);border-radius:22px;
+  padding:26px 26px 30px;box-shadow:var(--sh)}
+.hookhead{border-left:3px solid var(--accent);padding-left:14px}
+.hookhead p{color:var(--ink-2);font-size:14.5px;margin:5px 0 0;max-width:64ch;word-break:keep-all}
+.hookbox .cardgrid{margin-top:22px}
+
+/* bad cards */
+.card.bad .frame{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-wash),var(--sh)}
+.card.bad:hover .frame{box-shadow:0 0 0 2px var(--accent-wash),var(--sh-lift)}
+.card.bad .tag{background:var(--accent-deep);color:var(--on-accent)}
+.card.bad .frame::after{content:"✕ 이러면 넘겨요";position:absolute;left:10px;bottom:10px;
+  background:var(--accent-deep);color:var(--on-accent);font-size:11.5px;font-weight:700;
+  letter-spacing:-.01em;padding:5px 11px;border-radius:999px}
+.card.bad figcaption .who{color:var(--accent-deep)}
+.card.bad figcaption .who .views{color:var(--accent-deep)}
+
+.dontlist{list-style:none;padding:0;margin-top:22px;columns:2;column-gap:40px;font-size:14.5px}
+.dontlist li{break-inside:avoid;margin-bottom:12px;padding:11px 14px 11px 38px;position:relative;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm);
+  color:var(--ink-2);word-break:keep-all}
+.dontlist li::before{content:"✕";position:absolute;left:14px;top:11px;color:var(--accent-deep);
+  font-size:12px;font-weight:800}
+
+/* ---------- checklist ---------- */
+.checklist{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:10px;max-width:920px}
+.citem label{display:flex;align-items:flex-start;gap:15px;cursor:pointer;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:18px 20px;transition:border-color .18s,box-shadow .18s,background .18s}
+.citem label:hover{border-color:var(--ink-3);box-shadow:var(--sh)}
+.citem input{appearance:none;-webkit-appearance:none;flex:none;margin:1px 0 0;
+  width:24px;height:24px;border:2px solid var(--ink-3);border-radius:8px;background:var(--bg);
+  display:grid;place-items:center;cursor:pointer;transition:background .16s,border-color .16s}
+.citem input:checked{background:var(--accent-deep);border-color:var(--accent-deep)}
+.citem input:checked::after{content:"";width:11px;height:6px;
+  border-left:2.5px solid var(--on-accent);border-bottom:2.5px solid var(--on-accent);
+  transform:rotate(-45deg) translate(1px,-2px)}
+.cbody{display:flex;flex-direction:column;gap:5px;min-width:0}
+.clabel{font-size:12px;font-weight:700;letter-spacing:-.005em;color:var(--ink-3)}
+.clabel.c-bad{color:var(--accent-deep)}
+.ctext{font-size:15.5px;font-weight:500;letter-spacing:-.015em;word-break:keep-all;
+  transition:color .18s}
+.cnum{margin-left:auto;align-self:center;font-family:var(--mono);font-size:12px;
+  color:var(--ink-3);flex:none}
+.citem input:checked ~ .cbody .ctext{text-decoration:line-through;
+  text-decoration-color:var(--accent);text-decoration-thickness:2px;color:var(--ink-3)}
+.citem input:checked ~ .cbody .clabel{opacity:.5}
+.citem:has(input:checked) label{background:var(--accent-wash);border-color:var(--accent)}
+#count{font-family:var(--sans);font-weight:600;color:var(--ink-2)}
+
+/* ---------- full cases ---------- */
+.fullgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:30px}
+.fullcase{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);
+  border-radius:22px;padding:18px;box-shadow:var(--sh);min-width:0}
+.fullcase .frame{aspect-ratio:9/16;width:100%}
+.fullcase:hover .frame{transform:none;box-shadow:var(--sh)}
+.fullinfo{display:flex;flex-direction:column;flex:1;padding:18px 2px 2px}
+.fullinfo h3{font-size:20px}
+.fullinfo .meta{font-family:var(--mono);font-size:12.5px;letter-spacing:.02em;color:var(--ink-3);
+  margin:7px 0 0}
+.fullinfo .meta .fviews{color:var(--ink-2);font-weight:600}
+.story{list-style:none;padding:18px 0 0;margin:18px 0 0;border-top:1px solid var(--line);
+  font-size:14.5px;display:flex;flex-direction:column;gap:12px}
+.story li{display:flex;gap:14px;align-items:flex-start;word-break:keep-all}
+.story b{flex:none;min-width:62px;font-size:11.5px;font-weight:700;letter-spacing:.04em;
+  color:var(--accent-deep);background:var(--accent-wash);border-radius:999px;
+  padding:4px 10px;text-align:center;margin-top:2px}
+.iglink{display:inline-flex;align-items:center;align-self:flex-start;margin-top:auto;
+  font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);
+  border:1px solid var(--line);border-radius:999px;padding:9px 18px;
+  transition:border-color .18s,color .18s,background .18s}
+.story{margin-bottom:22px}
+.iglink:hover{border-color:var(--accent);color:var(--accent-deep);background:var(--accent-wash)}
+
+/* ---------- tables ---------- */
+.tablegrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-top:8px;
+  align-items:start}
+.tablewrap.wide{grid-column:1/-1}
+.tablewrap{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px 28px 10px;box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+table caption{font-weight:800;font-size:18px;letter-spacing:-.02em;text-align:left;
+  margin-bottom:16px;color:var(--ink);word-break:keep-all}
+table th,table td{border-top:1px solid var(--line-2);padding:13px 0;text-align:left;
+  vertical-align:top;word-break:keep-all}
+table tr:first-child th,table tr:first-child td{border-top:0}
+table th{width:110px;padding-right:16px;font-size:12.5px;font-weight:700;letter-spacing:.02em;
+  color:var(--accent-deep)}
+table td{color:var(--ink-2)}
+.tablewrap .note{margin:14px 0 16px}
+footer{margin:46px 0 0;padding-top:26px;border-top:1px solid var(--line)}
+footer .note{margin:0}
+
+/* ---------- motion ---------- */
+.rv{opacity:0;transform:translateY(16px);
+  transition:opacity .55s cubic-bezier(.22,.7,.3,1),transform .55s cubic-bezier(.22,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@keyframes heroUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.herotext>*,.herovid,.stepper li{animation:heroUp .7s cubic-bezier(.22,.7,.3,1) both}
+.herotext>.overline{animation-delay:.02s}
+.herotext>h1{animation-delay:.08s}
+.herotext>.brand{animation-delay:.16s}
+.herotext>.callout{animation-delay:.22s}
+.herovid{animation-delay:.18s}
+.stepper li:nth-child(1){animation-delay:.28s}
+.stepper li:nth-child(2){animation-delay:.34s}
+.stepper li:nth-child(3){animation-delay:.40s}
+.stepper li:nth-child(4){animation-delay:.46s}
+.stepper li:nth-child(5){animation-delay:.52s}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .rv{opacity:1;transform:none}
+  .card:hover .frame{transform:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .heroinner{grid-template-columns:minmax(0,1fr) 290px;gap:40px}
+  .cardgrid{gap:18px}
+}
+@media (max-width:900px){
+  section.band{padding:62px 0 70px}
+  .heroinner{grid-template-columns:1fr;gap:34px}
+  .herovid{max-width:300px}
+  h1{max-width:18ch}
+  .cardgrid,.cardgrid.three{grid-template-columns:repeat(2,1fr)}
+  .fullgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tablegrid{grid-template-columns:1fr}
+  .stepper ol{grid-template-columns:repeat(5,1fr);gap:6px}
+  .stitle{font-size:12.5px}
+  .stepper li::after{left:calc(50% + 20px);right:calc(-50% + 20px)}
+}
+@media (max-width:620px){
+  body{font-size:15.5px}
+  .inner,.heroinner,.mininner,.stepper ol{padding:0 18px}
+  .hero{padding-top:46px}
+  section.band{padding:52px 0 58px}
+  .heroinner{gap:28px}
+  .herovid{max-width:100%}
+  .cardgrid,.cardgrid.three{grid-template-columns:repeat(2,1fr);gap:14px}
+  .hookbox{padding:20px 16px 22px;border-radius:18px}
+  figcaption{font-size:13.5px}
+  figcaption .desc{font-size:13.5px}
+  .dontlist{columns:1}
+  .stepper{margin-top:40px}
+  .stepper ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;
+    padding-left:18px;padding-right:18px}
+  .stepper li::after{display:none}
+  .stepper a{flex-direction:row;justify-content:flex-start;gap:10px;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;padding:9px 12px}
+  .stitle{text-align:left}
+  .snum{width:30px;height:30px;font-size:12px}
+  .stitle{font-size:13.5px}
+  .minibrand{display:none}
+  .mininner{height:52px;gap:0}
+  .minilinks{margin-left:0}
+  .minilinks a span{display:none}
+  .minilinks a{padding:8px 13px}
+  .minilinks a em{font-size:12.5px}
+  .fullgrid{grid-template-columns:1fr;gap:18px}
+  .fullcase{padding:14px;border-radius:18px}
+  .citem label{padding:15px 16px;gap:12px}
+  .ctext{font-size:14.5px}
+  .cnum{display:none}
+  .tablewrap{padding:20px 18px 6px}
+  table th{width:88px;padding-right:12px}
+}
+@media (max-width:360px){
+  .cardgrid,.cardgrid.three{grid-template-columns:1fr}
+}
+
+.hookhead p.fit{color:var(--ink);background:var(--accent-wash);border-radius:8px;padding:8px 12px;margin-top:10px}
+.hookhead p.fit b{color:var(--accent-deep)}
+.noshare{margin:18px 0 0;padding:16px 18px;border:2px solid var(--accent);background:var(--accent-wash);border-radius:12px;color:var(--ink);font-size:16px;line-height:1.6;font-weight:500;word-break:keep-all}
+.noshare b{color:var(--accent-deep)}
+.blocklabel{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin:34px 0 0;padding-top:16px;border-top:1px solid var(--line-2)}
+.card.bad .frame{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-wash),var(--sh)}
+.card.bad:hover .frame{box-shadow:0 0 0 2px var(--accent-wash),var(--sh-lift)}
+.failcard .frame::after{content:"✕ 안된 것";position:absolute;left:10px;bottom:10px;background:var(--accent-deep);color:var(--on-accent);font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.02em;padding:5px 10px;border-radius:999px;z-index:2}
+.card.bad figcaption .who{color:var(--accent-deep)}
+.badnote{color:var(--accent-deep);font-weight:600;font-size:13px;margin:2px 0 0;word-break:keep-all}
+</style>
+<div class="minibar" id="minibar">
+<div class="mininner">
+<span class="minibrand">착한구두 × 니아쥬 촬영 가이드</span>
+<nav class="minilinks" aria-label="스텝 바로가기">
+<a href="#products" data-sec="products"><em>제품</em><span>이번 제품</span></a>
+<a href="#step1" data-sec="step1"><em>01</em><span>0~3초 공감 한 줄</span></a>
+<a href="#step2" data-sec="step2"><em>02</em><span>손에 들고 디테일</span></a>
+<a href="#step3" data-sec="step3"><em>03</em><span>하체 · 거울 코디 2벌</span></a>
+<a href="#step4" data-sec="step4"><em>04</em><span>15% · 댓글 → DM</span></a>
+<a href="#step5" data-sec="step5"><em>X</em><span>하지 마세요</span></a>
+</nav>
+</div>
+</div>
+<header class="hero">
+<div class="heroinner">
+<div class="herotext">
+<p class="overline">CHAAKAN × NUAGE · SHOOTING GUIDE</p>
+<h1>예쁜데 발도 편한 구두, <mark>이번엔 착한구두!</mark></h1>
+<p class="brand">착한구두 촬영 가이드 — 공감 한 줄 · 손 디테일 · 거울 코디 · 15% 할인 DM</p>
+<div class="callout">옆 영상은 <strong>니아쥬님이 지난번에 찍으신 구두 영상</strong>이에요. 이번 착한구두편도 <strong>이 흐름 그대로</strong> 가요 — <strong>손글씨 공감 한 줄 → 손에 들고 디테일 → 하체 걷기 + 거울 코디 2벌 → 손인사 "정보 톡".</strong> 바뀌는 건 신발과, 마지막에 <strong>15% 할인코드 + 댓글 자동 DM</strong>이 붙는 것뿐이에요. 업로드는 <strong>10월 23일(금)</strong> 기준으로 잡아 둘게요(일정 바뀌면 같이 조율해요). 제품은 제품 확정 후 안내해 드려요. 이 페이지는 <strong>니아쥬님께만 드리는 자료예요. 외부 공유·캡처 전달은 하지 말아 주세요.</strong> 촬영이 끝나면 페이지는 내려가요.</div>
+</div>
+<div class="herovid">
+<figure class="herocard">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_hook.jpg" src="assets/c/nj_hook.mp4"></video>
+<span class="tag">오프닝 0~7초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">바닥에 신발 두 켤레, 손으로 내려놓으며 큰 손글씨 자막 "진짜 별로잖아요 / 아무리 예뻐도 / 발이 불편하면" → "그래서 예쁜데 발도 편한 구두를 찾았어요!"</span>
+</figcaption>
+</figure>
+</div>
+</div>
+<nav class="stepper" aria-label="스텝 이동">
+<ol>
+<li><a href="#step1"><span class="snum">01</span><span class="stitle">0~3초 공감 한 줄</span></a></li>
+<li><a href="#step2"><span class="snum">02</span><span class="stitle">손에 들고 디테일</span></a></li>
+<li><a href="#step3"><span class="snum">03</span><span class="stitle">하체 · 거울 코디 2벌</span></a></li>
+<li><a href="#step4"><span class="snum">04</span><span class="stitle">15% · 댓글 → DM</span></a></li>
+<li><a href="#step5"><span class="snum">X</span><span class="stitle">하지 마세요</span></a></li>
+</ol>
+</nav>
+</header>
+<main>
+<section id="products" class="band soft" aria-labelledby="products-h">
+<div class="inner">
+<div class="sechead"><h2 id="products-h">이번에 소개할 제품</h2></div>
+<p class="lede"><strong>제품·색·사이즈는 제품 확정 후 안내해 드려요.</strong> 영상 구조와 컷은 지금 정해 둔 그대로 가요.</p>
+<div class="cardgrid three">
+<figure class="card">
+<figcaption>
+<span class="who">착한구두 ○○ (제품 확정 후 안내) · 색상 ○○ · ○○,○○○원</span>
+<span class="desc"><strong>제품 확정 후 안내해 드려요.</strong> 영상 자막에 쓰는 굽 높이·가격 숫자는 이 칸이 정답이에요.</span>
+<span class="desc">굽 ○cm · 사이즈 ○○○</span>
+<span class="when">이 컷으로 — 공감 한 줄 → 손에 들고 디테일 → 하체·거울 코디 2벌 → 정보 톡</span>
+<span class="who">제품 사진도 확정 후 들어가요</span>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="step1" class="band" aria-labelledby="step1-h">
+<div class="inner">
+<div class="sechead"><span class="chip">STEP 01</span><h2 id="step1-h">0~3초: 공감 한 줄로 시작</h2></div>
+<p class="lede">첫 화면은 <strong>신발 + 큰 자막 한 줄</strong>이에요. 얼굴·인사로 시작하지 않아요. <strong>추천은 ①</strong>(지난번 그대로), 가격이 강한 제품이면 ②처럼 가격대·15%를 첫 화면에 같이 얹어요.</p>
+<div class="hookbox">
+<div class="hookhead">
+<h3>① 기본안 (추천) — 지난번처럼 '공감 한 줄' 손글씨 자막</h3>
+<p>니아쥬님이 제일 잘 하시는 오프닝이에요. <strong>바닥에 신발을 놓고 손으로 만지는 장면 위에 큰 손글씨 자막</strong>으로 누구나 겪는 불편을 먼저 말하고, <strong>"그래서 찾았어요"</strong>로 신발을 꺼내요. 이번에도 구도·자막 스타일은 그대로, 신발만 착한구두로 바뀌어요.</p>
+<p class="fit"><b>이 구도엔 →</b> 자막 후보 — <strong>"예쁜 구두 = 발 아픈 구두, 이제 아니에요"</strong> / <strong>"출근룩 구두, 하루 종일 신어도 되는 거 찾았어요"</strong> / <strong>"이 가격에 이 착화감이면 무조건 사요"</strong> — 제품 특징은 제품 확정 후 안내</p>
+</div>
+<div class="cardgrid three"><figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_hook.jpg" src="assets/c/nj_hook.mp4"></video>
+<span class="tag">0~7초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">바닥에 신발 두 켤레, 손으로 내려놓으며 큰 손글씨 자막 "진짜 별로잖아요 / 아무리 예뻐도 / 발이 불편하면" → "그래서 예쁜데 발도 편한 구두를 찾았어요!"</span>
+<span class="when">공감 한 줄 → 그래서 찾았어요</span>
+</figcaption>
+</figure></div>
+</div>
+<div class="hookbox">
+<div class="hookhead">
+<h3>② 가성비로 열기 — 가격대 + 15% 할인을 첫 화면에</h3>
+<p>니아쥬님 팔로워가 제일 반응하는 건 <strong>'이 가격에?'</strong>예요. 첫 화면에 <strong>가격대와 15% 할인코드</strong>를 같이 박으면 끝까지 봐요. ①의 손글씨 자막 아래 작은 줄로 "○만원대 + 15% 할인코드"만 더해도 돼요.</p>
+<p class="fit"><b>이 구도엔 →</b> 자막 후보 — <strong>"163cm 직장인 구두 추천 · ○만원대 + 15% 할인코드"</strong> / <strong>"이 퀄리티가 ○만원대라고?"</strong> — 가격은 제품 확정 후 안내</p>
+</div>
+<div class="cardgrid three"><figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/r_dzui.jpg" src="assets/c/r_dzui.mp4"></video>
+<span class="tag">참고 영상</span>
+</div>
+<figcaption>
+<span class="who">참고 영상</span>
+<span class="desc">신발 여러 켤레를 들고 큰 자막 "키작녀를 위한 여름 신발 추천" + 아래 작은 줄 "3~5만원대 갓성비 + 15% 할인 코드"</span>
+<span class="when">추천 + 가격대 + 15% 한 화면</span>
+</figcaption>
+</figure><figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/r_price.jpg" src="assets/c/r_price.mp4"></video>
+<span class="tag">참고 영상</span>
+</div>
+<figcaption>
+<span class="who">참고 영상</span>
+<span class="desc">신발 여러 켤레를 깔아 두고 "최대 52% 할인 / 시즌오프!!!" — 숫자가 첫 화면에 바로</span>
+<span class="when">가격 숫자로 시작</span>
+</figcaption>
+</figure></div>
+</div>
+<div class="callout face"><strong>고르는 법:</strong> 기본은 <strong>①</strong>. 제품 가격이 확정되고 "이 가격에?"가 될 만하면 ①의 자막 아래에 <strong>"○만원대 + 15% 할인코드"</strong> 한 줄만 더해요(= ① + ②).</div>
+<div class="callout rule"><span class="rulelabel">규칙</span>첫 프레임에 <strong>자막 + 신발</strong>이 둘 다 보여야 해요. 자막은 늘 쓰시던 <strong>큰 손글씨</strong>, 3초 안에 "그래서 찾았어요"까지 가요.</div>
+</div>
+</section>
+<section id="step2" class="band soft" aria-labelledby="step2-h">
+<div class="inner">
+<div class="sechead"><span class="chip">STEP 02</span><h2 id="step2-h">손에 들고 디테일: 컷마다 자막 한 줄</h2></div>
+<p class="lede">지난번처럼 <strong>같은 자리에서 손에 들고 각도만 바꿔요.</strong> <strong>디자인 포인트 → 굽 → 안쪽 쿠션(엄지로 눌러 보기) → 스트랩·밑창</strong> 순서로, 컷마다 작은 자막 한 줄. 이 구간이 광고로 제일 많이 잘려 쓰여요.</p>
+<div class="cardgrid three">
+<figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_design.jpg" src="assets/c/nj_design.mp4"></video>
+<span class="tag">8~13초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">손에 들고 앞코 → 리본 디테일. 컷마다 화면 가운데 작은 자막 한 줄("샤프한 디자인으로" · "리본 디테일로")</span>
+<span class="when">디자인 · 포인트</span>
+</figcaption>
+</figure>
+<figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_detail2.jpg" src="assets/c/nj_detail2.mp4"></video>
+<span class="tag">13~20초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">굽을 손가락으로 잡아 정면으로 → 안쪽 쿠션을 엄지로 눌러 보여주기 → 스트랩 당기기</span>
+<span class="when">굽 · 쿠션 · 스트랩</span>
+</figcaption>
+</figure>
+<figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/r_detail.jpg" src="assets/c/r_detail.mp4"></video>
+<span class="tag">참고 영상</span>
+</div>
+<figcaption>
+<span class="who">참고 영상</span>
+<span class="desc">손에 들고 각도만 바꾸며 컬러 → 스티치 → 소재 → 밑창. 카메라는 고정, 컷마다 자막 한 줄</span>
+<span class="when">손 디테일 6컷+</span>
+</figcaption>
+</figure>
+</div>
+<div class="callout face"><strong>컷별 자막 예시:</strong> "○○한 디자인으로" → "포인트는 ○○" → "굽 ○cm인데도" → "안쪽 쿠션이 폭신해서" → "오래 신어도 편해요". 소재·굽·쿠션 정보는 제품 확정 후 안내해 드려요.</div>
+<div class="callout rule"><span class="rulelabel">규칙</span>한 컷 <strong>1~2초</strong>, 자막 <strong>한 줄</strong>. 카메라는 고정하고 손만 움직여요. 굽 높이 숫자 자막이 <strong>최소 한 번</strong>은 있어야 해요.</div>
+</div>
+</section>
+<section id="step3" class="band" aria-labelledby="step3-h">
+<div class="inner">
+<div class="sechead"><span class="chip">STEP 03</span><h2 id="step3-h">착화: 하체 걷기 + 거울 코디 2벌</h2></div>
+<p class="lede">신은 모습은 <strong>하체 정면 → 바닥 근접 → 거울 셀피 코디 2벌</strong> 순서예요. 평소 찍으시는 흰 매트·거울 자리 그대로면 돼요.</p>
+<div class="hookbox">
+<div class="hookhead">
+<h3>하체 — 흰 매트 위 정면 걷기 + 바닥 근접</h3>
+<p>지난번처럼 <strong>흰 매트 위 하체 정면</strong>으로 걸어 나오고, <strong>바닥 가까이 옆에서</strong> 한 발씩 한 번 더. 착화감 멘트는 여기서 해요.</p>
+
+</div>
+<div class="cardgrid three"><figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_walk.jpg" src="assets/c/nj_walk.mp4"></video>
+<span class="tag">20~22초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">흰 매트 위 하체 정면, 걸어 나오며 "착화감이 / 진짜 말도 안 되게 좋아요"</span>
+<span class="when">하체 정면 걷기</span>
+</figcaption>
+</figure><figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_floor.jpg" src="assets/c/nj_floor.mp4"></video>
+<span class="tag">24~26초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">바닥 가까이 옆에서 한 발씩 — "발도 편하고 예뻐 보여서"</span>
+<span class="when">바닥 근접</span>
+</figcaption>
+</figure></div>
+</div>
+<div class="hookbox">
+<div class="hookhead">
+<h3>거울 셀피 — 같은 자리에서 코디 2벌</h3>
+<p><strong>거울 자리·각도는 그대로, 옷만 바꿔서 2벌.</strong> 한 벌은 출근룩(스커트), 한 벌은 일상룩(팬츠)로 가면 "어디에나 어울린다"가 말 없이 보여요. 발끝까지 들어오게 찍어 주세요.</p>
+<p class="fit"><b>이 구도엔 →</b> 코디 조합은 니아쥬님 옷장 그대로 — <strong>출근룩 1 + 일상룩 1</strong>이면 충분해요</p>
+</div>
+<div class="cardgrid three"><figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_mirror1.jpg" src="assets/c/nj_mirror1.mp4"></video>
+<span class="tag">26~29초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">거울 셀피 전신, 코디 ① 블라우스 + 롱스커트 — "어떤 코디든 좀 더 세련되게"</span>
+<span class="when">거울 코디 ①</span>
+</figcaption>
+</figure><figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_mirror2.jpg" src="assets/c/nj_mirror2.mp4"></video>
+<span class="tag">40~42초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">같은 거울 자리, 코디 ② 니트 + 화이트 와이드 팬츠 — "멋스러운 일상룩까지"</span>
+<span class="when">거울 코디 ②</span>
+</figcaption>
+</figure></div>
+</div>
+<div class="hookbox">
+<div class="hookhead">
+<h3>옵션이 있으면 — 숫자로 한 컷</h3>
+<p>굽 높이·컬러 선택지가 있는 제품이면 <strong>두 켤레를 들고 숫자 자막</strong> 한 컷을 넣어요. 옵션이 없으면 넘어가요.</p>
+</div>
+<div class="cardgrid three"><figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_heelopt.jpg" src="assets/c/nj_heelopt.mp4"></video>
+<span class="tag">37~38초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">두 켤레를 들고 굽 높이 선택지를 숫자로 — "굽 높이도 선택 가능하니"</span>
+<span class="when">옵션 · 숫자</span>
+</figcaption>
+</figure></div>
+</div>
+<div class="callout face"><strong>최소 4컷:</strong> 하체 정면 걷기 → 바닥 근접 → 거울 코디 ① → 거울 코디 ②. 거울 컷은 <strong>발끝까지</strong> 들어오게.</div>
+</div>
+</section>
+<section id="step4" class="band soft" aria-labelledby="step4-h">
+<div class="inner">
+<div class="sechead"><span class="chip">STEP 04</span><h2 id="step4-h">마무리: 15% 할인코드 + 댓글 → 자동 DM</h2></div>
+<p class="lede">니아쥬님 평소 마무리 그대로 — <strong>발 POV 한 컷 → 거울 앞 손인사 + "정보 톡 받아 가세요"</strong>. 이번엔 여기에 <strong>15% 할인코드</strong>가 붙어요. 글(캡션)과 화면 자막 양쪽에 <strong>"팔로우 후 댓글에 [키워드] 남겨 주시면 구매 링크 + 15% 할인코드 DM으로 보내드려요"</strong>를 넣어요. 키워드는 평소 쓰시는 '정보'도 좋고, 편한 단어로 정해 주세요.</p>
+<div class="cardgrid three">
+<figure class="card ">
+<div class="frame">
+<video muted loop playsinline preload="metadata" poster="assets/p/nj_end.jpg" src="assets/c/nj_end.mp4"></video>
+<span class="tag">43~46초</span>
+</div>
+<figcaption>
+<span class="who">니아쥬님 지난 슬링백 영상</span>
+<span class="desc">위에서 내려다본 발 POV "○○ 찾고 계신다면" → 거울 앞 손인사 + "정보 톡 받아 가세요"</span>
+<span class="when">POV → 손인사 CTA</span>
+</figcaption>
+</figure>
+</div>
+<div class="callout rule"><span class="rulelabel">규칙</span>할인은 <strong>15% 할인코드</strong>로 적어요. 자동 DM 문구·링크·코드는 업로드일 확정 때 같이 맞춰요. 캡션 톤은 평소 니아쥬님 문체 그대로, 마지막 줄만 댓글 안내.</div>
+</div>
+</section>
+<section id="step5" class="band tint" aria-labelledby="step5-h">
+<div class="inner">
+<div class="sechead"><span class="chip bad">STEP X</span><h2 id="step5-h">이러면 넘겨요</h2></div>
+<p class="lede"><strong>이것만 피하세요.</strong></p>
+<ul class="dontlist">
+<li>얼굴 토킹·인사로 시작 (0초에 자막 + 신발 없이)</li><li>자막 없는 컷 — 컷마다 한 줄</li><li>손 디테일 없이 착화만 — 디테일 컷이 광고로 쓰여요</li><li>거울 컷에서 신발이 발끝에서 잘림</li><li>굽·가격·할인율을 틀리게 쓰기 — 채워 넣는 칸 그대로</li><li>다른 브랜드 신발을 같은 영상에 같이 노출</li><li>댓글 → DM 안내 없이 끝내기</li>
+</ul>
+</div>
+</section>
+<section id="check" class="band" aria-labelledby="check-h">
+<div class="inner">
+<div class="sechead"><h2 id="check-h">올리기 전에 체크</h2></div>
+<p class="lede" id="count">7개 중 0개 체크했어요.</p>
+<ul class="checklist">
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-hook">1 훅</span><span class="ctext">첫 프레임에 큰 자막 + 신발이 둘 다 있나요?</span></span><span class="cnum" aria-hidden="true">01</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-hook">1 훅</span><span class="ctext">3초 안에 "그래서 찾았어요"까지 갔나요?</span></span><span class="cnum" aria-hidden="true">02</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-swap">2 디테일</span><span class="ctext">손에 들고 디자인·굽·쿠션 컷이 있고, 컷마다 자막 한 줄인가요?</span></span><span class="cnum" aria-hidden="true">03</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-swap">2 디테일</span><span class="ctext">굽 높이 숫자 자막이 최소 한 번 들어갔나요? (확정 숫자 그대로)</span></span><span class="cnum" aria-hidden="true">04</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-angle">3 착화</span><span class="ctext">하체 정면 걷기 + 바닥 근접 컷이 있나요?</span></span><span class="cnum" aria-hidden="true">05</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-angle">3 착화</span><span class="ctext">거울 코디 2벌이 발끝까지 들어오나요?</span></span><span class="cnum" aria-hidden="true">06</span></label></li>
+<li class="citem"><label><input type="checkbox"><span class="cbody"><span class="clabel c-end">4 마무리</span><span class="ctext">화면 자막과 글 양쪽에 댓글 → 링크·15% 할인코드 DM 안내가 있나요?</span></span><span class="cnum" aria-hidden="true">07</span></label></li>
+</ul>
+</div>
+</section>
+<section id="full" class="band soft" aria-labelledby="full-h">
+<div class="inner">
+<div class="sechead"><h2 id="full-h">전편</h2></div>
+<p class="lede">누르면 소리와 함께 처음부터 재생돼요. 첫 번째가 이번 영상의 뼈대, 두 번째는 ② 가성비 오프닝 참고예요.</p>
+<div class="fullgrid">
+<article class="fullcase">
+<div class="frame">
+<video class="full" controls playsinline preload="none" poster="assets/p/full_nj_big.jpg" src="assets/v/full_nj.mp4"></video>
+</div>
+<div class="fullinfo">
+<h3>니아쥬님 지난 구두 영상 (전편)</h3>
+<p class="meta"><span class="dur">0:46</span> · <span class="fviews">이번 영상의 뼈대</span></p>
+<ul class="story">
+<li><b>훅</b><span>바닥 플랫레이 + 손글씨 "아무리 예뻐도 발이 불편하면" → "그래서 찾았어요"</span></li>
+<li><b>중간</b><span>손에 들고 디자인·리본·굽·쿠션·스트랩 → 하체 걷기 → 거울 코디 2벌 → 굽 선택</span></li>
+<li><b>마지막</b><span>발 POV → 거울 앞 손인사 "정보 톡 받아 가세요"</span></li>
+</ul>
+<a class="iglink" href="https://www.instagram.com/reel/DXIXQF7k86Q/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
+</div>
+</article>
+<article class="fullcase">
+<div class="frame">
+<video class="full" controls playsinline preload="none" poster="assets/p/full_dzui_big.jpg" src="assets/v/full_dzui.mp4"></video>
+</div>
+<div class="fullinfo">
+<h3>참고 — 가격대 + 15% 할인코드로 연 신발 추천 영상</h3>
+<p class="meta"><span class="dur">0:28</span> · <span class="fviews">② 가성비 오프닝 참고</span></p>
+<ul class="story">
+<li><b>훅</b><span>여러 켤레를 들고 "키작녀를 위한 여름 신발 추천 · 3~5만원대 + 15% 할인 코드"</span></li>
+<li><b>중간</b><span>신발마다 발·다리 클로즈업 + 굽 높이 자막</span></li>
+<li><b>마지막</b><span>댓글 → 링크·할인코드 DM 안내</span></li>
+</ul>
+<a class="iglink" href="https://www.instagram.com/reel/DZui63QyYrm/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="footer-tables" class="band" aria-labelledby="footer-tables-h">
+<div class="inner">
+<h2 id="footer-tables-h" class="sr-only">부록</h2>
+<div class="tablegrid">
+<div class="tablewrap"><table class="fill"><caption>채워 넣는 칸</caption><tr><th>크리에이터</th><td>니아쥬 (@nuage_look)</td></tr>
+<tr><th>촬영 방식</th><td>평소 촬영 공간 — 바닥 플랫레이·손 디테일 + 흰 매트 하체 + 거울 셀피</td></tr>
+<tr><th>제품</th><td>착한구두 ○○ (색상 ○○) — <b>제품 확정 후 안내</b></td></tr>
+<tr><th>수치</th><td>굽 ○cm — 자막에 쓰는 숫자는 이 칸이 정답이에요 (제품 확정 후 안내)</td></tr>
+<tr><th>가격</th><td>○○,○○○원 (제품 확정 후 안내)</td></tr>
+<tr><th>할인</th><td>15% 할인코드 + 댓글 자동 DM — 코드 문자열·구매 링크·DM 문구는 업로드일 확정 시 따로 보내드려요</td></tr>
+<tr><th>소구점</th><td>예쁜데 발도 편한 · 가격 대비 퀄리티 — 세부 문구는 제품 확정 후 안내</td></tr>
+<tr><th>해시태그</th><td>@chaakan_official · #착한구두 · #구두추천 + 시즌 태그</td></tr>
+<tr><th>업로드</th><td><b>10월 23일(금)</b> 기준 — 일정이 바뀌면 같이 조율해요</td></tr>
+<tr><th>일정</th><td>가이드 → 스크립트 컨펌 → 촬영 → 초안 검수 → 업로드</td></tr></table></div>
+<div class="tablewrap"><table class="deliver"><caption>게시물 정보 제공 (필수)</caption><tr><th>+2일</th><td>릴 링크·조회수·도달·좋아요·댓글·저장·공유·팔로우 증가</td></tr>
+<tr><th>+7일</th><td>시청 유지 그래프·평균 시청 시간·완료율·유입 경로</td></tr>
+<tr><th>+14일</th><td>자막 없는 클린본 원본</td></tr></table><p class="note">인사이트 개요·시청 유지 화면 스크린샷 2장이면 돼요. 평가·정산 조건이 아니에요.</p></div>
+<div class="tablewrap wide"><table class="collab"><caption>함께 진행하는 순서 — 초안·검수·자동DM</caption><tr><th>영상 길이</th><td>20~35초가 제일 좋아요. 핵심만!</td></tr>
+<tr><th>촬영 전</th><td>간단한 스크립트(컷 순서·자막 문구) 공유 → 컨펌 후 촬영</td></tr>
+<tr><th>업로드 전</th><td>영상 + 캡션 + 자동DM 문구 함께 공유 → 검수 후 업로드</td></tr>
+<tr><th>자동DM</th><td>댓글 키워드는 자유 — 크리에이터가 원하는 단어로 정해요. 키워드 댓글에 링크+할인코드 자동 발송. 기존 자동DM 폼이 있으면 그대로, 처음이면 알려주세요</td></tr>
+<tr><th>링크·할인코드</th><td>최종 업로드일 확정 시 전달</td></tr>
+<tr><th>캡션 CTA</th><td>마지막에 "댓글에 '키워드' 남겨주시면 링크 + 할인코드 보내드릴게요" — 댓글 고정도 OK</td></tr>
+<tr><th>표기</th><td>#착한구두 필수 · 가능하면 #제품제공 · 캡션 톤은 본인 스타일 그대로, 과하게 홍보하지 않아도 돼요</td></tr>
+<tr><th>매장 방문</th><td>필요 없어요. 평소 촬영 공간에서 찍어요</td></tr></table></div>
+</div>
+<footer><p class="note">이 가이드에 쓴 니아쥬님 영상 — <a href="https://www.instagram.com/reel/DXIXQF7k86Q/" target="_blank" rel="noopener">지난 구두 영상</a><br>가이드 내용은 2026-10-07 기준이에요.</p><p class="noshare">🔒 이 가이드는 <b>착한구두와 니아쥬님 사이의 자료</b>예요.<br><b>외부 공유·재배포는 하지 말아 주세요.</b></p></footer>
+</div>
+</section>
+</main>
+<script>
+
+var total = document.querySelectorAll('#check input').length;
+var countEl = document.getElementById('count');
+function updateCount(){
+  var checked = document.querySelectorAll('#check input:checked').length;
+  countEl.textContent = total + '개 중 ' + checked + '개 체크했어요.';
+}
+document.querySelectorAll('#check input').forEach(function(cb){ cb.addEventListener('change', updateCount); });
+
+var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* 뷰포트에 들어온 클립만 재생 */
+document.querySelectorAll('.frame video:not(.full)').forEach(function(v){
+  if(reduced){ v.controls = true; return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting && e.intersectionRatio >= 0.3){ v.play().catch(function(){}); }
+      else { v.pause(); }
+    });
+  }, {threshold:[0,0.3,1]});
+  io.observe(v);
+});
+
+/* 전편은 하나만 */
+document.addEventListener('play', function(e){
+  if(!(e.target instanceof HTMLVideoElement)) return;
+  document.querySelectorAll('video.full').forEach(function(v){ if(v !== e.target) v.pause(); });
+}, true);
+
+/* 스크롤 진입 페이드업 */
+if(!reduced && 'IntersectionObserver' in window){
+  var rv = document.querySelectorAll('.cardgrid > .card, .hookbox, .fullcase, .citem, .tablewrap, .callout, .dontlist > li');
+  rv.forEach(function(el){
+    el.classList.add('rv');
+    var sibs = el.parentNode.children;
+    var idx = Array.prototype.indexOf.call(sibs, el);
+    el.style.transitionDelay = Math.min(idx, 5) * 55 + 'ms';
+  });
+  var rvio = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); rvio.unobserve(e.target); }
+    });
+  }, {rootMargin:'160px 0px 160px 0px', threshold:0.02});
+  rv.forEach(function(el){ rvio.observe(el); });
+}
+
+/* 상단 미니 내비 */
+var minibar = document.getElementById('minibar');
+var heroEl = document.querySelector('.hero');
+function onScroll(){
+  var y = window.pageYOffset || document.documentElement.scrollTop;
+  if(y > heroEl.offsetHeight - 80){ minibar.classList.add('show'); }
+  else { minibar.classList.remove('show'); }
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+/* 현재 섹션 하이라이트 */
+if('IntersectionObserver' in window){
+  var links = {};
+  document.querySelectorAll('.minilinks a').forEach(function(a){ links[a.dataset.sec] = a; });
+  var secio = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var a = links[e.target.id];
+      if(!a) return;
+      if(e.isIntersecting){
+        for(var k in links){ links[k].classList.remove('active'); }
+        a.classList.add('active');
+      }
+    });
+  }, {rootMargin:'-58px 0px -62% 0px', threshold:0});
+  ['step1','step2','step3','step4','step5'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) secio.observe(el);
+  });
+}
+
+</script>
