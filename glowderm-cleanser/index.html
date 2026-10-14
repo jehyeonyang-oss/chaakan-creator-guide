@@ -139,6 +139,13 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 .video-contact-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.video-contact-grid img{aspect-ratio:9/12;object-position:top}
 @media(max-width:600px){.collected-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.collected-card{padding:9px}.video-contact-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}}
 @media(max-width:600px){.candidate{grid-template-columns:24px minmax(0,1fr) 76px;gap:10px}.candidate .visible-example figcaption{font-size:10px}.candidate .visible-example figcaption span{display:none}.example-grid{gap:8px}.example-grid figcaption b{font-size:11px}.example-grid figcaption span{font-size:10px}.sequence-grid figcaption span{display:none}}
+
+.format-hierarchy{display:grid;gap:12px}.format-parent{background:var(--accent-bg);padding:20px;border-radius:8px;display:grid;gap:8px}.format-parent>span{color:var(--accent);font-size:12px}.format-parent strong{font-size:22px;line-height:1.4;letter-spacing:-.04em}.format-parent p{font-size:13px}
+.format-children{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.format-children>div{padding:14px;background:var(--surface);border-radius:6px}.format-children b{font-size:14px}.format-children p{font-size:12px;color:var(--muted);margin-top:5px}
+.expert-reference>.visible-example{max-width:240px}.keyword-example{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:16px;background:var(--surface);border-radius:8px;align-items:center}.keyword-example img{object-fit:contain;aspect-ratio:4/5}.keyword-example>div{display:grid;gap:12px}.keyword-example p{font-size:14px}.keyword-example>div>a{font-size:12px}
+.story-steps{list-style:none;padding:0;margin:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}.story-steps li{background:var(--surface);padding:16px;display:grid;grid-template-columns:86px 1fr;gap:12px}.story-steps li>b{font-family:var(--mono);color:var(--accent);font-size:13px}.story-steps strong{font-size:14px}.story-steps p{font-size:12px;color:var(--muted);margin-top:5px}
+.wide-sequence{max-width:100%}.wide-sequence img{aspect-ratio:auto;object-fit:contain;width:100%;height:auto}
+@media(max-width:600px){.format-parent{padding:16px}.format-parent strong{font-size:20px}.format-children{grid-template-columns:1fr}.format-children>div{display:flex;align-items:center;justify-content:space-between;gap:10px}.format-children p{margin:0}.keyword-example{grid-template-columns:110px minmax(0,1fr);gap:12px;padding:12px}.keyword-example p{font-size:13px}.story-steps li{grid-template-columns:66px 1fr;gap:10px;padding:14px}.expert-reference>.visible-example{max-width:190px}}
 </style>
 </head><body>
 <div class="wrap">
@@ -148,12 +155,12 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 <nav aria-label="제품과 근거 보기" class="toc"><a href="#t-ops">운영</a><a href="#t-mela">멜라크림</a><a href="#t-cleanser">클렌저</a><a href="#t-basis">예시·근거</a></nav>
 </header>
 <div class="pane" id="t-ops">
-<section id="common"><h2>한눈에 보는 운영안</h2>
-<div class="brief"><p><b>만들기</b><span>멜라크림은 05 파생 · 클렌저는 화장 들뜸 전후</span></p>
-<p><b>비교하기</b><span>한 번에 변수 하나 · 후킹률과 구매를 함께 확인</span></p>
+<section id="common"><h2>한눈에 보는 운영안</h2><div class="brief">
+<p><b>멜라크림</b><span>전문가 설명형 안에 강한 키워드·비포애프터·면봉 시연</span></p>
+<p><b>클렌저</b><span>화장 들뜸 전후 · 롤링과 세안 장면을 촬영</span></p>
 <p><b>일정</b><span>하루 1편은 목표 · 담당 배정과 납기는 미확정</span></p></div>
-<div class="product-grid"><a class="product-tile" href="#t-mela"><span>01 / 멜라크림</span><strong>05를 바탕으로, 초반 0~3초부터</strong><p>파생 4편 · 미시도 후보 22건</p><em>제작 후보 보기 →</em><figure class="visible-example composite-example"><img alt="05 원본 시작 장면 · 실제 광고 캡처" loading="lazy" src="examples/hook_frames/o05.jpg"/><figcaption><b>05 원본 시작 장면</b><span>멜라크림 탭에서 전체 장면</span></figcaption></figure></a>
-<a class="product-tile" href="#t-cleanser"><span>02 / 필링팩클렌저</span><strong>말보다 화장 전후 장면</strong><p>소구 4축 · 제작 후보 5편</p><em>제작 후보 보기 →</em><figure class="visible-example"><img alt="볼 요철을 짚는 시작 장면 · 실제 광고 캡처" loading="lazy" src="frames/1055591877112694_0s.png"/><figcaption><b>볼 요철을 짚는 시작 장면</b><span>리터니티 실제 레퍼런스</span></figcaption></figure></a></div></section>
+<div class="product-grid"><a class="product-tile" href="#t-mela"><span>멜라크림</span><strong>전문가가 설명하고,<br/>면봉 시연으로 보여주기</strong><p>강한 키워드 + 비포애프터 + 면봉으로 닦기</p><em>광고 예시와 영상 구성 보기 →</em><figure class="visible-example composite-example"><img alt="전문가가 직접 설명하는 시작" loading="lazy" src="examples/hook_frames/A.jpg"/><figcaption><b>전문가가 직접 설명하는 시작</b><span>멜라크림 탭에서 전체 구성 보기</span></figcaption></figure></a>
+<a class="product-tile" href="#t-cleanser"><span>필링팩클렌저</span><strong>말보다 화장 전후 장면</strong><p>소구 4축 · 제작 후보 5편</p><em>제작 후보 보기 →</em><figure class="visible-example"><img alt="볼 요철을 짚는 시작 장면" loading="lazy" src="frames/1055591877112694_0s.png"/><figcaption><b>볼 요철을 짚는 시작 장면</b><span>실제 리터니티 레퍼런스</span></figcaption></figure></a></div></section>
 <section id="ask"><h2>요청 정리</h2><details class="disclosure"><summary>기존 요청과 반영 내역</summary>
 <div class="tbl"><table>
 <thead><tr><th>#</th><th>말한 것</th><th>결과</th><th>상태</th></tr></thead>
@@ -163,7 +170,7 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 <tr><td class="n">3</td><td class="q">비포애프터를 어떻게 보여줄지, 어떤 키워드를 쓸지</td><td><a href="#ba">비포애프터 11유형</a>과 <a href="#pair">키워드 짝</a></td><td><span class="pill done">완료</span></td></tr>
 <tr><td class="n">4</td><td class="q">성과 잘 나온 건 계속 넣고 배리에이션</td><td>승자 유지와 변수 하나씩 바꾸는 규칙, 첫 파생은 <a href="#h05">05 초반 0~3초 3편</a></td><td><span class="pill done">규칙 확정</span></td></tr>
 <tr><td class="n">5</td><td class="q">주 1편에서 하루 1편으로</td><td><a href="#plan">10/13~10/26 일정</a>. 팀 합산 하루 1편으로 해석</td><td><span class="pill run">해석 확인 필요</span></td></tr>
-<tr><td class="n">6</td><td class="q">아스트라·opus로 내가 만드는 영상도</td><td>트랙 C. 시나리오 4·7·11·12와 05 파생을 맡김</td><td><span class="pill done">반영</span></td></tr>
+<tr><td class="n">6</td><td class="q">아스트라·opus로 내가 만드는 영상도</td><td>트랙 C. 시나리오 4·7·11·12와 제품 시작형 광고의 이전 파생안을 맡김</td><td><span class="pill done">반영</span></td></tr>
 <tr><td class="n">7</td><td class="q">메타 성과 리뷰, 앞으로 계속</td><td>매일 오전 리뷰 슬롯. 10/12 완결분 리뷰 진행 중</td><td><span class="pill run">진행 중</span></td></tr>
 <tr><td class="n">8</td><td class="q">4개 팔린 건 상단 고정 텍스트 때문 같다</td><td>판정 불가. 이전 조회에서 05에 예산이 집중돼서 문구 효과와 예산 효과가 섞임. 검증안은 <a href="#test">테스트</a>에</td><td><span class="pill run">검증안</span></td></tr>
 <tr><td class="n">9</td><td class="q">초반 0~3초 후킹률이 중요한 것 같다</td><td>올리는 레버 7개와 오프닝 시안 10개. 다만 생존자 편향 위험이 있어 ROAS 예측에는 안 씀</td><td><span class="pill done">완료</span></td></tr>
@@ -177,7 +184,7 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 <thead><tr><th>1차본 목표</th><th>트랙</th><th>편</th><th>키워드 · 비포애프터</th><th>대본</th><th>전달 기한</th><th>검수 후 업로드 목표</th></tr></thead>
 <tbody>
 <tr><td class="n">10/13 화</td><td><span class="trk tA">A</span></td><td>시나리오_8 "피부 선생님 그만 만나셔도 돼요"</td><td>3·5 · 장갑 시술 컷 + 날짜 카드 + 환불 카드</td><td>기존</td><td>10/12</td><td class="n">10/14 수 · 목표</td></tr>
-<tr><td class="n">10/13 화</td><td><span class="trk tC">C</span></td><td>시나리오_4(메디옥실 949652) v15 마무리 · 05-H1·H2·H3·C</td><td>4·5 · "고소하세요" 보증 / 초반 0~3초만</td><td>제작 중</td><td>—</td><td class="n">10/14 수 · 목표</td></tr>
+<tr><td class="n">10/13 화</td><td><span class="trk tC">C</span></td><td>시나리오_4(메디옥실 949652) v15 마무리 · 제품 시작형 광고-H1·H2·H3·C</td><td>4·5 · "고소하세요" 보증 / 초반 0~3초만</td><td>제작 중</td><td>—</td><td class="n">10/14 수 · 목표</td></tr>
 <tr><td class="n">10/14 수</td><td><span class="trk tB">B</span></td><td>시나리오_10 클렌저</td><td>클렌저1·4 · 밀림 시연 + 마스크 관리사 VO</td><td>기존</td><td>10/13</td><td class="n">10/15 목 · 목표</td></tr>
 <tr><td class="n">10/15 목</td><td><span class="trk tA">A</span></td><td>신규 #1 지우개</td><td>1·5 · 0초 기미 얼굴 → 면봉 절반 소거 + "피부과 다니냐" 자막 + 지우개 비유</td><td>신규</td><td>10/14</td><td class="n">10/16 금 · 목표</td></tr>
 <tr><td class="n">10/15 목</td><td><span class="trk tC">C</span></td><td>시나리오_12 v1 검수 · 시나리오_7 v6 마무리</td><td>3 · 레이저 vs 크림 + "-10살" 헤드라인</td><td>영상 있음</td><td>—</td><td class="n">10/16 금 · 목표</td></tr>
@@ -221,9 +228,9 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 <div class="verdict">
 <p><b>판정은 2단계로 합니다.</b> 1단계는 후킹률이고 같은 기간·지표·노출 조건에서 비교합니다. 노출 1,000회만으로 차이가 확정되지는 않습니다. 구매·ROAS는 모든 편에서 함께 확인합니다. 후킹률만으로 탈락시키지 않습니다.</p>
 <ul class="plain">
-<li><b>05 파생(H1·H2·H3·C)</b>: 원본 05와 함께 5편을 ABO 같은 예산으로 넣습니다. CBO 안에서는 이번처럼 한 편에 예산이 몰립니다. 편당 약 ₩6.5만, 5편 약 ₩33만(우리 CPM ₩65,000 기준, 계산). 예산은 COO 확인 사항입니다.</li>
+<li><b>제품 시작형 광고의 이전 파생안(H1·H2·H3·C)</b>: 제품 시작형 원본 광고와 함께 5편을 ABO 같은 예산으로 넣습니다. CBO 안에서는 이번처럼 한 편에 예산이 몰립니다. 편당 약 ₩6.5만, 5편 약 ₩33만(우리 CPM ₩65,000 기준, 계산). 예산은 COO 확인 사항입니다.</li>
 <li><b>신규 편</b>: 제품별 테스트 CBO 2개(멜라크림·클렌저)에 매일 추가하고, 동시 활성은 6편 이하로 둡니다. 3일 차는 중간 점검일입니다. 노출·지출·전환 표본과 목표 CPA/ROAS가 부족하면 판정을 보류합니다. 6편 제한은 운영 제안입니다.</li>
-<li><b>10/12 테스트 캠페인</b>(A 05 복제 vs B 시나리오3)은 둘 다 같은 고정 문구라 첫 컷만 비교됩니다. 고정 문구 가설은 05-C가 맡습니다.</li>
+<li><b>10/12 테스트 캠페인</b>(A 05 복제 vs B 시나리오3)은 둘 다 같은 고정 문구라 첫 컷만 비교됩니다. 고정 문구 가설은 제품 시작형 광고-문구제거가 맡습니다.</li>
 <li><b>매일 리뷰</b>: 지출·CPM·CTR·CPC·구매·ROAS(CCFM 운영안과 같은 열), 후크 비율, 초별 이탈 지점의 장면 캡처. 산출은 리뷰 1장과 다음 파생 변수 1개입니다.</li>
 </ul>
 </div>
@@ -239,20 +246,26 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 </tbody>
 </table></div>
 <ul class="plain">
-<li><b>05는 꺾이는 중입니다.</b> 마지막 구매는 10/10이고, 그 뒤 ₩65,618(계산)을 더 쓰는 동안 구매가 0건입니다. 메타 품질 진단 3개(품질·참여율·전환율)가 모두 "평균 이하"입니다. 몸통을 살려 파생을 내는 이유가 여기 있습니다.</li>
+<li><b>기존 제품 시작형 광고는 꺾이는 중입니다.</b> 마지막 구매는 10/10이고, 그 뒤 ₩65,618(계산)을 더 쓰는 동안 구매가 0건입니다. 메타 품질 진단 3개(품질·참여율·전환율)가 모두 "평균 이하"입니다. 몸통을 살려 파생을 내는 이유가 여기 있습니다.</li>
 <li><b>03이 첫 구매를 냈습니다</b>(여성 45~54, 1건). 판정하기엔 표본이 작습니다.</li>
-<li><b>후크 비율과 구매는 이번에도 따로 놉니다.</b> 후크가 가장 낮은 05가 구매 최다이고, 구매 수는 지출 배분을 따라갑니다(확신도 중). 후킹률을 1차 거름으로만 쓰는 판단과 맞습니다.</li>
+<li><b>후크 비율과 구매는 이번에도 따로 놉니다.</b> 후크가 가장 낮은 기존 제품 시작형 광고가 구매 최다이고, 구매 수는 지출 배분을 따라갑니다(확신도 중). 후킹률을 1차 거름으로만 쓰는 판단과 맞습니다.</li>
 <li>10/12 시나리오3 테스트 캠페인은 아직 꺼진 상태(지출 ₩0)입니다. 10/12 완결값은 10/13 오전 리뷰에서 다시 확인합니다.</li>
 </ul>
 <p class="note">10/12 표는 과거 조회값입니다. 표시된 4개 소재 합계와 캠페인 전체 합계는 범위가 다릅니다. 실시간 성과가 아닙니다.</p></details></section>
 </div>
 <div class="pane" hidden="" id="t-mela">
-<section id="sum"><h2>멜라크림 · 먼저 할 것</h2><div class="brief">
-<p><b>제작</b><span>05-H1·H2·H3·C 4편 · 각 편의 변경점 기록</span></p>
-<p><b>판정</b><span>3초 54.5%는 참고선 · 구매·CPA·ROAS 함께 확인</span></p>
-<p><b>주의</b><span>05는 구매 최다지만 ROAS 0.89 · 수익 승자 미확정</span></p></div>
-<div class="quicklinks"><a href="#h05">파생 4편</a><a href="#gap">미시도 후보 22건</a><a href="#hook">후킹 근거</a><a href="#collected-examples">수집 예시 이미지</a></div></section><section id="mela-examples"><h2>초반 0~3초 · 실제 예시</h2><p class="note">기존 광고 캡처 · 제안 파생본은 별도 제작 · 이미지를 누르면 원본 크게 보기</p><div class="example-grid"><figure class="visible-example composite-example"><a href="examples/hook_frames/o05.jpg" rel="noopener" target="_blank"><img alt="우리 05 · 제품으로 시작 · 실제 광고 캡처" loading="lazy" src="examples/hook_frames/o05.jpg"/></a><figcaption><b>우리 05 · 제품으로 시작</b><span>사람 얼굴로 바꿔 볼 원본</span></figcaption></figure><figure class="visible-example composite-example"><a href="examples/hook_frames/A.jpg" rel="noopener" target="_blank"><img alt="CCFM · 사람이 직접 말하기 · 실제 광고 캡처" loading="lazy" src="examples/hook_frames/A.jpg"/></a><figcaption><b>CCFM · 사람이 직접 말하기</b><span>화면 인물과 대사 연결 참고</span></figcaption></figure><figure class="visible-example composite-example"><a href="examples/hook_frames/B.jpg" rel="noopener" target="_blank"><img alt="CCFM · 얼굴과 큰 헤드라인 · 실제 광고 캡처" loading="lazy" src="examples/hook_frames/B.jpg"/></a><figcaption><b>CCFM · 얼굴과 큰 헤드라인</b><span>상단 2줄 + 인물 반응 참고</span></figcaption></figure></div></section>
-<section id="gap"><h2>안 한 것</h2><details class="disclosure"><summary>후보 22건과 출처 보기</summary>
+<section id="sum"><h2>멜라크림 · 전문가 설명형으로 만들기</h2><div class="format-hierarchy">
+<div class="format-parent"><span>대소구 · 영상 전체의 틀</span><strong>전문가가 등장해 직접 설명하는 영상</strong><p>초반 0~3초에 얼굴·첫 문장 → 시연 중에도 설명 연결 → 마지막까지 같은 화자</p></div>
+<div class="format-children"><div><b>강한 키워드</b><p>첫 문장·상단 자막</p></div><div><b>비포애프터</b><p>같은 얼굴·구도 비교</p></div><div><b>면봉으로 닦기</b><p>비포애프터 안의 고정 시연</p></div></div></div>
+<p class="note">채택한 방향: 전문가 포맷은 큰 주제, 키워드·비포애프터·면봉 시연은 영상에 넣을 소구 요소</p>
+<div class="quicklinks"><a href="#strong-keywords">강한 키워드 광고</a><a href="#expert-storyboard">영상 전체 구성</a><a href="#cotton-demo">면봉 시연 넣는 법</a></div></section><section class="expert-reference" id="mela-examples"><h2>전문가 설명형 · 실제 시작 장면</h2><p class="note">CCFM 기존 광고 캡처 · 전문가가 얼굴을 보이며 직접 말하는 구성 참고</p><figure class="visible-example composite-example"><a href="examples/hook_frames/A.jpg" rel="noopener" target="_blank"><img alt="말하는 전문가 → 제품 설명" loading="lazy" src="examples/hook_frames/A.jpg"/></a><figcaption><b>말하는 전문가 → 제품 설명</b><span>이미지를 누르면 전체 시작 장면</span></figcaption></figure></section><section id="strong-keywords"><h2>강한 키워드를 쓴 광고는?</h2><p class="note">아래는 실제 타사 광고 문구 · 오른쪽은 우리 영상에 연결할 구성안</p><article class="keyword-example"><figure class="visible-example"><a href="examples/ad_thumbs/1182680620037635.jpg" rel="noopener" target="_blank"><img alt="3일 기미 삭제 · 스킨부스터 크림" loading="lazy" src="examples/ad_thumbs/1182680620037635.jpg"/></a><figcaption><b>3일 기미 삭제 · 스킨부스터 크림</b><span>실제 수집 광고 캡처</span></figcaption></figure><div><span class="eyebrow">우리 구성안</span><p>삭제·시술 연상 키워드 → 전문가 첫 문장 → 면봉 시연</p><a href="https://www.facebook.com/ads/library/?id=1182680620037635" rel="noopener" target="_blank">광고 원문 ↗</a></div></article><article class="keyword-example"><figure class="visible-example"><a href="examples/ad_thumbs/1847107929595776.jpg" rel="noopener" target="_blank"><img alt="그냥 두면 나중에 안 지워져요" loading="lazy" src="examples/ad_thumbs/1847107929595776.jpg"/></a><figcaption><b>그냥 두면 나중에 안 지워져요</b><span>실제 수집 광고 캡처</span></figcaption></figure><div><span class="eyebrow">우리 구성안</span><p>기미 고민·긴급성 → 전문가 설명 → 같은 부위 전후 비교</p><a href="https://www.facebook.com/ads/library/?id=1847107929595776" rel="noopener" target="_blank">광고 원문 ↗</a></div></article><article class="keyword-example"><figure class="visible-example"><a href="examples/ad_thumbs/789338177600051.jpg" rel="noopener" target="_blank"><img alt="기미 박멸 · 개발자입니다" loading="lazy" src="examples/ad_thumbs/789338177600051.jpg"/></a><figcaption><b>기미 박멸 · 개발자입니다</b><span>실제 수집 광고 캡처</span></figcaption></figure><div><span class="eyebrow">우리 구성안</span><p>강한 결과 단어 + 설명하는 화자 → 도포·닦기 시연</p><a href="https://www.facebook.com/ads/library/?id=789338177600051" rel="noopener" target="_blank">광고 원문 ↗</a></div></article></section><section id="expert-storyboard"><h2>그래서 이렇게 만든다 · 30초 구성안</h2><p class="note">초수는 제작 초안 · 전문가는 시작부터 등장하고, 시연 위에도 같은 화자의 설명을 이어갑니다</p>
+<ol class="story-steps"><li><b>0~3초</b><div><strong>전문가 얼굴 + 강한 첫 문장</strong><p>질문·결과 키워드 하나로 시작 · 상단 자막도 같은 주제</p></div></li>
+<li><b>3~6초</b><div><strong>바르기 전 기미 부위 접사</strong><p>얼굴·조명·구도 고정 · 닦을 부위를 보여주기</p></div></li>
+<li><b>6~12초</b><div><strong>크림 도포 → 면봉으로 한 줄 닦기</strong><p>한 컷으로 과정을 연결 · 닦인 쪽과 안 닦인 쪽을 함께 남기기</p></div></li>
+<li><b>12~16초</b><div><strong>같은 얼굴의 비포애프터</strong><p>직전 장면을 되짚거나 같은 구도 분할 · 면봉 시연 결과와 연결</p></div></li>
+<li><b>16~24초</b><div><strong>전문가 설명으로 돌아오기</strong><p>성분·사용법 등 이번 편의 메시지 하나만 설명</p></div></li>
+<li><b>24~30초</b><div><strong>제품과 구매 행동 안내</strong><p>실제 판매 조건과 링크 안내 · 전문가가 마무리</p></div></li></ol></section><section id="cotton-demo"><h2>비포애프터 안에 면봉 시연을 고정</h2><p>기미 부위 보여주기 → 크림 바르기 → 면봉으로 닦기 → 같은 얼굴에서 차이 비교</p><p class="note">아래는 기존 CCFM 시연 캡처 · 새 영상에도 이 흐름을 유지하고 전문가 설명을 이어 붙입니다</p><div class="example-grid"><figure class="visible-example"><a href="examples/production_examples/cotton-before.jpg" rel="noopener" target="_blank"><img alt="기미 부위 보여주기" loading="lazy" src="examples/production_examples/cotton-before.jpg"/></a><figcaption><b>기미 부위 보여주기</b><span>전후 비교의 기준 얼굴</span></figcaption></figure><figure class="visible-example"><a href="examples/production_examples/cotton-apply.jpg" rel="noopener" target="_blank"><img alt="크림 도포" loading="lazy" src="examples/production_examples/cotton-apply.jpg"/></a><figcaption><b>크림 도포</b><span>얼굴·구도를 유지</span></figcaption></figure><figure class="visible-example"><a href="examples/production_examples/cotton-wipe.jpg" rel="noopener" target="_blank"><img alt="면봉으로 한 줄 닦기" loading="lazy" src="examples/production_examples/cotton-wipe.jpg"/></a><figcaption><b>면봉으로 한 줄 닦기</b><span>닦인 쪽·안 닦인 쪽 함께</span></figcaption></figure></div><figure class="visible-example wide-sequence"><a href="examples/production_examples/cotton-sequence.jpg" rel="noopener" target="_blank"><img alt="도포 → 닦기 · 실제 연속 장면" loading="lazy" src="examples/production_examples/cotton-sequence.jpg"/></a><figcaption><b>도포 → 닦기 · 실제 연속 장면</b><span>누르면 전체 장면 확대</span></figcaption></figure><div class="brief"><p><b>고정</b><span>전문가 설명 + 비포애프터 + 면봉 시연</span></p><p><b>바꿀 것</b><span>강한 키워드 또는 시연 위치 중 하나</span></p><p><b>첫 비교</b><span>키워드만 다른 2편 · 시연 위치와 나머지 장면은 동일</span></p></div></section>
+<section id="gap"><h2>추가 소재 후보 · 참고 자료</h2><details class="disclosure"><summary>후보 22건과 출처 보기</summary>
 <p>두 묶음으로 나눕니다. 1순위는 다른 브랜드가 검증했는데 CCFM도 우리도 안 한 것입니다. 타사 근거는 집행일수가 긴 순서로 적었습니다(집행일수는 참고값이며 매출·효율 검증을 뜻하지 않음). 집행일수는 게재 시작일부터 10/12까지입니다.</p>
 <div class="sub-1">
 <h3>① 타 브랜드는 했는데 CCFM도 우리도 안 한 것 <span class="pill done">13건 · 1순위</span></h3>
@@ -268,7 +281,7 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 <tr><td>크림</td><td>연예인 PICK·관리법 공개 <span class="pill run">분류 확인 필요</span><figure class="visible-example"><a href="examples/ad_thumbs/1847107929595776.jpg" rel="noopener" target="_blank"><img alt="실제 레퍼런스 · 실제 광고 캡처" loading="lazy" src="examples/ad_thumbs/1847107929595776.jpg"/></a><figcaption><b>제품 + 전후 + 수치 카드</b><span>캡처 관찰 · 상세 장치 확인 전</span></figcaption></figure></td><td class="n">104일</td><td>도미나스 장나라 1847107929595776 · 104일</td><td><span class="pill no">불가</span></td><td>제외(실존인물)</td></tr>
 <tr><td>공통</td><td>아티클형·인스타툰 캐러셀 6~10장<figure class="visible-example"><a href="examples/ad_thumbs/1537716944084274.jpg" rel="noopener" target="_blank"><img alt="실제 레퍼런스 · 실제 광고 캡처" loading="lazy" src="examples/ad_thumbs/1537716944084274.jpg"/></a><figcaption><b>인스타툰 경험담</b><span>캡처 관찰 · 상세 장치 확인 전</span></figcaption></figure></td><td class="n">89일</td><td>셀인샷 1537716944084274 · 89일 · 메디큐브 요즘리뷰 2867030047006240 · 28일</td><td><span class="pill done">재현</span></td><td>이미지 트랙</td></tr>
 <tr><td>크림</td><td>미니어처 인부들이 피부 위에서 공사하듯 기미를 부숴 나름</td><td class="n">82일</td><td>메라블 ACIS 252595 · 82일 · 같은 카피 296건</td><td><span class="pill done">재현</span></td><td>10/16 BX</td></tr>
-<tr><td>크림</td><td>3일·7일 단기 기간 타이포(7일 달력 OUT)</td><td class="n">64일</td><td>이지듀 ACIS 6441 · 56일 · 피캄 252337 · 64일</td><td><span class="pill done">재현</span></td><td>05 파생·S8</td></tr>
+<tr><td>크림</td><td>3일·7일 단기 기간 타이포(7일 달력 OUT)</td><td class="n">64일</td><td>이지듀 ACIS 6441 · 56일 · 피캄 252337 · 64일</td><td><span class="pill done">재현</span></td><td>제품 시작형 광고의 이전 파생안·S8</td></tr>
 <tr><td>크림</td><td>"피부나이 -10살 / 10살 어려지기" 결과 카피</td><td class="n">58일</td><td>메라블 ACIS 252591 · 58일</td><td><span class="pill done">재현</span></td><td>S7 헤드라인</td></tr>
 <tr><td>크림</td><td>댓글 키워드 유도 CTA("댓글 달면 링크")<figure class="visible-example"><a href="examples/ad_thumbs/1764171361494104.jpg" rel="noopener" target="_blank"><img alt="실제 레퍼런스 · 실제 광고 캡처" loading="lazy" src="examples/ad_thumbs/1764171361494104.jpg"/></a><figcaption><b>도포 장면 + 반응 화면</b><span>캡처 관찰 · 상세 장치 확인 전</span></figcaption></figure></td><td class="n">33일</td><td>메디큐브 1764171361494104 · 33일</td><td><span class="pill done">재현</span></td><td>10/19 웹디</td></tr>
 <tr><td>크림</td><td>조선시대 기미 비법·성분 기원 사극/애니<figure class="visible-example"><a href="examples/ad_thumbs/2261429541309989.jpg" rel="noopener" target="_blank"><img alt="실제 레퍼런스 · 실제 광고 캡처" loading="lazy" src="examples/ad_thumbs/2261429541309989.jpg"/></a><figcaption><b>생활 상황 · 진료 장면</b><span>캡처 관찰 · 상세 장치 확인 전</span></figcaption></figure></td><td class="n">24일</td><td>위자드조선 2261429541309989 · 24일 · 변형 3건</td><td><span class="pill done">재현</span></td><td>예비</td></tr>
@@ -295,8 +308,8 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 </div>
 <p class="note">반박으로 탈락한 2건: 임신·출산 기미(우리 01·03에 "둘째 출산" 한 줄이 있음, 메인 훅으로는 미시도), 스케일링+떼어낸 팩 피지 노출(CCFM 9/18 이미지에 부분 사용). 포화 영역(같이 하고 있는 것): 약국 입점·약사 추천, 트라넥삼산 5% 수치, 레이저 비용 비교, 3D 단면, 분할 비포애프터, 1+1+1, 2주 주장, "죄송합니다" 사과 훅, 상단 고정 헤드라인.</p>
 </details></section>
-<section id="ba"><h2>비포애프터 보여주는 법</h2><details class="disclosure"><summary>비포애프터 11유형 보기</summary>
-<p>원칙: 0초는 기미가 있는 얼굴로 시작하고, 지워지는 과정은 1.6초 이후에 둡니다. 0~2초 안에 이미 깨끗해진 결과를 보여주면 볼 이유가 사라집니다(우리 01은 1.96초, 05는 2.0초에 이미 깨끗한 얼굴. 확신도 낮음).</p>
+<section id="ba"><h2>비포애프터의 다른 표현 · 참고 자료</h2><details class="disclosure"><summary>비포애프터 11유형 보기</summary>
+<p>원칙: 0초는 기미가 있는 얼굴로 시작하고, 지워지는 과정은 1.6초 이후에 둡니다. 0~2초 안에 이미 깨끗해진 결과를 보여주면 볼 이유가 사라집니다(우리 01은 1.96초, 기존 제품 시작형 광고는 2.0초에 이미 깨끗한 얼굴. 확신도 낮음).</p>
 <div class="tbl"><table>
 <thead><tr><th>유형</th><th>어떻게</th><th>타사</th><th>CCFM</th><th>우리</th></tr></thead>
 <tbody>
@@ -315,7 +328,7 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 </table></div>
 <p class="note">CCFM에서 일자 라벨·카드뉴스·정방 분할·콜라주로 시작한 소재는 성과가 나빴거나 노출을 못 받았습니다. 날짜 카드와 분할은 중반 증거 컷으로 쓰고 오프닝에는 쓰지 않습니다.</p>
 </details></section>
-<section id="pair"><h2>키워드 짝</h2><details class="disclosure"><summary>키워드와 장면 조합 보기</summary>
+<section id="pair"><h2>키워드와 장면 조합 · 참고 자료</h2><details class="disclosure"><summary>키워드와 장면 조합 보기</summary>
 <div class="tbl"><table>
 <thead><tr><th>키워드 묶음</th><th>멜라크림 비포애프터</th><th>필링팩클렌저 비포애프터</th><th>타사가 덜 쓴 키워드(ACIS 매칭 0~2건)</th></tr></thead>
 <tbody>
@@ -357,13 +370,13 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 <div class="tbl"><table>
 <thead><tr><th>#</th><th>레버</th><th>근거</th><th>확신도</th></tr></thead>
 <tbody>
-<tr><td class="n">1</td><td>0초는 사람 얼굴. 제품 단독 컷으로 열지 않음</td><td>05는 0초 장갑+튜브에서 0→1초 −38%p(최대). 사람으로 연 01·02·04는 −12~−19%p. CCFM 50%+ 3편 모두 0초 얼굴</td><td>중</td></tr>
+<tr><td class="n">1</td><td>0초는 사람 얼굴. 제품 단독 컷으로 열지 않음</td><td>기존 제품 시작형 광고는 0초 장갑+튜브에서 0→1초 −38%p(최대). 사람으로 연 01·02·04는 −12~−19%p. CCFM 50%+ 3편 모두 0초 얼굴</td><td>중</td></tr>
 <tr><td class="n">2</td><td>0~1.6초는 한 컷. 바꿀 땐 같은 인물로 당겨 찍기</td><td>우리 첫 컷 전환 0.37~1.47초 직후 −26~−42%p. CCFM은 1.57초(같은 인물)·컷 없음·1.67초</td><td>중</td></tr>
 <tr><td class="n">3</td><td>화면 인물이 직접 말하거나, 첫 명사가 화면과 일치</td><td>외국인극찬·전문가후킹은 화면 인물이 화자. 우리 01·03은 "공개수업" 대사에 기미 얼굴</td><td>중~낮</td></tr>
 <tr><td class="n">4</td><td>첫 문장은 1.6초 안에 끝나는 권위·놀람·손실 한 마디. 사연 도입 금지</td><td>우리 사연형은 핵심 단어가 2.7~3.4초에 나옴</td><td>중~낮</td></tr>
 <tr><td class="n">5</td><td>타깃이 예상 못 한 인물(젊은 남성·외국인·파란 마네킹)</td><td>CCFM 50%+ 3편 모두 해당, 우리 0편</td><td>낮~중</td></tr>
 <tr><td class="n">6</td><td>상단 헤드라인은 크게 2줄, 내레이션과 다른 정보</td><td>외국인극찬 "이민까지 생각하게 되는 / made in 한국 기미 크림"</td><td>낮</td></tr>
-<tr><td class="n">7</td><td>0~2초에 완성된 애프터 금지</td><td>01은 1.96초, 05는 2.0초에 이미 깨끗한 얼굴</td><td>낮</td></tr>
+<tr><td class="n">7</td><td>0~2초에 완성된 애프터 금지</td><td>01은 1.96초, 기존 제품 시작형 광고는 2.0초에 이미 깨끗한 얼굴</td><td>낮</td></tr>
 </tbody>
 </table></div>
 <h3>키워드 묶음별 0~3초 오프닝 시안</h3>
@@ -383,19 +396,6 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 </tbody>
 </table></div>
 </details></section>
-<section id="h05">
-<h2>05 파생 4편</h2>
-<p>05의 실제 상단 고정 문구는 "10년동안 안없어진 기미 / 2주동안 발랐더니 없어졌습니다."(작은 글씨)이고, "이거 거짓말이 아닙니다"는 하단 자막·내레이션입니다(초판 정정). 1.33초 이후는 그대로 두고 앞부분만 바꿉니다.</p>
-<div class="tbl"><table>
-<thead><tr><th>편</th><th>바꾸는 것 하나</th><th>0~1.33초</th><th>검증 레버</th></tr></thead>
-<tbody>
-<tr><td><b>05-H1 얼굴 시작</b></td><td>0초 주체: 제품 → 타깃 얼굴</td><td>1.33초 컷의 기미 옆얼굴을 0초부터 한 컷으로. 제품 컷 삭제</td><td>1·2</td></tr>
-<tr><td><b>05-H2 의외 화자</b></td><td>0초 주체: 제품 → 예상 밖 인물</td><td>검정 티 젊은 남성 AI가 "이거 거짓말이 아닙니다"를 직접 말함</td><td>5·3 (인물·화자·대사가 함께 바뀌므로 단일 변수 효과 판정 불가)</td></tr>
-<tr><td><b>05-H3 첫 문장</b></td><td>첫 문장만</td><td>화면 원본 그대로, 내레이션을 "기미 지우는 크림, 거짓말 아닙니다"로</td><td>4</td></tr>
-<tr><td><b>05-C 문구 제거</b></td><td>상단 고정 문구만</td><td>원본에서 상단 띠만 삭제</td><td>"고정 문구가 팔았다" 가설</td></tr>
-</tbody>
-</table></div>
-</section>
 </div>
 <div class="pane" hidden="" id="t-cleanser">
 <section id="c-sum"><h2>클렌저 · 먼저 할 것</h2><div class="brief">
@@ -459,7 +459,18 @@ table{min-width:680px} th,td{line-height:1.6}.tbl{max-width:100%}
 <h3 class="sub">클렌저</h3>
 <ul class="plain"><li>리터니티 영상 49편 중 12편 분석, 37편 미분석. 이미지 3건은 별도. 랜딩은 카드 도메인 기준 추정이다.</li><li>다른 광고 계정과 리터니티의 관계는 확인 안 됨.</li><li>우리 클렌저의 고마쥬 밀림과 화이트헤드 개선이 화면에 잡히는지는 촬영 전이라 확인 안 됨.</li></ul>
 </details></section>
-</div>
+<section id="h05"><h2>이전 실험안 · 제품 튜브로 시작한 광고의 변경안</h2><details class="disclosure"><summary>이전 실험 기록 보기</summary>
+<p>05의 실제 상단 고정 문구는 "10년동안 안없어진 기미 / 2주동안 발랐더니 없어졌습니다."(작은 글씨)이고, "이거 거짓말이 아닙니다"는 하단 자막·내레이션입니다(초판 정정). 1.33초 이후는 그대로 두고 앞부분만 바꿉니다.</p>
+<div class="tbl"><table>
+<thead><tr><th>편</th><th>바꾸는 것 하나</th><th>0~1.33초</th><th>검증 레버</th></tr></thead>
+<tbody>
+<tr><td><b>제품 시작형 광고-H1 얼굴 시작</b></td><td>0초 주체: 제품 → 타깃 얼굴</td><td>1.33초 컷의 기미 옆얼굴을 0초부터 한 컷으로. 제품 컷 삭제</td><td>1·2</td></tr>
+<tr><td><b>제품 시작형 광고-H2 의외 화자</b></td><td>0초 주체: 제품 → 예상 밖 인물</td><td>검정 티 젊은 남성 AI가 "이거 거짓말이 아닙니다"를 직접 말함</td><td>5·3 (인물·화자·대사가 함께 바뀌므로 단일 변수 효과 판정 불가)</td></tr>
+<tr><td><b>제품 시작형 광고-H3 첫 문장</b></td><td>첫 문장만</td><td>화면 원본 그대로, 내레이션을 "기미 지우는 크림, 거짓말 아닙니다"로</td><td>4</td></tr>
+<tr><td><b>제품 시작형 광고-문구제거 문구 제거</b></td><td>상단 고정 문구만</td><td>원본에서 상단 띠만 삭제</td><td>"고정 문구가 팔았다" 가설</td></tr>
+</tbody>
+</table></div>
+</details></section></div>
 </div>
 <script id="schedule-data" type="application/json">[{"date": "2026-10-13", "track": "A", "title": "시나리오_8 \"피부 선생님 그만 만나셔도 돼요\"", "upload": "10/14 수 · 목표"}, {"date": "2026-10-13", "track": "C", "title": "시나리오_4(메디옥실 949652) v15 마무리 · 05-H1·H2·H3·C", "upload": "10/14 수 · 목표"}, {"date": "2026-10-14", "track": "B", "title": "시나리오_10 클렌저", "upload": "10/15 목 · 목표"}, {"date": "2026-10-15", "track": "A", "title": "신규 #1 지우개", "upload": "10/16 금 · 목표"}, {"date": "2026-10-15", "track": "C", "title": "시나리오_12 v1 검수 · 시나리오_7 v6 마무리", "upload": "10/16 금 · 목표"}, {"date": "2026-10-16", "track": "B", "title": "신규 #3 미니어처 공사", "upload": "10/19 월 · 목표"}, {"date": "2026-10-19", "track": "A", "title": "신규 #9 관리 베드", "upload": "10/20 화 · 목표"}, {"date": "2026-10-19", "track": "C", "title": "시나리오_11 마무리", "upload": "10/20 화 · 목표"}, {"date": "2026-10-20", "track": "B", "title": "신규 #4 UV 세안", "upload": "10/21 수 · 목표"}, {"date": "2026-10-21", "track": "A", "title": "시나리오_13 모녀 자막형", "upload": "10/22 목 · 목표"}, {"date": "2026-10-22", "track": "B", "title": "신규 #8 스킨부스터 1분 세안", "upload": "10/23 금 · 목표"}, {"date": "2026-10-23", "track": "A", "title": "시나리오_9 각색(마스크 원장)", "upload": "10/26 월 · 목표"}, {"date": "2026-10-26", "track": "B", "title": "신규 #10 야외 자외선", "upload": "10/27 화 · 목표"}]</script><script>
 (function(){
