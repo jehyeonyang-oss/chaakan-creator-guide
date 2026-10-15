@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-15T12:59:53+09:00",
+  "collected_at": "2026-10-15T13:15:01+09:00",
   "today": "2026-10-15",
   "start": "2026-10-08",
   "accounts": [
@@ -31,8 +31,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 32866.0,
-              "impressions": 548,
+              "spend": 33139.0,
+              "impressions": 561,
               "clicks": 20,
               "purchases": 0,
               "revenue": 0
@@ -717,8 +717,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 1817.0,
-              "impressions": 18,
+              "spend": 1871.0,
+              "impressions": 19,
               "clicks": 2,
               "purchases": 0,
               "revenue": 0
@@ -829,8 +829,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 16848.0,
-              "impressions": 163,
+              "spend": 16913.0,
+              "impressions": 164,
               "clicks": 9,
               "purchases": 0,
               "revenue": 0
@@ -903,6 +903,14 @@
               "date": "2026-10-14",
               "spend": 223.0,
               "impressions": 4,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0
+            },
+            {
+              "date": "2026-10-15",
+              "spend": 22.0,
+              "impressions": 1,
               "clicks": 0,
               "purchases": 0,
               "revenue": 0
@@ -1149,8 +1157,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 1273.0,
-              "impressions": 14,
+              "spend": 1395.0,
+              "impressions": 15,
               "clicks": 0,
               "purchases": 0,
               "revenue": 0
@@ -1333,8 +1341,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 17610.0,
-              "impressions": 264,
+              "spend": 18016.0,
+              "impressions": 269,
               "clicks": 13,
               "purchases": 1.0,
               "revenue": null
@@ -1573,8 +1581,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 1453.0,
-              "impressions": 21,
+              "spend": 1655.0,
+              "impressions": 25,
               "clicks": 3,
               "purchases": 0,
               "revenue": 0
