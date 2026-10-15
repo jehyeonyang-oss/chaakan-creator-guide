@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-16T06:15:02+09:00",
+  "collected_at": "2026-10-16T06:45:03+09:00",
   "today": "2026-10-16",
   "start": "2026-10-09",
   "accounts": [
@@ -39,9 +39,9 @@
             },
             {
               "date": "2026-10-16",
-              "spend": 10311.0,
-              "impressions": 115,
-              "clicks": 5,
+              "spend": 10981.0,
+              "impressions": 132,
+              "clicks": 6,
               "purchases": 0,
               "revenue": 0
             }
@@ -749,8 +749,8 @@
             },
             {
               "date": "2026-10-16",
-              "spend": 1171.0,
-              "impressions": 9,
+              "spend": 1896.0,
+              "impressions": 16,
               "clicks": 0,
               "purchases": 0,
               "revenue": 0
@@ -1205,8 +1205,8 @@
             },
             {
               "date": "2026-10-16",
-              "spend": 4445.0,
-              "impressions": 89,
+              "spend": 4888.0,
+              "impressions": 105,
               "clicks": 2,
               "purchases": 0,
               "revenue": 0
