@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-10-15T23:45:03+09:00",
-  "today": "2026-10-15",
-  "start": "2026-10-08",
+  "collected_at": "2026-10-16T00:15:03+09:00",
+  "today": "2026-10-16",
+  "start": "2026-10-09",
   "accounts": [
     {
       "id": "984589474000645",
@@ -31,40 +31,16 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 61609.0,
-              "impressions": 1106,
-              "clicks": 34,
-              "purchases": 0,
-              "revenue": 0
-            }
-          ]
-        },
-        {
-          "id": "120251111382790185",
-          "name": "세로_팩클렌저_찰흙_김경빈_M20260930_aict_vif_fb_261001_10",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 19134.0,
-              "impressions": 131,
-              "clicks": 10,
+              "spend": 62165.0,
+              "impressions": 1122,
+              "clicks": 36,
               "purchases": 0,
               "revenue": 0
             },
             {
-              "date": "2026-10-12",
-              "spend": 0.0,
-              "impressions": 0,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
-              "date": "2026-10-13",
-              "spend": 0.0,
-              "impressions": 0,
+              "date": "2026-10-16",
+              "spend": 1140.0,
+              "impressions": 13,
               "clicks": 0,
               "purchases": 0,
               "revenue": 0
@@ -77,14 +53,6 @@
           "active": false,
           "campaign": "",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 1801.0,
-              "impressions": 34,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-09",
               "spend": 3183.0,
@@ -110,14 +78,6 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 14495.0,
-              "impressions": 156,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-09",
               "spend": 7108.0,
               "impressions": 243,
@@ -141,14 +101,6 @@
           "active": false,
           "campaign": "",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 2213.0,
-              "impressions": 15,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-09",
               "spend": 12950.0,
@@ -174,14 +126,6 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 2520.0,
-              "impressions": 30,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-09",
               "spend": 7006.0,
               "impressions": 94,
@@ -206,14 +150,6 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 489.0,
-              "impressions": 19,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-09",
               "spend": 2031.0,
               "impressions": 31,
@@ -237,14 +173,6 @@
           "active": false,
           "campaign": "",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 4590.0,
-              "impressions": 57,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-09",
               "spend": 7864.0,
@@ -692,14 +620,6 @@
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 623.0,
-              "impressions": 6,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-13",
               "spend": 8427.0,
               "impressions": 70,
@@ -717,9 +637,9 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 13794.0,
-              "impressions": 130,
-              "clicks": 6,
+              "spend": 14200.0,
+              "impressions": 135,
+              "clicks": 7,
               "purchases": 0,
               "revenue": 0
             }
@@ -731,14 +651,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 180.0,
-              "impressions": 3,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-13",
               "spend": 753.0,
@@ -772,14 +684,6 @@
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 112.0,
-              "impressions": 3,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-13",
               "spend": 2737.0,
               "impressions": 44,
@@ -812,14 +716,6 @@
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 1796.0,
-              "impressions": 24,
-              "clicks": 2,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-13",
               "spend": 7399.0,
               "impressions": 109,
@@ -837,8 +733,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 27489.0,
-              "impressions": 278,
+              "spend": 27711.0,
+              "impressions": 280,
               "clicks": 14,
               "purchases": 0,
               "revenue": 0
@@ -851,14 +747,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 1941.0,
-              "impressions": 19,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-13",
               "spend": 1751.0,
@@ -892,14 +780,6 @@
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 947.0,
-              "impressions": 12,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-13",
               "spend": 1533.0,
               "impressions": 11,
@@ -931,14 +811,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 337.0,
-              "impressions": 3,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-13",
               "spend": 8.0,
@@ -988,14 +860,6 @@
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 5591.0,
-              "impressions": 24,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-12",
               "spend": 8552.0,
               "impressions": 168,
@@ -1021,8 +885,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 1096.0,
-              "impressions": 25,
+              "spend": 1241.0,
+              "impressions": 26,
               "clicks": 2,
               "purchases": 0,
               "revenue": 0
@@ -1035,14 +899,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 630.0,
-              "impressions": 9,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-12",
               "spend": 533.0,
@@ -1084,14 +940,6 @@
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 80.0,
-              "impressions": 1,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-12",
               "spend": 9.0,
               "impressions": 1,
@@ -1131,14 +979,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 470.0,
-              "impressions": 9,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-12",
               "spend": 68.0,
@@ -1180,14 +1020,6 @@
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 559.0,
-              "impressions": 4,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-12",
               "spend": 443.0,
               "impressions": 2,
@@ -1219,14 +1051,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 743.0,
-              "impressions": 22,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-09",
               "spend": 292.0,
@@ -1292,14 +1116,6 @@
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 9845.0,
-              "impressions": 208,
-              "clicks": 7,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-09",
               "spend": 10970.0,
               "impressions": 190,
@@ -1349,9 +1165,9 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 41180.0,
-              "impressions": 696,
-              "clicks": 21,
+              "spend": 42008.0,
+              "impressions": 725,
+              "clicks": 24,
               "purchases": 1.0,
               "revenue": null
             }
@@ -1363,14 +1179,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 641.0,
-              "impressions": 24,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-09",
               "spend": 1414.0,
@@ -1411,14 +1219,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 11220.0,
-              "impressions": 228,
-              "clicks": 11,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-09",
               "spend": 4840.0,
@@ -1469,8 +1269,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 5335.0,
-              "impressions": 156,
+              "spend": 5478.0,
+              "impressions": 168,
               "clicks": 4,
               "purchases": 0,
               "revenue": 0
@@ -1483,14 +1283,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 463.0,
-              "impressions": 23,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-09",
               "spend": 635.0,
@@ -1531,14 +1323,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 2925.0,
-              "impressions": 74,
-              "clicks": 3,
-              "purchases": 0,
-              "revenue": 0
-            },
             {
               "date": "2026-10-09",
               "spend": 2776.0,
@@ -1604,14 +1388,6 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 48882.0,
-              "impressions": 824,
-              "clicks": 46,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-09",
               "spend": 33559.0,
               "impressions": 571,
@@ -1660,14 +1436,6 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-08",
-              "spend": 4072.0,
-              "impressions": 82,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-12",
               "spend": 5289.0,
               "impressions": 89,
@@ -1680,22 +1448,6 @@
               "spend": 16714.0,
               "impressions": 299,
               "clicks": 4,
-              "purchases": 0,
-              "revenue": 0
-            }
-          ]
-        },
-        {
-          "id": "52628470454547",
-          "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (6)_vim_fb_261001_08",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-08",
-              "spend": 42699.0,
-              "impressions": 688,
-              "clicks": 34,
               "purchases": 0,
               "revenue": 0
             }
