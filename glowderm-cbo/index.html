@@ -181,7 +181,7 @@ function filterTable(){
   $('#ccfm-count').textContent=count+'개 소재';$('#ccfm-empty').hidden=count>0;
 }
 $('#ccfm-category').addEventListener('change',filterTable);$('#ccfm-search').addEventListener('input',filterTable);filterTable();applyCurves();
-const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(visible)$$('nav a').forEach(a=>{const on=a.getAttribute('href')==='#'+visible.target.id;a.classList.toggle('current',on);if(on)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});},{rootMargin:'-15% 0px -55% 0px',threshold:[0,.15,.5]});
+const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(visible)$$('nav[aria-label="페이지 목차"] a').forEach(a=>{const on=a.getAttribute('href')==='#'+visible.target.id;a.classList.toggle('current',on);if(on)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});},{rootMargin:'-15% 0px -55% 0px',threshold:[0,.15,.5]});
 $$('main>section').forEach(s=>observer.observe(s));
 // Re-evaluate at view time so an old static deployment cannot look current tomorrow.
 const freshness=$('#freshness'),end=freshness?.dataset.periodEnd;
