@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-15T23:15:03+09:00",
+  "collected_at": "2026-10-15T23:45:03+09:00",
   "today": "2026-10-15",
   "start": "2026-10-08",
   "accounts": [
@@ -31,9 +31,9 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 60167.0,
-              "impressions": 1085,
-              "clicks": 33,
+              "spend": 61609.0,
+              "impressions": 1106,
+              "clicks": 34,
               "purchases": 0,
               "revenue": 0
             }
@@ -717,8 +717,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 13401.0,
-              "impressions": 126,
+              "spend": 13794.0,
+              "impressions": 130,
               "clicks": 6,
               "purchases": 0,
               "revenue": 0
@@ -837,8 +837,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 26299.0,
-              "impressions": 273,
+              "spend": 27489.0,
+              "impressions": 278,
               "clicks": 14,
               "purchases": 0,
               "revenue": 0
@@ -1021,8 +1021,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 1072.0,
-              "impressions": 23,
+              "spend": 1096.0,
+              "impressions": 25,
               "clicks": 2,
               "purchases": 0,
               "revenue": 0
@@ -1349,8 +1349,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 40475.0,
-              "impressions": 674,
+              "spend": 41180.0,
+              "impressions": 696,
               "clicks": 21,
               "purchases": 1.0,
               "revenue": null
@@ -1469,8 +1469,8 @@
             },
             {
               "date": "2026-10-15",
-              "spend": 5055.0,
-              "impressions": 145,
+              "spend": 5335.0,
+              "impressions": 156,
               "clicks": 4,
               "purchases": 0,
               "revenue": 0
