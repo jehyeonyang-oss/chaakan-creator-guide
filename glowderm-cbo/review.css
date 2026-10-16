@@ -8,3 +8,5 @@
 .scroll-hint{display:none}@media(max-width:600px){.scroll-hint{display:block;font-size:11px;color:var(--muted);margin:7px 0}}
 
 nav[aria-label="리뷰 탭"]{position:static;margin-bottom:22px}nav[aria-label="리뷰 탭"] a[aria-current="page"]{background:#e4eeea;color:var(--accent);font-weight:600}
+
+#overview .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}@media(max-width:800px){#overview .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
