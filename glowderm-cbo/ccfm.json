@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-16T10:45:04+09:00",
+  "collected_at": "2026-10-16T11:15:03+09:00",
   "today": "2026-10-16",
   "start": "2026-10-09",
   "accounts": [
@@ -39,8 +39,8 @@
             },
             {
               "date": "2026-10-16",
-              "spend": 26950.0,
-              "impressions": 363,
+              "spend": 28906.0,
+              "impressions": 393,
               "clicks": 17,
               "purchases": 0,
               "revenue": 0
@@ -685,8 +685,8 @@
             },
             {
               "date": "2026-10-16",
-              "spend": 762.0,
-              "impressions": 14,
+              "spend": 810.0,
+              "impressions": 15,
               "clicks": 0,
               "purchases": 0,
               "revenue": 0
@@ -757,9 +757,9 @@
             },
             {
               "date": "2026-10-16",
-              "spend": 15629.0,
-              "impressions": 109,
-              "clicks": 8,
+              "spend": 15886.0,
+              "impressions": 114,
+              "clicks": 11,
               "purchases": 0,
               "revenue": 0
             }
@@ -927,7 +927,7 @@
               "date": "2026-10-16",
               "spend": 2301.0,
               "impressions": 43,
-              "clicks": 2,
+              "clicks": 3,
               "purchases": 0,
               "revenue": 0
             }
@@ -1237,8 +1237,8 @@
             },
             {
               "date": "2026-10-16",
-              "spend": 18410.0,
-              "impressions": 293,
+              "spend": 19430.0,
+              "impressions": 308,
               "clicks": 8,
               "purchases": 0,
               "revenue": 0
@@ -1349,9 +1349,9 @@
             },
             {
               "date": "2026-10-16",
-              "spend": 1172.0,
-              "impressions": 49,
-              "clicks": 2,
+              "spend": 1266.0,
+              "impressions": 56,
+              "clicks": 3,
               "purchases": 0,
               "revenue": 0
             }
