@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-10-16T12:15:03+09:00",
-  "today": "2026-10-16",
-  "start": "2026-10-09",
+  "collected_at": "2026-10-17T09:35:02+09:00",
+  "today": "2026-10-17",
+  "start": "2026-10-10",
   "accounts": [
     {
       "id": "984589474000645",
@@ -12,21 +12,78 @@
           "name": "카드뉴스_팩클렌저_피부턴오버_정나라_M20261014 -썸네일3_vif_fb_2601016_03",
           "active": true,
           "campaign": "CCFM_팩클렌저_ABO_29_260903(페이셜)",
-          "daily": []
-        },
-        {
-          "id": "120251341509490185",
-          "name": "카드뉴스_팩클렌저_피부턴오버_정나라_M20261014 -썸네일1_vif_fb_2601016_01",
-          "active": true,
-          "campaign": "CCFM_팩클렌저_ABO_29_260903(페이셜)",
-          "daily": []
+          "daily": [
+            {
+              "date": "2026-10-16",
+              "spend": 1170.0,
+              "impressions": 25,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 10686.0,
+              "impressions": 61,
+              "clicks": 6,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
         },
         {
           "id": "120251341578520185",
           "name": "카드뉴스_팩클렌저_피부턴오버_정나라_M20261014 -썸네일2_vif_fb_2601016_02",
           "active": true,
           "campaign": "CCFM_팩클렌저_ABO_29_260903(페이셜)",
-          "daily": []
+          "daily": [
+            {
+              "date": "2026-10-16",
+              "spend": 3583.0,
+              "impressions": 33,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 8153.0,
+              "impressions": 42,
+              "clicks": 3,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
+          "id": "120251341509490185",
+          "name": "카드뉴스_팩클렌저_피부턴오버_정나라_M20261014 -썸네일1_vif_fb_2601016_01",
+          "active": true,
+          "campaign": "CCFM_팩클렌저_ABO_29_260903(페이셜)",
+          "daily": [
+            {
+              "date": "2026-10-16",
+              "spend": 20410.0,
+              "impressions": 276,
+              "clicks": 8,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 1825.0,
+              "impressions": 20,
+              "clicks": 2,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
         },
         {
           "id": "120251204525970185",
@@ -35,20 +92,13 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 3183.0,
-              "impressions": 38,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 6083.0,
               "impressions": 29,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -59,20 +109,13 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 7108.0,
-              "impressions": 243,
-              "clicks": 3,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 6245.0,
               "impressions": 66,
               "clicks": 4,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -83,20 +126,13 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 12950.0,
-              "impressions": 371,
-              "clicks": 6,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 4952.0,
               "impressions": 77,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -107,20 +143,13 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 7006.0,
-              "impressions": 94,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 4369.0,
               "impressions": 104,
               "clicks": 10,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -131,20 +160,13 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 2031.0,
-              "impressions": 31,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 401.0,
               "impressions": 26,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -155,20 +177,13 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 7864.0,
-              "impressions": 141,
-              "clicks": 3,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 2292.0,
               "impressions": 81,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -184,7 +199,8 @@
               "impressions": 214,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -192,7 +208,8 @@
               "impressions": 92,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -200,7 +217,8 @@
               "impressions": 54,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -216,7 +234,8 @@
               "impressions": 74,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -224,7 +243,8 @@
               "impressions": 31,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -232,7 +252,8 @@
               "impressions": 90,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -240,7 +261,8 @@
               "impressions": 112,
               "clicks": 4,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -256,7 +278,8 @@
               "impressions": 43,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -264,7 +287,8 @@
               "impressions": 41,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -272,7 +296,8 @@
               "impressions": 57,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -280,7 +305,8 @@
               "impressions": 34,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -296,7 +322,8 @@
               "impressions": 233,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -304,7 +331,8 @@
               "impressions": 266,
               "clicks": 4,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -312,7 +340,8 @@
               "impressions": 60,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -328,7 +357,8 @@
               "impressions": 10,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -336,7 +366,8 @@
               "impressions": 24,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -344,7 +375,8 @@
               "impressions": 12,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -352,7 +384,8 @@
               "impressions": 7,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -368,7 +401,8 @@
               "impressions": 22,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -376,7 +410,8 @@
               "impressions": 68,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -384,7 +419,8 @@
               "impressions": 149,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -392,7 +428,8 @@
               "impressions": 113,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -408,7 +445,8 @@
               "impressions": 85,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -416,7 +454,8 @@
               "impressions": 54,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -424,7 +463,8 @@
               "impressions": 198,
               "clicks": 3,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -432,7 +472,8 @@
               "impressions": 103,
               "clicks": 5,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -448,7 +489,8 @@
               "impressions": 6,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -456,7 +498,8 @@
               "impressions": 79,
               "clicks": 4,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -464,7 +507,8 @@
               "impressions": 128,
               "clicks": 3,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -480,7 +524,8 @@
               "impressions": 71,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -488,7 +533,8 @@
               "impressions": 100,
               "clicks": 1,
               "purchases": 1.0,
-              "revenue": 32000.0
+              "revenue": 32000.0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -496,15 +542,17 @@
               "impressions": 1123,
               "clicks": 36,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 31890.0,
-              "impressions": 430,
+              "spend": 32217.0,
+              "impressions": 431,
               "clicks": 20,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -520,7 +568,8 @@
               "impressions": 69,
               "clicks": 3,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -528,7 +577,8 @@
               "impressions": 79,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -544,7 +594,8 @@
               "impressions": 303,
               "clicks": 9,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -552,7 +603,8 @@
               "impressions": 225,
               "clicks": 5,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -568,7 +620,8 @@
               "impressions": 59,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -576,7 +629,8 @@
               "impressions": 70,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -592,7 +646,8 @@
               "impressions": 14,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -600,7 +655,8 @@
               "impressions": 20,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -616,7 +672,8 @@
               "impressions": 14,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -624,7 +681,8 @@
               "impressions": 233,
               "clicks": 12,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         }
@@ -634,6 +692,49 @@
       "id": "1752054442892598",
       "label": "CCFM 2계정 · 기미크림",
       "ads": [
+        {
+          "id": "52632401910747",
+          "name": "세로_멜라크림_레이저압축_김경빈_M20261006_aict_vim_fb_261016_02",
+          "active": true,
+          "campaign": "CCFM_기미크림_CBO_261001",
+          "daily": [
+            {
+              "date": "2026-10-16",
+              "spend": 17701.0,
+              "impressions": 344,
+              "clicks": 4,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 15716.0,
+              "impressions": 224,
+              "clicks": 7,
+              "purchases": 1.0,
+              "revenue": 32900.0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
+          "id": "52632401881747",
+          "name": "세로_멜라크림_클로드영상_김경빈_M20261013_vim_fb_261016_01",
+          "active": true,
+          "campaign": "CCFM_기미크림_CBO_261001",
+          "daily": [
+            {
+              "date": "2026-10-16",
+              "spend": 1162.0,
+              "impressions": 13,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
         {
           "id": "52629600526747",
           "name": "세로_멜라크림_오해받음_정나라_M20260930 (3)_vim_fb_261006_07",
@@ -646,7 +747,8 @@
               "impressions": 15,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -654,7 +756,8 @@
               "impressions": 17,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -662,15 +765,17 @@
               "impressions": 9,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 883.0,
-              "impressions": 17,
+              "spend": 1753.0,
+              "impressions": 23,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -686,7 +791,8 @@
               "impressions": 44,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -694,7 +800,8 @@
               "impressions": 8,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -702,7 +809,17 @@
               "impressions": 5,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-16",
+              "spend": 113.0,
+              "impressions": 1,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -718,7 +835,8 @@
               "impressions": 37,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -726,7 +844,8 @@
               "impressions": 9,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -734,7 +853,8 @@
               "impressions": 4,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -750,7 +870,8 @@
               "impressions": 11,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -758,7 +879,8 @@
               "impressions": 4,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -766,7 +888,8 @@
               "impressions": 1,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -782,7 +905,8 @@
               "impressions": 1,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
@@ -790,7 +914,8 @@
               "impressions": 5,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -806,7 +931,8 @@
               "impressions": 9,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -814,7 +940,8 @@
               "impressions": 6,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -822,7 +949,8 @@
               "impressions": 2,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -838,7 +966,8 @@
               "impressions": 168,
               "clicks": 8,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -846,7 +975,8 @@
               "impressions": 228,
               "clicks": 15,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -854,7 +984,8 @@
               "impressions": 175,
               "clicks": 7,
               "purchases": 1.0,
-              "revenue": 32900.0
+              "revenue": 32900.0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -862,15 +993,26 @@
               "impressions": 26,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 2380.0,
-              "impressions": 47,
-              "clicks": 3,
+              "spend": 11338.0,
+              "impressions": 234,
+              "clicks": 12,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 540.0,
+              "impressions": 10,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -886,7 +1028,8 @@
               "impressions": 5,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -894,7 +1037,8 @@
               "impressions": 11,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -902,7 +1046,8 @@
               "impressions": 44,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -910,15 +1055,26 @@
               "impressions": 10,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 60.0,
-              "impressions": 2,
+              "spend": 705.0,
+              "impressions": 10,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 301.0,
+              "impressions": 1,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -934,7 +1090,8 @@
               "impressions": 1,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -942,7 +1099,8 @@
               "impressions": 2,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -950,7 +1108,8 @@
               "impressions": 24,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -958,7 +1117,17 @@
               "impressions": 1,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-16",
+              "spend": 13.0,
+              "impressions": 1,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -974,7 +1143,8 @@
               "impressions": 1,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -982,7 +1152,8 @@
               "impressions": 26,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -990,7 +1161,8 @@
               "impressions": 34,
               "clicks": 4,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -998,15 +1170,26 @@
               "impressions": 35,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 2355.0,
-              "impressions": 29,
+              "spend": 4034.0,
+              "impressions": 41,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 5.0,
+              "impressions": 1,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1022,7 +1205,8 @@
               "impressions": 2,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -1030,7 +1214,8 @@
               "impressions": 3,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -1038,7 +1223,8 @@
               "impressions": 6,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1049,20 +1235,13 @@
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 292.0,
-              "impressions": 8,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 374.0,
               "impressions": 12,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -1070,7 +1249,8 @@
               "impressions": 5,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -1078,7 +1258,8 @@
               "impressions": 45,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -1086,7 +1267,8 @@
               "impressions": 11,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -1094,7 +1276,8 @@
               "impressions": 1,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -1102,7 +1285,8 @@
               "impressions": 1,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
@@ -1110,7 +1294,8 @@
               "impressions": 2,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1121,20 +1306,13 @@
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 1414.0,
-              "impressions": 32,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 894.0,
               "impressions": 20,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -1142,7 +1320,8 @@
               "impressions": 3,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -1150,7 +1329,8 @@
               "impressions": 6,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1161,20 +1341,13 @@
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 4840.0,
-              "impressions": 148,
-              "clicks": 8,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 4385.0,
               "impressions": 115,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -1182,7 +1355,8 @@
               "impressions": 123,
               "clicks": 3,
               "purchases": 1.0,
-              "revenue": 79300.0
+              "revenue": 79300.0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -1190,7 +1364,8 @@
               "impressions": 256,
               "clicks": 7,
               "purchases": 1.0,
-              "revenue": 32900.0
+              "revenue": 32900.0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -1198,7 +1373,8 @@
               "impressions": 131,
               "clicks": 5,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -1206,7 +1382,8 @@
               "impressions": 203,
               "clicks": 10,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -1214,15 +1391,26 @@
               "impressions": 169,
               "clicks": 4,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 2312.0,
-              "impressions": 72,
-              "clicks": 3,
+              "spend": 23349.0,
+              "impressions": 525,
+              "clicks": 21,
+              "purchases": 1.0,
+              "revenue": 44900.0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 16257.0,
+              "impressions": 215,
+              "clicks": 8,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1233,20 +1421,13 @@
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 635.0,
-              "impressions": 24,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 946.0,
               "impressions": 29,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -1254,7 +1435,8 @@
               "impressions": 16,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -1262,15 +1444,26 @@
               "impressions": 4,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 1282.0,
-              "impressions": 16,
-              "clicks": 1,
+              "spend": 1939.0,
+              "impressions": 29,
+              "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 18.0,
+              "impressions": 2,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1281,20 +1474,13 @@
           "campaign": "CCFM_기미크림_CBO_29_260904_위닝소재타겟테스트",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 2776.0,
-              "impressions": 71,
-              "clicks": 3,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 2008.0,
               "impressions": 68,
               "clicks": 5,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -1302,7 +1488,8 @@
               "impressions": 109,
               "clicks": 5,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -1310,7 +1497,8 @@
               "impressions": 354,
               "clicks": 13,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -1318,7 +1506,8 @@
               "impressions": 71,
               "clicks": 4,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -1326,7 +1515,8 @@
               "impressions": 82,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -1334,15 +1524,26 @@
               "impressions": 88,
               "clicks": 8,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 1362.0,
-              "impressions": 9,
-              "clicks": 1,
+              "spend": 8398.0,
+              "impressions": 124,
+              "clicks": 5,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-17",
+              "spend": 7340.0,
+              "impressions": 125,
+              "clicks": 9,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1353,20 +1554,13 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 33559.0,
-              "impressions": 571,
-              "clicks": 24,
-              "purchases": 1.0,
-              "revenue": 32900.0
-            },
-            {
               "date": "2026-10-10",
               "spend": 23377.0,
               "impressions": 446,
               "clicks": 24,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -1374,7 +1568,8 @@
               "impressions": 769,
               "clicks": 52,
               "purchases": 1.0,
-              "revenue": 32900.0
+              "revenue": 32900.0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -1382,7 +1577,8 @@
               "impressions": 319,
               "clicks": 12,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -1390,7 +1586,8 @@
               "impressions": 0,
               "clicks": 0,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1401,20 +1598,13 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-09",
-              "spend": 10970.0,
-              "impressions": 190,
-              "clicks": 5,
-              "purchases": 0,
-              "revenue": 0
-            },
-            {
               "date": "2026-10-10",
               "spend": 10042.0,
               "impressions": 201,
               "clicks": 6,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-11",
@@ -1422,7 +1612,8 @@
               "impressions": 228,
               "clicks": 9,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-12",
@@ -1430,7 +1621,8 @@
               "impressions": 223,
               "clicks": 10,
               "purchases": 1.0,
-              "revenue": 44900.0
+              "revenue": 44900.0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -1438,7 +1630,8 @@
               "impressions": 291,
               "clicks": 7,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -1446,7 +1639,8 @@
               "impressions": 602,
               "clicks": 27,
               "purchases": 2.0,
-              "revenue": 110800.0
+              "revenue": 110800.0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -1454,15 +1648,17 @@
               "impressions": 727,
               "clicks": 24,
               "purchases": 1.0,
-              "revenue": null
+              "revenue": null,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 19703.0,
-              "impressions": 322,
+              "spend": 19762.0,
+              "impressions": 324,
               "clicks": 8,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1478,7 +1674,8 @@
               "impressions": 89,
               "clicks": 4,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-13",
@@ -1486,7 +1683,8 @@
               "impressions": 299,
               "clicks": 4,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1502,7 +1700,8 @@
               "impressions": 70,
               "clicks": 7,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -1510,7 +1709,8 @@
               "impressions": 33,
               "clicks": 1,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -1518,7 +1718,8 @@
               "impressions": 135,
               "clicks": 7,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
@@ -1526,7 +1727,8 @@
               "impressions": 34,
               "clicks": 2,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -1542,7 +1744,8 @@
               "impressions": 109,
               "clicks": 7,
               "purchases": 1.0,
-              "revenue": 44900.0
+              "revenue": 44900.0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-14",
@@ -1550,7 +1753,8 @@
               "impressions": 351,
               "clicks": 16,
               "purchases": 1.0,
-              "revenue": 32900.0
+              "revenue": 32900.0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-15",
@@ -1558,15 +1762,17 @@
               "impressions": 280,
               "clicks": 14,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             },
             {
               "date": "2026-10-16",
-              "spend": 15917.0,
-              "impressions": 115,
+              "spend": 17111.0,
+              "impressions": 116,
               "clicks": 11,
               "purchases": 0,
-              "revenue": 0
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         }
