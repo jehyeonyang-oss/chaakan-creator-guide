@@ -53,7 +53,7 @@
       if (!item) {
         if (loaded && !cell.querySelector('.ccfm-media-missing')) {
           const missing = document.createElement('small');
-          missing.className = 'ccfm-media-missing'; missing.textContent = ' · 원본 미확보';
+          missing.className = 'ccfm-media-missing'; missing.textContent = ' · 원본 연결 확인 중';
           cell.append(missing);
         }
         continue;
