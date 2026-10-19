@@ -10,5 +10,13 @@
   {
     "path": "maerilly.shop/movie",
     "expires": "2026-10-19T15:00:00Z"
+  },
+  {
+    "path": "daily_nnd_/edit",
+    "expires": "2026-10-26T05:00:00Z"
+  },
+  {
+    "path": "jo_hyeseo/edit",
+    "expires": "2026-10-26T05:00:00Z"
   }
 ]
