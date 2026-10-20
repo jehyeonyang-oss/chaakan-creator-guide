@@ -1,5 +1,5 @@
 (() => {
-  const expires = Date.parse('2026-10-23T15:09:23+09:00');
+  const expires = Date.parse('2026-11-14T00:00:00+09:00');
   function expire() {
     if (Date.now() < expires) return;
     document.documentElement.style.visibility = 'hidden';
