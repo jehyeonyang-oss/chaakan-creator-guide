@@ -14,6 +14,17 @@
   const staff = url => { const u=new URL(url); u.searchParams.set('staff','1'); return u.href; };
   const md = (t, time) => { const k=new Date(t+9*3600000), p=v=>String(v).padStart(2,'0'); return `${k.getUTCMonth()+1}/${k.getUTCDate()}`+(time?` ${p(k.getUTCHours())}:${p(k.getUTCMinutes())}`:''); };
   const expiryText = e => { const t=Date.parse(e); return !e||!Number.isFinite(t)?'열람 기한 미등록':Date.now()<t?`크리에이터 열람 ${md(t,true)}까지`:`크리에이터 열람 종료 (${md(t)})`; };
+  // Delivered guides are deleted after expiry; a 404 sends staff to the master guide instead.
+  const MASTER='https://jehyeonyang-oss.github.io/chaakan-creator-guide/combo/';
+  function checkDeleted() {
+    document.querySelectorAll('a.guide[data-guide]').forEach(a => {
+      fetch(a.dataset.guide, {method:'HEAD', cache:'no-store'}).then(r => {
+        if(r.status!==404 || !a.isConnected) return;
+        a.href=MASTER; a.textContent='전달본 삭제됨 · 마스터 가이드 보기 ↗'; a.removeAttribute('data-guide');
+        const note=a.nextElementSibling; if(note){note.textContent='전달본 삭제 · 로컬 사본은 research 폴더'; note.removeAttribute('data-expires');}
+      }).catch(()=>{}); // network errors leave the button unchanged
+    });
+  }
   let busy=false, timer;
   function render(data) {
     if(![1,2].includes(data.schemaVersion) || !Array.isArray(data.creators) || data.creators.length>20 || !Number.isFinite(Date.parse(data.syncedAt))) throw Error('Invalid data');
@@ -24,7 +35,7 @@
       const record=safe(c.recordUrl,'seeding-a700a.web.app','/creator-review.html');
       const n=i+1;
       table.push(`<tr><td><a href="#creator-${n}">${esc(c.name)} ↗</a></td><td>${trackTag(c)}</td><td>${esc(c.product)}</td><td>${esc(c.stage)}</td><td>${tag(c.scheduleType)} ${esc(c.schedule)}</td></tr>`);
-      cards.push(`<article id="creator-${n}" class="creator"><div class="card-top"><span class="number">${String(n).padStart(2,'0')}</span><span>${trackTag(c)} ${tag(c.scheduleType)}</span></div><h3>${esc(c.name)}</h3><a class="account" href="${ig(c.account)}" target="_blank" rel="noopener">@${esc(c.account)} ↗</a><p class="product">${esc(c.product)}</p><p class="concept">${esc(c.content)}</p><div class="status"><b>${esc(c.stage)}</b><p>${esc(c.detail)}</p></div><div class="date"><small>콘텐츠 일정</small><strong>${esc(c.schedule)}</strong></div><div class="next"><small>다음 단계</small><p>${esc(c.next)}</p></div><div class="links">${guide?`<a class="guide" href="${esc(staff(guide))}" target="_blank" rel="noopener">촬영 가이드 보기 ↗</a><small class="expiry">${esc(expiryText(c.expires))}</small>`:'<a class="guide expired" aria-disabled="true">가이드 미연결</a><small class="expiry">가이드 링크 미등록</small>'}${record?`<a class="record" href="${esc(record)}" target="_blank" rel="noopener">대시보드 계정 기록 ↗ <span>로그인 필요</span></a>`:''}</div></article>`);
+      cards.push(`<article id="creator-${n}" class="creator"><div class="card-top"><span class="number">${String(n).padStart(2,'0')}</span><span>${trackTag(c)} ${tag(c.scheduleType)}</span></div><h3>${esc(c.name)}</h3><a class="account" href="${ig(c.account)}" target="_blank" rel="noopener">@${esc(c.account)} ↗</a><p class="product">${esc(c.product)}</p><p class="concept">${esc(c.content)}</p><div class="status"><b>${esc(c.stage)}</b><p>${esc(c.detail)}</p></div><div class="date"><small>콘텐츠 일정</small><strong>${esc(c.schedule)}</strong></div><div class="next"><small>다음 단계</small><p>${esc(c.next)}</p></div><div class="links">${guide?`<a class="guide" data-guide="${esc(guide)}" href="${esc(staff(guide))}" target="_blank" rel="noopener">촬영 가이드 보기 ↗</a><small class="expiry">${esc(expiryText(c.expires))}</small>`:'<a class="guide expired" aria-disabled="true">가이드 미연결</a><small class="expiry">가이드 링크 미등록</small>'}${record?`<a class="record" href="${esc(record)}" target="_blank" rel="noopener">대시보드 계정 기록 ↗ <span>로그인 필요</span></a>`:''}</div></article>`);
     }
     el('status-rows').innerHTML=table.join('')||'<tr><td colspan="5">진행 중인 캠페인이 없습니다.</td></tr>';
     el('creator-cards').innerHTML=cards.join('');
@@ -41,6 +52,7 @@
     const stale=Date.now()-Date.parse(data.syncedAt)>12*3600000;
     el('sync-state').textContent=stale?'갱신 지연 · 표시된 시점의 데이터입니다':'대시보드 자동 반영 · 페이지 1분마다 확인';
     el('sync-state').dataset.state=stale?'stale':'ok';
+    checkDeleted();
     window.editStatusSnapshot=data;
   }
   async function refresh() {
@@ -49,6 +61,7 @@
     catch {el('sync-state').textContent='최신 데이터 연결 실패 · 표시된 시점의 자료입니다';el('sync-state').dataset.state='error';}
     finally {busy=false;}
   }
+  checkDeleted(); // static build buttons, before the first data fetch
   refresh();timer=setInterval(()=>{if(!document.hidden)refresh();},60000);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
   window.addEventListener('pagehide',()=>clearInterval(timer));
