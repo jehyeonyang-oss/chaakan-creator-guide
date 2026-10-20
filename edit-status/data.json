@@ -1,8 +1,9 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "creators": [
     {
       "name": "매릴리",
+      "track": "키높이",
       "account": "maerilly.shop",
       "product": "파라 키높이 스트랩 메리제인 플랫 PMFBS3i003",
       "content": "여행 속 착화 · 키높이와 코디 소개",
@@ -20,6 +21,7 @@
     },
     {
       "name": "민꽁",
+      "track": "키높이",
       "account": "minkko.ng",
       "product": "풀문 키높이 퍼안감 방한 부츠 WTSDR4i006",
       "content": "언박싱 · 신발 디테일 · 착화 소개",
@@ -37,6 +39,7 @@
     },
     {
       "name": "너티",
+      "track": "키높이",
       "account": "daily_nnd_",
       "product": "체시 키높이 비율 보정 페니로퍼 LFLTR3i001 브라운 235",
       "content": "데일리룩 · 바지 끌림 고민 · 착화 전후 비교",
@@ -54,6 +57,7 @@
     },
     {
       "name": "조혜서",
+      "track": "키높이",
       "account": "jo_hyeseo",
       "product": "놀킨 키높이 바이커 투웨이 미들부츠 BLLTR4i004 블랙 235",
       "content": "신발 소개 · 착화 전후 · 제품 디테일",
@@ -68,7 +72,85 @@
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/jo_hyeseo/edit/",
       "expires": "2026-10-26T14:00:00+09:00",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=4mhQYd0V9msKufYdOa6a"
+    },
+    {
+      "name": "정연",
+      "track": "키높이",
+      "account": "zeongyeoniii",
+      "product": "페탈 커스텀 멀티웨이 롱부츠 + 벌키 스니커즈",
+      "content": "롱부츠·스니커즈 착화 소개",
+      "stage": "제품 발송 완료",
+      "status": "발송완료",
+      "sentDate": "2026-10-14",
+      "postDate": "2026-10-22",
+      "detail": "2026-10-14 출고",
+      "schedule": "2026-10-22 업로드 예정",
+      "scheduleType": "확정",
+      "next": "초안 검수 및 예정일 업로드 확인",
+      "guideUrl": "",
+      "expires": "",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=XT9lAJZCWVutjQtjnNAo"
+    },
+    {
+      "name": "매릴리",
+      "track": "26FW",
+      "account": "maerilly.shop",
+      "product": "무비 슬라우치 부츠 BSSDR4i156",
+      "content": "슬라우치 부츠 코디 · 착화 소개",
+      "stage": "제품 발송 완료",
+      "status": "발송완료",
+      "sentDate": "2026-10-15",
+      "postDate": "",
+      "detail": "2026-10-15 출고",
+      "schedule": "게시일 협의 중",
+      "scheduleType": "협의 중",
+      "next": "제품·배송 상태 확인 및 초안·게시일 확정",
+      "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/maerilly.shop/movie/",
+      "expires": "2026-10-20T00:00:00+09:00",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=4iA7tSaF69AAiWfXxNPU"
     }
   ],
-  "syncedAt": "2026-10-20T05:51:39.068937+00:00"
+  "contacts": [
+    {
+      "account": "iffyssi",
+      "track": "키높이",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=0MfywoekF7PgJ7oM2t6p"
+    },
+    {
+      "account": "cherry_3_yun",
+      "track": "키높이",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=FcuOHeTnXe4N8K6Cbybk"
+    },
+    {
+      "account": "itshappyniday",
+      "track": "키높이",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=GP910pFWsfDdOeQfFR7K"
+    },
+    {
+      "account": "__sil_0",
+      "track": "키높이",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=K0syyAUgVYzWoswsKoXE"
+    },
+    {
+      "account": "o_____ing",
+      "track": "키높이",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=KFpVHYjgBAxAwMBebA20"
+    },
+    {
+      "account": "beureyu",
+      "track": "키높이",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=V3lYa2Eq8IhFxbTasRNg"
+    },
+    {
+      "account": "bobaerit",
+      "track": "26FW",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=Wuac8RDZOoC5DTpd3nvQ"
+    },
+    {
+      "account": "_its.innnn",
+      "track": "키높이",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=b7ZdXpWHVpU0J89XFDcb"
+    }
+  ],
+  "syncedAt": "2026-10-20T07:23:55.198483+00:00"
 }
