@@ -25,6 +25,11 @@
       }).catch(()=>{}); // network errors leave the button unchanged
     });
   }
+  function engagement(c) {
+    if(!Array.isArray(c.engagement)||!c.engagement.length)return '';
+    const num=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0?v.toLocaleString('ko-KR'):'미수집';
+    return `<div class="engagement" style="overflow-x:auto"><b>게시 후 성과 추적</b><table style="font-size:11px;min-width:440px"><thead><tr><th>시점 / 예정(KST)</th><th>조회</th><th>좋아요</th><th>댓글</th><th>공유</th><th>저장</th></tr></thead><tbody>${c.engagement.map(s=>`<tr><td>${esc(s.label)}<br>${Number.isFinite(Date.parse(s.dueAt))?esc(md(Date.parse(s.dueAt),true)):''}</td>${['views','likes','comments','shares','saves'].map(k=>`<td>${num(s[k])}</td>`).join('')}</tr>`).join('')}</tbody></table><small>실측 전 값은 미수집 · 폰 자동수집 연결 대기</small></div>`;
+  }
   let busy=false, timer;
   function render(data) {
     if(![1,2].includes(data.schemaVersion) || !Array.isArray(data.creators) || data.creators.length>20 || !Number.isFinite(Date.parse(data.syncedAt))) throw Error('Invalid data');
@@ -33,9 +38,10 @@
     for(const [i,c] of rows.entries()) {
       const guide=safe(c.guideUrl,'jehyeonyang-oss.github.io','/chaakan-creator-guide/');
       const record=safe(c.recordUrl,'seeding-a700a.web.app','/creator-review.html');
+      const post=safe(c.postUrl,'www.instagram.com','/reel/') || safe(c.postUrl,'www.instagram.com','/p/');
       const n=i+1;
       table.push(`<tr><td><a href="#creator-${n}">${esc(c.name)} ↗</a></td><td>${trackTag(c)}</td><td>${esc(c.product)}</td><td>${esc(c.stage)}</td><td>${tag(c.scheduleType)} ${esc(c.schedule)}</td></tr>`);
-      cards.push(`<article id="creator-${n}" class="creator"><div class="card-top"><span class="number">${String(n).padStart(2,'0')}</span><span>${trackTag(c)} ${tag(c.scheduleType)}</span></div><h3>${esc(c.name)}</h3><a class="account" href="${ig(c.account)}" target="_blank" rel="noopener">@${esc(c.account)} ↗</a><p class="product">${esc(c.product)}</p><p class="concept">${esc(c.content)}</p><div class="status"><b>${esc(c.stage)}</b><p>${esc(c.detail)}</p></div><div class="date"><small>콘텐츠 일정</small><strong>${esc(c.schedule)}</strong></div><div class="next"><small>다음 단계</small><p>${esc(c.next)}</p></div><div class="links">${guide?`<a class="guide" data-guide="${esc(guide)}" href="${esc(staff(guide))}" target="_blank" rel="noopener">촬영 가이드 보기 ↗</a><small class="expiry">${esc(expiryText(c.expires))}</small>`:'<a class="guide expired" aria-disabled="true">가이드 미연결</a><small class="expiry">가이드 링크 미등록</small>'}${record?`<a class="record" href="${esc(record)}" target="_blank" rel="noopener">대시보드 계정 기록 ↗ <span>로그인 필요</span></a>`:''}</div></article>`);
+      cards.push(`<article id="creator-${n}" class="creator"><div class="card-top"><span class="number">${String(n).padStart(2,'0')}</span><span>${trackTag(c)} ${tag(c.scheduleType)}</span></div><h3>${esc(c.name)}</h3><a class="account" href="${ig(c.account)}" target="_blank" rel="noopener">@${esc(c.account)} ↗</a><p class="product">${esc(c.product)}</p><p class="concept">${esc(c.content)}</p><div class="status"><b>${esc(c.stage)}</b><p>${esc(c.detail)}</p></div><div class="date"><small>콘텐츠 일정</small><strong>${esc(c.schedule)}</strong></div><div class="next"><small>다음 단계</small><p>${esc(c.next)}</p></div>${engagement(c)}<div class="links">${guide?`<a class="guide" data-guide="${esc(guide)}" href="${esc(staff(guide))}" target="_blank" rel="noopener">촬영 가이드 보기 ↗</a><small class="expiry">${esc(expiryText(c.expires))}</small>`:'<a class="guide expired" aria-disabled="true">가이드 미연결</a><small class="expiry">가이드 링크 미등록</small>'}${post?`<a class="record" href="${esc(post)}" target="_blank" rel="noopener">게시물 보기 ↗</a>`:''}${record?`<a class="record" href="${esc(record)}" target="_blank" rel="noopener">대시보드 계정 기록 ↗ <span>로그인 필요</span></a>`:''}</div></article>`);
     }
     el('status-rows').innerHTML=table.join('')||'<tr><td colspan="5">진행 중인 캠페인이 없습니다.</td></tr>';
     el('creator-cards').innerHTML=cards.join('');
