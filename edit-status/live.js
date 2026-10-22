@@ -28,7 +28,7 @@
   function engagement(c) {
     if(!Array.isArray(c.engagement)||!c.engagement.length)return '';
     const num=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0?v.toLocaleString('ko-KR'):'미수집';
-    return `<div class="engagement" style="overflow-x:auto"><b>게시 후 성과 추적</b><table style="font-size:11px;min-width:440px"><thead><tr><th>시점 / 예정(KST)</th><th>조회</th><th>좋아요</th><th>댓글</th><th>공유</th><th>저장</th></tr></thead><tbody>${c.engagement.map(s=>`<tr><td>${esc(s.label)}<br>${Number.isFinite(Date.parse(s.dueAt))?esc(md(Date.parse(s.dueAt),true)):''}</td>${['views','likes','comments','shares','saves'].map(k=>`<td>${num(s[k])}</td>`).join('')}</tr>`).join('')}</tbody></table><small>실측 전 값은 미수집 · 폰 자동수집 연결 대기</small></div>`;
+    return `<div class="engagement" style="overflow-x:auto"><b>게시 후 성과 추적</b><table style="font-size:11px;min-width:440px"><thead><tr><th>시점 / 예정(KST)</th><th>조회</th><th>좋아요</th><th>댓글</th><th>공유</th><th>저장</th></tr></thead><tbody>${c.engagement.map(s=>`<tr><td>${esc(s.label)}<br>${Number.isFinite(Date.parse(s.dueAt))?esc(md(Date.parse(s.dueAt),true)):''}</td>${['views','likes','comments','shares','saves'].map(k=>`<td>${num(s[k])}</td>`).join('')}</tr>`).join('')}</tbody></table>${c.engagementBaseline?.actualCollectedAt?`<p style="font-size:11px">참고 실측 (${esc(md(c.engagementBaseline.actualCollectedAt,true))}) · 조회 ${num(c.engagementBaseline.views)} · 좋아요 ${num(c.engagementBaseline.likes)} · 댓글 ${num(c.engagementBaseline.comments)} · 공유 ${num(c.engagementBaseline.shares)} · 저장 ${num(c.engagementBaseline.saves)}</p>`:''}<small>실측 전 값은 미수집 · ${c.phoneTrackingReady?'서치폰 예약 수집 연결됨':'폰 연결 대기'}</small></div>`;
   }
   let busy=false, timer;
   function render(data) {
