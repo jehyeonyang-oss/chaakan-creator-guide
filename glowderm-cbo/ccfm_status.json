@@ -1,4 +1,5 @@
 {
   "attempted_at": "2026-10-22T09:35:04+09:00",
-  "status": "collected"
+  "status": "collected",
+  "publish_status": "success"
 }
