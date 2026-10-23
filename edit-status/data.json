@@ -218,8 +218,8 @@
       "account": "02.c27",
       "product": "페탈 커스텀 멀티웨이 롱부츠 차콜 240 + 무비 슬라우치 코코아 240",
       "content": "브랜드 파보기 · 전신 거울샷 · 부츠 코디",
-      "stage": "진행 확정",
-      "status": "진행확정",
+      "stage": "제품 발송 완료",
+      "status": "발송완료",
       "sentDate": "",
       "postDate": "",
       "detail": "출고일 미등록",
@@ -430,5 +430,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_kmG5l4fWZAPtfQqotcf8"
     }
   ],
-  "syncedAt": "2026-10-23T04:51:39.817878+00:00"
+  "syncedAt": "2026-10-23T05:06:38.775455+00:00"
 }
