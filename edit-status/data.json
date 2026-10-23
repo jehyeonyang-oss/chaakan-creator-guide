@@ -356,6 +356,64 @@
       },
       "postUrl": "",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_HdDXlRc5JDKyCMv5u1Qm"
+    },
+    {
+      "name": "소바",
+      "track": "26FW",
+      "account": "dal__soba",
+      "product": "제품 선택 예정",
+      "content": "평소 코디 · 부츠 자연 노출",
+      "stage": "협의 중",
+      "status": "컨택중",
+      "sentDate": "",
+      "postDate": "",
+      "detail": "출고일 미등록",
+      "schedule": "게시일 협의 중",
+      "scheduleType": "협의 중",
+      "next": "제품·배송 상태 확인 및 초안·게시일 확정",
+      "guideUrl": "",
+      "expires": "",
+      "engagement": [],
+      "phoneTrackingReady": false,
+      "engagementBaseline": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "actualCollectedAt": null
+      },
+      "postUrl": "",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_aSC60kaSsMZiuzVwUuCj"
+    },
+    {
+      "name": "변덕",
+      "track": "26FW",
+      "account": "bye0nduck",
+      "product": "턴즈 레이스업 투웨이 방한 롱부츠 카멜 230",
+      "content": "트렌드 방한 롱부츠 코디",
+      "stage": "진행 확정",
+      "status": "진행확정",
+      "sentDate": "",
+      "postDate": "",
+      "detail": "출고일 미등록",
+      "schedule": "게시일 협의 중",
+      "scheduleType": "협의 중",
+      "next": "제품·배송 상태 확인 및 초안·게시일 확정",
+      "guideUrl": "",
+      "expires": "",
+      "engagement": [],
+      "phoneTrackingReady": false,
+      "engagementBaseline": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "actualCollectedAt": null
+      },
+      "postUrl": "",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_TA4NNEx5gxiIftamrnXi"
     }
   ],
   "contacts": [
@@ -415,11 +473,6 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_RCJlbcvjUyDpcs73FYwr"
     },
     {
-      "account": "dal__soba",
-      "track": "26FW",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_aSC60kaSsMZiuzVwUuCj"
-    },
-    {
       "account": "pre2entt",
       "track": "26FW",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_jWfYKQcsP044v68nLgJt"
@@ -430,5 +483,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_kmG5l4fWZAPtfQqotcf8"
     }
   ],
-  "syncedAt": "2026-10-23T05:06:38.775455+00:00"
+  "syncedAt": "2026-10-23T05:11:35.937024+00:00"
 }
