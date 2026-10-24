@@ -1,12 +1,29 @@
 {
-  "collected_at": "2026-10-23T09:35:02+09:00",
-  "today": "2026-10-23",
-  "start": "2026-10-16",
+  "collected_at": "2026-10-24T09:35:02+09:00",
+  "today": "2026-10-24",
+  "start": "2026-10-17",
   "accounts": [
     {
       "id": "984589474000645",
       "label": "CCFM 1계정 · 팩클렌저",
       "ads": [
+        {
+          "id": "120251345533940185",
+          "name": "세로_팩클렌저_모공각화증_김경빈_M20261007_aict_vif_fb_261016_06",
+          "active": true,
+          "campaign": "CCFM_팩클렌저_ABO_29_260914(국소부위)",
+          "daily": [
+            {
+              "date": "2026-10-24",
+              "spend": 52257.0,
+              "impressions": 275,
+              "clicks": 4,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
         {
           "id": "120251345480410185",
           "name": "세로_팩클렌저_쥐젖비립종_김경빈_M20261007_aict_vif_fb_261016_05",
@@ -42,44 +59,18 @@
             },
             {
               "date": "2026-10-23",
-              "spend": 27281.0,
-              "impressions": 221,
-              "clicks": 10,
+              "spend": 54746.0,
+              "impressions": 552,
+              "clicks": 27,
               "purchases": 1.0,
               "revenue": 32000.0,
               "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "120251211032700185",
-          "name": "단일_팩클렌저_필링_정나라_M20261006_aict (6)_vif_fb_261008_07",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 32217.0,
-              "impressions": 431,
-              "clicks": 20,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
             },
             {
-              "date": "2026-10-18",
-              "spend": 0.0,
-              "impressions": 0,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-20",
-              "spend": 0.0,
-              "impressions": 0,
-              "clicks": 0,
+              "date": "2026-10-24",
+              "spend": 27222.0,
+              "impressions": 120,
+              "clicks": 8,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
@@ -92,15 +83,6 @@
           "active": false,
           "campaign": "",
           "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 20410.0,
-              "impressions": 276,
-              "clicks": 8,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-17",
               "spend": 4407.0,
@@ -137,15 +119,6 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-16",
-              "spend": 3583.0,
-              "impressions": 33,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
               "date": "2026-10-17",
               "spend": 8936.0,
               "impressions": 69,
@@ -180,15 +153,6 @@
           "active": false,
           "campaign": "",
           "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 1170.0,
-              "impressions": 25,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-17",
               "spend": 21444.0,
@@ -241,6 +205,15 @@
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
+            },
+            {
+              "date": "2026-10-23",
+              "spend": 0.0,
+              "impressions": 0,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         }
@@ -267,35 +240,18 @@
             },
             {
               "date": "2026-10-23",
-              "spend": 2815.0,
-              "impressions": 31,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52634064610147",
-          "name": "세로_멜라크림_50대기미_김경빈_M20260922_aict_vim_fb_261022_02",
-          "active": true,
-          "campaign": "CCFM_기미크림_CBO_261001",
-          "daily": [
-            {
-              "date": "2026-10-22",
-              "spend": 38783.0,
-              "impressions": 557,
-              "clicks": 7,
+              "spend": 6011.0,
+              "impressions": 69,
+              "clicks": 4,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
             },
             {
-              "date": "2026-10-23",
-              "spend": 22282.0,
-              "impressions": 239,
-              "clicks": 5,
+              "date": "2026-10-24",
+              "spend": 6922.0,
+              "impressions": 82,
+              "clicks": 2,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
@@ -308,15 +264,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 1162.0,
-              "impressions": 13,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-17",
               "spend": 339.0,
@@ -364,7 +311,16 @@
             },
             {
               "date": "2026-10-23",
-              "spend": 218.0,
+              "spend": 381.0,
+              "impressions": 3,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-24",
+              "spend": 44.0,
               "impressions": 1,
               "clicks": 0,
               "purchases": 0,
@@ -379,15 +335,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 1753.0,
-              "impressions": 23,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-17",
               "spend": 54.0,
@@ -414,6 +361,15 @@
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
+            },
+            {
+              "date": "2026-10-23",
+              "spend": 96.0,
+              "impressions": 3,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -422,17 +378,7 @@
           "name": "정방_멜라크림_상황부여_정나라_M20260930 (4)_vim_fb_261006_04",
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
-          "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 113.0,
-              "impressions": 1,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
+          "daily": []
         },
         {
           "id": "52629600415147",
@@ -460,9 +406,18 @@
             },
             {
               "date": "2026-10-23",
-              "spend": 20.0,
+              "spend": 629.0,
+              "impressions": 19,
+              "clicks": 2,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-24",
+              "spend": 30.0,
               "impressions": 1,
-              "clicks": 1,
+              "clicks": 0,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
@@ -492,6 +447,15 @@
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
+            },
+            {
+              "date": "2026-10-23",
+              "spend": 81.0,
+              "impressions": 1,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -501,15 +465,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 344.0,
-              "impressions": 5,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-21",
               "spend": 27.0,
@@ -526,7 +481,17 @@
           "name": "정방_멜라크림_상황부여_정나라_M20260930 (1)_vim_fb_261006_01",
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
-          "daily": []
+          "daily": [
+            {
+              "date": "2026-10-23",
+              "spend": 9.0,
+              "impressions": 1,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
         },
         {
           "id": "52628470402347",
@@ -534,15 +499,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 705.0,
-              "impressions": 10,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-17",
               "spend": 301.0,
@@ -581,9 +537,18 @@
             },
             {
               "date": "2026-10-23",
-              "spend": 54.0,
-              "impressions": 1,
+              "spend": 137.0,
+              "impressions": 4,
               "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-24",
+              "spend": 85.0,
+              "impressions": 1,
+              "clicks": 1,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
@@ -596,15 +561,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 13.0,
-              "impressions": 1,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-21",
               "spend": 50.0,
@@ -631,15 +587,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 4034.0,
-              "impressions": 41,
-              "clicks": 2,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-17",
               "spend": 5.0,
@@ -684,6 +631,24 @@
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
+            },
+            {
+              "date": "2026-10-23",
+              "spend": 565.0,
+              "impressions": 10,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-24",
+              "spend": 291.0,
+              "impressions": 4,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ]
         },
@@ -692,7 +657,17 @@
           "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (4)_vim_fb_261001_06",
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
-          "daily": []
+          "daily": [
+            {
+              "date": "2026-10-23",
+              "spend": 27.0,
+              "impressions": 2,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
         },
         {
           "id": "52621236514547",
@@ -700,15 +675,6 @@
           "active": false,
           "campaign": "",
           "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 1939.0,
-              "impressions": 29,
-              "clicks": 2,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-17",
               "spend": 275.0,
@@ -772,15 +738,6 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-16",
-              "spend": 8398.0,
-              "impressions": 124,
-              "clicks": 5,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
               "date": "2026-10-17",
               "spend": 12325.0,
               "impressions": 270,
@@ -816,15 +773,6 @@
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-16",
-              "spend": 23349.0,
-              "impressions": 525,
-              "clicks": 21,
-              "purchases": 1.0,
-              "revenue": 44900.0,
-              "revenue_computed": false
-            },
-            {
               "date": "2026-10-17",
               "spend": 36209.0,
               "impressions": 720,
@@ -856,252 +804,6 @@
               "spend": 0.0,
               "impressions": 0,
               "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52621236515547",
-          "name": "세로_멜라크림_컬렉션폼_정나라_M20260803 (2)_vim_fb_260904_06",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 71.0,
-              "impressions": 2,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-17",
-              "spend": 199.0,
-              "impressions": 3,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-18",
-              "spend": 3528.0,
-              "impressions": 102,
-              "clicks": 3,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-19",
-              "spend": 10497.0,
-              "impressions": 183,
-              "clicks": 6,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-20",
-              "spend": 7969.0,
-              "impressions": 167,
-              "clicks": 3,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-21",
-              "spend": 399.0,
-              "impressions": 14,
-              "clicks": 1,
-              "purchases": 1.0,
-              "revenue": 32900.0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-22",
-              "spend": 2108.0,
-              "impressions": 46,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52621236515747",
-          "name": "세로_멜라크림_외국인극찬_정나라_M20260818_vim_fb_260905_02",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 19762.0,
-              "impressions": 324,
-              "clicks": 8,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52628470488747",
-          "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (1)_vim_fb_261001_09",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 11338.0,
-              "impressions": 234,
-              "clicks": 12,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-17",
-              "spend": 984.0,
-              "impressions": 23,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-18",
-              "spend": 200.0,
-              "impressions": 5,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-20",
-              "spend": 33.0,
-              "impressions": 2,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-21",
-              "spend": 40633.0,
-              "impressions": 672,
-              "clicks": 37,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-22",
-              "spend": 10318.0,
-              "impressions": 155,
-              "clicks": 6,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52629600483147",
-          "name": "세로_멜라크림_오해받음_정나라_M20260930 (2)_vim_fb_261006_06",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 2441.0,
-              "impressions": 34,
-              "clicks": 2,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52629600565547",
-          "name": "세로_멜라크림_오해받음_정나라_M20260930 (4)_vim_fb_261006_08",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 17111.0,
-              "impressions": 116,
-              "clicks": 11,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-21",
-              "spend": 0.0,
-              "impressions": 0,
-              "clicks": 0,
-              "purchases": 1.0,
-              "revenue": 44900.0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52632401910747",
-          "name": "세로_멜라크림_레이저압축_김경빈_M20261006_aict_vim_fb_261016_02",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-16",
-              "spend": 17701.0,
-              "impressions": 344,
-              "clicks": 4,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-17",
-              "spend": 27865.0,
-              "impressions": 475,
-              "clicks": 23,
-              "purchases": 2.0,
-              "revenue": 65800.0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-18",
-              "spend": 72384.0,
-              "impressions": 1577,
-              "clicks": 46,
-              "purchases": 2.0,
-              "revenue": 65800.0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-19",
-              "spend": 40279.0,
-              "impressions": 1247,
-              "clicks": 20,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-20",
-              "spend": 23900.0,
-              "impressions": 785,
-              "clicks": 20,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
@@ -1171,6 +873,174 @@
           ]
         },
         {
+          "id": "52621236515547",
+          "name": "세로_멜라크림_컬렉션폼_정나라_M20260803 (2)_vim_fb_260904_06",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-17",
+              "spend": 199.0,
+              "impressions": 3,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-18",
+              "spend": 3528.0,
+              "impressions": 102,
+              "clicks": 3,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-19",
+              "spend": 10497.0,
+              "impressions": 183,
+              "clicks": 6,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-20",
+              "spend": 7969.0,
+              "impressions": 167,
+              "clicks": 3,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-21",
+              "spend": 399.0,
+              "impressions": 14,
+              "clicks": 1,
+              "purchases": 1.0,
+              "revenue": 32900.0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-22",
+              "spend": 2108.0,
+              "impressions": 46,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-23",
+              "spend": 0.0,
+              "impressions": 0,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
+          "id": "52628470488747",
+          "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (1)_vim_fb_261001_09",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-17",
+              "spend": 984.0,
+              "impressions": 23,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-18",
+              "spend": 200.0,
+              "impressions": 5,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-20",
+              "spend": 33.0,
+              "impressions": 2,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-21",
+              "spend": 40633.0,
+              "impressions": 672,
+              "clicks": 37,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-22",
+              "spend": 10318.0,
+              "impressions": 155,
+              "clicks": 6,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
+          "id": "52632401910747",
+          "name": "세로_멜라크림_레이저압축_김경빈_M20261006_aict_vim_fb_261016_02",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-17",
+              "spend": 27865.0,
+              "impressions": 475,
+              "clicks": 23,
+              "purchases": 2.0,
+              "revenue": 65800.0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-18",
+              "spend": 72384.0,
+              "impressions": 1577,
+              "clicks": 46,
+              "purchases": 2.0,
+              "revenue": 65800.0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-19",
+              "spend": 40279.0,
+              "impressions": 1247,
+              "clicks": 20,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-20",
+              "spend": 23900.0,
+              "impressions": 785,
+              "clicks": 20,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
           "id": "52633335025747",
           "name": "세로_멜라크림_어머님_김경빈_M20260727_vim_fb_261020_01",
           "active": false,
@@ -1199,6 +1069,32 @@
               "spend": 8084.0,
               "impressions": 290,
               "clicks": 14,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
+          "id": "52634064610147",
+          "name": "세로_멜라크림_50대기미_김경빈_M20260922_aict_vim_fb_261022_02",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-22",
+              "spend": 38809.0,
+              "impressions": 558,
+              "clicks": 7,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-23",
+              "spend": 37821.0,
+              "impressions": 440,
+              "clicks": 11,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
