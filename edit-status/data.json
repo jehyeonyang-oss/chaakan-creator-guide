@@ -138,7 +138,7 @@
           "slot": "48h",
           "label": "48시간",
           "dueAt": "2026-10-24T21:29:48.682000+09:00",
-          "actualCollectedAt": null,
+          "actualCollectedAt": 1792917613084,
           "state": "pending",
           "views": null,
           "likes": null,
@@ -483,5 +483,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_kmG5l4fWZAPtfQqotcf8"
     }
   ],
-  "syncedAt": "2026-10-25T05:36:39.438784+00:00"
+  "syncedAt": "2026-10-25T08:41:39.650023+00:00"
 }
