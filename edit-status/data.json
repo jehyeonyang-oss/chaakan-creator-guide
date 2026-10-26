@@ -138,7 +138,7 @@
           "slot": "48h",
           "label": "48시간",
           "dueAt": "2026-10-27T20:20:00+09:00",
-          "actualCollectedAt": 1792917613084,
+          "actualCollectedAt": null,
           "state": "pending",
           "views": null,
           "likes": null,
@@ -173,12 +173,12 @@
       ],
       "phoneTrackingReady": true,
       "engagementBaseline": {
-        "views": 4381,
+        "views": 4831,
         "likes": null,
-        "comments": 26,
-        "shares": 31,
-        "saves": 34,
-        "actualCollectedAt": 1792974180000
+        "comments": 29,
+        "shares": 34,
+        "saves": 38,
+        "actualCollectedAt": 1793002408213
       },
       "postUrl": "https://www.instagram.com/reel/De6k4zoSBIq/",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=XT9lAJZCWVutjQtjnNAo"
@@ -503,5 +503,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-10-26T07:36:39.975261+00:00"
+  "syncedAt": "2026-10-26T08:14:57.166248+00:00"
 }
