@@ -4,7 +4,7 @@
     {
       "name": "매릴리",
       "track": "키높이",
-      "account": "maerilly.shop",
+      "account": "maerilly_",
       "product": "파라 키높이 스트랩 메리제인 플랫 PMFBS3i003",
       "content": "여행 속 착화 · 키높이와 코디 소개",
       "stage": "제품 발송 완료",
@@ -17,6 +17,7 @@
       "next": "여행 촬영 일정과 초안·게시일 확정",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/maerilly.shop/edit/",
       "expires": "2026-10-20T00:00:00+09:00",
+      "fee": "10만",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -46,6 +47,7 @@
       "next": "출고일·추가 컬러 확인 및 초안 전달일 협의",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/minkkong/",
       "expires": "2026-11-14T00:00:00+09:00",
+      "fee": "40만 + 2차 1개월 5만 별도",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -75,6 +77,7 @@
       "next": "수령 확인 후 초안·게시일 협의",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/daily_nnd_/edit/",
       "expires": "2026-10-26T14:00:00+09:00",
+      "fee": "50만 + 2차 3개월 20만 별도",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -104,6 +107,7 @@
       "next": "수령 확인 후 초안·게시일 확정",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/jo_hyeseo/edit/",
       "expires": "2026-10-26T14:00:00+09:00",
+      "fee": "60만 (2차 3개월 포함)",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -123,16 +127,17 @@
       "account": "zeongyeoniii",
       "product": "페탈 커스텀 멀티웨이 롱부츠, 무비 슬라우치 부츠, 블래티 슬라우치 부츠, 벌키 플랫폼 스니커즈",
       "content": "가을·겨울 부츠 3종 + 벌키 스니커즈 소개",
-      "stage": "재편집·재업로드 예정",
+      "stage": "재업로드 완료",
       "status": "게시완료",
       "sentDate": "2026-10-14",
       "postDate": "2026-10-25",
-      "detail": "10/22 21시 게시 → 14시간 조회수 4,400·공유 32·저장 42. 인사이트상 21초 전신샷 구간 이탈 높아 정연 제안으로 해당 구간 제외 재편집, 기존 게시물 삭제. 금일 촬영 불가 → 주말 재촬영 후 일요일(10/26) 재업로드 예정",
-      "schedule": "10/26(일) 재업로드 예정",
-      "scheduleType": "예상",
-      "next": "재편집본 사전 확인 → 새 링크 수신 후 postUrl 교체·서치폰 48h/7d/14d 슬롯 재예약·기준점 재수집",
+      "detail": "10/22 21시 첫 게시(14시간 조회 4,400·공유 32·저장 42) → 21초 전신샷 구간 이탈로 재편집, 기존 게시물 삭제 → 10/25 재업로드",
+      "schedule": "10/25 재업로드 완료",
+      "scheduleType": "확정",
+      "next": "새 링크 기준 서치폰 48h/7d/14d 슬롯·기준점 재수집 확인",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/zeongyeoniii/",
       "expires": "2026-10-30T00:00:00+09:00",
+      "fee": "20만",
       "engagement": [
         {
           "slot": "48h",
@@ -186,7 +191,7 @@
     {
       "name": "매릴리",
       "track": "26FW",
-      "account": "maerilly.shop",
+      "account": "maerilly_",
       "product": "무비 슬라우치 부츠 BSSDR4i156",
       "content": "슬라우치 부츠 코디 · 착화 소개",
       "stage": "제품 발송 완료",
@@ -199,6 +204,7 @@
       "next": "초안·게시일 확정",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/maerilly.shop/movie/",
       "expires": "2026-10-20T00:00:00+09:00",
+      "fee": "10만",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -218,16 +224,17 @@
       "account": "02.c27",
       "product": "페탈 커스텀 멀티웨이 롱부츠 차콜 240 + 무비 슬라우치 코코아 240",
       "content": "브랜드 파보기 · 전신 거울샷 · 부츠 코디",
-      "stage": "제품 발송 준비",
+      "stage": "제품 발송 완료",
       "status": "진행확정",
       "sentDate": "",
       "postDate": "",
-      "detail": "10/23 제품·배송지 확정 · 셀메이트 등록 S261023135738 · 블랙 품절로 차콜 1 + 무비 코코아 1",
+      "detail": "10/23 제품·배송지 확정 · 셀메이트 S261023135738 · 블랙 품절로 차콜 1 + 무비 코코아 1 · 10/23 14:45 출고 송장 537769294661",
       "schedule": "11월 1주차 업로드",
       "scheduleType": "예상",
-      "next": "출고·송장 메일 안내 → 할인코드·자동DM 세팅 전달 → 초안 확인",
+      "next": "수령 확인 → 할인코드·자동DM 세팅 전달 → 초안 확인",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/02.c27/boots/",
       "expires": "2026-11-08T00:00:00+09:00",
+      "fee": "20만 + 2차 추후 10만",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -257,6 +264,7 @@
       "next": "사이즈·배송지 확인 후 발송, 기획안 컨펌",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/u.yo0x/",
       "expires": "2026-11-01T00:00:00+09:00",
+      "fee": "70만 (2차 1개월 포함 · VAT 별도)",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -286,6 +294,7 @@
       "next": "수령 확인 후 초안·게시일 협의",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/mazoolook/boots/",
       "expires": "2026-11-15T00:00:00+09:00",
+      "fee": "20만",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -315,6 +324,7 @@
       "next": "계획2(POV 가성비→신발 위주 컷) 초안 대기",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/skarndthf/boots/",
       "expires": "2026-11-15T00:00:00+09:00",
+      "fee": "15만",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -344,6 +354,7 @@
       "next": "색상·배송지 회신 후 발송",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/woongyange/edit/",
       "expires": "2026-11-15T00:00:00+09:00",
+      "fee": "35만",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -373,6 +384,7 @@
       "next": "가이드·할인코드·자동DM 안내 전달 → 초안 확인",
       "guideUrl": "",
       "expires": "",
+      "fee": "15만 + 2차 추후 10만",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -392,16 +404,17 @@
       "account": "bye0nduck",
       "product": "턴즈 레이스업 투웨이 방한 롱부츠 카멜 230",
       "content": "트렌드 방한 롱부츠 코디",
-      "stage": "진행 확정",
+      "stage": "출고 대기",
       "status": "발송완료",
       "sentDate": "",
       "postDate": "",
-      "detail": "10/23 30만+2차 추후 10만 수락 · 페탈→턴즈 카멜 230 변경 승인(재고 25) · 배송지 회신 대기",
+      "detail": "10/23 30만+2차 추후 10만 수락 · 페탈→턴즈 카멜 230 변경 · 10/23 셀메이트 주문 S261023160353 · 송장 미확인(10/25 스냅샷)",
       "schedule": "10/29~31 업로드",
       "scheduleType": "확정",
-      "next": "배송지 수신 → 셀메이트 등록·출고 → 가이드·코드 전달",
-      "guideUrl": "",
-      "expires": "",
+      "next": "송장 확인 → 가이드·코드 전달",
+      "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/bye0nduck/boots/",
+      "expires": "2026-11-15T00:00:00+09:00",
+      "fee": "30만 + 2차 추후 10만",
       "engagement": [],
       "phoneTrackingReady": false,
       "engagementBaseline": {
@@ -414,6 +427,96 @@
       },
       "postUrl": "",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_TA4NNEx5gxiIftamrnXi"
+    },
+    {
+      "name": "모나",
+      "track": "26FW",
+      "account": "mmona.i",
+      "product": "페탈 커스텀 멀티웨이 롱부츠 차콜 235",
+      "content": "본인 컷 기반 롱부츠 코디 · 착화",
+      "stage": "출고 대기",
+      "status": "발송완료",
+      "sentDate": "",
+      "postDate": "",
+      "detail": "10/23 40만 확정 · 셀메이트 주문 S261023155743 · 송장 미확인(10/25 스냅샷)",
+      "schedule": "게시일 협의 중",
+      "scheduleType": "협의 중",
+      "next": "송장 확인 → 가이드·코드 전달 → 초안 확인",
+      "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/mmona.i/boots/",
+      "expires": "2026-11-22T00:00:00+09:00",
+      "fee": "40만",
+      "engagement": [],
+      "phoneTrackingReady": false,
+      "engagementBaseline": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "actualCollectedAt": null
+      },
+      "postUrl": "",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_kmG5l4fWZAPtfQqotcf8"
+    },
+    {
+      "name": "홍서",
+      "track": "26FW",
+      "account": "dlghdtj",
+      "product": "무비 슬라우치 부츠 코코아 230",
+      "content": "슬라우치 부츠 코디 · 착화",
+      "stage": "진행 확정",
+      "status": "진행확정",
+      "sentDate": "",
+      "postDate": "",
+      "detail": "할인코드 dlghdtj2610 · 셀메이트 주문 미확인(10/25 스냅샷)",
+      "schedule": "게시일 협의 중",
+      "scheduleType": "협의 중",
+      "next": "셀메이트 주문·발송 메일 → 가이드·코드 전달",
+      "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/dlghdtj/boots/",
+      "expires": "2026-11-22T00:00:00+09:00",
+      "fee": "12만",
+      "engagement": [],
+      "phoneTrackingReady": false,
+      "engagementBaseline": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "actualCollectedAt": null
+      },
+      "postUrl": "",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_8dz6Tv0Yt00aRN0LcEh5"
+    },
+    {
+      "name": "정인",
+      "track": "26FW",
+      "account": "daily__inn",
+      "product": "페탈 커스텀 멀티웨이 롱부츠 차콜 230",
+      "content": "데일리 코디 · 롱부츠 착화",
+      "stage": "출고 확인 필요",
+      "status": "발송완료",
+      "sentDate": "",
+      "postDate": "",
+      "detail": "할인코드 inn2610 · 대시보드 발송완료, 셀메이트 주문·송장 미확인(10/25 스냅샷)",
+      "schedule": "게시일 협의 중",
+      "scheduleType": "협의 중",
+      "next": "송장 확인 → 가이드·코드 전달 → 초안 확인",
+      "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/daily__inn/boots/",
+      "expires": "2026-11-22T00:00:00+09:00",
+      "fee": "40만",
+      "engagement": [],
+      "phoneTrackingReady": false,
+      "engagementBaseline": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "actualCollectedAt": null
+      },
+      "postUrl": "",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261023_daily__inn"
     }
   ],
   "contacts": [
@@ -503,5 +606,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-10-26T08:14:57.166248+00:00"
+  "syncedAt": "2026-10-26T08:24:50.730004+00:00"
 }
