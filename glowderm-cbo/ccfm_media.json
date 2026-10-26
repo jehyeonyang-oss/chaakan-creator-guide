@@ -18,12 +18,6 @@
       "name": "카드뉴스_팩클렌저_피부턴오버_정나라_M20261014 -썸네일2_vif_fb_2601016_02",
       "match_basis": "exact_filename"
     },
-    "120251341618380185": {
-      "kind": "image",
-      "src": "ccfm_media/d2789935af5e65f0.webp",
-      "name": "카드뉴스_팩클렌저_피부턴오버_정나라_M20261014 -썸네일3_vif_fb_2601016_03",
-      "match_basis": "exact_filename"
-    },
     "120251345066090185": {
       "kind": "video",
       "src": "ccfm_media/a263aeb99f160391.mp4",
@@ -138,16 +132,16 @@
       "name": "세로_멜라크림_컬렉션폼_정나라_M20260803 (2)_vim_fb_260904_06",
       "match_basis": "exact_filename"
     },
-    "52628470488747": {
-      "kind": "image",
-      "src": "ccfm_media/713f92686bd1adb3.webp",
-      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (1)_vim_fb_261001_09",
-      "match_basis": "exact_filename"
-    },
     "52632401910747": {
       "kind": "video",
       "src": "ccfm_media/d6cd49ca8d4fc196.mp4",
       "name": "세로_멜라크림_레이저압축_김경빈_M20261006_aict_vim_fb_261016_02",
+      "match_basis": "exact_filename"
+    },
+    "52628470488747": {
+      "kind": "image",
+      "src": "ccfm_media/713f92686bd1adb3.webp",
+      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (1)_vim_fb_261001_09",
       "match_basis": "exact_filename"
     },
     "52634064567147": {
