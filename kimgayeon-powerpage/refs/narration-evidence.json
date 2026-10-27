@@ -5,23 +5,23 @@
   "scope": "현재 레퍼런스 페이지 IG 40개 카드 전체. 비뷰티·브랜드·광고 미확인 조사 기록도 포함하므로 연예인 화장품 광고 시장 전체의 비율이 아니다.",
   "summary": {
     "total": 40,
-    "yes": 13,
-    "no": 11,
+    "yes": 12,
+    "no": 12,
     "unknown": 16,
     "classified": 24,
-    "yes_percent_all": 32.5,
-    "yes_percent_classified": 54.2,
-    "interleaved": 11
+    "yes_percent_all": 30.0,
+    "yes_percent_classified": 50.0,
+    "interleaved": 10
   },
   "unique_body_summary": {
     "total": 38,
-    "yes": 11,
-    "no": 11,
+    "yes": 10,
+    "no": 12,
     "unknown": 16,
     "classified": 22,
-    "yes_percent_all": 28.9,
-    "yes_percent_classified": 50.0,
-    "interleaved": 9
+    "yes_percent_all": 26.3,
+    "yes_percent_classified": 45.5,
+    "interleaved": 8
   },
   "records": [
     {
@@ -1008,28 +1008,16 @@
       "name": "박미선 다이소 리뷰 · 놀라는 반응",
       "source": "https://www.instagram.com/reel/De1KvwAJ1ft/",
       "duplicate_of": null,
-      "status": "yes",
-      "interleaved": true,
-      "reason": "4.5–7초 제품명(‘투엑스 인텐시브 투엑스 크림’) 한 구절만 출연자의 현장 반응과 다른 음색·녹음 상태로 들리고, 앞뒤로 매장 현장 대화가 이어진다. 전체 음성 단독 분석은 이 2초를 놓쳐 없음으로 판정했으나 전체 시청각 분석과 해당 구간 음성 비교, 구간별 주파수 측정이 별도 음성을 뒷받침해 있음(확신도 중간)으로 둔다. 원본 채널 편집에서 들어간 음성인지 광고 재편집에서 들어간 음성인지는 구분하지 못했다.",
-      "evidence_level": "전체 원음·영상 AI 분석 + 음성 단독 재분석(불일치) + 해당 구간 음성 비교·주파수 측정 + 자동 전사 대조",
+      "status": "no",
+      "interleaved": false,
+      "reason": "전 구간 39.0초를 4초 단위로 끝까지 확인했다. 쟁점이던 4.6–7.0초는 제품명 ‘투엑스 인텐시브 투엑스 크림’을 읽는 한 구절로, 구간 음성 단독 판정에서 앞뒤와 같은 현장 녹음의 출연자 발화로 분류됐고 화면도 제품을 든 출연자 쪽으로 이어진다. 이 구간의 음역대는 다른 출연자 발화(24.4–27.0초 등)의 범위 안이며, 영상 어디에도 3인칭 해설 문장은 없다. 처음 화면 포함 분석만 이 구절을 별도 음성으로 봤으므로 확신도는 중간으로 둔다.",
+      "evidence_level": "전 구간 4초 단위 음성 단독 판정 + 구간별 프레임·입 모양 대조 + 자동 전사 + 구간별 음역대·잡음 측정",
       "segments": [
         {
           "start": 0,
-          "end": 4.5,
-          "kind": "original_dialogue",
-          "text": "아 이게 그거구나 이게 다이소에 들어와있어?"
-        },
-        {
-          "start": 4.5,
-          "end": 7,
-          "kind": "added_narrator",
-          "text": "투엑스 인텐시브 투엑스 크림"
-        },
-        {
-          "start": 7,
           "end": 39,
           "kind": "original_dialogue",
-          "text": "김정문 알로에 들어와있어? 나 김정문 알로에 거의 10년 됐는데"
+          "text": "아 이게 그거구나 … 근데 이거 5,000원 밖에 안 해?"
         }
       ],
       "confidence": "medium",
