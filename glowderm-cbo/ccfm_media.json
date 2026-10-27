@@ -1,23 +1,5 @@
 {
   "items": {
-    "120251439640480185": {
-      "kind": "video",
-      "src": "ccfm_media/a263aeb99f160391.mp4",
-      "name": "세로_팩클렌저_요철_김경빈_M20261002_aict_vif_fb_261016_04",
-      "match_basis": "exact_filename"
-    },
-    "120251341509490185": {
-      "kind": "image",
-      "src": "ccfm_media/b91e4cc42ebabf3d.webp",
-      "name": "카드뉴스_팩클렌저_피부턴오버_정나라_M20261014 -썸네일1_vif_fb_2601016_01",
-      "match_basis": "exact_filename"
-    },
-    "120251341578520185": {
-      "kind": "image",
-      "src": "ccfm_media/319622784ad414ec.webp",
-      "name": "카드뉴스_팩클렌저_피부턴오버_정나라_M20261014 -썸네일2_vif_fb_2601016_02",
-      "match_basis": "exact_filename"
-    },
     "120251345066090185": {
       "kind": "video",
       "src": "ccfm_media/a263aeb99f160391.mp4",
@@ -36,6 +18,36 @@
       "name": "세로_팩클렌저_모공각화증_김경빈_M20261007_aict_vif_fb_261016_06",
       "match_basis": "exact_filename"
     },
+    "120251439640480185": {
+      "kind": "video",
+      "src": "ccfm_media/a263aeb99f160391.mp4",
+      "name": "세로_팩클렌저_요철_김경빈_M20261002_aict_vif_fb_261016_04",
+      "match_basis": "exact_filename"
+    },
+    "52634915673547": {
+      "kind": "video",
+      "src": "ccfm_media/64fd5412a09b0afe.mp4",
+      "name": "세로_멜라크림_등산기미_김경빈_M20261002_aict_vim_fb_261026_01",
+      "match_basis": "exact_filename"
+    },
+    "52634915686347": {
+      "kind": "video",
+      "src": "ccfm_media/b80c1827a9cca45d.mp4",
+      "name": "세로_멜라크림_남편기미_김경빈_M20261001_aict_vim_fb_261026_02",
+      "match_basis": "exact_filename"
+    },
+    "52634915696947": {
+      "kind": "video",
+      "src": "ccfm_media/999550333f6f965b.mp4",
+      "name": "세로_멜라크림_조작_김경빈_M20260930_vim_fb_261026_03",
+      "match_basis": "exact_filename"
+    },
+    "52628470402347": {
+      "kind": "image",
+      "src": "ccfm_media/43a9e03b6f4bf80b.webp",
+      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (3)_vim_fb_261001_05",
+      "match_basis": "exact_filename"
+    },
     "52632401881747": {
       "kind": "video",
       "src": "ccfm_media/b0b3b34a3726c71e.mp4",
@@ -48,76 +60,10 @@
       "name": "세로_멜라크림_오해받음_정나라_M20260930 (3)_vim_fb_261006_07",
       "match_basis": "exact_filename"
     },
-    "52629600443947": {
-      "kind": "video",
-      "src": "ccfm_media/1317483325b4ddda.mp4",
-      "name": "정방_멜라크림_상황부여_정나라_M20260930 (4)_vim_fb_261006_04",
-      "match_basis": "exact_filename"
-    },
-    "52629600415147": {
-      "kind": "video",
-      "src": "ccfm_media/8eac068873b862ef.mp4",
-      "name": "정방_멜라크림_상황부여_정나라_M20260930 (3)_vim_fb_261006_03",
-      "match_basis": "exact_filename"
-    },
-    "52629600463347": {
-      "kind": "video",
-      "src": "ccfm_media/3e905418e400f192.mp4",
-      "name": "세로_멜라크림_오해받음_정나라_M20260930 (1)_vim_fb_261006_05",
-      "match_basis": "exact_filename"
-    },
-    "52629600383347": {
-      "kind": "video",
-      "src": "ccfm_media/a1f1ba632c8313cf.mp4",
-      "name": "정방_멜라크림_상황부여_정나라_M20260930 (2)_vim_fb_261006_02",
-      "match_basis": "exact_filename"
-    },
-    "52629600353747": {
-      "kind": "video",
-      "src": "ccfm_media/b609c7dc6e044b7d.mp4",
-      "name": "정방_멜라크림_상황부여_정나라_M20260930 (1)_vim_fb_261006_01",
-      "match_basis": "exact_filename"
-    },
-    "52628470402347": {
-      "kind": "image",
-      "src": "ccfm_media/43a9e03b6f4bf80b.webp",
-      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (3)_vim_fb_261001_05",
-      "match_basis": "exact_filename"
-    },
-    "52628470433347": {
-      "kind": "image",
-      "src": "ccfm_media/226a727e6be52dc2.webp",
-      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (5)_vim_fb_261001_07",
-      "match_basis": "exact_filename"
-    },
-    "52628470387947": {
-      "kind": "image",
-      "src": "ccfm_media/9517a1c43066c02f.webp",
-      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (2)_vim_fb_261001_04",
-      "match_basis": "exact_filename"
-    },
-    "52628470428747": {
-      "kind": "image",
-      "src": "ccfm_media/1364f17a7a6d39d1.webp",
-      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (4)_vim_fb_261001_06",
-      "match_basis": "exact_filename"
-    },
     "52621236514547": {
       "kind": "video",
       "src": "ccfm_media/ece9a80caf7b0016.mp4",
       "name": "세로_멜라크림_할인종료_김경빈_M20260810_vim_vim_fb_260904_02",
-      "match_basis": "exact_filename"
-    },
-    "52621236514947": {
-      "kind": "video",
-      "src": "ccfm_media/19e62a3a18e5386d.mp4",
-      "name": "세로_멜라스팟크림_경고(초두변경)_김경빈_M20260813_vim_fb_260904_03",
-      "match_basis": "exact_filename"
-    },
-    "52621236515147": {
-      "kind": "video",
-      "src": "ccfm_media/3a21f734d12ef22a.mp4",
-      "name": "세로_멜라크림_관리받는구도_김경빈_M20260821_vim_fb_260904_04",
       "match_basis": "exact_filename"
     },
     "52621236515347": {
@@ -132,16 +78,46 @@
       "name": "세로_멜라크림_컬렉션폼_정나라_M20260803 (2)_vim_fb_260904_06",
       "match_basis": "exact_filename"
     },
+    "52628470488747": {
+      "kind": "image",
+      "src": "ccfm_media/713f92686bd1adb3.webp",
+      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (1)_vim_fb_261001_09",
+      "match_basis": "exact_filename"
+    },
     "52632401910747": {
       "kind": "video",
       "src": "ccfm_media/d6cd49ca8d4fc196.mp4",
       "name": "세로_멜라크림_레이저압축_김경빈_M20261006_aict_vim_fb_261016_02",
       "match_basis": "exact_filename"
     },
-    "52628470488747": {
+    "52628470387947": {
       "kind": "image",
-      "src": "ccfm_media/713f92686bd1adb3.webp",
-      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (1)_vim_fb_261001_09",
+      "src": "ccfm_media/9517a1c43066c02f.webp",
+      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (2)_vim_fb_261001_04",
+      "match_basis": "exact_filename"
+    },
+    "52628470433347": {
+      "kind": "image",
+      "src": "ccfm_media/226a727e6be52dc2.webp",
+      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (5)_vim_fb_261001_07",
+      "match_basis": "exact_filename"
+    },
+    "52629600383347": {
+      "kind": "video",
+      "src": "ccfm_media/a1f1ba632c8313cf.mp4",
+      "name": "정방_멜라크림_상황부여_정나라_M20260930 (2)_vim_fb_261006_02",
+      "match_basis": "exact_filename"
+    },
+    "52629600415147": {
+      "kind": "video",
+      "src": "ccfm_media/8eac068873b862ef.mp4",
+      "name": "정방_멜라크림_상황부여_정나라_M20260930 (3)_vim_fb_261006_03",
+      "match_basis": "exact_filename"
+    },
+    "52629600463347": {
+      "kind": "video",
+      "src": "ccfm_media/3e905418e400f192.mp4",
+      "name": "세로_멜라크림_오해받음_정나라_M20260930 (1)_vim_fb_261006_05",
       "match_basis": "exact_filename"
     },
     "52634064567147": {
@@ -154,6 +130,24 @@
       "kind": "video",
       "src": "ccfm_media/a5e42b35ff08ab97.mp4",
       "name": "세로_멜라크림_50대기미_김경빈_M20260922_aict_vim_fb_261022_02",
+      "match_basis": "exact_filename"
+    },
+    "52628470428747": {
+      "kind": "image",
+      "src": "ccfm_media/1364f17a7a6d39d1.webp",
+      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (4)_vim_fb_261001_06",
+      "match_basis": "exact_filename"
+    },
+    "52629600353747": {
+      "kind": "video",
+      "src": "ccfm_media/b609c7dc6e044b7d.mp4",
+      "name": "정방_멜라크림_상황부여_정나라_M20260930 (1)_vim_fb_261006_01",
+      "match_basis": "exact_filename"
+    },
+    "52629600443947": {
+      "kind": "video",
+      "src": "ccfm_media/1317483325b4ddda.mp4",
+      "name": "정방_멜라크림_상황부여_정나라_M20260930 (4)_vim_fb_261006_04",
       "match_basis": "exact_filename"
     }
   }
