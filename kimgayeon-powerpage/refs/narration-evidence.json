@@ -1,0 +1,1517 @@
+{
+  "date": "2026-10-27",
+  "definition": "원본 출연자·스태프 대화와 구별되는 편집용 설명 음성/TTS. 본인 발언을 제품 화면 위에 이어붙인 경우는 제외.",
+  "method": "Gemini 멀티모달 전체 원음·영상 분석과 기존 전사·장면 기록 대조. 제작 원본의 별도 음성 트랙은 미확보. 경계 구간은 근사값이며 시간 비율 확정에 쓰지 않는다.",
+  "scope": "현재 레퍼런스 페이지 55개 카드 전체. 비뷰티·브랜드·광고 미확인 조사 기록도 포함하므로 연예인 화장품 광고 시장 전체의 비율이 아니다.",
+  "summary": {
+    "total": 55,
+    "yes": 15,
+    "no": 20,
+    "unknown": 20,
+    "classified": 35,
+    "yes_percent_all": 27.3,
+    "yes_percent_classified": 42.9,
+    "interleaved": 10
+  },
+  "unique_body_summary": {
+    "total": 53,
+    "yes": 13,
+    "no": 20,
+    "unknown": 20,
+    "classified": 33,
+    "yes_percent_all": 24.5,
+    "yes_percent_classified": 39.4,
+    "interleaved": 8
+  },
+  "records": [
+    {
+      "code": "Dd0y31Gyrgh",
+      "name": "소유 올리브영 세럼",
+      "source": "https://www.instagram.com/reel/Dd0y31Gyrgh/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": true,
+      "reason": "유튜브 원본 대화 및 인터뷰 음성 사이사이에 제3자의 AI/TTS 해설 나레이션이 추가되어 있습니다. 원본 출연자 대화 구간과 편집자 해설 나레이션 구간이 명확하게 교차 교체되는 구성을 보입니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "kind": "original_dialogue",
+          "text": "20kg를 제가 감량을 한 거예요"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "kind": "added_narrator",
+          "text": "자기관리 빡세기로 유명한 소유! 요즘 생얼 피부 상태 충격적이라는데..."
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "kind": "original_dialogue",
+          "text": "얼굴에 아무것도 안 한 거야 지금? 얘 뭐야, 물광 피부네"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "kind": "added_narrator",
+          "text": "급격하게 살 빠지면 얼굴 처져 보이거나 푸석해지기 쉬운데 소유 피부는 탄력이랑 광이 미쳤음"
+        },
+        {
+          "start": 17,
+          "end": 18,
+          "kind": "original_dialogue",
+          "text": "홈케어로 많이 하고 있고"
+        },
+        {
+          "start": 18,
+          "end": 30,
+          "kind": "added_narrator",
+          "text": "뭐 쓰나 하고 봤더니 매일 챙겨바르는 세럼이 있다고... 마누카꿀을 더한 세럼이라 피부 회복이 빠르고"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "kind": "original_dialogue",
+          "text": "여러 번 덧발라도 밀리거나 답답함 느낌이 없고 흡수가 엄청 잘돼요"
+        },
+        {
+          "start": 33,
+          "end": 38,
+          "kind": "added_narrator",
+          "text": "트러블 진정에도 도움되고 푸석한 피부에 수분감을 채워주고 이렇게 쫀득한 광이 살아남"
+        },
+        {
+          "start": 38,
+          "end": 40,
+          "kind": "original_dialogue",
+          "text": "생얼인데도 반짝반짝"
+        },
+        {
+          "start": 40,
+          "end": 52,
+          "kind": "added_narrator",
+          "text": "연예인 피부는 비싼 관리만 하는 줄 알았는데 결국 피부도 꾸준히 챙기는 게 답인가봄... 올영에서 보면 무조건 GET하기!"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "Dd0y31Gyrgh-audio.json"
+    },
+    {
+      "code": "Dd2phx-v52N",
+      "name": "소유 올리브영 세럼",
+      "source": "https://www.instagram.com/reel/Dd2phx-v52N/",
+      "duplicate_of": "Dd0y31Gyrgh",
+      "status": "yes",
+      "interleaved": true,
+      "reason": "출연자의 원본 인터뷰 음성과 편집자가 추가한 제3자 여성 나레이션이 교차하여 사용되었습니다. 원본 현장 음성과 상품/프로모션을 설명하는 해설 음성의 음색 및 울림이 명확하게 구별됩니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "kind": "original_dialogue",
+          "text": "20kg를 제가 감량을 한 거예요"
+        },
+        {
+          "start": 3,
+          "end": 8,
+          "kind": "added_narrator",
+          "text": "자기관리 빡세기로 유명한 소유! 요즘 쌩얼 피부 상태 충격적이라는데"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "kind": "original_dialogue",
+          "text": "얼굴에 아무것도 안 한 거야 지금? 얘 뭐야 물광 피부네"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "kind": "added_narrator",
+          "text": "급격하게 살 빠지면 얼굴 처져 보이거나 푸석해지기 쉬운데 소유 피부는 탄력이랑 광이 미쳤음"
+        },
+        {
+          "start": 18,
+          "end": 19,
+          "kind": "original_dialogue",
+          "text": "홈케어로 많이 하고 있고"
+        },
+        {
+          "start": 19,
+          "end": 30,
+          "kind": "added_narrator",
+          "text": "뭐 쓰나 하고 봤더니 매일 챙겨바르는 세럼이 있다고"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "kind": "original_dialogue",
+          "text": "여러 번 덧발라도 밀리거나 답답함 없이 흡수가 엄청 잘돼요"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "kind": "added_narrator",
+          "text": "트러블 진정에도 도움되고 푸석한 피부에 수분감을 채워주고"
+        },
+        {
+          "start": 38,
+          "end": 40,
+          "kind": "original_dialogue",
+          "text": "쌩얼인데도 피부가 반짝반짝"
+        },
+        {
+          "start": 41,
+          "end": 52,
+          "kind": "added_narrator",
+          "text": "연예인 피부는 비싼 관리만 하는 줄 알았는데 결국 피부도 꾸준히 챙기는게 답인가봄"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [
+        "유튜브 원본 영상 오디오와 광고 전용 추가 해설 음성이 정교하게 교차 편집됨"
+      ],
+      "evidence_file": "Dd2phx-v52N-audio.json"
+    },
+    {
+      "code": "Dd6K5ABzUZ-",
+      "name": "소유 올리브영 세럼",
+      "source": "https://www.instagram.com/reel/Dd6K5ABzUZ-/",
+      "duplicate_of": "Dd0y31Gyrgh",
+      "status": "yes",
+      "interleaved": true,
+      "reason": "출연자의 원본 영상 대화 사이 사이에 광고 편집용 별도 여성 나레이션 음성이 제3자 해설 및 상품 설명 목적으로 교차 추가되었습니다. 원본 출연자의 현장 대화 음색 및 스튜디오 인터뷰 음성과 별도 나레이션의 음질 및 톤이 명확히 구분됩니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "kind": "original_dialogue",
+          "text": "48kg까지 찍었으니까 20kg를 제가 감량을 한 거예요"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "kind": "added_narrator",
+          "text": "자기관리 빡세기로 유명한 소유! 요즘 쌩얼 피부 상태 충격적이라는데..."
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "kind": "original_dialogue",
+          "text": "얼굴에 아무것도 안 한 거야 지금? 얘 뭐야 물광 피부네"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "kind": "added_narrator",
+          "text": "급격하게 살 빠지면 얼굴 처져 보이거나 푸석해지기 쉬운데 소유 피부는 탄력이랑 광이 미쳤음"
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "kind": "original_dialogue",
+          "text": "홈케어로도 많이 하고 있고"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "kind": "added_narrator",
+          "text": "뭐 쓰나 하고 봤더니 매일 챙겨바르는 세럼이 있다고 집뿐만 아니라 스케줄 다닐 때마다 소분해서 갖고 다닐 정도라는데"
+        },
+        {
+          "start": 26,
+          "end": 33,
+          "kind": "original_dialogue",
+          "text": "이게 노화 방지와 영양 보습에 좋은 마누카꿀을 더한 세럼이라 피부 회복이 빠르고"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "kind": "added_narrator",
+          "text": "트러블 진정에도 도움되고 푸석한 피부에 수분감을 채워주고 이렇게 쫀득한 광이 살아남"
+        },
+        {
+          "start": 41,
+          "end": 52,
+          "kind": "added_narrator",
+          "text": "연예인 피부는 비싼 관리만 하는 줄 알았는데 결국 피부도 꾸준히 챙기는게 답인가봄"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [
+        "원본 유튜브 인터뷰/웹예능 대화와 편집자가 넣은 프로모션 나레이션이 정교하게 교차 편집되어 있음"
+      ],
+      "evidence_file": "Dd6K5ABzUZ--audio.json"
+    },
+    {
+      "code": "Dd232Kvz3o0",
+      "name": "소유 올리브영 세럼",
+      "source": "https://www.instagram.com/reel/Dd232Kvz3o0/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": true,
+      "reason": "원 출연자의 예능 및 브이로그 현장 대화 사이에 광고 편집자가 추가한 제3자 여성 내레이터 음성이 교차 편집되었습니다. 내레이터는 '소유 파우치에서 맨날 나온다는 이 초록병' 및 프로모션 안내 등 제3자적 해설을 전달하여 현장 대화 음질/음색과 뚜렷하게 구분됩니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "kind": "original_dialogue",
+          "text": "얼굴에 아무것도 안 한 거야 지금? 피부 무슨 일이야 이거?"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "kind": "added_narrator",
+          "text": "쌩얼 미인 소유의 피부 비결?"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "kind": "original_dialogue",
+          "text": "요즘도 꾸준히 사용하고 있는 찐템. 집에서 기초케어할 때도 쓰고"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "kind": "added_narrator",
+          "text": "소유 파우치에서 맨날 나온다는 이 초록병! 도대체 뭐길래 N통째 비우는 건데?"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "kind": "original_dialogue",
+          "text": "마누카꿀이 들어있어서 굉장히 쫀득한 편이에요. 수분감이 꽉 차는 느낌이 드는데"
+        },
+        {
+          "start": 28,
+          "end": 37,
+          "kind": "added_narrator",
+          "text": "알고 보니 올영에서도 유명한 1등 진정 세럼! 몇 통째 비우는 데는 이유가 있었음!"
+        },
+        {
+          "start": 37,
+          "end": 42,
+          "kind": "original_dialogue",
+          "text": "보세요. 쌩얼인데도 뭔가 반짝반짝하고 피부결이 너무 좋아보이지 않나요?"
+        },
+        {
+          "start": 42,
+          "end": 51,
+          "kind": "added_narrator",
+          "text": "이번에 호빵맨이랑 콜라보했는데 피크닉 매트가 공짜임! 올영에서 보면 무조건 GET하기!"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "Dd232Kvz3o0-audio.json"
+    },
+    {
+      "code": "Dc2Q12shG2A",
+      "name": "소유 올리브영 세럼",
+      "source": "https://www.instagram.com/reel/Dc2Q12shG2A/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": true,
+      "reason": "출연자의 원본 인터뷰 및 예능 장면 음성 사이사이에 제3자의 성우/편집자 추가 해설 음성이 명확하게 삽입되어 있습니다. 원본 대화와 해설자의 음색 및 음질이 뚜렷하게 구분되며 원본 대화로 재복귀하는 교차 편집 구조를 가집니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "kind": "original_dialogue",
+          "text": "48kg까지 찍었으니까 20kg 감량을 한 거예요"
+        },
+        {
+          "start": 2,
+          "end": 6,
+          "kind": "added_narrator",
+          "text": "자기관리 빡세기로 유명한 소유! 절대 빼먹지 않고 지키는 루틴이 있다는데"
+        },
+        {
+          "start": 6,
+          "end": 12,
+          "kind": "original_dialogue",
+          "text": "1시간을 웨이트를 받고 나서 개인운동 20분 정도 더 가져갑니다"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "kind": "added_narrator",
+          "text": "다이어트 빡세게 하면 급격하게 빠진 살로 피부 처져보이고... 소유는 피부 탄력이랑 광이 미쳤음"
+        },
+        {
+          "start": 18,
+          "end": 23,
+          "kind": "original_dialogue",
+          "text": "홈케어로도 많이 하고 있고 제가 예전에도 한번 파우치템으로"
+        },
+        {
+          "start": 23,
+          "end": 34,
+          "kind": "added_narrator",
+          "text": "알고보니 이미 여러번 언급할 정도로 매일 쓰는 세럼이 있는데... 쫀득해진다고 함"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "kind": "original_dialogue",
+          "text": "얼굴에 아무것도 안 한 거야 지금? 이거 뭐야 물광 피부네"
+        },
+        {
+          "start": 38,
+          "end": 45,
+          "kind": "added_narrator",
+          "text": "소유뿐만 아니라 다른 아이돌도 언급해서... 가성비가 미쳤음"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "Dc2Q12shG2A-audio.json"
+    },
+    {
+      "code": "DdslB76x7ZV",
+      "name": "소유 올리브영 세럼",
+      "source": "https://www.instagram.com/reel/DdslB76x7ZV/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": true,
+      "reason": "영상 전반에 걸쳐 원본 출연자의 방송/유튜브 음성과 구분되는 별도의 여성 TTS 해설 음성이 추가되어 교차 편집되어 있습니다. 해설 음성이 제3자 시점에서 상품 및 인물 소식을 전달하고 다시 원본 대화로 돌아가는 구조가 명확합니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "kind": "added_narrator",
+          "text": "소유 성형했다고 말 많았는데 알고보니 무려 20kg을 감량한 거였음"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "kind": "original_dialogue",
+          "text": "어 68kg? 바로 운동 시작해야겠다"
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "kind": "added_narrator",
+          "text": "자기관리 빡세기로 유명한 소유. 다이어트할 때 운동만큼 신경쓰는게 있다는데"
+        },
+        {
+          "start": 13,
+          "end": 14,
+          "kind": "original_dialogue",
+          "text": "천천히 씹는 거 진짜 중요"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "kind": "added_narrator",
+          "text": "다이어트 빡세게 하면 급격하게 빠진 살로 피부 처져보이고 푸석해보이는데 소유는 피부탄력이랑 광이 미쳤음"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "kind": "original_dialogue",
+          "text": "홈케어로도 많이 하고 있고 제가 예전에도 한번 파우치템으로 소개해드린 적 있었는데"
+        },
+        {
+          "start": 25,
+          "end": 36,
+          "kind": "added_narrator",
+          "text": "알고보니 이미 여러번 언급할 정도로 매일 쓰는 세럼이 있는데 노화 방지와 영양 보습에 좋은"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "kind": "original_dialogue",
+          "text": "얼굴에 아무것도 안한거야 지금? 얘 뭐야 물광 피부네"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "kind": "added_narrator",
+          "text": "소유뿐만 아니라 다른 아이돌도 언급해서 이미 여러번 품절대란 났다고"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [
+        "원본 방송 clips의 대사와 편집된 TTS 나레이션 음성이 짧은 간격으로 교차하여 나타납니다."
+      ],
+      "evidence_file": "DdslB76x7ZV-audio.json"
+    },
+    {
+      "code": "DdxfRNzTQIn",
+      "name": "소유 올리브영 세럼",
+      "source": "https://www.instagram.com/reel/DdxfRNzTQIn/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": true,
+      "reason": "원본 방송 및 인물의 현장 대화 사이에 편집자가 추가한 제3자 해설 나레이션이 번갈아 등장하는 구조입니다. 인물(소유)의 자기관리 루틴과 제품을 제3자 시점에서 설명하는 별도 음성이 명확히 포함되어 있습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "kind": "original_dialogue",
+          "text": "체지방량은 1kg이나 늘었습니다... 심지어 경도비만"
+        },
+        {
+          "start": 3,
+          "end": 9,
+          "kind": "added_narrator",
+          "text": "한 때 경도비만이었던 소유! 요즘은 자기 관리 빡세게 한다는데"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "kind": "original_dialogue",
+          "text": "한 시간을 웨이트를 하고 나서 다른 건 개인 운동 20분 정도 더 가져갑니다"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "kind": "added_narrator",
+          "text": "다이어트 빡세게 하면 급격하게 빠진 살로 피부 처져보이고 푸석해보이는데 소유는 피부탄력이랑 광이 미쳤음"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "kind": "original_dialogue",
+          "text": "홈케어로도 많이 하고 있고 제가 예전에도 한번 파우치템으로 소개해드린 적 있었는데"
+        },
+        {
+          "start": 26,
+          "end": 36,
+          "kind": "added_narrator",
+          "text": "알고보니 이미 여러번 언급할 정도로 매일 쓰는 세럼이 있는데 마누카꿀을 더한 세럼이라"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "kind": "original_dialogue",
+          "text": "얼굴에 아무것도 안 한 거야 지금? 얘 뭐야 물광 피부네"
+        },
+        {
+          "start": 40,
+          "end": 45.708333,
+          "kind": "added_narrator",
+          "text": "소유뿐만 아니라 다른 아이돌도 언급해서 이미 여러번 품절대란 났다고 함"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DdxfRNzTQIn-audio.json"
+    },
+    {
+      "code": "DdlVfzBNbqc",
+      "name": "깡주은 디톡스 주스",
+      "source": "https://www.instagram.com/reel/DdlVfzBNbqc/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": true,
+      "reason": "24초부터 27초 사이에 원본 출연자의 경험담 음성과 달리 오디오 음질과 음색이 전혀 다른 제3자 해설 나레이션('실제로 5일 동안 마신 강주희 씨는')이 별도로 삽입되어 있습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "kind": "original_dialogue",
+          "text": "5일 동안 마시면서 5키로도 뺄 수 있다는"
+        },
+        {
+          "start": 24,
+          "end": 27,
+          "kind": "added_narrator",
+          "text": "실제로 5일 동안 마신 강주희 씨는"
+        },
+        {
+          "start": 27,
+          "end": 37.987007,
+          "kind": "original_dialogue",
+          "text": "느껴진 게 제가 원래 잘 입는 청바지가"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DdlVfzBNbqc-review.json"
+    },
+    {
+      "code": "DdWHsAkuDs0",
+      "name": "조혜련 다이어트",
+      "source": "https://www.instagram.com/reel/DdWHsAkuDs0/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전체 구간에서 원본 출연자의 현장 대화 및 경험 설명 음성만 계속되며, 중간에 삽입된 제3자 나레이션(TTS 등)은 없습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "kind": "original_dialogue",
+          "text": "똥배는 요게 답이에요. 평생 안 빠지던 그 아랫배 있죠"
+        },
+        {
+          "start": 15,
+          "end": 28,
+          "kind": "original_dialogue",
+          "text": "정선이도 봉선이한테 추천을 받아서 이거 먹더라고요"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DdWHsAkuDs0-review.json"
+    },
+    {
+      "code": "DdDWTkGx19e",
+      "name": "이경실 관절 영양제",
+      "source": "https://www.instagram.com/reel/DdDWTkGx19e/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "시작부터 끝까지 동일 화자의 인터뷰/후기 음성만 연속적으로 이어지며, 편집으로 삽입된 3인칭 광고 해설이나 별도 나레이터/TTS 음성이 전혀 확인되지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "kind": "original_dialogue",
+          "text": "야 이거 진짜 관절이 잘 들어요. 5일 만에 개선됐다는 거예요. 효과가 정말 이건 드셔보셔야 되는데"
+        },
+        {
+          "start": 5,
+          "end": 12,
+          "kind": "original_dialogue",
+          "text": "최단기간에 관절이 좋아진다고 소문이 난 성분인데 파마플렉스라고 파마플렉스. 많이 달라졌어요. 부드러워졌어요."
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "kind": "original_dialogue",
+          "text": "제가 솔직히 뭐 어디 좋다고 해가지고 아무거나 먹고 그런 성격은 아니에요. 이제 그 파스를 안 붙여요. 오히려 몇 년 전보다 관절이 더 좋아진 것 같아요."
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DdDWTkGx19e-review.json"
+    },
+    {
+      "code": "DdJEK22qGKg",
+      "name": "이경실 관절 영양제",
+      "source": "https://www.instagram.com/reel/DdJEK22qGKg/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "8–14초 성분·임상 설명을 음성 단독 분석이 별도 해설로 분류했으나, 전체 영상·기존 전사와 상세 구간 재검증에서는 이경실이 제품을 들고 직접 설명하는 원본 대화로 일치했다. 말의 내용이 체험담에서 성분 설명으로 바뀌었다는 이유로 나레이션에 넣지 않았다.",
+      "evidence_level": "전체 원음·영상 AI 분석 + 의심 구간 상세 재검증 + 프레임·대본 대조",
+      "segments": [],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DdJEK22qGKg-review.json",
+      "review_evidence": "DdJEK22qGKg-detail-review.json"
+    },
+    {
+      "code": "DdDWk3WhaAs",
+      "name": "이경실 관절 영양제",
+      "source": "https://www.instagram.com/reel/DdDWk3WhaAs/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전체 음성에서 동일한 여성 출연자가 제품 사용 경험과 효능에 대해 이야기하는 단일 화자의 현장 대화만 확인되며, 제3자 해설이나 추가 나레이션이 전혀 삽입되지 않았습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "kind": "original_dialogue",
+          "text": "관절에 뭐 기름칠을 한 것 같다고 해야 되나? 이거 좀 이게 챙겨 먹고 나서는 많이 달라졌어요."
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DdDWk3WhaAs-review.json"
+    },
+    {
+      "code": "DdYRxqVvAG3",
+      "name": "카디비 세르프 K-리프팅",
+      "source": "https://www.instagram.com/reel/DdYRxqVvAG3/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": false,
+      "reason": "영상 전체에 걸쳐 편집자가 추가한 한국어 여성 TTS 내레이션 음성이 지속적으로 흐르며 인물 및 제품을 설명합니다. 원본 출연자의 현장 음성 없이 전체가 제3자 해설 음성으로만 구성되어 있습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "kind": "added_narrator",
+          "text": "월클 래퍼 카디비가 한국을 샤라웃 하고 있음"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [
+        "원본 영상 출연자의 현장 음성은 포함되어 있지 않음"
+      ],
+      "evidence_file": "DdYRxqVvAG3-audio.json"
+    },
+    {
+      "code": "DdQDuC6hQj7",
+      "name": "박원숙 혈관 영양제 세트",
+      "source": "https://www.instagram.com/reel/DdQDuC6hQj7/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "0초부터 25초까지 출연자가 제품 및 경험담에 대해 대화하는 현장 음성만 수록되어 있으며, 추가된 나레이션은 존재하지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "kind": "original_dialogue",
+          "text": "경실이가 이거를 소개를 해줬어"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DdQDuC6hQj7-review.json"
+    },
+    {
+      "code": "Dd2vPz8z4KX",
+      "name": "이혜정 오메가3",
+      "source": "https://www.instagram.com/reel/Dd2vPz8z4KX/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "영상 전체 음성은 출연자가 직접 협찬 제품을 소개하고 효능과 복용법을 설명하는 현장 대화(본인 설명)로만 구성되어 있으며, 제3자의 추가 나레이션이나 별도 TTS 해설은 존재하지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "kind": "original_dialogue",
+          "text": "여러분 아시죠 제가 협찬 잘 안 하는 거"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "Dd2vPz8z4KX-review.json"
+    },
+    {
+      "code": "Dc2z1g3PUen",
+      "name": "한선화·박가을 미백 스티커",
+      "source": "https://www.instagram.com/reel/Dc2z1g3PUen/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": false,
+      "reason": "영상 전체에 걸쳐 여성 나레이터의 해설 음성이 다양한 짤방 및 제품 영상 위에 일관되게 후가공되어 입혀져 있습니다. 현장 음성이나 원본 대화 전환 없이 더빙 형식의 별도 나레이션만 지속됩니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "kind": "added_narrator",
+          "text": "SNS에서 난리길래 사봤는데"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "Dc2z1g3PUen-audio.json"
+    },
+    {
+      "code": "Dd0l-fdzTsB",
+      "name": "영수 세르프 K-리프팅",
+      "source": "https://www.instagram.com/reel/Dd0l-fdzTsB/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": false,
+      "reason": "영상 전체에 걸쳐 출연자의 현장 음성 없이 별도로 녹음된 여성 나레이션 음성이 B-roll 화면 위에 지속적으로 흐릅니다. 화면 속 인물이 말하는 장면에서도 현장 대화 음성은 제거되고 나레이션 해설만 출력됩니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "kind": "added_narrator",
+          "text": "강희재부터 백지영, 킴 카다시안, 카디비, 그리고 나솔 29기 영수까지?"
+        },
+        {
+          "start": 9,
+          "end": 23,
+          "kind": "added_narrator",
+          "text": "실제로 나비성형외과에서 시술 받은 모습까지 공개함. 남자도 관리 받는 시대에..."
+        }
+      ],
+      "confidence": "high",
+      "cautions": [
+        "화면에 출연자가 말하는 듯한 인터뷰 및 방송 장면이 나오지만 현장 음성은 포함되어 있지 않음"
+      ],
+      "evidence_file": "Dd0l-fdzTsB-audio.json"
+    },
+    {
+      "code": "DdWH9IBQR8g",
+      "name": "조혜련 다이어트",
+      "source": "https://www.instagram.com/reel/DdWH9IBQR8g/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전체 음성이 원본 출연자의 현장 대화 및 본인 경험담으로만 구성되어 있으며, 외부에 별도로 삽입된 제3자의 광고/해설 나레이션은 존재하지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "kind": "original_dialogue",
+          "text": "56세 배야. 요런 배 괜찮지 않아? 어때?"
+        },
+        {
+          "start": 7,
+          "end": 13,
+          "kind": "original_dialogue",
+          "text": "변을 매일 잘 보니까 전체적으로 슬림해보이고"
+        },
+        {
+          "start": 13,
+          "end": 25,
+          "kind": "original_dialogue",
+          "text": "다이어트 유산균 이게 효과가 대박인게"
+        },
+        {
+          "start": 25,
+          "end": 33,
+          "kind": "original_dialogue",
+          "text": "얘 먹고 제가 사실은 하루에 꼭 한번씩 화장실을 가요"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DdWH9IBQR8g-review.json"
+    },
+    {
+      "code": "Del7rFSSbzf",
+      "name": "강소라 리프팅 시술(올E0E)",
+      "source": "https://www.instagram.com/reel/Del7rFSSbzf/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전체 음성은 피부과 시술을 받은 원본 출연자들의 인터뷰 및 사용자 리뷰 대화로만 구성되어 있습니다. 외부 편집자의 3인칭 나레이션이나 TTS 해설 음성은 일절 포함되어 있지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "kind": "original_dialogue",
+          "text": "통통은 짧고 효과는 바로 보이고 타이틀 레이저를 또 받으려고"
+        },
+        {
+          "start": 4,
+          "end": 9,
+          "kind": "original_dialogue",
+          "text": "이것들을 열로 좀 자극해 가지고 탄력이 쫙 차오르게 하는"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "kind": "original_dialogue",
+          "text": "짧게는 2주에서 저는 한 달에 한 번? 뭐 그 정도 꾸준히 받으면"
+        },
+        {
+          "start": 14,
+          "end": 24,
+          "kind": "original_dialogue",
+          "text": "저 피부과 같은데 한 번도 안 오잖아요, 30대인데도. 근데 진짜 안 아프고"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "kind": "original_dialogue",
+          "text": "아픔이 전혀 없어요. 통통은 짧고 효과는 바로 보이고 익숙해요"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "Del7rFSSbzf-review.json"
+    },
+    {
+      "code": "DeqIOL1KaZS",
+      "name": "강소라 리프팅 시술(올E0E)",
+      "source": "https://www.instagram.com/reel/DeqIOL1KaZS/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "DeIjJRJAMyW",
+      "name": "박원숙 건강식품(가루)·치아관리",
+      "source": "https://www.instagram.com/reel/DeIjJRJAMyW/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "DeIjnKxz6bV",
+      "name": "박원숙 건강식품(가루)·치아관리",
+      "source": "https://www.instagram.com/reel/DeIjnKxz6bV/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "Dc2-CdNOURD",
+      "name": "소유 올리브영 세럼(시카마누·파넬·호빵맨)",
+      "source": "https://www.instagram.com/reel/Dc2-CdNOURD/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "m6",
+      "name": "세르프(XERF) K-리프팅",
+      "source": "https://www.instagram.com/comedy.1989__/reels/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "m7",
+      "name": "한선화·박가을 미백패치(글루타치온)",
+      "source": "https://www.instagram.com/orange__funny/reels/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "Dcs2ZuivE1T",
+      "name": "이경실 간영양제",
+      "source": "https://www.instagram.com/reel/Dcs2ZuivE1T/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "m9",
+      "name": "이경실·박원숙 혈관 영양제 세트",
+      "source": "https://www.instagram.com/comedy.1989__/reels/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "m10",
+      "name": "2~4세대 여돌이 지키는 '이거'",
+      "source": "https://www.instagram.com/orange__funny/reels/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "m11",
+      "name": "2~4세대 여돌이 지키는 '이거'",
+      "source": "https://www.instagram.com/chachaping_zzal/reels/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "DeG61xFPC5o",
+      "name": "소유 활용 세럼 · 올영에서 쟁이는 꿀템",
+      "source": "https://www.instagram.com/reel/DeG61xFPC5o/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "DejH_4mht5H",
+      "name": "나솔 14기 영자 40대 관리",
+      "source": "https://www.instagram.com/reel/DejH_4mht5H/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "DeOvjhgzsWP",
+      "name": "얼굴 고치러 갔다가 모든 게 다 바뀜",
+      "source": "https://www.instagram.com/reel/DeOvjhgzsWP/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "DeOvP24SWg2",
+      "name": "얼굴 고치러 갔다가 모든 게 다 바뀜",
+      "source": "https://www.instagram.com/reel/DeOvP24SWg2/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "DdTcMR2u467",
+      "name": "트러블 뽑아주는 팩",
+      "source": "https://www.instagram.com/reel/DdTcMR2u467/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "DeHH1v3tK4i",
+      "name": "기타 낮음(에스파 응급루틴 등)",
+      "source": "https://www.instagram.com/reel/DeHH1v3tK4i/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "m18",
+      "name": "기타 낮음(아이돌 10년 피부)",
+      "source": "https://www.instagram.com/apple__paper/reels/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "De9XeThphv5",
+      "name": "풍자 크림 · 먼저 보여주는 사용 반응",
+      "source": "https://www.instagram.com/reel/De9XeThphv5/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "영상 시작부터 끝까지 동일한 출연자의 현장 대화 및 직접 제품을 설명하는 음성만 이어지며, 제3자의 편집된 광고 나레이션이나 TTS 음성은 전혀 존재하지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "kind": "original_dialogue",
+          "text": "진짜 좋다. 그래. 이거 내가 더 줄게."
+        },
+        {
+          "start": 3,
+          "end": 57,
+          "kind": "original_dialogue",
+          "text": "언니들 이거 진짜 오늘 잘 들어야 돼요."
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "De9XeThphv5-review.json"
+    },
+    {
+      "code": "Dcz7bkiRBJn",
+      "name": "박가을 패치 · 원하는 결과를 먼저 부르는 추천",
+      "source": "https://www.instagram.com/reel/Dcz7bkiRBJn/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전 구간 원본 출연자(리뷰어)의 대화 소리만 존재하며, 제3자 나레이션이나 TTS 해설 음성이 삽입되지 않았습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "kind": "original_dialogue",
+          "text": "진짜 이거는 완전 추천 내가 만약에 피부가 좀 밝아지고 싶고"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "Dcz7bkiRBJn-review.json"
+    },
+    {
+      "code": "DebaRwXPh8z",
+      "name": "카카오프렌즈 런 · 혜택을 연속으로 보여주는 행사 영상",
+      "source": "https://www.instagram.com/reel/DebaRwXPh8z/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전체 구간에서 음악, 출연자의 노래 및 현장 추임새('얍! 타이어!' 등)만 확인되며, 별도로 삽입된 제3자 광고 해설이나 TTS 나레이션은 존재하지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "kind": "original_dialogue",
+          "text": "(음악 및 추임새)"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "kind": "original_dialogue",
+          "text": "얍! 타이어!"
+        },
+        {
+          "start": 15,
+          "end": 27,
+          "kind": "original_dialogue",
+          "text": "아리랑 아리랑 아라리요"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DebaRwXPh8z-review.json"
+    },
+    {
+      "code": "DeA6_ldP61c",
+      "name": "수타쇼 팬 영상 · 높은 조회여도 상품 광고 근거에서는 제외",
+      "source": "https://www.instagram.com/reel/DeA6_ldP61c/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "음성 전반에서 음악과 함께 원본 출연자의 현장 비명 및 감탄사 소리만 들릴 뿐, 제3자 광고 해설이나 TTS 나레이션은 전혀 삽입되지 않았습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "kind": "original_dialogue",
+          "text": "어 뭐야"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DeA6_ldP61c-review.json"
+    },
+    {
+      "code": "De19ZYlTXlT",
+      "name": "오픈형 이어폰 · 사무실 공감 상황에서 제품으로",
+      "source": "https://www.instagram.com/reel/De19ZYlTXlT/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": false,
+      "reason": "영상 전체에 걸쳐 다양한 밈과 제품 B-roll 화면 위로 동일한 해설 음성이 지속적으로 흐릅니다. 화면 속 인물들의 현장 대화와 무관하게 광고 편집 시 추가된 더빙 내레이션입니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "kind": "added_narrator",
+          "text": "사무실에서 노동요 틀어놓고 해야 일 능률 오르는 사람 있음? 근데 노캔 이어폰 꽉 끼고 일하다가 상사나 옆 사람이 부른 거 못 들어서 식은땀 난 적 다들 있을 거임."
+        },
+        {
+          "start": 12,
+          "end": 34.433008,
+          "kind": "added_narrator",
+          "text": "그래서 아예 눈치 안 보고 끼려고 보스 울트라 오픈 이어버드 2세대로 바꿈. 이게 일단 디자인부터 이어폰 같지가 않고... 퇴근할 때까지 멘탈 진짜 편해짐."
+        }
+      ],
+      "confidence": "high",
+      "cautions": [
+        "음성이 인공지능 TTS인지 실제 성우 녹음인지 구분이 명확하지 않음"
+      ],
+      "evidence_file": "De19ZYlTXlT-audio.json"
+    },
+    {
+      "code": "DeyUz6ARU9M",
+      "name": "이민정 스프레드 · 말과 행동이 어긋나는 웃음",
+      "source": "https://www.instagram.com/reel/DeyUz6ARU9M/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "초반 약 1–4초 설명이 원본 현장의 제작진 목소리인지 별도로 삽입한 해설인지 분석 결과가 충돌했다. 해당 구간에서 화자의 입 움직임을 확인할 수 없어 미확인으로 남겼다. 있음·없음 어느 쪽에도 합산하지 않는다.",
+      "evidence_level": "전체 시청각·음성 단독·초반 구간 재검증 간 판단 불일치",
+      "segments": [],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DeyUz6ARU9M-review.json",
+      "review_evidence": "DeyUz6ARU9M-detail-review.json"
+    },
+    {
+      "code": "DeBrUy0hjsk",
+      "name": "서인영 향수 이야기 · 예능 반응 후보, 제품 광고는 미확인",
+      "source": "https://www.instagram.com/reel/DeBrUy0hjsk/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "영상 처음부터 끝까지 남녀 출연자의 스튜디오/현장 대화 음성만 연속적으로 이어지며, 편집자에 의해 추가된 제3자 해설이나 광고 나레이션은 존재하지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "kind": "original_dialogue",
+          "text": "전에 그 특강 중에 사타구니 향수 플러팅 이게 난리난리가 났어요"
+        },
+        {
+          "start": 6,
+          "end": 23,
+          "kind": "original_dialogue",
+          "text": "사타구니에 뿌린다는 거죠 제가 연애 몇 번 안 해봤어요"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DeBrUy0hjsk-review.json"
+    },
+    {
+      "code": "Dev7RPNBIHl",
+      "name": "14기 영자 · 변화 비교와 관리 설명",
+      "source": "https://www.instagram.com/reel/Dev7RPNBIHl/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "영상 음성 전체 구간에서 보컬이 포함된 영문 노래(BGM)만 흐르며, 제품 설명이나 3인칭 별도 나레이션/TTS는 존재하지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "kind": "music_only",
+          "text": "Dreams drifting up in coffee... Bubble dreams shimmer gleam... all the way up to the sky"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "Dev7RPNBIHl-review.json"
+    },
+    {
+      "code": "DetMuzQJMYK",
+      "name": "강예원 모녀 · 이상한 첫 화면과 반전 사연",
+      "source": "https://www.instagram.com/reel/DetMuzQJMYK/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": true,
+      "reason": "출연진(강예원 및 어머니)의 현장 대화 음성과 제3자 해설 성우의 별도 나레이션이 교차 편집되어 있습니다. 원본 대화 중간중간 상황 설명 및 제품 홍보를 위한 추가 음성이 명확히 구분되어 나타납니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "kind": "original_dialogue",
+          "text": "이건 또 뭐니? 이거? 눈 성형할 때"
+        },
+        {
+          "start": 3,
+          "end": 8,
+          "kind": "added_narrator",
+          "text": "딸이 성형하는 걸 계속 뜯어 말리던 강예원 어머니"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "kind": "original_dialogue",
+          "text": "엄마 저번에 미우새 나왔을 때 사람들이 여기 눈밑 주름 있다고"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "kind": "added_narrator",
+          "text": "바로 엄마 모시고 피부과로 달려간 강예원"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "kind": "original_dialogue",
+          "text": "10년이 젊어지고 있어! 엄마 벌써 지금 50대 됐어!"
+        },
+        {
+          "start": 21,
+          "end": 43,
+          "kind": "added_narrator",
+          "text": "엄마 얼굴 다림질 된다고 말하는 딸 ㅋㅋㅋ 근데 어머니가 받고 있는 이 시술"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DetMuzQJMYK-audio.json"
+    },
+    {
+      "code": "DeqyLvzS9KD",
+      "name": "메디큐브 쿨링 패드 · 제품 동작 접사",
+      "source": "https://www.instagram.com/reel/DeqyLvzS9KD/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전 구간에 걸쳐 화자의 목소리나 나레이션 없이 경쾌한 재즈 스타일의 배경 음악(BGM)만 재생됩니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13.433008,
+          "kind": "music_only",
+          "text": ""
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DeqyLvzS9KD-review.json"
+    },
+    {
+      "code": "850513171333205",
+      "name": "이미숙·오윤아 / 피캄 실종팩",
+      "source": "https://www.facebook.com/ads/library/?id=850513171333205",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전체 시청각 분석은 원본 대화로 판정. 음성만 재분석했을 때 15–22초를 별도 해설로 오인했으나, 해당 구간의 상세 시청각 재검증과 프레임 검토에서 화면 속 출연자의 입 움직임·볼을 만지는 동작·대사가 이어짐을 확인했다. 다른 원본 출연자로 바뀐 것을 별도 나레이션으로 세지 않았다.",
+      "evidence_level": "전체 원음·영상 AI 분석 + 의심 구간 상세 재검증 + 프레임·대본 대조",
+      "segments": [],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "850513171333205-review.json",
+      "review_evidence": "850513171333205-detail-review.json"
+    },
+    {
+      "code": "2377215103087916",
+      "name": "한혜진 / 아누아 목주름 패치",
+      "source": "https://www.facebook.com/ads/library/?id=2377215103087916",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": false,
+      "reason": "광고 전체에 걸쳐 제품의 효과와 특징을 설명하는 제3자의 별도 해설 나레이션 음성이 주로 사용되었습니다. 중간에 출연자 한혜진의 실제 현장 음성이 잠깐 들어갔다가 다시 별도 나레이션으로 돌아오는 편집 구조입니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "kind": "added_narrator",
+          "text": "이미 유명했다는 한혜진 목주름 패치? 자기관리 쩌는 한혜진이 40대에도 목주름은커녕"
+        },
+        {
+          "start": 5,
+          "end": 6,
+          "kind": "original_dialogue",
+          "text": "너무 신기하죠?"
+        },
+        {
+          "start": 6,
+          "end": 29,
+          "kind": "added_narrator",
+          "text": "20대보다 더 매끈한 목주름 비결로 이 피부과 넥패치를 공개했는데..."
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "2377215103087916-audio.json"
+    },
+    {
+      "code": "1071687752531807",
+      "name": "채정안 / 디에이이펙트 선크림",
+      "source": "https://www.facebook.com/ads/library/?id=1071687752531807",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전체 구간을 확인한 결과, 출연자들 간의 현장 대화 및 연속적인 제품 경험 언급만 존재하며 제3자 해설(TTS 및 별도 나레이션)이 개입된 정황이 없습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "kind": "original_dialogue",
+          "text": "지금 여기서 이거 안 써본 사람 있어? 써보니까 솔직히 어때?"
+        },
+        {
+          "start": 20,
+          "end": 33,
+          "kind": "original_dialogue",
+          "text": "지난번에는 하이드로 선스크린을 얘길 했었어요."
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "1071687752531807-review.json"
+    },
+    {
+      "code": "1154881213770416",
+      "name": "채정안 / POLA 아이크림",
+      "source": "https://www.facebook.com/ads/library/?id=1154881213770416",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "출연자가 자신의 피부 관리 경험담을 친구와의 대화를 인용하며 자연스럽게 이야기하는 원본 음성만 존재합니다. 제3자의 해설이나 추가 나레이션은 포함되어 있지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "kind": "original_dialogue",
+          "text": "내 친구가 너는 피부가 너무 얇으니까 서른이 될 때쯤에는 눈밑 눈가 주름을 굉장히 조심하라고"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "1154881213770416-review.json"
+    },
+    {
+      "code": "2494548121050608",
+      "name": "인물 → 시럽 붓기 / 멜라토닌 시럽",
+      "source": "https://www.facebook.com/ads/library/?id=2494548121050608",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "모든 음성은 현장 출연자들의 자연스러운 대화 및 직접 경험 설명으로만 구성되어 있으며, 제3자의 성우/TTS 나레이션은 포함되어 있지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "kind": "original_dialogue",
+          "text": "얘는 시럽이라 물 없이 바로 먹을 수 있어 그게 진짜 좋더라고요"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "kind": "original_dialogue",
+          "text": "상추의 왜 이렇게 뚝 뿌르면 이렇게 하얀 액 같은 거 나오지"
+        },
+        {
+          "start": 18,
+          "end": 32,
+          "kind": "original_dialogue",
+          "text": "얘는 시럽이라 흡수도 훨씬 빨라요 뭐 이렇게 많이 사셨어요"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "2494548121050608-review.json"
+    },
+    {
+      "code": "DeqIgtkPHV9",
+      "name": "강소라 / 일상 장면에 외모 해설",
+      "source": "https://www.instagram.com/reel/DeqIgtkPHV9/",
+      "duplicate_of": null,
+      "status": "yes",
+      "interleaved": true,
+      "reason": "영상 편집에 제3자 TTS 해설 음성이 사용되었으며, 출연자의 실제 현장 대화 음성과 교차되며 등장합니다. 출연자가 말하는 원본 음성과 TTS 나레이션의 음색 및 편집 구성이 분명하게 구분됩니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "kind": "added_narrator",
+          "text": "요즘 미모 리즈인 것 같은 배우 강소라"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "kind": "original_dialogue",
+          "text": "꾸준히 자주자주 받았었거든요"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "kind": "added_narrator",
+          "text": "관리까지 확실히 하고 예뻐져서 번따 300번 당했다는 소문이"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "kind": "original_dialogue",
+          "text": "넘어봤으면 좋겠다"
+        },
+        {
+          "start": 25,
+          "end": 26,
+          "kind": "added_narrator",
+          "text": "그래도 300명은 아니라고 함"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [
+        "TTS 음성과 출연자 실제 대화 음성이 번갈아가며 나타나므로 구간 구분에 주의가 필요함"
+      ],
+      "evidence_file": "DeqIgtkPHV9-audio.json"
+    },
+    {
+      "code": "DexwrgkyS0i",
+      "name": "연예인 성수기 관리템 · 바르는 장면과 경험",
+      "source": "https://www.instagram.com/reel/DexwrgkyS0i/",
+      "duplicate_of": null,
+      "status": "no",
+      "interleaved": false,
+      "reason": "전체 음성은 동일한 여성 출연자가 제품 사용 경험과 할인 소식을 직접 전달하는 현장 음성이며, 별도의 제3자 광고 나레이션(TTS 등)은 추가되지 않았습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "kind": "original_dialogue",
+          "text": "밤에 잘 때 얼굴에다가 요렇게 눈밑에다가 깔아놓고 아침에 일어나잖아요?"
+        },
+        {
+          "start": 41,
+          "end": 49,
+          "kind": "original_dialogue",
+          "text": "410만 개가 팔렸대 410만 개. 살 수 있을 때 빨리 사야 되는 게 품절이 빨리 된대요."
+        }
+      ],
+      "confidence": "high",
+      "cautions": [],
+      "evidence_file": "DexwrgkyS0i-review.json"
+    },
+    {
+      "code": "De1KvwAJ1ft",
+      "name": "박미선 다이소 리뷰 · 놀라는 반응",
+      "source": "https://www.instagram.com/reel/De1KvwAJ1ft/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    },
+    {
+      "code": "DesoCmmy6jF",
+      "name": "메디큐브 홀리데이 세트 · 제품 사용 접사",
+      "source": "https://www.instagram.com/reel/DesoCmmy6jF/",
+      "duplicate_of": null,
+      "status": "unknown",
+      "interleaved": null,
+      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "evidence_level": "미확인",
+      "segments": []
+    }
+  ]
+}

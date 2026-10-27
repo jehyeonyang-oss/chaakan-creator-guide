@@ -25,6 +25,13 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 .btn{margin-top:auto;display:inline-block;text-align:center;border:1px solid var(--fg);border-radius:8px;padding:7px 10px;color:var(--fg);text-decoration:none;font-size:13px;font-weight:600} .btn:hover{background:var(--fg);color:var(--bg)} .btn small{font-weight:400;color:inherit}
 .foot{margin-top:28px;font-size:13px;color:var(--mut)}
 .analysis{font-size:12px} .analysis summary{cursor:pointer;font-weight:700;padding:8px 0} .analysis p{margin:8px 0} .table-scroll{overflow-x:auto;margin-bottom:24px} .table-scroll table{min-width:640px;margin-bottom:0}
+
+.narration-audit{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:18px;margin:0 0 24px;max-width:920px;scroll-margin-top:18px;overflow-wrap:anywhere}
+.narration-audit h2{font-size:19px;margin:0 0 10px}.narration-audit p{font-size:13px;margin:10px 0}.narration-audit summary{cursor:pointer;font-size:13px;font-weight:700}
+.narration-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}.narration-stats>div{border:1px solid var(--line);border-radius:8px;padding:10px}.narration-stats small,.narration-stats strong,.narration-stats span{display:block}.narration-stats strong{font-size:20px}.narration-stats span{color:var(--mut);font-size:13px}
+.narration-label{font-size:12px;border-top:1px solid var(--line);padding-top:8px;font-weight:600;overflow-wrap:anywhere}.narration-yes{color:var(--b)}.narration-unknown{color:var(--low)}.narration-detail{overflow-wrap:anywhere}.narration-detail ol{padding-left:20px}.narration-detail li{margin:8px 0}
+@media(max-width:480px){.narration-audit{padding:12px}.narration-stats{gap:6px}.narration-stats>div{padding:8px 6px}.narration-stats strong{font-size:17px}.narration-stats small{font-size:11px}}
+
 </style></head><body><main>
 <h1>파워페이지 레퍼런스 55건 · 추가 조사 통합</h1>
 <p class="lead">기존 36건과 10/27 추가 조사를 같은 카드로 비교한다. 같은 게시물의 추가 분석·재측정은 기존 카드에 합쳤다. 썸네일·버튼은 인스타 또는 메타 원본으로 연결된다. <a href="../index.html#all-variants">김가연 스토리보드 ↗</a> · <a href="#name-hook-evidence">이름 노출 vs 비노출 검증 ↓</a> · <a href="../index.html#name-hook-tests">두 버전 테스트 목록 ↗</a></p>
@@ -34,6 +41,20 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <li>메타 신규 광고는 장면을 확인했지만 <b>공유·저장 미확인</b>이다. 활성 표시·집행 기간만으로 고성과라고 판정하지 않는다.</li>
 <li>컷 선정과 성과 검증은 구분한다. <b>추가 조사 21건</b>에는 비뷰티·광고 미확인·제외 후보의 판단 기록도 포함된다. 공유+저장당 비용은 계정 정가를 나눈 참고값이며 실제 집행가가 아니다.</li>
 </ol></div>
+<section id="narration-audit" class="narration-audit">
+<h2>전체 레퍼런스 중 별도 나레이션은 몇 편인가?</h2>
+<p>현재 카드 <b>55건 전부</b>를 분모로 집계했다. 시간 점유율이 아니라 <b>나레이션이 들어간 사례의 비율</b>이다. 비뷰티·광고 미확인 참고 사례도 기존 목록에 있는 그대로 포함한다.</p>
+<p><b>판정 방법: 음성 모델 분석 + 기존 대본 교차검토.</b> 아래 있음·없음은 AI 분석상 판정이며, 사람이 전편을 직접 청취해 확정한 결과가 아니다.</p>
+<div class="narration-stats"><div><small>별도 나레이션 있음</small><strong>15 / 55건</strong><span>27.3%</span></div><div><small>별도 나레이션 없음</small><strong>20 / 55건</strong><span>36.4%</span></div><div><small>음성 판정 미확인</small><strong>20 / 55건</strong><span>36.4%</span></div></div>
+<p><b>판정 가능한 35건 중 15건(42.9%)</b>이 AI 분석상 별도 나레이션 사용 사례다. 이 수치를 전체 55건의 확정 사용률로 읽지 않는다. 전체 대비 AI 분석상 사용 비율은 <b>27.3%</b>이며, 미확인 20건의 결과는 아직 반영되지 않았다.</p>
+<p><b>원본 대사 → 별도 나레이션 → 원본 대사 교차형: 10건</b> / 전체 55건(18.2%). 원본 대사에는 연예인뿐 아니라 어머니·진행자 등의 대사도 포함한다. 나레이션이 있다는 것만으로 교차형에 넣지 않는다.</p>
+<details><summary>동일 본편 중복을 제외하면 · 집계 방법</summary>
+<p>확인된 동일 본편 중복 2건을 제외한 <b>53개 본편</b>: AI 분석상 있음 13 · 없음 20 · 미확인 20. 전체 대비 AI 분석상 사용 24.5%, 판정 가능 33건 중 사용 39.4%. 아직 확인되지 않은 중복까지 제거한 수치는 아니다.</p>
+<p>소유의 Dd2phx-v52N·Dd6K5ABzUZ-는 Dd0y31Gyrgh와 같은 본편으로 묶었다. 계정별 게시물 비율에서는 각각 1건이며, 본편 비율에서만 제외했다.</p>
+<p>판정 방법: 확보된 원본의 <b>음성 모델 분석 + 기존 대본 교차검토</b>. 사람이 전편을 직접 청취해 확정한 결과로 표현하지 않는다. 구체적인 확인 수준과 판단 근거는 각 카드에 기록했다. 원본 대화의 다른 출연자·제작진 목소리, 본인 발언을 다른 화면 위에 이어 붙인 편집, 자막만 추가된 편집을 자동으로 별도 나레이션으로 세지 않는다.</p>
+<p>일부 미확인 결과로 ‘거의 모든 광고가 나레이션을 사용한다’고 단정하지 않는다. 사용 빈도는 구매 성과나 나레이션의 효과를 증명하지 않는다.</p>
+<p><a href="narration-findings.md">판단·재검증 기록</a> · <a href="narration-evidence.json">55건 판정 원장</a></p>
+</details></section>
 <h2 style="font-size:18px;margin:0 0 8px">효율 상위 10편 (20만원 이상 체급, 판독 확실한 것만)</h2>
 <div class="table-scroll"><table><thead><tr><th>캠페인</th><th>계정(정가)</th><th>형식</th><th>공유</th><th>저장</th><th>1건당</th><th>실측일</th></tr></thead><tbody><tr><td><a href="https://www.instagram.com/reel/DejH_4mht5H/" target="_blank" rel="noopener">나솔 14기 영자 40대 관리</a></td><td>@luna.humor (25만)</td><td>A</td><td>351</td><td>267</td><td><b>405원</b></td><td>10/21</td></tr><tr><td><a href="https://www.instagram.com/reel/Del7rFSSbzf/" target="_blank" rel="noopener">강소라 리프팅 시술(올E0E)</a></td><td>@luna.player (40만)</td><td>B</td><td>407</td><td>369</td><td><b>515원</b></td><td>10/21</td></tr><tr><td><a href="https://www.instagram.com/reel/Dd0y31Gyrgh/" target="_blank" rel="noopener">소유 올리브영 세럼</a></td><td>@luna.player (40만)</td><td>A</td><td>330</td><td>395</td><td><b>552원</b></td><td>10/13</td></tr><tr><td><a href="https://www.instagram.com/reel/DdlVfzBNbqc/" target="_blank" rel="noopener">깡주은 디톡스 주스</a></td><td>@hana.zzal (30만)</td><td>B</td><td>230</td><td>292</td><td><b>575원</b></td><td>10/13</td></tr><tr><td><a href="https://www.instagram.com/reel/DdslB76x7ZV/" target="_blank" rel="noopener">소유 올리브영 세럼</a></td><td>@happing_box (35만)</td><td>A</td><td>241</td><td>327</td><td><b>616원</b></td><td>10/13</td></tr><tr><td><a href="https://www.instagram.com/reel/DdWH9IBQR8g/" target="_blank" rel="noopener">조혜련 다이어트</a></td><td>@reply.1989__ (20만)</td><td>B</td><td>180</td><td>141</td><td><b>623원</b></td><td>10/13</td></tr><tr><td><a href="https://www.instagram.com/reel/Dd2phx-v52N/" target="_blank" rel="noopener">소유 올리브영 세럼</a></td><td>@comedy.1989__ (25만)</td><td>A</td><td>207</td><td>166</td><td><b>670원</b></td><td>10/13</td></tr><tr><td><a href="https://www.instagram.com/comedy.1989__/reels/" target="_blank" rel="noopener">세르프(XERF) K-리프팅</a></td><td>@comedy.1989__ (25만)</td><td>A</td><td>206</td><td>149</td><td><b>704원</b></td><td>10/21</td></tr><tr><td><a href="https://www.instagram.com/reel/DeHH1v3tK4i/" target="_blank" rel="noopener">기타 낮음(에스파 응급루틴 등)</a></td><td>@comedy.1989__ (25만)</td><td>A</td><td>164</td><td>188</td><td><b>710원</b></td><td>10/21</td></tr><tr><td><a href="https://www.instagram.com/reel/Dd232Kvz3o0/" target="_blank" rel="noopener">소유 올리브영 세럼</a></td><td>@good_tip_magazine (25만)</td><td>A</td><td>162</td><td>189</td><td><b>712원</b></td><td>10/13</td></tr></tbody></table></div>
 <div class="bar">
@@ -43,10 +64,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <span class="sep"></span><button data-k="confirmed" data-v="" class="on">확인 상태 전체</button><button data-k="confirmed" data-v="1">공유·저장 확인</button><button data-k="confirmed" data-v="0">미확인·저신뢰</button>
 <span class="sep"></span>
 <button data-k="form" data-v="" class="on">모든 형식</button><button data-k="form" data-v="B">B형 본인증언</button><button data-k="form" data-v="A">A형 몽타주</button>
+<span class="sep"></span><button data-k="narration" data-v="" class="on">음성 전체</button><button data-k="narration" data-v="yes">나레이션 있음</button><button data-k="narration" data-v="no">나레이션 없음</button><button data-k="narration" data-v="unknown">음성 미확인</button>
 <span class="sep"></span>
 <select id="sort"><option value="tot">공유+저장 많은 순</option><option value="cp">1건당 비용 낮은 순</option><option value="price">정가 높은 순</option></select>
 </div>
-<div class="grid" id="grid"><article class="card" id="ref-DeqyLvzS9KD" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/27" data-form="A" data-price="0" data-tot="1449" data-cp="99999">
+<div class="grid" id="grid"><article class="card" id="ref-DeqyLvzS9KD" data-narration="no" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/27" data-form="A" data-price="0" data-tot="1449" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DeqyLvzS9KD/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-DeqyLvzS9KD.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">@medicube_global_official</span></div>
@@ -58,9 +80,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가</div>
 <p class="note">10/27 11:46 실측. 10/19 게시. 셀럽 2차광고가 아닌 제품 광고로, 제품 촬영 방식만 참고.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0초 내용물·패드 동작 → 약2초 용기 정면 → 개봉·손등 사용 → 제품 마무리</p><p><b>판단 근거</b><br>제형·제품 식별·사용이 각각 독립된 컷으로 읽힘. 컷별 성과 인과관계는 미확인.</p><p><b>김가연 적용</b><br>우리 제품 정면 라벨과 개봉 장면의 구도 참고.</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전 구간에 걸쳐 화자의 목소리나 나레이션 없이 경쾌한 재즈 스타일의 배경 음악(BGM)만 재생됩니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–13.433초</b> · 음성 유형 미분류<br></li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeqyLvzS9KD/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DesoCmmy6jF" data-latest="1" data-added="1" data-confirmed="1" data-batch="10/27" data-form="A" data-price="0" data-tot="917" data-cp="99999">
+</div></article><article class="card" id="ref-DesoCmmy6jF" data-narration="unknown" data-latest="1" data-added="1" data-confirmed="1" data-batch="10/27" data-form="A" data-price="0" data-tot="917" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DesoCmmy6jF/" target="_blank" rel="noopener"><img loading="lazy" src="img/measured-DesoCmmy6jF.png" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">@medicube_global_official</span></div>
@@ -72,9 +96,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가</div>
 <p class="note">지정 서치폰 화면에서 계정·대상 장면 대조. 공유·저장 실측. 이번 신규 최고917건으로 기존1,449건 초과 사례 미발견.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>기존 그리드에서는 삼각 패키지·리본. 이번 앱 캡처에서는 손등에 미스트를 분사하는 접사. 전체 영상 순서·초반 시점은 이번 미확인.</p><p><b>자막·음성</b><br>앱 화면 하단: “PDRN Collagen Jelly Mist Serum / Quick Hydration + Lasting Radiance”. 이 문구는 상단 고정 훅이 아니라 제품·특징 설명이다.</p><p><b>판단 근거</b><br>제품 동작·제형 자체가 화면의 중심이다. 상단 자극 문구의 성공 사례로 사용할 수 없으며 별도 제품 촬영 참고에 해당.</p><p><b>확인 범위</b><br>공유544·저장373=917. 리포스트135는 합산 제외. 이번4편 중 합계가 가장 높지만 기존1,449건보다 낮음.</p></details>
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 <a href="img/measured-DesoCmmy6jF.png" target="_blank">공유·저장 실측 화면 ↗</a>
 <a class="btn" href="https://www.instagram.com/reel/DesoCmmy6jF/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DexwrgkyS0i" data-latest="1" data-added="1" data-confirmed="1" data-batch="10/27" data-form="A" data-price="0" data-tot="855" data-cp="99999">
+</div></article><article class="card" id="ref-DexwrgkyS0i" data-narration="no" data-latest="1" data-added="1" data-confirmed="1" data-batch="10/27" data-form="A" data-price="0" data-tot="855" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DexwrgkyS0i/" target="_blank" rel="noopener"><img loading="lazy" src="img/measured-DexwrgkyS0i.png" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">@luna.player</span></div>
@@ -86,9 +112,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가</div>
 <p class="note">지정 서치폰 화면에서 계정·대상 장면 대조. 공유·저장 실측. 이번 신규 최고917건으로 기존1,449건 초과 사례 미발견.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>첫 8초 0.5초 간격·본편 끝까지 5초 간격 확인. 시작부터 눈 아래에 바르는 모습 → 다른 인물의 얼굴 지목·사용 설명 → 피부·기미 경험 → 마지막 구매 권유.</p><p><b>자막·음성</b><br>상단의 두 줄은 전 구간 유지. 하단은 본인 발언에 따라 바뀐다. 게시글 캡션 “일반인들은 잘 모르는 연예인 관리..”와 영상 상단 원문은 다름.</p><p><b>판단 근거</b><br>“일반인들은 잘 모르는”으로 정보 차이를 만들고 “연예인 성수기”로 원하는 상태를 제시한 뒤 제품명을 숨긴다. 첫 화면에서 바로 바르는 행동을 보여준다. 반응 발생 원인이라는 인과관계는 미검증.</p><p><b>김가연 적용</b><br>김가연 안에는 “타고난 동안인 줄 알았는데 / 김가연이 직접 보여준 관리 루틴”처럼 상단 두 줄을 유지하며 사용 장면을 연결하는 비교안. 새 문구 자체의 성과는 미검증.</p><p><b>확인 범위</b><br>공유522·저장333=855. 725보다130건 높지만 기존1,449건보다 낮음. 새 고성과 승자로 채택하지 않음.</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 음성은 동일한 여성 출연자가 제품 사용 경험과 할인 소식을 직접 전달하는 현장 음성이며, 별도의 제3자 광고 나레이션(TTS 등)은 추가되지 않았습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–41초</b> · 원본 대화<br>밤에 잘 때 얼굴에다가 요렇게 눈밑에다가 깔아놓고 아침에 일어나잖아요?</li><li><b>41–49초</b> · 원본 대화<br>410만 개가 팔렸대 410만 개. 살 수 있을 때 빨리 사야 되는 게 품절이 빨리 된대요.</li></ol></details>
 <a href="img/measured-DexwrgkyS0i.png" target="_blank">공유·저장 실측 화면 ↗</a>
 <a class="btn" href="https://www.instagram.com/reel/DexwrgkyS0i/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DeOvP24SWg2" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="기타" data-price="25" data-tot="828" data-cp="302">
+</div></article><article class="card" id="ref-DeOvP24SWg2" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="기타" data-price="25" data-tot="828" data-cp="302">
 <a class="th" href="https://www.instagram.com/reel/DeOvP24SWg2/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_yellow_fun_diary_15_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f f기타">기타형</span><span class="chip">25만원</span><span class="acc">@yellow_fun_diary</span></div>
@@ -100,9 +128,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>302원</b></div>
 <p class="note">광고 여부 불확실</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeOvP24SWg2/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DeyUz6ARU9M" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/27" data-form="B" data-price="0" data-tot="788" data-cp="99999">
+</div></article><article class="card" id="ref-DeyUz6ARU9M" data-narration="unknown" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/27" data-form="B" data-price="0" data-tot="788" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DeyUz6ARU9M/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-DeyUz6ARU9M.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10/27 추가 조사</span><span class="acc">@luna.player</span></div>
@@ -114,9 +144,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가</div>
 <p class="note">10/27 11:40 서치폰: 공유 342·저장 446 = 788. 계정 luna.player·이민정 스프레드 장면 일치 확인. 소유 725보다 63건 높지만 큰 반응 차이의 근거로 채택하지 않는다. 공개 조회 181,000은 별도 시점 참고.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0–3초 보드에 몸 관리 이야기를 적는 동안 빵 추가를 묻는 상황 → 3초대 빵과 스프레드 접사 → 4–6초 제품 병 → 맛 설명·직접 먹는 반응.</p><p><b>자막·음성</b><br>상단은 빵 리필을 부르는 이민정의 스프레드. 자동 전사와 화면 대조상 초반 1–4.7초 설명이 보드·빵·제품 컷을 연결하고, 이후 인물의 맛 설명과 먹는 반응으로 이어진다. 화자 식별은 확정하지 않는다.</p><p><b>판단 근거</b><br>유머가 제품 사용에서 자연스럽게 생기고 직후 제품을 식별할 수 있다. 웃긴 장면을 외부에서 끼워 넣는 방식과 다르다.</p><p><b>김가연 적용</b><br>‘타고났네요?’에 김가연이 받아치고 실제 관리 동작을 바로 하는 H3 참고. 얼굴·대사·손동작을 따로 끊지 않은 테이크 요청.</p><p><b>확인 범위</b><br>프레임·자동 전사·공유저장 확인 / 큰 반응 우위 아님</p></details>
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>초반 약 1–4초 설명이 원본 현장의 제작진 목소리인지 별도로 삽입한 해설인지 분석 결과가 충돌했다. 해당 구간에서 화자의 입 움직임을 확인할 수 없어 미확인으로 남겼다. 있음·없음 어느 쪽에도 합산하지 않는다.</p><p class="note">확인 수준: 전체 시청각·음성 단독·초반 구간 재검증 간 판단 불일치</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeyUz6ARU9M/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Del7rFSSbzf" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/21" data-form="B" data-price="40" data-tot="776" data-cp="515">
+</div></article><article class="card" id="ref-Del7rFSSbzf" data-narration="no" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/21" data-form="B" data-price="40" data-tot="776" data-cp="515">
 <a class="th" href="https://www.instagram.com/reel/Del7rFSSbzf/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_luna.player_1_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">40만원</span><span class="chip">10/27 추가 조사</span><span class="acc">@luna.player</span></div>
@@ -128,9 +160,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>515원</b></div>
 <p class="note">출처 띠 있음 · 하단 고정 문구 · 10/21 공유 407·저장 369 = 776 기록. 10/27 공개 조회 242,000, 동계정 공개 12개 중 2위. 과거 반응과 현재 조회는 별도 시점.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0–2.54초 효과와 부담의 결론 → 2.54초 이후 관리 설명 → 9.5–14.8초 관리 주기 → 24.3–26.94초 같은 핵심 문장 재등장. 뒤쪽 발언을 첫 장면으로 당긴 편집을 프레임과 자동 전사로 확인했다.</p><p><b>자막·음성</b><br>고정 상단은 자기관리·한 달 한 번이라는 이유와 빈도, 하단은 시술·연령 추천, 발언 자막은 ‘고통은 짧고 효과는 바로 보이고’와 ‘탄력이 쫙 차오르는 느낌’을 강조한다. 자막은 광고의 주장으로 기록하며 효능을 검증한 것은 아니다.</p><p><b>판단 근거</b><br>왜 볼지와 무엇이 좋은지를 초반에 바로 말한다. 이 사례에서는 코믹 장면이나 즉시 시연은 필수가 아니라는 반례다.</p><p><b>김가연 적용</b><br>김가연의 짧은 실제 경험 결론 + 손으로 관리 부위를 짚는 연속 컷을 대조안으로 확보. 자극적인 훅만 촬영하지 않는다.</p><p><b>확인 범위</b><br>프레임·자동 전사·과거 공유저장 확인</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 음성은 피부과 시술을 받은 원본 출연자들의 인터뷰 및 사용자 리뷰 대화로만 구성되어 있습니다. 외부 편집자의 3인칭 나레이션이나 TTS 해설 음성은 일절 포함되어 있지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–4초</b> · 원본 대화<br>통통은 짧고 효과는 바로 보이고 타이틀 레이저를 또 받으려고</li><li><b>4–9초</b> · 원본 대화<br>이것들을 열로 좀 자극해 가지고 탄력이 쫙 차오르게 하는</li><li><b>9–14초</b> · 원본 대화<br>짧게는 2주에서 저는 한 달에 한 번? 뭐 그 정도 꾸준히 받으면</li><li><b>14–24초</b> · 원본 대화<br>저 피부과 같은데 한 번도 안 오잖아요, 30대인데도. 근데 진짜 안 아프고</li><li><b>24–29초</b> · 원본 대화<br>아픔이 전혀 없어요. 통통은 짧고 효과는 바로 보이고 익숙해요</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Del7rFSSbzf/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dd0y31Gyrgh" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="40" data-tot="725" data-cp="552">
+</div></article><article class="card" id="ref-Dd0y31Gyrgh" data-narration="yes" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="40" data-tot="725" data-cp="552">
 <a class="th" href="https://www.instagram.com/reel/Dd0y31Gyrgh/" target="_blank" rel="noopener"><img loading="lazy" src="img/Dd0y31Gyrgh.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">40만원</span><span class="acc">@luna.player</span></div>
@@ -142,9 +176,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>552원</b></div>
 
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>유튜브 원본 대화 및 인터뷰 음성 사이사이에 제3자의 AI/TTS 해설 나레이션이 추가되어 있습니다. 원본 출연자 대화 구간과 편집자 해설 나레이션 구간이 명확하게 교차 교체되는 구성을 보입니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–4초</b> · 원본 대화<br>20kg를 제가 감량을 한 거예요</li><li><b>4–7초</b> · 별도 나레이션<br>자기관리 빡세기로 유명한 소유! 요즘 생얼 피부 상태 충격적이라는데...</li><li><b>7–11초</b> · 원본 대화<br>얼굴에 아무것도 안 한 거야 지금? 얘 뭐야, 물광 피부네</li><li><b>11–17초</b> · 별도 나레이션<br>급격하게 살 빠지면 얼굴 처져 보이거나 푸석해지기 쉬운데 소유 피부는 탄력이랑 광이 미쳤음</li><li><b>17–18초</b> · 원본 대화<br>홈케어로 많이 하고 있고</li><li><b>18–30초</b> · 별도 나레이션<br>뭐 쓰나 하고 봤더니 매일 챙겨바르는 세럼이 있다고... 마누카꿀을 더한 세럼이라 피부 회복이 빠르고</li><li><b>30–33초</b> · 원본 대화<br>여러 번 덧발라도 밀리거나 답답함 느낌이 없고 흡수가 엄청 잘돼요</li><li><b>33–38초</b> · 별도 나레이션<br>트러블 진정에도 도움되고 푸석한 피부에 수분감을 채워주고 이렇게 쫀득한 광이 살아남</li><li><b>38–40초</b> · 원본 대화<br>생얼인데도 반짝반짝</li><li><b>40–52초</b> · 별도 나레이션<br>연예인 피부는 비싼 관리만 하는 줄 알았는데 결국 피부도 꾸준히 챙기는 게 답인가봄... 올영에서 보면 무조건 GET하기!</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dd0y31Gyrgh/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-De9XeThphv5" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/27" data-form="B" data-price="0" data-tot="697" data-cp="99999">
+</div></article><article class="card" id="ref-De9XeThphv5" data-narration="no" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/27" data-form="B" data-price="0" data-tot="697" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/De9XeThphv5/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-De9XeThphv5.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10/27 추가 조사</span><span class="acc">@happing_box</span></div>
@@ -156,9 +192,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가</div>
 <p class="note">10/27 서치폰: 공유 378·저장 319 = 697. 10/26 게시. 공개 목록 조회 93,900. 서로 다른 측정시각의 수치를 나눠 반응률로 계산하지 않음.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0–3.5초 다른 인물이 얼굴을 만지며 호평하고 풍자가 더 주겠다고 답함 → 3.5–14.7초 정면 설명·기미 관리 이야기 → 14.7초 이후 제품 제시 → 약 19.5–29초 피부 광 접사·도포 → 사용 경험과 추천. 첫 8초 0.5초 간격 프레임과 자동 전사 대조.</p><p><b>자막·음성</b><br>상단 고정은 ‘바로 바뀌는 광 실화임??’, 하단 고정은 써보고 놀라는 반응을 강조. 움직이는 자막은 대화를 따라간다. 자동 전사상 0–3.5초 대화와 이후 직접 설명이 중심이며 별도 해설이 핵심인 구성은 아니다.</p><p><b>판단 근거</b><br>구매 설명보다 먼저 다른 사람의 사용·호평을 배치하고, 광이라는 눈에 보이는 관심사를 고정 문구로 계속 유지한다. 작동 이유에 대한 편집 가설이며 유지율·매출 인과효과는 미확인.</p><p><b>김가연 적용</b><br>김가연에게 실제 사용 직후 얼굴을 보는 컷, 옆 사람이 반응하는 컷, 제품을 건네는 컷을 받는다. 시럽 광고의 1초대 접사와 합치는 것은 신규 조합이다. 이 풍자 영상이 첫 1초에 기미를 지우는 증거는 아니다.</p><p><b>확인 범위</b><br>프레임·자동 전사·공유저장 확인</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 시작부터 끝까지 동일한 출연자의 현장 대화 및 직접 제품을 설명하는 음성만 이어지며, 제3자의 편집된 광고 나레이션이나 TTS 음성은 전혀 존재하지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–3초</b> · 원본 대화<br>진짜 좋다. 그래. 이거 내가 더 줄게.</li><li><b>3–57초</b> · 원본 대화<br>언니들 이거 진짜 오늘 잘 들어야 돼요.</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/De9XeThphv5/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DebaRwXPh8z" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/27" data-form="기타" data-price="0" data-tot="637" data-cp="99999">
+</div></article><article class="card" id="ref-DebaRwXPh8z" data-narration="no" data-latest="0" data-added="1" data-confirmed="1" data-batch="10/27" data-form="기타" data-price="0" data-tot="637" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DebaRwXPh8z/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-DebaRwXPh8z.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f f기타">기타형</span><span class="chip">10/27 추가 조사</span><span class="acc">@luna.humor</span></div>
@@ -170,9 +208,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가</div>
 <p class="note">10/27 서치폰: 공유 361·저장 276 = 637. 공개 조회 351,000, 같은 계정 표본 중앙 대비 3.9배. 광고 여부·지출 미확인. 상품 키링 광고가 아니라 행사·굿즈 소개로 정정.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0초 마스코트·참가자 → 1초대 포토존 → 3초대 무대 → 4–6초 손의 스티커와 팔에 붙인 모습 → 테이핑 부스·운동·공연. 27초 동안 체험 항목을 연속 제시.</p><p><b>자막·음성</b><br>상단은 ‘카카오의 자본력이란 얼마나 좋은 것인가’, 하단은 현재 보이는 체험 이름과 설명. 음성은 아직 전사하지 않아 나레이션 여부를 확정하지 않는다.</p><p><b>판단 근거</b><br>한 가지 추상적 칭찬을 여러 구체적 체험 화면으로 풀어낸다. 반응 기록은 있으나 뷰티 구매나 연예인 사용 광고의 직접 근거는 아니다.</p><p><b>김가연 적용</b><br>김가연 광고에서도 제형·펴 바르기·마무리 피부를 말로만 나열하지 않고 해당 동작을 보여주는 편집 원칙만 차용.</p><p><b>확인 범위</b><br>프레임·공유저장 확인</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 구간에서 음악, 출연자의 노래 및 현장 추임새(&#x27;얍! 타이어!&#x27; 등)만 확인되며, 별도로 삽입된 제3자 광고 해설이나 TTS 나레이션은 존재하지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–13초</b> · 원본 대화<br>(음악 및 추임새)</li><li><b>13–15초</b> · 원본 대화<br>얍! 타이어!</li><li><b>15–27초</b> · 원본 대화<br>아리랑 아리랑 아라리요</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DebaRwXPh8z/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DeG61xFPC5o" data-latest="1" data-added="1" data-confirmed="1" data-batch="10/27" data-form="A" data-price="0" data-tot="625" data-cp="99999">
+</div></article><article class="card" id="ref-DeG61xFPC5o" data-narration="unknown" data-latest="1" data-added="1" data-confirmed="1" data-batch="10/27" data-form="A" data-price="0" data-tot="625" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DeG61xFPC5o/" target="_blank" rel="noopener"><img loading="lazy" src="img/measured-DeG61xFPC5o.png" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">@dotori_channel</span></div>
@@ -184,9 +224,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가</div>
 <p class="note">지정 서치폰 화면에서 계정·대상 장면 대조. 공유·저장 실측. 이번 신규 최고917건으로 기존1,449건 초과 사례 미발견.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>기존 계정 그리드와 이번 앱 화면에서 동일한 상단 문구·소유 장면·계정을 대조. 이번에는 전체 영상 재분석 미완료.</p><p><b>자막·음성</b><br>“아이돌도”는 사람의 권위, “올영”은 구매 장소, “무조건 쟁여둔다”는 강한 추천, “꿀템”은 제품명 가리기. 하단 발언 자막과 별개.</p><p><b>판단 근거</b><br>강한 추천 문구가 있어도 합계625로 기존725보다 낮다. 자극적인 고정 문구만으로 높은 반응을 보장하지 않는 비교 사례.</p><p><b>확인 범위</b><br>공유274·저장351=625 · 상단 문구는 그리드/앱 화면 일치, 전체 구간 유지 여부는 추가 확인 필요.</p></details>
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 <a href="img/measured-DeG61xFPC5o.png" target="_blank">공유·저장 실측 화면 ↗</a>
 <a class="btn" href="https://www.instagram.com/reel/DeG61xFPC5o/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DejH_4mht5H" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="25" data-tot="618" data-cp="405">
+</div></article><article class="card" id="ref-DejH_4mht5H" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="25" data-tot="618" data-cp="405">
 <a class="th" href="https://www.instagram.com/reel/DejH_4mht5H/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_luna.humor_13_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">25만원</span><span class="acc">@luna.humor</span></div>
@@ -198,9 +240,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>405원</b></div>
 <p class="note">광고 여부 불확실</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DejH_4mht5H/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DdslB76x7ZV" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="35" data-tot="568" data-cp="616">
+</div></article><article class="card" id="ref-DdslB76x7ZV" data-narration="yes" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="35" data-tot="568" data-cp="616">
 <a class="th" href="https://www.instagram.com/reel/DdslB76x7ZV/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdslB76x7ZV.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">35만원</span><span class="acc">@happing_box</span></div>
@@ -212,9 +256,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>616원</b></div>
 
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 전반에 걸쳐 원본 출연자의 방송/유튜브 음성과 구분되는 별도의 여성 TTS 해설 음성이 추가되어 교차 편집되어 있습니다. 해설 음성이 제3자 시점에서 상품 및 인물 소식을 전달하고 다시 원본 대화로 돌아가는 구조가 명확합니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–5초</b> · 별도 나레이션<br>소유 성형했다고 말 많았는데 알고보니 무려 20kg을 감량한 거였음</li><li><b>5–8초</b> · 원본 대화<br>어 68kg? 바로 운동 시작해야겠다</li><li><b>8–13초</b> · 별도 나레이션<br>자기관리 빡세기로 유명한 소유. 다이어트할 때 운동만큼 신경쓰는게 있다는데</li><li><b>13–14초</b> · 원본 대화<br>천천히 씹는 거 진짜 중요</li><li><b>14–21초</b> · 별도 나레이션<br>다이어트 빡세게 하면 급격하게 빠진 살로 피부 처져보이고 푸석해보이는데 소유는 피부탄력이랑 광이 미쳤음</li><li><b>21–25초</b> · 원본 대화<br>홈케어로도 많이 하고 있고 제가 예전에도 한번 파우치템으로 소개해드린 적 있었는데</li><li><b>25–36초</b> · 별도 나레이션<br>알고보니 이미 여러번 언급할 정도로 매일 쓰는 세럼이 있는데 노화 방지와 영양 보습에 좋은</li><li><b>36–40초</b> · 원본 대화<br>얼굴에 아무것도 안한거야 지금? 얘 뭐야 물광 피부네</li><li><b>40–45초</b> · 별도 나레이션<br>소유뿐만 아니라 다른 아이돌도 언급해서 이미 여러번 품절대란 났다고</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdslB76x7ZV/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DeOvjhgzsWP" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="기타" data-price="25" data-tot="533" data-cp="469">
+</div></article><article class="card" id="ref-DeOvjhgzsWP" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="기타" data-price="25" data-tot="533" data-cp="469">
 <a class="th" href="https://www.instagram.com/reel/DeOvjhgzsWP/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_good_tip_magazine_14_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f f기타">기타형</span><span class="chip">25만원</span><span class="acc">@good_tip_magazine</span></div>
@@ -226,9 +272,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>469원</b></div>
 <p class="note">광고 여부 불확실</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeOvjhgzsWP/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DdlVfzBNbqc" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="B" data-price="30" data-tot="522" data-cp="575">
+</div></article><article class="card" id="ref-DdlVfzBNbqc" data-narration="yes" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="B" data-price="30" data-tot="522" data-cp="575">
 <a class="th" href="https://www.instagram.com/reel/DdlVfzBNbqc/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdlVfzBNbqc.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">30만원</span><span class="acc">@hana.zzal</span></div>
@@ -240,9 +288,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>575원</b></div>
 <p class="note">본인 채널 클립, 본인 증언</p>
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>24초부터 27초 사이에 원본 출연자의 경험담 음성과 달리 오디오 음질과 음색이 전혀 다른 제3자 해설 나레이션(&#x27;실제로 5일 동안 마신 강주희 씨는&#x27;)이 별도로 삽입되어 있습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–24초</b> · 원본 대화<br>5일 동안 마시면서 5키로도 뺄 수 있다는</li><li><b>24–27초</b> · 별도 나레이션<br>실제로 5일 동안 마신 강주희 씨는</li><li><b>27–37.987초</b> · 원본 대화<br>느껴진 게 제가 원래 잘 입는 청바지가</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdlVfzBNbqc/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-De1KvwAJ1ft" data-latest="1" data-added="1" data-confirmed="1" data-batch="10/27" data-form="B" data-price="0" data-tot="449" data-cp="99999">
+</div></article><article class="card" id="ref-De1KvwAJ1ft" data-narration="unknown" data-latest="1" data-added="1" data-confirmed="1" data-batch="10/27" data-form="B" data-price="0" data-tot="449" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/De1KvwAJ1ft/" target="_blank" rel="noopener"><img loading="lazy" src="img/measured-De1KvwAJ1ft.png" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10/27 추가 조사</span><span class="acc">@luna.humor</span></div>
@@ -254,9 +304,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가</div>
 <p class="note">지정 서치폰 화면에서 계정·대상 장면 대조. 공유·저장 실측. 이번 신규 최고917건으로 기존1,449건 초과 사례 미발견.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>앱 캡처에서 두 제품을 얼굴 옆에 들고 놀라는 표정·반응 자막 확인. 전체 원본과 초반 연결은 이번 미확인.</p><p><b>자막·음성</b><br>장소·행동 “다이소 리뷰하다가” → 감정 “찐으로 놀란” → 인물명. 하단은 제품을 알아보고 놀라는 발언 자막.</p><p><b>판단 근거</b><br>놀라는 표정과 문구는 일치하나 공유저장449로 더 낮다. 웃긴 반응이 있다는 이유로 성공한 광고라고 분류하지 않는다.</p><p><b>확인 범위</b><br>공유181·저장268=449 · 계정·장면 일치. 상단은 그리드/앱 대조, 광고 여부 미확인.</p></details>
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 <a href="img/measured-De1KvwAJ1ft.png" target="_blank">공유·저장 실측 화면 ↗</a>
 <a class="btn" href="https://www.instagram.com/reel/De1KvwAJ1ft/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DdxfRNzTQIn" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="40" data-tot="425" data-cp="941">
+</div></article><article class="card" id="ref-DdxfRNzTQIn" data-narration="yes" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="40" data-tot="425" data-cp="941">
 <a class="th" href="https://www.instagram.com/reel/DdxfRNzTQIn/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdxfRNzTQIn.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">40만원</span><span class="acc">@dotori_channel</span></div>
@@ -268,9 +320,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>941원</b></div>
 <p class="note">이름 없이 &#x27;아이돌&#x27;로 가림</p>
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>원본 방송 및 인물의 현장 대화 사이에 편집자가 추가한 제3자 해설 나레이션이 번갈아 등장하는 구조입니다. 인물(소유)의 자기관리 루틴과 제품을 제3자 시점에서 설명하는 별도 음성이 명확히 포함되어 있습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–3초</b> · 원본 대화<br>체지방량은 1kg이나 늘었습니다... 심지어 경도비만</li><li><b>3–9초</b> · 별도 나레이션<br>한 때 경도비만이었던 소유! 요즘은 자기 관리 빡세게 한다는데</li><li><b>9–14초</b> · 원본 대화<br>한 시간을 웨이트를 하고 나서 다른 건 개인 운동 20분 정도 더 가져갑니다</li><li><b>14–21초</b> · 별도 나레이션<br>다이어트 빡세게 하면 급격하게 빠진 살로 피부 처져보이고 푸석해보이는데 소유는 피부탄력이랑 광이 미쳤음</li><li><b>21–26초</b> · 원본 대화<br>홈케어로도 많이 하고 있고 제가 예전에도 한번 파우치템으로 소개해드린 적 있었는데</li><li><b>26–36초</b> · 별도 나레이션<br>알고보니 이미 여러번 언급할 정도로 매일 쓰는 세럼이 있는데 마누카꿀을 더한 세럼이라</li><li><b>36–40초</b> · 원본 대화<br>얼굴에 아무것도 안 한 거야 지금? 얘 뭐야 물광 피부네</li><li><b>40–45.7083초</b> · 별도 나레이션<br>소유뿐만 아니라 다른 아이돌도 언급해서 이미 여러번 품절대란 났다고 함</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdxfRNzTQIn/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dd2phx-v52N" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="25" data-tot="373" data-cp="670">
+</div></article><article class="card" id="ref-Dd2phx-v52N" data-narration="yes" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="25" data-tot="373" data-cp="670">
 <a class="th" href="https://www.instagram.com/reel/Dd2phx-v52N/" target="_blank" rel="noopener"><img loading="lazy" src="img/Dd2phx-v52N.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">25만원</span><span class="acc">@comedy.1989__</span></div>
@@ -282,9 +336,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>670원</b></div>
 <p class="note">luna.player와 같은 편집본</p>
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>출연자의 원본 인터뷰 음성과 편집자가 추가한 제3자 여성 나레이션이 교차하여 사용되었습니다. 원본 현장 음성과 상품/프로모션을 설명하는 해설 음성의 음색 및 울림이 명확하게 구별됩니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–3초</b> · 원본 대화<br>20kg를 제가 감량을 한 거예요</li><li><b>3–8초</b> · 별도 나레이션<br>자기관리 빡세기로 유명한 소유! 요즘 쌩얼 피부 상태 충격적이라는데</li><li><b>8–11초</b> · 원본 대화<br>얼굴에 아무것도 안 한 거야 지금? 얘 뭐야 물광 피부네</li><li><b>12–18초</b> · 별도 나레이션<br>급격하게 살 빠지면 얼굴 처져 보이거나 푸석해지기 쉬운데 소유 피부는 탄력이랑 광이 미쳤음</li><li><b>18–19초</b> · 원본 대화<br>홈케어로 많이 하고 있고</li><li><b>19–30초</b> · 별도 나레이션<br>뭐 쓰나 하고 봤더니 매일 챙겨바르는 세럼이 있다고</li><li><b>30–33초</b> · 원본 대화<br>여러 번 덧발라도 밀리거나 답답함 없이 흡수가 엄청 잘돼요</li><li><b>34–38초</b> · 별도 나레이션<br>트러블 진정에도 도움되고 푸석한 피부에 수분감을 채워주고</li><li><b>38–40초</b> · 원본 대화<br>쌩얼인데도 피부가 반짝반짝</li><li><b>41–52초</b> · 별도 나레이션<br>연예인 피부는 비싼 관리만 하는 줄 알았는데 결국 피부도 꾸준히 챙기는게 답인가봄</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dd2phx-v52N/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-m6" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="25" data-tot="355" data-cp="704">
+</div></article><article class="card" id="ref-m6" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="25" data-tot="355" data-cp="704">
 <a class="th" href="https://www.instagram.com/comedy.1989__/reels/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_comedy.1989___6_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">25만원</span><span class="acc">@comedy.1989__</span></div>
@@ -296,9 +352,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>704원</b></div>
 <p class="note">출처 띠 있음</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/comedy.1989__/reels/" target="_blank" rel="noopener">계정 릴스 탭 열기 ↗</a>
-</div></article><article class="card" id="ref-DeHH1v3tK4i" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="25" data-tot="352" data-cp="710">
+</div></article><article class="card" id="ref-DeHH1v3tK4i" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="25" data-tot="352" data-cp="710">
 <a class="th" href="https://www.instagram.com/reel/DeHH1v3tK4i/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_comedy.1989___17_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">25만원</span><span class="acc">@comedy.1989__</span></div>
@@ -310,9 +368,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>710원</b></div>
 <p class="note">AI 콘텐츠 라벨</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeHH1v3tK4i/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dd232Kvz3o0" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="25" data-tot="351" data-cp="712">
+</div></article><article class="card" id="ref-Dd232Kvz3o0" data-narration="yes" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="25" data-tot="351" data-cp="712">
 <a class="th" href="https://www.instagram.com/reel/Dd232Kvz3o0/" target="_blank" rel="noopener"><img loading="lazy" src="img/Dd232Kvz3o0.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">25만원</span><span class="acc">@good_tip_magazine</span></div>
@@ -324,9 +384,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>712원</b></div>
 <p class="note">제품이 8초에 일찍 나옴</p>
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>원 출연자의 예능 및 브이로그 현장 대화 사이에 광고 편집자가 추가한 제3자 여성 내레이터 음성이 교차 편집되었습니다. 내레이터는 &#x27;소유 파우치에서 맨날 나온다는 이 초록병&#x27; 및 프로모션 안내 등 제3자적 해설을 전달하여 현장 대화 음질/음색과 뚜렷하게 구분됩니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–6초</b> · 원본 대화<br>얼굴에 아무것도 안 한 거야 지금? 피부 무슨 일이야 이거?</li><li><b>6–8초</b> · 별도 나레이션<br>쌩얼 미인 소유의 피부 비결?</li><li><b>8–15초</b> · 원본 대화<br>요즘도 꾸준히 사용하고 있는 찐템. 집에서 기초케어할 때도 쓰고</li><li><b>15–20초</b> · 별도 나레이션<br>소유 파우치에서 맨날 나온다는 이 초록병! 도대체 뭐길래 N통째 비우는 건데?</li><li><b>20–28초</b> · 원본 대화<br>마누카꿀이 들어있어서 굉장히 쫀득한 편이에요. 수분감이 꽉 차는 느낌이 드는데</li><li><b>28–37초</b> · 별도 나레이션<br>알고 보니 올영에서도 유명한 1등 진정 세럼! 몇 통째 비우는 데는 이유가 있었음!</li><li><b>37–42초</b> · 원본 대화<br>보세요. 쌩얼인데도 뭔가 반짝반짝하고 피부결이 너무 좋아보이지 않나요?</li><li><b>42–51초</b> · 별도 나레이션<br>이번에 호빵맨이랑 콜라보했는데 피크닉 매트가 공짜임! 올영에서 보면 무조건 GET하기!</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dd232Kvz3o0/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DeqIOL1KaZS" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="B" data-price="25" data-tot="347" data-cp="720">
+</div></article><article class="card" id="ref-DeqIOL1KaZS" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="B" data-price="25" data-tot="347" data-cp="720">
 <a class="th" href="https://www.instagram.com/reel/DeqIOL1KaZS/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_malangping_zzal_2_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">25만원</span><span class="acc">@malangping_zzal</span></div>
@@ -338,9 +400,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>720원</b></div>
 
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeqIOL1KaZS/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-m11" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="25" data-tot="347" data-cp="720">
+</div></article><article class="card" id="ref-m11" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="25" data-tot="347" data-cp="720">
 <a class="th" href="https://www.instagram.com/chachaping_zzal/reels/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_chachaping_zzal_11_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">25만원</span><span class="acc">@chachaping_zzal</span></div>
@@ -352,9 +416,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>720원</b></div>
 <p class="note">광고 여부 불확실 · 출처 띠 있음 · 하단 고정 문구</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/chachaping_zzal/reels/" target="_blank" rel="noopener">계정 릴스 탭 열기 ↗</a>
-</div></article><article class="card" id="ref-DdYRxqVvAG3" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="25" data-tot="328" data-cp="762">
+</div></article><article class="card" id="ref-DdYRxqVvAG3" data-narration="yes" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="25" data-tot="328" data-cp="762">
 <a class="th" href="https://www.instagram.com/reel/DdYRxqVvAG3/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdYRxqVvAG3.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">25만원</span><span class="acc">@blue_fun_diary</span></div>
@@ -366,9 +432,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>762원</b></div>
 <p class="note">운영자 내레이션에 브랜드명</p>
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 전체에 걸쳐 편집자가 추가한 한국어 여성 TTS 내레이션 음성이 지속적으로 흐르며 인물 및 제품을 설명합니다. 원본 출연자의 현장 음성 없이 전체가 제3자 해설 음성으로만 구성되어 있습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–35초</b> · 별도 나레이션<br>월클 래퍼 카디비가 한국을 샤라웃 하고 있음</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdYRxqVvAG3/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dd6K5ABzUZ-" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="40" data-tot="325" data-cp="1231">
+</div></article><article class="card" id="ref-Dd6K5ABzUZ-" data-narration="yes" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="40" data-tot="325" data-cp="1231">
 <a class="th" href="https://www.instagram.com/reel/Dd6K5ABzUZ-/" target="_blank" rel="noopener"><img loading="lazy" src="img/Dd6K5ABzUZ-.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">40만원</span><span class="acc">@one_star_video</span></div>
@@ -380,9 +448,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>1,231원</b></div>
 <p class="note">luna.player와 같은 본편, 자막만 다름</p>
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>출연자의 원본 영상 대화 사이 사이에 광고 편집용 별도 여성 나레이션 음성이 제3자 해설 및 상품 설명 목적으로 교차 추가되었습니다. 원본 출연자의 현장 대화 음색 및 스튜디오 인터뷰 음성과 별도 나레이션의 음질 및 톤이 명확히 구분됩니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–3초</b> · 원본 대화<br>48kg까지 찍었으니까 20kg를 제가 감량을 한 거예요</li><li><b>4–7초</b> · 별도 나레이션<br>자기관리 빡세기로 유명한 소유! 요즘 쌩얼 피부 상태 충격적이라는데...</li><li><b>8–11초</b> · 원본 대화<br>얼굴에 아무것도 안 한 거야 지금? 얘 뭐야 물광 피부네</li><li><b>12–17초</b> · 별도 나레이션<br>급격하게 살 빠지면 얼굴 처져 보이거나 푸석해지기 쉬운데 소유 피부는 탄력이랑 광이 미쳤음</li><li><b>18–18초</b> · 원본 대화<br>홈케어로도 많이 하고 있고</li><li><b>19–25초</b> · 별도 나레이션<br>뭐 쓰나 하고 봤더니 매일 챙겨바르는 세럼이 있다고 집뿐만 아니라 스케줄 다닐 때마다 소분해서 갖고 다닐 정도라는데</li><li><b>26–33초</b> · 원본 대화<br>이게 노화 방지와 영양 보습에 좋은 마누카꿀을 더한 세럼이라 피부 회복이 빠르고</li><li><b>34–40초</b> · 별도 나레이션<br>트러블 진정에도 도움되고 푸석한 피부에 수분감을 채워주고 이렇게 쫀득한 광이 살아남</li><li><b>41–52초</b> · 별도 나레이션<br>연예인 피부는 비싼 관리만 하는 줄 알았는데 결국 피부도 꾸준히 챙기는게 답인가봄</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dd6K5ABzUZ-/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DdWH9IBQR8g" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="B" data-price="20" data-tot="321" data-cp="623">
+</div></article><article class="card" id="ref-DdWH9IBQR8g" data-narration="no" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="B" data-price="20" data-tot="321" data-cp="623">
 <a class="th" href="https://www.instagram.com/reel/DdWH9IBQR8g/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdWH9IBQR8g.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">20만원</span><span class="acc">@reply.1989__</span></div>
@@ -394,9 +464,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>623원</b></div>
 <p class="note">&#x27;협찬 광고&#x27; 라벨. 본인 드레스룸 증언</p>
 
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 음성이 원본 출연자의 현장 대화 및 본인 경험담으로만 구성되어 있으며, 외부에 별도로 삽입된 제3자의 광고/해설 나레이션은 존재하지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–7초</b> · 원본 대화<br>56세 배야. 요런 배 괜찮지 않아? 어때?</li><li><b>7–13초</b> · 원본 대화<br>변을 매일 잘 보니까 전체적으로 슬림해보이고</li><li><b>13–25초</b> · 원본 대화<br>다이어트 유산균 이게 효과가 대박인게</li><li><b>25–33초</b> · 원본 대화<br>얘 먹고 제가 사실은 하루에 꼭 한번씩 화장실을 가요</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdWH9IBQR8g/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DdWHsAkuDs0" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="B" data-price="25" data-tot="301" data-cp="831">
+</div></article><article class="card" id="ref-DdWHsAkuDs0" data-narration="no" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="B" data-price="25" data-tot="301" data-cp="831">
 <a class="th" href="https://www.instagram.com/reel/DdWHsAkuDs0/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdWHsAkuDs0.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">25만원</span><span class="acc">@tree.humor</span></div>
@@ -408,9 +480,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>831원</b></div>
 <p class="note">&#x27;협찬 광고&#x27; 라벨. 본인 육성</p>
 
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 구간에서 원본 출연자의 현장 대화 및 경험 설명 음성만 계속되며, 중간에 삽입된 제3자 나레이션(TTS 등)은 없습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–15초</b> · 원본 대화<br>똥배는 요게 답이에요. 평생 안 빠지던 그 아랫배 있죠</li><li><b>15–28초</b> · 원본 대화<br>정선이도 봉선이한테 추천을 받아서 이거 먹더라고요</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdWHsAkuDs0/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-m9" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="B" data-price="25" data-tot="176" data-cp="1420">
+</div></article><article class="card" id="ref-m9" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="B" data-price="25" data-tot="176" data-cp="1420">
 <a class="th" href="https://www.instagram.com/comedy.1989__/reels/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_comedy.1989___9_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">25만원</span><span class="acc">@comedy.1989__</span></div>
@@ -422,9 +496,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>1,420원</b></div>
 <p class="note">출처 띠 있음</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/comedy.1989__/reels/" target="_blank" rel="noopener">계정 릴스 탭 열기 ↗</a>
-</div></article><article class="card" id="ref-DdJEK22qGKg" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="B" data-price="25" data-tot="173" data-cp="1445">
+</div></article><article class="card" id="ref-DdJEK22qGKg" data-narration="no" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="B" data-price="25" data-tot="173" data-cp="1445">
 <a class="th" href="https://www.instagram.com/reel/DdJEK22qGKg/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdJEK22qGKg.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">25만원</span><span class="acc">@malangping_zzal</span></div>
@@ -436,9 +512,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>1,445원</b></div>
 
 
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>8–14초 성분·임상 설명을 음성 단독 분석이 별도 해설로 분류했으나, 전체 영상·기존 전사와 상세 구간 재검증에서는 이경실이 제품을 들고 직접 설명하는 원본 대화로 일치했다. 말의 내용이 체험담에서 성분 설명으로 바뀌었다는 이유로 나레이션에 넣지 않았다.</p><p class="note">확인 수준: 전체 원음·영상 AI 분석 + 의심 구간 상세 재검증 + 프레임·대본 대조</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdJEK22qGKg/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DeIjJRJAMyW" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="B" data-price="25" data-tot="165" data-cp="1515">
+</div></article><article class="card" id="ref-DeIjJRJAMyW" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="B" data-price="25" data-tot="165" data-cp="1515">
 <a class="th" href="https://www.instagram.com/reel/DeIjJRJAMyW/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_luna.humor_3_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">25만원</span><span class="acc">@luna.humor</span></div>
@@ -450,9 +528,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>1,515원</b></div>
 <p class="note">출처 띠 있음</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeIjJRJAMyW/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-m7" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="10" data-tot="43" data-cp="2326">
+</div></article><article class="card" id="ref-m7" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="10" data-tot="43" data-cp="2326">
 <a class="th" href="https://www.instagram.com/orange__funny/reels/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_orange__funny_7_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10만원</span><span class="acc">@orange__funny</span></div>
@@ -464,9 +544,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>2,326원</b></div>
 
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/orange__funny/reels/" target="_blank" rel="noopener">계정 릴스 탭 열기 ↗</a>
-</div></article><article class="card" id="ref-Dc2z1g3PUen" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="10" data-tot="14" data-cp="7143">
+</div></article><article class="card" id="ref-Dc2z1g3PUen" data-narration="yes" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/13" data-form="A" data-price="10" data-tot="14" data-cp="7143">
 <a class="th" href="https://www.instagram.com/reel/Dc2z1g3PUen/" target="_blank" rel="noopener"><img loading="lazy" src="img/Dc2z1g3PUen.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10만원</span><span class="acc">@peach__paper</span></div>
@@ -478,9 +560,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>7,143원</b></div>
 <p class="note">밈 몽타주, 연예인은 3초 언급</p>
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 전체에 걸쳐 여성 나레이터의 해설 음성이 다양한 짤방 및 제품 영상 위에 일관되게 후가공되어 입혀져 있습니다. 현장 음성이나 원본 대화 전환 없이 더빙 형식의 별도 나레이션만 지속됩니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–27초</b> · 별도 나레이션<br>SNS에서 난리길래 사봤는데</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dc2z1g3PUen/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-m18" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="10" data-tot="3" data-cp="33333">
+</div></article><article class="card" id="ref-m18" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="1" data-batch="10/21" data-form="A" data-price="10" data-tot="3" data-cp="33333">
 <a class="th" href="https://www.instagram.com/apple__paper/reels/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_apple__paper_18_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10만원</span><span class="acc">@apple__paper</span></div>
@@ -492,9 +576,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 1건당 <b>33,333원</b></div>
 <p class="note">광고 여부 불확실</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/apple__paper/reels/" target="_blank" rel="noopener">계정 릴스 탭 열기 ↗</a>
-</div></article><article class="card" id="ref-Dc2Q12shG2A" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="A" data-price="10" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-Dc2Q12shG2A" data-narration="yes" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="A" data-price="10" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/Dc2Q12shG2A/" target="_blank" rel="noopener"><img loading="lazy" src="img/Dc2Q12shG2A.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10만원</span><span class="acc">@melon__paper</span></div>
@@ -506,9 +592,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>출연자의 원본 인터뷰 및 예능 장면 음성 사이사이에 제3자의 성우/편집자 추가 해설 음성이 명확하게 삽입되어 있습니다. 원본 대화와 해설자의 음색 및 음질이 뚜렷하게 구분되며 원본 대화로 재복귀하는 교차 편집 구조를 가집니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–2초</b> · 원본 대화<br>48kg까지 찍었으니까 20kg 감량을 한 거예요</li><li><b>2–6초</b> · 별도 나레이션<br>자기관리 빡세기로 유명한 소유! 절대 빼먹지 않고 지키는 루틴이 있다는데</li><li><b>6–12초</b> · 원본 대화<br>1시간을 웨이트를 받고 나서 개인운동 20분 정도 더 가져갑니다</li><li><b>12–18초</b> · 별도 나레이션<br>다이어트 빡세게 하면 급격하게 빠진 살로 피부 처져보이고... 소유는 피부 탄력이랑 광이 미쳤음</li><li><b>18–23초</b> · 원본 대화<br>홈케어로도 많이 하고 있고 제가 예전에도 한번 파우치템으로</li><li><b>23–34초</b> · 별도 나레이션<br>알고보니 이미 여러번 언급할 정도로 매일 쓰는 세럼이 있는데... 쫀득해진다고 함</li><li><b>34–38초</b> · 원본 대화<br>얼굴에 아무것도 안 한 거야 지금? 이거 뭐야 물광 피부네</li><li><b>38–45초</b> · 별도 나레이션<br>소유뿐만 아니라 다른 아이돌도 언급해서... 가성비가 미쳤음</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dc2Q12shG2A/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DdDWTkGx19e" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-DdDWTkGx19e" data-narration="no" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DdDWTkGx19e/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdDWTkGx19e.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10만원</span><span class="acc">@orange__funny</span></div>
@@ -520,9 +608,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 
 
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>시작부터 끝까지 동일 화자의 인터뷰/후기 음성만 연속적으로 이어지며, 편집으로 삽입된 3인칭 광고 해설이나 별도 나레이터/TTS 음성이 전혀 확인되지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–5초</b> · 원본 대화<br>야 이거 진짜 관절이 잘 들어요. 5일 만에 개선됐다는 거예요. 효과가 정말 이건 드셔보셔야 되는데</li><li><b>5–12초</b> · 원본 대화<br>최단기간에 관절이 좋아진다고 소문이 난 성분인데 파마플렉스라고 파마플렉스. 많이 달라졌어요. 부드러워졌어요.</li><li><b>12–21초</b> · 원본 대화<br>제가 솔직히 뭐 어디 좋다고 해가지고 아무거나 먹고 그런 성격은 아니에요. 이제 그 파스를 안 붙여요. 오히려 몇 년 전보다 관절이 더 좋아진 것 같아요.</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdDWTkGx19e/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DdDWk3WhaAs" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-DdDWk3WhaAs" data-narration="no" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DdDWk3WhaAs/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdDWk3WhaAs.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10만원</span><span class="acc">@melon__paper</span></div>
@@ -534,9 +624,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">하단 띠에 구매 안내</p>
 
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 음성에서 동일한 여성 출연자가 제품 사용 경험과 효능에 대해 이야기하는 단일 화자의 현장 대화만 확인되며, 제3자 해설이나 추가 나레이션이 전혀 삽입되지 않았습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–25초</b> · 원본 대화<br>관절에 뭐 기름칠을 한 것 같다고 해야 되나? 이거 좀 이게 챙겨 먹고 나서는 많이 달라졌어요.</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdDWk3WhaAs/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DdQDuC6hQj7" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-DdQDuC6hQj7" data-narration="no" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DdQDuC6hQj7/" target="_blank" rel="noopener"><img loading="lazy" src="img/DdQDuC6hQj7.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10만원</span><span class="acc">@nato.iove</span></div>
@@ -548,9 +640,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">&#x27;업체 동의하에 발췌&#x27; 고지</p>
 
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>0초부터 25초까지 출연자가 제품 및 경험담에 대해 대화하는 현장 음성만 수록되어 있으며, 추가된 나레이션은 존재하지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–25초</b> · 원본 대화<br>경실이가 이거를 소개를 해줬어</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdQDuC6hQj7/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dd2vPz8z4KX" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-Dd2vPz8z4KX" data-narration="no" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/Dd2vPz8z4KX/" target="_blank" rel="noopener"><img loading="lazy" src="img/Dd2vPz8z4KX.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10만원</span><span class="acc">@hana.tving</span></div>
@@ -562,9 +656,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">본인 주방 추천 멘트</p>
 
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 전체 음성은 출연자가 직접 협찬 제품을 소개하고 효능과 복용법을 설명하는 현장 대화(본인 설명)로만 구성되어 있으며, 제3자의 추가 나레이션이나 별도 TTS 해설은 존재하지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–23초</b> · 원본 대화<br>여러분 아시죠 제가 협찬 잘 안 하는 거</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dd2vPz8z4KX/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dd0l-fdzTsB" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="A" data-price="25" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-Dd0l-fdzTsB" data-narration="yes" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/13" data-form="A" data-price="25" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/Dd0l-fdzTsB/" target="_blank" rel="noopener"><img loading="lazy" src="img/Dd0l-fdzTsB.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">25만원</span><span class="acc">@hana.humor</span></div>
@@ -576,9 +672,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">판독 저신뢰</span></div>
 
 
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 전체에 걸쳐 출연자의 현장 음성 없이 별도로 녹음된 여성 나레이션 음성이 B-roll 화면 위에 지속적으로 흐릅니다. 화면 속 인물이 말하는 장면에서도 현장 대화 음성은 제거되고 나레이션 해설만 출력됩니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–9초</b> · 별도 나레이션<br>강희재부터 백지영, 킴 카다시안, 카디비, 그리고 나솔 29기 영수까지?</li><li><b>9–23초</b> · 별도 나레이션<br>실제로 나비성형외과에서 시술 받은 모습까지 공개함. 남자도 관리 받는 시대에...</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dd0l-fdzTsB/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DeIjnKxz6bV" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="A" data-price="25" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-DeIjnKxz6bV" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="A" data-price="25" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DeIjnKxz6bV/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_good_tip_magazine_4_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">25만원</span><span class="acc">@good_tip_magazine</span></div>
@@ -590,9 +688,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">판독 저신뢰</span></div>
 <p class="note">공유·저장 판독 저신뢰</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeIjnKxz6bV/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dc2-CdNOURD" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="A" data-price="10" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-Dc2-CdNOURD" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="A" data-price="10" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/Dc2-CdNOURD/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_mango__paper_5_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10만원</span><span class="acc">@mango__paper</span></div>
@@ -604,9 +704,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">9월 기존 게시물일 가능성</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dc2-CdNOURD/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dcs2ZuivE1T" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-Dcs2ZuivE1T" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="B" data-price="10" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/Dcs2ZuivE1T/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_peach__paper_8_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10만원</span><span class="acc">@peach__paper</span></div>
@@ -618,9 +720,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">출처 띠 있음</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dcs2ZuivE1T/" target="_blank" rel="noopener">인스타에서 보기 <small>(추정)</small> ↗</a>
-</div></article><article class="card" id="ref-m10" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="A" data-price="10" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-m10" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="A" data-price="10" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/orange__funny/reels/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_orange__funny_10_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10만원</span><span class="acc">@orange__funny</span></div>
@@ -632,9 +736,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">광고 여부 불확실 · 하단 고정 문구</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/orange__funny/reels/" target="_blank" rel="noopener">계정 릴스 탭 열기 ↗</a>
-</div></article><article class="card" id="ref-DdTcMR2u467" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="B" data-price="25" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-DdTcMR2u467" data-narration="unknown" data-latest="0" data-added="0" data-confirmed="0" data-batch="10/21" data-form="B" data-price="25" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DdTcMR2u467/" target="_blank" rel="noopener"><img loading="lazy" src="img/open_tree.humor_16_reel.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">25만원</span><span class="acc">@tree.humor</span></div>
@@ -646,9 +752,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">판독 저신뢰</span></div>
 <p class="note">공유·저장 판독 저신뢰 · 연예인 아님(유튜버)</p>
 
+<div class="narration-label narration-unknown">음성 판정 미확인 · 교차형 미확인</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 원본 영상이 없어 음성 미확인.</p><p class="note">확인 수준: 미확인</p></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DdTcMR2u467/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dcz7bkiRBJn" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="B" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-Dcz7bkiRBJn" data-narration="no" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="B" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/Dcz7bkiRBJn/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-Dcz7bkiRBJn.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10/27 추가 조사</span><span class="acc">@orange__funny</span></div>
@@ -660,9 +768,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">10/27 공개 조회 104,000, 같은 계정 공개 12개 중앙 대비 3.57배. 9/3 게시라 오래 쌓인 조회다. 이번 서치폰에서 다른 계정 영상이 열려 현재 공유·저장은 미확인. 과거 공유 41 기록과 URL 연결도 확정하지 않음.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0초 추천 발언 → 1–6초 밝은 피부·톤이라는 원하는 결과 설명 → 약 8초 이후 패키지 제시 → 입 안 부위를 짚으며 부착 방법 설명. 화면 자막으로 확인, 원음 전사 미완료.</p><p><b>자막·음성</b><br>상단은 커뮤니티 반응과 밝아진다는 피부, 하단은 흡수율·붙이는 글루타치온 주장. 중앙 자막은 개인의 추천과 사용법을 따라간다.</p><p><b>판단 근거</b><br>상단에서 관심사를 좁히고 본인이 원하는 결과를 바로 호명한다. 높은 조회만으로 고성과 판정하지 않는다.</p><p><b>김가연 적용</b><br>김가연이 실제로 신경 쓰는 부위·고민을 먼저 말하고 제품을 나중에 보여주는 대조안. 즉시 닦이는 시연의 근거로는 사용하지 않음.</p><p><b>확인 범위</b><br>프레임·본문 확인 / 공유저장 미확인</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전 구간 원본 출연자(리뷰어)의 대화 소리만 존재하며, 제3자 나레이션이나 TTS 해설 음성이 삽입되지 않았습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–24초</b> · 원본 대화<br>진짜 이거는 완전 추천 내가 만약에 피부가 좀 밝아지고 싶고</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dcz7bkiRBJn/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DeA6_ldP61c" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="기타" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-DeA6_ldP61c" data-narration="no" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="기타" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DeA6_ldP61c/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-DeA6_ldP61c.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f f기타">기타형</span><span class="chip">10/27 추가 조사</span><span class="acc">@blue_fun_diary</span></div>
@@ -674,9 +784,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">공개 조회 392,000, 표본 중앙 대비 4.8배. 현재 공유·저장 미확인. 본편에서 수타면 쇼를 확인해 ‘맥주’ 후보 오분류를 정정.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>첫 화면부터 테이블 앞 수타면 쇼를 보여주고 같은 인물의 손동작·표정을 이어간다. 짧은 팬 콘텐츠.</p><p><b>자막·음성</b><br>상단은 최애가 내 테이블에서 수타쇼를 해줬다는 사건, 하단은 팬 반응. 원음 전사 미완료.</p><p><b>판단 근거</b><br>동작 자체의 볼거리·팬 관심이 조회에 영향을 줬을 가능성은 있지만 상품 효능이나 판매 광고 성과로 전이할 수 없다.</p><p><b>김가연 적용</b><br>고조회 광고 성공 사례 목록에서 제외. 설명 전에 흥미로운 동작을 보여주는 장면 참고만 가능.</p><p><b>확인 범위</b><br>프레임 확인 / 광고 성공 근거 제외</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>음성 전반에서 음악과 함께 원본 출연자의 현장 비명 및 감탄사 소리만 들릴 뿐, 제3자 광고 해설이나 TTS 나레이션은 전혀 삽입되지 않았습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–10초</b> · 원본 대화<br>어 뭐야</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeA6_ldP61c/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-De19ZYlTXlT" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-De19ZYlTXlT" data-narration="yes" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/De19ZYlTXlT/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-De19ZYlTXlT.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">@on_ggul_tip</span></div>
@@ -688,9 +800,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">공개 조회 39,800, 표본 중앙 대비 1.43배. 공유·저장·매출 미확인.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0–3초 사무실 장면과 노동요 공감 → 3–7초 귀를 막는 이어폰·상사 말을 못 듣는 상황 → 약 10초 이후 대안 제시 → 귀에 거는 제품 접사와 착용 모습 → 주변 소리를 듣는 사용 상황.</p><p><b>자막·음성</b><br>상단은 사무실에서 눈치 안 보고 노래 듣는 방법. 자동 전사상 상황을 설명하는 별도 해설이 밈·사무실 장면·제품 접사에 걸쳐 이어지고, 11.12초부터 제품명과 대안을 제시한다. 해설과 자막이 장면 전환을 연결한다. TTS 여부는 확인하지 않았다.</p><p><b>판단 근거</b><br>웃긴 컷이 제품과 떨어져 있지 않고, 바로 뒤 제품이 해결할 불편함을 보여준다. 웃음의 인과효과는 미확인.</p><p><b>김가연 적용</b><br>H3·H4의 농담도 관리 고민과 연결되게 요청. 표정만 웃긴 장면 뒤에 무관한 제품 설명을 붙이지 않는다.</p><p><b>확인 범위</b><br>프레임·자동 전사 확인 / 반응 추가 측정 필요</p></details>
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 전체에 걸쳐 다양한 밈과 제품 B-roll 화면 위로 동일한 해설 음성이 지속적으로 흐릅니다. 화면 속 인물들의 현장 대화와 무관하게 광고 편집 시 추가된 더빙 내레이션입니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–12초</b> · 별도 나레이션<br>사무실에서 노동요 틀어놓고 해야 일 능률 오르는 사람 있음? 근데 노캔 이어폰 꽉 끼고 일하다가 상사나 옆 사람이 부른 거 못 들어서 식은땀 난 적 다들 있을 거임.</li><li><b>12–34.433초</b> · 별도 나레이션<br>그래서 아예 눈치 안 보고 끼려고 보스 울트라 오픈 이어버드 2세대로 바꿈. 이게 일단 디자인부터 이어폰 같지가 않고... 퇴근할 때까지 멘탈 진짜 편해짐.</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/De19ZYlTXlT/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DeBrUy0hjsk" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="기타" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-DeBrUy0hjsk" data-narration="no" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="기타" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DeBrUy0hjsk/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-DeBrUy0hjsk.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f f기타">기타형</span><span class="chip">10/27 추가 조사</span><span class="acc">@nato.pick</span></div>
@@ -702,9 +816,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">공개 조회 36,700, 표본 중앙 대비 1.27배. 공유·저장 미확인. 본편에 특정 제품 식별·구매 제안이 보이지 않아 상품 광고 성공 사례로 채택하지 않음.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>첫 장면 남성 출연자의 놀란 표정 → 서인영 이야기 → 서로 받아치는 반응. 테이블 대화 중심.</p><p><b>자막·음성</b><br>고정 문구는 신박한 플러팅과 향수를 뿌리는 농담을 강조한다. 화면 자막 확인, 원음 전사 미완료.</p><p><b>판단 근거</b><br>반응 표정과 대화의 궁금증은 존재하지만 제품을 향한 관심으로 이어졌다는 근거가 없다.</p><p><b>김가연 적용</b><br>H4 표정 참고 후보만 유지. 향수 광고의 성공 사례라는 표기는 제외.</p><p><b>확인 범위</b><br>프레임 확인 / 상품 광고 근거 제외</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 처음부터 끝까지 남녀 출연자의 스튜디오/현장 대화 음성만 연속적으로 이어지며, 편집자에 의해 추가된 제3자 해설이나 광고 나레이션은 존재하지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–6초</b> · 원본 대화<br>전에 그 특강 중에 사타구니 향수 플러팅 이게 난리난리가 났어요</li><li><b>6–23초</b> · 원본 대화<br>사타구니에 뿌린다는 거죠 제가 연애 몇 번 안 해봤어요</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeBrUy0hjsk/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-Dev7RPNBIHl" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="기타" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-Dev7RPNBIHl" data-narration="no" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="기타" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/Dev7RPNBIHl/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-Dev7RPNBIHl.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f f기타">기타형</span><span class="chip">10/27 추가 조사</span><span class="acc">@luna.tip</span></div>
@@ -716,9 +832,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">공개 조회 76,800, 표본 중앙 대비 1.21배. 공유·저장·광고비 미확인.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0–3초 현재 얼굴 → 3–6초 얼굴 확대 → 약 6초 과거·현재 나란히 → 중반 관리 관련 스토리 캡처 → 현재 표정. 사진과 영상의 비교 편집.</p><p><b>자막·음성</b><br>자막이 외모 변화와 관리 이야기를 해설한다. 음성은 미전사라 별도 나레이션 여부는 확정하지 않는다.</p><p><b>판단 근거</b><br>변화에 대한 질문을 비교 화면과 관리 설명으로 해소하는 형태. 다른 시점의 조명·화장까지 달라 제품 효과의 직접 증거가 되지는 않는다.</p><p><b>김가연 적용</b><br>김가연의 ‘타고남 → 관리’ 메시지 구조 참고. 특정 제품의 전후 효과로 과거 얼굴을 임의 연결하지 않는다.</p><p><b>확인 범위</b><br>프레임 확인 / 반응 추가 측정 필요</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 음성 전체 구간에서 보컬이 포함된 영문 노래(BGM)만 흐르며, 제품 설명이나 3인칭 별도 나레이션/TTS는 존재하지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–23초</b> · 음성 유형 미분류<br>Dreams drifting up in coffee... Bubble dreams shimmer gleam... all the way up to the sky</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/Dev7RPNBIHl/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-DetMuzQJMYK" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-DetMuzQJMYK" data-narration="yes" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DetMuzQJMYK/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-DetMuzQJMYK.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">@tree.zzal</span></div>
@@ -730,9 +848,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">공개 조회 81,700, 표본 중앙 대비 1.08배. 공유·저장·구매 성과 미확인.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0–3초 얼굴에 흰 팩을 붙인 강예원과 어머니의 대화 → 3–5초 어머니의 과거 반응 → 5초 이후 같이 관리받게 된 이야기 → 중반 기기 시술 접사·딸 반응 → 시술 후 얼굴을 만지는 장면.</p><p><b>자막·음성</b><br>상단은 엄마 얼굴 다림질이라는 표현. 자동 전사·화면 대조상 0–3초 모녀 대화 → 3–8.5초 별도 해설 → 모녀 대화와 시술 접사 → 23.5초 이후 시술 설명으로 이어진다. 원래 대화와 별도 해설을 교차하는 예시다. 전사 오류가 있어 대사의 정확한 인용은 화면 자막을 우선한다.</p><p><b>판단 근거</b><br>낯선 얼굴 상태로 시선을 끌고, 관리에 반대하던 어머니가 직접 관리받는 사연으로 이어간다. 특이한 화면만 떼지 않고 뒤 설명과 연결하는 형태다. 성과 우위는 미확인.</p><p><b>김가연 적용</b><br>김가연의 재미있는 표정이나 관리 중 모습으로 시작할 경우, 바로 다음 대사가 그 모습의 이유를 풀어주도록 연속 촬영한다. 모녀가 나온다면 질문·답변·사용 후 반응을 함께 확보.</p><p><b>확인 범위</b><br>프레임·자동 전사 확인 / 반응 추가 측정 필요</p></details>
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>출연진(강예원 및 어머니)의 현장 대화 음성과 제3자 해설 성우의 별도 나레이션이 교차 편집되어 있습니다. 원본 대화 중간중간 상황 설명 및 제품 홍보를 위한 추가 음성이 명확히 구분되어 나타납니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–3초</b> · 원본 대화<br>이건 또 뭐니? 이거? 눈 성형할 때</li><li><b>3–8초</b> · 별도 나레이션<br>딸이 성형하는 걸 계속 뜯어 말리던 강예원 어머니</li><li><b>8–12초</b> · 원본 대화<br>엄마 저번에 미우새 나왔을 때 사람들이 여기 눈밑 주름 있다고</li><li><b>12–16초</b> · 별도 나레이션<br>바로 엄마 모시고 피부과로 달려간 강예원</li><li><b>16–21초</b> · 원본 대화<br>10년이 젊어지고 있어! 엄마 벌써 지금 50대 됐어!</li><li><b>21–43초</b> · 별도 나레이션<br>엄마 얼굴 다림질 된다고 말하는 딸 ㅋㅋㅋ 근데 어머니가 받고 있는 이 시술</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DetMuzQJMYK/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
-</div></article><article class="card" id="ref-850513171333205" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="B" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-850513171333205" data-narration="no" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="B" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.facebook.com/ads/library/?id=850513171333205" target="_blank" rel="noopener"><img loading="lazy" src="img/added-850513171333205.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10/27 추가 조사</span><span class="acc">일반인들의 파우치</span></div>
@@ -744,9 +864,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">10/27 광고 라이브러리 활성 표시. 표시 시작일 2026-08-02. 공유·저장 공개 수치 미확인. 집행 기간만으로 고성과 판정하지 않음.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>팩 떼기 → 볼 만지기 → 사용 시간·제형 설명</p><p><b>판단 근거</b><br>볼을 만지는 손과 얼굴을 같이 담아 사용 부위와 반응을 연결.</p><p><b>확인 범위</b><br>원본 장면 확인 / 공유·저장 미확인</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 시청각 분석은 원본 대화로 판정. 음성만 재분석했을 때 15–22초를 별도 해설로 오인했으나, 해당 구간의 상세 시청각 재검증과 프레임 검토에서 화면 속 출연자의 입 움직임·볼을 만지는 동작·대사가 이어짐을 확인했다. 다른 원본 출연자로 바뀐 것을 별도 나레이션으로 세지 않았다.</p><p class="note">확인 수준: 전체 원음·영상 AI 분석 + 의심 구간 상세 재검증 + 프레임·대본 대조</p></details>
 
 <a class="btn" href="https://www.facebook.com/ads/library/?id=850513171333205" target="_blank" rel="noopener">메타 원본 광고 보기 ↗</a>
-</div></article><article class="card" id="ref-2377215103087916" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-2377215103087916" data-narration="yes" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.facebook.com/ads/library/?id=2377215103087916" target="_blank" rel="noopener"><img loading="lazy" src="img/added-2377215103087916.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">200%리얼리뷰</span></div>
@@ -758,9 +880,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">10/27 광고 라이브러리 활성 표시. 표시 시작일 2026-10-08. 공유·저장 공개 수치 미확인. 집행 기간만으로 고성과 판정하지 않음.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>패치 사용 → 한혜진 → 제품 → 별도 모델 사용 → 가격</p><p><b>판단 근거</b><br>인물은 관심, 별도 제품·사용 컷은 설명 역할. 제품을 든 인물이 한혜진이라고 가정하지 않음.</p><p><b>확인 범위</b><br>원본 장면 확인 / 공유·저장 미확인</p></details>
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>광고 전체에 걸쳐 제품의 효과와 특징을 설명하는 제3자의 별도 해설 나레이션 음성이 주로 사용되었습니다. 중간에 출연자 한혜진의 실제 현장 음성이 잠깐 들어갔다가 다시 별도 나레이션으로 돌아오는 편집 구조입니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–5초</b> · 별도 나레이션<br>이미 유명했다는 한혜진 목주름 패치? 자기관리 쩌는 한혜진이 40대에도 목주름은커녕</li><li><b>5–6초</b> · 원본 대화<br>너무 신기하죠?</li><li><b>6–29초</b> · 별도 나레이션<br>20대보다 더 매끈한 목주름 비결로 이 피부과 넥패치를 공개했는데...</li></ol></details>
 
 <a class="btn" href="https://www.facebook.com/ads/library/?id=2377215103087916" target="_blank" rel="noopener">메타 원본 광고 보기 ↗</a>
-</div></article><article class="card" id="ref-1071687752531807" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-1071687752531807" data-narration="no" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.facebook.com/ads/library/?id=1071687752531807" target="_blank" rel="noopener"><img loading="lazy" src="img/added-1071687752531807.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">피부꿀팁</span></div>
@@ -772,9 +896,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">10/27 광고 라이브러리 활성 표시. 표시 시작일 2026-10-21. 공유·저장 공개 수치 미확인. 집행 기간만으로 고성과 판정하지 않음.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>본인 토크 → 제작진·야외 사용 → 제품 제시</p><p><b>판단 근거</b><br>토크와 사용 장면을 교차. 먼 제품 컷은 이번 콘티 제품 접사에서 제외.</p><p><b>확인 범위</b><br>원본 장면 확인 / 공유·저장 미확인</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>전체 구간을 확인한 결과, 출연자들 간의 현장 대화 및 연속적인 제품 경험 언급만 존재하며 제3자 해설(TTS 및 별도 나레이션)이 개입된 정황이 없습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–20초</b> · 원본 대화<br>지금 여기서 이거 안 써본 사람 있어? 써보니까 솔직히 어때?</li><li><b>20–33초</b> · 원본 대화<br>지난번에는 하이드로 선스크린을 얘길 했었어요.</li></ol></details>
 
 <a class="btn" href="https://www.facebook.com/ads/library/?id=1071687752531807" target="_blank" rel="noopener">메타 원본 광고 보기 ↗</a>
-</div></article><article class="card" id="ref-1154881213770416" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="B" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-1154881213770416" data-narration="no" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="B" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.facebook.com/ads/library/?id=1154881213770416" target="_blank" rel="noopener"><img loading="lazy" src="img/added-1154881213770416.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fB">B형</span><span class="chip">10/27 추가 조사</span><span class="acc">POLA 폴라</span></div>
@@ -786,9 +912,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">10/27 광고 라이브러리 활성 표시. 표시 시작일 2026-10-15. 공유·저장 공개 수치 미확인. 집행 기간만으로 고성과 판정하지 않음.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>경험 이야기 → 눈가 지목 → 거울 앞 도포</p><p><b>판단 근거</b><br>손끝과 피부 접촉을 함께 보여줘 김가연 도포 구도에 선정.</p><p><b>확인 범위</b><br>원본 장면 확인 / 공유·저장 미확인</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>출연자가 자신의 피부 관리 경험담을 친구와의 대화를 인용하며 자연스럽게 이야기하는 원본 음성만 존재합니다. 제3자의 해설이나 추가 나레이션은 포함되어 있지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–19초</b> · 원본 대화<br>내 친구가 너는 피부가 너무 얇으니까 서른이 될 때쯤에는 눈밑 눈가 주름을 굉장히 조심하라고</li></ol></details>
 
 <a class="btn" href="https://www.facebook.com/ads/library/?id=1154881213770416" target="_blank" rel="noopener">메타 원본 광고 보기 ↗</a>
-</div></article><article class="card" id="ref-2494548121050608" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-2494548121050608" data-narration="no" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.facebook.com/ads/library/?id=2494548121050608" target="_blank" rel="noopener"><img loading="lazy" src="img/added-2494548121050608.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">셀럽들의 뷰티레시피</span></div>
@@ -800,9 +928,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">10/27 광고 라이브러리 활성 표시. 표시 시작일 2026-08-31. 공유·저장 공개 수치 미확인. 집행 기간만으로 고성과 판정하지 않음.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>0초 인물 → 약1.05초부터 시럽 붓기 → 인물 반응 → 다른 인물 경험</p><p><b>판단 근거</b><br>인물과 붓기를 두 정지 컷으로 확인. 김가연→우리 닦기 연결 아이디어의 구조 참고.</p><p><b>확인 범위</b><br>원본 장면 확인 / 공유·저장 미확인</p></details>
+<div class="narration-label narration-no">AI 분석상 나레이션 없음 · AI 분석상 교차형 아님</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>모든 음성은 현장 출연자들의 자연스러운 대화 및 직접 경험 설명으로만 구성되어 있으며, 제3자의 성우/TTS 나레이션은 포함되어 있지 않습니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–13초</b> · 원본 대화<br>얘는 시럽이라 물 없이 바로 먹을 수 있어 그게 진짜 좋더라고요</li><li><b>13–18초</b> · 원본 대화<br>상추의 왜 이렇게 뚝 뿌르면 이렇게 하얀 액 같은 거 나오지</li><li><b>18–32초</b> · 원본 대화<br>얘는 시럽이라 흡수도 훨씬 빨라요 뭐 이렇게 많이 사셨어요</li></ol></details>
 
 <a class="btn" href="https://www.facebook.com/ads/library/?id=2494548121050608" target="_blank" rel="noopener">메타 원본 광고 보기 ↗</a>
-</div></article><article class="card" id="ref-DeqIgtkPHV9" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
+</div></article><article class="card" id="ref-DeqIgtkPHV9" data-narration="yes" data-latest="0" data-added="1" data-confirmed="0" data-batch="10/27" data-form="A" data-price="0" data-tot="-1" data-cp="99999">
 <a class="th" href="https://www.instagram.com/reel/DeqIgtkPHV9/" target="_blank" rel="noopener"><img loading="lazy" src="img/added-DeqIgtkPHV9.jpg" alt=""></a>
 <div class="bd">
 <div class="top"><span class="f fA">A형</span><span class="chip">10/27 추가 조사</span><span class="acc">@luna.playlist__</span></div>
@@ -814,6 +944,8 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <div class="cost">공유+저장 환산 불가 <span class="low">공유·저장 미확인</span></div>
 <p class="note">10/26 조회57,737·좋아요236 기록. 공유·저장 미확인. 다른 강소라 편집본의 776건을 이 광고에 옮겨 쓰지 않음.</p>
 <details class="analysis"><summary>컷·자막·선정 판단 펼치기</summary><p><b>장면 순서</b><br>PC방 일상 → 과거 비교 → 본인 관리 발언 → 예능 질문</p><p><b>판단 근거</b><br>일상 화면과 별도 해설의 연결 참고. 고성과 판정하지 않음.</p></details>
+<div class="narration-label narration-yes">AI 분석상 나레이션 있음 · AI 분석상 원본 대사 교차형</div>
+<details class="analysis narration-detail"><summary>음성 판정 근거 펼치기</summary><p>영상 편집에 제3자 TTS 해설 음성이 사용되었으며, 출연자의 실제 현장 대화 음성과 교차되며 등장합니다. 출연자가 말하는 원본 음성과 TTS 나레이션의 음색 및 편집 구성이 분명하게 구분됩니다.</p><p class="note">확인 수준: 전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님</p><p class="note">구간은 모델이 추정한 근삿값으로, 정확한 편집 타임코드가 아니다.</p><ol><li><b>0–9초</b> · 별도 나레이션<br>요즘 미모 리즈인 것 같은 배우 강소라</li><li><b>9–16초</b> · 원본 대화<br>꾸준히 자주자주 받았었거든요</li><li><b>16–21초</b> · 별도 나레이션<br>관리까지 확실히 하고 예뻐져서 번따 300번 당했다는 소문이</li><li><b>21–25초</b> · 원본 대화<br>넘어봤으면 좋겠다</li><li><b>25–26초</b> · 별도 나레이션<br>그래도 300명은 아니라고 함</li></ol></details>
 
 <a class="btn" href="https://www.instagram.com/reel/DeqIgtkPHV9/" target="_blank" rel="noopener">인스타에서 보기 ↗</a>
 </div></article></div>
@@ -826,11 +958,11 @@ h3{margin:2px 0 0;font-size:16px;line-height:1.3} .cap{margin:0;font-size:13px;c
 <p class="foot">A형 = 여러 클립을 잇는 몽타주 편집(제품은 중반에 등장). B형 = 연예인 본인 채널 클립 하나를 그대로 쓰고 본인이 효과를 말하는 형식. "판독 저신뢰"는 화면 숫자가 자막이나 흰 배경에 묻혀 읽기 어려웠던 건이다. 10/21 실측분 중 "계정 릴스 탭 열기"로 표시된 건은 게시물 링크를 아직 특정하지 못한 것이다.</p>
 </main>
 <script>
-const st={batch:"",form:"",confirmed:""};
+const st={batch:"",form:"",confirmed:"",narration:""};
 document.querySelectorAll('.bar button').forEach(b=>b.onclick=()=>{st[b.dataset.k]=b.dataset.v;document.querySelectorAll(`.bar button[data-k=${b.dataset.k}]`).forEach(x=>x.classList.toggle('on',x===b));apply();});
 document.getElementById('sort').onchange=apply;
 function apply(){const g=document.getElementById('grid');const s=document.getElementById('sort').value;
- const cards=[...g.children];cards.forEach(c=>c.classList.toggle('hide',(st.batch==='latest'?c.dataset.latest!=='1':st.batch==='added'?c.dataset.added!=='1':st.batch&&c.dataset.batch!==st.batch)||(st.form&&c.dataset.form!==st.form)||(st.confirmed&&c.dataset.confirmed!==st.confirmed)));
+ const cards=[...g.children];cards.forEach(c=>c.classList.toggle('hide',(st.batch==='latest'?c.dataset.latest!=='1':st.batch==='added'?c.dataset.added!=='1':st.batch&&c.dataset.batch!==st.batch)||(st.form&&c.dataset.form!==st.form)||(st.confirmed&&c.dataset.confirmed!==st.confirmed)||(st.narration&&c.dataset.narration!==st.narration)));
  cards.sort((a,b)=>s==='tot'?b.dataset.tot-a.dataset.tot:s==='cp'?a.dataset.cp-b.dataset.cp:b.dataset.price-a.dataset.price).forEach(c=>g.appendChild(c));}
 if(location.hash==='#added'){document.querySelector('[data-v="added"]').click();document.querySelector('.bar').scrollIntoView();}
 if(location.hash==='#latest'){document.querySelector('[data-v="latest"]').click();document.querySelector('.bar').scrollIntoView();}
