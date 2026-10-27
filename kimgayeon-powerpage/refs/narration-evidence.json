@@ -5,23 +5,23 @@
   "scope": "현재 레퍼런스 페이지 IG 40개 카드 전체. 비뷰티·브랜드·광고 미확인 조사 기록도 포함하므로 연예인 화장품 광고 시장 전체의 비율이 아니다.",
   "summary": {
     "total": 40,
-    "yes": 9,
-    "no": 8,
-    "unknown": 23,
-    "classified": 17,
-    "yes_percent_all": 22.5,
-    "yes_percent_classified": 52.9,
-    "interleaved": 7
+    "yes": 13,
+    "no": 11,
+    "unknown": 16,
+    "classified": 24,
+    "yes_percent_all": 32.5,
+    "yes_percent_classified": 54.2,
+    "interleaved": 11
   },
   "unique_body_summary": {
     "total": 38,
-    "yes": 7,
-    "no": 8,
-    "unknown": 23,
-    "classified": 15,
-    "yes_percent_all": 18.4,
-    "yes_percent_classified": 46.7,
-    "interleaved": 5
+    "yes": 11,
+    "no": 11,
+    "unknown": 16,
+    "classified": 22,
+    "yes_percent_all": 28.9,
+    "yes_percent_classified": 50.0,
+    "interleaved": 9
   },
   "records": [
     {
@@ -96,8 +96,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "Dd0y31Gyrgh-audio.json"
+      "cautions": []
     },
     {
       "code": "Dd2phx-v52N",
@@ -173,8 +172,7 @@
       "confidence": "high",
       "cautions": [
         "유튜브 원본 영상 오디오와 광고 전용 추가 해설 음성이 정교하게 교차 편집됨"
-      ],
-      "evidence_file": "Dd2phx-v52N-audio.json"
+      ]
     },
     {
       "code": "Dd6K5ABzUZ-",
@@ -244,8 +242,7 @@
       "confidence": "high",
       "cautions": [
         "원본 유튜브 인터뷰/웹예능 대화와 편집자가 넣은 프로모션 나레이션이 정교하게 교차 편집되어 있음"
-      ],
-      "evidence_file": "Dd6K5ABzUZ--audio.json"
+      ]
     },
     {
       "code": "Dd232Kvz3o0",
@@ -307,8 +304,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "Dd232Kvz3o0-audio.json"
+      "cautions": []
     },
     {
       "code": "Dc2Q12shG2A",
@@ -370,8 +366,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "Dc2Q12shG2A-audio.json"
+      "cautions": []
     },
     {
       "code": "DdslB76x7ZV",
@@ -441,8 +436,7 @@
       "confidence": "high",
       "cautions": [
         "원본 방송 clips의 대사와 편집된 TTS 나레이션 음성이 짧은 간격으로 교차하여 나타납니다."
-      ],
-      "evidence_file": "DdslB76x7ZV-audio.json"
+      ]
     },
     {
       "code": "DdxfRNzTQIn",
@@ -504,8 +498,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "DdxfRNzTQIn-audio.json"
+      "cautions": []
     },
     {
       "code": "Dc2z1g3PUen",
@@ -525,19 +518,83 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "Dc2z1g3PUen-audio.json"
+      "cautions": []
     },
     {
       "code": "Dc2-CdNOURD",
       "name": "소유 올리브영 세럼(시카마누·파넬·호빵맨)",
       "source": "https://www.instagram.com/reel/Dc2-CdNOURD/",
       "duplicate_of": null,
-      "status": "unknown",
-      "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
-      "evidence_level": "미확인",
-      "segments": []
+      "status": "yes",
+      "interleaved": true,
+      "reason": "출연자(소유)의 현장 인터뷰 및 웹예능 대화 음성 사이에 제3자 설명조의 여성 TTS 나레이션이 추가되어 있습니다. 원본 출연자 대화와 편집자가 넣은 별도 나레이션이 지속적으로 교차 편집된 광고 영상입니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "kind": "original_dialogue",
+          "text": "잠깐만 어? 68kg? 바로 다음날 다이어트 시작"
+        },
+        {
+          "start": 3,
+          "end": 17,
+          "kind": "added_narrator",
+          "text": "소유 얼굴 달라졌다고 성형설까지 돌았는데 20kg 감량에 피부 관리까지 빡세게 했다 함"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "kind": "original_dialogue",
+          "text": "요즘도 꾸준히 사용하고 있는"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "kind": "added_narrator",
+          "text": "이미 여러 번 언급할 정도로 매일 쓰는 세럼이 있는데"
+        },
+        {
+          "start": 23,
+          "end": 31,
+          "kind": "original_dialogue",
+          "text": "들어보니까 청담샵 선생님들은 다 하나씩 가지고 계신다고 하더라고요"
+        },
+        {
+          "start": 31,
+          "end": 36,
+          "kind": "added_narrator",
+          "text": "피부결이 쫀쫀하게 수분감 채워주는데 흡수는 빨라서 메이크업 전에도 부담 없고"
+        },
+        {
+          "start": 36,
+          "end": 41,
+          "kind": "original_dialogue",
+          "text": "이게 여러 번 덧발라도 밀리거나 답답한 느낌 없이 흡수가 엄청 잘돼요"
+        },
+        {
+          "start": 41,
+          "end": 43,
+          "kind": "added_narrator",
+          "text": "이 속광 보니까 왜 성형설 도는지 알겠음"
+        },
+        {
+          "start": 43,
+          "end": 51,
+          "kind": "original_dialogue",
+          "text": "중요한 스케줄 있을 때 이 세럼으로 피부결이랑 요철 진정을 시켜줍니다"
+        },
+        {
+          "start": 51,
+          "end": 54,
+          "kind": "added_narrator",
+          "text": "마침 올영 세일이라길래 들어갔는데 소유 세럼 발견함"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [
+        "화면상의 큰 자막 텍스트와 나레이션 멘트가 일부 다를 수 있으나 음성을 기준으로 작성함"
+      ]
     },
     {
       "code": "m7",
@@ -546,7 +603,7 @@
       "duplicate_of": null,
       "status": "unknown",
       "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "reason": "게시물 특정 불가(계정 릴스 탭만 기록). 개별 게시물 주소가 남아 있지 않아 원본 영상을 확보하지 못했다. 있음·없음 어느 쪽에도 합산하지 않는다.",
       "evidence_level": "미확인",
       "segments": []
     },
@@ -557,7 +614,7 @@
       "duplicate_of": null,
       "status": "unknown",
       "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "reason": "게시물 특정 불가(계정 릴스 탭만 기록). 개별 게시물 주소가 남아 있지 않아 원본 영상을 확보하지 못했다. 있음·없음 어느 쪽에도 합산하지 않는다.",
       "evidence_level": "미확인",
       "segments": []
     },
@@ -568,7 +625,7 @@
       "duplicate_of": null,
       "status": "unknown",
       "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "reason": "게시물 특정 불가(계정 릴스 탭만 기록). 개별 게시물 주소가 남아 있지 않아 원본 영상을 확보하지 못했다. 있음·없음 어느 쪽에도 합산하지 않는다.",
       "evidence_level": "미확인",
       "segments": []
     },
@@ -577,44 +634,160 @@
       "name": "소유 활용 세럼 · 올영에서 쟁이는 꿀템",
       "source": "https://www.instagram.com/reel/DeG61xFPC5o/",
       "duplicate_of": null,
-      "status": "unknown",
-      "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
-      "evidence_level": "미확인",
-      "segments": []
+      "status": "yes",
+      "interleaved": true,
+      "reason": "출연진의 원본 인터뷰 및 웹예능 대화 음성 사이사이에 편집자가 추가한 여성 나레이션(또는 TTS) 음성이 교차로 들어갑니다. 화면의 B-roll 및 제품 설명 구간마다 동일한 스튜디오 톤의 나레이션이 상황을 해설하며 원본 대화로 복귀하는 구조입니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "kind": "added_narrator",
+          "text": "한 때 경도비만이었던 소유!"
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "kind": "original_dialogue",
+          "text": "20kg을 제가 감량을 한 거예요"
+        },
+        {
+          "start": 4,
+          "end": 12,
+          "kind": "added_narrator",
+          "text": "요즘은 자기 관리 빡세게 한다는데 다이어트 빡세게 하면 급격하게 빠진 살로 피부 처져 보이고 푸석해 보이는데 소유는 피부탄력이랑 광이 미쳤음"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "kind": "original_dialogue",
+          "text": "이 광이 너무 나가지고 왜냐하면 방송국 가거나 이러면 맨날 광 좀 없애 달라고"
+        },
+        {
+          "start": 15,
+          "end": 24,
+          "kind": "original_dialogue",
+          "text": "홈케어로 많이 하고 있고 제가 예전에도 한번 파우치템으로 소개시켜드린 적 있었는데 들어보니까 청담샵 선생님들은 다 하나씩 가지고 계신다고 하더라고요"
+        },
+        {
+          "start": 24,
+          "end": 35,
+          "kind": "added_narrator",
+          "text": "알고 보니 이미 여러 번 언급할 정도로 매일 쓰는 세럼이 있는데 마누카꿀을 더한 세럼이라 피부 회복이 빠르고 바르고 자면 다음 날 피부가 쫀득해진다고 함 소유뿐만 아니라 다른 아이돌도 언급해서"
+        },
+        {
+          "start": 35,
+          "end": 41,
+          "kind": "original_dialogue",
+          "text": "예전에 영상 보고 산 적도 있어요 이 세럼이 다 들어있어요"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "kind": "added_narrator",
+          "text": "이미 여러 번 품절대란 났는데 이번에 호빵맨이랑 콜라보하면서 런칭 첫날부터 또 일시품절 됐다 함"
+        }
+      ],
+      "confidence": "high",
+      "cautions": []
     },
     {
       "code": "DejH_4mht5H",
       "name": "나솔 14기 영자 40대 관리",
       "source": "https://www.instagram.com/reel/DejH_4mht5H/",
       "duplicate_of": null,
-      "status": "unknown",
-      "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
-      "evidence_level": "미확인",
-      "segments": []
+      "status": "no",
+      "interleaved": false,
+      "reason": "오디오 전 구간 동안 원본 출연자의 노래 가창 및 기타 음악 소리만 이어지며, 제3자의 해설이나 TTS 광고 나레이션은 감지되지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "kind": "original_dialogue",
+          "text": "7월의 하늘 아래 저마다의 색으로 가장 아름답게 물들어 가"
+        }
+      ],
+      "confidence": "high",
+      "cautions": []
     },
     {
       "code": "DdTcMR2u467",
       "name": "트러블 뽑아주는 팩",
       "source": "https://www.instagram.com/reel/DdTcMR2u467/",
       "duplicate_of": null,
-      "status": "unknown",
-      "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
-      "evidence_level": "미확인",
-      "segments": []
+      "status": "no",
+      "interleaved": false,
+      "reason": "전 구간 동안 동일한 출연자의 일관된 음색과 말투로 현장 리뷰 및 설명이 진행되며, 외부에서 별도로 삽입된 제3자 해설 나레이션은 전혀 존재하지 않습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "kind": "original_dialogue",
+          "text": "일상에서는 소용이 없어가지고 트러블을 가라앉히는데"
+        },
+        {
+          "start": 26,
+          "end": 46,
+          "kind": "original_dialogue",
+          "text": "저번 영상에서는 제가 좀 코쪽에 많이 나왔어요"
+        }
+      ],
+      "confidence": "high",
+      "cautions": []
     },
     {
       "code": "DeHH1v3tK4i",
       "name": "기타 낮음(에스파 응급루틴 등)",
       "source": "https://www.instagram.com/reel/DeHH1v3tK4i/",
       "duplicate_of": null,
-      "status": "unknown",
-      "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
-      "evidence_level": "미확인",
-      "segments": []
+      "status": "yes",
+      "interleaved": true,
+      "reason": "영상 전반에 걸쳐 편집자가 추가한 제3자 형태의 TTS 나레이션(~따로 있다는데, ~붙여둔다고 함 등)이 여러 연예인의 원본 인터뷰 영상 사이에 교차 삽입되어 있습니다. 원본 출연자의 현장 음성과 뚜렷하게 구분되는 스튜디오 톤의 해설 음성이 존재합니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "kind": "added_narrator",
+          "text": "연예인들 촬영 전 피부 뒤집어질 때 청담숍에서 쓰는 방법이 따로 있다는데?"
+        },
+        {
+          "start": 20,
+          "end": 27,
+          "kind": "original_dialogue",
+          "text": "내가 세럼을 바르고 잤거든? 촉촉하니 좋아"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "kind": "original_dialogue",
+          "text": "아이돌들 파우치에 이 세럼이 다 들어있어요!"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "kind": "added_narrator",
+          "text": "실제로 피부 좋기로 유명한 소유도 홈케어로 세럼팩 꾸준히 해준다고..."
+        },
+        {
+          "start": 36,
+          "end": 38,
+          "kind": "original_dialogue",
+          "text": "팩을 진짜 거의 1일 1팩을 노력하고 있어"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "kind": "added_narrator",
+          "text": "근데 팩 떼고 난 피부광 보면 왜 연예인들이 이거 찾는지 바로 이해됨"
+        }
+      ],
+      "confidence": "high",
+      "cautions": [
+        "여러 연예인 및 뷰티 크리에이터의 쇼츠/유튜브 영상이 짜집기되어 있어 개별 원본 대화 출처가 다양함"
+      ]
     },
     {
       "code": "m18",
@@ -623,7 +796,7 @@
       "duplicate_of": null,
       "status": "unknown",
       "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
+      "reason": "게시물 특정 불가(계정 릴스 탭만 기록). 개별 게시물 주소가 남아 있지 않아 원본 영상을 확보하지 못했다. 있음·없음 어느 쪽에도 합산하지 않는다.",
       "evidence_level": "미확인",
       "segments": []
     },
@@ -651,8 +824,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "De9XeThphv5-review.json"
+      "cautions": []
     },
     {
       "code": "Dcz7bkiRBJn",
@@ -672,8 +844,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "Dcz7bkiRBJn-review.json"
+      "cautions": []
     },
     {
       "code": "Dev7RPNBIHl",
@@ -693,8 +864,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "Dev7RPNBIHl-review.json"
+      "cautions": []
     },
     {
       "code": "DeqyLvzS9KD",
@@ -714,8 +884,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "DeqyLvzS9KD-review.json"
+      "cautions": []
     },
     {
       "code": "850513171333205",
@@ -728,9 +897,7 @@
       "evidence_level": "전체 원음·영상 AI 분석 + 의심 구간 상세 재검증 + 프레임·대본 대조",
       "segments": [],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "850513171333205-review.json",
-      "review_evidence": "850513171333205-detail-review.json"
+      "cautions": []
     },
     {
       "code": "2377215103087916",
@@ -762,8 +929,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "2377215103087916-audio.json"
+      "cautions": []
     },
     {
       "code": "1071687752531807",
@@ -789,8 +955,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "1071687752531807-review.json"
+      "cautions": []
     },
     {
       "code": "1154881213770416",
@@ -810,8 +975,7 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "1154881213770416-review.json"
+      "cautions": []
     },
     {
       "code": "DexwrgkyS0i",
@@ -837,30 +1001,77 @@
         }
       ],
       "confidence": "high",
-      "cautions": [],
-      "evidence_file": "DexwrgkyS0i-review.json"
+      "cautions": []
     },
     {
       "code": "De1KvwAJ1ft",
       "name": "박미선 다이소 리뷰 · 놀라는 반응",
       "source": "https://www.instagram.com/reel/De1KvwAJ1ft/",
       "duplicate_of": null,
-      "status": "unknown",
-      "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
-      "evidence_level": "미확인",
-      "segments": []
+      "status": "yes",
+      "interleaved": true,
+      "reason": "4.5–7초 제품명(‘투엑스 인텐시브 투엑스 크림’) 한 구절만 출연자의 현장 반응과 다른 음색·녹음 상태로 들리고, 앞뒤로 매장 현장 대화가 이어진다. 전체 음성 단독 분석은 이 2초를 놓쳐 없음으로 판정했으나 전체 시청각 분석과 해당 구간 음성 비교, 구간별 주파수 측정이 별도 음성을 뒷받침해 있음(확신도 중간)으로 둔다. 원본 채널 편집에서 들어간 음성인지 광고 재편집에서 들어간 음성인지는 구분하지 못했다.",
+      "evidence_level": "전체 원음·영상 AI 분석 + 음성 단독 재분석(불일치) + 해당 구간 음성 비교·주파수 측정 + 자동 전사 대조",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4.5,
+          "kind": "original_dialogue",
+          "text": "아 이게 그거구나 이게 다이소에 들어와있어?"
+        },
+        {
+          "start": 4.5,
+          "end": 7,
+          "kind": "added_narrator",
+          "text": "투엑스 인텐시브 투엑스 크림"
+        },
+        {
+          "start": 7,
+          "end": 39,
+          "kind": "original_dialogue",
+          "text": "김정문 알로에 들어와있어? 나 김정문 알로에 거의 10년 됐는데"
+        }
+      ],
+      "confidence": "medium",
+      "cautions": []
     },
     {
       "code": "DesoCmmy6jF",
       "name": "메디큐브 홀리데이 세트 · 제품 사용 접사",
       "source": "https://www.instagram.com/reel/DesoCmmy6jF/",
       "duplicate_of": null,
-      "status": "unknown",
-      "interleaved": null,
-      "reason": "전체 원본 영상이 없어 음성 미확인.",
-      "evidence_level": "미확인",
-      "segments": []
+      "status": "no",
+      "interleaved": false,
+      "reason": "영상에서 추출된 음성은 드라마/컨텐츠 원본 현장 대사('Close your eyes and breathe. I smell snow...')와 이후 이어지는 노래 및 배경 음악만으로 이루어져 있습니다. 별도의 편집자/광고주 제3자 나레이션은 없습니다.",
+      "evidence_level": "전체 영상·원음의 AI 분석 · 사람의 직접 청취 아님",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "kind": "original_dialogue",
+          "text": "Close your eyes and breathe"
+        },
+        {
+          "start": 3,
+          "end": 5,
+          "kind": "original_dialogue",
+          "text": "I smell snow"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "kind": "original_dialogue",
+          "text": "That means it's here"
+        },
+        {
+          "start": 7,
+          "end": 16,
+          "kind": "music_only",
+          "text": "Snowing down I'm watching it fall"
+        }
+      ],
+      "confidence": "high",
+      "cautions": []
     },
     {
       "code": "Ddu_hqfhijX",
