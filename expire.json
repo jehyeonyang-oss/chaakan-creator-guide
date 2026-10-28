@@ -82,5 +82,9 @@
   {
     "path": "bacheeke.kr/feed",
     "expires": "2026-12-14T15:00:00Z"
+  },
+  {
+    "path": "curin_arc/boots",
+    "expires": "2026-11-28T15:00:00Z"
   }
 ]
