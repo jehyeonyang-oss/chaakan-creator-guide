@@ -369,10 +369,10 @@
       "sentDate": "",
       "postDate": "",
       "deliveredDate": "2026-10-26",
-      "detail": "지그재그 주문 · 카카오T당일 10/26 배송 완료",
-      "schedule": "최종본 확정 · 업로드일 조율 중",
+      "detail": "지그재그 주문 · 카카오T당일 10/26 배송 완료 · 10/29 woong2610(20%, ~11/20)·UTM 링크 전달",
+      "schedule": "이번 주~다음 주 중 업로드 (반응 좋은 요일·시간대)",
       "scheduleType": "협의 중",
-      "next": "업로드일 확정",
+      "next": "업로드일 회신 → 자동DM 화면 확인 · 경품 2켤레 당첨자 정보 받으면 발송",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/woongyange/edit/",
       "expires": "2026-11-15T00:00:00+09:00",
       "fee": "35만 (2차 1개월 포함)",
@@ -793,5 +793,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-10-29T13:39:54.941223+00:00"
+  "syncedAt": "2026-10-29T13:49:54.352351+00:00"
 }
