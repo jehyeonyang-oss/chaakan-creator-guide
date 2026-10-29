@@ -37,7 +37,7 @@
   const ymd = d => d ? esc(d.slice(5).replace('-','/')) : '미등록';
   let busy=false, timer;
   function render(data) {
-    if(![1,2].includes(data.schemaVersion) || !Array.isArray(data.creators) || data.creators.length>20 || !Number.isFinite(Date.parse(data.syncedAt))) throw Error('Invalid data');
+    if(![1,2].includes(data.schemaVersion) || !Array.isArray(data.creators) || data.creators.length>40 || !Number.isFinite(Date.parse(data.syncedAt))) throw Error('Invalid data');
     const rows=data.creators;
     const table=[], byId=new Map();
     for(const [i,c] of rows.entries()) {
