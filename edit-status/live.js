@@ -10,6 +10,9 @@
   const trackOf = c => TRACKS.includes(c.track) ? c.track : '키높이'; // v1 data was 키높이 only
   const trackTag = c => `<span class="tag track">${esc(trackOf(c))}</span>`;
   const ig = a => `https://www.instagram.com/${encodeURIComponent(a)}/`;
+  // 설라노 추천 리스트(10/20·10/22·10/28) 계정 = research/설라노_*
+  const SULLANO=new Set(['_youarchive','bye0nduck','dal__soba','dlghdtj','mazoolook','mmona.i','salt.yarchive','skarndthf','snugheaven_','woongyange','yachiichii','daily__inn','4.37es','_axxio_x','curin_arc','eaouoi','i0c0i','m.xeull','memo_closet','ssumokki','thxxim','yurimyue','leeeshisi','ott.erss','ooni_oh','ehe_01001','z00_daa','univloginsnu']);
+  const sul = a => SULLANO.has(a) ? ' <span class="tag sullano">설라노</span>' : '';
   // Internal page: guides always open with ?staff=1; the deadline only describes the creator link.
   const staff = url => { const u=new URL(url); u.searchParams.set('staff','1'); return u.href; };
   const md = (t, time) => { const k=new Date(t+9*3600000), p=v=>String(v).padStart(2,'0'); return `${k.getUTCMonth()+1}/${k.getUTCDate()}`+(time?` ${p(k.getUTCHours())}:${p(k.getUTCMinutes())}`:''); };
@@ -42,7 +45,7 @@
       const record=safe(c.recordUrl,'seeding-a700a.web.app','/creator-review.html');
       const post=safe(c.postUrl,'www.instagram.com','/reel/') || safe(c.postUrl,'www.instagram.com','/p/');
       const n=i+1;
-      table.push(`<tr><td><a href="#creator-${n}">${esc(c.name)} ↗</a></td><td>${trackTag(c)}</td><td>${esc(c.product)}</td><td>${esc(c.stage)}</td><td>${tag(c.scheduleType)} ${esc(c.schedule)}</td></tr>`);
+      table.push(`<tr><td><a href="#creator-${n}">${esc(c.name)} ↗</a>${sul(c.account)}</td><td>${trackTag(c)}</td><td>${esc(c.product)}</td><td>${esc(c.stage)}</td><td>${tag(c.scheduleType)} ${esc(c.schedule)}</td></tr>`);
       byId.set(sidOf(c.recordUrl),{c,guide,record,post});
     }
     el('status-rows').innerHTML=table.join('')||'<tr><td colspan="5">진행 중인 캠페인이 없습니다.</td></tr>';
@@ -59,7 +62,7 @@
     const contacts=data.schemaVersion===2&&Array.isArray(data.contacts)?data.contacts.slice(0,30):null;
     el('contact-list').innerHTML=!contacts?'<p class="table-note">데이터 연결 중</p>':!contacts.length?'<p class="table-note">컨택 중 없음</p>':TRACKS.map(t=>{
       const items=contacts.filter(c=>c.track===t);if(!items.length)return '';
-      return `<div class="contact-group"><h3>${esc(t)} <small>${items.length}명</small></h3><ul>${items.map(c=>{const record=safe(c.recordUrl,'seeding-a700a.web.app','/creator-review.html');return `<li><a href="${ig(c.account)}" target="_blank" rel="noopener">@${esc(c.account)} ↗</a><span class="tag track">${esc(t)}</span>${record?`<a class="contact-record" href="${esc(record)}" target="_blank" rel="noopener">기록 ↗ <span>로그인 필요</span></a>`:''}</li>`}).join('')}</ul></div>`;
+      return `<div class="contact-group"><h3>${esc(t)} <small>${items.length}명</small></h3><ul>${items.map(c=>{const record=safe(c.recordUrl,'seeding-a700a.web.app','/creator-review.html');return `<li><a href="${ig(c.account)}" target="_blank" rel="noopener">@${esc(c.account)} ↗</a>${sul(c.account)}<span class="tag track">${esc(t)}</span>${record?`<a class="contact-record" href="${esc(record)}" target="_blank" rel="noopener">기록 ↗ <span>로그인 필요</span></a>`:''}</li>`}).join('')}</ul></div>`;
     }).join('')||'<p class="table-note">컨택 중 없음</p>';
     el('count-dates').textContent=rows.filter(c=>c.postDate&&!['종료','게시완료'].includes(c.status)).length+'명';
     el('count-guides').textContent=rows.filter(c=>safe(c.guideUrl,'jehyeonyang-oss.github.io','/chaakan-creator-guide/')).length+'건';
