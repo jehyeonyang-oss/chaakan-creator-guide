@@ -49,12 +49,16 @@
       byId.set(sidOf(c.recordUrl),{c,guide,record,post});
     }
     el('status-rows').innerHTML=table.join('')||'<tr><td colspan="5">진행 중인 캠페인이 없습니다.</td></tr>';
-    // Config columns (stage, schedule, next, detail) stay as built; only live cells are refreshed.
+    // next/detail stay as built; stage, schedule and live cells are refreshed from data.json.
     document.querySelectorAll('#creator-cards tr[data-sid]').forEach(tr=>{
       const x=byId.get(tr.dataset.sid);tr.hidden=!x;if(!x)return;
       const {c,guide,record,post}=x;
       if(tr.classList.contains('creator-detail')){const slot=tr.querySelector('.engagement-slot');if(slot)slot.innerHTML=engagement(c);return;}
-      tr.querySelector('.live-status').innerHTML=`<b>${esc(c.status||'—')}</b><small>발송 ${ymd(c.sentDate)} · 게시 ${ymd(c.postDate)}</small>${post?`<a class="record" href="${esc(post)}" target="_blank" rel="noopener">게시물 보기 ↗</a>`:''}`;
+      // stage/schedule come from data.json (config text, overridden by courier delivery status in the sync).
+      const st=tr.querySelector('.stage'), sc=tr.querySelector('.sched');
+      if(st&&c.stage)st.innerHTML=`<b>${esc(c.stage)}</b>`;
+      if(sc&&c.schedule)sc.innerHTML=`${tag(c.status==='게시완료'?'완료':c.scheduleType)} ${esc(c.schedule)}`;
+      tr.querySelector('.live-status').innerHTML=`<b>${esc(c.status||'—')}</b><small>발송 ${ymd(c.sentDate)}${c.deliveredDate?` · 수령 ${ymd(c.deliveredDate)}`:''} · 게시 ${ymd(c.postDate)}</small>${post?`<a class="record" href="${esc(post)}" target="_blank" rel="noopener">게시물 보기 ↗</a>`:''}`;
       tr.querySelector('.links').innerHTML=`${guide?`<a class="guide" data-guide="${esc(guide)}" href="${esc(staff(guide))}" target="_blank" rel="noopener">촬영 가이드 보기 ↗</a><small class="expiry">${esc(expiryText(c.expires))}</small>`:'<a class="guide expired" aria-disabled="true">가이드 미연결</a><small class="expiry">가이드 링크 미등록</small>'}${record?`<a class="record" href="${esc(record)}" target="_blank" rel="noopener">대시보드 기록 ↗ <span>로그인 필요</span></a>`:''}`;
     });
     el('count-creators').textContent=rows.length+'명';
