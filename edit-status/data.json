@@ -533,6 +533,37 @@
       },
       "postUrl": "",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261023_daily__inn"
+    },
+    {
+      "name": "니들",
+      "track": "26FW",
+      "account": "kxxyounghxx",
+      "product": "디케인 폴딩 무스탕 롱부츠 블랙 240",
+      "content": "유튜브 부츠 모음 하울 · 5번째 소개(05:23~06:24)",
+      "stage": "게시 완료",
+      "status": "게시완료",
+      "sentDate": "2026-10-16",
+      "postDate": "2026-10-23",
+      "detail": "제품제공(무가) 단순선물 · 10/16 일반택배 발송 · 10/23 유튜브 게시",
+      "schedule": "10/23 게시 완료",
+      "scheduleType": "완료",
+      "next": "게시 후 성과 확인",
+      "guideUrl": "",
+      "expires": "",
+      "fee": "무가 (제품제공)",
+      "productCost": null,
+      "engagement": [],
+      "phoneTrackingReady": false,
+      "engagementBaseline": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "actualCollectedAt": null
+      },
+      "postUrl": "https://www.youtube.com/watch?v=VDMkpUBpl50",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=pkANQHPaAUggOeAD3Bp7"
     }
   ],
   "contacts": [
@@ -621,6 +652,5 @@
       "track": "키높이",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
-  ],
-  "syncedAt": "2026-10-29T02:46:42.566529+00:00"
+  ]
 }

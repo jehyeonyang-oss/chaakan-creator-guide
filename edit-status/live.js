@@ -43,7 +43,7 @@
     for(const [i,c] of rows.entries()) {
       const guide=safe(c.guideUrl,'jehyeonyang-oss.github.io','/chaakan-creator-guide/');
       const record=safe(c.recordUrl,'seeding-a700a.web.app','/creator-review.html');
-      const post=safe(c.postUrl,'www.instagram.com','/reel/') || safe(c.postUrl,'www.instagram.com','/p/');
+      const post=safe(c.postUrl,'www.instagram.com','/reel/') || safe(c.postUrl,'www.instagram.com','/p/') || safe(c.postUrl,'www.youtube.com','/watch');
       const n=i+1;
       table.push(`<tr><td><a href="#creator-${n}">${esc(c.name)} ↗</a>${sul(c.account)}</td><td>${trackTag(c)}</td><td>${esc(c.product)}</td><td>${esc(c.stage)}</td><td>${tag(c.scheduleType)} ${esc(c.schedule)}</td></tr>`);
       byId.set(sidOf(c.recordUrl),{c,guide,record,post});
