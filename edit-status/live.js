@@ -45,7 +45,7 @@
       const record=safe(c.recordUrl,'seeding-a700a.web.app','/creator-review.html');
       const post=safe(c.postUrl,'www.instagram.com','/reel/') || safe(c.postUrl,'www.instagram.com','/p/') || safe(c.postUrl,'www.youtube.com','/watch');
       const n=i+1;
-      table.push(`<tr><td><a href="#creator-${n}">${esc(c.name)} ↗</a>${sul(c.account)}</td><td>${trackTag(c)}</td><td>${esc(c.product)}</td><td>${esc(c.stage)}</td><td>${tag(c.scheduleType)} ${esc(c.schedule)}</td></tr>`);
+      table.push(`<tr><td><a href="#creator-${n}">${esc(c.name)} ↗</a>${sul(c.account)}</td><td>${trackTag(c)}</td><td>${esc(c.product)}</td><td>${esc(c.stage)}</td><td>${tag(c.status==='게시완료'?'완료':c.scheduleType)} ${esc(c.schedule)}</td></tr>`);
       byId.set(sidOf(c.recordUrl),{c,guide,record,post});
     }
     el('status-rows').innerHTML=table.join('')||'<tr><td colspan="5">진행 중인 캠페인이 없습니다.</td></tr>';
