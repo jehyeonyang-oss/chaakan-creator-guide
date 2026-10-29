@@ -11,7 +11,7 @@
   const trackTag = c => `<span class="tag track">${esc(trackOf(c))}</span>`;
   const ig = a => `https://www.instagram.com/${encodeURIComponent(a)}/`;
   // 설라노 추천 리스트(10/20·10/22·10/28) 계정 = research/설라노_*
-  const SULLANO=new Set(['_youarchive','bye0nduck','dal__soba','dlghdtj','mazoolook','mmona.i','salt.yarchive','skarndthf','snugheaven_','woongyange','yachiichii','daily__inn','4.37es','_axxio_x','curin_arc','eaouoi','i0c0i','m.xeull','memo_closet','ssumokki','thxxim','yurimyue','leeeshisi','ott.erss','ooni_oh','ehe_01001','z00_daa','univloginsnu']);
+  const SULLANO=new Set(['_youarchive','bye0nduck','dal__soba','dlghdtj','mazoolook','mmona.i','salt.yarchive','skarndthf','snugheaven_','woongyange','yachiichii','daily__inn','4.37es','_axxio_x','curin_arc','eaouoi','i0c0i','m.xeull','memo_closet','ssumokki','thxxim','yurimyue','leeeshisi','ott.erss','ooni_oh','ehe_01001','z00_daa','univloginsnu','kxxyounghxx']);
   const sul = a => SULLANO.has(a) ? ' <span class="tag sullano">설라노</span>' : '';
   // Internal page: guides always open with ?staff=1; the deadline only describes the creator link.
   const staff = url => { const u=new URL(url); u.searchParams.set('staff','1'); return u.href; };
