@@ -1,38 +1,12 @@
 {
-  "collected_at": "2026-10-29T09:35:02+09:00",
+  "collected_at": "2026-10-29T23:46:27+09:00",
   "today": "2026-10-29",
   "start": "2026-10-22",
   "accounts": [
     {
       "id": "984589474000645",
-      "label": "CCFM 1계정 · 팩클렌저",
+      "label": "CCFM 1계정",
       "ads": [
-        {
-          "id": "120251480071790185",
-          "name": "세로_팩클렌저_화이트헤드_김경빈_M20261019_aict_vif_fb_261026_01",
-          "active": true,
-          "campaign": "CCFM_팩클렌저_ABO_29_260903(페이셜)",
-          "daily": [
-            {
-              "date": "2026-10-28",
-              "spend": 42807.0,
-              "impressions": 591,
-              "clicks": 15,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-29",
-              "spend": 21219.0,
-              "impressions": 204,
-              "clicks": 6,
-              "purchases": 1.0,
-              "revenue": 32000.0,
-              "revenue_computed": false
-            }
-          ]
-        },
         {
           "id": "120251345480410185",
           "name": "세로_팩클렌저_쥐젖비립종_김경빈_M20261007_aict_vif_fb_261016_05",
@@ -145,152 +119,39 @@
               "revenue_computed": false
             }
           ]
+        },
+        {
+          "id": "120251480071790185",
+          "name": "세로_팩클렌저_화이트헤드_김경빈_M20261019_aict_vif_fb_261026_01",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-28",
+              "spend": 42807.0,
+              "impressions": 591,
+              "clicks": 15,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-29",
+              "spend": 34116.0,
+              "impressions": 330,
+              "clicks": 15,
+              "purchases": 1.0,
+              "revenue": 32000.0,
+              "revenue_computed": false
+            }
+          ]
         }
       ]
     },
     {
       "id": "1752054442892598",
-      "label": "CCFM 2계정 · 기미크림",
+      "label": "CCFM 2계정",
       "ads": [
-        {
-          "id": "52635435453147",
-          "name": "세로_멜라크림_외국인극찬_김경빈_M20261020_vif_fb_2601028_02",
-          "active": true,
-          "campaign": "CCFM_팩클렌저_CBO_261028",
-          "daily": [
-            {
-              "date": "2026-10-28",
-              "spend": 13049.0,
-              "impressions": 159,
-              "clicks": 2,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-29",
-              "spend": 8051.0,
-              "impressions": 83,
-              "clicks": 2,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52635434645947",
-          "name": "세로_멜라크림_아빠선물_김경빈_M20261006_aict_vif_fb_261028_01",
-          "active": true,
-          "campaign": "CCFM_팩클렌저_CBO_261028",
-          "daily": [
-            {
-              "date": "2026-10-28",
-              "spend": 3837.0,
-              "impressions": 50,
-              "clicks": 2,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-29",
-              "spend": 9728.0,
-              "impressions": 78,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52635431424547",
-          "name": "세로_멜라크림_외국인극찬_김경빈_M20261020_vim_fb_261028_01",
-          "active": true,
-          "campaign": "CCFM_기미크림_CBO_261001",
-          "daily": [
-            {
-              "date": "2026-10-28",
-              "spend": 14454.0,
-              "impressions": 207,
-              "clicks": 6,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-29",
-              "spend": 5032.0,
-              "impressions": 62,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52635431468947",
-          "name": "세로_멜라크림_아빠선물_김경빈_M20261006_aict_vim_fb_261028_02",
-          "active": true,
-          "campaign": "CCFM_기미크림_CBO_261001",
-          "daily": [
-            {
-              "date": "2026-10-28",
-              "spend": 14482.0,
-              "impressions": 232,
-              "clicks": 2,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-29",
-              "spend": 9981.0,
-              "impressions": 147,
-              "clicks": 7,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
-        {
-          "id": "52634915673547",
-          "name": "세로_멜라크림_등산기미_김경빈_M20261002_aict_vim_fb_261026_01",
-          "active": true,
-          "campaign": "CCFM_기미크림_CBO_261001",
-          "daily": [
-            {
-              "date": "2026-10-26",
-              "spend": 1991.0,
-              "impressions": 19,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-27",
-              "spend": 929.0,
-              "impressions": 15,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-28",
-              "spend": 4939.0,
-              "impressions": 34,
-              "clicks": 2,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
         {
           "id": "52634915686347",
           "name": "세로_멜라크림_남편기미_김경빈_M20261001_aict_vim_fb_261026_02",
@@ -326,14 +187,138 @@
             },
             {
               "date": "2026-10-29",
-              "spend": 121.0,
-              "impressions": 4,
+              "spend": 1638.0,
+              "impressions": 23,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ],
+          "current_product_no": "17",
+          "current_product_label": "기미크림",
+          "product_checked_at": "2026-10-29T23:46:27+09:00",
+          "product_basis": "current_creative_destination"
+        },
+        {
+          "id": "52635748076147",
+          "name": "세로_멜라크림_토닝시너지_김경빈_M20261026_aict_vim_fb_261029_01",
+          "active": true,
+          "campaign": "CCFM_기미크림_CBO_261001",
+          "daily": [
+            {
+              "date": "2026-10-29",
+              "spend": 96.0,
+              "impressions": 5,
               "clicks": 0,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
             }
-          ]
+          ],
+          "current_product_no": "17",
+          "current_product_label": "기미크림",
+          "product_checked_at": "2026-10-29T23:46:27+09:00",
+          "product_basis": "current_creative_destination"
+        },
+        {
+          "id": "52635610507947",
+          "name": "세로_팩클렌저_즉각탈락_김경빈_M20261027_aict_vif_fb_2601028_03",
+          "active": true,
+          "campaign": "CCFM_팩클렌저_CBO_261028",
+          "daily": [
+            {
+              "date": "2026-10-29",
+              "spend": 6503.0,
+              "impressions": 65,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ],
+          "current_product_no": "28",
+          "current_product_label": "팩클렌저",
+          "product_checked_at": "2026-10-29T23:46:27+09:00",
+          "product_basis": "current_creative_destination"
+        },
+        {
+          "id": "52635434645947",
+          "name": "세로_팩클렌저_쥐젖레이저_김경빈_M20261027_aict_vif_fb_261028_01",
+          "active": true,
+          "campaign": "CCFM_팩클렌저_CBO_261028",
+          "daily": [
+            {
+              "date": "2026-10-28",
+              "spend": 3837.0,
+              "impressions": 50,
+              "clicks": 2,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-29",
+              "spend": 16749.0,
+              "impressions": 159,
+              "clicks": 3,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ],
+          "current_product_no": "28",
+          "current_product_label": "팩클렌저",
+          "product_checked_at": "2026-10-29T23:46:27+09:00",
+          "product_basis": "current_creative_destination"
+        },
+        {
+          "id": "52634915673547",
+          "name": "세로_멜라크림_등산기미_김경빈_M20261002_aict_vim_fb_261026_01",
+          "active": true,
+          "campaign": "CCFM_기미크림_CBO_261001",
+          "daily": [
+            {
+              "date": "2026-10-26",
+              "spend": 1991.0,
+              "impressions": 19,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-27",
+              "spend": 929.0,
+              "impressions": 15,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-28",
+              "spend": 4939.0,
+              "impressions": 34,
+              "clicks": 2,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-29",
+              "spend": 74.0,
+              "impressions": 1,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ],
+          "current_product_no": "17",
+          "current_product_label": "기미크림",
+          "product_checked_at": "2026-10-29T23:46:27+09:00",
+          "product_basis": "current_creative_destination"
         },
         {
           "id": "52628470402347",
@@ -406,14 +391,18 @@
             },
             {
               "date": "2026-10-29",
-              "spend": 111.0,
-              "impressions": 2,
+              "spend": 522.0,
+              "impressions": 12,
               "clicks": 0,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
             }
-          ]
+          ],
+          "current_product_no": "17",
+          "current_product_label": "기미크림",
+          "product_checked_at": "2026-10-29T23:46:27+09:00",
+          "product_basis": "current_creative_destination"
         },
         {
           "id": "52632401881747",
@@ -475,7 +464,11 @@
               "revenue": 0,
               "revenue_computed": false
             }
-          ]
+          ],
+          "current_product_no": "17",
+          "current_product_label": "기미크림",
+          "product_checked_at": "2026-10-29T23:46:27+09:00",
+          "product_basis": "current_creative_destination"
         },
         {
           "id": "52629600526747",
@@ -548,14 +541,18 @@
             },
             {
               "date": "2026-10-29",
-              "spend": 389.0,
-              "impressions": 3,
-              "clicks": 0,
+              "spend": 696.0,
+              "impressions": 7,
+              "clicks": 1,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
             }
-          ]
+          ],
+          "current_product_no": "17",
+          "current_product_label": "기미크림",
+          "product_checked_at": "2026-10-29T23:46:27+09:00",
+          "product_basis": "current_creative_destination"
         },
         {
           "id": "52621236514547",
@@ -1075,6 +1072,84 @@
               "spend": 27045.0,
               "impressions": 334,
               "clicks": 10,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
+          "id": "52635431424547",
+          "name": "세로_멜라크림_외국인극찬_김경빈_M20261020_vim_fb_261028_01",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-28",
+              "spend": 14454.0,
+              "impressions": 207,
+              "clicks": 6,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-29",
+              "spend": 10842.0,
+              "impressions": 132,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
+          "id": "52635431468947",
+          "name": "세로_멜라크림_아빠선물_김경빈_M20261006_aict_vim_fb_261028_02",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-28",
+              "spend": 14504.0,
+              "impressions": 233,
+              "clicks": 2,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-29",
+              "spend": 19884.0,
+              "impressions": 325,
+              "clicks": 9,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
+          "id": "52635435453147",
+          "name": "세로_팩클렌저_쥐젖뿌리_김경빈_M20261027_aict_vif_fb_2601028_02",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-28",
+              "spend": 13049.0,
+              "impressions": 159,
+              "clicks": 2,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-29",
+              "spend": 24654.0,
+              "impressions": 314,
+              "clicks": 5,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
