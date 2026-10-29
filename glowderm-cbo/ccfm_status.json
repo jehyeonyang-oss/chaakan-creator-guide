@@ -1,5 +1,7 @@
 {
   "attempted_at": "2026-10-29T23:46:27+09:00",
   "status": "collected",
-  "publish_status": "local_only"
+  "publish_status": "success",
+  "published_at": "2026-10-30T00:03:55+09:00",
+  "published_commit": "678d0ead5ab0f9cf166a42b33f09c2ebef71835b"
 }

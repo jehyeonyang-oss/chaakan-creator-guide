@@ -130,7 +130,15 @@ function drawScene(slot){
   const column=$('[data-slot="'+slot+'"]'),id=$('#scene-'+slot).value,r=byId.get(id);if(!r)return;
   const desc=column.querySelector('.scene-description');
   desc.textContent='ROAS '+fmtRatio(r.roas)+' · 링크 CPC '+(typeof r.cpc==='number'?'₩'+Math.round(r.cpc).toLocaleString('ko-KR'):'미확보')+' · 구매 '+fmtNum(r.purchases)+' · 전체 재생 '+fmtNum(r.plays)+' / 3초 '+fmtNum(r.plays3)+'\n'+r.period_label;
-  const img=column.querySelector('.scene-strip');img.src='scene_frames/'+r.id+'.jpg';img.alt=r.title+' · 0~5초 장면';
+  const img=column.querySelector('.scene-strip'),imageButton=column.querySelector('.scene-image-button');
+  let imageStatus=column.querySelector('.scene-load-status');
+  if(!imageStatus){imageStatus=document.createElement('p');imageStatus.className='scene-load-status';imageStatus.setAttribute('role','status');column.querySelector('.scene-scroll').before(imageStatus);}
+  imageButton.disabled=true;img.hidden=true;imageStatus.hidden=false;imageStatus.textContent='0~5초 장면을 불러오는 중…';
+  const source='scene_frames/'+r.id+'.jpg';column.dataset.sceneId=id;
+  const preload=new Image();
+  preload.onload=()=>{if(column.dataset.sceneId!==id)return;img.src=source;img.alt=r.title+' · 0~5초 장면';img.hidden=false;imageButton.disabled=false;imageStatus.hidden=true;};
+  preload.onerror=()=>{if(column.dataset.sceneId!==id)return;imageStatus.textContent='장면 이미지를 불러오지 못했습니다. 아래 영상에서 같은 시점을 확인하거나 소재를 다시 선택해 주세요.';};
+  preload.src=source;
   const link=column.querySelector('.scene-play');link.replaceChildren();
   const button=document.createElement('button');button.type='button';button.textContent='영상 처음부터 보기 ▶';button.addEventListener('click',()=>openVideo(id));link.append(button);
 }
