@@ -1,7 +1,4 @@
 {
-  "attempted_at": "2026-10-29T23:46:27+09:00",
-  "status": "collected",
-  "publish_status": "success",
-  "published_at": "2026-10-30T01:19:16+09:00",
-  "published_commit": "ecd045dd739e55c5c8ba03cd1de321c397728b2c"
+  "attempted_at": "2026-10-30T09:35:02+09:00",
+  "status": "collected"
 }
