@@ -1,0 +1,707 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-30T17:44:50.082866+09:00",
+  "sourceLabel": "서울링크 키높이 진행 기록",
+  "updateNote": "업무 기록을 대조해 확인한 자료입니다. 일정 변경은 재확인 후 반영합니다.",
+  "items": [
+    {
+      "id": "kh:__sil_0",
+      "name": "영실",
+      "account": "__sil_0",
+      "product": "카민스 롱부츠 블랙 225",
+      "fee": "미확인",
+      "status": "발송완료",
+      "schedule": "11/2~6 업로드 예정",
+      "scheduleType": "예정",
+      "next": "초안·게시 일정 확인 · 단면 샘플 발송 완료",
+      "collaborationType": "유가",
+      "events": [
+        {
+          "date": "2026-11-02",
+          "kind": "업로드",
+          "detail": "11/2~6 업로드 예정",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:hee__i",
+      "name": "가희",
+      "account": "hee__i",
+      "product": "카민스 롱부츠 블랙 230",
+      "fee": "미확인",
+      "status": "발송완료",
+      "schedule": "11/2~6 업로드 예정",
+      "scheduleType": "예정",
+      "next": "초안·게시 일정 확인 · 단면 샘플 10/28 도착 확인",
+      "collaborationType": "유가",
+      "events": [
+        {
+          "date": "2026-11-02",
+          "kind": "업로드",
+          "detail": "11/2~6 업로드 예정",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:hour.glass__",
+      "name": "모래",
+      "account": "hour.glass__",
+      "product": "카민스 롱부츠 블랙 230",
+      "fee": "25만 (원고 20만 + 2차 5만)",
+      "status": "발송완료",
+      "schedule": "초안 11/5 · 게시 11/9~13",
+      "scheduleType": "예정",
+      "next": "11/5 초안 확인 · 단면 샘플 10/28 발송",
+      "collaborationType": "유가",
+      "events": [
+        {
+          "date": "2026-11-05",
+          "kind": "초안",
+          "detail": "초안 전달 예정",
+          "certainty": "예정"
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "업로드",
+          "detail": "11/9~13 게시 예정",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": "https://seoul-link.github.io/chaakan-guide/kino/k4114e3d217/"
+    },
+    {
+      "id": "kh:soeunsi",
+      "name": "소은",
+      "account": "soeunsi",
+      "product": "카민스 롱부츠 블랙 235",
+      "fee": "150만 (대표 승인 기록 · 세부 조건 확인)",
+      "status": "초안 수정 중",
+      "schedule": "게시 11/23~27 · 수정본 이번 주말 예정",
+      "scheduleType": "예정",
+      "next": "단면 컷 수정본 확인 · 수령한 샘플 종류 확인 중",
+      "collaborationType": "유가",
+      "events": [
+        {
+          "date": "2026-11-23",
+          "kind": "업로드",
+          "detail": "11/23~27 게시 예정",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:binyu.11",
+      "name": "비뉴",
+      "account": "binyu.11",
+      "product": "카민스 롱부츠 블랙 250",
+      "fee": "미확인",
+      "status": "발송완료",
+      "schedule": "초안 11/5 · 게시 11/9~13",
+      "scheduleType": "예정",
+      "next": "11/5 초안 확인 · 단면 샘플 10/30 직접 발송 기록",
+      "collaborationType": "유가",
+      "events": [
+        {
+          "date": "2026-10-26",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-05",
+          "kind": "초안",
+          "detail": "초안 전달 예정",
+          "certainty": "예정"
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "업로드",
+          "detail": "11/9~13 게시 예정",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:hi_soooooo",
+      "name": "희수",
+      "account": "hi_soooooo",
+      "product": "카민스 롱부츠 블랙 235",
+      "fee": "12만 (원고 5만 + 2차 7만 · 세전 · 60일)",
+      "status": "발송완료",
+      "schedule": "3차로 이동 · 초안 11/12 · 게시 11/16~20",
+      "scheduleType": "예정",
+      "next": "11/12 초안 확인 · 회수 단면 샘플 전달 일정 확인",
+      "collaborationType": "유가",
+      "events": [
+        {
+          "date": "2026-11-12",
+          "kind": "초안",
+          "detail": "초안 전달 예정",
+          "certainty": "예정"
+        },
+        {
+          "date": "2026-11-16",
+          "kind": "업로드",
+          "detail": "3차 11/16~20 게시 예정",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:yeons_choi",
+      "name": "나연",
+      "account": "yeons_choi",
+      "product": "카민스 롱부츠 블랙 230",
+      "fee": "20만 (광고코드·클린본·2차 포함)",
+      "status": "발송완료",
+      "schedule": "초안 11/19 · 게시 11/23~27",
+      "scheduleType": "예정",
+      "next": "11/19 초안 확인 · 회수 단면 샘플 전달 일정 확인",
+      "collaborationType": "유가",
+      "events": [
+        {
+          "date": "2026-10-26",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-19",
+          "kind": "초안",
+          "detail": "초안 전달 예정",
+          "certainty": "예정"
+        },
+        {
+          "date": "2026-11-23",
+          "kind": "업로드",
+          "detail": "11/23~27 게시 예정",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:zerozero",
+      "name": "zerozero",
+      "account": "",
+      "product": "놀킨 미들부츠 블랙 235",
+      "fee": "미확인",
+      "status": "보류",
+      "schedule": "입고 전 연락 보류 · 기존 게시 예정 11/16~20",
+      "scheduleType": "예정",
+      "next": "11/6 위해 입고 예정 확인 후 국내 도착·게시 일정 재협의",
+      "collaborationType": "유가",
+      "events": [],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:haeun.fit",
+      "name": "하은",
+      "account": "haeun.fit",
+      "product": "카민스 블랙 250 + 풀문 핑크 250",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11월 3주 게시 · 카민스 릴스, 풀문 피드·스토리",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:mkchoi_148cm",
+      "name": "최민경",
+      "account": "mkchoi_148cm",
+      "product": "카민스 블랙 220 + 풀문 카멜 220",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11/17 이후 게시 · 기존 색상 유지",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-17",
+          "kind": "업로드",
+          "detail": "11/17 이후 게시",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:own_deww_",
+      "name": "강이슬",
+      "account": "own_deww_",
+      "product": "풀문 카멜 240",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11월 3주 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:me0.o0.w",
+      "name": "이영주",
+      "account": "me0.o0.w",
+      "product": "풀문 핑크 240",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11월 3~4주 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:_heekong",
+      "name": "임희진",
+      "account": "_heekong",
+      "product": "풀문 카멜 235",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11/15~21 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-15",
+          "kind": "업로드",
+          "detail": "11/15~21 게시",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:m.sehey",
+      "name": "김민견",
+      "account": "m.sehey",
+      "product": "풀문 블랙 230",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "일정 미정",
+      "scheduleType": "미정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:eun_hye_1218",
+      "name": "노은혜",
+      "account": "eun_hye_1218",
+      "product": "카민스 블랙 240",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "일정 미정",
+      "scheduleType": "미정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:yoongz.log",
+      "name": "유은주",
+      "account": "yoongz.log",
+      "product": "카민스 블랙 240",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11월 2주(11/9 주) 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "업로드",
+          "detail": "11/9 주 게시",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:hibyelimi",
+      "name": "임해경",
+      "account": "hibyelimi",
+      "product": "카민스 블랙 230",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11월 둘째~셋째 주 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-28",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:duu_ootd",
+      "name": "노현주",
+      "account": "duu_ootd",
+      "product": "카민스 블랙 240 + 풀문 카멜 240",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "카민스 영상 11/15 전 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:corn_soojung",
+      "name": "권수정",
+      "account": "corn_soojung",
+      "product": "카민스 블랙 225 + 풀문 블랙 225",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11월 둘째 주 촬영 · 게시일 미정",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:jin_vely_h",
+      "name": "박혜진",
+      "account": "jin_vely_h",
+      "product": "카민스 블랙 230",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11/9 주 촬영 · 게시일 미정",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "촬영",
+          "detail": "11/9 주 촬영 예정 · 게시일 미정",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:eien_oshare",
+      "name": "강원지",
+      "account": "eien_oshare",
+      "product": "풀문 카멜 245",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "수령 후 촬영 · 영상 확인 후 11/9~12/4 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "업로드",
+          "detail": "11/9~12/4 중 영상 확인 후 게시",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:147lil_myo",
+      "name": "임효정",
+      "account": "147lil_myo",
+      "product": "풀문 블랙 220",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "수령 후 촬영 · 11/9~12/4 중 게시 주 협의",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "업로드",
+          "detail": "11/9~12/4 중 게시 주 협의",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:p.yon.n",
+      "name": "박인",
+      "account": "p.yon.n",
+      "product": "카민스 블랙 245",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "12/1~4 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-12-01",
+          "kind": "업로드",
+          "detail": "12/1~4 게시",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:mini_me__v",
+      "name": "소이",
+      "account": "mini_me__v",
+      "product": "카민스 블랙 220 + 풀문 블랙 220",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11월 둘째 주 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:153_da_seul",
+      "name": "다슬",
+      "account": "153_da_seul",
+      "product": "카민스 블랙 225 + 풀문 카멜 230",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11월 둘째 주 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:oakjanghouse",
+      "name": "옥장",
+      "account": "oakjanghouse",
+      "product": "카민스 블랙 245 + 풀문 블루 245",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11/17 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-30",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-17",
+          "kind": "업로드",
+          "detail": "11/17 게시 예정",
+          "certainty": "예정"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:_auryns",
+      "name": "송채영",
+      "account": "_auryns",
+      "product": "카민스 블랙 245 + 풀문 블랙 240",
+      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "status": "발송완료",
+      "schedule": "11/23~12/4 게시",
+      "scheduleType": "예정",
+      "next": "초안·정확한 게시일 확인",
+      "collaborationType": "제품 제공",
+      "events": [
+        {
+          "date": "2026-10-30",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        },
+        {
+          "date": "2026-11-23",
+          "kind": "업로드",
+          "detail": "11/23~12/4 게시",
+          "certainty": "예정 범위 · 원문 확인"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:youracccc",
+      "name": "채유라",
+      "account": "youracccc",
+      "product": "풀문 카멜 235",
+      "fee": "15만 (부가세 별도)",
+      "status": "발송완료",
+      "schedule": "일정 미정",
+      "scheduleType": "미정",
+      "next": "초안·게시일 확인",
+      "collaborationType": "유가",
+      "events": [
+        {
+          "date": "2026-10-29",
+          "kind": "제품 발송",
+          "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    }
+  ]
+}

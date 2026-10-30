@@ -8,7 +8,7 @@
   const number = x => typeof x === 'number' && Number.isFinite(x) && x >= 0 ? x : null;
   const fmt = x => number(x) === null ? '미수집' : x.toLocaleString('ko-KR');
   const safeURL = value => {
-    try { const u = new URL(value); return u.protocol === 'https:' && !u.username && !u.password && ['www.instagram.com','instagram.com','www.youtube.com','youtube.com','youtu.be','jehyeonyang-oss.github.io','seeding-a700a.web.app','kangnaan00.github.io'].includes(u.hostname) ? u.href : ''; } catch { return ''; }
+    try { const u = new URL(value); return u.protocol === 'https:' && !u.username && !u.password && ['www.instagram.com','instagram.com','www.youtube.com','youtube.com','youtu.be','jehyeonyang-oss.github.io','seeding-a700a.web.app','kangnaan00.github.io','seoul-link.github.io'].includes(u.hostname) ? u.href : ''; } catch { return ''; }
   };
   const postKey = value => {
     const url = safeURL(value); if (!url) return '';
@@ -34,7 +34,7 @@
   const teamName = team => team === 'mine' ? '양제현' : '서울링크';
   const teamBadge = team => `<span class="u-team-badge ${team === 'seoul' ? 'seoul' : ''}">${teamName(team)}</span>`;
   const embedded = JSON.parse($('content-data')?.textContent || '{"items":[]}');
-  const state = { team:'all', search:'', view:'table', range:'upcoming', mine:[], seoul:[], busy:false, source:{mine:{state:'loading'},seoul:{state:'loading'}} };
+  const state = { team:'all', track:'all', search:'', view:'table', range:'upcoming', mine:[], seoul:[], keyheight:[], busy:false, source:{mine:{state:'loading'},seoul:{state:'loading'},keyheight:{state:'loading'}} };
 
   // Never join by creator handle: the same creator can have different work in each team.
   function performance(c) {
@@ -116,9 +116,19 @@
     return rows;
   }
 
+  function normalizeKeyheight(data) {
+    if (data.schemaVersion !== 1 || !Array.isArray(data.items) || !data.items.length || !Number.isFinite(Date.parse(data.reviewedAt))) throw Error('서울링크 키높이 자료 확인 필요');
+    const ids = new Set();
+    return data.items.map(c => {
+      if (!c.id || !c.name || ids.has(c.id) || !Array.isArray(c.events)) throw Error('키높이 업무 항목 확인 필요');
+      ids.add(c.id);
+      if (c.events.some(e => !date(e.date) || !e.kind)) throw Error('키높이 일정 확인 필요');
+      return {key:'seoul:'+c.id,team:'seoul',track:'키높이',name:c.name,account:c.account||'',product:clean(c.product),content:clean(c.collaborationType),fee:clean(c.fee)||'미확인',status:clean(c.status)||'상태 미확인',statusDetail:'영돈대표 진행',posted:c.status==='게시완료',contact:!!c.contact,schedule:clean(c.schedule)||'일정 미정',scheduleType:clean(c.scheduleType)||'미정',next:clean(c.next)||'다음 할 일 미등록',events:c.events,...performance(c),postUrl:safeURL(c.postUrl),guideUrl:safeURL(c.guideUrl),referenceUrl:safeURL(c.referenceUrl),recordUrl:'',badges:[]};
+    });
+  }
   function filtered() {
     const query = state.search.toLocaleLowerCase();
-    return [...state.mine,...state.seoul].filter(r => (state.team === 'all' || r.team === state.team) && (!query || [r.name,r.account,r.track,r.product,r.content,r.status,r.next,r.fee,teamName(r.team)].join(' ').toLocaleLowerCase().includes(query)));
+    return [...state.mine,...state.seoul,...state.keyheight].filter(r => (state.team === 'all' || r.team === state.team) && (state.track === 'all' || r.track === state.track) && (!query || [r.name,r.account,r.track,r.product,r.content,r.status,r.next,r.fee,teamName(r.team)].join(' ').toLocaleLowerCase().includes(query)));
   }
   function metrics(r) {
     if (!r.measured) return `<span class="u-period">${r.posted ? '미수집' : '성과 미수집'}</span>`;
@@ -128,7 +138,7 @@
   }
   const statusClass = r => r.posted ? 'done' : /재촬영|모델/.test(r.status + r.statusDetail) ? 'attention' : '';
   function renderTable(rows) {
-    $('u-table-body').innerHTML = rows.map(r => `<tr data-team="${r.team}" data-key="${esc(r.key)}"><td>${teamBadge(r.team)}</td><td class="u-person"><b>${esc(r.name)}</b>${link(`https://www.instagram.com/${encodeURIComponent(r.account)}/`, '@' + r.account).replace('<a ', '<a class="u-account" ')}<small>${esc(r.track)}</small>${r.product ? `<small>${esc(r.product)}</small>` : ''}</td><td><span class="u-status ${statusClass(r)}">${esc(r.status)}</span>${r.statusDetail ? `<small>${esc(r.statusDetail)}</small>` : ''}</td><td class="u-brief">${r.visitDate ? `<div>방문 ${dayText(r.visitDate)} · ${esc(r.visitTime || '시간 미등록')}</div>` : ''}<div>${esc(r.schedule)}</div><small>${esc(r.scheduleType)}${r.team === 'seoul' ? ' · 방문 완료 여부는 원본에 없음' : ''}</small></td><td class="u-fee"><b>${esc(r.fee)}</b>${/합산/.test(r.fee) ? '<small>묶음 계약 · 건별 합계 제외</small>' : ''}</td><td>${metrics(r)}</td><td class="u-brief">${esc(r.next)}${r.content ? `<small>${esc(r.content)}</small>` : ''}</td><td class="u-links">${link(r.postUrl,'게시물')}${r.guideUrl ? link(r.guideUrl + (r.team === 'mine' ? (r.guideUrl.includes('?') ? '&' : '?') + 'staff=1' : ''),'촬영 가이드') : ''}${link(r.referenceUrl,'참고 영상·계정')}${link(r.recordUrl,r.team === 'mine' ? '업무 기록' : '원본 일정표')}${r.team === 'mine' && r.recordUrl ? '<small>업무 기록 로그인 필요</small>' : ''}</td></tr>`).join('') || '<tr><td colspan="8"><div class="u-empty">조건에 맞는 업무가 없습니다.</div></td></tr>';
+    $('u-table-body').innerHTML = rows.map(r => `<tr data-team="${r.team}" data-key="${esc(r.key)}"><td>${teamBadge(r.team)}</td><td class="u-person"><b>${esc(r.name)}</b>${r.account ? link(`https://www.instagram.com/${encodeURIComponent(r.account)}/`, '@' + r.account).replace('<a ', '<a class="u-account" ') : '<small>계정 주소 미확인</small>'}<small>${esc(r.track)}</small>${r.product ? `<small>${esc(r.product)}</small>` : ''}</td><td><span class="u-status ${statusClass(r)}">${esc(r.status)}</span>${r.statusDetail ? `<small>${esc(r.statusDetail)}</small>` : ''}</td><td class="u-brief">${r.visitDate ? `<div>방문 ${dayText(r.visitDate)} · ${esc(r.visitTime || '시간 미등록')}</div>` : ''}<div>${esc(r.schedule)}</div><small>${esc(r.scheduleType)}${r.track === '매장 방문' ? ' · 방문 완료 여부는 원본에 없음' : ''}</small></td><td class="u-fee"><b>${esc(r.fee)}</b>${/합산/.test(r.fee) ? '<small>묶음 계약 · 건별 합계 제외</small>' : ''}</td><td>${metrics(r)}</td><td class="u-brief">${esc(r.next)}${r.content ? `<small>${esc(r.content)}</small>` : ''}</td><td class="u-links">${link(r.postUrl,'게시물')}${r.guideUrl ? link(r.guideUrl + (r.team === 'mine' ? (r.guideUrl.includes('?') ? '&' : '?') + 'staff=1' : ''),'촬영 가이드') : ''}${link(r.referenceUrl,'참고 영상·계정')}${link(r.recordUrl,r.team === 'mine' ? '업무 기록' : '원본 일정표')}${r.team === 'mine' && r.recordUrl ? '<small>업무 기록 로그인 필요</small>' : ''}</td></tr>`).join('') || '<tr><td colspan="8"><div class="u-empty">조건에 맞는 업무가 없습니다.</div></td></tr>';
   }
   function renderTimeline(rows) {
     const today = nowDate(), groups = new Map(), undated = [];
@@ -150,11 +160,11 @@
     $('u-timeline').innerHTML = html || '<div class="u-empty">이 조건에 해당하는 일정이 없습니다. 전체 기간을 선택해 이전 일정을 볼 수 있습니다.</div>';
   }
   function renderSources() {
-    for (const team of ['mine','seoul']) {
+    for (const team of ['mine','seoul','keyheight']) {
       const source = state.source[team], el = $('u-source-' + team);
       el.dataset.state = source.state;
       let text = source.state === 'loading' ? '연결 중' : source.state === 'error' ? (source.checkedAt ? '연결 실패 · 마지막 확인 자료 유지' : '연결 실패 · 원본을 확인해 주세요') : source.state === 'stale' ? '원본 갱신 지연 · 표시 시점 확인' : '원본 연결됨';
-      el.innerHTML = `<b>${teamName(team)}</b><span role="status">${text}</span>${team === 'seoul' ? link(SOURCE,'원본') : '<a href="#tab-status">상세 현황 ↗</a>'}<br>${source.checkedAt ? `마지막 확인 ${stamp(source.checkedAt)}` : '마지막 확인 없음'}${source.modified ? `<span> · ${team === 'mine' ? '데이터 갱신' : '원본 페이지 배포'} ${stamp(source.modified)}</span>` : ''}${team === 'seoul' ? '<div>원본 일정표 수정 시 반영 · 날짜는 2026년 기준</div>' : '<div>대시보드에 등록된 진행·컨택 기록</div>'}`;
+      el.innerHTML = `<b>${team === 'keyheight' ? '서울링크 · 키높이' : team === 'seoul' ? '서울링크 · 매장 방문' : '양제현'}</b><span role="status">${text}</span>${team === 'mine' ? '<a href="#tab-status">상세 현황 ↗</a>' : team === 'seoul' ? link(SOURCE,'원본') : ''}<br>${source.checkedAt ? `마지막 확인 ${stamp(source.checkedAt)}` : '마지막 확인 없음'}${source.modified ? `<span> · ${team === 'mine' ? '데이터 갱신' : team === 'keyheight' ? '업무 자료 확인' : '원본 페이지 배포'} ${stamp(source.modified)}</span>` : ''}${team === 'seoul' ? '<div>원본 일정표 수정 시 반영 · 날짜는 2026년 기준</div>' : team === 'keyheight' ? '<div>영돈대표 진행 · 업무 기록을 재확인해 갱신하는 자료</div>' : '<div>대시보드에 등록된 진행·컨택 기록</div>'}`;
     }
   }
   function render() {
@@ -162,7 +172,7 @@
     const kpi = (label,value,detail) => `<div class="u-kpi"><span>${label}</span><strong>${value}</strong><small>${detail}</small></div>`;
     $('u-kpi').innerHTML = kpi('확인된 업무',`${rows.length}건`,`협업 ${rows.length-contacts}건 · 컨택 ${contacts}건`) + kpi('진행 중',`${ongoing}건`,'컨택·게시완료·종료·보류 제외') + kpi('게시 완료',`${posted}건`,'게시완료 상태 또는 게시 링크 확인') + kpi('단가 확인 필요',`${missing}건`,'컨택 건 제외 · 미확인 비용');
     $('u-count').textContent = `${state.team === 'all' ? '전체' : teamName(state.team)} · ${rows.length}건`;
-    $('u-data-note').textContent = `${state.source.mine.state === 'error' || state.source.seoul.state === 'error' ? '일부 원본 연결 실패 · ' : ''}같은 크리에이터라도 담당·제품·게시물이 다르면 별도 업무입니다. 비용은 원문 조건대로 표시하며 묶음 계약은 합산하지 않습니다.`;
+    $('u-data-note').textContent = `${Object.values(state.source).some(s=>s.state==='error') ? '일부 원본 연결 실패 · ' : ''}같은 크리에이터라도 담당·제품·게시물이 다르면 별도 업무입니다. 비용은 원문 조건대로 표시하며 묶음 계약은 합산하지 않습니다.`;
     $('u-table-wrap').hidden = state.view !== 'table'; $('u-timeline-wrap').hidden = state.view !== 'timeline';
     renderTable(rows); renderTimeline(rows); renderSources();
   }
@@ -175,19 +185,21 @@
     if (state.busy) return; state.busy = true; $('u-refresh').disabled = true;
     const jobs = [
       async () => { const {body} = await fetchTimed('./data.json?t=' + Date.now()); const data = JSON.parse(body), rows = normalizeMine(data); state.mine = rows; state.source.mine = {state:Date.now() - Date.parse(data.syncedAt) > 12*3600000 ? 'stale' : 'ok',checkedAt:Date.now(),modified:data.syncedAt}; },
-      async () => { const {r,body} = await fetchTimed(SOURCE + '?hub=' + Date.now()); const rows = parseSeoul(body); state.seoul = rows; state.source.seoul = {state:'ok',checkedAt:Date.now(),modified:r.headers.get('last-modified')}; }
+      async () => { const {r,body} = await fetchTimed(SOURCE + '?hub=' + Date.now()); const rows = parseSeoul(body); state.seoul = rows; state.source.seoul = {state:'ok',checkedAt:Date.now(),modified:r.headers.get('last-modified')}; },
+      async () => { const {body} = await fetchTimed('./seoul-keyheight.json?t=' + Date.now()); const data = JSON.parse(body), rows = normalizeKeyheight(data); state.keyheight = rows; state.source.keyheight = {state:Date.now()-Date.parse(data.reviewedAt)>7*86400000?'stale':'ok',checkedAt:Date.now(),modified:data.reviewedAt}; }
     ];
-    await Promise.all(jobs.map((job,i) => job().catch(() => { state.source[i===0?'mine':'seoul'].state = 'error'; }).finally(render)));
+    await Promise.all(jobs.map((job,i) => job().catch(() => { state.source[['mine','seoul','keyheight'][i]].state = 'error'; }).finally(render)));
     state.busy = false; $('u-refresh').disabled = false;
   }
   for (const b of $('u-team').querySelectorAll('button')) b.addEventListener('click',()=>{state.team=b.dataset.team; for(const x of $('u-team').querySelectorAll('button')){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',String(x===b));} render();});
   for (const b of $('u-view').querySelectorAll('button')) b.addEventListener('click',()=>{state.view=b.dataset.view; for(const x of $('u-view').querySelectorAll('button')){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',String(x===b));} render();});
   $('u-search').addEventListener('input',e=>{state.search=e.target.value.trim();render();});
+  $('u-track').addEventListener('change',e=>{state.track=e.target.value;render();});
   $('u-range').addEventListener('change',e=>{state.range=e.target.value;render();});
   $('u-refresh').addEventListener('click',refresh);
   const timer = setInterval(()=>{if(!document.hidden)refresh();},60000);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
   window.addEventListener('pagehide',()=>clearInterval(timer));
-  window.UnifiedStatus = {parseSeoul,normalizeMine,getState:()=>state,refresh};
+  window.UnifiedStatus = {parseSeoul,normalizeMine,normalizeKeyheight,getState:()=>state,refresh};
   render(); refresh();
 })();
