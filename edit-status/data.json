@@ -588,7 +588,7 @@
       "account": "ehe_01001",
       "product": "무비 슬라우치 부츠 코코아 235",
       "content": "가을 부츠 GRWM · 신발 위주 착화",
-      "stage": "진행 확정",
+      "stage": "배송 중",
       "status": "진행확정",
       "sentDate": "",
       "postDate": "",
@@ -652,7 +652,7 @@
       "account": "amu__s2__",
       "product": "풀문 키높이 방한 부츠",
       "content": "키높이 풀문 방한 부츠 착화 · 겨울 데일리룩",
-      "stage": "진행 확정",
+      "stage": "배송 중",
       "status": "진행확정",
       "sentDate": "",
       "postDate": "",
@@ -793,5 +793,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-10-29T19:59:53.996834+00:00"
+  "syncedAt": "2026-10-30T00:34:55.618369+00:00"
 }
