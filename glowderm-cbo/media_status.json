@@ -1,7 +1,17 @@
 {
-  "checked_at": "2026-10-31T09:30:13+09:00",
-  "status": "prepared",
-  "available": 27,
+  "checked_at": "2026-10-31T09:35:16+09:00",
+  "status": "partial",
+  "available": 26,
   "retained": 0,
-  "unavailable_ids": []
+  "unavailable_ids": [
+    "120251496670290185",
+    "120251496703530185",
+    "120251496779200185",
+    "120251496892280185",
+    "120251496926740185",
+    "120251515088800185",
+    "52636026294347",
+    "52636026318347"
+  ],
+  "warning": "8 current creatives have no validated media connection."
 }
