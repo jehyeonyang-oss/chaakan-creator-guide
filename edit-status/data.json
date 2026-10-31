@@ -21,6 +21,7 @@
       "fee": "10만 (파라·무비 2건 합산, 2차 포함)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -53,6 +54,7 @@
       "fee": "40만 + 2차 5만(1개월)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -85,6 +87,7 @@
       "fee": "50만 + 2차 20만(3개월)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -117,6 +120,7 @@
       "fee": "60만 (2차 3개월 포함)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -186,6 +190,14 @@
           "saves": null
         }
       ],
+      "sales": {
+        "48h": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": 0
+        }
+      },
       "phoneTrackingReady": true,
       "engagementBaseline": {
         "views": 4831,
@@ -218,6 +230,7 @@
       "fee": "10만 (파라·무비 2건 합산, 2차 포함)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -250,6 +263,7 @@
       "fee": "20만 + 2차 10만(추후 진행 시)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -282,6 +296,7 @@
       "fee": "70만 (2차 1개월 포함 · VAT 별도)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -314,6 +329,7 @@
       "fee": "20만 (2차 1개월 포함)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -346,6 +362,7 @@
       "fee": "15만 (2차 포함)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -415,6 +432,7 @@
           "saves": null
         }
       ],
+      "sales": {},
       "phoneTrackingReady": true,
       "engagementBaseline": {
         "views": null,
@@ -447,6 +465,7 @@
       "fee": "15만 + 2차 10만(추후 진행 시)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -479,6 +498,7 @@
       "fee": "30만 + 2차 10만(추후 진행 시)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -511,6 +531,7 @@
       "fee": "40만 (코드·2차 1개월 포함)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -543,6 +564,7 @@
       "fee": "12만 (원고 7만 + 2차 5만)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -575,6 +597,7 @@
       "fee": "40만 (코드·광고 1개월 포함)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -607,6 +630,20 @@
       "fee": "무가 (제품제공)",
       "productCost": null,
       "engagement": [],
+      "sales": {
+        "48h": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": null
+        },
+        "1week": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": null
+        }
+      },
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -639,6 +676,7 @@
       "fee": "30만 (원고 20만 + 광고코드 5만 + 2차 5만)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -671,6 +709,7 @@
       "fee": "30만 (세전 · 제품 제공 · 파트너십 광고 제외)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -703,6 +742,7 @@
       "fee": "50만 + 2차 5만(1개월) · 광고코드 포함 · VAT 별도",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -735,6 +775,7 @@
       "fee": "10만 (할인코드·2차편집 포함)",
       "productCost": null,
       "engagement": [],
+      "sales": {},
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": null,
@@ -830,5 +871,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-10-31T13:01:38.527323+00:00"
+  "syncedAt": "2026-10-31T13:18:37.663000+00:00"
 }
