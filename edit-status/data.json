@@ -216,22 +216,59 @@
       "account": "maerilly_",
       "product": "무비 슬라우치 부츠 BSSDR4i156",
       "content": "슬라우치 부츠 코디 · 착화 소개",
-      "stage": "배송 완료",
-      "status": "발송완료",
+      "stage": "게시 완료",
+      "status": "게시완료",
       "sentDate": "2026-10-15",
-      "postDate": "",
+      "postDate": "2026-10-31",
       "deliveredDate": "2026-10-16",
-      "detail": "10/15 출고",
-      "schedule": "게시일 협의 중",
-      "scheduleType": "협의 중",
-      "next": "초안·게시일 확정",
+      "detail": "10/31 게시 확인 · 할인코드 maerilly2610",
+      "schedule": "10/31 게시 완료",
+      "scheduleType": "완료",
+      "next": "48시간·1주·2주 성과 추적",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/maerilly.shop/movie/",
       "expires": "2026-10-20T00:00:00+09:00",
       "fee": "10만 (파라·무비 2건 합산, 2차 포함)",
-      "productCost": null,
-      "engagement": [],
+      "productCost": 15820,
+      "engagement": [
+        {
+          "slot": "48h",
+          "label": "48시간",
+          "dueAt": "2026-11-02T18:46:55+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "1week",
+          "label": "7일",
+          "dueAt": "2026-11-07T18:46:55+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "2week",
+          "label": "14일",
+          "dueAt": "2026-11-14T18:46:55+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        }
+      ],
       "sales": {},
-      "phoneTrackingReady": false,
+      "phoneTrackingReady": true,
       "engagementBaseline": {
         "views": null,
         "likes": null,
@@ -240,7 +277,7 @@
         "saves": null,
         "actualCollectedAt": null
       },
-      "postUrl": "",
+      "postUrl": "https://www.instagram.com/reel/DfJ3mZLzXpJ/",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=4iA7tSaF69AAiWfXxNPU"
     },
     {
@@ -871,5 +908,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-10-31T13:18:37.663000+00:00"
+  "syncedAt": "2026-10-31T13:30:00.519763+00:00"
 }
