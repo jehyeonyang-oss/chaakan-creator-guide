@@ -264,13 +264,13 @@
           "slot": "48h",
           "label": "48시간",
           "dueAt": "2026-11-02T18:46:55+09:00",
-          "actualCollectedAt": null,
-          "state": "pending",
-          "views": null,
-          "likes": null,
-          "comments": null,
-          "shares": null,
-          "saves": null
+          "actualCollectedAt": 1793613019521,
+          "state": "captured",
+          "views": 2063,
+          "likes": 8,
+          "comments": 20,
+          "shares": 8,
+          "saves": 12
         },
         {
           "slot": "1week",
@@ -1193,5 +1193,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-11-02T08:41:38.305879+00:00"
+  "syncedAt": "2026-11-02T09:51:15.155133+00:00"
 }
