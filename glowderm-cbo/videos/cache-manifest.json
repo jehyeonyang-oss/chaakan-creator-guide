@@ -161,6 +161,34 @@
       "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
       "output_sha256": "695854a114652c01c3707f8275a426990ebd105193cba56abfa863e8c84abe8b",
       "src": "videos/v_0307020ba07358d1e1145e3fd02127249fb15211d3bed852e7b336fdc55990f0.mp4"
+    },
+    "v_a1854767b88dad8149f67b6559328b966a8c1bbdfcefbd0680c12a881bed5937.mp4": {
+      "source_sha256": "d3db2c5f47ec600426277f48d617ca5c7da526b99fb72a2a29c98bab55f8a66c",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "b5880150ae7441c40aac9e3aba2340ea2e87522d629954b9b61426696400bc4d",
+      "src": "videos/v_a1854767b88dad8149f67b6559328b966a8c1bbdfcefbd0680c12a881bed5937.mp4"
+    },
+    "v_62e0616f9ff662f2ccb9b2fca2e923f7b0c3e743ffe3ebb97a95a56600f5496f.mp4": {
+      "source_sha256": "e905cc068baa05269db5cf865d0a8a90069284463dc31b37f2d017029cc64d5d",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "5350f2b733b070007c28632ee1ab5b2b85963f2f6cd2adf0639c83c500d36871",
+      "src": "videos/v_62e0616f9ff662f2ccb9b2fca2e923f7b0c3e743ffe3ebb97a95a56600f5496f.mp4"
+    },
+    "v_cd80d065d80b0ba02d7e8c85dc049df2fb37a8fbed86a35c86c7f0ba3e5fdf2b.mp4": {
+      "source_sha256": "bf9ce782390c80d1eb173b2d0e010508914b5bcd5ae17323adfdd63f1e626560",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "fba6159e88fdd8335030f106232b9059ba80911853c38b4b9849ed63bc50b4be",
+      "src": "videos/v_cd80d065d80b0ba02d7e8c85dc049df2fb37a8fbed86a35c86c7f0ba3e5fdf2b.mp4"
+    },
+    "v_64e2e5a29d25831ddfe2f5534f6412373545485605b1a2bac3a00a93bdae060e.mp4": {
+      "source_sha256": "4b14f0a40dbda13a9dac6083ef21347ad831900c8e73fd9a0284fe69a3beb011",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "690270d0e052269dc0cc946693cf0f0d5294043b3c630ae1d8e94704b736d36b",
+      "src": "videos/v_64e2e5a29d25831ddfe2f5534f6412373545485605b1a2bac3a00a93bdae060e.mp4"
     }
   }
 }
