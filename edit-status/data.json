@@ -142,7 +142,7 @@
       "stage": "재업로드 완료",
       "status": "게시완료",
       "sentDate": "2026-10-14",
-      "postDate": "2026-10-25",
+      "postDate": "2026-10-22",
       "deliveredDate": "",
       "detail": "10/22 21시 첫 게시(14시간 조회 4,400·공유 32·저장 42) → 21초 전신샷 구간 이탈로 재편집, 기존 게시물 삭제 → 10/25 재업로드",
       "schedule": "10/25 재업로드 완료",
@@ -180,9 +180,9 @@
         {
           "slot": "1week",
           "label": "7일",
-          "dueAt": "2026-11-01T20:20:00+09:00",
+          "dueAt": "2026-11-09T13:00:00+09:00",
           "actualCollectedAt": null,
-          "state": "missed",
+          "state": "pending",
           "views": null,
           "likes": null,
           "comments": null,
@@ -192,9 +192,9 @@
         {
           "slot": "2week",
           "label": "14일",
-          "dueAt": "2026-11-08T20:20:00+09:00",
+          "dueAt": "2026-11-16T13:00:00+09:00",
           "actualCollectedAt": null,
-          "state": "missed",
+          "state": "pending",
           "views": null,
           "likes": null,
           "comments": null,
@@ -210,7 +210,7 @@
           "rev_code": 0
         }
       },
-      "phoneTrackingReady": false,
+      "phoneTrackingReady": true,
       "engagementBaseline": {
         "views": 4831,
         "likes": null,
@@ -219,7 +219,7 @@
         "saves": 38,
         "actualCollectedAt": 1793002408213
       },
-      "postUrl": "https://www.instagram.com/reel/De6k4zoSBIq/",
+      "postUrl": "https://www.instagram.com/reel/Dey_FiYy12f/",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=XT9lAJZCWVutjQtjnNAo"
     },
     {
@@ -1140,5 +1140,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-11-02T02:41:35.686695+00:00"
+  "syncedAt": "2026-11-02T05:49:54.792935+00:00"
 }
