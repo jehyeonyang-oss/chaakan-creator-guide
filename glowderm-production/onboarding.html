@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="noindex,nofollow" name="robots"/><title>글로우덤 광고 편집자 온보딩 · 11월2일</title><style>
+:root{--bg:#f7f4ef;--paper:#fff;--ink:#1c211e;--sub:#4c5650;--muted:#7a837d;--line:#ebe5dc;--accent:#2d6a4f;--accent-2:#cf8a63;--soft:#eef4ef;--blush:#f6e9e0;--r:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 Pretendard,"Pretendard Variable","Apple SD Gothic Neo","Malgun Gothic",sans-serif;letter-spacing:-.01em;word-break:keep-all;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(900px 420px at 85% -10%,#f3dccd 0,transparent 60%),radial-gradient(700px 380px at -5% 110%,#dcebdf 0,transparent 60%),var(--bg);border-bottom:1px solid var(--line)}
+.hero-in{max-width:1240px;margin:auto;padding:84px 32px 64px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:56px;align-items:end}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.18em;color:var(--accent);font-weight:700;background:#ffffffb3;border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent-2)}
+.hero h1{font-size:50px;line-height:1.22;letter-spacing:-.045em;margin:24px 0 20px;font-weight:800}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,#f2cdb6 62%)}
+.hero p{max-width:600px;color:var(--sub);font-size:17px;margin:0}
+.downloads{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.downloads a,.downloads button{font:inherit;font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:9px 16px;cursor:pointer;transition:.15s;box-shadow:0 1px 2px #0000000a}
+.downloads a:hover,.downloads button:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.downloads a:first-child{background:var(--ink);color:#fff;border-color:var(--ink)}
+.hero-card{background:#ffffffd9;backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:0 24px 60px -28px #3b2a1a40}
+.hero-card-title{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:14px}
+.summary{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.summary div{background:var(--bg);border-radius:16px;padding:16px 18px}
+.summary b{display:block;font-size:30px;line-height:1.15;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.summary div:first-child{background:var(--accent);color:#fff}.summary div:first-child span{color:#d6e8dc}
+.summary span{display:block;margin-top:6px;font-size:13px;color:var(--muted);line-height:1.4}
+.layout{max-width:1240px;margin:auto;padding:48px 32px 24px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px}
+nav{position:sticky;top:24px;align-self:start;z-index:3}
+.nav-title{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted);margin:0 0 10px 12px}
+.nav-links{display:flex;flex-direction:column;gap:2px}
+nav a{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--sub);text-decoration:none;padding:10px 12px;border-radius:12px;transition:.15s}
+nav a span{font-size:11px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+nav a:hover{background:#fff}
+nav a.on{background:var(--ink);color:#fff}nav a.on span{color:var(--accent-2)}
+main{min-width:0}
+section{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:48px 52px;margin:0 0 28px;box-shadow:0 1px 2px #0000000a,0 12px 40px -24px #3b2a1a26}
+.section-label{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.04em}
+.section-label .num{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--soft);font-size:15px;font-variant-numeric:tabular-nums}
+section h1{font-size:34px;line-height:1.3;letter-spacing:-.04em;margin:18px 0 8px;font-weight:800}
+section h1+p{color:var(--muted)}
+h2{font-size:22px;letter-spacing:-.03em;margin:48px 0 14px;padding-top:30px;border-top:1px solid var(--line);font-weight:750;line-height:1.4}
+h2:before{content:"";display:inline-block;width:6px;height:20px;border-radius:3px;background:var(--accent-2);margin-right:10px;vertical-align:-3px}
+h3{font-size:17px;margin:28px 0 8px;letter-spacing:-.02em}
+p,li,td,th{overflow-wrap:anywhere}p{margin:12px 0;color:#2e3531}
+ul,ol{padding-left:22px}li{margin:6px 0}li::marker{color:var(--accent-2)}
+strong{font-weight:750;background:linear-gradient(transparent 65%,#f6e1d3 65%)}
+blockquote{margin:20px 0;padding:16px 20px;background:var(--blush);border-radius:14px;border:0;color:#5a3f2f}blockquote p{margin:4px 0;color:inherit}
+hr{border:0;border-top:1px dashed var(--line);margin:32px 0}
+code{font-family:"JetBrains Mono",Consolas,"Malgun Gothic",monospace;background:var(--soft);color:#24533d;padding:2px 7px;border-radius:6px;font-size:.84em;overflow-wrap:anywhere}
+pre{background:#1f2622;color:#e7eee9;padding:18px 20px;border-radius:14px;overflow:auto;font-size:13px;line-height:1.7}pre code{background:none;color:inherit;padding:0}
+.table-wrap{overflow-x:auto;max-width:100%;margin:20px 0;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.65}
+th,td{text-align:left;vertical-align:top;padding:13px 16px;border-bottom:1px solid var(--line)}
+th{background:#faf8f4;color:var(--sub);font-size:13px;font-weight:700;white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}tbody tr:hover td{background:#fcfbf8}
+td:first-child{font-weight:650}
+.media-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:18px 0 8px}
+article{background:var(--bg);border-radius:18px;padding:10px 10px 14px;transition:.2s}
+article:hover{transform:translateY(-3px);box-shadow:0 18px 40px -22px #3b2a1a55}
+article video{display:block;width:100%;aspect-ratio:9/16;max-height:420px;height:auto;background:#121513;object-fit:cover;border-radius:12px}
+article h3{font-size:15px;margin:12px 4px 2px}article p{font-size:13px;line-height:1.6;color:var(--muted);margin:0 4px}
+.comparison{margin:28px 0 0;background:var(--bg);border-radius:18px;padding:14px;text-align:center}
+.comparison img{display:block;max-width:100%;height:auto;margin:auto;border-radius:10px}
+.comparison figcaption{font-size:13px;color:var(--muted);margin-top:10px}
+.note{font-size:13px;color:var(--muted);background:var(--bg);border-radius:12px;padding:14px 16px;line-height:1.7}
+footer{max-width:1240px;margin:auto;padding:12px 32px 64px 300px;font-size:13px;color:var(--muted)}
+@media(max-width:1020px){.hero-in{grid-template-columns:1fr;gap:32px;padding:56px 24px 40px}.layout{display:block;padding:0 0 16px}
+ nav{top:0;background:#f7f4efeb;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 16px}.nav-title{display:none}.nav-links{flex-direction:row;overflow-x:auto;scrollbar-width:none}nav a{flex:none;white-space:nowrap;padding:7px 12px;font-size:13px;border-radius:999px}
+ html{scroll-padding-top:70px}main{padding:20px 16px 0}footer{padding:12px 16px 48px}.media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.hero-in{padding:44px 16px 32px}.hero h1{font-size:32px}.hero p{font-size:15px}.summary b{font-size:24px}.hero-card{padding:16px;border-radius:22px}
+ section{padding:28px 18px;border-radius:16px}section h1{font-size:26px}h2{font-size:19px;margin-top:36px;padding-top:24px}.media-grid{gap:10px}article{padding:6px 6px 10px}table{font-size:13px;min-width:560px}th,td{padding:10px 12px}}
+@media print{nav,.downloads,.hero-card{display:none}body{background:#fff;font-size:10pt}.hero{background:none}.hero-in{display:block;padding:0}.layout{display:block;padding:0}section{border:0;box-shadow:none;padding:0;margin:16px 0;break-before:page}h1,h2,h3{break-after:avoid}table{font-size:9pt}tr{break-inside:avoid}.media-grid{grid-template-columns:repeat(4,1fr)}video{max-height:200px}footer{padding:0}}
+</style><style id="readability-css">
+    .hero-in{padding-top:60px;padding-bottom:48px}.hero h1{font-size:44px}.hero-footnote{font-size:13px!important;line-height:1.65;margin-top:16px!important}
+    .summary b{font-size:26px}.summary span{color:#58645c}.hero-card-title{color:#526057}
+    section h1+p{color:var(--sub)}.section-label{margin-bottom:18px}section h1{font-size:30px}h2{margin-top:30px;padding-top:22px}
+    details{margin:16px 0;border:1px solid #d8e1d9;border-radius:12px;background:#fafcf9}
+    summary{padding:15px 18px;cursor:pointer;font-weight:700;color:#26533e;line-height:1.6}
+    summary:hover{background:#eef4ef;border-radius:12px}summary:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #a35221;outline-offset:3px}
+    details[open]>summary{border-bottom:1px solid var(--line)}.detail-body{padding:6px 20px 20px;background:white;border-radius:0 0 12px 12px}
+    .detail-body h1{font-size:23px}.detail-body h2{font-size:19px}.detail-body p,.detail-body li{font-size:15px}
+    .ab-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.ab-grid>div{border-radius:14px;background:var(--soft);padding:20px}.ab-grid>div+div{background:var(--blush)}.ab-grid span{font-size:13px;font-weight:700;color:#4c5650}.ab-grid p{font-size:20px;font-weight:750;line-height:1.6;margin:8px 0 0}
+    .media-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.teaching-card{padding:18px;align-self:start}.teaching-card:hover{transform:none;box-shadow:none}.teaching-card h3{font-size:18px;line-height:1.55;margin:0 0 16px}.teaching-card video{object-fit:contain;max-height:360px;width:100%;aspect-ratio:9/16;background:#121513}.teaching-card dl{margin:18px 0 0;font-size:14px;line-height:1.7}.teaching-card dt{color:#2d6a4f;font-weight:750;margin-top:12px}.teaching-card dd{margin:2px 0 0}.teaching-card .video-note{margin:18px 0 0;padding-top:12px;border-top:1px solid #ded8ce;color:#58615b;font-size:12px;line-height:1.7}
+    @media(max-width:640px){.hero h1{font-size:30px}.hero-in{padding:32px 16px}.media-grid,.ab-grid{grid-template-columns:1fr}.teaching-card video{max-height:360px}.detail-body{padding:4px 12px 16px}summary{padding:12px;font-size:14px}section h1{font-size:25px}.summary b{font-size:23px}.ab-grid p{font-size:19px}}
+    </style></head><body><aside id="operations-entry" style="background:#173e44;color:white;padding:20px 24px;line-height:1.7"><div style="max-width:1280px;margin:auto"><strong>기획부터 개선 제작까지 한 곳에서</strong><br/>후킹 → 몸통 → 성분 설명 → CTA · 제품별 소구점 · 격주 ACIS 리프레시<br/><a href="index.html" style="color:white;text-decoration:underline;font-weight:700">이번 주 기획·제작·성과 보드 열기</a></div></aside><header class="hero"><div class="hero-in"><div class="hero-copy"><div class="eyebrow">GLOWDERM · 새 편집자를 위한 안내</div><h1>왜 만드는지 이해하고,<br/><em>오늘 할 일부터 시작해요.</em></h1><p>우리는 고객이 피부 고민과 제품의 연결을 이해하도록 광고를 만듭니다. 오늘은 <strong>후킹이 다른 10초 영상 2편</strong>을 만듭니다. 후킹과 공통 몸통까지만 편집하고, 구매 안내(CTA)는 넣지 않습니다.</p><div class="downloads"><a href="#first">오늘 할 일 보기 →</a><a href="#examples">예시 영상 보기</a></div></div><div class="hero-card"><div class="hero-card-title">첫날 작업 요약</div><div class="summary"><div><b>11/2</b><span>월요일 · 첫 출근</span></div><div><b>10초 × 2편</b><span>다른 후킹 + 같은 몸통</span></div><div><b>17시</b><span>첫날 1차본 제출</span></div><div><b>함께 제출</b><span>편집 프로젝트·소스 목록·짧은 제작 메모</span></div></div></div></div></header><div class="layout"><nav><div class="nav-title">CONTENTS</div><div class="nav-links"><a href="#why"><span>01</span>왜 만들고, 내 역할은?</a><a href="#first"><span>02</span>오늘 무엇을 내면 되나요?</a><a href="#examples"><span>03</span>예시에서 뭘 배우나요?</a><a href="#timeline"><span>04</span>목표와 제출 시간</a><a href="#buffers"><span>05</span>다음에 할 작업</a><a href="#access"><span>06</span>도구·파일 준비</a></div></nav><main><section id="why"><div class="section-label"><span class="num">01</span><span>먼저 이해하기</span></div><h2>우리가 광고를 만드는 이유</h2>
+<p>고객이 <strong>“내 고민에 맞는 제품이구나”</strong> 하고 이해하고, 제품을 더 알아보러 오게 만드는 일입니다. 멜라크림은 기미가 고민인 40~50대 여성에게, 클렌저는 피부 요철과 세안이 고민인 고객에게 설명합니다.</p>
+<p>광고 기획의 기본 골격은 <strong>후킹 → 몸통 → 성분 설명 → CTA</strong>입니다. 후킹으로 멈추게 하고, 몸통에서 고민과 사용·변화 장면을 연결하고, 성분 설명으로 우리 제품을 선택할 이유를 전달한 뒤, CTA로 구매 행동을 안내합니다. 이 네 단계 안의 내용·강한 후킹 요소·시나리오는 <strong>2주마다 ACIS로 리프레시하거나 과거 장기 집행 소재에서 가져옵니다.</strong> 제품별 소구점과 한 번에 바꾸는 테스트 변수는 지시서에 함께 적습니다.</p>
+<p><strong>시나리오 원문은 <a href="https://docs.google.com/spreadsheets/d/1sIyn3kYLMt9XAxaUpaixnO5H_Un8G5iz5AoCuJIrjJM/edit">콘텐츠기획팀 글로우덤 시나리오 시트</a>에 계속 추가합니다.</strong> <a href="index.html">이번 주 기획·제작·성과 보드</a>에서 원문과 제작·업로드·리뷰·개선 작업을 연결해 봅니다. 첫날 J01은 <strong>10초 실습 두 편을 후킹과 몸통까지만</strong> 만드는 예외이며, CTA를 생략하는 것이 정식 광고의 기본형은 아닙니다.</p>
+<h2>이런 광고를 만들어요</h2>
+<ul>
+<li><strong>바르고 닦는 모습을 짧게 보여주는 광고:</strong> 제형과 사용 동작에 눈길이 가는지 확인합니다. 첫날 연습할 유형입니다.</li>
+<li><strong>고민과 제품을 연결하는 광고:</strong> 기미가 신경 쓰이는 상황이나 세안 고민에서 시작해, 사용법과 제품을 알아볼 이유를 설명합니다.</li>
+<li><strong>기존 광고의 첫 부분을 바꾼 광고:</strong> 나머지는 유지하고 첫 장면·문구 중 하나를 바꿔 반응 차이를 확인합니다.</li>
+</ul>
+<h2>지속 업무와 추가 업무를 구분해요</h2>
+<p><strong>지금 꾸준히 하는 일 — 글로우덤 광고 편집.</strong> 멜라크림·클렌저 광고를 만들고, 피드백과 광고 결과를 받아 다음 영상을 개선합니다.</p>
+<p><strong>예정된 추가 업무 — 김가연님 파워페이지 영상.</strong> 12월 초 김가연님 유튜브 영상이 공개되면, 그 콘텐츠를 바탕으로 파워페이지(콘텐츠를 배포하는 외부 계정)에 올릴 영상을 편집할 예정입니다. 지금 바로 시작하거나 매일 반복하는 업무는 아닙니다.</p>
+<p><strong>생길 수 있는 추가 업무 — 착한구두 파워페이지 영상.</strong> 착한구두 건도 파워페이지에 배포할 영상 편집을 맡을 수 있습니다. 아직 구체적인 일정이나 분량이 정해진 업무는 아닙니다.</p>
+<p>추가 업무가 생기면 사용할 자료·만들 분량·제출 날짜를 별도로 안내하고, 진행 중인 작업과의 우선순위를 함께 정합니다.</p>
+<h2>내 역할은 무엇인가요?</h2>
+<ul>
+<li><strong>처음 3주, 제현님:</strong> 기획·대본·소스(편집에 쓸 영상·사진·음원)를 준비합니다.</li>
+<li><strong>편집자:</strong> 지시서에 맞춰 A/B 영상 두 편을 만들고, 받은 의견을 반영해 수정합니다.</li>
+<li><strong>제현님:</strong> 광고를 등록하고 예산과 결과를 판단해 다음 작업을 정합니다.</li>
+</ul>
+<h2>같은 영상을 왜 두 편 만드나요?</h2>
+<p>어떤 차이가 고객 반응을 바꾸는지 비교하기 위해서입니다. <strong>한 시나리오에서 한 변수만 바꾸고 나머지는 고정</strong>합니다. 오늘 J01은 시작 화면이 같고 <strong>상단 헤드라인만 다른 10초 영상 A/B 두 편</strong>입니다. 후킹은 0~3.6초, 몸통은 3.6~10초로 두 편 모두 같습니다. 최신 상세는 시트의 J01 탭을 따릅니다.</p>
+<p>읽고 나면 자기 말로 설명해 보세요. <strong>누구에게 어떤 제품을 설명하나요? 오늘 A/B에서 무엇만 바꾸나요? 몇 시까지 무엇을 제출하나요?</strong></p><details><summary>낯선 용어 뜻 보기</summary><div class="detail-body"><h3>처음 나오는 말, 이렇게 읽으세요</h3>
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>쉬운 뜻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기획안·브리프</td>
+<td>누구에게 무엇을 보여줄지 정한 작업 지시서</td>
+</tr>
+<tr>
+<td>소스</td>
+<td>편집에 가져다 쓰는 영상·사진·음원 파일</td>
+</tr>
+<tr>
+<td>레퍼런스</td>
+<td>화면 구성과 편집 방식을 배울 참고 영상</td>
+</tr>
+<tr>
+<td>후킹</td>
+<td>첫 부분에서 시선을 붙잡는 장면이나 문장</td>
+</tr>
+<tr>
+<td>A/B</td>
+<td>한 가지 차이를 둔 영상 두 버전</td>
+</tr>
+<tr>
+<td>CTA</td>
+<td>“제품 구성 확인하기”처럼 다음 행동을 안내하는 문구</td>
+</tr>
+<tr>
+<td>KPI</td>
+<td>일을 얼마나 잘 진행했는지 확인할 업무 목표</td>
+</tr>
+<tr>
+<td>CTR</td>
+<td>광고를 본 횟수 대비 링크를 클릭한 횟수의 비율</td>
+</tr>
+<tr>
+<td>ROAS</td>
+<td>광고비 대비 광고 매출 비율. 이익률은 아닙니다.</td>
+</tr>
+</tbody>
+</table>
+<p>예를 들어 광고비 1만 원으로 광고 매출 2만 원이 잡히면 ROAS는 200%입니다. 원가·배송비 등의 비용을 뺀 이익을 뜻하지 않습니다.</p></div></details></section><section id="first"><div class="section-label"><span class="num">02</span><span>오늘 할 일</span></div><h2>첫날 실습 — 10초 후킹 A/B 두 편</h2>
+<p><strong>11/2 17시 초안 · 4:5 1080×1350 · 30fps · 각 10초. 신규 광고 실적 집계 제외.</strong></p>
+<p>정식 광고는 <strong>후킹 → 몸통 → 성분 설명 → CTA</strong>입니다. 첫날은 후킹·몸통만 연습합니다.</p>
+<p>지시 정본: <a href="https://docs.google.com/spreadsheets/d/1sIyn3kYLMt9XAxaUpaixnO5H_Un8G5iz5AoCuJIrjJM/edit#gid=0">시트 J01 탭</a>. 후킹 화면은 같고 <strong>상단 헤드라인만</strong> 바꿉니다.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2주 만에 / 기미 삭제?</td>
+<td>하루 천 원으로 / 기미 관리하세요</td>
+</tr>
+</tbody>
+</table>
+<p>후킹 0~3.6초는 비포 → 도포 → 변화. 몸통 3.6~10초는 제형 → 약국 매대 → 제품입니다. 패드로 닦는 장면은 이번 실습에서 쓰지 않습니다. 음악·폰트는 편집자 선택이며 두 편에서 같게 사용합니다. 오늘은 CTA를 넣지 않습니다.</p>
+<p>준비 파일: <a href="assets/action_pigment_v3.mp4">동작 영상</a>, <a href="assets/product_shelf.jpg">약국 매대</a>, <a href="assets/product.jpg">제품 사진</a>. 음악·폰트 사용 내역을 기록합니다.</p>
+<p>제출: A/B MP4 두 편 + 캡컷 프로젝트 + 사용 소스 목록 + 제작 메모. 메모에 더 강한 후킹과 이유, 추가 아이디어 1개, 작업시간과 막힌 점을 적습니다.</p><details><summary>10초 영상 구성·소스 사용 메모</summary><div class="detail-body"><h1>J01 10초 시나리오 — 멜라크림 후킹 A/B + 공통 몸통</h1>
+<p>2026-11-02 11:00 개정(강한 B/A 후킹) · 1차본 17시 · 4:5 1080×1350 · 30fps · 각 10.0초 · CTA 없음</p>
+<h2>먼저 생각할 것 — 어떤 후킹이 가장 강할까</h2>
+<p>이 영상의 목적은 첫 3초에 손가락을 멈추게 하는 것이다. 편집하기 전에 "기미가 고민인 40~50대 여성이 스크롤하다 멈추려면 첫 화면에 무엇이 보여야 하나"를 먼저 정한다. 헤드라인 A/B는 아래에 정해져 있지만, 비포 컷의 크기·기미가 사라지는 타이밍·디졸브 길이·헤드라인이 뜨는 순간은 "가장 세게 보이는 쪽"으로 편집자가 결정한다.</p>
+<p>제작 메모에 반드시 적을 것: ① A/B 중 어느 후킹이 더 강하다고 보는지와 이유 한 줄 ② 본인이 생각하는 더 강한 후킹 문구·장면 1개 제안.</p>
+<h2>소스 시간표 (assets/action_pigment_v3.mp4, 6.0초)</h2>
+<table>
+<thead>
+<tr>
+<th>구간</th>
+<th>화면</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0~1.2</td>
+<td>볼에 흰 크림 한 덩이 올라간 접사</td>
+</tr>
+<tr>
+<td>1.2~3.4</td>
+<td>장갑 손가락으로 펴 바르는 동작</td>
+</tr>
+<tr>
+<td>3.4~4.2</td>
+<td>얇게 펴진 흰 제형</td>
+</tr>
+<tr>
+<td>4.2~5.2</td>
+<td>패드로 닦아내는 동작</td>
+</tr>
+<tr>
+<td>5.2~6.0</td>
+<td>닦아낸 뒤 피부 (생성 잔여 변화로 색소가 옅어 보임)</td>
+</tr>
+</tbody>
+</table>
+<h2>공통 구조</h2>
+<ul>
+<li>A/B 변수 = 후킹 상단 헤드라인 문구만. 후킹 화면(크림 도포 → 기미 사라짐)과 몸통은 두 편 동일.</li>
+<li>후킹 0.0~3.6초, 몸통 3.6~10.0초. 몸통 시작 시점 3.6초 고정.</li>
+<li>패드로 닦는 장면(소스 4.2~5.2)은 쓰지 않는다. 바른 뒤 바로 기미가 사라지는 흐름으로 만든다.</li>
+<li>음악·폰트는 편집자 자유 선택. assets의 original_bgm.wav·DoHyeon은 참고용이며 안 써도 된다. 쓴 음원·폰트는 사용 소스 목록에 적는다(저작권 확인된 것만).</li>
+<li>상단 검은 띠에 헤드라인(흰 본문·노란 강조), 하단 띠에 설명 자막. 자막이 손·크림·제품을 가리지 않게.</li>
+</ul>
+<h2>후킹 — 크림 도포 → 기미 사라짐 (0.0~3.6, 화면 A/B 동일)</h2>
+<table>
+<thead>
+<tr>
+<th>시간</th>
+<th>화면</th>
+<th>하단 자막</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0~0.6</td>
+<td>소스 0.0~0.6 기미 가득한 볼에 크림 한 덩이(비포). 1배속</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>0.6~2.8</td>
+<td>소스 1.2~3.4 손가락으로 펴 바르는 동작. 1배속</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>2.8~3.6</td>
+<td>소스 5.2~6.0 기미 사라진 피부(애프터). 1배속</td>
+<td>없음</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>2.6~3.0 구간 0.4초 디졸브로 펴 바르는 장면에서 애프터로 넘긴다. 크림 아래에서 기미가 녹듯 사라지게. 하드컷 금지.</li>
+<li>디졸브 양쪽 프레임의 얼굴 위치가 어긋나면 애프터 컷을 살짝 이동·확대해 볼 위치를 맞춘다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>편</th>
+<th>상단 헤드라인 (후킹 구간 고정)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>2주 만에 / 기미 삭제?</td>
+</tr>
+<tr>
+<td>B</td>
+<td>하루 천 원으로 / 기미 관리하세요</td>
+</tr>
+</tbody>
+</table>
+<p>노란 강조: A는 "기미 삭제?", B는 "천 원". 질문형 A는 물음표까지 한 줄.</p>
+<h2>공통 몸통 (3.6~10.0)</h2>
+<table>
+<thead>
+<tr>
+<th>시간</th>
+<th>화면</th>
+<th>상단 헤드라인</th>
+<th>하단 자막</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.6~4.4</td>
+<td>소스 3.4~4.2 얇게 펴진 흰 제형 접사</td>
+<td>트라넥삼산 5% / 글로우덤 멜라크림</td>
+<td>얇게 펴 바르는 제형</td>
+</tr>
+<tr>
+<td>4.4~7.2</td>
+<td>assets/product_shelf.jpg 매대 실사. 100%→108% 천천히 줌인</td>
+<td>동일</td>
+<td>트라넥삼산 5%</td>
+</tr>
+<tr>
+<td>7.2~10.0</td>
+<td>assets/product.jpg 제품 단독 실사. 100%→108% 천천히 줌인</td>
+<td>동일</td>
+<td>글로우덤 멜라크림 (제품명만, CTA 없음)</td>
+</tr>
+</tbody>
+</table>
+<p>컷 전환은 0.2초 디졸브. 후킹에서 이미 사라진 기미 뒤에 다시 기미 있는 장면(소스 0~3.4)을 붙이지 않는다.</p>
+<h2>지켜야 할 것</h2>
+<ul>
+<li>패드로 닦는 장면은 사용하지 않는다.</li>
+<li>제품명은 글로우덤 멜라크림. 성분 표기는 트라넥삼산 5%만.</li>
+<li>화면에 AI 연출·시나리오 번호 등 내부 표시 금지 (참고 영상 S17에 있는 좌상단 표시는 따라 하지 않는다).</li>
+<li>구매 안내·엔딩 카드 없음. 10.0초에서 제품 매대 컷으로 끝.</li>
+<li>두 편 길이 정확히 10.0초. 몸통 3.6~10.0 화면·자막·음악 동일한지 나란히 재생해 확인.</li>
+</ul>
+<h2>출력 파일명</h2>
+<p>멜라크림_후킹몸통_10초_A_261102.mp4 · 멜라크림_후킹몸통_10초_B_261102.mp4 + 캡컷 프로젝트 + 사용 소스 목록 + 제작 메모</p></div></details></section><section id="examples"><div class="section-label"><span class="num">03</span><span>예시에서 배우기</span></div><p>예시는 ‘어느 부분을 어떻게 편집할지’를 배우기 위해 봅니다. 각 예시의 볼 구간과 배울 점을 확인하고, 편집 참고 자료와 실제 광고 성과가 확인된 자료를 구분해 읽어주세요.</p><div class="media-grid"><article class="teaching-card"><h3>① 설명과 사용 모습을 함께 보여주기</h3>
+<video aria-label="① 설명과 사용 모습을 함께 보여주기" controls="" poster="assets/care.jpg" preload="metadata" src="assets/ccfm_care.mp4"></video>
+<dl><dt>볼 구간</dt><dd>먼저 0~8.88초를 보고, 이어서 전체를 보세요.</dd><dt>배울 점</dt><dd>말로 설명하는 내용과 화면 속 동작이 연결됩니다.</dd><dt>내 작업에 적용</dt><dd>자막을 읽는 동안 손·피부·제품도 보이는지 확인하세요.</dd></dl>
+<p class="video-note">대행사 CCFM의 편집 방식 참고용입니다. 이 파일만으로 매출 성과를 판단하지 않습니다.</p></article><article class="teaching-card"><h3>② 짧은 후킹 예시 보기</h3>
+<video aria-label="② 짧은 후킹 예시 보기" controls="" poster="assets/s17.jpg" preload="metadata" src="assets/S17_A_v3_review.mp4"></video>
+<dl><dt>볼 구간</dt><dd>전체 5.6초. 첫 장면과 문구가 어떻게 시선을 끄는지 보세요.</dd><dt>배울 점</dt><dd>사용 동작을 바로 보여주고 짧은 문구로 관심을 끄는 방식입니다.</dd><dt>내 작업에 적용</dt><dd>후킹을 만들 때 참고하세요. 오늘 작업에서는 후킹 뒤에 제품 설명을 담은 공통 몸통을 따로 구성합니다.</dd></dl>
+<p class="video-note">후킹만 담긴 과거 검토본(S17)입니다. 화면의 “AI 연출” 표시는 새 영상에 넣지 마세요. <a href="assets/S17_B_v3_review.mp4">과거 B 검토본도 보기</a></p></article></div><details><summary>다른 예시 2편도 보기 — 수정 사례·다음 작업</summary><div class="detail-body"><div class="media-grid"><article class="teaching-card"><h3>③ 수정이 필요했던 영상에서 배우기</h3>
+<video aria-label="③ 수정이 필요했던 영상에서 배우기" controls="" poster="assets/rejected.jpg" preload="metadata" src="assets/S18_rejected_v1.mp4"></video>
+<dl><dt>볼 구간</dt><dd>전체를 보며 내레이션과 화면의 연결을 들으세요.</dd><dt>배울 점</dt><dd>장면을 하나씩 소개하면 제품을 알아볼 이유가 약해집니다.</dd><dt>내 작업에 적용</dt><dd>“이번엔 다른 분의 볼” 같은 장면 안내보다 설명의 흐름을 확인하세요.</dd></dl>
+<p class="video-note">반려된 과거 영상(S18)입니다. 최신 제작 지시는 별도 상세 기준을 따릅니다.</p></article><article class="teaching-card"><h3>④ 다음 작업의 기준 영상 살펴보기</h3>
+<video aria-label="④ 다음 작업의 기준 영상 살펴보기" controls="" poster="assets/own05.jpg" preload="metadata" src="assets/own05_master.mp4"></video>
+<dl><dt>볼 구간</dt><dd>초반 제품 장면에서 얼굴로 넘어가는 부분과 상단 문구.</dd><dt>배울 점</dt><dd>다음 작업은 얼굴 크기 또는 글자 크기 중 하나를 바꿉니다.</dd><dt>내 작업에 적용</dt><dd>변경 지시가 없는 내용과 음성은 그대로 유지하세요.</dd></dl>
+<p class="video-note">기존 광고 05의 원본입니다. 예비 작업 B02·B03에서 사용합니다.</p></article></div></div></details><details><summary>자막을 읽기 쉽게 만드는 방법</summary><div class="detail-body"><p>큰 글자를 많이 넣기보다, <strong>제목 → 설명 → 구매 안내</strong> 순서로 읽히게 만드세요. 설명 자막은 뜻이 이어지는 구절로 묶고, 제품과 손동작을 가리지 않게 놓습니다.</p><figure class="comparison"><img alt="기존 자막과 정리한 자막을 비교하는 자료" src="assets/comparison.jpg"/><figcaption>글자 크기·강조색·문장 묶음을 비교해 보세요.</figcaption></figure></div></details><details><summary>숫자는 어떻게 읽나요? — 클릭과 구매는 별개</summary><div class="detail-body"><p>관심을 끌었다고 꼭 구매까지 이어지는 것은 아닙니다. 먼저 초반에 계속 보는지, 다음으로 제품 링크를 누르는지, 마지막으로 구매하는지를 함께 봅니다. <strong>광고 운영과 결과 판단은 제현님이 담당하고, 편집자는 다음 수정에 반영합니다.</strong></p>
+<p>아래는 10/29 저장 자료입니다. 같은 조건의 실험 결과가 아니므로 영상 순위를 단정하지 않습니다.</p><div class="table-wrap"><table><thead><tr><th>광고</th><th>지출</th><th>구매</th><th>매출</th><th>ROAS</th><th>후킹률 표시값</th></tr></thead><tbody><tr><td>05</td><td>463,345원</td><td>9</td><td>374,100원</td><td>80.7%</td><td>20%</td></tr><tr><td>01</td><td>36,744원</td><td>0</td><td>0원</td><td>0.0%</td><td>33%</td></tr><tr><td>N06</td><td>46,389원</td><td>0</td><td>0원</td><td>0.0%</td><td>49%</td></tr></tbody></table></div><p class="note">저장 자료 기준 2026-10-29T22:38:14+09:00. 동일 조건 무작위 실험이 아니며 노출량·집행 기간이 다르다. 후킹률은 대시보드 표시값, ROAS는 매출÷지출로 재계산. N06은 노출467·구매0이라 전체 고객의 무효과로 일반화하지 않는다. 후킹률이 구매를 보장하지 않는다는 교육 예시다. 실시간 계정 상태로 읽지 않는다.</p></div></details><details><summary>참고 영상별 상세 관찰 메모</summary><div class="detail-body"><h1>함께 보는 예시와 질문</h1>
+<p>성과가 좋은 예시·편집 문법 예시·반려 예시를 구분한다. 아래 파일은 패키지에 함께 들어 있다. 새 직원이 다른 PC로 옮겨도 재생할 수 있다.</p>
+<h2>CCFM 관리받는구도</h2>
+<p><code>assets/ccfm_care.mp4</code> — 0~8.88초의 시연과 설명 연결, 약10~14.1초의 성분 CG, 본문의 고정 위치와 흰색/노란색 역할을 관찰한다. 전체 영상을 보고 단순히 초반만 빠르게 따라하지 않는다. 영상별 매출을 이 파일만으로 증명하는 예시는 아니다.</p>
+<p>질문: 어떤 동작을 보여주면서 어떤 문장을 말하는가? 자막이 제품·시연과 경쟁하는가? 본문·제목·혜택은 어떻게 구분하는가?</p>
+<h2>CCFM 어머님·판매종료약사후킹</h2>
+<p><code>assets/ccfm_mother.mp4</code>, <code>assets/ccfm_sale.mp4</code>. 어머님은 짧은 본문이 안정된 영역에 놓이는 방식을, 판매종료는 도입 인물과 설명 몸통의 연결을 본다. 인물 경력·효능·가격·판매종료 문구 자체를 우리 광고에 옮기지 않는다.</p>
+<h2>자막 비교</h2>
+<p><code>assets/comparison.jpg</code>, <code>assets/care_sheet.jpg</code>. 과거 v15의 지나친 글자 크기·서체·강조색 혼용과 짧은 토막 자막을 비교한다. v16에서 정리한 정보 위계와 의미 단위 묶음을 참고한다. “폰트가 설치됨”은 “읽기 좋은 자막”과 다르다.</p>
+<h2>S18 반려 예시</h2>
+<p><code>assets/S18_rejected_v1.mp4</code>. 반려 이력에서 사용자가 좋다고 한 비포애프터 소스와, 반려한 부자연스러운 내레이션·장면 나열을 분리해서 본다. ‘이번엔 다른 분의 볼’, ‘거울 앞에서 피부 확인’ 같은 장면 안내로 구매 이유를 대신하지 않는다. 자동 전사·디코딩 검사 통과가 음성 자연스러움이나 최종 컨펌을 뜻하지 않는다. 최신 S18 대본은 별도 JSON에 있다.</p>
+<h2>S17 A/B — 짧은 후킹 참고</h2>
+<p><code>assets/S17_A_v3_review.mp4</code>, B. 두 영상은 5.6초짜리 후킹 참고 자료다. 사용 동작과 첫 문구로 시선을 끄는 방식을 관찰한다. 오늘 만들 10초 영상에는 이 후킹 뒤로 제품 설명을 담은 공통 몸통을 따로 구성한다. 과거 검토본에 보이는 작업 라벨은 새 영상에 넣지 않는다.</p>
+<h2>우리05 — 관심과 구매는 구분</h2>
+<p><code>assets/own05_master.mp4</code>와 아래 스냅샷을 본다. 초반 제품컷 이후 얼굴로 넘어가는 지점과 작은 상단 고정문구가 예비B02/B03의 변경 대상이다. 과거 문구·제품 배치를 관찰하는 자료이며 현재 모든 광고의 정답이 아니다.</p></div></details></section><section id="timeline"><div class="section-label"><span class="num">04</span><span>목표와 일정</span></div><h2>제작 목표와 제출 시간</h2>
+<p><strong>지속 업무인 글로우덤 광고 편집의 제작 목표는 하루 1개 시나리오로 A/B 총 2편</strong>입니다. 정상적인 주 5일 기준으로는 10편입니다. 파워페이지 편집은 별도로 배정하는 추가 업무이며, 매일 정해진 추가 물량이 있는 것은 아닙니다.</p>
+<p>업무를 돌아볼 때는 <strong>제작 편수·제출 시간·오류 없는 완성도·수정 의견 반영</strong>을 함께 확인합니다. 오탈자, 잘린 자막, 잘못된 제품 정보가 없는지 제출 전에 확인하세요.</p>
+<p>이번 온보딩 일정은 <strong>첫 3일 17시 초안</strong>, 이후 정상 운영은 <strong>15시 초안·18시 수정본</strong>을 기준으로 잡았습니다. 첫 3일의 수정 마감은 제현님과 확인합니다.</p>
+<p>첫날 실습과 기존 영상의 수정본(v2·v3)은 신규 편수로 세지 않습니다. 소스나 기획을 기다린 시간은 따로 기록합니다. 매출과 광고비 대비 매출 비율(ROAS)은 다음 편집에 참고할 광고 성과이며, 개인에게 확정된 평가 목표가 아닙니다.</p>
+<h2>직원이 매일 할 일</h2>
+<p>전달받은 지시서 확인 → A/B 편집 → 제출·작업시간과 막힌 점 기록 → 받은 의견 반영 순서입니다. 파일이 없거나 열리지 않으면 제현님에게 알려주세요. 금요일에는 한 주의 작업과 어려웠던 점을 함께 봅니다.</p>
+<p>기록은 영상을 전달할 때 <strong>제작 메모 3~4줄</strong>로 함께 남기면 됩니다. A/B에서 바꾼 점, 작업에 걸린 시간, 기다린 자료나 막힌 점, 수정할 점을 적습니다. 별도 작업기록 파일을 채우는 절차는 두지 않습니다.</p>
+<h2>이후 작업은 어떻게 정하나요?</h2>
+<p>첫 주 작업표는 <strong>관리자의 배정안</strong>입니다. 소스가 준비됐는지에 따라 실제 작업이 달라집니다. 준비된 신규 작업을 우선하고, 준비가 늦으면 예비 작업을 배정합니다. 아래 상세 일정의 모든 작업이 이미 확정·준비 완료됐다는 뜻은 아닙니다.</p>
+<table>
+<thead>
+<tr>
+<th>기간</th>
+<th>집중할 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1주차 · 11/2~6</td>
+<td>도구·전달 방식을 익히고, 지시서대로 A/B를 만듭니다. 첫 3일 걸린 시간을 기록합니다.</td>
+</tr>
+<tr>
+<td>2~3주차 · 11/9~20</td>
+<td>하루 2편 목표로 작업하며, 반복되는 오류와 수정 시간을 줄입니다.</td>
+</tr>
+<tr>
+<td>4주차 · 11/23~27</td>
+<td>만든 영상과 광고 결과를 함께 돌아보고 다음 달 목표를 정합니다.</td>
+</tr>
+</tbody>
+</table>
+<h2>파워페이지 편집은 별도로 안내합니다</h2>
+<ul>
+<li><strong>김가연님 건 — 예정된 추가 업무:</strong> 12월 초 유튜브 공개에 맞춰 파워페이지 배포용 영상을 편집합니다. 첫 4주 정기 작업에 섞어 배정하지 않습니다.</li>
+<li><strong>착한구두 건 — 생길 수 있는 추가 업무:</strong> 필요한 건이 생기면 파워페이지용 영상 편집을 맡을 수 있습니다. 구체적인 일정·분량·납기는 배정할 때 안내합니다.</li>
+</ul>
+<p>두 업무 모두 매일 반복하는 업무로 정해진 것은 아닙니다. 배정 시 제현님이 진행 중인 작업과의 우선순위·일정을 조정합니다.</p><details><summary>관리자용 — 날짜별 작업 배정안과 준비 조건</summary><div class="detail-body"><h1>이번 주 제작·업로드·리뷰 배정안</h1>
+<p>2026-11-02~11-06 · 기획·집행·리뷰: 제현 / 편집·수정: 편집자</p>
+<p>이 표는 <strong>배정안</strong>이며 실제 납품·검수·집행 완료 기록이 아니다. 시나리오 원문은 사용자 지정 시트가 정본이다. S18이라는 옛 내부 명칭으로 시트의 시나리오 12를 중복 배정하지 않는다.</p>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>작업</th>
+<th>납기 목표</th>
+<th>다음 단계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-11-02</td>
+<td>멜라크림 10초 후킹 실습</td>
+<td>17시 초안</td>
+<td>실습 결과를 보고 후킹 선택 이유와 더 강한 후킹 아이디어 1개를 기록한다.</td>
+</tr>
+<tr>
+<td>2026-11-03</td>
+<td>시나리오 12 · 패드 소거와 성분 설명</td>
+<td>17시 초안 목표</td>
+<td>A/B 첫 문장과 네 단계 편집 구성을 시트에 반영한 뒤 소스·음원을 묶어 배정한다. 준비가 늦으면 B02 전체 광고 편집으로 대체.</td>
+</tr>
+<tr>
+<td>2026-11-04</td>
+<td>시나리오 12 · 전체 검수와 수정</td>
+<td>17시 수정 초안 목표</td>
+<td>수정 확인 후 확정 파일 링크를 남기고 업로드 슬롯에 연결. 전날 이미 완료됐다면 C03 개선 기획·소스 준비를 앞당긴다.</td>
+</tr>
+<tr>
+<td>2026-11-05</td>
+<td>클렌저 · 고마쥬에서 성분 설명까지</td>
+<td>15시 초안 · 18시 수정본 목표</td>
+<td>기존 C03의 집행 결과를 보고 수정 우선순위를 정한다. 새 A/B 둘끼리 비교하고, 성분 블록까지 다른 구 C03과의 차이를 후킹 효과로 단정하지 않는다.</td>
+</tr>
+<tr>
+<td>2026-11-06</td>
+<td>주간 리뷰 · 다음 개선 1건 선택</td>
+<td>15시 초안 목표 · 주간 리뷰 20분</td>
+<td>관측 사실·가설·유지할 것·변수·다음 확인일을 남기고 11/9 제작 큐와 11/16 ACIS 리프레시에 반영한다.</td>
+</tr>
+</tbody>
+</table>
+<p>정상 가동 목표는 하루 1시나리오 × A/B 2편이다. 첫 주는 실습·수정·소스 준비를 포함하므로 주 10편을 확정 물량으로 약속하지 않는다. J01·B01은 실습, 같은 작업의 v2·v3는 수정본이다. B02·B03은 소스 준비가 늦을 때 배정하는 기존 완편 기반 대체 작업이다.</p>
+<p>업로드 예정은 검수 후 다음 영업일을 기본으로 잡되, <strong>실제 집행일은 광고 ID와 노출 확인 후 기록</strong>한다. 3일·6일 리뷰는 그 실제 집행일을 기준으로 한다. 금요일 제작은 신규 성과가 부족하면 기존 소재 리뷰·다음 기획 준비로 전환한다.</p>
+<p>11/9~20은 하루 2편 목표로 반복 오류와 수정 시간을 줄인다. 11/23~27에는 제작 이력과 성과를 연결해 다음 달 목표를 정한다. ACIS 기획 검토는 11/16·11/30이다.</p>
+<p>김가연 파워페이지는 12월 초 예정 추가 업무. 착한구두 파워페이지는 가능 추가 업무. 자료·물량·납기는 별도 배정하며 정기 생산량에 자동 추가하지 않는다.</p></div></details></section><section id="buffers"><div class="section-label"><span class="num">05</span><span>다음 작업</span></div><p>예비 작업은 다음 광고의 소스가 준비되지 않았을 때 이어서 할 수 있는 작업입니다. 직원이 순서를 임의로 고르지 않고, 제현님이 배정한 지시서로 진행합니다.</p><details><summary>지시받은 예비 작업의 상세 보기 — B01 / B02 / B03</summary><div class="detail-body"><h1>소스 준비된 예비 지시서 3건</h1>
+<p>입사 전 기획·소스가 막히는 날의 대체 큐다. 이번 요청으로 준비한 신규 편집안이며 과거 확정 시나리오로 표기하지 않는다. 제현이 당일 슬롯 하나를 배정한다. 하루 두 편 총량 안에서 진행하며, 세 건을 동시에 추가하지 않는다. 각 작업은 같은 몸통에 하나의 변수만 바꾸는 A/B다.</p>
+<h2>B01 — S17 첫 접사의 확대 정도</h2>
+<p>목적: 첫 화면에서 고민 부위가 더 잘 읽히는 확대 정도를 비교한다. J01 다음으로 권장한다.</p>
+<p>소스: <code>action_pigment_v3.mp4</code>, <code>product_shelf.jpg</code>, <code>original_bgm.wav</code>. 규격은 J01과 같은 4:5 1080×1350·30fps·10초다. J01 A를 기준으로 후킹 확대 정도만 바꾸고, 문구와 몸통은 동일하게 유지한다. 구매 안내(CTA)는 넣지 않는다.</p>
+<table>
+<thead>
+<tr>
+<th>구간</th>
+<th>A</th>
+<th>B</th>
+<th>고정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>후킹 구간</td>
+<td>J01 피부 화면 대비108% 확대</td>
+<td>J01 피부 화면 대비120% 확대</td>
+<td>같은 볼 중심점·같은 원본 시간·같은 문구</td>
+</tr>
+<tr>
+<td>후킹 이후~10초</td>
+<td>J01 공통 몸통</td>
+<td>같은 몸통</td>
+<td>제품 사진·음원·자막 동일</td>
+</tr>
+</tbody>
+</table>
+<p>확대 대상은 피부 레이어만이다. 제품·문구까지 전체 화면을 확대하지 않는다. 손과 패드가 잘리면 확대값을 임의로 낮춰 납품하지 말고 캡처로 문의한다. 변경값을 메모에 기록한다. 가설 검증용이며 120%가 더 좋다고 미리 판정하지 않는다.</p>
+<p>납품: <code>세로_멜라크림_초반접사108_A_v1_M&lt;날짜&gt;.mp4</code>, <code>세로_멜라크림_초반접사120_B_v1_M&lt;날짜&gt;.mp4</code>. 두 편 모두 새 편집 버전이다.</p>
+<h2>B02 — 05의 첫 제품 컷을 피부 접사로 교체</h2>
+<p>목적: 제품 단독 도입의 초기 이탈을 줄일 수 있는지 확인한다. 05의 오디오·상단 문구·1.33초 이후 몸통은 그대로 둔다.</p>
+<p>소스: <code>assets/own05_master.mp4</code>와 <code>assets/action_pigment_v3.mp4</code>. 05 실제 원본은720×1280·24fps·43.833초의9:16이다. 출력은4:5 1080×1350·24fps로 새 프로젝트를 만든다. 원본 전체를4:5로 늘리거나 강제 크롭하지 않는다. 먼저 아래 공통 재배치를 두 안에 똑같이 적용한다. 새 음성·장면 생성 없음.</p>
+<p>공통 레이아웃: 상단180px 검은 띠에 원본 두 줄 문구를 다시 배치, 중앙 y180~1150에 원본의 주영상 영역(원본 y254~1054)을 비율 유지 fit, 하단 y1150~1350에 원본 하단 자막 영역(y1054~1140)을 비율 유지 fit. 원본 상단 문구는 B03에 적힌 원문을 사용한다. 중앙 여백은 검정이며 피부·제품을 잘라 채우지 않는다. 몸통 각 컷에 필요한 정보가 이 영역 밖으로 벗어나면 캡처로 문의한다. 이 공통4:5판을 만든 뒤 A/B의 첫 구간만 바꾼다. 새4:5 A/B끼리 비교하며 과거9:16과의 차이를 순수 후킹 효과로 해석하지 않는다.</p>
+<table>
+<thead>
+<tr>
+<th>구간</th>
+<th>A</th>
+<th>B</th>
+<th>고정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0~1.33초</td>
+<td>S17 동작0~1.33초의 피부 접사를 05 피부 영역에 사용</td>
+<td>동일 원본·동일 시간, 피부 레이어만115% 확대</td>
+<td>상·하단 고정문구·05 원음·길이</td>
+</tr>
+<tr>
+<td>1.33초~끝</td>
+<td>05 원본</td>
+<td>같은 원본</td>
+<td>원음·장면·제품·CTA·속도</td>
+</tr>
+</tbody>
+</table>
+<p>첫 구간만 공통4:5판의 중앙 주영상 영역을 교체하고 상·하단 텍스트는 유지한다. 완성 MP4의 피부 위 글자를 지우거나 가짜 깨끗한 배경을 만들지 않는다. 원본으로 분리 편집이 어려우면 요청 사항을 기록하고 B01/B03으로 전환한다. 1.33초 경계는24fps 타임라인의32프레임(약1.333초)에 맞추고 양옆을 확인한다. 전체 내레이션 흐름은 바꾸지 않는다.</p>
+<p>납품: <code>세로_멜라크림_05얼굴도입_A_v1_M&lt;날짜&gt;.mp4</code>, B. 기존 05 원본은 비교용이며 새 생산 편수로 다시 세지 않는다.</p>
+<h2>B03 — 05 상단 헤드라인 가독성</h2>
+<p>목적: 작은 고정문구의 읽힘을 개선하는 안을 비교한다. 05 내용·시연·원음·길이·CTA는 유지하고 상단 헤드라인 크기만 바꾼다.</p>
+<p>소스: <code>assets/own05_master.mp4</code>, 패키지 폰트. 05 원본 전체 길이43.833초·24fps를 유지한다. 규격4:5 1080×1350. 먼저 B02에 명시한 공통4:5 레이아웃을 만들고 두 안에서 동일하게 사용한다. 피부·제품·하단 자막을 임의 크롭하지 않는다.</p>
+<p>A: 새4:5 상단 검은 띠180px 안에 Do Hyeon52px. B: 같은 폰트·두줄·중앙 정렬·글자색으로60px. 줄 중심 y55/125, 노란색#ffe65b, 좌우40px 여백은 동일하다. 두 안 모두 원문 ‘10년동안 안없어진 기미 / 2주동안 발랐더니 없어졌습니다.’를 그대로 사용한다. 새 보증·효과·행사 수치를 추가하지 않는다. 이 문구의 결과 검증을 새로 주장하는 작업이 아니다.</p>
+<p>기존 글자를 덮을 때는 상단 검은 띠 안에서만 처리하고 피부·제품 화면을 침범하지 않는다. 가장 긴 줄이 넘치면 임의 축소하지 않고 제현에게 두 안의 캡처로 문의한다. 같은 문구·같은 위치를 유지해 크기 변수만 비교한다.</p>
+<p>납품: <code>세로_멜라크림_05헤드라인52_A_v1_M&lt;날짜&gt;.mp4</code>, <code>세로_멜라크림_05헤드라인60_B_v1_M&lt;날짜&gt;.mp4</code>. 전체 재생과 모바일 크기 읽힘을 확인한다. 위 두 편은 구9:16과 비교하는 실험이 아니라 새4:5 안에서 글자 크기를 비교하는 실험이다.</p>
+<h2>현재 시나리오와 기존 완성본</h2>
+<p>시나리오 원문은 <a href="https://docs.google.com/spreadsheets/d/1sIyn3kYLMt9XAxaUpaixnO5H_Un8G5iz5AoCuJIrjJM/edit">사용자 지정 시트</a>가 정본이다. 현재 시나리오 12와 영상 캡처 탭을 우선 사용한다. 과거 S18 사본은 이력이며 현재 배정의 원문으로 혼용하지 않는다.</p>
+<p>시어머님 S20 v3와 클렌저 C03 v5는 이미 제작된 기존 광고다. <a href="index.html#performance">운영 보드</a>에서 저장된 광고 상태·성과와 다음 개선 후보를 확인한다. 예전 ‘크림20·클렌저03 새 장면·음성 미제작’ 문구는 현재 상태를 나타내지 않는다. ‘엄마 사진’ 구안과 ‘시어머님 썰’ 완성본은 다른 시나리오다.</p>
+<h2>별도로 배정하는 추가 업무</h2>
+<p>김가연님 유튜브가 2026년 12월 초 공개될 때 파워페이지에 배포할 영상을 만드는 업무가 예정되어 있다. 착한구두 건으로도 파워페이지 편집 업무가 생길 수 있다. 두 업무의 일정·분량·납기는 각각 별도로 배정하며, 현재 매일 만드는 광고 물량에 자동으로 추가하지 않는다. 준비된 기획안은 참고 자료이며, 원본을 받았다는 이유만으로 바로 작업을 시작하지 않는다.</p></div></details></section><section id="access"><div class="section-label"><span class="num">06</span><span>시작 준비</span></div><h2>첫날 준비 확인</h2>
+<ul>
+<li>회사 캡컷 계정으로 로그인하고 편집할 수 있는지 확인합니다.</li>
+<li>드랍박스에서 소스를 내려받아 실제로 재생해 봅니다.</li>
+<li>작업을 전달하고 수정 의견을 받을 채널을 확인합니다.</li>
+<li>짧게 출력해 영상과 소리가 정상인지 확인합니다.</li>
+</ul>
+<p>직원 이름·이메일과 계정·폴더 권한은 아직 확인되지 않았습니다. 권한 준비와 전달 채널 안내는 관리자가 마무리할 항목입니다.</p></section></main></div><footer>글로우덤 편집자 온보딩 · 작업 지시와 계정·폴더 접근은 담당자 안내에 따릅니다.</footer><script>document.querySelectorAll('section table').forEach(t=>{if(t.parentElement.classList.contains('table-wrap'))return;const w=document.createElement('div');w.className='table-wrap';t.before(w);w.append(t)});const L=[...document.querySelectorAll('nav a')],S=[...document.querySelectorAll('main section')];function spy(){let cur=S[0]?.id||null;for(const x of S)if(x.getBoundingClientRect().top<=innerHeight*.35)cur=x.id;L.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));const on=L.find(a=>a.classList.contains('on'));if(on&&innerWidth<=1020){const n=on.parentElement;n.scrollLeft=on.offsetLeft-n.clientWidth/2+on.clientWidth/2}}addEventListener('scroll',spy,{passive:true});addEventListener('resize',spy);spy();</script></body></html>
