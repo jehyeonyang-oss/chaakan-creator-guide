@@ -1066,11 +1066,11 @@
       "account": "amu__s2__",
       "product": "풀문 키높이 방한 부츠",
       "content": "키높이 풀문 방한 부츠 착화 · 겨울 데일리룩",
-      "stage": "배송 중",
+      "stage": "배송 완료",
       "status": "진행확정",
       "sentDate": "",
       "postDate": "",
-      "deliveredDate": "",
+      "deliveredDate": "2026-11-03",
       "detail": "7월 데릴 협업 이력 · 10/29 견적 55만(공유·저장 상한 106만 이내) → 수락 메일 발송 · 셀메이트 S261029172254 등록(10/29 17:22, 할당미진행·송장 대기)",
       "schedule": "11월 4주차(11/22~) 업로드",
       "scheduleType": "예상",
@@ -1242,5 +1242,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-11-03T02:26:51.339333+00:00"
+  "syncedAt": "2026-11-03T07:51:41.429432+00:00"
 }
