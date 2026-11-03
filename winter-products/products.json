@@ -1,0 +1,973 @@
+[
+  {
+    "id": 4837,
+    "name": "디케인 폴딩 무스탕 롱부츠",
+    "short_name": "디케인",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4837",
+    "price": 109000,
+    "image": "images/4837.jpg",
+    "codes": [
+      "WTSDR4i190"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791420223013569",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "롱부츠",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4844,
+    "name": "턴즈 레이스업 투웨이 방한 롱부츠",
+    "short_name": "턴즈",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4844",
+    "price": 99900,
+    "image": "images/4844.jpg",
+    "codes": [
+      "WTSDR4i189"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791420223013569",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "롱부츠",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4842,
+    "name": "풀문 키높이 퍼안감 방한 부츠",
+    "short_name": "풀문",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4842",
+    "price": 59900,
+    "image": "images/4842.jpg",
+    "codes": [
+      "WTSDR4i006"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1789695057021179",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "숏·미들부츠",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4681,
+    "name": "시트롱 퍼안감 플랫폼 방한화",
+    "short_name": "시트롱",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4681",
+    "price": 49900,
+    "image": "images/4681.jpg",
+    "codes": [
+      "WTSDR4i177",
+      "WTSDR4i181"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791420223013569",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "플랫·로퍼",
+    "note": "두 품번을 한 상품 페이지에서 선택합니다.",
+    "in_new": true
+  },
+  {
+    "id": 4836,
+    "name": "모렌트 퍼안감 플랫폼 클로그 뮬",
+    "short_name": "모렌트",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4836",
+    "price": 55900,
+    "image": "images/4836.jpg",
+    "codes": [
+      "WTSDR4i178"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791333901259969",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4683,
+    "name": "차엔 하네스 퍼안감 방한 부츠",
+    "short_name": "차엔",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4683",
+    "price": 45900,
+    "image": "images/4683.jpg",
+    "codes": [
+      "WTSDR4i180"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1792977182534449",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "숏·미들부츠",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4682,
+    "name": "네츠 뽀글이 퍼안감 방한 부츠",
+    "short_name": "네츠",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4682",
+    "price": 42900,
+    "image": "images/4682.jpg",
+    "codes": [
+      "WTACR4i179"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1792977182534449",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "숏·미들부츠",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 5017,
+    "name": "첼라 플랩 퍼안감 방한화",
+    "short_name": "첼라",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=5017",
+    "price": 39900,
+    "image": "images/5017.jpg",
+    "codes": [
+      "WTACR4i176"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1792555690639479",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "방한화",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4680,
+    "name": "버칸 메리제인 퍼안감 방한화",
+    "short_name": "버칸",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4680",
+    "price": 37900,
+    "image": "images/4680.jpg",
+    "codes": [
+      "WTSDR4i175"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791854455232979",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4845,
+    "name": "슈플렌 부클 리본 플랫",
+    "short_name": "슈플렌",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4845",
+    "price": 39900,
+    "image": "images/4845.jpg",
+    "codes": [
+      "WTACR4i174"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1790649010478039",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4679,
+    "name": "알비 부클 리본 플랫",
+    "short_name": "알비",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4679",
+    "price": 32900,
+    "image": "images/4679.jpg",
+    "codes": [
+      "WTSDR4i173"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1790649010478039",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4685,
+    "name": "셀켄 쓰리웨이 리버시블 스니커즈",
+    "short_name": "셀켄",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4685",
+    "price": 65900,
+    "image": "images/4685.jpg",
+    "codes": [
+      "WTSDR4i182"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1789967214957839",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "스니커즈",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4686,
+    "name": "겐크 방한 스니커즈",
+    "short_name": "겐크",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4686",
+    "price": 62900,
+    "image": "images/4686.jpg",
+    "codes": [
+      "WTSDR4i183"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791854455232979",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "26FW 신상",
+    "category": "스니커즈",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4428,
+    "name": "노즈 퍼안감 플랫폼 방한 부츠",
+    "short_name": "노즈",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4428",
+    "price": 39900,
+    "image": "images/4428.jpg",
+    "codes": [
+      "WTSDR4h181"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 4382,
+    "name": "누아 클로그 방한 샌들",
+    "short_name": "누아",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4382",
+    "price": 35900,
+    "image": "images/4382.jpg",
+    "codes": [
+      "WTSDR4h174"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C03CZ1H4B1A/p1789355019645199",
+        "label": "9/14 방한 샌들 사양 변경"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "슬리퍼·뮬",
+    "note": "스트랩 고정형으로 사양 변경. 투웨이·탈부착 소구는 제외합니다.",
+    "in_new": true
+  },
+  {
+    "id": 3741,
+    "name": "다이트 퍼안감 방한 슬리퍼",
+    "short_name": "다이트",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=3741",
+    "price": 32900,
+    "image": "images/3741.jpg",
+    "codes": [
+      "WTSDR4f222"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 3705,
+    "name": "돌핀 탈부착 어그 슬리퍼",
+    "short_name": "돌핀",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=3705",
+    "price": 29900,
+    "image": "images/3705.jpg",
+    "codes": [
+      "WTSDR4f901"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 4436,
+    "name": "두들 레이스업 뽀글이 방한화",
+    "short_name": "두들",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4436",
+    "price": 35900,
+    "image": "images/4436.jpg",
+    "codes": [
+      "WTACR4h855",
+      "WTACR4h856"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "방한화",
+    "note": "뮬·부츠 옵션을 함께 확인할 수 있습니다.",
+    "in_new": true
+  },
+  {
+    "id": 3670,
+    "name": "듀마 퍼안감 방한 부츠",
+    "short_name": "듀마",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=3670",
+    "price": 35900,
+    "image": "images/3670.jpg",
+    "codes": [
+      "WTSDR4f219"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "숏·미들부츠",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 4107,
+    "name": "램버트 퍼안감 방한 슬립온 부츠",
+    "short_name": "램버트",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4107",
+    "price": 52900,
+    "image": "images/4107.jpg",
+    "codes": [
+      "WTSDR4g855",
+      "WTSDR4g857"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "숏·미들부츠",
+    "note": "로우·미들 옵션을 함께 확인할 수 있습니다.",
+    "in_new": false
+  },
+  {
+    "id": 4423,
+    "name": "몰리스 퍼안감 퀼팅 패딩 슬리퍼",
+    "short_name": "몰리스",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4423",
+    "price": 37900,
+    "image": "images/4423.jpg",
+    "codes": [
+      "WTFBR4h178",
+      "WTFBR4h308"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793165552728419",
+        "label": "10/28 상품 운영 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 3953,
+    "name": "무어 통굽 클로그 뮬",
+    "short_name": "무어",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=3953",
+    "price": 37900,
+    "image": "images/3953.jpg",
+    "codes": [
+      "WTSDR4g170"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "슬리퍼·뮬",
+    "note": "겨울 대상은 퍼안감 옵션입니다. 일반 스웨이드 옵션은 제외합니다.",
+    "in_new": false
+  },
+  {
+    "id": 3661,
+    "name": "베즈 뽀글이 방한 로퍼",
+    "short_name": "베즈",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=3661",
+    "price": 39900,
+    "image": "images/3661.jpg",
+    "codes": [
+      "WTSDR4f868"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 3711,
+    "name": "블룸 리얼 가죽 어그부츠",
+    "short_name": "블룸",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=3711",
+    "price": 55900,
+    "image": "images/3711.jpg",
+    "codes": [
+      "WTSDR4f877"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "숏·미들부츠",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 4149,
+    "name": "스쿱 탈부착 퍼안감 방한 슬리퍼",
+    "short_name": "스쿱",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4149",
+    "price": 37900,
+    "image": "images/4149.jpg",
+    "codes": [
+      "WTSDR4g860"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 4075,
+    "name": "스톡 퍼안감 패딩 방한 부츠",
+    "short_name": "스톡",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4075",
+    "price": 32900,
+    "image": "images/4075.jpg",
+    "codes": [
+      "WTLTR4g168"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "숏·미들부츠",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 943,
+    "name": "앤드리 통굽 로퍼",
+    "short_name": "앤드리",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=943",
+    "price": 39900,
+    "image": "images/943.jpg",
+    "codes": [
+      "WTSDR4g156"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "플랫·로퍼",
+    "note": "겨울 대상은 스웨이드 방한 옵션입니다. 레더 옵션은 제외합니다.",
+    "in_new": false
+  },
+  {
+    "id": 4053,
+    "name": "온즈 뽀글이 기모 메리제인 플랫",
+    "short_name": "온즈",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4053",
+    "price": 32900,
+    "image": "images/4053.jpg",
+    "codes": [
+      "WTACR4g837",
+      "WTACR4g906"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "플랫·로퍼",
+    "note": "성인·키즈 옵션이 함께 있는 상품입니다.",
+    "in_new": false
+  },
+  {
+    "id": 4126,
+    "name": "체토 에스닉 뽀글이 양털 슬리퍼",
+    "short_name": "체토",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4126",
+    "price": 32900,
+    "image": "images/4126.jpg",
+    "codes": [
+      "WTACR4g169"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 4071,
+    "name": "츄더 모직 기모안감 메리제인 플랫",
+    "short_name": "츄더",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4071",
+    "price": 29900,
+    "image": "images/4071.jpg",
+    "codes": [
+      "WTFBS4g155"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 4056,
+    "name": "치버 퍼안감 메리제인 플랫",
+    "short_name": "치버",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4056",
+    "price": 29900,
+    "image": "images/4056.jpg",
+    "codes": [
+      "WTACR4g154"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 2993,
+    "name": "컬리지 퍼안감 어그부츠",
+    "short_name": "컬리지",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=2993",
+    "price": 29900,
+    "image": "images/2993.jpg",
+    "codes": [
+      "WTSDR4d250",
+      "WTSDR4d251"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "숏·미들부츠",
+    "note": "숏·롱 옵션을 함께 확인할 수 있습니다.",
+    "in_new": false
+  },
+  {
+    "id": 4099,
+    "name": "코븐 무스탕 앵클부츠",
+    "short_name": "코븐",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4099",
+    "price": 49900,
+    "image": "images/4099.jpg",
+    "codes": [
+      "WTSDR4g856"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "숏·미들부츠",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 3740,
+    "name": "코츠 퍼안감 방한 슬리퍼",
+    "short_name": "코츠",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=3740",
+    "price": 35900,
+    "image": "images/3740.jpg",
+    "codes": [
+      "WTSDR4f876"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 2543,
+    "name": "클로이 퍼안감 첼시 방한 부츠",
+    "short_name": "클로이",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=2543",
+    "price": 29900,
+    "image": "images/2543.jpg",
+    "codes": [
+      "WTACR4c261"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "숏·미들부츠",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 4439,
+    "name": "타르트 뽀글이 메리제인 플랫",
+    "short_name": "타르트",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4439",
+    "price": 39900,
+    "image": "images/4439.jpg",
+    "codes": [
+      "WTACR4h175"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793172860526909",
+        "label": "10/28 자사몰 겨울 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 3669,
+    "name": "토빈 퍼안감 숏 어그부츠",
+    "short_name": "토빈",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=3669",
+    "price": 37900,
+    "image": "images/3669.jpg",
+    "codes": [
+      "WTSDR4f875"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793165552728419",
+        "label": "10/28 상품 운영 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "숏·미들부츠",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 4438,
+    "name": "투르 하이플랫폼 레이스업 방한 부츠",
+    "short_name": "투르",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4438",
+    "price": 55900,
+    "image": "images/4438.jpg",
+    "codes": [
+      "WTSDR4h861"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1787206235867889",
+        "label": "8/20 상품 운영 확인"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 3710,
+    "name": "포븐 퍼안감 밴딩 어그 슬리퍼",
+    "short_name": "포븐",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=3710",
+    "price": 35900,
+    "image": "images/3710.jpg",
+    "codes": [
+      "WTSDR4f206"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793172860526909",
+        "label": "10/28 자사몰 겨울 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 4433,
+    "name": "폴비 레이스업 패딩 방한화",
+    "short_name": "폴비",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4433",
+    "price": 52900,
+    "image": "images/4433.jpg",
+    "codes": [
+      "WTFBR4h857",
+      "WTFBR4h858"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
+        "label": "10/30 세일즈 방한화 목록"
+      },
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "방한화",
+    "note": "뮬·부츠 옵션을 함께 확인할 수 있습니다.",
+    "in_new": true
+  },
+  {
+    "id": 4077,
+    "name": "휴버트 플랫폼 퍼안감 방한화",
+    "short_name": "휴버트",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=4077",
+    "price": 49900,
+    "image": "images/4077.jpg",
+    "codes": [
+      "WTSDR4g854"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
+        "label": "10/30 오프라인 방한화 목록"
+      }
+    ],
+    "group": "기존 방한상품",
+    "category": "플랫·로퍼",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 5091,
+    "name": "르호 퍼안감 방한 슬리퍼",
+    "short_name": "르호",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=5091",
+    "price": 29900,
+    "image": "images/5091.jpg",
+    "codes": [
+      "WTSDR4i511"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1790649010478039",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "키즈",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": true
+  },
+  {
+    "id": 5092,
+    "name": "코린 비즈 퍼안감 방한 슬리퍼",
+    "short_name": "코린",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=5092",
+    "price": 35900,
+    "image": "images/5092.jpg",
+    "codes": [
+      "WTSDR4i512"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1790649010478039",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "키즈",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": false
+  },
+  {
+    "id": 5105,
+    "name": "쿠로 퍼안감 투웨이 방한 슬리퍼",
+    "short_name": "쿠로",
+    "url": "https://chaakan.co.kr/product/detail.html?product_no=5105",
+    "price": 25900,
+    "image": "images/5105.jpg",
+    "codes": [
+      "WTRBR4i513"
+    ],
+    "sources": [
+      {
+        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1793148315326089",
+        "label": "신상품 출시 공지"
+      }
+    ],
+    "group": "키즈",
+    "category": "슬리퍼·뮬",
+    "note": "",
+    "in_new": false
+  }
+]
