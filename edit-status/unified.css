@@ -13,3 +13,10 @@
 .u-date-empty{color:#9ca3af;font-size:11px}
 .u-schedule-note{margin-top:8px;font-size:11px;color:#6b7280}.u-schedule-note summary{cursor:pointer}.u-schedule-note[open] summary{margin-bottom:4px}
 .u-scroll:focus-visible{outline:2px solid #a78bfa;outline-offset:-2px}
+.u-cigro td{background:#fafafa;padding:8px 14px 12px;font-size:12px;color:#4b5563}
+.u-cigro-title{font-size:11px;font-weight:650;color:#6b7280;margin-bottom:4px}
+.u-cigro-line b{color:#111827}.u-cigro-wip{font-style:normal;font-size:10px;color:#92400e;background:#fef3c7;border-radius:4px;padding:0 4px}
+.u-cigro-bars{display:flex;align-items:flex-end;gap:2px;height:28px;margin:6px 0 4px;max-width:420px}
+.u-cigro-bars i{flex:1;background:#c4b5fd;border-radius:1px;min-height:0}
+.u-cigro-bars i:not([style]){background:transparent}.u-cigro-bars i.post{background:#7c3aed;outline:1px solid #7c3aed}
+.u-cigro small{display:block;color:#9ca3af;font-size:11px}

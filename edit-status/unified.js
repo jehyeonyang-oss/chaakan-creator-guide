@@ -34,7 +34,7 @@
   const teamName = team => team === 'mine' ? '양제현' : '서울링크';
   const teamBadge = team => `<span class="u-team-badge ${team === 'seoul' ? 'seoul' : ''}">${teamName(team)}</span>`;
   const embedded = JSON.parse($('content-data')?.textContent || '{"items":[]}');
-  const state = { team:'all', track:'all', search:'', view:'table', range:'upcoming', mine:[], seoul:[], keyheight:[], busy:false, source:{mine:{state:'loading'},seoul:{state:'loading'},keyheight:{state:'loading'}} };
+  const state = { team:'all', track:'all', search:'', view:'table', range:'upcoming', mine:[], seoul:[], keyheight:[], cigro:[], busy:false, source:{mine:{state:'loading'},seoul:{state:'loading'},keyheight:{state:'loading'},cigro:{state:'loading'}} };
 
   // Never join by creator handle: the same creator can have different work in each team.
   function performance(c) {
@@ -165,8 +165,19 @@
     const html = values.map(v => `<div class="u-date-value"><b>${esc(v.text)}</b>${v.label ? `<small>${esc(v.label)}</small>` : ''}</div>`).join('');
     return `<td class="u-date u-date-${type}" data-milestone="${type}">${html || '<span class="u-date-empty">미등록</span>'}</td>`;
   }
+  const won = x => '₩' + Math.round(x).toLocaleString('ko-KR');
+  function cigroRow(r) {
+    const c = r.team === 'mine' && r.postDate ? state.cigro.find(x => x.account === r.account && x.date === r.postDate) : null;
+    if (!c) return '';
+    const ratio = v => c.baselineDaily > 0 && v !== null ? ` (${(v / c.baselineDaily).toFixed(1)}배)` : '';
+    const wins = Object.entries(c.windows).filter(([,w]) => w.days > 0).map(([k,w]) => `<span>${k} 일평균 <b>${won(w.daily)}</b>${ratio(w.daily)}${w.complete ? '' : ' <em class="u-cigro-wip">집계 중</em>'}</span>`).join(' · ');
+    const max = Math.max(1, ...c.days.map(v => v || 0)), d0 = Date.parse(c.date + 'T00:00:00Z');
+    const bars = c.days.map((v,i) => { const day = new Date(d0 + (i - 14) * 86400000).toISOString().slice(0,10); return `<i class="${i === 14 ? 'post' : ''}" ${v === null ? '' : `style="height:${Math.max(2, Math.round(v / max * 100))}%" title="${day} ${won(v)}"`}></i>`; }).join('');
+    const top = Object.entries(c.channelShare).filter(([,v]) => v > 0).slice(0,3).map(([k,v]) => `${esc(k)} ${won(v)}`).join(' · ');
+    return `<tr class="u-cigro"><td colspan="12"><div class="u-cigro-title">간접매출 · 씨그로 (제품군 9채널 전체, 크리에이터 귀속 아님)</div><div class="u-cigro-line"><span>기준선 일평균 <b>${won(c.baselineDaily)}</b></span> → ${wins}</div><div class="u-cigro-bars" aria-hidden="true">${bars}</div>${top ? `<small>게시 후 채널 상위 · ${top}</small>` : ''}</td></tr>`;
+  }
   function renderTable(rows) {
-    $('u-table-body').innerHTML = rows.map(r => `<tr data-team="${r.team}" data-key="${esc(r.key)}"><td>${teamBadge(r.team)}</td><td class="u-person"><b>${esc(r.name)}</b>${r.account ? link(`https://www.instagram.com/${encodeURIComponent(r.account)}/`, '@' + r.account).replace('<a ', '<a class="u-account" ') : '<small>계정 주소 미확인</small>'}<small>${esc(r.track)}</small>${r.product ? `<small>${esc(r.product)}</small>` : ''}</td><td><span class="u-status ${statusClass(r)}">${esc(r.status)}</span>${r.statusDetail ? `<small>${esc(r.statusDetail)}</small>` : ''}</td>${['sent','received','draft','shoot','upload'].map(type=>milestoneCell(r,type)).join('')}<td class="u-fee"><b>${esc(r.fee)}</b>${/합산/.test(r.fee) ? '<small>묶음 계약 · 건별 합계 제외</small>' : ''}</td><td>${metrics(r)}</td><td class="u-brief">${esc(r.next)}${r.content ? `<small>${esc(r.content)}</small>` : ''}<details class="u-schedule-note"><summary>일정 메모</summary><small>${esc(r.schedule)}${r.track === '매장 방문' ? ' · 방문 완료 여부 미등록' : ''}</small></details></td><td class="u-links">${link(r.postUrl,'게시물')}${r.guideUrl ? link(r.guideUrl + (r.team === 'mine' ? (r.guideUrl.includes('?') ? '&' : '?') + 'staff=1' : ''),'촬영 가이드') : ''}${link(r.referenceUrl,'참고 영상·계정')}${link(r.recordUrl,r.team === 'mine' ? '업무 기록' : '원본 일정표')}${r.team === 'mine' && r.recordUrl ? '<small>업무 기록 로그인 필요</small>' : ''}</td></tr>`).join('') || '<tr><td colspan="12"><div class="u-empty">조건에 맞는 업무가 없습니다.</div></td></tr>';
+    $('u-table-body').innerHTML = rows.map(r => `<tr data-team="${r.team}" data-key="${esc(r.key)}"><td>${teamBadge(r.team)}</td><td class="u-person"><b>${esc(r.name)}</b>${r.account ? link(`https://www.instagram.com/${encodeURIComponent(r.account)}/`, '@' + r.account).replace('<a ', '<a class="u-account" ') : '<small>계정 주소 미확인</small>'}<small>${esc(r.track)}</small>${r.product ? `<small>${esc(r.product)}</small>` : ''}</td><td><span class="u-status ${statusClass(r)}">${esc(r.status)}</span>${r.statusDetail ? `<small>${esc(r.statusDetail)}</small>` : ''}</td>${['sent','received','draft','shoot','upload'].map(type=>milestoneCell(r,type)).join('')}<td class="u-fee"><b>${esc(r.fee)}</b>${/합산/.test(r.fee) ? '<small>묶음 계약 · 건별 합계 제외</small>' : ''}</td><td>${metrics(r)}</td><td class="u-brief">${esc(r.next)}${r.content ? `<small>${esc(r.content)}</small>` : ''}<details class="u-schedule-note"><summary>일정 메모</summary><small>${esc(r.schedule)}${r.track === '매장 방문' ? ' · 방문 완료 여부 미등록' : ''}</small></details></td><td class="u-links">${link(r.postUrl,'게시물')}${r.guideUrl ? link(r.guideUrl + (r.team === 'mine' ? (r.guideUrl.includes('?') ? '&' : '?') + 'staff=1' : ''),'촬영 가이드') : ''}${link(r.referenceUrl,'참고 영상·계정')}${link(r.recordUrl,r.team === 'mine' ? '업무 기록' : '원본 일정표')}${r.team === 'mine' && r.recordUrl ? '<small>업무 기록 로그인 필요</small>' : ''}</td></tr>${cigroRow(r)}`).join('') || '<tr><td colspan="12"><div class="u-empty">조건에 맞는 업무가 없습니다.</div></td></tr>';
   }
   function renderTimeline(rows) {
     const today = nowDate(), groups = new Map(), undated = [];
@@ -214,9 +225,10 @@
     const jobs = [
       async () => { const {body} = await fetchTimed('./data.json?t=' + Date.now()); const data = JSON.parse(body), rows = normalizeMine(data); state.mine = rows; state.source.mine = {state:Date.now() - Date.parse(data.syncedAt) > 12*3600000 ? 'stale' : 'ok',checkedAt:Date.now(),modified:data.syncedAt}; },
       async () => { const {r,body} = await fetchTimed(SOURCE + '?hub=' + Date.now()); const rows = parseSeoul(body); state.seoul = rows; state.source.seoul = {state:'ok',checkedAt:Date.now(),modified:r.headers.get('last-modified')}; },
-      async () => { const {body} = await fetchTimed('./seoul-keyheight.json?t=' + Date.now()); const data = JSON.parse(body), rows = normalizeKeyheight(data); state.keyheight = rows; state.source.keyheight = {state:Date.now()-Date.parse(data.reviewedAt)>7*86400000?'stale':'ok',checkedAt:Date.now(),modified:data.reviewedAt}; }
+      async () => { const {body} = await fetchTimed('./seoul-keyheight.json?t=' + Date.now()); const data = JSON.parse(body), rows = normalizeKeyheight(data); state.keyheight = rows; state.source.keyheight = {state:Date.now()-Date.parse(data.reviewedAt)>7*86400000?'stale':'ok',checkedAt:Date.now(),modified:data.reviewedAt}; },
+      async () => { const {body} = await fetchTimed('./cigro.json?t=' + Date.now()); const data = JSON.parse(body); if (!Array.isArray(data.campaigns)) throw Error('x'); state.cigro = data.campaigns; state.source.cigro = {state:'ok'}; },
     ];
-    await Promise.all(jobs.map((job,i) => job().catch(() => { state.source[['mine','seoul','keyheight'][i]].state = 'error'; }).finally(render)));
+    await Promise.all(jobs.map((job,i) => job().catch(() => { state.source[['mine','seoul','keyheight','cigro'][i]].state = 'error'; }).finally(render)));
     state.busy = false; $('u-refresh').disabled = false;
   }
   for (const b of $('u-team').querySelectorAll('button')) b.addEventListener('click',()=>{state.team=b.dataset.team; for(const x of $('u-team').querySelectorAll('button')){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',String(x===b));} render();});
