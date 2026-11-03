@@ -3,3 +3,13 @@
 @media(max-width:900px){.u-toolbar{align-items:flex-start}.u-controls{width:100%}.u-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.u-sources{grid-template-columns:1fr}.u-events{grid-template-columns:1fr}.u-day{grid-template-columns:78px minmax(0,1fr);gap:12px}.u-kpi{padding:13px 15px}.u-kpi>strong{font-size:24px}.u-controls input{flex:1;min-width:130px}.u-controls #u-team{flex-wrap:wrap}.u-timeline{padding:0 12px 12px}.u-heading{padding:14px}.u-source{padding:10px 14px}.share-tabs{overflow-x:auto;white-space:nowrap}}
 
 .u-controls select{border:1px solid #e5e7eb;border-radius:8px;padding:9px 12px;background:white;font-size:12px}.u-sources{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:900px){.u-sources{grid-template-columns:1fr}}
+
+#tab-unified .u-table{min-width:1780px}
+.u-date-help{margin:0;padding:10px 20px;font-size:11px;line-height:1.7;color:#6b7280;background:#fafafa;border-bottom:1px solid #f3f4f6}
+.u-table th small{display:block;font-size:10px;font-weight:400;color:#9ca3af;margin-top:2px}
+#tab-unified .u-table td.u-date{min-width:100px;max-width:150px;font-variant-numeric:tabular-nums}
+#tab-unified .u-table td.u-date-upload{min-width:145px;max-width:185px}
+.u-date-value+.u-date-value{margin-top:8px}.u-date-value b{font-weight:650;color:#374151}
+.u-date-empty{color:#9ca3af;font-size:11px}
+.u-schedule-note{margin-top:8px;font-size:11px;color:#6b7280}.u-schedule-note summary{cursor:pointer}.u-schedule-note[open] summary{margin-bottom:4px}
+.u-scroll:focus-visible{outline:2px solid #a78bfa;outline-offset:-2px}

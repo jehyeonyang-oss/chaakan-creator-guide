@@ -71,7 +71,7 @@
         if (events.some(e => e.date === when && (e.kind === kind || e.kind === '게시 완료' && kind === '업로드'))) continue;
         events.push({date:when,kind,detail:schedule,certainty:ranged ? '예정 범위 · 원문 확인' : c.scheduleType || '예정'});
       }
-      return { key:'mine:' + (new URL(safeURL(c.recordUrl) || 'https://seeding-a700a.web.app').searchParams.get('id') || `${c.account}:${c.track}:${i}`), team:'mine', name:c.name, account:c.account, track:c.track || '미등록', product:clean(c.product), content:clean(c.content), fee:clean(c.fee) || '미확인', status, statusDetail:c.status !== status ? clean(c.status) : '', posted, contact:false, schedule:schedule || '일정 미정', scheduleType:c.scheduleType || '미확인', next:clean(c.next) || '다음 할 일 미등록', events, ...performance(c), postUrl:safeURL(c.postUrl), recordUrl:safeURL(c.recordUrl), guideUrl:safeURL(c.guideUrl), badges:[], referenceUrl:'' };
+      return { key:'mine:' + (new URL(safeURL(c.recordUrl) || 'https://seeding-a700a.web.app').searchParams.get('id') || `${c.account}:${c.track}:${i}`), team:'mine', name:c.name, account:c.account, track:c.track || '미등록', product:clean(c.product), content:clean(c.content), fee:clean(c.fee) || '미확인', status, statusDetail:c.status !== status ? clean(c.status) : '', posted, postDate, contact:false, schedule:schedule || '일정 미정', scheduleType:c.scheduleType || '미확인', next:clean(c.next) || '다음 할 일 미등록', events, ...performance(c), postUrl:safeURL(c.postUrl), recordUrl:safeURL(c.recordUrl), guideUrl:safeURL(c.guideUrl), badges:[], referenceUrl:'' };
     });
     if (data.contacts != null && !Array.isArray(data.contacts)) throw Error('컨택 데이터 형식 확인 필요');
     for (const [i,c] of (data.contacts || []).entries()) {
@@ -137,8 +137,36 @@
     return `<div class="u-perf-line">조회 ${fmt(m.views)}</div><div class="u-perf-line">공유 ${fmt(m.shares)} · 저장 ${fmt(m.saves)}</div>${unit !== null ? `<div class="u-perf-line ${unit > 500 ? 'u-error' : ''}">1건당 ${fmt(unit)}원</div>` : '<small>공유·저장당 비용 미확인</small>'}<small>측정 ${stamp(m.at)}</small>`;
   }
   const statusClass = r => r.posted ? 'done' : /재촬영|모델/.test(r.status + r.statusDetail) ? 'attention' : '';
+  function scheduleClauses(r) {
+    // Keep date ranges, weekdays and relative dates intact. Only draft parentheses
+    // become a separate milestone; e.g. 11/5 업로드 (초안 11/3).
+    return r.schedule.replace(/[（(]([^()（）]*(?:초안|수정본)[^()（）]*)[)）]/g, ' · $1')
+      .split(/\s*·\s*/).map(clean).filter(Boolean);
+  }
+  function milestone(r, type) {
+    const clauses = scheduleClauses(r);
+    const kinds = { sent:/^제품 (?:발송|전달)$/, received:/^제품 수령$/, draft:/초안|수정본/, shoot:/촬영|방문/, upload:/업로드|게시/ };
+    const events = r.events.filter(e => kinds[type].test(e.kind));
+    const recorded = events.map(e => ({text:dayText(e.date),label:e.certainty || '등록 일정'}));
+    if (type === 'sent' || type === 'received') return recorded;
+    if (type === 'shoot' && r.visitDate) return [{text:dayText(r.visitDate),label:r.visitTime || '시간 미등록'}];
+    // A registered post date takes precedence over older narrative dates.
+    if (type === 'upload' && (r.postDate || r.uploadDate)) return [{text:dayText(r.postDate || r.uploadDate),label:r.posted ? '완료' : r.scheduleType}];
+    const texts = clauses.filter(text => kinds[type].test(text) && (type !== 'upload' || !/초안|수정본/.test(text)));
+    if (texts.length) return texts.map(text => ({
+      text:type === 'upload' ? clean(text.replace(/(?:재)?업로드(?:일)?|게시(?:일)?/g, '')) || '미정' : clean(text.replace(/초안\s*(?:전달(?:일)?\s*)?/, '')),
+      label:/미정|협의/.test(text) ? '협의 중' : type === 'upload' ? r.scheduleType : /완료|수령/.test(text) && !/후|예정/.test(text) ? '기록' : '예정'
+    }));
+    // Range events carry only their first day; retain the original range text.
+    return events.map((e,i) => /범위/.test(e.certainty || '') ? {text:e.detail || r.schedule,label:e.certainty} : recorded[i]);
+  }
+  function milestoneCell(r, type) {
+    const values = milestone(r, type);
+    const html = values.map(v => `<div class="u-date-value"><b>${esc(v.text)}</b>${v.label ? `<small>${esc(v.label)}</small>` : ''}</div>`).join('');
+    return `<td class="u-date u-date-${type}" data-milestone="${type}">${html || '<span class="u-date-empty">미등록</span>'}</td>`;
+  }
   function renderTable(rows) {
-    $('u-table-body').innerHTML = rows.map(r => `<tr data-team="${r.team}" data-key="${esc(r.key)}"><td>${teamBadge(r.team)}</td><td class="u-person"><b>${esc(r.name)}</b>${r.account ? link(`https://www.instagram.com/${encodeURIComponent(r.account)}/`, '@' + r.account).replace('<a ', '<a class="u-account" ') : '<small>계정 주소 미확인</small>'}<small>${esc(r.track)}</small>${r.product ? `<small>${esc(r.product)}</small>` : ''}</td><td><span class="u-status ${statusClass(r)}">${esc(r.status)}</span>${r.statusDetail ? `<small>${esc(r.statusDetail)}</small>` : ''}</td><td class="u-brief">${r.visitDate ? `<div>방문 ${dayText(r.visitDate)} · ${esc(r.visitTime || '시간 미등록')}</div>` : ''}<div>${esc(r.schedule)}</div><small>${esc(r.scheduleType)}${r.track === '매장 방문' ? ' · 방문 완료 여부는 원본에 없음' : ''}</small></td><td class="u-fee"><b>${esc(r.fee)}</b>${/합산/.test(r.fee) ? '<small>묶음 계약 · 건별 합계 제외</small>' : ''}</td><td>${metrics(r)}</td><td class="u-brief">${esc(r.next)}${r.content ? `<small>${esc(r.content)}</small>` : ''}</td><td class="u-links">${link(r.postUrl,'게시물')}${r.guideUrl ? link(r.guideUrl + (r.team === 'mine' ? (r.guideUrl.includes('?') ? '&' : '?') + 'staff=1' : ''),'촬영 가이드') : ''}${link(r.referenceUrl,'참고 영상·계정')}${link(r.recordUrl,r.team === 'mine' ? '업무 기록' : '원본 일정표')}${r.team === 'mine' && r.recordUrl ? '<small>업무 기록 로그인 필요</small>' : ''}</td></tr>`).join('') || '<tr><td colspan="8"><div class="u-empty">조건에 맞는 업무가 없습니다.</div></td></tr>';
+    $('u-table-body').innerHTML = rows.map(r => `<tr data-team="${r.team}" data-key="${esc(r.key)}"><td>${teamBadge(r.team)}</td><td class="u-person"><b>${esc(r.name)}</b>${r.account ? link(`https://www.instagram.com/${encodeURIComponent(r.account)}/`, '@' + r.account).replace('<a ', '<a class="u-account" ') : '<small>계정 주소 미확인</small>'}<small>${esc(r.track)}</small>${r.product ? `<small>${esc(r.product)}</small>` : ''}</td><td><span class="u-status ${statusClass(r)}">${esc(r.status)}</span>${r.statusDetail ? `<small>${esc(r.statusDetail)}</small>` : ''}</td>${['sent','received','draft','shoot','upload'].map(type=>milestoneCell(r,type)).join('')}<td class="u-fee"><b>${esc(r.fee)}</b>${/합산/.test(r.fee) ? '<small>묶음 계약 · 건별 합계 제외</small>' : ''}</td><td>${metrics(r)}</td><td class="u-brief">${esc(r.next)}${r.content ? `<small>${esc(r.content)}</small>` : ''}<details class="u-schedule-note"><summary>일정 메모</summary><small>${esc(r.schedule)}${r.track === '매장 방문' ? ' · 방문 완료 여부 미등록' : ''}</small></details></td><td class="u-links">${link(r.postUrl,'게시물')}${r.guideUrl ? link(r.guideUrl + (r.team === 'mine' ? (r.guideUrl.includes('?') ? '&' : '?') + 'staff=1' : ''),'촬영 가이드') : ''}${link(r.referenceUrl,'참고 영상·계정')}${link(r.recordUrl,r.team === 'mine' ? '업무 기록' : '원본 일정표')}${r.team === 'mine' && r.recordUrl ? '<small>업무 기록 로그인 필요</small>' : ''}</td></tr>`).join('') || '<tr><td colspan="12"><div class="u-empty">조건에 맞는 업무가 없습니다.</div></td></tr>';
   }
   function renderTimeline(rows) {
     const today = nowDate(), groups = new Map(), undated = [];
