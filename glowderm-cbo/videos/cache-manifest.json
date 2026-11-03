@@ -189,6 +189,34 @@
       "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
       "output_sha256": "690270d0e052269dc0cc946693cf0f0d5294043b3c630ae1d8e94704b736d36b",
       "src": "videos/v_64e2e5a29d25831ddfe2f5534f6412373545485605b1a2bac3a00a93bdae060e.mp4"
+    },
+    "v_fb85bc64a332e8c6d3a8c179643a1cdc5f33f5a648249354e63f70298a8da4bf.mp4": {
+      "source_sha256": "a4ca5ff5227a16939a47aa0fc922000eda2463f271d0da28af84412277716376",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "71e0e23a5dacc1e35ada0514b45cc898e46a4b95de646956c26bd3e2102fcc17",
+      "src": "videos/v_fb85bc64a332e8c6d3a8c179643a1cdc5f33f5a648249354e63f70298a8da4bf.mp4"
+    },
+    "v_f42da602b43e5d6ad4fef5a937a624009dd11d5b12c6b9e0c729968a726b72fd.mp4": {
+      "source_sha256": "e8408d3df48d5b19e4325eb5e7dcb9ebfdd6bd512564ec0710899a42ea39a58e",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "424533fc58897ac74894c68c2b7284fae067a5ac602331ae67cd0af5c3505a87",
+      "src": "videos/v_f42da602b43e5d6ad4fef5a937a624009dd11d5b12c6b9e0c729968a726b72fd.mp4"
+    },
+    "v_6fdf604622bb687ad15ca346a839ac27a8f8be0943df62fe52dc532a4e7d31b3.mp4": {
+      "source_sha256": "a9c862abeebfd02f4cc02ede2d145634f75b77773e0c54e01fce84422f6a9af0",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "18bb890f2292ca8802808916a9e0ed5881dcc41c7ea98bec03c7e4bb594082f5",
+      "src": "videos/v_6fdf604622bb687ad15ca346a839ac27a8f8be0943df62fe52dc532a4e7d31b3.mp4"
+    },
+    "v_ab133060a6c44f20f2029a94e64b89af0225b702712ffa011b0520783f46c578.mp4": {
+      "source_sha256": "6f82dc2f097782576eec5ea969c69ffd9d973e7d3ce3b51c0a344a47f46e3be8",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "f5180cd3b9bd5f5ea8a06d5c7c094f833099395e7122aa794c91b701905e215a",
+      "src": "videos/v_ab133060a6c44f20f2029a94e64b89af0225b702712ffa011b0520783f46c578.mp4"
     }
   }
 }
