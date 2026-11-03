@@ -1014,11 +1014,11 @@
       "account": "ehe_01001",
       "product": "무비 슬라우치 부츠 코코아 235",
       "content": "가을 부츠 GRWM · 신발 위주 착화",
-      "stage": "배송 중",
+      "stage": "배송 완료",
       "status": "진행확정",
       "sentDate": "",
       "postDate": "",
-      "deliveredDate": "",
+      "deliveredDate": "2026-11-03",
       "detail": "설라노 추가리스트(10/28) · IG DM 컨택 · 셀메이트 S261029163217 · 할인코드 ehe2610",
       "schedule": "11월 3주차 업로드",
       "scheduleType": "협의 중",
@@ -1256,5 +1256,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-11-03T08:41:39.867599+00:00"
+  "syncedAt": "2026-11-03T09:56:40.320694+00:00"
 }
