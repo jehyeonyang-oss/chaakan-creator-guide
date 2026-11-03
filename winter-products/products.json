@@ -9,12 +9,6 @@
     "codes": [
       "WTSDR4i190"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791420223013569",
-        "label": "신상품 출시 공지"
-      }
-    ],
     "group": "26FW 신상",
     "category": "롱부츠",
     "note": "",
@@ -30,12 +24,6 @@
     "codes": [
       "WTSDR4i189"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791420223013569",
-        "label": "신상품 출시 공지"
-      }
-    ],
     "group": "26FW 신상",
     "category": "롱부츠",
     "note": "",
@@ -50,12 +38,6 @@
     "image": "images/4842.jpg",
     "codes": [
       "WTSDR4i006"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1789695057021179",
-        "label": "신상품 출시 공지"
-      }
     ],
     "group": "26FW 신상",
     "category": "숏·미들부츠",
@@ -73,12 +55,6 @@
       "WTSDR4i177",
       "WTSDR4i181"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791420223013569",
-        "label": "신상품 출시 공지"
-      }
-    ],
     "group": "26FW 신상",
     "category": "플랫·로퍼",
     "note": "두 품번을 한 상품 페이지에서 선택합니다.",
@@ -93,12 +69,6 @@
     "image": "images/4836.jpg",
     "codes": [
       "WTSDR4i178"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791333901259969",
-        "label": "신상품 출시 공지"
-      }
     ],
     "group": "26FW 신상",
     "category": "플랫·로퍼",
@@ -115,12 +85,6 @@
     "codes": [
       "WTSDR4i180"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1792977182534449",
-        "label": "신상품 출시 공지"
-      }
-    ],
     "group": "26FW 신상",
     "category": "숏·미들부츠",
     "note": "",
@@ -135,12 +99,6 @@
     "image": "images/4682.jpg",
     "codes": [
       "WTACR4i179"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1792977182534449",
-        "label": "신상품 출시 공지"
-      }
     ],
     "group": "26FW 신상",
     "category": "숏·미들부츠",
@@ -157,12 +115,6 @@
     "codes": [
       "WTACR4i176"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1792555690639479",
-        "label": "신상품 출시 공지"
-      }
-    ],
     "group": "26FW 신상",
     "category": "방한화",
     "note": "",
@@ -177,12 +129,6 @@
     "image": "images/4680.jpg",
     "codes": [
       "WTSDR4i175"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791854455232979",
-        "label": "신상품 출시 공지"
-      }
     ],
     "group": "26FW 신상",
     "category": "플랫·로퍼",
@@ -199,12 +145,6 @@
     "codes": [
       "WTACR4i174"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1790649010478039",
-        "label": "신상품 출시 공지"
-      }
-    ],
     "group": "26FW 신상",
     "category": "플랫·로퍼",
     "note": "",
@@ -219,12 +159,6 @@
     "image": "images/4679.jpg",
     "codes": [
       "WTSDR4i173"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1790649010478039",
-        "label": "신상품 출시 공지"
-      }
     ],
     "group": "26FW 신상",
     "category": "플랫·로퍼",
@@ -241,12 +175,6 @@
     "codes": [
       "WTSDR4i182"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1789967214957839",
-        "label": "신상품 출시 공지"
-      }
-    ],
     "group": "26FW 신상",
     "category": "스니커즈",
     "note": "",
@@ -261,12 +189,6 @@
     "image": "images/4686.jpg",
     "codes": [
       "WTSDR4i183"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1791854455232979",
-        "label": "신상품 출시 공지"
-      }
     ],
     "group": "26FW 신상",
     "category": "스니커즈",
@@ -283,12 +205,6 @@
     "codes": [
       "WTSDR4h181"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "플랫·로퍼",
     "note": "",
@@ -303,12 +219,6 @@
     "image": "images/4382.jpg",
     "codes": [
       "WTSDR4h174"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C03CZ1H4B1A/p1789355019645199",
-        "label": "9/14 방한 샌들 사양 변경"
-      }
     ],
     "group": "기존 방한상품",
     "category": "슬리퍼·뮬",
@@ -325,16 +235,6 @@
     "codes": [
       "WTSDR4f222"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "슬리퍼·뮬",
     "note": "",
@@ -349,12 +249,6 @@
     "image": "images/3705.jpg",
     "codes": [
       "WTSDR4f901"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "슬리퍼·뮬",
@@ -372,12 +266,6 @@
       "WTACR4h855",
       "WTACR4h856"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "방한화",
     "note": "뮬·부츠 옵션을 함께 확인할 수 있습니다.",
@@ -392,16 +280,6 @@
     "image": "images/3670.jpg",
     "codes": [
       "WTSDR4f219"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "숏·미들부츠",
@@ -419,12 +297,6 @@
       "WTSDR4g855",
       "WTSDR4g857"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "숏·미들부츠",
     "note": "로우·미들 옵션을 함께 확인할 수 있습니다.",
@@ -441,12 +313,6 @@
       "WTFBR4h178",
       "WTFBR4h308"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793165552728419",
-        "label": "10/28 상품 운영 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "슬리퍼·뮬",
     "note": "",
@@ -461,12 +327,6 @@
     "image": "images/3953.jpg",
     "codes": [
       "WTSDR4g170"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "슬리퍼·뮬",
@@ -483,12 +343,6 @@
     "codes": [
       "WTSDR4f868"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "플랫·로퍼",
     "note": "",
@@ -503,12 +357,6 @@
     "image": "images/3711.jpg",
     "codes": [
       "WTSDR4f877"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "숏·미들부츠",
@@ -525,16 +373,6 @@
     "codes": [
       "WTSDR4g860"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "슬리퍼·뮬",
     "note": "",
@@ -550,12 +388,6 @@
     "codes": [
       "WTLTR4g168"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "숏·미들부츠",
     "note": "",
@@ -570,16 +402,6 @@
     "image": "images/943.jpg",
     "codes": [
       "WTSDR4g156"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "플랫·로퍼",
@@ -597,12 +419,6 @@
       "WTACR4g837",
       "WTACR4g906"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "플랫·로퍼",
     "note": "성인·키즈 옵션이 함께 있는 상품입니다.",
@@ -617,12 +433,6 @@
     "image": "images/4126.jpg",
     "codes": [
       "WTACR4g169"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "슬리퍼·뮬",
@@ -639,12 +449,6 @@
     "codes": [
       "WTFBS4g155"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "플랫·로퍼",
     "note": "",
@@ -659,12 +463,6 @@
     "image": "images/4056.jpg",
     "codes": [
       "WTACR4g154"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "플랫·로퍼",
@@ -682,12 +480,6 @@
       "WTSDR4d250",
       "WTSDR4d251"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "숏·미들부츠",
     "note": "숏·롱 옵션을 함께 확인할 수 있습니다.",
@@ -702,12 +494,6 @@
     "image": "images/4099.jpg",
     "codes": [
       "WTSDR4g856"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "숏·미들부츠",
@@ -724,16 +510,6 @@
     "codes": [
       "WTSDR4f876"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "슬리퍼·뮬",
     "note": "",
@@ -748,12 +524,6 @@
     "image": "images/2543.jpg",
     "codes": [
       "WTACR4c261"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "숏·미들부츠",
@@ -770,20 +540,6 @@
     "codes": [
       "WTACR4h175"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793172860526909",
-        "label": "10/28 자사몰 겨울 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "플랫·로퍼",
     "note": "",
@@ -798,12 +554,6 @@
     "image": "images/3669.jpg",
     "codes": [
       "WTSDR4f875"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793165552728419",
-        "label": "10/28 상품 운영 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "숏·미들부츠",
@@ -820,12 +570,6 @@
     "codes": [
       "WTSDR4h861"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1787206235867889",
-        "label": "8/20 상품 운영 확인"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "플랫·로퍼",
     "note": "",
@@ -840,20 +584,6 @@
     "image": "images/3710.jpg",
     "codes": [
       "WTSDR4f206"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793172860526909",
-        "label": "10/28 자사몰 겨울 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "슬리퍼·뮬",
@@ -871,16 +601,6 @@
       "WTFBR4h857",
       "WTFBR4h858"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793351091230879",
-        "label": "10/30 세일즈 방한화 목록"
-      },
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      }
-    ],
     "group": "기존 방한상품",
     "category": "방한화",
     "note": "뮬·부츠 옵션을 함께 확인할 수 있습니다.",
@@ -895,12 +615,6 @@
     "image": "images/4077.jpg",
     "codes": [
       "WTSDR4g854"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C0APMC3AKHP/p1793346764028989",
-        "label": "10/30 오프라인 방한화 목록"
-      }
     ],
     "group": "기존 방한상품",
     "category": "플랫·로퍼",
@@ -917,12 +631,6 @@
     "codes": [
       "WTSDR4i511"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1790649010478039",
-        "label": "신상품 출시 공지"
-      }
-    ],
     "group": "키즈",
     "category": "슬리퍼·뮬",
     "note": "",
@@ -938,12 +646,6 @@
     "codes": [
       "WTSDR4i512"
     ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1790649010478039",
-        "label": "신상품 출시 공지"
-      }
-    ],
     "group": "키즈",
     "category": "슬리퍼·뮬",
     "note": "",
@@ -958,12 +660,6 @@
     "image": "images/5105.jpg",
     "codes": [
       "WTRBR4i513"
-    ],
-    "sources": [
-      {
-        "url": "https://chaakan.slack.com/archives/C019P3LD5RT/p1793148315326089",
-        "label": "신상품 출시 공지"
-      }
     ],
     "group": "키즈",
     "category": "슬리퍼·뮬",
