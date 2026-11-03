@@ -6,12 +6,6 @@
       "name": "세로_팩클렌저_화이트헤드_김경빈_M20261019_aict_vif_fb_261026_01",
       "match_basis": "exact_filename"
     },
-    "120251439640480185": {
-      "kind": "video",
-      "src": "ccfm_media/a263aeb99f160391.mp4",
-      "name": "세로_팩클렌저_요철_김경빈_M20261002_aict_vif_fb_261016_04",
-      "match_basis": "exact_filename"
-    },
     "120251480470650185": {
       "kind": "video",
       "src": "ccfm_media/a86f5fb3bbe58373.mp4",
@@ -58,48 +52,6 @@
       "kind": "video",
       "src": "ccfm_media/557437d53ce9eaea.mp4",
       "name": "세로_멜라크림_오해받음_정나라_M20260930 (3)_vim_fb_261006_07",
-      "match_basis": "exact_filename"
-    },
-    "52628470387947": {
-      "kind": "image",
-      "src": "ccfm_media/9517a1c43066c02f.webp",
-      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (2)_vim_fb_261001_04",
-      "match_basis": "exact_filename"
-    },
-    "52628470433347": {
-      "kind": "image",
-      "src": "ccfm_media/226a727e6be52dc2.webp",
-      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (5)_vim_fb_261001_07",
-      "match_basis": "exact_filename"
-    },
-    "52629600415147": {
-      "kind": "video",
-      "src": "ccfm_media/8eac068873b862ef.mp4",
-      "name": "정방_멜라크림_상황부여_정나라_M20260930 (3)_vim_fb_261006_03",
-      "match_basis": "exact_filename"
-    },
-    "52629600463347": {
-      "kind": "video",
-      "src": "ccfm_media/3e905418e400f192.mp4",
-      "name": "세로_멜라크림_오해받음_정나라_M20260930 (1)_vim_fb_261006_05",
-      "match_basis": "exact_filename"
-    },
-    "52628470428747": {
-      "kind": "image",
-      "src": "ccfm_media/1364f17a7a6d39d1.webp",
-      "name": "단일_멜라크림_들뜸끼임_정나라_M20260929 (4)_vim_fb_261001_06",
-      "match_basis": "exact_filename"
-    },
-    "52629600383347": {
-      "kind": "video",
-      "src": "ccfm_media/a1f1ba632c8313cf.mp4",
-      "name": "정방_멜라크림_상황부여_정나라_M20260930 (2)_vim_fb_261006_02",
-      "match_basis": "exact_filename"
-    },
-    "52629600443947": {
-      "kind": "video",
-      "src": "ccfm_media/1317483325b4ddda.mp4",
-      "name": "정방_멜라크림_상황부여_정나라_M20260930 (4)_vim_fb_261006_04",
       "match_basis": "exact_filename"
     },
     "52634915696947": {
