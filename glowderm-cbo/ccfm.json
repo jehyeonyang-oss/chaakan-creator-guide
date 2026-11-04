@@ -1,86 +1,12 @@
 {
-  "collected_at": "2026-11-03T09:35:03+09:00",
-  "today": "2026-11-03",
-  "start": "2026-10-27",
+  "collected_at": "2026-11-04T09:35:03+09:00",
+  "today": "2026-11-04",
+  "start": "2026-10-28",
   "accounts": [
     {
       "id": "984589474000645",
       "label": "CCFM 1계정",
       "ads": [
-        {
-          "id": "120251515088800185",
-          "name": "단일_팩클렌저_시술대체_정나라_M20261012_aict_vif_fb_261027_01",
-          "active": true,
-          "campaign": "CCFM_팩클렌저_ABO_29_260903(페이셜)",
-          "daily": [
-            {
-              "date": "2026-10-31",
-              "spend": 1272.0,
-              "impressions": 19,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-11-01",
-              "spend": 7713.0,
-              "impressions": 102,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-11-02",
-              "spend": 22676.0,
-              "impressions": 582,
-              "clicks": 18,
-              "purchases": 1.0,
-              "revenue": 43900.0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-11-03",
-              "spend": 11930.0,
-              "impressions": 241,
-              "clicks": 7,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ],
-          "current_product_no": "28",
-          "current_product_label": "팩클렌저",
-          "product_checked_at": "2026-11-03T09:35:03+09:00",
-          "product_basis": "current_creative_destination"
-        },
-        {
-          "id": "120251480470650185",
-          "name": "세로_팩클렌저_좁쌀요철_김경빈_M20261007_aict_vif_fb_261026_02",
-          "active": false,
-          "campaign": "",
-          "daily": [
-            {
-              "date": "2026-10-27",
-              "spend": 51677.0,
-              "impressions": 395,
-              "clicks": 10,
-              "purchases": 1.0,
-              "revenue": 32000.0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-28",
-              "spend": 21551.0,
-              "impressions": 74,
-              "clicks": 4,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ]
-        },
         {
           "id": "120251480071790185",
           "name": "세로_팩클렌저_화이트헤드_김경빈_M20261019_aict_vif_fb_261026_01",
@@ -103,6 +29,32 @@
               "clicks": 15,
               "purchases": 1.0,
               "revenue": 32000.0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-03",
+              "spend": 0.0,
+              "impressions": 0,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
+        },
+        {
+          "id": "120251480470650185",
+          "name": "세로_팩클렌저_좁쌀요철_김경빈_M20261007_aict_vif_fb_261026_02",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-28",
+              "spend": 21551.0,
+              "impressions": 74,
+              "clicks": 4,
+              "purchases": 0,
+              "revenue": 0,
               "revenue_computed": false
             }
           ]
@@ -253,6 +205,50 @@
               "revenue_computed": false
             }
           ]
+        },
+        {
+          "id": "120251515088800185",
+          "name": "단일_팩클렌저_시술대체_정나라_M20261012_aict_vif_fb_261027_01",
+          "active": false,
+          "campaign": "",
+          "daily": [
+            {
+              "date": "2026-10-31",
+              "spend": 1272.0,
+              "impressions": 19,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-01",
+              "spend": 7713.0,
+              "impressions": 102,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-02",
+              "spend": 22676.0,
+              "impressions": 582,
+              "clicks": 18,
+              "purchases": 1.0,
+              "revenue": 43900.0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-03",
+              "spend": 28036.0,
+              "impressions": 538,
+              "clicks": 19,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            }
+          ]
         }
       ]
     },
@@ -304,92 +300,17 @@
             },
             {
               "date": "2026-11-03",
-              "spend": 1705.0,
-              "impressions": 5,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            }
-          ],
-          "current_product_no": "17",
-          "current_product_label": "기미크림",
-          "product_checked_at": "2026-11-03T09:35:03+09:00",
-          "product_basis": "current_creative_destination"
-        },
-        {
-          "id": "52634915686347",
-          "name": "세로_멜라크림_남편기미_김경빈_M20261001_aict_vim_fb_261026_02",
-          "active": true,
-          "campaign": "CCFM_기미크림_CBO_261001",
-          "daily": [
-            {
-              "date": "2026-10-27",
-              "spend": 11414.0,
-              "impressions": 164,
+              "spend": 7913.0,
+              "impressions": 42,
               "clicks": 3,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
             },
             {
-              "date": "2026-10-28",
-              "spend": 9765.0,
-              "impressions": 142,
-              "clicks": 4,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-29",
-              "spend": 1638.0,
-              "impressions": 23,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-30",
-              "spend": 6131.0,
-              "impressions": 108,
-              "clicks": 4,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-10-31",
-              "spend": 1237.0,
-              "impressions": 26,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-11-01",
-              "spend": 4751.0,
-              "impressions": 68,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-11-02",
-              "spend": 4943.0,
-              "impressions": 64,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
-            {
-              "date": "2026-11-03",
-              "spend": 865.0,
-              "impressions": 19,
+              "date": "2026-11-04",
+              "spend": 941.0,
+              "impressions": 10,
               "clicks": 0,
               "purchases": 0,
               "revenue": 0,
@@ -398,7 +319,7 @@
           ],
           "current_product_no": "17",
           "current_product_label": "기미크림",
-          "product_checked_at": "2026-11-03T09:35:03+09:00",
+          "product_checked_at": "2026-11-04T09:35:03+09:00",
           "product_basis": "current_creative_destination"
         },
         {
@@ -454,17 +375,26 @@
             },
             {
               "date": "2026-11-03",
-              "spend": 7597.0,
-              "impressions": 101,
-              "clicks": 4,
+              "spend": 25931.0,
+              "impressions": 280,
+              "clicks": 7,
               "purchases": 1.0,
               "revenue": 32900.0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-04",
+              "spend": 3719.0,
+              "impressions": 70,
+              "clicks": 2,
+              "purchases": 0,
+              "revenue": 0,
               "revenue_computed": false
             }
           ],
           "current_product_no": "17",
           "current_product_label": "기미크림",
-          "product_checked_at": "2026-11-03T09:35:03+09:00",
+          "product_checked_at": "2026-11-04T09:35:03+09:00",
           "product_basis": "current_creative_destination"
         },
         {
@@ -473,15 +403,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-27",
-              "spend": 929.0,
-              "impressions": 15,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-28",
               "spend": 4939.0,
@@ -544,11 +465,20 @@
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
+            },
+            {
+              "date": "2026-11-04",
+              "spend": 128.0,
+              "impressions": 1,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
             }
           ],
           "current_product_no": "17",
           "current_product_label": "기미크림",
-          "product_checked_at": "2026-11-03T09:35:03+09:00",
+          "product_checked_at": "2026-11-04T09:35:03+09:00",
           "product_basis": "current_creative_destination"
         },
         {
@@ -557,15 +487,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-27",
-              "spend": 5125.0,
-              "impressions": 83,
-              "clicks": 9,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-28",
               "spend": 8513.0,
@@ -622,9 +543,18 @@
             },
             {
               "date": "2026-11-03",
-              "spend": 4147.0,
-              "impressions": 34,
-              "clicks": 2,
+              "spend": 13520.0,
+              "impressions": 138,
+              "clicks": 9,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-04",
+              "spend": 2272.0,
+              "impressions": 19,
+              "clicks": 0,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
@@ -632,7 +562,7 @@
           ],
           "current_product_no": "17",
           "current_product_label": "기미크림",
-          "product_checked_at": "2026-11-03T09:35:03+09:00",
+          "product_checked_at": "2026-11-04T09:35:03+09:00",
           "product_basis": "current_creative_destination"
         },
         {
@@ -641,15 +571,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-27",
-              "spend": 275.0,
-              "impressions": 2,
-              "clicks": 0,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-30",
               "spend": 204.0,
@@ -662,7 +583,7 @@
           ],
           "current_product_no": "17",
           "current_product_label": "기미크림",
-          "product_checked_at": "2026-11-03T09:35:03+09:00",
+          "product_checked_at": "2026-11-04T09:35:03+09:00",
           "product_basis": "current_creative_destination"
         },
         {
@@ -671,15 +592,6 @@
           "active": true,
           "campaign": "CCFM_기미크림_CBO_261001",
           "daily": [
-            {
-              "date": "2026-10-27",
-              "spend": 1322.0,
-              "impressions": 23,
-              "clicks": 1,
-              "purchases": 0,
-              "revenue": 0,
-              "revenue_computed": false
-            },
             {
               "date": "2026-10-28",
               "spend": 7397.0,
@@ -736,9 +648,18 @@
             },
             {
               "date": "2026-11-03",
-              "spend": 690.0,
-              "impressions": 13,
-              "clicks": 1,
+              "spend": 5640.0,
+              "impressions": 59,
+              "clicks": 4,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-04",
+              "spend": 664.0,
+              "impressions": 7,
+              "clicks": 0,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
@@ -746,20 +667,74 @@
           ],
           "current_product_no": "17",
           "current_product_label": "기미크림",
-          "product_checked_at": "2026-11-03T09:35:03+09:00",
+          "product_checked_at": "2026-11-04T09:35:03+09:00",
           "product_basis": "current_creative_destination"
         },
         {
-          "id": "52634915696947",
-          "name": "세로_멜라크림_조작_김경빈_M20260930_vim_fb_261026_03",
+          "id": "52634915686347",
+          "name": "세로_멜라크림_남편기미_김경빈_M20261001_aict_vim_fb_261026_02",
           "active": false,
           "campaign": "",
           "daily": [
             {
-              "date": "2026-10-27",
-              "spend": 27045.0,
-              "impressions": 334,
-              "clicks": 10,
+              "date": "2026-10-28",
+              "spend": 9765.0,
+              "impressions": 142,
+              "clicks": 4,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-29",
+              "spend": 1638.0,
+              "impressions": 23,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-30",
+              "spend": 6131.0,
+              "impressions": 108,
+              "clicks": 4,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-10-31",
+              "spend": 1237.0,
+              "impressions": 26,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-01",
+              "spend": 4751.0,
+              "impressions": 68,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-02",
+              "spend": 4943.0,
+              "impressions": 64,
+              "clicks": 1,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-03",
+              "spend": 2768.0,
+              "impressions": 40,
+              "clicks": 2,
               "purchases": 0,
               "revenue": 0,
               "revenue_computed": false
@@ -862,6 +837,15 @@
             },
             {
               "date": "2026-11-02",
+              "spend": 0.0,
+              "impressions": 0,
+              "clicks": 0,
+              "purchases": 0,
+              "revenue": 0,
+              "revenue_computed": false
+            },
+            {
+              "date": "2026-11-03",
               "spend": 0.0,
               "impressions": 0,
               "clicks": 0,
