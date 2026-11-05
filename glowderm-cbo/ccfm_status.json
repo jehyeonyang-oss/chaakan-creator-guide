@@ -1,5 +1,6 @@
 {
-  "attempted_at": "2026-11-04T11:25:55+09:00",
+  "attempted_at": "2026-11-05T09:35:02+09:00",
   "status": "collected",
-  "publish_status": "success"
+  "publish_status": "failed",
+  "publish_error": "CalledProcessError"
 }
