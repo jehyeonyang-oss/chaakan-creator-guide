@@ -169,13 +169,21 @@
   function cigroRow(r) {
     const c = r.team === 'mine' && r.postDate ? state.cigro.find(x => x.account === r.account && x.date === r.postDate) : null;
     if (!c) return '';
-    const ratio = v => c.baselineDaily > 0 && v !== null ? ` (${(v / c.baselineDaily).toFixed(1)}배)` : '';
-    const wins = Object.entries(c.windows).filter(([,w]) => w.days > 0).map(([k,w]) => `<span>${k} 일평균 <b>${won(w.daily)}</b>${ratio(w.daily)}${w.complete ? '' : ' <em class="u-cigro-wip">집계 중</em>'}</span>`).join(' · ');
-    const max = Math.max(1, ...c.days.map(v => v || 0)), d0 = Date.parse(c.date + 'T00:00:00Z');
-    const bars = c.days.map((v,i) => { const day = new Date(d0 + (i - 14) * 86400000).toISOString().slice(0,10); return `<i class="${i === 14 ? 'post' : ''}" ${v === null ? '' : `style="height:${Math.max(2, Math.round(v / max * 100))}%" title="${day} ${won(v)}"`}></i>`; }).join('');
-    const top = Object.entries(c.channelShare).filter(([,v]) => v > 0).slice(0,3).map(([k,v]) => `${esc(k)} ${won(v)}`).join(' · ');
-    return `<tr class="u-cigro"><td colspan="12"><div class="u-cigro-title">간접매출 · 씨그로 (제품군 9채널 전체, 크리에이터 귀속 아님)</div><div class="u-cigro-line"><span>기준선 일평균 <b>${won(c.baselineDaily)}</b></span> → ${wins}</div><div class="u-cigro-bars" aria-hidden="true">${bars}</div>${top ? `<small>게시 후 채널 상위 · ${top}</small>` : ''}</td></tr>`;
+    const money = v => number(v) === null ? '미수집' : won(v);
+    const day = off => new Date(Date.parse(c.date+'T00:00:00Z')+off*86400000).toISOString().slice(5,10).replace('-','/');
+    const labels = {'48H':'게시 후 2일', '1WEEK':'게시 후 1주', '2WEEK':'게시 후 2주'};
+    const cards = Object.entries(c.windows).map(([k,w]) => {
+      const valid = w.days > 0 && number(w.daily) !== null;
+      const delta = valid && number(c.baselineDaily) !== null ? w.daily-c.baselineDaily : null;
+      const pct = delta !== null && c.baselineDaily > 0 ? delta/c.baselineDaily*100 : null;
+      const direction = delta === null ? '' : delta >= 0 ? 'up' : 'down';
+      const change = pct === null ? (valid ? '증감률 계산 불가' : '집계 전') : Math.abs(pct)<.05 ? '게시 전과 동일' : `${Math.abs(pct).toFixed(1)}% ${pct>0?'증가':'감소'}`;
+      return `<div class="u-sales-card"><div class="u-sales-label">${labels[k] || esc(k)} <span class="u-sales-state">${w.complete?'완료':`${w.days}일 집계 중`}</span></div><div class="u-sales-dates">${valid?`${day(0)} ~ ${day(w.days-1)}`:'집계 대기'}</div><strong>${valid?money(w.daily):'집계 전'}<span> / 일</span></strong><b class="u-sales-change ${direction}">${change}<span>${delta===null?'':`하루 ${money(Math.abs(delta))} ${delta>=0?'더':'덜'} 팔림`}</span></b><div class="u-sales-total">${w.complete?'기간':'현재까지'} 총매출 <b>${valid?money(w.revenue):'—'}</b></div></div>`;
+    }).join('');
+    const top = Object.entries(c.channelShare).filter(([,v])=>v>0).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([k,v])=>`<span>${esc(k)} <b>${money(v)}</b></span>`).join('');
+    return `<tr class="u-cigro"><td colspan="12"><section class="u-sales-panel" aria-label="${esc(r.name)} 상품 매출 변화"><div class="u-sales-heading"><h4>게시 전 → 게시 후, 얼마나 달라졌나?</h4><span>간접매출 · 씨그로</span></div><p class="u-sales-product">${esc(c.product)}</p><div class="u-sales-publish">${esc(c.date)} 게시 <span>이 날짜를 기준으로 전·후 하루 매출 비교</span></div><div class="u-sales-grid"><div class="u-sales-card baseline"><div class="u-sales-label">게시 전 2주 <span class="u-sales-state">비교 기준</span></div><div class="u-sales-dates">${day(-14)} ~ ${day(-1)}</div><strong>${money(c.baselineDaily)}<span> / 일</span></strong><div class="u-sales-baseline-note">게시 전 14일의 하루 평균 매출</div></div>${cards}</div><p class="u-sales-caution">동일 상품군의 9개 채널 전체 매출입니다. 크리에이터에게 귀속된 매출이 아니며, 다른 크리에이터의 금액과 합산하지 않습니다.</p><details class="u-sales-detail"><summary>집계 기준 · 판매 채널 보기</summary><p>게시일을 포함해 2일·7일·14일을 비교합니다. 증가·감소율과 차액은 게시 전 14일의 하루 평균 대비입니다. 집계 중인 기간은 수집된 날짜만으로 계산합니다. 세 기간은 서로 겹치므로 합산하지 않습니다.</p><div class="u-sales-channels">${top}</div><p>채널별 금액은 게시 후 최대 14일 중 수집된 기간의 합계입니다.</p>${c.note?`<p>${esc(c.note)}</p>`:''}</details></section></td></tr>`;
   }
+
   function renderTable(rows) {
     $('u-table-body').innerHTML = rows.map(r => `<tr data-team="${r.team}" data-key="${esc(r.key)}"><td>${teamBadge(r.team)}</td><td class="u-person"><b>${esc(r.name)}</b>${r.account ? link(`https://www.instagram.com/${encodeURIComponent(r.account)}/`, '@' + r.account).replace('<a ', '<a class="u-account" ') : '<small>계정 주소 미확인</small>'}<small>${esc(r.track)}</small>${r.product ? `<small>${esc(r.product)}</small>` : ''}</td><td><span class="u-status ${statusClass(r)}">${esc(r.status)}</span>${r.statusDetail ? `<small>${esc(r.statusDetail)}</small>` : ''}</td>${['sent','received','draft','shoot','upload'].map(type=>milestoneCell(r,type)).join('')}<td class="u-fee"><b>${esc(r.fee)}</b>${/합산/.test(r.fee) ? '<small>묶음 계약 · 건별 합계 제외</small>' : ''}</td><td>${metrics(r)}</td><td class="u-brief">${esc(r.next)}${r.content ? `<small>${esc(r.content)}</small>` : ''}<details class="u-schedule-note"><summary>일정 메모</summary><small>${esc(r.schedule)}${r.track === '매장 방문' ? ' · 방문 완료 여부 미등록' : ''}</small></details></td><td class="u-links">${link(r.postUrl,'게시물')}${r.guideUrl ? link(r.guideUrl + (r.team === 'mine' ? (r.guideUrl.includes('?') ? '&' : '?') + 'staff=1' : ''),'촬영 가이드') : ''}${link(r.referenceUrl,'참고 영상·계정')}${link(r.recordUrl,r.team === 'mine' ? '업무 기록' : '원본 일정표')}${r.team === 'mine' && r.recordUrl ? '<small>업무 기록 로그인 필요</small>' : ''}</td></tr>${cigroRow(r)}`).join('') || '<tr><td colspan="12"><div class="u-empty">조건에 맞는 업무가 없습니다.</div></td></tr>';
   }
