@@ -230,7 +230,7 @@
           "slot": "1week",
           "label": "7일",
           "dueAt": "2026-11-09T13:00:00+09:00",
-          "actualCollectedAt": 1793868018254,
+          "actualCollectedAt": 1793954419494,
           "state": "pending",
           "views": null,
           "likes": 3,
@@ -242,11 +242,11 @@
           "slot": "2week",
           "label": "14일",
           "dueAt": "2026-11-16T13:00:00+09:00",
-          "actualCollectedAt": null,
+          "actualCollectedAt": 1793954421318,
           "state": "pending",
           "views": null,
-          "likes": null,
-          "comments": null,
+          "likes": 3,
+          "comments": 39,
           "shares": null,
           "saves": null
         }
@@ -259,6 +259,12 @@
           "rev_code": 0
         },
         "1week": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": 0
+        },
+        "2week": {
           "revenue": 0,
           "purchases": 0,
           "rev_utm": 0,
@@ -1064,6 +1070,12 @@
           "purchases": 0,
           "rev_utm": 0,
           "rev_code": null
+        },
+        "2week": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": null
         }
       },
       "phoneTrackingReady": false,
@@ -1326,5 +1338,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-11-06T08:19:54.942197+00:00"
+  "syncedAt": "2026-11-06T08:41:39.397026+00:00"
 }
