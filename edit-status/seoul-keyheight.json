@@ -13,13 +13,13 @@
       "status": "게시완료",
       "schedule": "11/2 게시 · 메타 구매 광고 11/3~12/2",
       "scheduleType": "완료",
-      "next": "원 게시물 URL 확인 필요(서울링크 슬랙엔 게시 사실만) · 메타 구매 광고 11/3 19:43~12/2",
+      "next": "메타 구매 광고 11/3 19:43~12/2 · 게시물 연결은 추정(릴 코드 시각 11/2 19:00 = 영실 광고 원본 게시 시점, 계정명 직접 확인 안 됨)",
       "collaborationType": "유가",
       "events": [
         {
           "date": "2026-11-02",
           "kind": "게시 완료",
-          "detail": "서울링크 슬랙 11/3 10:46 보고 \"11/2 게시 완료\" · 원 게시물 URL 미확인",
+          "detail": "서울링크 슬랙 11/3 보고 \"11/2 게시 완료\" · 릴 DfPCtrYvwhP(11/2 19:00)",
           "certainty": "기록"
         },
         {
@@ -29,7 +29,7 @@
           "certainty": "기록"
         }
       ],
-      "postUrl": "",
+      "postUrl": "https://www.instagram.com/reel/DfPCtrYvwhP/",
       "guideUrl": ""
     },
     {
