@@ -109,7 +109,7 @@
       "stage": "배송 완료",
       "status": "발송완료",
       "sentDate": "2026-10-20",
-      "postDate": "",
+      "postDate": "2026-11-06",
       "deliveredDate": "2026-10-21",
       "detail": "10/20 우체국 발송 · 10월 말 수령 예정 · 10/29 수령 · 10/30 할인코드 hyeseo2610(11/6~11/20)·자동DM 링크 보냄 · 10/31 가이드 링크 복구(11/20까지) · 11/1 초안 무수정 승인 메일",
       "schedule": "11/6 업로드",
@@ -119,9 +119,58 @@
       "expires": "2026-10-26T14:00:00+09:00",
       "fee": "60만 (2차 3개월 포함)",
       "productCost": null,
-      "engagement": [],
+      "engagement": [
+        {
+          "slot": "24h",
+          "label": "24시간",
+          "dueAt": "2026-11-07T12:02:30+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "48h",
+          "label": "48시간",
+          "dueAt": "2026-11-08T12:02:30+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "1week",
+          "label": "7일",
+          "dueAt": "2026-11-13T12:02:30+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "2week",
+          "label": "14일",
+          "dueAt": "2026-11-20T12:02:30+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        }
+      ],
       "sales": {},
-      "phoneTrackingReady": false,
+      "phoneTrackingReady": true,
       "engagementBaseline": {
         "views": null,
         "likes": null,
@@ -130,7 +179,7 @@
         "saves": null,
         "actualCollectedAt": null
       },
-      "postUrl": "",
+      "postUrl": "https://www.instagram.com/reel/DfYmFnWPEqg/",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=4mhQYd0V9msKufYdOa6a"
     },
     {
@@ -1277,5 +1326,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-11-06T05:34:54.779307+00:00"
+  "syncedAt": "2026-11-06T08:19:54.942197+00:00"
 }
