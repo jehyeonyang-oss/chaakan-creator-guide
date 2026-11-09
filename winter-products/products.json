@@ -70,7 +70,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -144,7 +144,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -200,7 +200,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-20",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-27",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -240,7 +243,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-20",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-27",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -280,7 +286,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-20",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-27",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -320,7 +329,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-20",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-27",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -339,7 +351,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -528,7 +540,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -602,7 +614,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -686,7 +698,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -795,7 +807,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -846,7 +858,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -893,7 +908,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -934,7 +952,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1039,7 +1057,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1177,7 +1195,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1351,7 +1369,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1425,7 +1443,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1511,7 +1529,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1576,7 +1594,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1641,7 +1659,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1708,7 +1726,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1783,7 +1801,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -1824,20 +1842,33 @@
           "inbound": [
             {
               "date": "2026-11-08",
-              "qty": 1500,
-              "sizes": {
-                "225": 105,
-                "230": 225,
-                "235": 300,
-                "240": 360,
-                "245": 300,
-                "250": 210
-              },
+              "qty": 680,
+              "sizes": {},
               "pending": true,
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-13",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "actual_factory_ship_date": "2026-11-08",
+              "update_note": "11/9 슬랙 확인: 11/8 공장 부분출고 680족",
+              "update_source": "https://chaakan.slack.com/archives/C06BN80SW8L/p1794184468878979",
+              "mall_expected_date": "2026-11-15",
+              "mall_estimate_basis": "공장 출고 +7일",
+              "mall_estimate_overdue": false
+            },
+            {
+              "date": "2026-11-08",
+              "qty": 820,
+              "sizes": {},
+              "pending": true,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": "2026-11-13",
+              "estimated_qty": 0,
+              "update_note": "부분출고 후 잔량 · 사이즈별 배분 미확인",
+              "mall_expected_date": "2026-11-20",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -1868,19 +1899,18 @@
             {
               "date": "2026-11-08",
               "qty": 500,
-              "sizes": {
-                "225": 35,
-                "230": 75,
-                "235": 100,
-                "240": 120,
-                "245": 100,
-                "250": 70
-              },
+              "sizes": {},
               "pending": true,
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-13",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "actual_factory_ship_date": "2026-11-08",
+              "update_note": "11/9 슬랙 확인: 11/8 공장 출고 500족",
+              "update_source": "https://chaakan.slack.com/archives/C06BN80SW8L/p1794184468878979",
+              "mall_expected_date": "2026-11-15",
+              "mall_estimate_basis": "공장 출고 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -1926,7 +1956,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -2140,7 +2170,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -2195,7 +2225,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-30",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-12-07",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -2214,7 +2247,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -2269,7 +2302,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-12",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-19",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-11-06",
@@ -2287,7 +2323,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -2306,7 +2345,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -2359,7 +2398,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -2408,7 +2450,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -2476,7 +2521,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 65
+              "estimated_qty": 65,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -2510,7 +2558,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -2604,7 +2652,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -2709,7 +2757,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -2762,7 +2810,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-22",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-29",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -2812,7 +2863,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-22",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-29",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -2925,7 +2979,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -3010,7 +3064,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -3129,7 +3183,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -3181,7 +3235,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-11",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-18",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -3235,7 +3292,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -3440,7 +3497,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -3492,7 +3549,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-25",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-12-02",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-08-02",
@@ -3509,7 +3569,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -3571,7 +3634,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -3609,7 +3675,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-25",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-12-02",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-08-02",
@@ -3626,7 +3695,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -3653,7 +3725,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -3794,7 +3866,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -3846,7 +3918,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -3895,7 +3970,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -3929,7 +4007,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4017,7 +4095,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4084,7 +4162,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4188,7 +4266,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4249,7 +4327,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4322,7 +4400,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4410,7 +4488,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4455,7 +4533,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4520,7 +4598,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4628,7 +4706,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4680,7 +4758,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -4724,7 +4805,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-16",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-23",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -4775,7 +4859,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -4827,7 +4911,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-13",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-20",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-11-07",
@@ -4841,7 +4928,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -4947,7 +5037,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5024,7 +5114,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5077,7 +5167,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-25",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-12-02",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-10-09",
@@ -5094,7 +5187,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -5222,7 +5318,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5290,7 +5386,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-17",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-24",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -5324,7 +5423,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-17",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-24",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -5335,7 +5437,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5412,7 +5514,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5457,7 +5559,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5532,7 +5634,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5584,7 +5686,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -5627,7 +5732,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -5655,7 +5763,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5707,7 +5815,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 498
+              "estimated_qty": 498,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -5761,7 +5872,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5822,7 +5933,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -5875,7 +5986,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 394
+              "estimated_qty": 394,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -5909,7 +6023,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 299
+              "estimated_qty": 299,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -5943,7 +6060,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 296
+              "estimated_qty": 296,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -5954,7 +6074,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6016,7 +6136,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6119,7 +6239,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6204,7 +6324,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6330,7 +6450,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6391,7 +6511,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6436,7 +6556,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6561,7 +6681,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6622,7 +6742,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6667,7 +6787,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6729,7 +6849,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -6971,7 +7091,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -7070,7 +7190,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -7141,7 +7261,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -7177,7 +7300,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -7260,7 +7383,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -7414,7 +7537,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -7497,7 +7620,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -7584,7 +7707,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -7654,7 +7777,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -7706,7 +7829,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 598
+              "estimated_qty": 598,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -7738,7 +7864,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 593
+              "estimated_qty": 593,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -7770,7 +7899,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 293
+              "estimated_qty": 293,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -7798,7 +7930,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 1
+              "estimated_qty": 1,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -7845,7 +7980,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 498
+              "estimated_qty": 498,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -7856,7 +7994,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -8047,7 +8185,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -8134,7 +8272,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -8195,7 +8333,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -8272,7 +8410,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -8342,7 +8480,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-15",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-22",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -8355,7 +8496,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -8521,7 +8662,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -8677,7 +8818,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -8818,7 +8959,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -8950,7 +9091,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -9033,7 +9174,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -9127,7 +9268,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -9229,7 +9370,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -9342,7 +9483,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -9446,7 +9587,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -9543,7 +9684,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -9675,7 +9816,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -9736,7 +9877,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -9790,23 +9931,6 @@
           },
           "inbound": [
             {
-              "date": "2026-10-23",
-              "qty": 500,
-              "sizes": {
-                "225": 35,
-                "230": 75,
-                "235": 105,
-                "240": 115,
-                "245": 95,
-                "250": 75
-              },
-              "pending": true,
-              "destination": "위해창고",
-              "date_source": "wh_due",
-              "factory_ship_date": null,
-              "estimated_qty": 0
-            },
-            {
               "date": "2026-11-07",
               "qty": 600,
               "sizes": {
@@ -9822,7 +9946,30 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-12",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-19",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
+            },
+            {
+              "date": "2026-10-23",
+              "qty": 500,
+              "sizes": {
+                "225": 35,
+                "230": 75,
+                "235": 105,
+                "240": 115,
+                "245": 95,
+                "250": 75
+              },
+              "pending": true,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": null,
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -9867,7 +10014,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-08",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-15",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -9903,7 +10053,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10124,7 +10274,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -10174,7 +10327,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -10217,7 +10373,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10278,7 +10434,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10330,7 +10486,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -10377,7 +10536,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10438,7 +10597,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10531,7 +10690,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10615,7 +10774,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10692,7 +10851,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10753,7 +10912,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10830,7 +10989,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10907,7 +11066,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -10994,7 +11153,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11103,7 +11262,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11180,7 +11339,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11257,7 +11416,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11337,7 +11496,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11436,7 +11595,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11520,7 +11679,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11599,7 +11758,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11736,7 +11895,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11801,7 +11960,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -11923,7 +12082,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -12000,7 +12159,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -12077,7 +12236,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -12129,7 +12288,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 495
+              "estimated_qty": 495,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -12160,7 +12322,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -12246,7 +12408,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 297
+              "estimated_qty": 297,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -12259,7 +12424,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -12336,7 +12501,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -12450,7 +12615,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -12508,7 +12673,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -12559,7 +12727,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -12638,7 +12809,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -12666,7 +12840,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -12722,7 +12896,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-15",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-22",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-11-25",
@@ -12739,7 +12916,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-25",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-12-02",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-11-05",
@@ -12756,7 +12936,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-11-07",
@@ -12773,7 +12956,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -12857,7 +13043,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-09",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-16",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -12900,7 +13089,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-09",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-16",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -12972,7 +13164,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -13014,23 +13206,6 @@
           },
           "inbound": [
             {
-              "date": "2026-11-14",
-              "qty": 1000,
-              "sizes": {
-                "225": 100,
-                "230": 150,
-                "235": 205,
-                "240": 235,
-                "245": 175,
-                "250": 135
-              },
-              "pending": false,
-              "destination": "위해창고",
-              "date_source": "wh_due",
-              "factory_ship_date": null,
-              "estimated_qty": 0
-            },
-            {
               "date": "2026-11-25",
               "qty": 500,
               "sizes": {
@@ -13045,7 +13220,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-20",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-27",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-11-07",
@@ -13062,7 +13240,30 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
+            },
+            {
+              "date": "2026-11-14",
+              "qty": 1000,
+              "sizes": {
+                "225": 100,
+                "230": 150,
+                "235": 205,
+                "240": 235,
+                "245": 175,
+                "250": 135
+              },
+              "pending": false,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": null,
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -13163,7 +13364,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -13285,7 +13486,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -13467,7 +13668,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -13493,7 +13697,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -13558,7 +13762,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -13613,7 +13817,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-11",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-18",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -13657,7 +13864,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-11",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-18",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -13680,7 +13890,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -13732,7 +13942,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -13807,7 +14020,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -13884,7 +14097,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -13923,24 +14136,6 @@
           },
           "inbound": [
             {
-              "date": "2026-11-13",
-              "qty": 1999,
-              "sizes": {
-                "230": 279,
-                "235": 358,
-                "240": 475,
-                "245": 397,
-                "250": 299,
-                "255": 167,
-                "260": 24
-              },
-              "pending": false,
-              "destination": "위해창고",
-              "date_source": "wh_due",
-              "factory_ship_date": null,
-              "estimated_qty": 1999
-            },
-            {
               "date": "2026-10-09",
               "qty": 1999,
               "sizes": {
@@ -13956,7 +14151,31 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 1999
+              "estimated_qty": 1999,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
+            },
+            {
+              "date": "2026-11-13",
+              "qty": 1999,
+              "sizes": {
+                "230": 279,
+                "235": 358,
+                "240": 475,
+                "245": 397,
+                "250": 299,
+                "255": 167,
+                "260": 24
+              },
+              "pending": false,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": null,
+              "estimated_qty": 1999,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -14004,7 +14223,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 1299
+              "estimated_qty": 1299,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -14052,7 +14274,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 1631
+              "estimated_qty": 1631,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -14115,7 +14340,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -14170,7 +14398,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -14264,7 +14492,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -14357,7 +14585,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -14420,7 +14648,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -14507,7 +14735,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -14559,7 +14787,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 799
+              "estimated_qty": 799,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -14593,7 +14824,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -14627,7 +14861,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 289
+              "estimated_qty": 289,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -14638,7 +14875,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -14751,7 +14988,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -14803,7 +15040,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -14852,7 +15092,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -14901,7 +15144,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -14974,7 +15220,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15123,7 +15369,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15200,7 +15446,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15261,7 +15507,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15322,7 +15568,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15391,7 +15637,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -15424,7 +15673,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-10-09",
@@ -15441,7 +15693,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -15475,7 +15730,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-12",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-19",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-10-09",
@@ -15492,7 +15750,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -15558,7 +15819,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-12",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-19",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -15569,7 +15833,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15624,7 +15888,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15676,7 +15940,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 1773
+              "estimated_qty": 1773,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -15715,7 +15982,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 1259
+              "estimated_qty": 1259,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -15754,7 +16024,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15831,7 +16101,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15912,7 +16182,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -15974,6 +16244,27 @@
           },
           "inbound": [
             {
+              "date": "2026-11-06",
+              "qty": 2000,
+              "sizes": {
+                "230": 270,
+                "235": 350,
+                "240": 460,
+                "245": 385,
+                "250": 295,
+                "255": 210,
+                "260": 30
+              },
+              "pending": true,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": "2026-11-10",
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-17",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
+            },
+            {
               "date": "2026-11-13",
               "qty": 600,
               "sizes": {
@@ -15989,7 +16280,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-13",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-20",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-10-02",
@@ -16007,25 +16301,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
-            },
-            {
-              "date": "2026-11-06",
-              "qty": 2000,
-              "sizes": {
-                "230": 270,
-                "235": 350,
-                "240": 460,
-                "245": 385,
-                "250": 295,
-                "255": 210,
-                "260": 30
-              },
-              "pending": true,
-              "destination": "위해창고",
-              "date_source": "wh_due",
-              "factory_ship_date": "2026-11-10",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -16074,7 +16353,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-10",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-17",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -16124,24 +16406,6 @@
           },
           "inbound": [
             {
-              "date": "2026-11-13",
-              "qty": 800,
-              "sizes": {
-                "230": 120,
-                "235": 150,
-                "240": 185,
-                "245": 155,
-                "250": 115,
-                "255": 65,
-                "260": 10
-              },
-              "pending": false,
-              "destination": "위해창고",
-              "date_source": "wh_due",
-              "factory_ship_date": "2026-11-13",
-              "estimated_qty": 0
-            },
-            {
               "date": "2026-11-06",
               "qty": 2000,
               "sizes": {
@@ -16157,7 +16421,31 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-10",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-17",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
+            },
+            {
+              "date": "2026-11-13",
+              "qty": 800,
+              "sizes": {
+                "230": 120,
+                "235": 150,
+                "240": 185,
+                "245": 155,
+                "250": 115,
+                "255": 65,
+                "260": 10
+              },
+              "pending": false,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": "2026-11-13",
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-20",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -16194,7 +16482,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -16247,7 +16535,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -16324,7 +16612,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -16456,7 +16744,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -16560,7 +16848,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -16646,7 +16934,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-17",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-24",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -16657,7 +16948,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -16734,7 +17025,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -16797,7 +17088,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -16886,7 +17177,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -16929,7 +17223,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -16949,7 +17246,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -17002,7 +17299,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -17141,7 +17441,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-15",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-22",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -17154,7 +17457,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -17209,7 +17512,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-13",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-20",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -17254,7 +17560,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-13",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-20",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -17299,7 +17608,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-13",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-20",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -17344,7 +17656,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-13",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-20",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -17376,6 +17691,27 @@
           },
           "inbound": [
             {
+              "date": "2026-10-16",
+              "qty": 500,
+              "sizes": {
+                "225": 50,
+                "230": 70,
+                "235": 110,
+                "240": 75,
+                "245": 65,
+                "250": 90,
+                "255": 40
+              },
+              "pending": true,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": "2026-11-11",
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-18",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
+            },
+            {
               "date": "2026-08-27",
               "qty": 1220,
               "sizes": {
@@ -17390,7 +17726,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-09-25",
@@ -17408,7 +17747,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-10-09",
@@ -17425,25 +17767,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 296
-            },
-            {
-              "date": "2026-10-16",
-              "qty": 500,
-              "sizes": {
-                "225": 50,
-                "230": 70,
-                "235": 110,
-                "240": 75,
-                "245": 65,
-                "250": 90,
-                "255": 40
-              },
-              "pending": true,
-              "destination": "위해창고",
-              "date_source": "wh_due",
-              "factory_ship_date": "2026-11-11",
-              "estimated_qty": 0
+              "estimated_qty": 296,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -17464,6 +17791,27 @@
           },
           "inbound": [
             {
+              "date": "2026-10-16",
+              "qty": 500,
+              "sizes": {
+                "225": 50,
+                "230": 70,
+                "235": 110,
+                "240": 75,
+                "245": 65,
+                "250": 90,
+                "255": 40
+              },
+              "pending": true,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": "2026-11-11",
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-18",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
+            },
+            {
               "date": "2026-08-27",
               "qty": 1220,
               "sizes": {
@@ -17478,7 +17826,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-09-25",
@@ -17496,7 +17847,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-10-09",
@@ -17513,25 +17867,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 296
-            },
-            {
-              "date": "2026-10-16",
-              "qty": 500,
-              "sizes": {
-                "225": 50,
-                "230": 70,
-                "235": 110,
-                "240": 75,
-                "245": 65,
-                "250": 90,
-                "255": 40
-              },
-              "pending": true,
-              "destination": "위해창고",
-              "date_source": "wh_due",
-              "factory_ship_date": "2026-11-11",
-              "estimated_qty": 0
+              "estimated_qty": 296,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -17689,7 +18028,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -17766,7 +18105,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -17854,7 +18193,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-16",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-23",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -17871,7 +18213,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -17951,7 +18293,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18022,7 +18364,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-20",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-27",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -18102,7 +18447,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18165,7 +18510,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18228,7 +18573,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18325,7 +18670,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18397,7 +18742,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18460,7 +18805,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18554,7 +18899,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18628,7 +18973,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -18747,7 +19095,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18814,7 +19162,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -18903,7 +19251,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -19008,7 +19356,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -19111,7 +19459,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -19151,23 +19499,6 @@
           },
           "inbound": [
             {
-              "date": "2026-10-02",
-              "qty": 2000,
-              "sizes": {
-                "230": 245,
-                "235": 360,
-                "240": 510,
-                "245": 405,
-                "250": 295,
-                "255": 185
-              },
-              "pending": true,
-              "destination": "위해창고",
-              "date_source": "wh_due",
-              "factory_ship_date": null,
-              "estimated_qty": 0
-            },
-            {
               "date": "2026-11-06",
               "qty": 2000,
               "sizes": {
@@ -19182,7 +19513,30 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-10",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-17",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
+            },
+            {
+              "date": "2026-10-02",
+              "qty": 2000,
+              "sizes": {
+                "230": 245,
+                "235": 360,
+                "240": 510,
+                "245": 405,
+                "250": 295,
+                "255": 185
+              },
+              "pending": true,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": null,
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-11-06",
@@ -19200,7 +19554,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 1287
+              "estimated_qty": 1287,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19222,23 +19579,6 @@
           },
           "inbound": [
             {
-              "date": "2026-10-02",
-              "qty": 2000,
-              "sizes": {
-                "230": 245,
-                "235": 360,
-                "240": 510,
-                "245": 405,
-                "250": 295,
-                "255": 185
-              },
-              "pending": true,
-              "destination": "위해창고",
-              "date_source": "wh_due",
-              "factory_ship_date": null,
-              "estimated_qty": 0
-            },
-            {
               "date": "2026-11-06",
               "qty": 2000,
               "sizes": {
@@ -19253,7 +19593,30 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-10",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-17",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
+            },
+            {
+              "date": "2026-10-02",
+              "qty": 2000,
+              "sizes": {
+                "230": 245,
+                "235": 360,
+                "240": 510,
+                "245": 405,
+                "250": 295,
+                "255": 185
+              },
+              "pending": true,
+              "destination": "위해창고",
+              "date_source": "wh_due",
+              "factory_ship_date": null,
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-11-06",
@@ -19271,7 +19634,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 1287
+              "estimated_qty": 1287,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19308,7 +19674,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19344,7 +19713,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 380
+              "estimated_qty": 380,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19381,7 +19753,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19417,7 +19792,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 294
+              "estimated_qty": 294,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19453,7 +19831,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 292
+              "estimated_qty": 292,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19464,7 +19845,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -19535,7 +19916,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 289
+              "estimated_qty": 289,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19570,7 +19954,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19599,7 +19986,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -19655,7 +20042,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": "2026-11-16",
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": "2026-11-23",
+              "mall_estimate_basis": "공장 출고예정 +7일",
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-08-27",
@@ -19671,7 +20061,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-10-02",
@@ -19689,7 +20082,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             },
             {
               "date": "2026-10-23",
@@ -19707,7 +20103,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 1998
+              "estimated_qty": 1998,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19742,7 +20141,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19778,7 +20180,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 395
+              "estimated_qty": 395,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19867,7 +20272,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 289
+              "estimated_qty": 289,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19902,7 +20310,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [],
@@ -19931,7 +20342,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -20008,7 +20419,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -20101,7 +20512,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -20168,7 +20579,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -20229,7 +20640,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -20540,7 +20951,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -20669,7 +21080,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -20730,7 +21141,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -20799,7 +21210,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -20861,7 +21272,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21043,7 +21454,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21094,7 +21505,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21171,7 +21582,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21251,7 +21662,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21332,7 +21743,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21426,7 +21837,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21527,7 +21938,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21604,7 +22015,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21711,7 +22122,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21792,7 +22203,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21869,7 +22280,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -21943,7 +22354,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22024,7 +22435,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22092,7 +22503,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22160,7 +22571,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22237,7 +22648,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22298,7 +22709,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22359,7 +22770,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22414,7 +22825,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22469,7 +22880,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22543,7 +22954,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22600,7 +23011,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22663,7 +23074,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22773,7 +23184,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -22898,7 +23309,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -23011,7 +23422,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -23097,7 +23508,7 @@
       "stores_as_of": "2026-11-07",
       "ample": false,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -23182,7 +23593,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -23231,7 +23645,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -23280,7 +23697,10 @@
               "destination": "위해창고",
               "date_source": "wh_due",
               "factory_ship_date": null,
-              "estimated_qty": 0
+              "estimated_qty": 0,
+              "mall_expected_date": null,
+              "mall_estimate_basis": null,
+              "mall_estimate_overdue": false
             }
           ],
           "stores": [
@@ -23321,7 +23741,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -23382,7 +23802,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -23441,7 +23861,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -23486,7 +23906,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   },
   {
@@ -23547,7 +23967,7 @@
       "stores_as_of": "2026-11-07",
       "ample": true,
       "factory_schedule_basis": "2026-11-09",
-      "inbound_checked_at": "2026-11-09 10:30"
+      "inbound_checked_at": "2026-11-09 11:22"
     }
   }
 ]
