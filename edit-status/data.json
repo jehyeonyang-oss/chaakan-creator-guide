@@ -13,9 +13,9 @@
       "postDate": "",
       "deliveredDate": "2026-10-16",
       "detail": "10/15 출고 · 전용 가이드 전달 완료",
-      "schedule": "11/1 전후 업로드 (초안 10/30)",
-      "scheduleType": "예상",
-      "next": "10/30 초안 확인 → 업로드일 확정",
+      "schedule": "초안 11/7 → 업로드일 미정",
+      "scheduleType": "협의 중",
+      "next": "11/7 초안 수신 여부 확인 안 됨 → 초안 확인 → 업로드일 확정",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/maerilly.shop/edit/",
       "expires": "2026-10-20T00:00:00+09:00",
       "fee": "10만 (파라·무비 2건 합산, 2차 포함)",
@@ -32,7 +32,15 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=YrZkfOBWCZcFUHhsEsri"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=YrZkfOBWCZcFUHhsEsri",
+      "scheduleLog": [
+        {
+          "date": "2026-11-09",
+          "change": "11/1 전후 업로드(초안 10/30) → 초안 11/7 · 업로드일 미정",
+          "cause": "크리에이터 사정",
+          "reason": "크리에이터 개인사정(11/4 입원)"
+        }
+      ]
     },
     {
       "name": "민꽁",
@@ -65,7 +73,15 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=bslYKDDFQshwngUriI9J"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=bslYKDDFQshwngUriI9J",
+      "scheduleLog": [
+        {
+          "date": "2026-11-06",
+          "change": "11/6 업로드 → 11/24 업로드",
+          "cause": "우리 사정(제품 재고)",
+          "reason": "카멜 재고 11족 → 게시 11/21~24 연기 요청(11/6 DM) · 크리에이터 회신: 11/24 가능(이전 불가)"
+        }
+      ]
     },
     {
       "name": "너티",
@@ -98,7 +114,15 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=KZV5uUcw6k9e9fY1y0sC"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=KZV5uUcw6k9e9fY1y0sC",
+      "scheduleLog": [
+        {
+          "date": "2026-11-09",
+          "change": "재입고 후 업로드(보류) 유지",
+          "cause": "우리 사정(제품 입고)",
+          "reason": "체시 브라운 품절·재입고 확인 중 · 게시 가능일 문의(11/9 메일)"
+        }
+      ]
     },
     {
       "name": "조혜서",
@@ -112,9 +136,9 @@
       "postDate": "2026-11-06",
       "deliveredDate": "2026-10-21",
       "detail": "10/20 우체국 발송 · 10월 말 수령 예정 · 10/29 수령 · 10/30 할인코드 hyeseo2610(11/6~11/20)·자동DM 링크 보냄 · 10/31 가이드 링크 복구(11/20까지) · 11/1 초안 무수정 승인 메일",
-      "schedule": "11/6 업로드",
-      "scheduleType": "확정",
-      "next": "11/6 업로드 확인",
+      "schedule": "11/6 파일럿(비공개) 업로드 · 피드 공개일 미정",
+      "scheduleType": "협의 중",
+      "next": "공개 전환일 확인 → 공개 시점부터 추적 재시작 · 고료 11/16 지급 예정(서류 재요청 11/9)",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/jo_hyeseo/edit/",
       "expires": "2026-10-26T14:00:00+09:00",
       "fee": "60만 (2차 3개월 포함)",
@@ -180,7 +204,15 @@
         "actualCollectedAt": null
       },
       "postUrl": "https://www.instagram.com/reel/DfYmFnWPEqg/",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=4mhQYd0V9msKufYdOa6a"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=4mhQYd0V9msKufYdOa6a",
+      "scheduleLog": [
+        {
+          "date": "2026-11-09",
+          "change": "11/6 업로드 → 11/6 파일럿(비공개) 업로드 · 피드 공개일 미정",
+          "cause": "크리에이터 사정",
+          "reason": "크리에이터 전략: 파일럿 테스트 후 피드 공개 · 기존 24시간·48시간 수치는 파일럿 기준"
+        }
+      ]
     },
     {
       "name": "정연",
@@ -281,7 +313,8 @@
         "actualCollectedAt": 1793002408213
       },
       "postUrl": "https://www.instagram.com/reel/Dey_FiYy12f/",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=XT9lAJZCWVutjQtjnNAo"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=XT9lAJZCWVutjQtjnNAo",
+      "scheduleLog": []
     },
     {
       "name": "매릴리",
@@ -376,7 +409,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "https://www.instagram.com/reel/DfJ3mZLzXpJ/",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=4iA7tSaF69AAiWfXxNPU"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=4iA7tSaF69AAiWfXxNPU",
+      "scheduleLog": []
     },
     {
       "name": "해인",
@@ -390,11 +424,11 @@
       "postDate": "",
       "deliveredDate": "2026-10-28",
       "detail": "10/23 제품·배송지 확정 · 셀메이트 S261023135738 · 블랙 품절로 차콜 1 + 무비 코코아 1 · 10/23 14:45 출고 송장 537769294661",
-      "schedule": "11월 1주차 업로드",
-      "scheduleType": "예상",
-      "next": "할인코드·자동DM 세팅 전달 → 초안 확인",
+      "schedule": "초안 11/12(목) → 업로드일 협의",
+      "scheduleType": "협의 중",
+      "next": "11/12 초안 확인 → 업로드일 확정",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/02.c27/boots/",
-      "expires": "2026-11-08T00:00:00+09:00",
+      "expires": "2026-11-17T00:00:00+09:00",
       "fee": "20만 + 2차 10만(추후 진행 시)",
       "productCost": null,
       "engagement": [],
@@ -409,7 +443,15 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_mgrNt0KWX0fj4QkhvyU8"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_mgrNt0KWX0fj4QkhvyU8",
+      "scheduleLog": [
+        {
+          "date": "2026-11-09",
+          "change": "11월 1주차 업로드 → 초안 11/12(목) · 업로드일 협의",
+          "cause": "크리에이터 사정",
+          "reason": "크리에이터 개인사정(11/9 메일) · 가이드 공유기간 11/16까지 연장"
+        }
+      ]
     },
     {
       "name": "서유영",
@@ -504,7 +546,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "https://www.instagram.com/reel/DfHXE3Tz6hv/",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=fw26_20261020_Hr3WtSf5V3DkIrcGKL4b"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=fw26_20261020_Hr3WtSf5V3DkIrcGKL4b",
+      "scheduleLog": []
     },
     {
       "name": "mazoo",
@@ -518,9 +561,9 @@
       "postDate": "",
       "deliveredDate": "2026-10-27",
       "detail": "10/22 조건·배송지 확정 · 셀메이트 등록 S261022152748 · 10/23 09:10 출고 송장 537765807633 → 10/29 수령 확인",
-      "schedule": "초안 11/6까지 · 업로드일 미정",
+      "schedule": "초안 수신(11/6) · 수정 요청 후 업로드 · 업로드일 미정",
       "scheduleType": "협의 중",
-      "next": "11/6 초안 확인 → 업로드일 확정·코드/DM 안내",
+      "next": "수정본 확인 → 업로드일 확정·코드/DM 안내",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/mazoolook/boots/",
       "expires": "2026-11-15T00:00:00+09:00",
       "fee": "20만 (2차 1개월 포함)",
@@ -537,7 +580,15 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_jYhsKvAZ0jyV6JfhktiW"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_jYhsKvAZ0jyV6JfhktiW",
+      "scheduleLog": [
+        {
+          "date": "2026-11-09",
+          "change": "초안 11/6까지 → 초안 수신(11/6) · 수정 요청 후 업로드",
+          "cause": "검수 수정",
+          "reason": "11/6 CTA 등 수정 요청 메일 발송"
+        }
+      ]
     },
     {
       "name": "남궁솔",
@@ -626,7 +677,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "https://www.instagram.com/reel/DfPAY7LPRIU/",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_n9g54bxB2XxQqrc4zNpb"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_n9g54bxB2XxQqrc4zNpb",
+      "scheduleLog": []
     },
     {
       "name": "웅냥이",
@@ -721,7 +773,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "https://www.instagram.com/reel/DfHepfrgwT5/",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_HdDXlRc5JDKyCMv5u1Qm"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_HdDXlRc5JDKyCMv5u1Qm",
+      "scheduleLog": []
     },
     {
       "name": "소바",
@@ -810,7 +863,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "https://www.instagram.com/reel/DfM7-UJz2zS/",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_aSC60kaSsMZiuzVwUuCj"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_aSC60kaSsMZiuzVwUuCj",
+      "scheduleLog": []
     },
     {
       "name": "변덕",
@@ -905,7 +959,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "https://www.instagram.com/reel/DfJ_IItTUrJ/",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_TA4NNEx5gxiIftamrnXi"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_TA4NNEx5gxiIftamrnXi",
+      "scheduleLog": []
     },
     {
       "name": "모나",
@@ -919,9 +974,9 @@
       "postDate": "",
       "deliveredDate": "2026-10-28",
       "detail": "10/23 40만 확정 · 셀메이트 S261023155743 · 송장 537774370976 · 10/28 배송 완료",
-      "schedule": "11/10(월) 업로드",
-      "scheduleType": "확정",
-      "next": "초안 확인(주말까지) → 11/10 업로드",
+      "schedule": "입고 후 업로드 (조율 중)",
+      "scheduleType": "협의 중",
+      "next": "입고일·게시일 회신 → 할인코드 기간을 게시일 기준으로 연장",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/mmona.i/boots/",
       "expires": "2026-11-22T00:00:00+09:00",
       "fee": "40만 (코드·2차 1개월 포함)",
@@ -938,7 +993,15 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_kmG5l4fWZAPtfQqotcf8"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_kmG5l4fWZAPtfQqotcf8",
+      "scheduleLog": [
+        {
+          "date": "2026-11-09",
+          "change": "11/10 업로드 → 입고 후 업로드(조율 중)",
+          "cause": "우리 사정(제품 입고)",
+          "reason": "페탈 커스텀 멀티웨이 롱부츠 사이즈 품절(225만 남음) · 추가발주 진행 · 입고 후 게시 가능 여부 문의(11/9 메일)"
+        }
+      ]
     },
     {
       "name": "홍서",
@@ -1027,7 +1090,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "https://www.instagram.com/reel/DfMrQ14SbIf/",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_8dz6Tv0Yt00aRN0LcEh5"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_8dz6Tv0Yt00aRN0LcEh5",
+      "scheduleLog": []
     },
     {
       "name": "정인",
@@ -1060,7 +1124,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261023_daily__inn"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261023_daily__inn",
+      "scheduleLog": []
     },
     {
       "name": "니들",
@@ -1112,7 +1177,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "https://www.youtube.com/watch?v=VDMkpUBpl50",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=pkANQHPaAUggOeAD3Bp7"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=pkANQHPaAUggOeAD3Bp7",
+      "scheduleLog": []
     },
     {
       "name": "현이",
@@ -1145,7 +1211,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261029_ehe_01001"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261029_ehe_01001",
+      "scheduleLog": []
     },
     {
       "name": "어코프",
@@ -1178,7 +1245,15 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_acofmag"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_acofmag",
+      "scheduleLog": [
+        {
+          "date": "2026-11-06",
+          "change": "업로드일 11/26(목) 확정",
+          "cause": "크리에이터 사정",
+          "reason": "크리에이터 요청: 목요일 인사이트가 더 좋음(11/6 메일)"
+        }
+      ]
     },
     {
       "name": "아무",
@@ -1211,7 +1286,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261029_amu__s2__"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261029_amu__s2__",
+      "scheduleLog": []
     },
     {
       "name": "예빈",
@@ -1244,7 +1320,8 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261029_yachiichii"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261029_yachiichii",
+      "scheduleLog": []
     },
     {
       "name": "큐린",
@@ -1258,9 +1335,9 @@
       "postDate": "",
       "deliveredDate": "2026-11-04",
       "detail": "설라노 리스트 · IG DM 10/26 컨택 → 15만 견적 → 무가(제품제공) 네고 10/27 · 11/2 블랙 240 확정 · 셀메이트 S261102163319 · 할인코드는 업로드 주차 확정 후 발급",
-      "schedule": "11월 초~중순 업로드 (배송 완료 후 2주 내)",
-      "scheduleType": "예상",
-      "next": "송장 → DM 안내 → 초안 검수",
+      "schedule": "편집 완료 · 업로드일 미정",
+      "scheduleType": "협의 중",
+      "next": "업로드일 받고 할인코드 발급",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/curin_arc/boots/",
       "expires": "2026-11-29T00:00:00+09:00",
       "fee": "무가 (제품제공)",
@@ -1277,7 +1354,15 @@
         "actualCollectedAt": null
       },
       "postUrl": "",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_curin_arc"
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_curin_arc",
+      "scheduleLog": [
+        {
+          "date": "2026-11-09",
+          "change": "11월 초~중순 업로드 → 편집 완료 · 업로드일 미정",
+          "cause": "진행",
+          "reason": "사유 없음 · 편집 완료 후 할인코드 요청(11/8)"
+        }
+      ]
     }
   ],
   "contacts": [
@@ -1362,5 +1447,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-11-08T20:26:39.954304+00:00"
+  "syncedAt": "2026-11-09T01:39:55.692610+00:00"
 }
