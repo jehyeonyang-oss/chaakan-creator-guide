@@ -51,7 +51,7 @@
       "stage": "배송 완료",
       "status": "진행확정",
       "sentDate": "",
-      "postDate": "2026-11-06",
+      "postDate": "2026-11-24",
       "deliveredDate": "2026-10-20",
       "detail": "풀문 240 카멜 외 3색 · 셀메이트 S261016162709 · 10/20 배송 완료",
       "schedule": "11/24 업로드",
@@ -146,7 +146,7 @@
       "engagement": [
         {
           "slot": "24h",
-          "label": "24시간",
+          "label": "파일럿 · 24시간",
           "dueAt": "2026-11-07T12:02:30+09:00",
           "actualCollectedAt": 1794020720005,
           "state": "captured",
@@ -158,7 +158,7 @@
         },
         {
           "slot": "48h",
-          "label": "48시간",
+          "label": "파일럿 · 48시간",
           "dueAt": "2026-11-08T12:02:30+09:00",
           "actualCollectedAt": 1794107419855,
           "state": "captured",
@@ -170,7 +170,7 @@
         },
         {
           "slot": "1week",
-          "label": "7일",
+          "label": "파일럿 · 7일",
           "dueAt": "2026-11-13T12:02:30+09:00",
           "actualCollectedAt": null,
           "state": "pending",
@@ -182,7 +182,7 @@
         },
         {
           "slot": "2week",
-          "label": "14일",
+          "label": "파일럿 · 14일",
           "dueAt": "2026-11-20T12:02:30+09:00",
           "actualCollectedAt": null,
           "state": "pending",
@@ -1223,7 +1223,7 @@
       "stage": "진행 확정",
       "status": "진행확정",
       "sentDate": "",
-      "postDate": "",
+      "postDate": "2026-11-26",
       "deliveredDate": "",
       "detail": "10/26 메일 컨택 → 10/28 40만 견적 → 30만(세전)+제품 제공 역제안 수락(10/29) · 11/15(일) 성수 매장 촬영 · 파트너십 광고 제외",
       "schedule": "11/22(일) 매장 촬영 → 11/26(목) 업로드",
@@ -1447,5 +1447,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_yurimyue"
     }
   ],
-  "syncedAt": "2026-11-09T01:39:55.692610+00:00"
+  "syncedAt": "2026-11-09T01:41:43.481010+00:00"
 }
