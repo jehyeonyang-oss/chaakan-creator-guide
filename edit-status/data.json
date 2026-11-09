@@ -90,8 +90,8 @@
       "product": "체시 키높이 비율 보정 페니로퍼 LFLTR3i001 브라운 235",
       "content": "데일리룩 · 바지 끌림 고민 · 착화 전후 비교",
       "stage": "배송 완료",
-      "status": "진행확정",
-      "sentDate": "",
+      "status": "발송완료",
+      "sentDate": "2026-10-21",
       "postDate": "",
       "deliveredDate": "2026-10-22",
       "detail": "10/20 지그재그 주문 품절 취소 → 10/21 오프라인 매장 직접 발송 → 10/22 수령(사용자 확인) → 10/29 회신: 촬영 중, 사이즈 약간 큼·착화감 좋음 · 10/30 할인코드 nutty2610(11/5~11/19)·자동DM 링크 보냄 · 블랙 230 지그재그 직진배송 추가(두 켤레 한 영상)",
@@ -220,15 +220,15 @@
       "account": "zeongyeoniii",
       "product": "페탈 커스텀 멀티웨이 롱부츠, 무비 슬라우치 부츠, 블래티 슬라우치 부츠, 벌키 플랫폼 스니커즈",
       "content": "가을·겨울 부츠 3종 + 벌키 스니커즈 소개",
-      "stage": "재업로드 완료",
+      "stage": "게시 완료",
       "status": "게시완료",
       "sentDate": "2026-10-14",
       "postDate": "2026-10-22",
       "deliveredDate": "",
       "detail": "10/22 21시 첫 게시(14시간 조회 4,400·공유 32·저장 42) → 21초 전신샷 구간 이탈로 재편집, 기존 게시물 삭제 → 10/25 재업로드",
-      "schedule": "10/25 재업로드 완료",
+      "schedule": "10/22 게시 완료 (10/25 재게시본 메타 삭제 → 11/2 원본 재노출)",
       "scheduleType": "완료",
-      "next": "새 링크 기준 서치폰 48h/7d/14d 슬롯·기준점 재수집 확인",
+      "next": "원본(Dey_FiYy12f) 기준 서치폰 1주·2주 슬롯 수집 확인",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/zeongyeoniii/",
       "expires": "2026-10-30T00:00:00+09:00",
       "fee": "20만",
@@ -1483,5 +1483,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-09T02:14:54.467664+00:00"
+  "syncedAt": "2026-11-09T02:21:40.190476+00:00"
 }
