@@ -334,7 +334,7 @@
           "slot": "2week",
           "label": "14일",
           "dueAt": "2026-11-16T13:00:00+09:00",
-          "actualCollectedAt": 1794127215891,
+          "actualCollectedAt": 1794213615553,
           "state": "pending",
           "views": null,
           "likes": 3,
@@ -887,7 +887,7 @@
           "actualCollectedAt": 1794147919103,
           "state": "captured",
           "views": 18000,
-          "likes": null,
+          "likes": 3,
           "comments": 34,
           "shares": null,
           "saves": 170
@@ -907,6 +907,12 @@
       ],
       "sales": {
         "48h": {
+          "revenue": 60720,
+          "purchases": 1,
+          "rev_utm": 0,
+          "rev_code": 60720
+        },
+        "1week": {
           "revenue": 60720,
           "purchases": 1,
           "rev_utm": 0,
@@ -1144,6 +1150,12 @@
           "purchases": 8,
           "rev_utm": 335520,
           "rev_code": 391440
+        },
+        "1week": {
+          "revenue": 671040,
+          "purchases": 12,
+          "rev_utm": 335520,
+          "rev_code": 615120
         }
       },
       "phoneTrackingReady": true,
@@ -1561,5 +1573,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-09T08:01:39.100010+00:00"
+  "syncedAt": "2026-11-09T08:41:39.933194+00:00"
 }
