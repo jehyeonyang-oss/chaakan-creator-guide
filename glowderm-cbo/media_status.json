@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-10T09:30:23+09:00",
+  "checked_at": "2026-11-10T09:35:16+09:00",
   "status": "fallback",
-  "available": 26,
-  "retained": 26,
+  "available": 18,
+  "retained": 18,
   "unavailable_ids": [
     "120251496670290185",
     "120251496703530185",
