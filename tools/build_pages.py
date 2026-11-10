@@ -14,7 +14,8 @@ from pathlib import Path
 from urllib.parse import quote, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-LIBRARIES = {'hooks', 'glowderm-production', 'glowderm-team-videos', 'glowderm-cleanser', 'glowderm-cbo'}
+LIBRARIES = {'hooks', 'glowderm-production', 'glowderm-team-videos', 'glowderm-cleanser',
+             'glowderm-cbo', 'glowderm-ads', 'powerpages', 'kimgayeon-powerpage', 'ugg-spray-cases'}
 TEXT = {'.html', '.js', '.json', '.css'}
 URL = re.compile(r'''(["'`])([^"'`<>\n]*?\.mp4(?:[?#][^"'`<>\n]*)?)\1''')
 PREFIX = '/chaakan-creator-guide/'
