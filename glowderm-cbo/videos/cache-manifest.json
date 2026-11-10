@@ -273,6 +273,13 @@
       "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
       "output_sha256": "5391aed81cedd0a14da9fbddf2cbd05a37fb26798981c2b07e50617f88326687",
       "src": "videos/v_729d7fc4272897c127a1dcf4ae92180b7c5eb5b5dec5c45ddd1c947f88f73201.mp4"
+    },
+    "v_7deeed048073ca76d21a74949b0459e41a0ea7c78a09d374e42c36c1e9b148fe.mp4": {
+      "source_sha256": "1ea0ba234961ebb1b94a92b2337e4b0cf049ffd52e940e47998dc00847090db5",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "b42ccdbcfceb6c250db87aca1a6e8de54e61933ea928bf5ff31e3ae03f7a0a66",
+      "src": "videos/v_7deeed048073ca76d21a74949b0459e41a0ea7c78a09d374e42c36c1e9b148fe.mp4"
     }
   }
 }
