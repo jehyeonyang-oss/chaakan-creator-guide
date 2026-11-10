@@ -35,7 +35,7 @@ def resolve_url(source, value):
 
 def build(output):
     files = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
-    files = [f for f in files if f and not f.startswith(('.', 'tools/')) and Path(f).suffix not in {'.py', '.md'}]
+    files = [f for f in files if f and not f.startswith(('.', 'tools/'))]
     commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     candidates = {f for f in files if f.split('/')[0] in LIBRARIES and f.endswith('.mp4')}
     contents = {}
