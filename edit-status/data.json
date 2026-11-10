@@ -253,7 +253,14 @@
           "saves": null
         }
       ],
-      "sales": {},
+      "sales": {
+        "48h": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": 0
+        }
+      },
       "phoneTrackingReady": true,
       "engagementBaseline": {
         "views": null,
@@ -334,7 +341,7 @@
           "slot": "2week",
           "label": "14일",
           "dueAt": "2026-11-16T13:00:00+09:00",
-          "actualCollectedAt": 1794213615553,
+          "actualCollectedAt": 1794300017494,
           "state": "pending",
           "views": null,
           "likes": 3,
@@ -707,7 +714,7 @@
           "actualCollectedAt": 1794217518894,
           "state": "captured",
           "views": 52000,
-          "likes": null,
+          "likes": 3,
           "comments": 266,
           "shares": 623,
           "saves": 496
@@ -727,6 +734,12 @@
       ],
       "sales": {
         "48h": {
+          "revenue": 182160,
+          "purchases": 3,
+          "rev_utm": 121440,
+          "rev_code": 182160
+        },
+        "1week": {
           "revenue": 182160,
           "purchases": 3,
           "rev_utm": 121440,
@@ -1628,5 +1641,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-10T03:26:53.442471+00:00"
+  "syncedAt": "2026-11-10T08:41:40.144917+00:00"
 }
