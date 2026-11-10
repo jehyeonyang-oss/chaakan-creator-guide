@@ -1444,13 +1444,13 @@
           "slot": "24h",
           "label": "24시간",
           "dueAt": "2026-11-10T18:25:37+09:00",
-          "actualCollectedAt": null,
-          "state": "pending",
-          "views": null,
+          "actualCollectedAt": 1794303020900,
+          "state": "captured",
+          "views": 5097,
           "likes": null,
-          "comments": null,
+          "comments": 4,
           "shares": null,
-          "saves": null
+          "saves": 25
         },
         {
           "slot": "48h",
@@ -1641,5 +1641,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-10T08:41:40.144917+00:00"
+  "syncedAt": "2026-11-10T09:31:08.327713+00:00"
 }
