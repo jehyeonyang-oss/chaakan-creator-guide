@@ -341,11 +341,11 @@
           "slot": "2week",
           "label": "14일",
           "dueAt": "2026-11-16T13:00:00+09:00",
-          "actualCollectedAt": 1794300017494,
+          "actualCollectedAt": null,
           "state": "pending",
           "views": null,
-          "likes": 3,
-          "comments": 39,
+          "likes": null,
+          "comments": null,
           "shares": null,
           "saves": null
         }
@@ -358,12 +358,6 @@
           "rev_code": 0
         },
         "1week": {
-          "revenue": 0,
-          "purchases": 0,
-          "rev_utm": 0,
-          "rev_code": 0
-        },
-        "2week": {
           "revenue": 0,
           "purchases": 0,
           "rev_utm": 0,
@@ -1641,5 +1635,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-11T04:16:39.030239+00:00"
+  "syncedAt": "2026-11-11T07:59:57.483876+00:00"
 }
