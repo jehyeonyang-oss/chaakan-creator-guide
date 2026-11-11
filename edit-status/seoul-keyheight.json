@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-10-30T17:44:50.082866+09:00",
+  "reviewedAt": "2026-11-12T01:02:21+09:00",
   "sourceLabel": "서울링크 키높이 진행 기록",
-  "updateNote": "업무 기록을 대조해 확인한 자료입니다. 일정 변경은 재확인 후 반영합니다.",
+  "updateNote": "11/12 서울링크 진행 기록·메타 소재 대조. 게시 확인 3명, 모래 초안 검수 반영, 추가 협찬 7명 등록. 나머지 상태는 마지막 확인 기록이며 게시 완료를 추정하지 않습니다.",
   "items": [
     {
       "id": "kh:__sil_0",
@@ -11,9 +11,9 @@
       "product": "카민스 롱부츠 블랙 225",
       "fee": "110만 (원고 100만 + 2차 활용 1달 10만)",
       "status": "게시완료",
-      "schedule": "11/2 게시 · 메타 구매 광고 11/3~12/2",
+      "schedule": "11/02 게시 완료 · 서울링크 보고 기준",
       "scheduleType": "완료",
-      "next": "메타 구매 광고 11/3 19:43~12/2 · 게시물 연결은 추정(릴 코드 시각 11/2 19:00 = 영실 광고 원본 게시 시점, 계정명 직접 확인 안 됨)",
+      "next": "PA 누적 성과 추적",
       "collaborationType": "유가",
       "events": [
         {
@@ -30,18 +30,20 @@
         }
       ],
       "postUrl": "https://www.instagram.com/reel/DfPCtrYvwhP/",
-      "guideUrl": ""
+      "guideUrl": "",
+      "adMediaUrl": "https://www.instagram.com/p/DfRRcs_MiEj/",
+      "postDate": "2026-11-02"
     },
     {
       "id": "kh:hee__i",
       "name": "가희",
       "account": "hee__i",
       "product": "카민스 롱부츠 블랙 230",
-      "fee": "미확인",
-      "status": "발송완료",
-      "schedule": "11/2~6 업로드 예정",
-      "scheduleType": "예정",
-      "next": "초안·게시 일정 확인 · 단면 샘플 10/28 도착 확인",
+      "fee": "90만 + VAT (11/7 게시 후 정산 요청 · 활용료 포함 여부 미확인)",
+      "status": "게시완료",
+      "schedule": "11/06 게시 완료 · 서울링크 보고 기준",
+      "scheduleType": "완료",
+      "next": "PA 누적 성과 추적 · 원본 게시물 링크 확인",
       "collaborationType": "유가",
       "events": [
         {
@@ -49,10 +51,18 @@
           "kind": "업로드",
           "detail": "11/2~6 업로드 예정",
           "certainty": "예정 범위 · 원문 확인"
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "게시 완료",
+          "detail": "11/7 서울링크 게시 완료·정산 요청 기록 확인. 이전 일정: 11/2~6 업로드 예정. 광고 소재 생성일과 원본 게시일은 별도.",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "adMediaUrl": "https://www.instagram.com/p/DfcJtOMs-_A/",
+      "postDate": "2026-11-06"
     },
     {
       "id": "kh:hour.glass__",
@@ -60,10 +70,10 @@
       "account": "hour.glass__",
       "product": "카민스 롱부츠 블랙 230",
       "fee": "25만 (원고 20만 + 2차 5만)",
-      "status": "발송완료",
+      "status": "초안 검수 중",
       "schedule": "초안 11/5 · 게시 11/9~13",
       "scheduleType": "예정",
-      "next": "11/5 초안 확인 · 단면 샘플 10/28 발송",
+      "next": "11/10 수정 요청안 서울링크 확인 대기 · 수정본·게시 일정 재확인",
       "collaborationType": "유가",
       "events": [
         {
@@ -77,6 +87,12 @@
           "kind": "업로드",
           "detail": "11/9~13 게시 예정",
           "certainty": "예정 범위 · 원문 확인"
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "초안 검수",
+          "detail": "11/5 초안 수신 후 11/10 오타·제품명·비포애프터 화면 수정 요청안 전달. 게시 완료 기록 없음.",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
@@ -87,11 +103,11 @@
       "name": "소은",
       "account": "soeunsi",
       "product": "카민스 롱부츠 블랙 235",
-      "fee": "150만 (대표 승인 기록 · 세부 조건 확인)",
-      "status": "초안 수정 중",
-      "schedule": "게시 11/23~27 · 수정본 이번 주말 예정",
-      "scheduleType": "예정",
-      "next": "단면 컷 수정본 확인 · 수령한 샘플 종류 확인 중",
+      "fee": "170만 (세전 · 11/7 게시 후 정산 요청)",
+      "status": "게시완료",
+      "schedule": "11/07 게시 완료 · 서울링크 보고 기준",
+      "scheduleType": "완료",
+      "next": "PA 누적 성과 추적 · 원본 게시물 링크 확인",
       "collaborationType": "유가",
       "events": [
         {
@@ -99,10 +115,18 @@
           "kind": "업로드",
           "detail": "11/23~27 게시 예정",
           "certainty": "예정 범위 · 원문 확인"
+        },
+        {
+          "date": "2026-11-07",
+          "kind": "게시 완료",
+          "detail": "11/7 서울링크 게시 완료·정산 요청 기록 확인. 이전 일정: 게시 11/23~27 · 수정본 이번 주말 예정. 광고 소재 생성일과 원본 게시일은 별도.",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "adMediaUrl": "https://www.instagram.com/p/DfcHofws9pK/",
+      "postDate": "2026-11-07"
     },
     {
       "id": "kh:binyu.11",
@@ -703,6 +727,160 @@
           "date": "2026-10-29",
           "kind": "제품 발송",
           "detail": "발송 안내 기록 확인",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:tomy.rene",
+      "name": "르네",
+      "account": "tomy.rene",
+      "product": "카민스 롱부츠 블랙 235",
+      "fee": "무가 (제품제공)",
+      "status": "출고 요청",
+      "schedule": "11월 2주 목표",
+      "scheduleType": "예상",
+      "next": "출고·수령 및 게시 여부 확인",
+      "collaborationType": "무가",
+      "events": [
+        {
+          "date": "2026-11-01",
+          "kind": "출고 요청",
+          "detail": "서울링크 키높이 협찬 출고 요청 기록. 출고 완료·게시 완료는 별도 확인 필요.",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:danbal.yoobu",
+      "name": "한지혜",
+      "account": "danbal.yoobu",
+      "product": "카민스 블랙 230 + 풀문 카멜 230",
+      "fee": "무가 (제품제공)",
+      "status": "출고 요청",
+      "schedule": "게시 일정 확인 필요",
+      "scheduleType": "예상",
+      "next": "출고·수령 및 게시 여부 확인",
+      "collaborationType": "무가",
+      "events": [
+        {
+          "date": "2026-11-02",
+          "kind": "출고 요청",
+          "detail": "서울링크 키높이 협찬 출고 요청 기록. 출고 완료·게시 완료는 별도 확인 필요.",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:spider_dresser",
+      "name": "김현정",
+      "account": "spider_dresser",
+      "product": "카민스 블랙 240",
+      "fee": "무가 (제품제공)",
+      "status": "출고 요청",
+      "schedule": "11/9~11/22 예정",
+      "scheduleType": "예상",
+      "next": "출고·수령 및 게시 여부 확인",
+      "collaborationType": "무가",
+      "events": [
+        {
+          "date": "2026-11-02",
+          "kind": "출고 요청",
+          "detail": "서울링크 키높이 협찬 출고 요청 기록. 출고 완료·게시 완료는 별도 확인 필요.",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:jje1112",
+      "name": "최지혜",
+      "account": "jje1112",
+      "product": "카민스 블랙 240",
+      "fee": "무가 (제품제공)",
+      "status": "출고 요청",
+      "schedule": "12/4 무렵 예정",
+      "scheduleType": "예상",
+      "next": "출고·수령 및 게시 여부 확인",
+      "collaborationType": "무가",
+      "events": [
+        {
+          "date": "2026-11-02",
+          "kind": "출고 요청",
+          "detail": "서울링크 키높이 협찬 출고 요청 기록. 출고 완료·게시 완료는 별도 확인 필요.",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:im_2yun",
+      "name": "이윤",
+      "account": "im_2yun",
+      "product": "카민스 블랙 235",
+      "fee": "무가 (제품제공)",
+      "status": "출고 요청",
+      "schedule": "11/16~11/22 예정",
+      "scheduleType": "예상",
+      "next": "출고·수령 및 게시 여부 확인",
+      "collaborationType": "무가",
+      "events": [
+        {
+          "date": "2026-11-03",
+          "kind": "출고 요청",
+          "detail": "서울링크 키높이 협찬 출고 요청 기록. 출고 완료·게시 완료는 별도 확인 필요.",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:lovvmik",
+      "name": "김보라",
+      "account": "lovvmik",
+      "product": "카민스 블랙 240 + 풀문 카멜 240",
+      "fee": "무가 (제품제공)",
+      "status": "출고 요청",
+      "schedule": "11/22~12/4 예정",
+      "scheduleType": "예상",
+      "next": "출고·수령 및 게시 여부 확인",
+      "collaborationType": "무가",
+      "events": [
+        {
+          "date": "2026-11-07",
+          "kind": "출고 요청",
+          "detail": "서울링크 키높이 협찬 출고 요청 기록. 출고 완료·게시 완료는 별도 확인 필요.",
+          "certainty": "기록"
+        }
+      ],
+      "postUrl": "",
+      "guideUrl": ""
+    },
+    {
+      "id": "kh:lookfile.zin",
+      "name": "윤혜진",
+      "account": "lookfile.zin",
+      "product": "풀문 카멜 250 (없으면 블랙 250)",
+      "fee": "무가 (제품제공)",
+      "status": "출고 요청",
+      "schedule": "11/23~12/4 예정",
+      "scheduleType": "예상",
+      "next": "출고·수령 및 게시 여부 확인",
+      "collaborationType": "무가",
+      "events": [
+        {
+          "date": "2026-11-07",
+          "kind": "출고 요청",
+          "detail": "서울링크 키높이 협찬 출고 요청 기록. 출고 완료·게시 완료는 별도 확인 필요.",
           "certainty": "기록"
         }
       ],

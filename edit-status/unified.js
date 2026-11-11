@@ -123,7 +123,7 @@
       if (!c.id || !c.name || ids.has(c.id) || !Array.isArray(c.events)) throw Error('키높이 업무 항목 확인 필요');
       ids.add(c.id);
       if (c.events.some(e => !date(e.date) || !e.kind)) throw Error('키높이 일정 확인 필요');
-      return {key:'seoul:'+c.id,team:'seoul',track:'키높이',name:c.name,account:c.account||'',product:clean(c.product),content:clean(c.collaborationType),fee:clean(c.fee)||'미확인',status:clean(c.status)||'상태 미확인',statusDetail:'영돈대표 진행',posted:c.status==='게시완료',contact:!!c.contact,schedule:clean(c.schedule)||'일정 미정',scheduleType:clean(c.scheduleType)||'미정',next:clean(c.next)||'다음 할 일 미등록',events:c.events,...performance(c),postUrl:safeURL(c.postUrl),guideUrl:safeURL(c.guideUrl),referenceUrl:safeURL(c.referenceUrl),recordUrl:'',badges:[]};
+      return {key:'seoul:'+c.id,team:'seoul',track:'키높이',name:c.name,account:c.account||'',product:clean(c.product),content:clean(c.collaborationType),fee:clean(c.fee)||'미확인',status:clean(c.status)||'상태 미확인',statusDetail:'영돈대표 진행',posted:c.status==='게시완료',postDate:date(c.postDate),contact:!!c.contact,schedule:clean(c.schedule)||'일정 미정',scheduleType:clean(c.scheduleType)||'미정',next:clean(c.next)||'다음 할 일 미등록',events:c.events,...performance(c),postUrl:safeURL(c.postUrl),guideUrl:safeURL(c.guideUrl),referenceUrl:safeURL(c.referenceUrl),recordUrl:'',badges:[]};
     });
   }
   function filtered() {
