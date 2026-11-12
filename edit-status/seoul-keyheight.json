@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-12T01:02:21+09:00",
+  "reviewedAt": "2026-11-12T14:13:54+09:00",
   "sourceLabel": "서울링크 키높이 진행 기록",
-  "updateNote": "11/12 서울링크 진행 기록·메타 소재 대조. 게시 확인 3명, 모래 초안 검수 반영, 추가 협찬 7명 등록. 나머지 상태는 마지막 확인 기록이며 게시 완료를 추정하지 않습니다.",
+  "updateNote": "11/12 DM 동기화 원문 414건 대조: 서울링크 키높이 18명 제품 협찬 확정·조건 및 초안 상태 반영, 비뉴 35만 수락 DM 전달 원문 확인. 계정·브랜드가 다른 견적은 적용하지 않음. DM 미연결 대상은 기존 근거와 추가 확인 필요를 구분.",
   "items": [
     {
       "id": "kh:__sil_0",
@@ -32,14 +32,19 @@
       "postUrl": "https://www.instagram.com/reel/DfPCtrYvwhP/",
       "guideUrl": "",
       "adMediaUrl": "https://www.instagram.com/p/DfRRcs_MiEj/",
-      "postDate": "2026-11-02"
+      "postDate": "2026-11-02",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeAmount": 1100000,
+      "feeStatus": "기존 합의 기록",
+      "feeEvidence": "기존 DM 전달·메일 협의 기록"
     },
     {
       "id": "kh:hee__i",
       "name": "가희",
       "account": "hee__i",
       "product": "카민스 롱부츠 블랙 230",
-      "fee": "90만 + VAT (11/7 게시 후 정산 요청 · 활용료 포함 여부 미확인)",
+      "fee": "원고료 90만 + VAT · 2차 활용료 별도 확인",
       "status": "게시완료",
       "schedule": "11/06 게시 완료 · 서울링크 보고 기준",
       "scheduleType": "완료",
@@ -62,7 +67,12 @@
       "postUrl": "",
       "guideUrl": "",
       "adMediaUrl": "https://www.instagram.com/p/DfcJtOMs-_A/",
-      "postDate": "2026-11-06"
+      "postDate": "2026-11-06",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeAmount": 900000,
+      "feeStatus": "원고료 확인 · 활용료 미확인",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:hour.glass__",
@@ -96,7 +106,12 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": "https://seoul-link.github.io/chaakan-guide/kino/k4114e3d217/"
+      "guideUrl": "https://seoul-link.github.io/chaakan-guide/kino/k4114e3d217/",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeAmount": 250000,
+      "feeStatus": "기존 합의 기록",
+      "feeEvidence": "기존 DM 전달·메일 협의 기록"
     },
     {
       "id": "kh:soeunsi",
@@ -126,14 +141,19 @@
       "postUrl": "",
       "guideUrl": "",
       "adMediaUrl": "https://www.instagram.com/p/DfcHofws9pK/",
-      "postDate": "2026-11-07"
+      "postDate": "2026-11-07",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeAmount": 1700000,
+      "feeStatus": "기존 합의 기록",
+      "feeEvidence": "기존 DM 전달·메일 협의 기록"
     },
     {
       "id": "kh:binyu.11",
       "name": "비뉴",
       "account": "binyu.11",
       "product": "카민스 롱부츠 블랙 250",
-      "fee": "미확인",
+      "fee": "35만 (클린본·PA 코드·2차 활용 포함)",
       "status": "게시완료",
       "schedule": "초안 11/5 · 게시 11/9~13",
       "scheduleType": "예정",
@@ -157,10 +177,22 @@
           "kind": "업로드",
           "detail": "11/9~13 게시 예정",
           "certainty": "예정 범위 · 원문 확인"
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "단가 확정",
+          "detail": "35만 원에 클린본·파트너십 광고 코드·2차 활용 포함 수락 DM 원문 대조",
+          "certainty": "기록"
         }
       ],
       "postUrl": "https://www.instagram.com/reel/Dfj2F47y77R/",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeAmount": 350000,
+      "feeStatus": "확정",
+      "feeEvidence": "10/26 인스타 DM 수락 원문 · 서울링크 전달 기록",
+      "rights": "클린본·PA 코드·2차 활용 포함"
     },
     {
       "id": "kh:hi_soooooo",
@@ -188,7 +220,12 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeAmount": 120000,
+      "feeStatus": "기존 합의 기록",
+      "feeEvidence": "기존 DM 전달·메일 협의 기록"
     },
     {
       "id": "kh:yeons_choi",
@@ -222,12 +259,17 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeAmount": 200000,
+      "feeStatus": "기존 합의 기록",
+      "feeEvidence": "기존 DM 전달·메일 협의 기록"
     },
     {
       "id": "kh:zerozero",
       "name": "zerozero",
-      "account": "",
+      "account": "zerozero_sz",
       "product": "놀킨 미들부츠 블랙 235",
       "fee": "미확인",
       "status": "보류",
@@ -237,7 +279,11 @@
       "collaborationType": "유가",
       "events": [],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 10/26 확정·놀킨 입고 대기 기록",
+      "feeStatus": "원문 추가 확인 필요",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:haeun.fit",
@@ -259,18 +305,22 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeStatus": "기존 협찬 기록 · DM 원문 추가 확인",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:mkchoi_148cm",
       "name": "최민경",
       "account": "mkchoi_148cm",
       "product": "카민스 블랙 220 + 풀문 카멜 220",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
-      "status": "발송완료",
-      "schedule": "11/17 이후 게시 · 기존 색상 유지",
-      "scheduleType": "예정",
-      "next": "초안·정확한 게시일 확인",
+      "fee": "원고료 0원 · 제품 협찬",
+      "status": "초안 검수 대기",
+      "schedule": "11/8 초안 수신 · 11/17 이후 게시 예정",
+      "scheduleType": "협의 중",
+      "next": "11/10 컨펌 재요청 · 초안 피드백",
       "collaborationType": "제품 제공",
       "events": [
         {
@@ -284,17 +334,31 @@
           "kind": "업로드",
           "detail": "11/17 이후 게시",
           "certainty": "예정 범위 · 원문 확인"
+        },
+        {
+          "date": "2026-11-08",
+          "kind": "초안 검수 대기",
+          "detail": "DM 원문 대조: 11/8 초안 수신 · 11/17 이후 게시 예정 · 이전 기록: 11/17 이후 게시 · 기존 색상 유지",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-10T09:46:29.552+00:00",
+      "rights": "PA 코드 제공 · 광고·2차 활용 60일"
     },
     {
       "id": "kh:own_deww_",
       "name": "강이슬",
       "account": "own_deww_",
       "product": "풀문 카멜 240",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "발송완료",
       "schedule": "11월 3주 게시",
       "scheduleType": "예정",
@@ -309,18 +373,26 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-06T00:19:53.325+00:00",
+      "rights": "클린본·추가 컷·PA 코드·2차 활용 60일 협의"
     },
     {
       "id": "kh:me0.o0.w",
       "name": "이영주",
       "account": "me0.o0.w",
       "product": "풀문 핑크 240",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
-      "status": "발송완료",
-      "schedule": "11월 3~4주 게시",
-      "scheduleType": "예정",
-      "next": "초안·정확한 게시일 확인",
+      "fee": "원고료 0원 · 제품 협찬",
+      "status": "초안 검수 대기",
+      "schedule": "11/10 초안 수신 · 11/11 밤 게시 희망(승인·게시 미확인)",
+      "scheduleType": "협의 중",
+      "next": "11/11 컨펌 재요청 · 음성 있는 버전 선호 확인",
       "collaborationType": "제품 제공",
       "events": [
         {
@@ -328,17 +400,31 @@
           "kind": "제품 발송",
           "detail": "발송 안내 기록 확인",
           "certainty": "기록"
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "초안 검수 대기",
+          "detail": "DM 원문 대조: 11/10 초안 수신 · 11/11 밤 게시 희망(승인·게시 미확인) · 이전 기록: 11월 3~4주 게시",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-11T05:56:28.8+00:00",
+      "rights": "PA 코드 제공 · 광고·2차 활용 60일"
     },
     {
       "id": "kh:_heekong",
       "name": "임희진",
       "account": "_heekong",
       "product": "풀문 카멜 235",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "발송완료",
       "schedule": "11/15~21 게시",
       "scheduleType": "예정",
@@ -359,17 +445,25 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_mkt 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_mkt · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-06T00:05:19.695+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     },
     {
       "id": "kh:m.sehey",
       "name": "김민견",
       "account": "m.sehey",
       "product": "풀문 블랙 230",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "발송완료",
-      "schedule": "일정 미정",
-      "scheduleType": "미정",
+      "schedule": "11/16~20 게시 협의",
+      "scheduleType": "예상",
       "next": "초안·정확한 게시일 확인",
       "collaborationType": "제품 제공",
       "events": [
@@ -381,18 +475,26 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_japan 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_japan · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-06T00:07:48.115+00:00",
+      "rights": "클린본·추가 컷·PA 코드·2차 활용 60일 협의"
     },
     {
       "id": "kh:eun_hye_1218",
       "name": "노은혜",
       "account": "eun_hye_1218",
       "product": "카민스 블랙 240",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "발송완료",
-      "schedule": "일정 미정",
-      "scheduleType": "미정",
-      "next": "초안·정확한 게시일 확인",
+      "schedule": "12월 초 희망 · 11/21까지 요청은 일정 확인 대기",
+      "scheduleType": "협의 중",
+      "next": "개인 사정 회신 후 게시일 확정",
       "collaborationType": "제품 제공",
       "events": [
         {
@@ -403,7 +505,15 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_japan 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_japan · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-06T14:01:38.208+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     },
     {
       "id": "kh:yoongz.log",
@@ -431,14 +541,18 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeStatus": "기존 협찬 기록 · DM 원문 추가 확인",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:hibyelimi",
       "name": "임해경",
       "account": "hibyelimi",
       "product": "카민스 블랙 230",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "발송완료",
       "schedule": "11월 둘째~셋째 주 게시",
       "scheduleType": "예정",
@@ -453,7 +567,15 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "https://seoul-link.github.io/chaakan-guide/kino/kde942613e1e/",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_mkt 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_mkt · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-05T13:20:51.009+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     },
     {
       "id": "kh:duu_ootd",
@@ -475,18 +597,22 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeStatus": "기존 협찬 기록 · DM 원문 추가 확인",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:corn_soojung",
       "name": "권수정",
       "account": "corn_soojung",
       "product": "카민스 블랙 225 + 풀문 블랙 225",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
-      "status": "발송완료",
-      "schedule": "11월 둘째 주 촬영 · 게시일 미정",
-      "scheduleType": "예정",
-      "next": "초안·정확한 게시일 확인",
+      "fee": "원고료 0원 · 제품 협찬",
+      "status": "초안 검수 대기",
+      "schedule": "11/11 초안 수신 · 효과음 추가 예정",
+      "scheduleType": "협의 중",
+      "next": "초안 피드백 · 광고 활용은 별도 협의",
       "collaborationType": "제품 제공",
       "events": [
         {
@@ -494,20 +620,34 @@
           "kind": "제품 발송",
           "detail": "발송 안내 기록 확인",
           "certainty": "기록"
+        },
+        {
+          "date": "2026-11-11",
+          "kind": "초안 검수 대기",
+          "detail": "DM 원문 대조: 11/11 초안 수신 · 효과음 추가 예정 · 이전 기록: 11월 둘째 주 촬영 · 게시일 미정",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "https://seoul-link.github.io/chaakan-guide/kino/k3114513d66e/",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_japan 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_japan · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-11T07:25:51.739+00:00",
+      "rights": "제품 2켤레·릴스 1편 · 클린본·추가 컷 제외 · 광고 활용 별도 협의"
     },
     {
       "id": "kh:jin_vely_h",
       "name": "박혜진",
       "account": "jin_vely_h",
       "product": "카민스 블랙 230",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "발송완료",
-      "schedule": "11/9 주 촬영 · 게시일 미정",
-      "scheduleType": "예정",
+      "schedule": "11/9 주 게시 · 어려우면 11/16 주",
+      "scheduleType": "예상",
       "next": "초안·정확한 게시일 확인",
       "collaborationType": "제품 제공",
       "events": [
@@ -525,18 +665,26 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "https://seoul-link.github.io/chaakan-guide/kino/kae1a499bdf2/",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-02T12:06:44.828+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     },
     {
       "id": "kh:eien_oshare",
       "name": "강원지",
       "account": "eien_oshare",
       "product": "풀문 카멜 245",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
-      "status": "발송완료",
-      "schedule": "수령 후 촬영 · 영상 확인 후 11/9~12/4 게시",
-      "scheduleType": "예정",
-      "next": "초안·정확한 게시일 확인",
+      "fee": "원고료 0원 · 제품 협찬",
+      "status": "초안 승인",
+      "schedule": "11/5 수정본 승인 · 11/22 이후, 11월 마지막 주 게시",
+      "scheduleType": "협의 중",
+      "next": "게시 후 원본 링크·PA 코드 수신",
       "collaborationType": "제품 제공",
       "events": [
         {
@@ -550,21 +698,35 @@
           "kind": "업로드",
           "detail": "11/9~12/4 중 영상 확인 후 게시",
           "certainty": "예정 범위 · 원문 확인"
+        },
+        {
+          "date": "2026-11-05",
+          "kind": "초안 승인",
+          "detail": "DM 원문 대조: 11/5 수정본 승인 · 11/22 이후, 11월 마지막 주 게시 · 이전 기록: 수령 후 촬영 · 영상 확인 후 11/9~12/4 게시",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-05T13:51:33.373+00:00",
+      "rights": "제품 협찬 · 게시 후 PA 코드 전달 예정"
     },
     {
       "id": "kh:147lil_myo",
       "name": "임효정",
       "account": "147lil_myo",
       "product": "풀문 블랙 220",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
-      "status": "발송완료",
-      "schedule": "수령 후 촬영 · 11/9~12/4 중 게시 주 협의",
-      "scheduleType": "예정",
-      "next": "초안·정확한 게시일 확인",
+      "fee": "원고료 0원 · 제품 협찬",
+      "status": "초안 검수 대기",
+      "schedule": "11/9 편집본·클린본 수신 · 게시일 재확인",
+      "scheduleType": "협의 중",
+      "next": "11/12까지 컨펌 재요청 · 초안 피드백",
       "collaborationType": "제품 제공",
       "events": [
         {
@@ -578,21 +740,35 @@
           "kind": "업로드",
           "detail": "11/9~12/4 중 게시 주 협의",
           "certainty": "예정 범위 · 원문 확인"
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "초안 검수 대기",
+          "detail": "DM 원문 대조: 11/9 편집본·클린본 수신 · 게시일 재확인 · 이전 기록: 수령 후 촬영 · 11/9~12/4 중 게시 주 협의",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-12T03:36:59.531+00:00",
+      "rights": "클린본·추가 컷·PA 코드·2차 활용 60일 협의"
     },
     {
       "id": "kh:p.yon.n",
       "name": "박인",
       "account": "p.yon.n",
       "product": "카민스 블랙 245",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "발송완료",
-      "schedule": "12/1~4 게시",
-      "scheduleType": "예정",
-      "next": "초안·정확한 게시일 확인",
+      "schedule": "11/20 전 초안 가능 · 11/21까지 게시 요청(확정 대기)",
+      "scheduleType": "협의 중",
+      "next": "11/11 경주 여행 테마 문의 답변·초안 확인",
       "collaborationType": "제품 제공",
       "events": [
         {
@@ -609,7 +785,15 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_japan 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_japan · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-10T16:18:25.936+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     },
     {
       "id": "kh:mini_me__v",
@@ -631,7 +815,11 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeStatus": "기존 협찬 기록 · DM 원문 추가 확인",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:153_da_seul",
@@ -653,14 +841,18 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeStatus": "기존 협찬 기록 · DM 원문 추가 확인",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:oakjanghouse",
       "name": "옥장",
       "account": "oakjanghouse",
       "product": "카민스 블랙 245 + 풀문 블루 245",
-      "fee": "제품 제공 (원고료 없음 · 제품원가 미확인)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "발송완료",
       "schedule": "11/17 게시",
       "scheduleType": "예정",
@@ -681,7 +873,15 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-06T03:54:12.265+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     },
     {
       "id": "kh:_auryns",
@@ -709,7 +909,11 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeStatus": "기존 협찬 기록 · DM 원문 추가 확인",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:youracccc",
@@ -731,14 +935,19 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeAmount": 150000,
+      "feeStatus": "기존 합의 기록",
+      "feeEvidence": "기존 DM 전달·메일 협의 기록"
     },
     {
       "id": "kh:tomy.rene",
       "name": "르네",
       "account": "tomy.rene",
       "product": "카민스 롱부츠 블랙 235",
-      "fee": "무가 (제품제공)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "출고 요청",
       "schedule": "11월 2주 목표",
       "scheduleType": "예상",
@@ -753,7 +962,15 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_mkt 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_mkt · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-01T02:49:52.455+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     },
     {
       "id": "kh:danbal.yoobu",
@@ -775,14 +992,18 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeStatus": "기존 협찬 기록 · DM 원문 추가 확인",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:spider_dresser",
       "name": "김현정",
       "account": "spider_dresser",
       "product": "카민스 블랙 240",
-      "fee": "무가 (제품제공)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "출고 요청",
       "schedule": "11/9~11/22 예정",
       "scheduleType": "예상",
@@ -797,18 +1018,26 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "https://seoul-link.github.io/chaakan-guide/kino/kba108eb9109/",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-02T05:22:38.665+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     },
     {
       "id": "kh:jje1112",
       "name": "최지혜",
       "account": "jje1112",
       "product": "카민스 블랙 240",
-      "fee": "무가 (제품제공)",
-      "status": "출고 요청",
-      "schedule": "12/4 무렵 예정",
-      "scheduleType": "예상",
-      "next": "출고·수령 및 게시 여부 확인",
+      "fee": "원고료 0원 · 제품 협찬",
+      "status": "수령완료",
+      "schedule": "11/6 제품 수령 확인 · 12/4 게시 예정",
+      "scheduleType": "확정",
+      "next": "완성 영상 수신·검수",
       "collaborationType": "무가",
       "events": [
         {
@@ -816,21 +1045,35 @@
           "kind": "출고 요청",
           "detail": "서울링크 키높이 협찬 출고 요청 기록. 출고 완료·게시 완료는 별도 확인 필요.",
           "certainty": "기록"
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "수령완료",
+          "detail": "DM 원문 대조: 11/6 제품 수령 확인 · 12/4 게시 예정 · 이전 기록: 12/4 무렵 예정",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_mkt 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_mkt · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-06T01:07:05.202+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     },
     {
       "id": "kh:im_2yun",
       "name": "이윤",
       "account": "im_2yun",
       "product": "카민스 블랙 235",
-      "fee": "무가 (제품제공)",
-      "status": "출고 요청",
-      "schedule": "11/16~11/22 예정",
-      "scheduleType": "예상",
-      "next": "출고·수령 및 게시 여부 확인",
+      "fee": "원고료 0원 · 제품 협찬",
+      "status": "초안 검수 대기",
+      "schedule": "11/11 편집본 수신 · 승인 후 업로드",
+      "scheduleType": "협의 중",
+      "next": "11/12 컨펌 재요청 · PA·2차 활용 제외 조건 유지",
       "collaborationType": "무가",
       "events": [
         {
@@ -838,10 +1081,24 @@
           "kind": "출고 요청",
           "detail": "서울링크 키높이 협찬 출고 요청 기록. 출고 완료·게시 완료는 별도 확인 필요.",
           "certainty": "기록"
+        },
+        {
+          "date": "2026-11-11",
+          "kind": "초안 검수 대기",
+          "detail": "DM 원문 대조: 11/11 편집본 수신 · 승인 후 업로드 · 이전 기록: 11/16~11/22 예정",
+          "certainty": "기록"
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-12T01:15:44.739+00:00",
+      "rights": "릴스 1편만 · PA·2차 활용·클린본·추가 컷 제외"
     },
     {
       "id": "kh:lovvmik",
@@ -863,14 +1120,18 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 협업·출고 진행 기록",
+      "feeStatus": "기존 협찬 기록 · DM 원문 추가 확인",
+      "feeEvidence": "서울링크 협업·출고 기록"
     },
     {
       "id": "kh:lookfile.zin",
       "name": "윤혜진",
       "account": "lookfile.zin",
       "product": "풀문 카멜 250 (없으면 블랙 250)",
-      "fee": "무가 (제품제공)",
+      "fee": "원고료 0원 · 제품 협찬",
       "status": "출고 요청",
       "schedule": "11/23~12/4 예정",
       "scheduleType": "예상",
@@ -885,7 +1146,15 @@
         }
       ],
       "postUrl": "",
-      "guideUrl": ""
+      "guideUrl": "",
+      "management": "서울링크",
+      "managementEvidence": "서울링크 진행 기록 + chaakan_mkt 협업 DM 대조",
+      "feeAmount": 0,
+      "feeStatus": "확정",
+      "feeEvidence": "인스타 DM · chaakan_mkt · 최종 협찬 조건 대조",
+      "dmCheckedAt": "2026-11-12T14:13:54+09:00",
+      "dmLastMessageAt": "2026-11-07T16:29:30.383+00:00",
+      "rights": "기존 협의 조건 유지 · 세부 범위는 DM 기준"
     }
   ]
 }
