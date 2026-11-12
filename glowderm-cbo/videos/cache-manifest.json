@@ -343,6 +343,13 @@
       "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
       "output_sha256": "cddc3f6bfa57811a595e447188498b22af5636acaad70850274edb477c901199",
       "src": "videos/v_2ec8f55188e82bd4f7373a942c112ed7cddb58adafea980f49c4e885712ebf8d.mp4"
+    },
+    "v_3e18d72175b96282a5c6181359d2be13a91d62332d804acf9fdee54ab658a780.mp4": {
+      "source_sha256": "20fcf3b1521c813a999a9f825d08b16c8ce91681948926fa6cd17eab0701705c",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "a6b5ce0aa27b277881f0ccfca6935d3ddb3cb5bd06986195d8af7adbdb103c43",
+      "src": "videos/v_3e18d72175b96282a5c6181359d2be13a91d62332d804acf9fdee54ab658a780.mp4"
     }
   }
 }
