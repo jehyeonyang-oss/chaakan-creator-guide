@@ -134,7 +134,7 @@
       "account": "binyu.11",
       "product": "카민스 롱부츠 블랙 250",
       "fee": "미확인",
-      "status": "발송완료",
+      "status": "게시완료",
       "schedule": "초안 11/5 · 게시 11/9~13",
       "scheduleType": "예정",
       "next": "11/5 초안 확인 · 단면 샘플 10/30 직접 발송 기록",
@@ -159,7 +159,7 @@
           "certainty": "예정 범위 · 원문 확인"
         }
       ],
-      "postUrl": "",
+      "postUrl": "https://www.instagram.com/reel/Dfj2F47y77R/",
       "guideUrl": ""
     },
     {
