@@ -43,12 +43,14 @@
         "source": "전용 서치폰 공개 게시물 화면 확인 · 2026-11-12",
         "windows": {
           "latest": {
-            "views": null,
+            "views": 266000,
             "likes": null,
             "comments": 10,
             "shares": 2209,
             "saves": 1320,
-            "at": 1794462230023
+            "at": 1794462230023,
+            "viewsAt": 1794469180862,
+            "viewsText": "26.6만"
           }
         }
       }
@@ -78,7 +80,7 @@
           "certainty": "기록"
         }
       ],
-      "postUrl": "",
+      "postUrl": "https://www.instagram.com/reel/DfZQrptB7vg/",
       "guideUrl": "",
       "adMediaUrl": "https://www.instagram.com/p/DfcJtOMs-_A/",
       "postDate": "2026-11-06",
@@ -86,7 +88,23 @@
       "managementEvidence": "서울링크 협업·출고 진행 기록",
       "feeAmount": 900000,
       "feeStatus": "원고료 확인 · 활용료 미확인",
-      "feeEvidence": "서울링크 협업·출고 기록"
+      "feeEvidence": "서울링크 협업·출고 기록",
+      "contentMetrics": {
+        "postUrl": "https://www.instagram.com/reel/DfZQrptB7vg/",
+        "source": "전용 서치폰·dada.mag_ 웹 공개 화면 확인 · 2026-11-12",
+        "windows": {
+          "latest": {
+            "views": 48000,
+            "likes": null,
+            "comments": 122,
+            "shares": 462,
+            "saves": 495,
+            "at": 1794469306405,
+            "viewsAt": 1794469208789,
+            "viewsText": "4.8만"
+          }
+        }
+      }
     },
     {
       "id": "kh:hour.glass__",
@@ -152,7 +170,7 @@
           "certainty": "기록"
         }
       ],
-      "postUrl": "",
+      "postUrl": "https://www.instagram.com/reel/DfbSggjhxof/",
       "guideUrl": "",
       "adMediaUrl": "https://www.instagram.com/p/DfcHofws9pK/",
       "postDate": "2026-11-07",
@@ -160,7 +178,23 @@
       "managementEvidence": "서울링크 협업·출고 진행 기록",
       "feeAmount": 1700000,
       "feeStatus": "기존 합의 기록",
-      "feeEvidence": "기존 DM 전달·메일 협의 기록"
+      "feeEvidence": "기존 DM 전달·메일 협의 기록",
+      "contentMetrics": {
+        "postUrl": "https://www.instagram.com/reel/DfbSggjhxof/",
+        "source": "전용 서치폰·dada.mag_ 웹 공개 화면 확인 · 2026-11-12",
+        "windows": {
+          "latest": {
+            "views": 84000,
+            "likes": null,
+            "comments": 89,
+            "shares": 1748,
+            "saves": 1575,
+            "at": 1794469322616,
+            "viewsAt": 1794469222025,
+            "viewsText": "8.4만"
+          }
+        }
+      }
     },
     {
       "id": "kh:binyu.11",
@@ -212,12 +246,14 @@
         "source": "전용 서치폰 공개 게시물 화면 확인 · 2026-11-12",
         "windows": {
           "latest": {
-            "views": 4445,
+            "views": 4470,
             "likes": null,
             "comments": 12,
             "shares": 14,
             "saves": 26,
-            "at": 1794462265200
+            "at": 1794462265200,
+            "viewsAt": 1794469194615,
+            "viewsText": "4470"
           }
         }
       }
