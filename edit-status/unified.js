@@ -39,7 +39,7 @@
   // Never join by creator handle: the same creator can have different work in each team.
   function performance(c) {
     const key = postKey(c.postUrl);
-    const item = key ? (embedded.items || []).find(it => postKey(it.url) === key) : null;
+    const item = key ? [...(embedded.items || []), ...(embedded.seoulItems || [])].find(it => postKey(it.url) === key) : null;
     const observed = [c.engagementBaseline, ...(c.engagement || [])].filter(x => x && x.actualCollectedAt);
     observed.sort((a,b) => new Date(b.actualCollectedAt).getTime() - new Date(a.actualCollectedAt).getTime());
     const candidates = [...observed, item?.w?.latest].filter(x => x && Number.isFinite(new Date(x.actualCollectedAt || x.at).getTime()));

@@ -37,7 +37,21 @@
       "managementEvidence": "서울링크 협업·출고 진행 기록",
       "feeAmount": 1100000,
       "feeStatus": "기존 합의 기록",
-      "feeEvidence": "기존 DM 전달·메일 협의 기록"
+      "feeEvidence": "기존 DM 전달·메일 협의 기록",
+      "contentMetrics": {
+        "postUrl": "https://www.instagram.com/reel/DfPCtrYvwhP/",
+        "source": "전용 서치폰 공개 게시물 화면 확인 · 2026-11-12",
+        "windows": {
+          "latest": {
+            "views": null,
+            "likes": null,
+            "comments": 10,
+            "shares": 2209,
+            "saves": 1320,
+            "at": 1794462230023
+          }
+        }
+      }
     },
     {
       "id": "kh:hee__i",
@@ -192,7 +206,21 @@
       "feeAmount": 350000,
       "feeStatus": "확정",
       "feeEvidence": "10/26 인스타 DM 수락 원문 · 서울링크 전달 기록",
-      "rights": "클린본·PA 코드·2차 활용 포함"
+      "rights": "클린본·PA 코드·2차 활용 포함",
+      "contentMetrics": {
+        "postUrl": "https://www.instagram.com/reel/Dfj2F47y77R/",
+        "source": "전용 서치폰 공개 게시물 화면 확인 · 2026-11-12",
+        "windows": {
+          "latest": {
+            "views": 4445,
+            "likes": null,
+            "comments": 12,
+            "shares": 14,
+            "saves": 26,
+            "at": 1794462265200
+          }
+        }
+      }
     },
     {
       "id": "kh:hi_soooooo",
