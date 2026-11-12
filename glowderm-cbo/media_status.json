@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-12T09:30:15+09:00",
+  "checked_at": "2026-11-12T09:35:09+09:00",
   "status": "fallback",
-  "available": 18,
-  "retained": 18,
+  "available": 16,
+  "retained": 16,
   "unavailable_ids": [
     "120251496670290185",
     "120251496703530185",
@@ -33,7 +33,8 @@
     "52637990954747",
     "52638000861347",
     "52638252653547",
-    "52638252667147"
+    "52638252667147",
+    "52638944499147"
   ],
-  "warning": "CCFM media preparation failed: CalledProcessError; retained validated local assets. 30 current creatives have no validated media connection."
+  "warning": "CCFM media preparation failed: CalledProcessError; retained validated local assets. 31 current creatives have no validated media connection."
 }
