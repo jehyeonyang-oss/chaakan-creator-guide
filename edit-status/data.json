@@ -580,7 +580,7 @@
           "slot": "2week",
           "label": "14일",
           "dueAt": "2026-11-13T19:24:14+09:00",
-          "actualCollectedAt": null,
+          "actualCollectedAt": 1794645627929,
           "state": "pending",
           "views": null,
           "likes": null,
@@ -601,6 +601,12 @@
           "purchases": 17,
           "rev_utm": 1130720,
           "rev_code": 918960
+        },
+        "2week": {
+          "revenue": 1841920,
+          "purchases": 25,
+          "rev_utm": 1562240,
+          "rev_code": 1494320
         }
       },
       "phoneTrackingReady": true,
@@ -652,7 +658,7 @@
           "slot": "48h",
           "label": "파일럿 · 48시간",
           "dueAt": "2026-11-14T16:38:14+09:00",
-          "actualCollectedAt": null,
+          "actualCollectedAt": 1794645625418,
           "state": "pending",
           "views": null,
           "likes": null,
@@ -685,7 +691,14 @@
           "saves": null
         }
       ],
-      "sales": {},
+      "sales": {
+        "48h": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": 0
+        }
+      },
       "phoneTrackingReady": false,
       "engagementBaseline": {
         "views": 11562,
@@ -880,7 +893,7 @@
           "slot": "2week",
           "label": "14일",
           "dueAt": "2026-11-13T20:30:24+09:00",
-          "actualCollectedAt": null,
+          "actualCollectedAt": 1794645623156,
           "state": "pending",
           "views": null,
           "likes": null,
@@ -897,6 +910,12 @@
           "rev_code": 102840
         },
         "1week": {
+          "revenue": 153760,
+          "purchases": 3,
+          "rev_utm": 50920,
+          "rev_code": 102840
+        },
+        "2week": {
           "revenue": 153760,
           "purchases": 3,
           "rev_utm": 50920,
@@ -1709,5 +1728,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-14T08:36:39.442625+00:00"
+  "syncedAt": "2026-11-14T08:41:39.520919+00:00"
 }
