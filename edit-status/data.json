@@ -1672,15 +1672,15 @@
           "slot": "1week",
           "label": "7일",
           "dueAt": "2026-11-16T18:25:37+09:00",
-          "actualCollectedAt": null,
-          "state": "pending",
+          "actualCollectedAt": 1794821718404,
+          "state": "captured",
           "isLate": false,
-          "collectionDelaySeconds": null,
-          "views": null,
+          "collectionDelaySeconds": 581,
+          "views": 5701,
           "likes": null,
-          "comments": null,
+          "comments": 15,
           "shares": null,
-          "saves": null
+          "saves": 42
         },
         {
           "slot": "2week",
@@ -1856,5 +1856,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-16T08:41:38.536237+00:00"
+  "syncedAt": "2026-11-16T09:36:03.593577+00:00"
 }
