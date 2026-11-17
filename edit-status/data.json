@@ -888,6 +888,12 @@
           "purchases": 3,
           "rev_utm": 121440,
           "rev_code": 182160
+        },
+        "2week": {
+          "revenue": 242880,
+          "purchases": 4,
+          "rev_utm": 121440,
+          "rev_code": 242880
         }
       },
       "phoneTrackingReady": true,
@@ -1703,6 +1709,12 @@
           "purchases": 0,
           "rev_utm": 0,
           "rev_code": 0
+        },
+        "1week": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": 0
         }
       },
       "phoneTrackingReady": true,
@@ -1856,5 +1868,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-17T08:01:38.919187+00:00"
+  "syncedAt": "2026-11-17T08:41:39.433189+00:00"
 }
