@@ -364,6 +364,34 @@
       "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
       "output_sha256": "c2b5b186626c2d8471ebcf329f4c95e9582cf9a402a6bfd3108fa5c2105d4a10",
       "src": "videos/v_be872d497f44da301fee8e9274b558dbdb3a6ec30e14e9f6fbbad34b8186b891.mp4"
+    },
+    "v_a9af6ab713206bf7bc82aeb54e936d1424fd4b2d87c25a366444ab4d5f858888.mp4": {
+      "source_sha256": "3def64ab2cfac4fa5b46fbb378d5be14ff77ac66b630f5cac467ab854ea90aa1",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "4634aa13bcf14e7f83f1f6fd5c11f832f3333981ac22f63b1e734541f20b90ad",
+      "src": "videos/v_a9af6ab713206bf7bc82aeb54e936d1424fd4b2d87c25a366444ab4d5f858888.mp4"
+    },
+    "v_95aa266a4dc35608b9e0307eac48568fd3ce1e62d22c1fdecd3bbc1536ca027d.mp4": {
+      "source_sha256": "27cc03a91ce74db7ec4c1bd97961aeee87699ee604d671a8cd64bf9962e6c073",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "57a9160fe26a95dc248f137dc2c8a49efe02c7f7bd2f186c75824fe3af682c74",
+      "src": "videos/v_95aa266a4dc35608b9e0307eac48568fd3ce1e62d22c1fdecd3bbc1536ca027d.mp4"
+    },
+    "v_c93acc7e5953ec671520aa67b877afa518fd3f095ff8dbbcaabf1857241a8724.mp4": {
+      "source_sha256": "fa3fed6955fbc0ccd4cb60a2c4cdc61b2fac34a71a47d46d14766d425641c6c1",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "7e69ba5218d652fe8a11ab963f6b40b375221bcf3317a50af255799608c93e6f",
+      "src": "videos/v_c93acc7e5953ec671520aa67b877afa518fd3f095ff8dbbcaabf1857241a8724.mp4"
+    },
+    "v_0ea0c0443c9338aea0da44809af413c3d84dd8f24446e83f566f8c465a5d09cc.mp4": {
+      "source_sha256": "ee7e466f3af757b16d96fea90a9eae0a689041f7b25a5dd2ca73ec34d263bb32",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "623706b428e31f265e6a8c2530a2f952d6f21936553d47c6ec55978f0a1074a4",
+      "src": "videos/v_0ea0c0443c9338aea0da44809af413c3d84dd8f24446e83f566f8c465a5d09cc.mp4"
     }
   }
 }
