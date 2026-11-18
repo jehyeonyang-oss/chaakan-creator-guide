@@ -826,7 +826,7 @@
           "state": "missed",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": null,
+          "viewsStatus": "trial_insights_required",
           "missingMetrics": [],
           "views": null,
           "likes": null,
@@ -842,7 +842,7 @@
           "state": "captured",
           "isLate": true,
           "collectionDelaySeconds": 59825,
-          "viewsStatus": null,
+          "viewsStatus": "trial_insights_required",
           "missingMetrics": [
             "views"
           ],
@@ -860,7 +860,7 @@
           "state": "pending",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": null,
+          "viewsStatus": "trial_insights_required",
           "missingMetrics": [],
           "views": null,
           "likes": null,
@@ -876,7 +876,7 @@
           "state": "pending",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": null,
+          "viewsStatus": "trial_insights_required",
           "missingMetrics": [],
           "views": null,
           "likes": null,
@@ -2186,5 +2186,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-18T03:01:39.124163+00:00"
+  "syncedAt": "2026-11-18T03:04:54.436355+00:00"
 }
