@@ -581,6 +581,20 @@
           "comments": 30,
           "shares": 12,
           "saves": 20
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1794964807134,
+          "state": "captured",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "views": null,
+          "likes": 12,
+          "comments": 30,
+          "shares": 12,
+          "saves": 20
         }
       ],
       "sales": {
@@ -2140,5 +2154,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-18T01:19:56.159764+00:00"
+  "syncedAt": "2026-11-18T01:21:38.735149+00:00"
 }
