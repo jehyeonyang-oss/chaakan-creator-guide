@@ -308,6 +308,7 @@
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
+          "viewsStatus": "verified",
           "views": 80000,
           "likes": 295,
           "comments": 307,
@@ -452,6 +453,7 @@
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
+          "viewsStatus": null,
           "views": 5330,
           "likes": null,
           "comments": 39,
@@ -590,6 +592,7 @@
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
+          "viewsStatus": "verified",
           "views": 2678,
           "likes": 12,
           "comments": 30,
@@ -880,6 +883,21 @@
           "comments": null,
           "shares": null,
           "saves": null
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1794970307043,
+          "state": "captured",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": "trial_insights_required",
+          "views": null,
+          "likes": 191,
+          "comments": 33,
+          "shares": 237,
+          "saves": 384
         }
       ],
       "sales": {
@@ -1149,12 +1167,13 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1794965257060,
+          "actualCollectedAt": 1794970614060,
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "views": null,
-          "likes": 2845,
+          "viewsStatus": "verified",
+          "views": 28000,
+          "likes": 2846,
           "comments": 173,
           "shares": 618,
           "saves": 114
@@ -1586,11 +1605,9 @@
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": 507,
-          "viewsStatus": null,
-          "missingMetrics": [
-            "views"
-          ],
-          "views": null,
+          "viewsStatus": "verified",
+          "missingMetrics": [],
+          "views": 193000,
           "likes": 1804,
           "comments": 1061,
           "shares": 2377,
@@ -1604,6 +1621,7 @@
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
+          "viewsStatus": null,
           "views": 226000,
           "likes": 1875,
           "comments": 1161,
@@ -2168,5 +2186,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-18T02:54:54.886657+00:00"
+  "syncedAt": "2026-11-18T02:59:52.256939+00:00"
 }
