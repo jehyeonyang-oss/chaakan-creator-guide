@@ -299,6 +299,20 @@
           "comments": null,
           "shares": null,
           "saves": null
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1794964613409,
+          "state": "captured",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "views": null,
+          "likes": 294,
+          "comments": 307,
+          "shares": 505,
+          "saves": 409
         }
       ],
       "sales": {
@@ -428,6 +442,20 @@
           "likes": null,
           "comments": 39,
           "shares": 40,
+          "saves": 47
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1794964730545,
+          "state": "captured",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "views": 5330,
+          "likes": null,
+          "comments": 39,
+          "shares": 42,
           "saves": 47
         }
       ],
@@ -2112,5 +2140,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-18T01:16:39.009536+00:00"
+  "syncedAt": "2026-11-18T01:19:56.159764+00:00"
 }
