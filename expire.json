@@ -126,5 +126,9 @@
   {
     "path": "hwian.log/boots",
     "expires": "2026-12-14T15:00:00Z"
+  },
+  {
+    "path": "0sso0e/boots",
+    "expires": "2026-12-16T15:00:00Z"
   }
 ]
