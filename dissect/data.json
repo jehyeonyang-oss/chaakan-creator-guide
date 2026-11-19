@@ -70,8 +70,8 @@
       "summary": "어그형 부츠의 둥근 앞코·플랫폼·주름 통이 근접 화면에서 매력 포인트로 드러난다.",
       "direction": "예쁜 제품 형태로 관심을 끌고 가격·굽 정보로 구매 이유를 보강하는 전개를 참고.",
       "url": "https://www.instagram.com/_16.5e/",
-      "user": "앞선 어그 레퍼런스와 비슷하다. 어그 자체가 예뻐서 관심을 끄는 것 같기도 하다.",
-      "userAction": ""
+      "user": "어그 자체가 예뻐서 관심을 끄는 것 같기도 하다. 추가로 잘된 영상은 하반신이 예쁘게 나왔고, 제품 자체가 예쁜 룩 하나에 집중한다. 안 된 영상은 룩과 배경이 별로다.",
+      "userAction": "예쁜 하반신 구도와 제품에 잘 어울리는 룩 하나에 집중하는 구성. 매력 약한 룩과 배경은 피하기."
     },
     {
       "handle": "hi._.jin.k",
@@ -95,6 +95,87 @@
     }
   ],
   "cards": [
+    {
+      "code": "DXRLPaHEd5P",
+      "account": "_16.5e",
+      "group": "good",
+      "title": "하반신이 예쁘게 보이는 로우라이즈진",
+      "user": "잘 나온 영상이다. 역시 하반신이 예쁘게 잘 나왔다.",
+      "why": "흰 짧은 상의와 로우라이즈 부츠컷 청바지의 허리선·다리 라인을 거울 구도에서 보여준다.",
+      "apply": "하반신이 예쁘게 드러나는 구도를 참고.",
+      "limit": "사용자가 잘된 사례로 지정. 공유·저장은 확인일 수치, 조회수와 계정 내 상대 순위는 미확인.",
+      "url": "https://www.instagram.com/reel/DXRLPaHEd5P/",
+      "views": null,
+      "viewDate": null,
+      "date": "2026-11-19",
+      "metrics": {
+        "likes": null,
+        "comments": null,
+        "reposts": null,
+        "shares": 1184,
+        "saves": 1254
+      },
+      "image": "assets/DXRLPaHEd5P.jpg",
+      "imageLabel": "영상 캡처",
+      "evidence": "assets/DXRLPaHEd5P.jpg",
+      "frames": "assets/DXRLPaHEd5P_frames.jpg",
+      "userAction": "하반신이 예쁘게 잘 나오는 구도.",
+      "classificationBasis": "사용자 지정 성공 사례 · 조회수 미확인"
+    },
+    {
+      "code": "DVX_bW9kSQY",
+      "account": "_16.5e",
+      "group": "good",
+      "title": "예쁜 제품 · 룩 하나에 집중",
+      "user": "이게 잘 터져서 앞 영상도 똑같이 한 것 같다. 이건 제품이 예쁘기도 하고 룩 하나만 보여준다.",
+      "why": "제품의 매력과 단일 룩 집중이 강점이라는 사용자 해석.",
+      "apply": "예쁜 제품과 잘 어울리는 룩 하나에 집중하기.",
+      "limit": "앞 영상이 이 영상을 따라 만들었다는 제작 의도는 사용자 추정이며 미확인. 조회수·게시 경과시간 미확인.",
+      "url": "https://www.instagram.com/reel/DVX_bW9kSQY/",
+      "views": null,
+      "viewDate": null,
+      "date": "2026-11-19",
+      "metrics": {
+        "likes": null,
+        "comments": null,
+        "reposts": null,
+        "shares": 1381,
+        "saves": 964
+      },
+      "image": "assets/DVX_bW9kSQY.jpg",
+      "imageLabel": "영상 캡처",
+      "evidence": "assets/DVX_bW9kSQY.jpg",
+      "frames": "assets/DVX_bW9kSQY_frames.jpg",
+      "userAction": "제품 자체가 예쁘고 잘 어울리는 룩 하나에 집중하는 구성.",
+      "classificationBasis": "사용자 지정 성공 사례 · 조회수 미확인"
+    },
+    {
+      "code": "DXysRHCRysv",
+      "account": "_16.5e",
+      "group": "weak",
+      "title": "룩·배경이 아쉬운 비교 사례",
+      "user": "이건 안 나왔다. 그냥 룩이 별로고 배경도 좀 별로다.",
+      "why": "룩과 배경에 대한 사용자 평가를 부진 비교 사례로 보관한다.",
+      "apply": "매력 약한 룩과 배경을 피하기.",
+      "limit": "성공·부진 분류와 미적 평가는 사용자 관찰. 룩·배경만으로 성과 차이의 인과를 확정하지 않음.",
+      "url": "https://www.instagram.com/reel/DXysRHCRysv/",
+      "views": null,
+      "viewDate": null,
+      "date": "2026-11-19",
+      "metrics": {
+        "likes": null,
+        "comments": null,
+        "reposts": null,
+        "shares": 15,
+        "saves": 40
+      },
+      "image": "assets/DXysRHCRysv.jpg",
+      "imageLabel": "영상 캡처",
+      "evidence": "assets/DXysRHCRysv.jpg",
+      "frames": "assets/DXysRHCRysv_frames.jpg",
+      "userAction": "예뻐 보이지 않는 룩과 별로인 배경.",
+      "classificationBasis": "사용자 지정 부진 사례 · 조회수 미확인"
+    },
     {
       "code": "DfepSBJhMDf",
       "account": "x.eun319",
