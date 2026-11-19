@@ -916,6 +916,12 @@
           "purchases": 0,
           "rev_utm": 0,
           "rev_code": 0
+        },
+        "1week": {
+          "revenue": 60720,
+          "purchases": 1,
+          "rev_utm": 0,
+          "rev_code": 60720
         }
       },
       "phoneTrackingReady": true,
@@ -1737,7 +1743,7 @@
           "slot": "48h",
           "label": "48시간",
           "dueAt": "",
-          "actualCollectedAt": 1794991217903,
+          "actualCollectedAt": 1795077622649,
           "state": "partial",
           "isLate": false,
           "collectionDelaySeconds": null,
@@ -1753,7 +1759,7 @@
           "slot": "1week",
           "label": "7일",
           "dueAt": "",
-          "actualCollectedAt": 1794991219512,
+          "actualCollectedAt": 1795077624042,
           "state": "partial",
           "isLate": false,
           "collectionDelaySeconds": null,
@@ -2230,5 +2236,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-19T07:40:42.855526+00:00"
+  "syncedAt": "2026-11-19T08:41:38.660216+00:00"
 }
