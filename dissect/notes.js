@@ -4,6 +4,7 @@ window.OpinionNotes=(()=>{
   const defaults=new Map(), remote=new Map(), drafts=new Map(), timers=new Map(), busy=new Set();
   for(const a of window.RESEARCH.accounts){defaults.set(`account_${a.handle}_opinion`,a.user);defaults.set(`account_${a.handle}_action`,a.userAction);}
   for(const c of window.RESEARCH.cards){defaults.set(`reel_${c.code}_opinion`,c.user);defaults.set(`reel_${c.code}_action`,c.userAction);}
+  for(const c of window.RESEARCH.marketing||[]){defaults.set(`reel_${c.code}_opinion`,c.user);defaults.set(`reel_${c.code}_action`,c.userAction);}
   let auth,db,master=false,ready=false,editing=false,storageOK=true;
   const storageKey='dissect-opinion-drafts-v1';
   const current=k=>remote.get(k)||{text:defaults.get(k)||'',revision:0};
