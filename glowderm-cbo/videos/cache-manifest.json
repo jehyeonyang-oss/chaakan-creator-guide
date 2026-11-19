@@ -413,6 +413,27 @@
       "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
       "output_sha256": "b008cd3caea38a3eaa8aadb33016e795148e0de453a4eb50fceab9cc0dd98ab2",
       "src": "videos/v_b7c39ba10e0b80fc67fef5a294f609d16c7f6e78a8cb2fa994207bca312ea366.mp4"
+    },
+    "v_fd808e72d73391d93ed04ad4c1512b250d9232a7729e84047acc87e576c912e8.mp4": {
+      "source_sha256": "17fbd96a823b5d07dc360115c1b9c0f7e9834d6a031bddac6ffbbe8688af38b9",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "3ee4348c607eb2a5651cd88f65d910814676121edc1c340aa2cf24ae8f21b59b",
+      "src": "videos/v_fd808e72d73391d93ed04ad4c1512b250d9232a7729e84047acc87e576c912e8.mp4"
+    },
+    "v_340a8e9f734ce9659022160423d30588b17d4488af94ec60ff82f76950a88dfd.mp4": {
+      "source_sha256": "ec1de17dc638b5a89b13fbecf4700e347e65e5702466ab2e6c8139762c2f8a83",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "1272041486eb21ee6584e0a9a15e2c37a8b2fc91a621ecb6ec0708ea7713e624",
+      "src": "videos/v_340a8e9f734ce9659022160423d30588b17d4488af94ec60ff82f76950a88dfd.mp4"
+    },
+    "v_44c825215d95888402d441acb06d620c1f7c92b20d0c73d7d624353fc6914d56.mp4": {
+      "source_sha256": "90f2da50f56072e52c6a29d66d03b20d6b008e044a86db6211b747419cfc5d09",
+      "source_extension": ".mp4",
+      "profile": "540px-h264-veryfast-crf28-aac96k-faststart-v1",
+      "output_sha256": "4f986ccec0527b0bc02e85237ce57071a69db5fb0b3809804fcf887b9fb22ebe",
+      "src": "videos/v_44c825215d95888402d441acb06d620c1f7c92b20d0c73d7d624353fc6914d56.mp4"
     }
   }
 }
