@@ -212,6 +212,29 @@
     "quote": "NEW 레티날 듀얼크림 저녁에 바르고 자면 끝!"
   },
   {
+    "id": "retinal_65",
+    "brand": "셀리맥스",
+    "title": "사용법 사이에 넣는 관리실 컷",
+    "tags": [
+      "레티날",
+      "시술 연출"
+    ],
+    "account": "Chuu",
+    "description": "레티날 사용법 설명 중간에 관리실 기기 컷, 이후 제형·볼 도포·전후 비교.",
+    "source": "https://www.facebook.com/ads/library/?id=1728046991247977",
+    "media": "https://cdn.snipit.im/medias/7260299/video.mp4",
+    "thumb": "assets/retinal_65.jpg",
+    "capture": "assets/retinal_65-scenes.jpg",
+    "product": "레티날 제품",
+    "keywords": [
+      "레티날 처음 쓰는 사람",
+      "레티놀보다 좋은 레티날"
+    ],
+    "claim": "성분 비교 우위",
+    "scene": "사용법 설명 중간에 관리실 기기 컷을 삽입한 뒤 얼굴 도포로 전환.",
+    "quote": "레티놀보다 좋은 레티날!!"
+  },
+  {
     "id": "retinal_83",
     "brand": "셀리맥스",
     "title": "관리실에서 집으로 이어지는 루틴",
@@ -373,28 +396,5 @@
     "claim": "소실 비유·크기 수치",
     "scene": "볼 중앙 모공 접사 → 마스크 제거 → 앰플·모공 그래픽.",
     "quote": "모공 실종팩 사면 부스터 앰플 공짜"
-  },
-  {
-    "id": "retinal_65",
-    "brand": "브랜드 미확인",
-    "title": "사용법 사이에 넣는 관리실 컷",
-    "tags": [
-      "레티날",
-      "시술 연출"
-    ],
-    "account": "Chuu",
-    "description": "레티날 사용법 설명 중간에 관리실 기기 컷, 이후 제형·볼 도포·전후 비교.",
-    "source": "https://www.facebook.com/ads/library/?id=1728046991247977",
-    "media": "https://cdn.snipit.im/medias/7260299/video.mp4",
-    "thumb": "assets/retinal_65.jpg",
-    "capture": "assets/retinal_65-scenes.jpg",
-    "product": "제품 유형 미확인",
-    "keywords": [
-      "레티날 처음 쓰는 사람",
-      "레티놀보다 좋은 레티날"
-    ],
-    "claim": "성분 비교 우위",
-    "scene": "사용법 설명 중간에 관리실 기기 컷을 삽입한 뒤 얼굴 도포로 전환.",
-    "quote": "레티놀보다 좋은 레티날!!"
   }
 ]
