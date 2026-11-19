@@ -2,7 +2,7 @@
 const $ = selector => document.querySelector(selector);
 let references = [];
 let brand = '', topic = '', search = '';
-const topics = ['레티날','주름','중안부 탄력','탄력','흔적','수면 톤업','시술 연출','화장 끼임'];
+const topics = ['레티날','주름','중안부 탄력','탄력','흔적','수면 톤업','시술 연출','화장 끼임','화장 들뜸','건조함'];
 const escapeHtml = text => String(text).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
 function setView(){

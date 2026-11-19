@@ -396,5 +396,32 @@
     "claim": "소실 비유·크기 수치",
     "scene": "볼 중앙 모공 접사 → 마스크 제거 → 앰플·모공 그래픽.",
     "quote": "모공 실종팩 사면 부스터 앰플 공짜"
+  },
+  {
+    "id": "eom_7120552",
+    "brand": "이옴",
+    "title": "기초 겉돎과 건조하게 뜬 베이스",
+    "tags": [
+      "화장 끼임",
+      "화장 들뜸",
+      "건조함"
+    ],
+    "account": "이옴",
+    "product": "버블 세럼",
+    "keywords": [
+      "화장 뜨는 사람",
+      "기초가 겉돌아버리면",
+      "둥둥 뜨는 가뭄베이스",
+      "건조한 피부"
+    ],
+    "claim": "건조·화장 들뜸 문제 제기",
+    "scene": "7초 기초가 겉도는 이마 접사 → 8초 들뜬 베이스 접사 → 버블 세럼·밤 루틴 → 33초 건조하게 갈라져 보이는 볼 접사.",
+    "description": "메디테라피 21초 팔자 화장 끼임과 함께 비교할 수 있는 건조·화장 들뜸 사례.",
+    "quote": "둥둥 뜨는 가뭄베이스 당첨!!!",
+    "quote_source": "8초 화면 자막",
+    "source": "https://cdn.snipit.im/medias/7120552/video.mp4",
+    "media": "https://cdn.snipit.im/medias/7120552/video.mp4#t=7",
+    "thumb": "assets/eom_7120552_8s.jpg",
+    "capture": "assets/eom_7120552_scenes.jpg"
   }
 ]
