@@ -83,6 +83,15 @@
       "userAction": ""
     },
     {
+      "handle": "churrosyj",
+      "status": "코트 룩 · 전체 코디 노출 비교",
+      "summary": "비슷한 코트·짧은 하의·롱부츠 구성에서 전체 룩을 보여주는 전개를 비교한다. 직접 확인한 공유·저장은 두 번째 영상이 높다.",
+      "direction": "첫 영상의 전체 코디가 빠르게 보이지 않는다는 사용자 의견을 중심으로 기록한다. 정확한 원본 도입 시점과 조회수는 미확인.",
+      "url": "https://www.instagram.com/churrosyj/",
+      "user": "두 영상은 거의 비슷한데 차이가 난다. 첫 영상은 일단 코디 전체가 빠르게 안 보인다.",
+      "userAction": "전체 코디가 빠르게 보이는지 두 영상을 비교하기. 완성 코디가 늦게 보이는 전개는 피하기."
+    },
+    {
       "handle": "_0ik.kk",
       "status": "청순한 코디·부츠·전체 실루엣 비교",
       "summary": "지정한 성공 2편, 성과와 평가가 엇갈린 1편, 부진 4편, 촬영 참고 2편을 비교한다. 전체 계정의 청순한 콘셉트는 사용자 관찰로 기록한다.",
@@ -2104,6 +2113,66 @@
       "classificationBasis": "사용자 지정 촬영·코디 참고",
       "uggNote": "이런 느낌으로 어그 코디 · 실제 영상은 롱부츠 착용",
       "uggKind": "look"
+    },
+    {
+      "code": "DfzVM8WRqEe",
+      "account": "churrosyj",
+      "group": "weak",
+      "title": "전체 코디가 빠르게 보이지 않는 코트 룩",
+      "user": "두 영상은 거의 비슷한데 차이가 난다. 첫 영상은 일단 코디 전체가 빠르게 안 보인다.",
+      "why": "차콜 벨트 코트·짧은 하의·검정 스타킹·롱부츠. 얼굴과 상체 근접 컷, 작은 전신 삽입 사진, 뒤로 물러난 전신 화면이 섞여 있다.",
+      "apply": "완성 코디 전체가 늦게 보이는 전개를 피하기.",
+      "limit": "전체 코디 노출 속도의 성과 기여는 가설 / 확신도 중간. 코디·가격·게시 경과시간·노출 조건은 통제하지 않음. 재생 중 녹화이므로 원본 0초 기준 타임코드는 확인하지 않았다.",
+      "url": "https://www.instagram.com/reel/DfzVM8WRqEe/",
+      "views": null,
+      "viewDate": null,
+      "date": "2026-11-19",
+      "metrics": {
+        "likes": null,
+        "comments": null,
+        "reposts": null,
+        "shares": 38,
+        "saves": 51
+      },
+      "image": "assets/DfzVM8WRqEe.jpg",
+      "imageLabel": "영상 캡처",
+      "evidence": "assets/DfzVM8WRqEe.jpg",
+      "frames": null,
+      "comparisonImages": [],
+      "userAction": "완성 코디 전체가 늦게 보이는 전개를 피하기.",
+      "classificationBasis": "사용자 비교 의견 및 두 영상의 공유·저장 상대 비교. 조회수 미확인.",
+      "uggNote": "",
+      "uggKind": ""
+    },
+    {
+      "code": "DfB_czhRdki",
+      "account": "churrosyj",
+      "group": "good",
+      "title": "비슷한 코트 룩 · 비교 기준",
+      "user": "앞 영상과 거의 비슷한데 차이가 나는 비교 영상. 앞 영상은 코디 전체가 빠르게 안 보인다.",
+      "why": "검정 하프코트·짧은 하의·흰 양말·롱부츠·버건디 가방. 근접 화면과 뒤로 물러나 전신 착장을 보여주는 화면이 반복된다.",
+      "apply": "전체 코디가 보이는 전개를 앞 영상과 비교하기.",
+      "limit": "전체 코디 노출 속도의 성과 기여는 가설 / 확신도 중간. 코디·가격·게시 경과시간·노출 조건은 통제하지 않음. 재생 중 녹화이므로 원본 0초 기준 타임코드는 확인하지 않았다.",
+      "url": "https://www.instagram.com/reel/DfB_czhRdki/",
+      "views": null,
+      "viewDate": null,
+      "date": "2026-11-19",
+      "metrics": {
+        "likes": null,
+        "comments": null,
+        "reposts": null,
+        "shares": 979,
+        "saves": 967
+      },
+      "image": "assets/DfB_czhRdki.jpg",
+      "imageLabel": "영상 캡처",
+      "evidence": "assets/DfB_czhRdki.jpg",
+      "frames": null,
+      "comparisonImages": [],
+      "userAction": "전체 코디가 보이는 전개를 앞 영상과 비교하기.",
+      "classificationBasis": "사용자 비교 의견 및 두 영상의 공유·저장 상대 비교. 조회수 미확인.",
+      "uggNote": "",
+      "uggKind": ""
     }
   ],
   "archive": [
@@ -2115,7 +2184,7 @@
       "posted": "2023-11-25",
       "caption": "157cm 46kg 키작녀 겨울코디 🤎 #겨울코디 #겨울 #어그코디 #어그부츠 #부츠코디 #데일리룩",
       "captured": "2026-11-18",
-      "image": "assets/archive_C0DmNbhShu0.jpg",
+      "image": "assets/archive_C0DmNbhShu0.webp",
       "url": "https://www.instagram.com/p/C0DmNbhShu0/",
       "analyzed": false
     },
@@ -2127,7 +2196,7 @@
       "posted": "2024-11-06",
       "caption": "#예고 11/8 (금) 오전 10시 🐑🤍 호주 UGG 해외직배송 최저가보장 공구 오픈예정입니다. 어그 구매자분들을 위해 이벤트 빵빵하게 준비되었구요😉 구매완료 이벤트도 오픈당일에 진행하겠습니다!  이번주부터 날씨가 급격히 추워졌어요❄️ 어느덧 겨울이 다가온게 직접작으로 느껴지는데요! 사실 어그공구가 정말 많지만 지금이 거의 마지막 공구라고 생각하시고 주문주",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCBdblgPsU3.jpg",
+      "image": "assets/archive_DCBdblgPsU3.webp",
       "url": "https://www.instagram.com/p/DCBdblgPsU3/",
       "analyzed": false
     },
@@ -2139,7 +2208,7 @@
       "posted": "2024-11-16",
       "caption": "아니.. 어그슬리퍼 컬러 미쳤는데....?💗 게다가 2만원대!  ‼️댓글에 ‘어그’ 라고 남겨주시면 구매링크와 사이즈꿀팁 보내드려요💭 (팔로우 후 댓글 남겨주셔야 링크가 정상적으로 보이게 됩니다!)",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCb-4fZtBmr.jpg",
+      "image": "assets/archive_DCb-4fZtBmr.webp",
       "url": "https://www.instagram.com/p/DCb-4fZtBmr/",
       "analyzed": false
     },
@@ -2151,7 +2220,7 @@
       "posted": "2024-12-10",
       "caption": "내돈내산 리뷰) 나만 알고 싶은 어그 발견🤤 사이즈팁 + 꼼꼼 솔직 리뷰 본문에💌  마크모크 제품인데, 찾기 귀찮으신 분들은 댓글에 “링크” 라고 달아주세요! Dm으로 제품링크 바로 보내드릴게요ㅎㅎㅎ *제 프로필링크에도 올려둘 테니 편하신대로 확인하셔요 :)  미국 어그는 너무 비싸고 흔한데… 싶은 와중에 졸귀템 발견해서 바로 구매해 봤는데요!  ☑️ 방수",
       "captured": "2026-11-18",
-      "image": "assets/archive_DDZmZ1IP9KK.jpg",
+      "image": "assets/archive_DDZmZ1IP9KK.webp",
       "url": "https://www.instagram.com/p/DDZmZ1IP9KK/",
       "analyzed": false
     },
@@ -2163,7 +2232,7 @@
       "posted": "2025-04-29",
       "caption": "뱃살 아닙니다. ..진짜로.  옷 정보는 DM이나 댓글 남겨주시면 정리본 링크 보내드릴게요🫡  #겨울코디 #겨울코디추천 #코디추천 #무스탕 #무스탕코디 #어그 #어그코디 #남친룩 #데이트룩 #대학생코디 #ugg",
       "captured": "2026-11-18",
-      "image": "assets/archive_DJCDS99TAIQ.jpg",
+      "image": "assets/archive_DJCDS99TAIQ.webp",
       "url": "https://www.instagram.com/p/DJCDS99TAIQ/",
       "analyzed": false
     },
@@ -2175,7 +2244,7 @@
       "posted": "2024-12-11",
       "caption": "겨울철 여자들 바지 속 상황.jpg @@이거 너랑 나 그 자체임ㅋㅋㅋㅋ  긴바지 입으려면 쩔수탱이라고 🥵🥵  #와이드팬츠 #와이드트레이닝팬츠 #어그 #통굽 #공감 #유머",
       "captured": "2026-11-18",
-      "image": "assets/archive_DDb03dbyhSh.jpg",
+      "image": "assets/archive_DDb03dbyhSh.webp",
       "url": "https://www.instagram.com/p/DDb03dbyhSh/",
       "analyzed": false
     },
@@ -2187,7 +2256,7 @@
       "posted": "2025-12-16",
       "caption": "#이벤트 #EVENT  𝗛𝗼𝗹𝗶𝗱𝗮𝘆 𝘄𝗶𝘁𝗵 𝗨𝗚𝗚 어그 산타와 함께하는 크리스마스! 🎅🏻 크리스마스 하면 떠오르는 이모지로 댓글창을 꾸며주세요! ☃️❤️🔔🎄🕯️🦌  추첨을 통해 홀리데이 시즌을 더욱 따뜻하게 채워줄 선물을 드립니다. 🎁  [참여 방법] ▶ @ugg_korea 인스타그램 채널 [팔로우] ▶ 이벤트 게시물 [좋아요] ▶ 크리스마스 하면 떠오",
       "captured": "2026-11-18",
-      "image": "assets/archive_DSUHb1Jj5RV.jpg",
+      "image": "assets/archive_DSUHb1Jj5RV.webp",
       "url": "https://www.instagram.com/p/DSUHb1Jj5RV/",
       "analyzed": false
     },
@@ -2199,7 +2268,7 @@
       "posted": "2026-10-01",
       "caption": "🇦🇺호주에서 직구하는 어그공구. 진짜 쌀까? 궁금해서 직접 10시간 비행기 타고 호주까지 다녀왔습니다✈️  공장에서 가죽부터 제작 과정까지 직접 보고, 물류창고에서는 한국으로 배송되는 과정까지 체크했어요...!📦  본사 쇼룸에서는 신상품도 누구보다 빠르게 보고👀 아직 한국에는 없는 취저 제품들 피드백도 하고왔구요,,  그리고 제일 중요했던 가격!!!💸  호",
       "captured": "2026-11-18",
-      "image": "assets/archive_Dd76pNKzmi1.jpg",
+      "image": "assets/archive_Dd76pNKzmi1.webp",
       "url": "https://www.instagram.com/p/Dd76pNKzmi1/",
       "analyzed": false
     },
@@ -2211,7 +2280,7 @@
       "posted": "2026-10-22",
       "caption": "도착하자마자 언박싱💛 지금 인기 1등 클로그!!!!  정상가 20만 원대인데 8만 원대에 겟🫶🏻 베이지도 컬러 예쁘더라고요 근데 벌써 베이지도 예약 배송 걸림 ㅜㅜ  어그는 역시 타이밍이 생명!  남자 사이즈 290까지 나와서 왕발 남편도 이걸로 같이 시켜줬어요 올해 커플 슈즈로 강추입니다◡̈  *할인링크는 디엠으로 보내드릴게요*  #커플어그#어그부츠#어그",
       "captured": "2026-11-18",
-      "image": "assets/archive_DeyiUGtTI2e.jpg",
+      "image": "assets/archive_DeyiUGtTI2e.webp",
       "url": "https://www.instagram.com/p/DeyiUGtTI2e/",
       "analyzed": false
     },
@@ -2223,7 +2292,7 @@
       "posted": "2026-10-28",
       "caption": "159cm 키작녀한텐 어떤 어그가 제일 예쁠까👀 제가 다 신어봤습니당!  길이별로 다리 라인도 달라 보이죠? 어떤 게 제일 예쁜가요🙊 골라주세요!  품번/가격/추가컬러도 보기 쉽게 정리해 뒀는데 필요하신 분들 댓글에 [정보] 남겨주시면 디엠으로 싹 보내드릴게요❤️  #어그추천#어그부츠#키작녀코디#어그코디#롱부츠",
       "captured": "2026-11-18",
-      "image": "assets/archive_DfDcbH0zXa2.jpg",
+      "image": "assets/archive_DfDcbH0zXa2.webp",
       "url": "https://www.instagram.com/p/DfDcbH0zXa2/",
       "analyzed": false
     },
@@ -2235,7 +2304,7 @@
       "posted": "2023-10-19",
       "caption": "➰올 겨울 어그부츠  옷 잘입는 한끗차이 코디법  ✔️이번시즌엔 맥시코트와 함께 ✔️숏팬츠와 루즈핏삭스 ✔️니트와 함께 매치 ✔️패딩과 함께 이지캐주얼  #러브수 #패션코디 #데일리룩코디",
       "captured": "2026-11-18",
-      "image": "assets/archive_CylE2bnJmfI.jpg",
+      "image": "assets/archive_CylE2bnJmfI.webp",
       "url": "https://www.instagram.com/p/CylE2bnJmfI/",
       "analyzed": false
     },
@@ -2247,7 +2316,7 @@
       "posted": "2025-11-28",
       "caption": "(마감)내가 이걸 얼마나 찾아다녔다구! 왠지 핀터언니 깔이야,,휴🤎 넘나 만족스럽ㄸㅏ  ✨어그부츠 정보 궁금한 짜장이들은 댓글에 [어그] 라고 적어주면 DM으로 빠르게 정보 보내줄게 :-0 + 최저가 할인쿠폰도 같이💌  *할인 기간: 11/27 ~ 12/4까지 [마감] *참고로 나는 225-230 발 사이즈이고, S사이즈 주문했오!  #어그부츠 #겨울부츠 ",
       "captured": "2026-11-18",
-      "image": "assets/archive_DRlEmi2k3tH.jpg",
+      "image": "assets/archive_DRlEmi2k3tH.webp",
       "url": "https://www.instagram.com/p/DRlEmi2k3tH/",
       "analyzed": false
     },
@@ -2259,7 +2328,7 @@
       "posted": "2024-11-13",
       "caption": "(실착은 영상 마지막에✩*.ﾟ)2만원대 가성비 어그 슬리퍼 겨울 필수템🤍  이제 겨울하면 빠질 수 없는게 바로 어그 슬리퍼죠! 2만원대에 구매 가능한 착한구두 어그 슬리퍼예요☺  안감이 부드럽고 뒷밴딩이 쫀쫀해서 마음에 들었어요! 이번 겨울 데일리 신발 당첨이요🤍  컬러는 총 5가지로 친구랑 커플템해도 좋을 것 같아요! @@아 커플템 하자😁  구매링크 궁금",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCTn5PPpRm1.jpg",
+      "image": "assets/archive_DCTn5PPpRm1.webp",
       "url": "https://www.instagram.com/p/DCTn5PPpRm1/",
       "analyzed": false
     },
@@ -2271,7 +2340,7 @@
       "posted": "2025-12-09",
       "caption": "🔥 “매일 어그 신는 사람만 알죠… 이거 하나로 바지핏 달라져요.” 어그에 바지 덮여서 지저분해 보일 때? 이거 한 번 써보면 ㄹㅇ 바지핏 살아나는 신세계. 실루엣 딱 잡히니까 겨울 코디 분위기 자체가 바뀜.  어그 좋아하는 사람들은 필수 꿀팁임✨ 겨울되니까 매일 등원 어그로 하는데.. 이게 또 도움이 되네?  #어그코디 #겨울코디 #어그스타일 #겨울필수템",
       "captured": "2026-11-18",
-      "image": "assets/archive_DSDBSVREtT_.jpg",
+      "image": "assets/archive_DSDBSVREtT_.webp",
       "url": "https://www.instagram.com/p/DSDBSVREtT_/",
       "analyzed": false
     },
@@ -2283,7 +2352,7 @@
       "posted": "2025-11-13",
       "caption": "편한 양털 롱부츠 찾으시는분 ~ 🤎🐻  겨울엔 양털부츠 없으면 못사는데 롱부츠는 종아리 압박붕대 한거처럼 너무 답답해서 신고 다닐수가 없어요..  제가 찾아온 요 부츠는 진짜 가볍고  통이 넓어서 종아리가 얇아보여요 👢👢  레더 자켓까지 이 코디 너무 예쁘자냐…  ⭐️댓글에 “정보” 남겨주시면, 할인링크 전송됩니다⭐️",
       "captured": "2026-11-18",
-      "image": "assets/archive_DQ_fkM-kjRS.jpg",
+      "image": "assets/archive_DQ_fkM-kjRS.webp",
       "url": "https://www.instagram.com/p/DQ_fkM-kjRS/",
       "analyzed": false
     },
@@ -2295,7 +2364,7 @@
       "posted": "2026-10-12",
       "caption": "누가 어그를 60만원 주고 사니; 얘로 로우랑 톨 둘다 가능하니까, 이 놈만 추천할게. 정보는 칼같이 보내드려 🥵💌  #어그 #롱어그 #어그톨 #겨울부츠 #ugg",
       "captured": "2026-11-18",
-      "image": "assets/archive_DeY8ZgVxKjG.jpg",
+      "image": "assets/archive_DeY8ZgVxKjG.webp",
       "url": "https://www.instagram.com/p/DeY8ZgVxKjG/",
       "analyzed": false
     },
@@ -2307,7 +2376,7 @@
       "posted": "2026-10-24",
       "caption": "⭐️길이별 어그 추천⭐️  올겨울 어떤 어그를 사야 할지 고민이라면 실제 주문 순위 참고해 보세요 🧸  🥇 1위. 클래식 톨 부츠 30CM 클래식한 매력에 롱한 실루엣까지! 겨울 코디에 포인트 주기 좋은 베스트  🥈 2위. 태이 플랫폼 슬리퍼 편하게 신으면서도 굽으로 포인트를 더해주는 스타일✨  🥉 3위. 더플 버튼 플랫폼 롱부츠 4.5CM 더플 버튼 디테",
       "captured": "2026-11-18",
-      "image": "assets/archive_De4Aq5lB4jH.jpg",
+      "image": "assets/archive_De4Aq5lB4jH.webp",
       "url": "https://www.instagram.com/p/De4Aq5lB4jH/",
       "analyzed": false
     },
@@ -2319,7 +2388,7 @@
       "posted": "2023-12-08",
       "caption": "⭐️가성비 좋은 겨울신발 추천⭐️  무신사에서 10만원 이하 가성비 귀여운 어그 부츠 추천 해 드릴게요!  첫 번째 @mac_moc  마크모크 소가죽 양털퍼 방한 어그로퍼 88,000  두 번째 @23.65  23.65 폴카 클래식 미드 어그부츠 65,000  겨울에는 따뜻하고 편한 신발 신어보아요 🤎  착장 가디건은 러비츄 제품입니다🫶🏻  #어그부츠코디 ",
       "captured": "2026-11-18",
-      "image": "assets/archive_C0mZMIUvdWZ.jpg",
+      "image": "assets/archive_C0mZMIUvdWZ.webp",
       "url": "https://www.instagram.com/p/C0mZMIUvdWZ/",
       "analyzed": false
     },
@@ -2331,7 +2400,7 @@
       "posted": "2024-11-16",
       "caption": "겨울 갓성비 신발 추천 ⛄️🤎 #ad ⠀ 여러분 내일부터 추워진대요! 슬슬 겨울 신발 신을 시기가 오고 있는데❕2~3만원대 가격에 비해 디자인, 보온성 다 잡은 브랜드 착한구두 제품 신발 신어봤어오! 착한구두가 갓성비로 유명한 이유가 있긴 하더라구요?! 제 픽은 로퍼 베즈!!! 딱 예쁜 요즘 브라운 컬러에 디자인까지 안 흔해서.. 겨울이 오기 전에 벌써 꺼",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCbuAvIPWpV.jpg",
+      "image": "assets/archive_DCbuAvIPWpV.webp",
       "url": "https://www.instagram.com/p/DCbuAvIPWpV/",
       "analyzed": false
     },
@@ -2343,7 +2412,7 @@
       "posted": "2024-11-04",
       "caption": "친구한테 살빠졌다고 500번 들은 부츠추천👢 (TMI. 다리가 얇아진 만큼  친구한테 한우 쏘고 내 주머니도 얇아짐^_^) 약 40cm인 하비도 쏙 들어가는 롱부츠 종아리 뚠뚠이들 다모여~~ 고급스럽구 종아리 가장 두꺼운 부분을 쏘옥 감싸주니 왕날씬 해보여서 추천🫶🏻  #프리하다#체형커버#코디모음#힙딥커버#직장인코디#빅사이즈코디#오오티디#오늘의코디#데이트룩",
       "captured": "2026-11-18",
-      "image": "assets/archive_DB8fdBbqS-2.jpg",
+      "image": "assets/archive_DB8fdBbqS-2.webp",
       "url": "https://www.instagram.com/p/DB8fdBbqS-2/",
       "analyzed": false
     },
@@ -2355,7 +2424,7 @@
       "posted": "2024-11-11",
       "caption": "2만원대 극 가성비 어그 부츠 알려준다  핀터레스트 언니들의 겨울 필수 아이템 어그! @chaakan_official 듀마 퍼안감  방한 부츠 29,900원  가격혜자템 발견✨  4cm 플랫폼 굽 높이, 라운드 쉐잎, 몽글몽글 퍼, 짧고 귀여운 기장이라 딱 깔끔 실루엣  어그라면 딱 떠오르는 카멜 컬러 너무 예쁘지🫶  #겨울신발추천 #어그추천 #가성비신발 ",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCOSx_oMkM4.jpg",
+      "image": "assets/archive_DCOSx_oMkM4.webp",
       "url": "https://www.instagram.com/p/DCOSx_oMkM4/",
       "analyzed": false
     },
@@ -2367,7 +2436,7 @@
       "posted": "2026-10-28",
       "caption": "겨울 신발 이미 있는 사람 특 신상 나오면 처음 보는 신발처럼 삼.  New Balance UGG 🤎 강민경언니랑 커플할게 ><  @newbalance   #강민경신발 #뉴발란스어그 #겨울신발추천 #손민수템 #남편돈내산",
       "captured": "2026-11-18",
-      "image": "assets/archive_DfCeY4gTI1w.jpg",
+      "image": "assets/archive_DfCeY4gTI1w.webp",
       "url": "https://www.instagram.com/p/DfCeY4gTI1w/",
       "analyzed": false
     },
@@ -2379,7 +2448,7 @@
       "posted": "2025-12-11",
       "caption": "정품 UGG 특가✨ 역대급 전제품 최대 80% 세일 시작‼️ (#광고)  여러분!! 현재 평택에는 천안 물류창고 화재로 인해 전품목 최대 80% 할인하는 곳인데 진짜 대박이에요…🩷  심지어 미국산 정품 UGG를 89,000원으로 판매하는데 눈 돌아가더라구요👀 그리고 브랜드마다 수입 필증 다 있어서 인증 제대로 해주시더라구요!👍  스투시부터 나이키, 아미, ",
       "captured": "2026-11-18",
-      "image": "assets/archive_DSHpqeHj7al.jpg",
+      "image": "assets/archive_DSHpqeHj7al.webp",
       "url": "https://www.instagram.com/p/DSHpqeHj7al/",
       "analyzed": false
     },
@@ -2391,7 +2460,7 @@
       "posted": "2025-12-08",
       "caption": "𝗜𝗖𝗢𝗡𝗜𝗖 𝗦𝗧𝗬𝗟𝗘 𝗬𝗘𝗢𝗡𝗝𝗨𝗡 𝘄𝗶𝘁𝗵 𝗨𝗚𝗚  연준의 아이코닉한 발걸음! 어그의 겨울 컬렉션과 함께한 연준의 모습을 영상으로 확인해 보세요.   #UGG #UGGKOREA",
       "captured": "2026-11-18",
-      "image": "assets/archive_DR_ktzLDwpp.jpg",
+      "image": "assets/archive_DR_ktzLDwpp.webp",
       "url": "https://www.instagram.com/p/DR_ktzLDwpp/",
       "analyzed": false
     },
@@ -2403,7 +2472,7 @@
       "posted": "2026-08-25",
       "caption": "[공구오픈]올해 진짜 역대급 입니다🥹가을부터 신을 수 있는 스니커즈,뮬,메리제인은 물론 근본 어그 디자인까지!  ⚠️피드속 스텔라 참 시어링 슬라이드 뽀글이 라인은  주문이 불가하며 부드러운 털 타입인 OB1074만  주문 가능하신 점 참고 부탁드려요⚠️  📌정품 호주 어그 시리즈 기획전 오픈🖤  매년 디자인은 더 예뻐지고 인기가 많아지다 보니 9월부터 품",
       "captured": "2026-11-18",
-      "image": "assets/archive_Dcd4jw7zS78.jpg",
+      "image": "assets/archive_Dcd4jw7zS78.webp",
       "url": "https://www.instagram.com/p/Dcd4jw7zS78/",
       "analyzed": false
     },
@@ -2415,7 +2484,7 @@
       "posted": "2026-11-03",
       "caption": "UGG 유행템 안 산 이유 🔥  클래식 톨 사이즈 왜 없앤 거죠?ㅜㅜ 울트라.. 너무 묘해...  #겨울부츠 #어그 #데일리룩 #겨울코디",
       "captured": "2026-11-18",
-      "image": "assets/archive_DfQoulSTxmC.jpg",
+      "image": "assets/archive_DfQoulSTxmC.webp",
       "url": "https://www.instagram.com/p/DfQoulSTxmC/",
       "analyzed": false
     },
@@ -2427,7 +2496,7 @@
       "posted": "2026-10-27",
       "caption": "(저장/공유) 어뜨케 4만원대에 이런 퀄이? 미쏘 본업이 부츠였나. 댓글에 (부츠) 달고 10% 추가쿠폰도 가져가세요👢  #광고 #미쏘 #어그부츠 #어그 #부츠",
       "captured": "2026-11-18",
-      "image": "assets/archive_De_Y29ZgqlU.jpg",
+      "image": "assets/archive_De_Y29ZgqlU.webp",
       "url": "https://www.instagram.com/p/De_Y29ZgqlU/",
       "analyzed": true
     },
@@ -2439,7 +2508,7 @@
       "posted": "2024-11-09",
       "caption": "착한 구두의 가성비 첼시부츠로 겨울 준비하자구용~~🐻🌰🤎  #착한구두 #겨울부츠 #어그부츠 #여자데일리 #출근룩코디 #꾸안꾸코디",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCJzX7oMK5u.jpg",
+      "image": "assets/archive_DCJzX7oMK5u.webp",
       "url": "https://www.instagram.com/p/DCJzX7oMK5u/",
       "analyzed": false
     },
@@ -2451,7 +2520,7 @@
       "posted": "2025-11-08",
       "caption": "올겨울 요 어그 하나면 ..🤎 #광고  팔로우해주시고 댓글에 “정보” 달아주시면 링크 보내드릴게요 ☺️ ( 요청함 꼭 확인해주세요!)  데일리 겨울코디로 착용하기 정말 좋고 무엇보다 너무 따뜻하고 귀여워요 🫶   #데일리룩 #겨울코디 #착한구두",
       "captured": "2026-11-18",
-      "image": "assets/archive_DQyhkbxEy0n.jpg",
+      "image": "assets/archive_DQyhkbxEy0n.webp",
       "url": "https://www.instagram.com/p/DQyhkbxEy0n/",
       "analyzed": false
     },
@@ -2463,7 +2532,7 @@
       "posted": "2024-11-11",
       "caption": "오늘의 언박싱 36탄📦2만원대 갓성비 겨울 어그부츠 👢  여러분 벌써 추워지고 있는데 겨울 어그 준비하셨나요!   무려 2만원대.. ? ⛄️여름에도 레인부츠로 소개해드린 착한구두 제품!! 보드러운 퍼 안감 슬리퍼랑 발목 기장의 부츠인데요   컬러도 다양해서 고를맛이 나고 둘다 플랫폼 스타일이라 다리도 길어보임…! 어그 부츠 갓성비템 찾는다면 추천해요👢🤍  ",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCOsncjyffR.jpg",
+      "image": "assets/archive_DCOsncjyffR.webp",
       "url": "https://www.instagram.com/p/DCOsncjyffR/",
       "analyzed": false
     },
@@ -2475,7 +2544,7 @@
       "posted": "2024-11-11",
       "caption": "가성비 퀄리티 다 갖춘 겨울 부츠 🖤  평소 아주 애정하는 착한구두의 2만원대 어그부츠입니다 …!! 발목까지만 올라오는 미디 기장으로 흔한 어그부츠는 질려 !! 하시는 분들께 왕추천 ㅎㅎ 제가 선택한 컬러는 블랙이라 올겨울 어떤 코디든 활용성 굿일듯요 안 쪽 털도 절대 털빠짐 없어서 더 맘에 들더라고요 ??🤭 4cm 굽으로 쪼꼬미 분들도(?) 자연스럽게 1",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCNzJk3JEac.jpg",
+      "image": "assets/archive_DCNzJk3JEac.webp",
       "url": "https://www.instagram.com/p/DCNzJk3JEac/",
       "analyzed": false
     },
@@ -2487,7 +2556,7 @@
       "posted": "2026-10-15",
       "caption": "스토리 올렸다가 문의 잔뜩받은 레전드 어그부츠 추천  @zara 제품이고 235-40 신는데 37사이즈 여유있게 맞았음  상품 찾기 귀찮으면 링크 자동디엠 보내드릴게용 아무댓글이나 고고  #zara #자라 #어그 #어그추천 #부츠추천",
       "captured": "2026-11-18",
-      "image": "assets/archive_Deg9gSvpFu7.jpg",
+      "image": "assets/archive_Deg9gSvpFu7.webp",
       "url": "https://www.instagram.com/p/Deg9gSvpFu7/",
       "analyzed": false
     },
@@ -2499,7 +2568,7 @@
       "posted": "2024-11-30",
       "caption": "✅️ 오픈 완료!! 호주 정품 어그부츠 최저가 바배!! ✅️ 댓글에 '어그' 남겨주시면 공구 오픈하고 최저가 비밀링크 전달드릴게요🤍 (팔로우 해주셔야 디엠 전송되어요) 호주 본사에서 직배송되고 정품 인증서 모두 들어있어요 키즈, 주니어, 성인사이즈까지 모두 있어요👍  ✅️ 프로필 링크 누르면 사이트에서 전품목 보실수있어요  ✅️ 호주 본사 CS 카카오 상담",
       "captured": "2026-11-18",
-      "image": "assets/archive_DC_LVSTTlai.jpg",
+      "image": "assets/archive_DC_LVSTTlai.webp",
       "url": "https://www.instagram.com/p/DC_LVSTTlai/",
       "analyzed": false
     },
@@ -2511,7 +2580,7 @@
       "posted": "2026-10-30",
       "caption": "올해도 잘 부탁한다.   #에이블리 #어그부츠 #양털부츠 #부츠 #어그",
       "captured": "2026-11-18",
-      "image": "assets/archive_DfHHjh_zgiv.jpg",
+      "image": "assets/archive_DfHHjh_zgiv.webp",
       "url": "https://www.instagram.com/p/DfHHjh_zgiv/",
       "analyzed": true
     },
@@ -2523,7 +2592,7 @@
       "posted": "2024-11-13",
       "caption": "올해도 어그부츠를 장만할까말까 고민이었는데,  착한구두에서 착한 가격으로 만날 수 있는 어그 3종 가져와봤어요🧦  전부 진짜 가볍고 따뜻해서 휘뚜루마뚜루 매일 신고다닐 예정…🤎  #착한구두 #어그 #어그부츠 #겨울코디 #신발 #신발추천 #여자코디 #여자신발 @chaakan_official",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCTz4hryImU.jpg",
+      "image": "assets/archive_DCTz4hryImU.webp",
       "url": "https://www.instagram.com/p/DCTz4hryImU/",
       "analyzed": false
     },
@@ -2535,7 +2604,7 @@
       "posted": "2024-11-12",
       "caption": "미리 준비하는 갓성비 겨울슈즈 3종! (feat. #착한구두)  첫번째 신발 _클로이 퍼안감 첼시 방한 부츠  두번째 신발 _포븐 퍼안감 밴딩 어그 슬리퍼  세번째 신발 _베즈 뽀글이 방한 로퍼",
       "captured": "2026-11-18",
-      "image": "assets/archive_DCQ--HDyEI5.jpg",
+      "image": "assets/archive_DCQ--HDyEI5.webp",
       "url": "https://www.instagram.com/p/DCQ--HDyEI5/",
       "analyzed": false
     },
@@ -2547,7 +2616,7 @@
       "posted": "2026-10-05",
       "caption": "제주도와 찰떡이져?🫣💛  저 이 옷 거의 3일 입은 듯 ㅎ “어그는 5만원대”에 3년 전에 샀는데 아직도 링크가 있더라구용ㅋ!!! 찾았움 ㅎㅎ  제가 입은 옷 + 화장품까지 한 번에 정리해뒀어요✨",
       "captured": "2026-11-18",
-      "image": "assets/archive_DeG7ujbzsMR.jpg",
+      "image": "assets/archive_DeG7ujbzsMR.webp",
       "url": "https://www.instagram.com/p/DeG7ujbzsMR/",
       "analyzed": false
     },
@@ -2559,7 +2628,7 @@
       "posted": "2026-10-27",
       "caption": "(광고)아직 유행 안지나서 다행이다  어그 코어 ♥   아무댓글 달면 오늘 룩 정보 보내드릴게요 🎶",
       "captured": "2026-11-18",
-      "image": "assets/archive_De_iTDZPHjb.jpg",
+      "image": "assets/archive_De_iTDZPHjb.webp",
       "url": "https://www.instagram.com/p/De_iTDZPHjb/",
       "analyzed": false
     },
@@ -2571,7 +2640,7 @@
       "posted": "2026-11-11",
       "caption": "치마에 어그랑 신어주기 딱좋은 패턴 스타킹 들고왔어요 정보 궁금하신분들 댓글 남겨주시면 링크 전달 드릴게요!  진짜 다 귀여워서 강추드립니다ㅠㅡㅠ👍🏻 . . . . . #어그코디 #스타킹 #스타킹추천 #빈티지 #쇼핑",
       "captured": "2026-11-18",
-      "image": "assets/archive_DflLfltSIAi.jpg",
+      "image": "assets/archive_DflLfltSIAi.webp",
       "url": "https://www.instagram.com/p/DflLfltSIAi/",
       "analyzed": false
     },
@@ -2583,7 +2652,7 @@
       "posted": "2025-11-09",
       "caption": "가성비 어그슈즈로 코디 두 가지 가져왔다이 ~ @chaakan_official #광고   가장 중요한 것, 보온성 발이 들어가는 슈즈 안쪽까지 보송한 털이 들어가 온도 유지가 확실했어요  올블랙을 항상 추구하는 저이기에 다른 컬러 포인트가 들어갔다면… 불만족했을텐데요 겉감부터 안감까지 싹 다 블랙이라 딱 제 취향이었습니다  군더더기 없이 베이직한 디자인의 ",
       "captured": "2026-11-18",
-      "image": "assets/archive_DQ1SBgsAca-.jpg",
+      "image": "assets/archive_DQ1SBgsAca-.webp",
       "url": "https://www.instagram.com/p/DQ1SBgsAca-/",
       "analyzed": false
     },
@@ -2595,7 +2664,7 @@
       "posted": "2025-11-04",
       "caption": "162cm 모노데님 vs 160cm 폴인데님 비교영상🙈 저는 굽 5cm 어그를 신었어요 !  기장감 비교하실 때 참고해주세요🤍  폴인데님은 와이드 부츠컷 !   모노데님은 힙부터 무릎까지 여유롭고 밑단까지는 곧게 떨어지는  내추럴 와이드 스트레이트 핏이에요  발등 위로 톡 얹히듯 흐르는 아방하고 여리한 실루엣이  우리 모노데님의 매력 포인트랍니다..🙈  1",
       "captured": "2026-11-18",
-      "image": "assets/archive_DQoYPgkErcJ.jpg",
+      "image": "assets/archive_DQoYPgkErcJ.webp",
       "url": "https://www.instagram.com/p/DQoYPgkErcJ/",
       "analyzed": false
     },
@@ -2607,7 +2676,7 @@
       "posted": "2026-10-30",
       "caption": "(저장•공유) 키작녀 공주들! 우린! 어그도 남다르게 7cm정도 깔아주고 시작해야하지 않겠니?? 🫰🏻  댓글로 원하는컬러/사이즈 적고가면 2명 추첨해서 바로 보내쥼,,><🫰🏻🤍 (내가이벤트따왔어잘했지잘했다고해줄래?🫪헉헉)  디엠이나 댓글로 ‘어그’라고 보내면 20프로 할인코드랑! 구매링크 바로 보내줄게요이~~ 🤍프로필링크에도 있음🤍  오늘도 이거 신고 더현",
       "captured": "2026-11-18",
-      "image": "assets/archive_DfHepfrgwT5.jpg",
+      "image": "assets/archive_DfHepfrgwT5.webp",
       "url": "https://www.instagram.com/p/DfHepfrgwT5/",
       "analyzed": false
     },
@@ -2619,7 +2688,7 @@
       "posted": "2026-11-07",
       "caption": "(품절) 40만원 아껴주는 롱어그 리뷰 렛츠꼬 🐑👢  올겨울 가장 핫한 패션 키워드 롱어그 👀•• 요즘 크림에서 40~60만원까지 하길래 열심히 디깅하다가 발견한 호주 브랜드! 궁금해서 오늘 바로 쇼룸 가서 신어보고 왔는데,, 생각보다 퀄리티가 너무 좋아서 놀랐어요 🥹  ☑️ 클래식 톨 30cm VS 울트라 롱 38cm 둘 중에 너무 고민돼서 스토리에 투표",
       "captured": "2026-11-18",
-      "image": "assets/archive_Dfcc1LByn1i.jpg",
+      "image": "assets/archive_Dfcc1LByn1i.webp",
       "url": "https://www.instagram.com/p/Dfcc1LByn1i/",
       "analyzed": false
     },
@@ -2631,7 +2700,7 @@
       "posted": "2026-10-28",
       "caption": "157 / 60 튜닝의 끝은 ‘순정’ 코어 (๑>ᴗ<๑) 롱런하는 브랜드는 무조건 이유 있음 #광고   후아유 트레이닝복 캠핑가서 굴려본 결과  ✔️ 따뜻함 ✔️ 무릎 늘어남 없음 ✔️ 소재 탄탄해서 핏 잡히고 오래 입을 퀄리티 ✔️ 가격 나쁘지 않음  요렇게 막 입을 트레이닝복은 브랜드에서 사는 거 추천❤︎  ✨ 정보 링크는 프로필링크에 걸어뒀어요  ℹ️",
       "captured": "2026-11-18",
-      "image": "assets/archive_DfCk9XkhbtT.jpg",
+      "image": "assets/archive_DfCk9XkhbtT.webp",
       "url": "https://www.instagram.com/p/DfCk9XkhbtT/",
       "analyzed": false
     }
