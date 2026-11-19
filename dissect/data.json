@@ -2,6 +2,15 @@
   "updated": "2026-11-19",
   "accounts": [
     {
+      "handle": "salt.yarchive",
+      "status": "풀문 구성 검토 · 얼굴 썸네일 확정",
+      "summary": "확인한 두 릴은 얼굴·상반신을 중심으로 제품을 소개한다. 겨울옷 분위기에서 페브리즈로 이어지는 사례와 지그재그 뷰티 시연 사례이며, 신발 코디 촬영력은 아직 확인하지 않았다.",
+      "direction": "얼굴과 제품을 함께 보여주는 구성은 참고 가능. 풀문을 들고 굽을 보여주는 것은 사용자 검토안이며, 착화 실루엣·전체 룩까지 잘 보여주는지는 별도 확인 필요.",
+      "url": "https://www.instagram.com/salt.yarchive/",
+      "user": "얼굴 썸네일 + ‘잘 샀다’가 잘 터지는 것 같다. 겨울옷 추천으로 가야 할 것 같고, 여자들의 추구미를 잘 자극하는 느낌이다. 그냥 이렇게 되고 싶은 것이다. 뷰티와 상의 위주로 얼굴을 강조해서 신발 코디로 어떻게 풀지는 아직 애매하다.",
+      "userAction": "확정: 썸네일에 얼굴. 검토안: 겨울옷 추천 흐름으로 가고, 정석적으로 풀문을 들고 굽을 보여주기. 이후 신발 코디 구성은 아직 미정."
+    },
+    {
       "handle": "mypick.review",
       "status": "검토 중",
       "summary": "청바지·체형을 강조한 성공 사례가 크지만 계정의 모든 영상이 고르게 높지는 않다. 가성비 어그와 테무 코디의 반응 차이를 비교한다.",
@@ -110,7 +119,8 @@
       "imageLabel": "실제 썸네일",
       "evidence": "assets/DfepSBJhMDf.jpg",
       "frames": "assets/DfepSBJhMDf_frames.jpg",
-      "userAction": "짧은 바지 + 레그워머 + 어그형 풀문. 밝은색 니트 상의도 좋다."
+      "userAction": "짧은 바지 + 레그워머 + 어그형 풀문. 밝은색 니트 상의도 좋다.",
+      "classificationBasis": ""
     },
     {
       "code": "De5pIliBwP6",
@@ -136,7 +146,8 @@
       "imageLabel": "실제 썸네일",
       "evidence": "assets/De5pIliBwP6.jpg",
       "frames": "assets/De5pIliBwP6_frames.jpg",
-      "userAction": "평소 계정 무드에도 맞지 않고 예뻐 보이지 않는 바지와 코디."
+      "userAction": "평소 계정 무드에도 맞지 않고 예뻐 보이지 않는 바지와 코디.",
+      "classificationBasis": ""
     },
     {
       "code": "Dd-R07Buby4",
@@ -162,7 +173,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/Dd-R07Buby4.jpg",
       "frames": null,
-      "userAction": ""
+      "userAction": "",
+      "classificationBasis": ""
     },
     {
       "code": "DeozgTmuFR0",
@@ -188,7 +200,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DeozgTmuFR0.jpg",
       "frames": null,
-      "userAction": "몸의 라인이 잘 드러나는 구도."
+      "userAction": "몸의 라인이 잘 드러나는 구도.",
+      "classificationBasis": ""
     },
     {
       "code": "De6XW6buFM2",
@@ -214,7 +227,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/De6XW6buFM2.jpg",
       "frames": null,
-      "userAction": "몸의 라인이 애매하게 보이고 코디도 덜 예쁜 장면."
+      "userAction": "몸의 라인이 애매하게 보이고 코디도 덜 예쁜 장면.",
+      "classificationBasis": ""
     },
     {
       "code": "Detw-NWO_U7",
@@ -240,7 +254,8 @@
       "imageLabel": "장면 모음",
       "evidence": "assets/Detw-NWO_U7.jpg",
       "frames": "assets/Detw-NWO_U7_frames.jpg",
-      "userAction": "언박싱부터 시작하는 도입."
+      "userAction": "언박싱부터 시작하는 도입.",
+      "classificationBasis": ""
     },
     {
       "code": "DdEMpJWunhS",
@@ -266,7 +281,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DdEMpJWunhS.jpg",
       "frames": null,
-      "userAction": ""
+      "userAction": "",
+      "classificationBasis": ""
     },
     {
       "code": "DbVcJnTOQbH",
@@ -292,7 +308,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DbVcJnTOQbH.jpg",
       "frames": null,
-      "userAction": "몸의 라인과 하체 비율이 잘 보이는 구도."
+      "userAction": "몸의 라인과 하체 비율이 잘 보이는 구도.",
+      "classificationBasis": ""
     },
     {
       "code": "Dbnr1k5Oe_X",
@@ -318,7 +335,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/Dbnr1k5Oe_X.jpg",
       "frames": null,
-      "userAction": "로우라이즈 패션에서 하체가 잘 보이는 구도."
+      "userAction": "로우라이즈 패션에서 하체가 잘 보이는 구도.",
+      "classificationBasis": ""
     },
     {
       "code": "DbqSWrTOF39",
@@ -344,7 +362,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DbqSWrTOF39.jpg",
       "frames": null,
-      "userAction": "잘된 바지 영상의 구도."
+      "userAction": "잘된 바지 영상의 구도.",
+      "classificationBasis": ""
     },
     {
       "code": "DZsC60OOyyM",
@@ -370,7 +389,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DZsC60OOyyM.jpg",
       "frames": null,
-      "userAction": "더 예쁜 첫 회색 착장이 있는데 매력이 약한 착장을 썸네일로 고르는 것."
+      "userAction": "더 예쁜 첫 회색 착장이 있는데 매력이 약한 착장을 썸네일로 고르는 것.",
+      "classificationBasis": ""
     },
     {
       "code": "DfJ1kf0Os9K",
@@ -396,7 +416,8 @@
       "imageLabel": "장면 모음",
       "evidence": "assets/DfJ1kf0Os9K.jpg",
       "frames": "assets/DfJ1kf0Os9K_frames.jpg",
-      "userAction": "잠옷으로 시작하는 도입과 갈아입은 뒤에도 예쁘지 않은 코디."
+      "userAction": "잠옷으로 시작하는 도입과 갈아입은 뒤에도 예쁘지 않은 코디.",
+      "classificationBasis": ""
     },
     {
       "code": "DeyRh7YOuhQ",
@@ -422,7 +443,8 @@
       "imageLabel": "장면 모음",
       "evidence": "assets/DeyRh7YOuhQ.jpg",
       "frames": "assets/DeyRh7YOuhQ_frames.jpg",
-      "userAction": "갈아입는 과정을 먼저 보여주고, 완성된 코디도 예쁘지 않은 구성."
+      "userAction": "갈아입는 과정을 먼저 보여주고, 완성된 코디도 예쁘지 않은 구성.",
+      "classificationBasis": ""
     },
     {
       "code": "Dfwk3eXO1zD",
@@ -448,7 +470,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/Dfwk3eXO1zD.jpg",
       "frames": "assets/Dfwk3eXO1zD_frames.jpg",
-      "userAction": ""
+      "userAction": "",
+      "classificationBasis": ""
     },
     {
       "code": "Dey33XvSUke",
@@ -474,7 +497,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/Dey33XvSUke.jpg",
       "frames": "assets/Dey33XvSUke_frames.jpg",
-      "userAction": ""
+      "userAction": "",
+      "classificationBasis": ""
     },
     {
       "code": "De1R7AIh-xV",
@@ -500,7 +524,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/De1R7AIh-xV.jpg",
       "frames": "assets/De1R7AIh-xV_frames.jpg",
-      "userAction": "한 코디에 어울리지 않는 여러 신발을 계속 바꿔 보여주는 구성."
+      "userAction": "한 코디에 어울리지 않는 여러 신발을 계속 바꿔 보여주는 구성.",
+      "classificationBasis": ""
     },
     {
       "code": "De3xwJyt8eE",
@@ -526,7 +551,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/De3xwJyt8eE.jpg",
       "frames": "assets/De3xwJyt8eE_frames.jpg",
-      "userAction": "신발과 전체 코디가 잘 어울리는 룩."
+      "userAction": "신발과 전체 코디가 잘 어울리는 룩.",
+      "classificationBasis": ""
     },
     {
       "code": "DfezV_2TKjs",
@@ -552,7 +578,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DfezV_2TKjs.jpg",
       "frames": "assets/DfezV_2TKjs_frames.jpg",
-      "userAction": "키치한 전체 룩을 보여주고 플랫폼 캡처 화면도 넣기."
+      "userAction": "키치한 전체 룩을 보여주고 플랫폼 캡처 화면도 넣기.",
+      "classificationBasis": ""
     },
     {
       "code": "Dafa6mdTQMM",
@@ -578,7 +605,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/Dafa6mdTQMM.jpg",
       "frames": "assets/Dafa6mdTQMM_frames.jpg",
-      "userAction": "브랜드·플랫폼이 드러나는 썸네일."
+      "userAction": "브랜드·플랫폼이 드러나는 썸네일.",
+      "classificationBasis": ""
     },
     {
       "code": "DZzkbmiTzDz",
@@ -604,7 +632,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DZzkbmiTzDz.jpg",
       "frames": "assets/DZzkbmiTzDz_frames.jpg",
-      "userAction": "직잭팟·지그재그 로고도 붙여 보기."
+      "userAction": "직잭팟·지그재그 로고도 붙여 보기.",
+      "classificationBasis": ""
     },
     {
       "code": "DfltKXszNzZ",
@@ -630,7 +659,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DfltKXszNzZ.jpg",
       "frames": "assets/DfltKXszNzZ_frames.jpg",
-      "userAction": "하반신을 예쁘게 보여주는 구도."
+      "userAction": "하반신을 예쁘게 보여주는 구도.",
+      "classificationBasis": ""
     },
     {
       "code": "Det2N_BzrSv",
@@ -656,7 +686,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/Det2N_BzrSv.jpg",
       "frames": "assets/Det2N_BzrSv_frames.jpg",
-      "userAction": "신발 촬영이 좋으니 풀문 후보로 참고."
+      "userAction": "신발 촬영이 좋으니 풀문 후보로 참고.",
+      "classificationBasis": ""
     },
     {
       "code": "DexjNkcTIq8",
@@ -682,7 +713,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DexjNkcTIq8.jpg",
       "frames": "assets/DexjNkcTIq8_frames.jpg",
-      "userAction": ""
+      "userAction": "",
+      "classificationBasis": ""
     },
     {
       "code": "Df1XOtiBVcC",
@@ -708,7 +740,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/Df1XOtiBVcC.jpg",
       "frames": "assets/Df1XOtiBVcC_frames.jpg",
-      "userAction": ""
+      "userAction": "",
+      "classificationBasis": ""
     },
     {
       "code": "De7hMquTY80",
@@ -734,7 +767,62 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/De7hMquTY80.jpg",
       "frames": "assets/De7hMquTY80_frames.jpg",
-      "userAction": ""
+      "userAction": "",
+      "classificationBasis": ""
+    },
+    {
+      "code": "DfXAsBKz0rX",
+      "account": "salt.yarchive",
+      "group": "good",
+      "title": "잘 샀다 ep. 겨울 옷",
+      "user": "얼굴 썸네일 + ‘잘 샀다’가 잘 터지는 것 같다. 겨울옷 추천으로 가야 할 것 같고, 여자들이 이렇게 되고 싶어 하는 추구미를 잘 자극한다.",
+      "why": "니트 상반신과 얼굴·겨울 소품에 이어 페브리즈를 얼굴 옆에 들고 소개하고 분사·제품 모음을 보여준다. 순수 의류 추천만의 영상이 아니라 분위기에서 제품 소개로 연결하는 사례다.",
+      "apply": "얼굴과 풀문을 함께 보여주는 구성을 검토할 근거. 신발을 들고 굽을 보여주는 안과 실제 착화 실루엣은 별개로 확인.",
+      "limit": "사용자 지정 성공 사례. 공유 688·저장 590 확인, 조회수·계정 내 상대 성과는 미확인. 실제 프로필 표지·정확한 첫 프레임은 미확인. 얼굴·문구의 성과 인과는 가설.",
+      "url": "https://www.instagram.com/reel/DfXAsBKz0rX/",
+      "views": null,
+      "viewDate": null,
+      "date": "2026-11-19",
+      "metrics": {
+        "likes": null,
+        "comments": null,
+        "reposts": null,
+        "shares": 688,
+        "saves": 590
+      },
+      "image": "assets/DfXAsBKz0rX.jpg",
+      "imageLabel": "영상 캡처",
+      "evidence": "assets/DfXAsBKz0rX.jpg",
+      "frames": "assets/DfXAsBKz0rX_frames.jpg",
+      "userAction": "확정: 얼굴 썸네일. ‘잘 샀다’와 겨울옷 추천 분위기를 참고.",
+      "classificationBasis": "사용자가 잘된 사례로 지정. 조회수와 계정 내 상대 성과는 독립 검증 전."
+    },
+    {
+      "code": "DebwJ6eyK36",
+      "account": "salt.yarchive",
+      "group": "good",
+      "title": "잘 샀다! 3가지 · 직뷰페",
+      "user": "얼굴 썸네일은 확정. 다만 뷰티나 상의 위주로 얼굴을 강조해서 이후 신발 코디를 어떻게 풀지는 애매하다. 정석적으로 간다면 풀문을 들고 굽을 보여주는 것이 좋을 듯하다.",
+      "why": "파란 후드·얼굴 근접에 뷰티 제품을 들고 소개하고 쉐딩·언더 마스카라를 시연한다. ZIGZAG 직뷰페 문구가 확인된다. 얼굴 중심 제품 시연에는 근거가 있지만 전신·신발 구도에 대한 증거는 아니다.",
+      "apply": "얼굴을 유지하면서 제품을 가까이 보여주는 구성을 참고. 풀문 소개·굽 노출은 아직 검토안으로 보관.",
+      "limit": "사용자 지정 성공 사례. 공유 330·저장 344 확인, 조회수·계정 내 상대 성과는 미확인. 계정 전체가 얼굴·상의 위주라는 평가는 사용자 관찰이며 이번 확인 범위는 두 릴.",
+      "url": "https://www.instagram.com/reel/DebwJ6eyK36/",
+      "views": null,
+      "viewDate": null,
+      "date": "2026-11-19",
+      "metrics": {
+        "likes": null,
+        "comments": null,
+        "reposts": null,
+        "shares": 330,
+        "saves": 344
+      },
+      "image": "assets/DebwJ6eyK36.jpg",
+      "imageLabel": "영상 캡처",
+      "evidence": "assets/DebwJ6eyK36.jpg",
+      "frames": "assets/DebwJ6eyK36_frames.jpg",
+      "userAction": "검토안: 풀문을 들고 굽을 보여주기. 신발 코디로 이어가는 방식은 아직 미정.",
+      "classificationBasis": "사용자가 잘된 사례로 지정. 조회수와 계정 내 상대 성과는 독립 검증 전."
     },
     {
       "code": "DfHHjh_zgiv",
@@ -760,7 +848,8 @@
       "imageLabel": "실제 썸네일",
       "evidence": "assets/DfHHjh_zgiv.jpg",
       "frames": "assets/DfHHjh_zgiv_frames.jpg",
-      "userAction": ""
+      "userAction": "",
+      "classificationBasis": ""
     },
     {
       "code": "DbF6LBMCA0V",
@@ -786,7 +875,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DbF6LBMCA0V.jpg",
       "frames": "assets/DbF6LBMCA0V_frames.jpg",
-      "userAction": "이 계정에서 반응이 약했던 테무깡 구성의 반복."
+      "userAction": "이 계정에서 반응이 약했던 테무깡 구성의 반복.",
+      "classificationBasis": ""
     },
     {
       "code": "Dbht5GRC39i",
@@ -812,7 +902,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/Dbht5GRC39i.jpg",
       "frames": "assets/Dbht5GRC39i_frames.jpg",
-      "userAction": "이 계정에서 반응이 약했던 테무깡 구성의 반복."
+      "userAction": "이 계정에서 반응이 약했던 테무깡 구성의 반복.",
+      "classificationBasis": ""
     },
     {
       "code": "DW50gBjBYEv",
@@ -838,7 +929,8 @@
       "imageLabel": "영상 캡처",
       "evidence": "assets/DW50gBjBYEv.jpg",
       "frames": "assets/DW50gBjBYEv_frames.jpg",
-      "userAction": "나레이션 없이 코디를 보여주는 전개."
+      "userAction": "나레이션 없이 코디를 보여주는 전개.",
+      "classificationBasis": ""
     }
   ],
   "archive": [
