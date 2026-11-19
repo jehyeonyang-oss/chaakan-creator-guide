@@ -2,12 +2,12 @@
 const $ = selector => document.querySelector(selector);
 let references = [];
 let brand = '', topic = '', search = '', mode = 'visual';
-const topics = ['레티날','주름·탄력','볼 꺼짐','땅콩형','30대 노처녀','주름','중안부 탄력','탄력','흔적','수면 톤업','시술 연출','화장 끼임','화장 들뜸','건조함'];
+const topics = ['레티날','주름·탄력','볼 꺼짐','땅콩형','30대 노처녀','여드름 흔적','컬러플레이','주름','중안부 탄력','탄력','흔적','수면 톤업','시술 연출','화장 끼임','화장 들뜸','건조함'];
 const escapeHtml = text => String(text).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
 function setView(){
   const hash=location.hash.slice(1);
-  const view=['research','keywords','scenes','formats'].includes(hash)?'research':'library';
+  const view=hash==='bp-keywords'?'bp-keywords':['research','keywords','scenes','formats'].includes(hash)?'research':'library';
   document.querySelectorAll('.view').forEach(el=>el.hidden=el.id!==view);
   document.querySelectorAll('[data-tab]').forEach(el=>{
     if(el.dataset.tab===view) el.setAttribute('aria-current','page');
@@ -93,7 +93,7 @@ $('#reset').addEventListener('click',reset);
 $('#empty-reset').addEventListener('click',reset);
 $('#close-detail').addEventListener('click',()=>$('#detail').close());
 $('#detail').addEventListener('click',event=>{if(event.target===$('#detail')){const box=$('#detail').getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)$('#detail').close();}});
-window.addEventListener('hashchange',()=>{setView();if(['#library','#research'].includes(location.hash))window.scrollTo({top:0});});
+window.addEventListener('hashchange',()=>{setView();if(['#library','#research','#bp-keywords'].includes(location.hash))window.scrollTo({top:0});});
 setView();
 try {
   references=JSON.parse($('#reference-data').textContent);controls();render();setView();

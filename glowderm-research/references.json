@@ -130,21 +130,25 @@
     "brand": "메디테라피",
     "title": "밤 도포부터 아침 기상까지",
     "tags": [
-      "수면 톤업"
+      "수면 톤업",
+      "컬러플레이"
     ],
     "account": "수면 톤업 · 메디테라피",
     "description": "쌩얼 상황 훅·얼굴 도포·톤 비교·침대 기상 장면.",
     "source": "https://www.facebook.com/ads/library/?id=1152271217148179",
     "media": "https://www.facebook.com/ads/library/?id=1152271217148179",
-    "thumb": "assets/sleep.jpg",
+    "thumb": "assets/meditherapy_pink_18s.jpg",
     "capture": "assets/sleep-scenes.jpg",
     "product": "톤업크림",
     "keywords": [
-      "쌩얼 상황극",
-      "수면 톤업"
+      "남친 전용 쌩얼",
+      "여행",
+      "핑크 톤업",
+      "화사한 쌩얼",
+      "바르고 자는 크림"
     ],
     "claim": "상황·시간 대비",
-    "scene": "쌩얼 상황 훅 → 얼굴 도포·톤 비교 → 침대 기상.",
+    "scene": "진짜 쌩얼 / 남친 전용 쌩얼 대비 → 얼굴 도포·톤 비교 → 18초 핑크 제형 접사 → 여행에서도 쌩얼을 보여주는 상황. 수면 톤업은 쌩얼 상황이 중심이며, 바르고 자도 된다는 점은 제품 특징.",
     "quote": "밤 도포 → 아침 기상",
     "quote_source": "화면 흐름 요약",
     "sheet": "https://docs.google.com/spreadsheets/d/15lWzJ-vf6SBTtvQivQmVRQ4Jjzl-eysYZVECeMBddCE/edit#gid=1018833993&range=A32:M32"
@@ -542,13 +546,15 @@
   {
     "id": "bp_6396",
     "brand": "메디테라피",
-    "title": "바르고 자는 톤업 · 온몸 도포",
+    "title": "핑크 톤업 · 바르고 자는 톤업 · 온몸 도포",
     "tags": [
-      "수면 톤업"
+      "수면 톤업",
+      "컬러플레이"
     ],
     "account": "메디테라피",
     "product": "크림",
     "keywords": [
+      "핑크 톤업",
       "바르고 자는 톤업",
       "온몸 도포"
     ],
@@ -589,7 +595,8 @@
     "brand": "메디테라피",
     "title": "남자 톤업 · 티 안 나는 톤업 · 핑크 톤업",
     "tags": [
-      "수면 톤업"
+      "수면 톤업",
+      "컬러플레이"
     ],
     "account": "메디테라피",
     "product": "크림",
@@ -891,13 +898,15 @@
   {
     "id": "bp_26585",
     "brand": "메디테라피",
-    "title": "바르고 자는 톤업 · 씻지 않고 수면",
+    "title": "핑크 톤업 · 바르고 자는 톤업 · 씻지 않고 수면",
     "tags": [
-      "수면 톤업"
+      "수면 톤업",
+      "컬러플레이"
     ],
     "account": "메디테라피",
     "product": "크림",
     "keywords": [
+      "핑크 톤업",
       "바르고 자는 톤업",
       "씻지 않고 수면"
     ],
@@ -1113,14 +1122,14 @@
   {
     "id": "bp_252377",
     "brand": "피캄",
-    "title": "모공주사·리쥬란·보톡스 연상 · 모공 조임 · 홈케어",
+    "title": "모공주X·리쥬X·보톡X · 모공 조임 · 홈케어",
     "tags": [
       "수면 톤업"
     ],
     "account": "피캄",
     "product": "스킨케어",
     "keywords": [
-      "모공주사·리쥬란·보톡스 연상",
+      "모공주X·리쥬X·보톡X",
       "모공 조임",
       "홈케어"
     ],
@@ -1264,22 +1273,25 @@
   {
     "id": "bp_337065",
     "brand": "이옴",
-    "title": "피부과 직원 공구 · 흉터 없이 · 여드름 흡착",
+    "title": "여드름 흔적 · 짜도 짜도 · 트러블 흡착 · 압출 장면",
     "tags": [
-      "흔적"
+      "흔적",
+      "여드름 흔적",
+      "시술 연출"
     ],
     "account": "이옴",
     "product": "팩",
     "keywords": [
-      "피부과 직원 공구",
-      "흉터 없이",
-      "여드름 흡착"
+      "여드름 흔적",
+      "짜도 짜도",
+      "트러블 흡착",
+      "압출 장면"
     ],
-    "scene": "",
+    "scene": "0초 여드름 압출 접사 → 1초 여드름이 남은 볼 → 7초 압출 도구 → 8초 주사 장면 → 반복 트러블 고민 → 흡착팩 도포. 흔적 소구를 여드름 흔적으로 구체화할 때 참고할 문제 화면.",
     "source": "https://cdn.snipit.im/medias/14512855/video.mp4",
     "source_label": "원본",
     "media": "https://cdn.snipit.im/medias/14512855/video.mp4",
-    "thumb": "assets/bp_media_14512855.webp",
+    "thumb": "assets/eom_14512855_0s.jpg",
     "capture": "",
     "sheet": "https://docs.google.com/spreadsheets/d/15lWzJ-vf6SBTtvQivQmVRQ4Jjzl-eysYZVECeMBddCE/edit#gid=879871196&range=A7:M7",
     "collection": "bp",
@@ -1504,21 +1516,23 @@
   {
     "id": "bp_7075",
     "brand": "메디큐브",
-    "title": "30대 노처녀 · 피나게 관리 · EGF + NAD · 목주름",
+    "title": "30대 노처녀 · 피나게 관리 · EGF + NAD · 빨간 앰플 · 목주름",
     "tags": [
       "주름",
+      "컬러플레이",
       "주름·탄력",
       "30대 노처녀"
     ],
     "account": "메디큐브",
-    "product": "앰플",
+    "product": "EGF NAD 탄력 앰플",
     "keywords": [
       "30대 노처녀",
       "피나게 관리",
       "EGF + NAD",
+      "빨간 앰플",
       "목주름"
     ],
-    "scene": "",
+    "scene": "첫 컷 빨간 제형을 얼굴에 흘려 바름 → 목주름 전후 → EGF NAD 설명 → 빨간 병과 스포이드 접사.",
     "source": "https://cdn.snipit.im/medias/14419433/video.mp4",
     "source_label": "원본",
     "media": "https://cdn.snipit.im/medias/14419433/video.mp4",
