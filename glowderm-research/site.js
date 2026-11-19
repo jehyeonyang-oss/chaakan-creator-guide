@@ -52,7 +52,7 @@ function openDetail(id){
   $('#detail-media').href=r.media;
   $('#detail-source').href=r.source;
   $('#detail-capture').src=r.capture;
-  $('.capture').open=false;
+  $('.capture').open=true;
   if(!$('#detail').open) $('#detail').showModal();
 }
 function reset(){brand='';topic='';search='';$('#search').value='';controls();render();}

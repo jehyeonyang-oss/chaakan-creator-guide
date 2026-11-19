@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LIBRARIES = {'hooks', 'glowderm-production', 'glowderm-team-videos', 'glowderm-cleanser',
              'glowderm-cbo', 'glowderm-ads', 'powerpages', 'kimgayeon-powerpage', 'ugg-spray-cases'}
 TEXT = {'.html', '.js', '.json', '.css'}
-URL = re.compile(r'''(["'`])([^"'`<>\n]*?\.mp4(?:[?#][^"'`<>\n]*)?)\1''')
+URL = re.compile(r'''(["'`])([^"'`<>\n]*?\.(?:mp4|jpg|jpeg|png|webp)(?:[?#][^"'`<>\n]*)?)\1''')
 PREFIX = '/chaakan-creator-guide/'
 
 def resolve_url(source, value):
@@ -33,11 +33,17 @@ def resolve_url(source, value):
         return None
     return posixpath.normpath(posixpath.join(posixpath.dirname(source), path))
 
+def is_offload_candidate(source):
+    return (source.split('/')[0] in LIBRARIES and source.endswith('.mp4')) or (
+        source.startswith('glowderm-research/assets/') and
+        Path(source).suffix in {'.jpg', '.jpeg', '.png', '.webp'})
+
+
 def build(output):
     files = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
     files = [f for f in files if f and not f.startswith(('.', 'tools/'))]
     commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
-    candidates = {f for f in files if f.split('/')[0] in LIBRARIES and f.endswith('.mp4')}
+    candidates = {f for f in files if is_offload_candidate(f)}
     contents = {}
     referenced = set()
     for source in files:
@@ -76,7 +82,9 @@ def build(output):
     if size >= 950_000_000:
         raise RuntimeError(f'Pages artifact too large: {size} bytes (950 MB safety limit)')
     manifest = dict(commit=commit, bytes=size, offloaded_bytes=removed_bytes,
-                    offloaded_videos=len(referenced), rewritten_urls=rewritten)
+                    offloaded_videos=sum(f.endswith('.mp4') for f in referenced),
+                    offloaded_images=sum(not f.endswith('.mp4') for f in referenced),
+                    rewritten_urls=rewritten)
     (output / 'deployment.json').write_text(json.dumps(manifest), encoding='utf-8')
     print(json.dumps(manifest))
 
