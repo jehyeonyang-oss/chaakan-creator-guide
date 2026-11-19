@@ -16,7 +16,8 @@ function rawArchiveView(){const q=search.value.trim().toLowerCase();const rows=D
 
 function uggView(){
  const q=search.value.trim().toLowerCase(),items=D.cards.filter(c=>c.uggNote&&(!q||JSON.stringify(c).toLowerCase().includes(q)));
- return `<div class="account-head"><span class="label">제품별 모아보기 · ${items.length}편</span><h2>어그 릴 모아보기</h2><p class="summary">어그 착용·코디·제품 소개와 어그를 비교 대상으로 쓴 영상을 모았습니다. 계정별 분석과 같은 의견이 연결됩니다.</p><a class="original" href="#archive">어제 모은 어그 발굴 자료 44건도 보기 →</a></div>${items.length?Object.entries(labels).map(([g,t])=>{const cs=items.filter(c=>c.group===g);return cs.length?`<section class="${g}"><h3 class="section-title"><i class="dot"></i>${t}<span>${cs.length}편</span></h3><div class="ugg-grid">${cs.map(c=>card(c,true)).join('')}</div></section>`:'';}).join(''):'<p class="empty">검색 결과가 없습니다.</p>'}`;
+ const products=items.filter(c=>c.uggKind==='product'),looks=items.filter(c=>c.uggKind==='look');
+ return `<div class="account-head"><span class="label">어그 제품·비교 ${products.length}편 · 룩 예시 ${looks.length}편</span><h2>어그 릴 모아보기</h2><p class="summary">어그 착용·제품 소개·비교 영상과, 어그에 어울리는 룩 예시를 나눠 보관합니다. 계정별 분석과 같은 의견이 연결됩니다.</p><a class="original" href="#archive">어제 모은 어그 발굴 자료 44건도 보기 →</a></div>${items.length?Object.entries(labels).map(([g,t])=>{const cs=products.filter(c=>c.group===g);return cs.length?`<section class="${g}" data-ugg-section="product"><h3 class="section-title"><i class="dot"></i>${t}<span>${cs.length}편</span></h3><div class="ugg-grid">${cs.map(c=>card(c,true)).join('')}</div></section>`:'';}).join(''):'<p class="empty">검색 결과가 없습니다.</p>'}${looks.length?`<section data-ugg-section="look"><h3 class="section-title">어그와 잘 어울리는 룩 예시<span>${looks.length}편</span></h3><p class="summary">어그 착용 영상이 아닙니다. 어그에 매칭할 코디와 분위기를 참고하세요.</p><div class="ugg-grid">${looks.map(c=>card(c,true)).join('')}</div></section>`:''}`;
 }
 
 function marketingView(){

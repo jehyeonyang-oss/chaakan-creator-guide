@@ -83,6 +83,15 @@
       "userAction": ""
     },
     {
+      "handle": "do.od555",
+      "status": "키높이 구도 비교 · 확대 촬영 참고",
+      "summary": "디퍼슈 롱부츠와 상의 제품 2편을 확인했다. 첫 영상의 키 변화 문구·협찬 표시는 확인됐고, 별도 유료 노출 집행 여부는 미확인이다.",
+      "direction": "우리 촬영 방향은 사용자 지정: 짧은 하의 유지, 썸네일과 이후 컷을 더 확대. 제품 카테고리와 구도 효과는 분리해서 본다.",
+      "url": "https://www.instagram.com/do.od555/",
+      "user": "디퍼슈가 광고를 넣었을 수도 있지만 우리랑 비슷하게 플레이한다. 키를 숫자로 보여주고 짧은 하의 매칭이 좋다. 첫 영상은 썸네일에 확대컷을 쓴다. 두 번째는 거의 같은 구도지만 상의 제품이다.",
+      "userAction": "짧은 하의까지는 좋았다. 우리는 썸네일도 확대컷으로 가고, 이후 컷들도 좀 더 확대해서 보여주기."
+    },
+    {
       "handle": "by_minzi",
       "status": "규모 무관 해부 · 팔로워 17.5만 확인",
       "summary": "어그 착용·굽·안감 소개와 기본 데일리룩 2편을 확인했다. 주제별 계정 전체 성과 분포는 아직 검증하지 않았다.",
@@ -157,7 +166,8 @@
       "frames": null,
       "userAction": "청바지 자체만 믿고 매력 약한 코디를 쓰는 것을 피하기.",
       "classificationBasis": "사용자 지정 부진 사례 · 11/17 보관 수치",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfmX-DLTEzn",
@@ -185,7 +195,8 @@
       "frames": null,
       "userAction": "이 영상과 같은 결과물을 피하기.",
       "classificationBasis": "사용자 지정 부진 사례 · 조회수 미확인",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfRyQPyzB1z",
@@ -213,7 +224,8 @@
       "frames": null,
       "userAction": "매력 약한 룩을 그대로 보여주는 OOTD를 피하기.",
       "classificationBasis": "사용자 지정 부진 사례 · 조회수 미확인",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Df1WNvTzlBq",
@@ -241,7 +253,8 @@
       "frames": null,
       "userAction": "눈에 띄는 포인트 없이 매력 약한 코디를 나열하는 구성을 피하기.",
       "classificationBasis": "사용자 지정 부진 사례 · 조회수 미확인",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Df6QsWKTZGu",
@@ -269,7 +282,8 @@
       "frames": null,
       "userAction": "실루엣을 더 보여주기. 검정색은 비교해 볼 대안.",
       "classificationBasis": "사용자 촬영·색상 평가 · 조회수 미확인",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfjMjXEzv5U",
@@ -297,7 +311,8 @@
       "frames": null,
       "userAction": "잘 나온 룩과 래퍼 여친 썸네일을 촬영 참고로 보관하기.",
       "classificationBasis": "사용자 코디·썸네일 호평 · 조회수 미확인",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DerIbB8oe9k",
@@ -325,7 +340,8 @@
       "frames": null,
       "userAction": "규모 때문에 제외하지 않고 어그 영상의 구성부터 비교하기.",
       "classificationBasis": "사용자 지정 해부 대상 · 조회수 미확인",
-      "uggNote": "어그 착용 코디 · 사용자 지정"
+      "uggNote": "어그 착용 코디 · 사용자 지정",
+      "uggKind": "product"
     },
     {
       "code": "DeHD7EDoaDW",
@@ -353,7 +369,8 @@
       "frames": null,
       "userAction": "",
       "classificationBasis": "사용자 지정 부진 사례 · 조회수 미확인",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfGWUahT1km",
@@ -381,7 +398,8 @@
       "frames": null,
       "userAction": "어두운 화면, 예쁘게 보이지 않는 제품·룩, 가성비나 원하는 디자인 매력이 전달되지 않는 구성을 피하기.",
       "classificationBasis": "사용자 지정 부진 사례 · 조회수 미확인",
-      "uggNote": "오찌 어그형 부츠 · 부진 비교"
+      "uggNote": "오찌 어그형 부츠 · 부진 비교",
+      "uggKind": "product"
     },
     {
       "code": "De_Y29ZgqlU",
@@ -409,7 +427,8 @@
       "frames": null,
       "userAction": "요즘 많이 보이는 디자인을 비교할 레퍼런스로 보관하기.",
       "classificationBasis": "사용자 지정 디자인 참고 · 조회수 미확인",
-      "uggNote": "미쏘 어그 · 디자인 참고"
+      "uggNote": "미쏘 어그 · 디자인 참고",
+      "uggKind": "product"
     },
     {
       "code": "DeiSfittpTE",
@@ -437,7 +456,8 @@
       "frames": null,
       "userAction": "미쏘 어그의 반복 성공 사례로 디자인과 보여주는 방식을 비교하기.",
       "classificationBasis": "사용자 지정 성공 사례 · 공유는 앱 축약 표시",
-      "uggNote": "미쏘 어그 · 성공 사례"
+      "uggNote": "미쏘 어그 · 성공 사례",
+      "uggKind": "product"
     },
     {
       "code": "DXRLPaHEd5P",
@@ -465,7 +485,8 @@
       "frames": "assets/DXRLPaHEd5P_frames.jpg",
       "userAction": "하반신이 예쁘게 잘 나오는 구도.",
       "classificationBasis": "사용자 지정 성공 사례 · 조회수 미확인",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DVX_bW9kSQY",
@@ -493,7 +514,8 @@
       "frames": "assets/DVX_bW9kSQY_frames.jpg",
       "userAction": "제품 자체가 예쁘고 잘 어울리는 룩 하나에 집중하는 구성.",
       "classificationBasis": "사용자 지정 성공 사례 · 조회수 미확인",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DXysRHCRysv",
@@ -521,7 +543,8 @@
       "frames": "assets/DXysRHCRysv_frames.jpg",
       "userAction": "예뻐 보이지 않는 룩과 별로인 배경.",
       "classificationBasis": "사용자 지정 부진 사례 · 조회수 미확인",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfepSBJhMDf",
@@ -549,7 +572,8 @@
       "frames": "assets/DfepSBJhMDf_frames.jpg",
       "userAction": "짧은 바지 + 레그워머 + 어그형 풀문. 밝은색 니트 상의도 좋다.",
       "classificationBasis": "",
-      "uggNote": "어그와 어울리는 겨울 룩"
+      "uggNote": "어그와 잘 어울리는 룩 예시 · 어그 착용 영상 아님",
+      "uggKind": "look"
     },
     {
       "code": "De5pIliBwP6",
@@ -577,7 +601,8 @@
       "frames": "assets/De5pIliBwP6_frames.jpg",
       "userAction": "평소 계정 무드에도 맞지 않고 예뻐 보이지 않는 바지와 코디.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Dd-R07Buby4",
@@ -605,7 +630,8 @@
       "frames": null,
       "userAction": "",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DeozgTmuFR0",
@@ -633,7 +659,8 @@
       "frames": null,
       "userAction": "몸의 라인이 잘 드러나는 구도.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "De6XW6buFM2",
@@ -661,7 +688,8 @@
       "frames": null,
       "userAction": "몸의 라인이 애매하게 보이고 코디도 덜 예쁜 장면.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Detw-NWO_U7",
@@ -689,7 +717,8 @@
       "frames": "assets/Detw-NWO_U7_frames.jpg",
       "userAction": "언박싱부터 시작하는 도입.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DdEMpJWunhS",
@@ -717,7 +746,8 @@
       "frames": null,
       "userAction": "",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DbVcJnTOQbH",
@@ -745,7 +775,8 @@
       "frames": null,
       "userAction": "몸의 라인과 하체 비율이 잘 보이는 구도.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Dbnr1k5Oe_X",
@@ -773,7 +804,8 @@
       "frames": null,
       "userAction": "로우라이즈 패션에서 하체가 잘 보이는 구도.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DbqSWrTOF39",
@@ -801,7 +833,8 @@
       "frames": null,
       "userAction": "잘된 바지 영상의 구도.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DZsC60OOyyM",
@@ -829,7 +862,8 @@
       "frames": null,
       "userAction": "더 예쁜 첫 회색 착장이 있는데 매력이 약한 착장을 썸네일로 고르는 것.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfJ1kf0Os9K",
@@ -857,7 +891,8 @@
       "frames": "assets/DfJ1kf0Os9K_frames.jpg",
       "userAction": "잠옷으로 시작하는 도입과 갈아입은 뒤에도 예쁘지 않은 코디.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DeyRh7YOuhQ",
@@ -885,7 +920,8 @@
       "frames": "assets/DeyRh7YOuhQ_frames.jpg",
       "userAction": "갈아입는 과정을 먼저 보여주고, 완성된 코디도 예쁘지 않은 구성.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Dfwk3eXO1zD",
@@ -913,7 +949,8 @@
       "frames": "assets/Dfwk3eXO1zD_frames.jpg",
       "userAction": "",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Dey33XvSUke",
@@ -941,7 +978,8 @@
       "frames": "assets/Dey33XvSUke_frames.jpg",
       "userAction": "",
       "classificationBasis": "",
-      "uggNote": "어그형 부츠 제품 소개"
+      "uggNote": "어그형 부츠 제품 소개",
+      "uggKind": "product"
     },
     {
       "code": "De1R7AIh-xV",
@@ -969,7 +1007,8 @@
       "frames": "assets/De1R7AIh-xV_frames.jpg",
       "userAction": "한 코디에 어울리지 않는 여러 신발을 계속 바꿔 보여주는 구성.",
       "classificationBasis": "",
-      "uggNote": "어그를 포함한 여러 부츠 비교"
+      "uggNote": "어그를 포함한 여러 부츠 비교",
+      "uggKind": "product"
     },
     {
       "code": "De3xwJyt8eE",
@@ -997,7 +1036,8 @@
       "frames": "assets/De3xwJyt8eE_frames.jpg",
       "userAction": "신발과 전체 코디가 잘 어울리는 룩.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfezV_2TKjs",
@@ -1025,7 +1065,8 @@
       "frames": "assets/DfezV_2TKjs_frames.jpg",
       "userAction": "키치한 전체 룩을 보여주고 플랫폼 캡처 화면도 넣기.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Dafa6mdTQMM",
@@ -1053,7 +1094,8 @@
       "frames": "assets/Dafa6mdTQMM_frames.jpg",
       "userAction": "브랜드·플랫폼이 드러나는 썸네일.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DZzkbmiTzDz",
@@ -1081,7 +1123,8 @@
       "frames": "assets/DZzkbmiTzDz_frames.jpg",
       "userAction": "직잭팟·지그재그 로고도 붙여 보기.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfltKXszNzZ",
@@ -1109,7 +1152,8 @@
       "frames": "assets/DfltKXszNzZ_frames.jpg",
       "userAction": "하반신을 예쁘게 보여주는 구도.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Det2N_BzrSv",
@@ -1137,7 +1181,8 @@
       "frames": "assets/Det2N_BzrSv_frames.jpg",
       "userAction": "신발 촬영이 좋으니 풀문 후보로 참고.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DexjNkcTIq8",
@@ -1165,7 +1210,8 @@
       "frames": "assets/DexjNkcTIq8_frames.jpg",
       "userAction": "",
       "classificationBasis": "",
-      "uggNote": "어그형 부츠 제품 소개"
+      "uggNote": "어그형 부츠 제품 소개",
+      "uggKind": "product"
     },
     {
       "code": "Df1XOtiBVcC",
@@ -1193,7 +1239,8 @@
       "frames": "assets/Df1XOtiBVcC_frames.jpg",
       "userAction": "",
       "classificationBasis": "",
-      "uggNote": "어그 대체 겨울 신발 · 가격 비교"
+      "uggNote": "어그 대체 겨울 신발 · 가격 비교",
+      "uggKind": "product"
     },
     {
       "code": "De7hMquTY80",
@@ -1221,7 +1268,8 @@
       "frames": "assets/De7hMquTY80_frames.jpg",
       "userAction": "",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfXAsBKz0rX",
@@ -1249,7 +1297,8 @@
       "frames": "assets/DfXAsBKz0rX_frames.jpg",
       "userAction": "확정: 얼굴 썸네일. ‘잘 샀다’와 겨울옷 추천 분위기를 참고.",
       "classificationBasis": "사용자가 잘된 사례로 지정. 조회수와 계정 내 상대 성과는 독립 검증 전.",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DebwJ6eyK36",
@@ -1277,7 +1326,8 @@
       "frames": "assets/DebwJ6eyK36_frames.jpg",
       "userAction": "검토안: 풀문을 들고 굽을 보여주기. 신발 코디로 이어가는 방식은 아직 미정.",
       "classificationBasis": "사용자가 잘된 사례로 지정. 조회수와 계정 내 상대 성과는 독립 검증 전.",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DfHHjh_zgiv",
@@ -1305,7 +1355,8 @@
       "frames": "assets/DfHHjh_zgiv_frames.jpg",
       "userAction": "",
       "classificationBasis": "",
-      "uggNote": "가성비 어그 착용·사용 경험"
+      "uggNote": "가성비 어그 착용·사용 경험",
+      "uggKind": "product"
     },
     {
       "code": "DbF6LBMCA0V",
@@ -1333,7 +1384,8 @@
       "frames": "assets/DbF6LBMCA0V_frames.jpg",
       "userAction": "이 계정에서 반응이 약했던 테무깡 구성의 반복.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "Dbht5GRC39i",
@@ -1361,7 +1413,8 @@
       "frames": "assets/Dbht5GRC39i_frames.jpg",
       "userAction": "이 계정에서 반응이 약했던 테무깡 구성의 반복.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
     },
     {
       "code": "DW50gBjBYEv",
@@ -1389,7 +1442,66 @@
       "frames": "assets/DW50gBjBYEv_frames.jpg",
       "userAction": "나레이션 없이 코디를 보여주는 전개.",
       "classificationBasis": "",
-      "uggNote": ""
+      "uggNote": "",
+      "uggKind": ""
+    },
+    {
+      "code": "Dd88bv7zwYc",
+      "account": "do.od555",
+      "group": "reference",
+      "title": "키 숫자·짧은 하의·확대 썸네일",
+      "user": "디퍼슈가 광고를 넣었을 수도 있는데, 일단 우리랑 비슷하게 플레이하고 있다. 키를 숫자로 보여주고 짧은 하의 매칭도 잘했다. 썸네일에서는 확대컷이 보인다.",
+      "why": "디퍼슈 협찬 표시와 159cm → 166.5cm 문구, 짧은 청 하의·검정 롱부츠를 확인했다. 실제 프로필 표지는 허리 아래와 부츠를 크게 보여준다.",
+      "apply": "짧은 하의는 유지. 우리는 썸네일도 확대컷으로 가고, 이후 컷들도 더 확대해서 보여주기.",
+      "limit": "협찬 표시는 확인. 유료 노출 집행 여부·구도나 확대컷의 성과 인과는 미확인. 두 영상의 제품과 게시 조건이 다름.",
+      "url": "https://www.instagram.com/reel/Dd88bv7zwYc/",
+      "views": null,
+      "viewDate": null,
+      "date": "2026-11-19",
+      "metrics": {
+        "likes": null,
+        "comments": null,
+        "reposts": null,
+        "shares": 7436,
+        "saves": 4302
+      },
+      "image": "assets/Dd88bv7zwYc_poster.jpg",
+      "imageLabel": "실제 썸네일 · 확대컷",
+      "evidence": "assets/Dd88bv7zwYc.jpg",
+      "frames": null,
+      "userAction": "짧은 하의는 유지. 우리는 썸네일도 확대컷으로 가고, 이후 컷들도 더 확대해서 보여주기.",
+      "classificationBasis": "촬영 참고 · 조회 성과 등급 미지정",
+      "uggNote": "",
+      "uggKind": ""
+    },
+    {
+      "code": "DfcREMmR4Qe",
+      "account": "do.od555",
+      "group": "reference",
+      "title": "비슷한 구도 · 상의 제품 비교",
+      "user": "거의 똑같은 구도로 들어갔는데, 이건 상의 제품이기도 하다.",
+      "why": "같은 난간·벽 배경에서 짧은 검정 하의·롱부츠에 퍼 후드 아우터를 입었다. 전신 뒷모습과 상의 근접컷이 반복된다.",
+      "apply": "구도가 비슷해도 제품이 상의인 사례로 따로 비교하기. 우리 촬영은 짧은 하의를 유지하고 썸네일·이후 컷을 더 확대하는 방향.",
+      "limit": "협찬 표시는 확인. 유료 노출 집행 여부·구도나 확대컷의 성과 인과는 미확인. 두 영상의 제품과 게시 조건이 다름.",
+      "url": "https://www.instagram.com/reel/DfcREMmR4Qe/",
+      "views": null,
+      "viewDate": null,
+      "date": "2026-11-19",
+      "metrics": {
+        "likes": null,
+        "comments": null,
+        "reposts": null,
+        "shares": 159,
+        "saves": 94
+      },
+      "image": "assets/DfcREMmR4Qe.jpg",
+      "imageLabel": "영상 캡처",
+      "evidence": "assets/DfcREMmR4Qe.jpg",
+      "frames": null,
+      "userAction": "구도가 비슷해도 제품이 상의인 사례로 따로 비교하기. 우리 촬영은 짧은 하의를 유지하고 썸네일·이후 컷을 더 확대하는 방향.",
+      "classificationBasis": "촬영 참고 · 조회 성과 등급 미지정",
+      "uggNote": "",
+      "uggKind": ""
     }
   ],
   "archive": [
