@@ -7,14 +7,14 @@ const escapeHtml = text => String(text).replace(/[&<>"']/g, ch => ({'&':'&amp;',
 
 function setView(){
   const hash=location.hash.slice(1);
-  const view=hash==='bp-keywords'?'bp-keywords':['research','keywords','scenes','formats'].includes(hash)?'research':'library';
+  const view=['bp-keywords','claims','keyword-atlas'].includes(hash)?'bp-keywords':['research','keywords','scenes','formats','acne'].includes(hash)?'research':'library';
   document.querySelectorAll('.view').forEach(el=>el.hidden=el.id!==view);
   document.querySelectorAll('[data-tab]').forEach(el=>{
     if(el.dataset.tab===view) el.setAttribute('aria-current','page');
     else el.removeAttribute('aria-current');
   });
   if(hash.startsWith('ref-') && references.length) openDetail(hash.slice(4));
-  if(['keywords','scenes','formats'].includes(hash)) document.getElementById(hash).scrollIntoView({block:'start'});
+  if(['keywords','scenes','formats','claims','keyword-atlas','acne'].includes(hash)) document.getElementById(hash).scrollIntoView({block:'start'});
 }
 
 function controls(){
