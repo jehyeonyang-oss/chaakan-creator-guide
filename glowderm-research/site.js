@@ -7,7 +7,7 @@ const escapeHtml = text => String(text).replace(/[&<>"']/g, ch => ({'&':'&amp;',
 
 function setView(){
   const hash=location.hash.slice(1);
-  const view=['keywords','scenes','formats'].includes(hash)?'research':(['research','scripts'].includes(hash)?hash:'library');
+  const view=['research','keywords','scenes','formats'].includes(hash)?'research':'library';
   document.querySelectorAll('.view').forEach(el=>el.hidden=el.id!==view);
   document.querySelectorAll('[data-tab]').forEach(el=>{
     if(el.dataset.tab===view) el.setAttribute('aria-current','page');
@@ -77,7 +77,7 @@ $('#reset').addEventListener('click',reset);
 $('#empty-reset').addEventListener('click',reset);
 $('#close-detail').addEventListener('click',()=>$('#detail').close());
 $('#detail').addEventListener('click',event=>{if(event.target===$('#detail')){const box=$('#detail').getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)$('#detail').close();}});
-window.addEventListener('hashchange',()=>{setView();if(['#library','#research','#scripts'].includes(location.hash))window.scrollTo({top:0});});
+window.addEventListener('hashchange',()=>{setView();if(['#library','#research'].includes(location.hash))window.scrollTo({top:0});});
 setView();
 try {
   references=JSON.parse($('#reference-data').textContent);controls();render();setView();
