@@ -9,6 +9,8 @@ import build_pages
 class StagingTest(unittest.TestCase):
     def test_scope(self):
         self.assertTrue(build_pages.is_offload_candidate('glowderm-research/assets/a.jpg'))
+        self.assertTrue(build_pages.is_offload_candidate('glowderm-research/assets/demo.mp4'))
+        self.assertFalse(build_pages.is_offload_candidate('glowderm-research/unrelated.mp4'))
         self.assertTrue(build_pages.is_offload_candidate('hooks/video.mp4'))
         self.assertFalse(build_pages.is_offload_candidate('another-guide/assets/a.jpg'))
         self.assertFalse(build_pages.is_offload_candidate('glowderm-research/index.html'))
@@ -17,9 +19,10 @@ class StagingTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
             files={
-                'glowderm-research/index.html':'<img src="assets/a.jpg"><a href="https://external.test/x.jpg">source</a>',
+                'glowderm-research/index.html':'<img src="assets/a.jpg"><video src="assets/demo.mp4#t=2"></video><a href="https://external.test/x.jpg">source</a>',
                 'glowderm-research/references.json':'{"capture":"assets/a.jpg"}',
                 'glowderm-research/assets/a.jpg':b'original image bytes',
+                'glowderm-research/assets/demo.mp4':b'original video bytes',
                 'another-guide/index.html':'<img src="a.jpg">',
                 'another-guide/a.jpg':b'other image',
             }
@@ -35,12 +38,15 @@ class StagingTest(unittest.TestCase):
             self.assertIn(expected,(output/'glowderm-research/index.html').read_text())
             self.assertIn(expected,(output/'glowderm-research/references.json').read_text())
             self.assertFalse((output/'glowderm-research/assets/a.jpg').exists())
+            self.assertIn(expected.replace('a.jpg','demo.mp4#t=2'),(output/'glowderm-research/index.html').read_text())
+            self.assertFalse((output/'glowderm-research/assets/demo.mp4').exists())
+            self.assertEqual((root/'glowderm-research/assets/demo.mp4').read_bytes(),b'original video bytes')
             self.assertEqual((root/'glowderm-research/assets/a.jpg').read_bytes(),b'original image bytes')
             self.assertEqual((output/'another-guide/index.html').read_text(),files['another-guide/index.html'])
             self.assertTrue((output/'another-guide/a.jpg').exists())
             manifest=json.loads((output/'deployment.json').read_text())
             self.assertEqual(manifest['offloaded_images'],1)
-            self.assertEqual(manifest['offloaded_videos'],0)
+            self.assertEqual(manifest['offloaded_videos'],1)
 
 
 if __name__=='__main__': unittest.main()
