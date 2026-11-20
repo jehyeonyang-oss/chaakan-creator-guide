@@ -2157,6 +2157,74 @@
           "reason": "자사몰 카멜 품절 → 입고 후 업로드 가능 여부 문의·초안 먼저 요청, 음원은 게시용 자유·클린본(음원 제거) 별도 요청(11/9 DM)"
         }
       ]
+    },
+    {
+      "name": "주다",
+      "track": "26FW",
+      "account": "z00_daa",
+      "product": "페탈 커스텀 멀티웨이 롱부츠 블랙 250 + 디케인 폴딩 무스탕 롱부츠 블랙 250",
+      "content": "지그재그 택배깡 · 블랙 롱부츠 자연 노출",
+      "stage": "게시 완료",
+      "status": "게시완료",
+      "sentDate": "2026-10-30",
+      "postDate": "2026-11-16",
+      "deliveredDate": "",
+      "detail": "무가(제품 2켤레) · 10/31 한진 출고 · 11/16 택배깡 릴 노출(UTM·할인코드 없음 → 반응만 추적) · 블프 부츠추천 편은 UTM·코드 전달 완료",
+      "schedule": "11/16 게시 완료",
+      "scheduleType": "완료",
+      "next": "이 편은 1주·2주 반응만 추적 · 블프 편 게시 후 별도 등록해 매출 추적",
+      "guideUrl": "",
+      "expires": "",
+      "fee": "무가 (제품제공)",
+      "productCost": null,
+      "engagement": [
+        {
+          "slot": "1week",
+          "label": "7일",
+          "dueAt": "2026-11-23T19:25:38+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "2week",
+          "label": "14일",
+          "dueAt": "2026-11-30T19:25:38+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        }
+      ],
+      "sales": {},
+      "phoneTrackingReady": true,
+      "engagementBaseline": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "actualCollectedAt": null
+      },
+      "latestViews": null,
+      "postUrl": "https://www.instagram.com/reel/DfzIv-BuqWE/",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=ThbU42cPXkikDJFVS49o",
+      "scheduleLog": []
     }
   ],
   "contacts": [
@@ -2236,5 +2304,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-20T03:11:19.509015+00:00"
+  "syncedAt": "2026-11-20T06:45:16.162670+00:00"
 }
