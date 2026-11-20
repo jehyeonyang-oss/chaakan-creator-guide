@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex">
+<title>착한구두 광고 성과</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#ads">소재 목록으로 건너뛰기</a>
+<header class="top">
+  <div class="wrap top-in">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <h1>착한구두 광고 성과</h1>
+    </div>
+    <dl class="meta">
+      <div><dt>기간</dt><dd id="period">—</dd></div>
+      <div><dt>조회 기준</dt><dd id="asof">—</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <section aria-labelledby="kpi-h" class="block">
+    <div class="sec-head">
+      <h2 id="kpi-h">온라인 광고 합계</h2>
+      <p class="sec-note" id="kpi-note"></p>
+    </div>
+    <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section aria-labelledby="check-h" class="block">
+    <div class="sec-head">
+      <h2 id="check-h">점검 필요</h2>
+      <p class="sec-note">직전 대비 ROAS가 30%p 이상 내렸거나 270% 미만인 집행 소재. 판정은 원인 후보이며 중단 지시가 아닙니다.</p>
+    </div>
+    <div class="checks" id="checks"></div>
+    <button class="more-btn" id="checks-more" type="button" hidden></button>
+    <div class="sub-block" id="stock-watch"></div>
+    <div class="sub-block" id="today-zero"></div>
+  </section>
+
+  <section aria-labelledby="ads-h" class="block" id="ads">
+    <div class="sec-head">
+      <h2 id="ads-h">소재별 성과</h2>
+      <p class="sec-note" id="result-sum" aria-live="polite"></p>
+    </div>
+    <div class="toolbar" role="search">
+      <label class="search">
+        <span class="sr">소재 검색</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+        <input id="q" type="search" placeholder="소재명, 크리에이터, 광고 ID" autocomplete="off">
+      </label>
+      <div class="filters">
+        <select id="f-acc" aria-label="계정"></select>
+        <select id="f-cat" aria-label="효율 구간">
+          <option value="">전체 효율 구간</option>
+          <option value="high">270% 이상</option>
+          <option value="mid">200–270%</option>
+          <option value="low">200% 미만</option>
+          <option value="sample">표본 부족</option>
+          <option value="other">구매 목적 아님</option>
+        </select>
+        <select id="f-stock" aria-label="재고 상태">
+          <option value="">전체 재고 상태</option>
+          <option value="ok">재고 정상</option>
+          <option value="risk">사이즈 품절 주의</option>
+          <option value="soldout">품절</option>
+          <option value="unmatched">미연결</option>
+        </select>
+        <select id="f-on" aria-label="집행 상태">
+          <option value="">집행 중</option>
+          <option value="all">최근 지출 포함 전체</option>
+        </select>
+        <select id="sort" aria-label="정렬">
+          <option value="spend">광고비 높은 순</option>
+          <option value="roas">ROAS 높은 순</option>
+          <option value="delta">ROAS 하락 큰 순</option>
+          <option value="buy">구매 많은 순</option>
+        </select>
+        <button type="button" class="chip" id="f-pa" aria-pressed="false">시딩·PA만</button>
+      </div>
+      <div class="seg" role="group" aria-label="보기 방식">
+        <button type="button" data-view="card" aria-pressed="true">카드</button>
+        <button type="button" data-view="table" aria-pressed="false">표</button>
+      </div>
+    </div>
+    <div id="list"></div>
+    <button class="more-btn" id="list-more" type="button" hidden></button>
+  </section>
+
+  <section aria-labelledby="note-h" class="block notes">
+    <h2 id="note-h">지표 기준</h2>
+    <ul id="notes"></ul>
+  </section>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="p-title" hidden>
+  <div class="panel-head">
+    <div class="p-badges" id="p-badges"></div>
+    <button type="button" class="close" id="p-close" aria-label="닫기"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
+  </div>
+  <div class="panel-body" id="p-body"></div>
+</aside>
+<script src="app.js" defer></script>
+</body>
+</html>
