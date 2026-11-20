@@ -36,7 +36,7 @@ def resolve_url(source, value):
 
 def is_offload_candidate(source):
     return (source.split('/')[0] in LIBRARIES and source.endswith('.mp4')) or (
-        source.startswith(('glowderm-research/assets/', 'glowderm-retinal/assets/')) and
+        source.startswith(('glowderm-research/assets/', 'glowderm-retinal/assets/', 'fullmoon-analysis/assets/')) and
         Path(source).suffix in {'.jpg', '.jpeg', '.png', '.webp', '.mp4'})
 
 
