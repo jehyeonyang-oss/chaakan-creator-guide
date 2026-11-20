@@ -12,7 +12,7 @@ window.OpinionNotes=(()=>{
   function persist(){try{localStorage.setItem(storageKey,JSON.stringify(Object.fromEntries(drafts)));}catch{storageOK=false;}}
   function banner(text){document.querySelector('#notes-connection').textContent=text;}
   function field(key,label){return `<div class="opinion-field" data-note="${esc(key)}"><label for="note-${esc(key)}">${esc(label)} <span>내 의견</span></label><textarea id="note-${esc(key)}" maxlength="10000" rows="2" readonly placeholder="아직 적은 의견이 없습니다.">${esc(value(key))}</textarea><small class="note-status" role="status"></small><div class="note-conflict" hidden><p></p><button type="button" data-note-cloud>저장된 의견 사용</button><button type="button" data-note-mine>내 초안으로 저장</button></div><button type="button" class="note-retry" data-note-retry hidden>다시 저장</button></div>`;}
-  function fit(t){t.style.height='auto';t.style.height=Math.max(62,t.scrollHeight+3)+'px';}
+  function fit(t){t.style.height='0px';t.style.height=Math.max(t.readOnly?24:62,t.scrollHeight+2)+'px';}
   function paint(){
     for(const el of document.querySelectorAll('[data-note]')){
       const k=el.dataset.note,t=el.querySelector('textarea'),d=master?drafts.get(k):null;
