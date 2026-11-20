@@ -2,3 +2,5 @@
 @media(max-width:1050px){.beauty-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cut-sequence{grid-template-columns:repeat(2,minmax(0,1fr))}.beauty-card>button img{height:310px}}
 @media(max-width:650px){.beauty-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.beauty-card>button img{height:260px}.beauty-card>div{padding:10px}.beauty-card h3{font-size:14px}.beauty-card p.small{font-size:11px}.cut-metrics{font-size:11px}.cut-tabs{gap:6px}.cut-tabs a{padding:10px;font-size:12px}.cut-sequence{gap:9px}.cut-shot img{aspect-ratio:9/14}#cut-viewer{padding:14px}.beauty-card small{overflow-wrap:anywhere}}
 #cut-more[hidden]{display:none!important}
+
+.subnav{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.subnav a{border:1px solid #d7dfda;padding:9px 14px;border-radius:7px;text-decoration:none}.subnav [aria-current]{background:#e9f0ff;font-weight:700}#internal-guide{width:100%;height:1000px;border:0;display:block;border-radius:12px;background:white}

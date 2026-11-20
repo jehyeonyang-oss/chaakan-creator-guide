@@ -1,0 +1,13 @@
+{
+  "note": "초기 어그 11컷 구성에서 제외한 같은 구도의 반복 프레임. 공개 구도 목록과 구도 수에는 포함하지 않으며 과거 검토 근거로만 보존한다.",
+  "excludedDuplicateFrames": [
+    "assets/beauty_DexjNkcTIq8_10.jpg",
+    "assets/beauty_DexjNkcTIq8_4.jpg",
+    "assets/beauty_DexjNkcTIq8_6.jpg",
+    "assets/beauty_Dey33XvSUke_10.jpg",
+    "assets/beauty_Dey33XvSUke_4.jpg",
+    "assets/beauty_Dey33XvSUke_6.jpg",
+    "assets/beauty_DfHHjh_zgiv_10.jpg",
+    "assets/beauty_DfHHjh_zgiv_14.jpg"
+  ]
+}
