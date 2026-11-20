@@ -12,6 +12,8 @@ class StagingTest(unittest.TestCase):
         self.assertTrue(build_pages.is_offload_candidate('glowderm-research/assets/demo.mp4'))
         self.assertFalse(build_pages.is_offload_candidate('glowderm-research/unrelated.mp4'))
         self.assertTrue(build_pages.is_offload_candidate('hooks/video.mp4'))
+        self.assertTrue(build_pages.is_offload_candidate('fullmoon-spray/assets/spray.mp4'))
+        self.assertFalse(build_pages.is_offload_candidate('fullmoon-spray/assets/spray.jpg'))
         self.assertFalse(build_pages.is_offload_candidate('another-guide/assets/a.jpg'))
         self.assertFalse(build_pages.is_offload_candidate('glowderm-research/index.html'))
 
@@ -25,6 +27,8 @@ class StagingTest(unittest.TestCase):
                 'glowderm-research/assets/demo.mp4':b'original video bytes',
                 'another-guide/index.html':'<img src="a.jpg">',
                 'another-guide/a.jpg':b'other image',
+                'fullmoon-spray/index.html':'<video src="assets/spray.mp4"></video>',
+                'fullmoon-spray/assets/spray.mp4':b'original guide video',
             }
             for name,body in files.items():
                 path=root/name;path.parent.mkdir(parents=True,exist_ok=True)
@@ -46,7 +50,9 @@ class StagingTest(unittest.TestCase):
             self.assertTrue((output/'another-guide/a.jpg').exists())
             manifest=json.loads((output/'deployment.json').read_text())
             self.assertEqual(manifest['offloaded_images'],1)
-            self.assertEqual(manifest['offloaded_videos'],1)
+            self.assertEqual(manifest['offloaded_videos'],2)
+            self.assertIn(f'https://raw.githubusercontent.com/jehyeonyang-oss/chaakan-creator-guide/{sha}/fullmoon-spray/assets/spray.mp4',(output/'fullmoon-spray/index.html').read_text())
+            self.assertEqual((root/'fullmoon-spray/assets/spray.mp4').read_bytes(),b'original guide video')
 
 
 if __name__=='__main__': unittest.main()
