@@ -56,6 +56,44 @@ function stockTitle(g) {
   return parts.join('\n');
 }
 
+/* 사람이 읽는 제목: 연결 상품명(없으면 코드명 첫 토큰) · 크리에이터(코드명에서 추출 가능할 때만) */
+function who(n) {
+  const pa = n.match(/(?:^|_)PA_([A-Za-z0-9._]+)_[^_]+$/);
+  if (pa) return '@' + pa[1];
+  const t = n.split('_'), i = t.indexOf('메타'), code = t[0].replace(/^ASC\S*\.\s*/, '');
+  const tail = new Set(t.slice(i + 1).concat(code, '수정', '테스트', '영상', '세로', '히든'));  // 메타 뒤 = 광고 코드 약어(예: 포히)
+  const skip = x => !/[가-힣]/.test(x) || /^\d+계정$/.test(x) || /^[A-Za-z]+\d*기$/.test(x) || tail.has(x);
+  for (let j = i - 1; j >= 0 && j >= i - 8; j--) {
+    if (skip(t[j])) continue;
+    return /^[가-힣]{2,4}$/.test(t[j]) ? t[j] : '';
+  }
+  return '';
+}
+function title(g) {
+  if (g._t) return g._t;
+  const names = [...new Set(g.stock.p.map(p => D.products[p]?.name).filter(Boolean))];
+  let prod = names.join(' + ') || g.n.replace(/^ASC\d*\.\s*/, '').split('_')[0];
+  if (/1\+1/.test(g.n)) prod += ' 1+1';
+  const c = who(g.n);
+  return (g._t = c ? `${prod} · ${c}` : prod);
+}
+/* 재고 칩: stock.why(기존 판정 문구)와 품절 색상에서 그대로 뽑는다. 판정은 바꾸지 않음 */
+function chips(g) {
+  const s = g.stock, out = [];
+  const add = (t, c) => { if (!out.some(x => x[0] === t)) out.push([t, c]); };
+  for (const m of s.why.matchAll(/([^\s·/:()]+) 주력 사이즈 품절 \d+개\(([^)]+)\)/g)) add(`${m[1]} ${m[2].split(', ').join('·')} 품절`, 'warn');
+  for (const m of s.why.matchAll(/총재고 (\d+) < 최근7일 구매 (\d+)×2/g)) add(`총재고 ${int(+m[1])} < 7일 구매×2`, 'warn');
+  if (s.st === 'soldout') add('전체 품절', 'neg');
+  for (const x of s.gone) add(`${x.split(') ').pop()} 전 사이즈 품절`, 'line');
+  return out;
+}
+const chipHTML = (g, max = 3) => {
+  const c = chips(g); if (!c.length) return '';
+  const more = c.length > max ? `<span class="sc more" title="${esc(c.slice(max).map(x => x[0]).join('\n'))}">+${c.length - max}</span>` : '';
+  return `<div class="schips">${c.slice(0, max).map(([t, k]) => `<span class="sc ${k}">${esc(t)}</span>`).join('')}${more}</div>`;
+};
+const totalStock = g => g.stock.p.reduce((t, p) => t + (D.products[p]?.total || 0), 0);
+
 function spark(g) {
   const W = 150, H = 40, n = g.dy.length, bw = W / n;
   const maxS = Math.max(...g.dy.map(d => d[0]), 1);
@@ -84,11 +122,12 @@ function thumb(g) {
 
 function card(g) {
   const d = dpp(g), acc = D.accounts[g.a].name;
-  return `<div class="card" role="button" tabindex="0" data-id="${g.id}" aria-label="${esc(g.n)} 상세 보기">
+  return `<div class="card" role="button" tabindex="0" data-id="${g.id}" aria-label="${esc(title(g))} 상세 보기">
   <div class="card-main">${thumb(g)}
     <div class="card-info">
       <div class="badges">${bdg(CAT[g.cat])}${bdg(STK[g.stock.st], stockTitle(g))}</div>
-      <h3 class="c-name" title="${esc(g.n)}">${esc(g.n)}</h3>
+      <h3 class="c-name">${esc(title(g))}</h3>
+      <div class="c-code" title="${esc(g.n)}">${esc(g.n)}</div>
       <div class="c-sub"><span>${esc(acc)}</span><span class="dot${g.on ? ' on' : ''}">${g.on ? `집행 중 ${g.on}` : '집행 종료'}</span></div>
     </div>
   </div>
@@ -104,7 +143,7 @@ function card(g) {
 function table(list) {
   const rows = list.map(g => {
     const d = dpp(g);
-    return `<tr data-id="${g.id}" tabindex="0"><td><div class="t-name" title="${esc(g.n)}">${esc(g.n)}</div></td>
+    return `<tr data-id="${g.id}" tabindex="0"><td><div class="t-name">${esc(title(g))}</div><div class="c-code" title="${esc(g.n)}">${esc(g.n)}</div></td>
 <td class="col-h">${esc(D.accounts[g.a].name)}</td><td class="n">${man(g.r.s)}</td><td class="n col-h">${int(g.r.c)}</td>
 <td class="n">${pct(g.r.roas)}</td><td class="n col-h">${d == null ? '—' : delta(d, '%p', {digits: 0})}</td>
 <td class="col-h">${bdg(CAT[g.cat])}</td><td>${bdg(STK[g.stock.st], stockTitle(g))}</td><td class="col-h"><span class="dot${g.on ? ' on' : ''}">${g.on ? '집행 중' : '종료'}</span></td></tr>`;
@@ -120,7 +159,7 @@ function filtered() {
     (!state.cat || g.cat === state.cat) &&
     (!state.stock || g.stock.st === state.stock) &&
     (!state.pa || isPA(g)) &&
-    (!q || g.names.concat(g.camp, g.ads).join(' ').toLowerCase().includes(q)));
+    (!q || g.names.concat(g.camp, g.ads, title(g)).join(' ').toLowerCase().includes(q)));
   const k = state.sort, nz = (v, f) => v == null ? f : v;
   L.sort((a, b) => k === 'roas' ? nz(b.r.roas, -1) - nz(a.r.roas, -1) || b.r.s - a.r.s
     : k === 'delta' ? nz(dpp(a), 1e9) - nz(dpp(b), 1e9) || b.r.s - a.r.s
@@ -160,6 +199,15 @@ function renderKPI() {
   $('#kpi-note').textContent = '온라인 3개 계정 합계(오프라인 계정 제외) · 광고비 증감은 좋고 나쁨 판단 없이 회색으로 표시';
 }
 
+const stockWatch = () => D.groups.filter(g => g.on > 0 && (g.stock.st === 'risk' || g.stock.st === 'soldout')).sort((a, b) => b.r.s - a.r.s);
+function renderSummary() {
+  const r = D.online.recent, p = D.online.previous;
+  const nDx = D.groups.filter(g => g.dx).length, sw = stockWatch(), top = Math.min(6, sw.length);
+  $('#summary').innerHTML = `<button type="button" data-go="check-h"><b class="num">점검 ${nDx}개</b></button><span class="sep" aria-hidden="true">·</span>
+<button type="button" data-go="stock-watch"><span>사이즈 품절 걸린 광고비 상위</span> <b class="num">${top}개</b><small>(집행 중 ${sw.length}개 중)</small></button><span class="sep" aria-hidden="true">·</span>
+<span><span>전체 ROAS</span> <b class="num">${pct(r.roas)}</b> ${delta(r.roas - p.roas, '%p')}</span>`;
+}
+
 function renderChecks() {
   const dx = D.groups.filter(g => g.dx);
   const lead = dx.filter(g => /7cmD/.test(g.n));
@@ -167,26 +215,39 @@ function renderChecks() {
   const ord = lead.concat(rest.filter(g => g.dx.v !== 'small_sample').sort((a, b) => b.r.s - a.r.s),
     rest.filter(g => g.dx.v === 'small_sample').sort((a, b) => b.r.s - a.r.s));
   const ch = (x, k, l) => x[k] == null ? '' : `<span>${l} <b>${x[k] > 0 ? '+' : ''}${x[k]}%</b></span>`;
-  const items = ord.map((g, i) => `<div class="ck${i === 0 && lead.length ? ' lead' : ''}" role="button" tabindex="0" data-id="${g.id}">
-  <div class="ck-top">${bdg(VERDICT[g.dx.v] || [g.dx.v, ''])}${g.stock.st === 'risk' || g.stock.st === 'soldout' ? bdg(STK[g.stock.st], g.stock.why) : ''}</div>
-  <h3 class="ck-name" title="${esc(g.n)}">${esc(g.n)}</h3>
-  <p class="ck-txt">${esc(g.dx.txt)}</p>
-  <div class="ck-m"><span>광고비 <b>${man(g.r.s)}</b></span><span>ROAS <b>${pct(g.p.roas)} → ${pct(g.r.roas)}</b></span>${ch(g.dx.chg, 'spend', '지출')}${ch(g.dx.chg, 'cvr', '전환율')}${ch(g.dx.chg, 'ctr', 'CTR')}</div>
+  const sgn = v => v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v) + '%';
+  const sm = g => g.img ? `<div class="ck-th"><img src="${g.img.src}" alt="" loading="lazy"></div>` : '';
+  const items = ord.map((g, i) => `<div class="ck${i === 0 && lead.length ? ' lead' : ''}" role="button" tabindex="0" data-id="${g.id}" aria-label="${esc(title(g))} 상세 보기">
+  <div class="ck-head">${sm(g)}<div class="ck-hd">
+    <div class="ck-top">${bdg(VERDICT[g.dx.v] || [g.dx.v, ''])}</div>
+    <h3 class="ck-name">${esc(title(g))}</h3>
+    <div class="c-code ck-code" title="${esc(g.n)}">${esc(g.n)}</div>
+  </div></div>
+  <dl class="ck-big">
+    <div><dt>광고비 7일</dt><dd>${man(g.r.s)}</dd></div>
+    <div><dt>ROAS 직전→최근</dt><dd>${pct(g.p.roas)}<span class="ar">→</span><em class="${(g.r.roas ?? 0) < (g.p.roas ?? 0) ? 'dn' : ''}">${pct(g.r.roas)}</em></dd></div>
+    <div><dt>지출 증감</dt><dd>${sgn(g.dx.chg.spend)}</dd></div>
+  </dl>
+  ${chipHTML(g)}
+  <details class="ck-more"><summary>판정 근거</summary><p class="ck-txt">${esc(g.dx.txt)}</p><div class="ck-m">${ch(g.dx.chg, 'cvr', '전환율')}${ch(g.dx.chg, 'ctr', 'CTR')}${ch(g.dx.chg, 'cpm', 'CPM')}</div></details>
 </div>`);
-  const n0 = lead.length ? 5 : 6;
+  const n0 = 6;
   $('#checks').innerHTML = items.slice(0, checksOpen ? items.length : n0).join('');
   const b = $('#checks-more');
   b.hidden = items.length <= n0;
   b.textContent = checksOpen ? '접기' : `점검 소재 ${items.length}개 모두 보기`;
   b.setAttribute('aria-expanded', checksOpen ? 'true' : 'false');
 
-  const sw = D.groups.filter(g => g.on > 0 && (g.stock.st === 'risk' || g.stock.st === 'soldout')).sort((a, b) => b.r.s - a.r.s);
-  const row = (g, why, right) => `<button type="button" class="row" data-id="${g.id}">${bdg(STK[g.stock.st])}<span class="row-n">${esc(g.n)}</span><span class="row-w">${esc(why)}</span><span class="row-s">${right}</span></button>`;
+  const sw = stockWatch();
+  const srow = g => `<button type="button" class="srow" data-id="${g.id}" title="${esc(g.stock.why)}">
+<span class="sr-n"><b>${esc(title(g))}</b><span class="c-code">${esc(g.n)}</span></span>
+<span class="sr-c">${chipHTML(g, 4) || bdg(STK[g.stock.st])}</span>
+<span class="sr-v"><i>총재고</i>${int(totalStock(g))}</span><span class="sr-v"><i>광고비 7일</i>${man(g.r.s)}</span><span class="sr-v"><i>ROAS</i>${pct(g.r.roas)}</span></button>`;
   $('#stock-watch').innerHTML = sw.length ? `<div class="sub-h"><h3>재고 주의 · 지출 상위</h3><p>집행 중 ${sw.length}개 중 최근 7일 광고비 상위 6개. 참고 표시이며 광고 중단 판단이 아닙니다.</p></div>
-<div class="rows">${sw.slice(0, 6).map(g => row(g, g.stock.why, `${man(g.r.s)}<span>ROAS ${pct(g.r.roas)}</span>`)).join('')}</div>` : '';
+<div class="rows srows"><div class="srow sh" aria-hidden="true"><span>상품 · 소재</span><span>품절 색상·사이즈</span><span>총재고</span><span>광고비 7일</span><span>ROAS</span></div>${sw.slice(0, 6).map(srow).join('')}</div>` : '';
   const z = D.groups.filter(g => g.z).sort((a, b) => b.z.s - a.z.s);
   $('#today-zero').innerHTML = z.length ? `<div class="sub-h"><h3>11/20 당일 구매 0</h3><p>진행 중 집계라 판단 보류. 다음 날 마감치로 다시 확인.</p></div>
-<div class="rows">${z.map(g => `<button type="button" class="row" data-id="${g.id}">${bdg(VERDICT[g.z.v] || [g.z.v, ''])}<span class="row-n">${esc(g.n)}</span><span class="row-w">${esc(g.z.txt)}</span><span class="row-s">${man(g.z.s)}<span>당일 광고비</span></span></button>`).join('')}</div>` : '';
+<div class="rows">${z.map(g => `<button type="button" class="row" data-id="${g.id}">${bdg(VERDICT[g.z.v] || [g.z.v, ''])}<span class="row-n">${esc(title(g))}<span class="c-code">${esc(g.n)}</span></span><span class="row-w">${esc(g.z.txt)}</span><span class="row-s">${man(g.z.s)}<span>당일 광고비</span></span></button>`).join('')}</div>` : '';
 }
 
 function renderNotes() {
@@ -233,11 +294,13 @@ ${per('광고비', x => won(x.s))}${per('구매', x => int(x.c))}${per('매출',
     const core = new Set(['225', '230', '235', '240', '245']);
     const rows = pr.colors.map(c => `<tr${c.qty <= 0 ? ' class="gone"' : ''}><td>${esc(c.color)}${c.qty <= 0 ? ' (품절)' : ''}</td><td>${int(c.qty)}</td>${sizes.map(z => {
       const q = c.sizes[z]; return q == null ? '<td>·</td>' : `<td${q === 0 && c.qty > 0 && core.has(z) ? ' class="z"' : ''}>${int(q)}</td>`; }).join('')}</tr>`).join('');
-    stockH += `<div class="p-sec" style="margin-top:12px"><a class="p-link" href="${esc(pr.url)}" target="_blank" rel="noopener">${esc(pr.name)} ↗</a><span class="p-sub">총재고 ${int(pr.total)}</span>
+    const lk = pr.url ? `<a class="p-link" href="${esc(pr.url)}" target="_blank" rel="noopener">${esc(pr.name)} ↗</a>${pr.via ? `<span class="p-sub">${esc(pr.via)}로 연결 ·</span> ` : ''}` : `<span class="p-link nolink">${esc(pr.name)}</span>`;
+    stockH += `<div class="p-sec" style="margin-top:12px">${lk}<span class="p-sub">총재고 ${int(pr.total)}</span>
 <div class="p-box stk"><table><thead><tr><th>색상</th><th>합계</th>${sizes.map(z => `<th${core.has(z) ? ' class="core"' : ''}>${esc(z)}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div></div>`;
   }
 
-  return `<h2 class="p-title" id="p-title">${esc(g.n)}</h2>
+  return `<h2 class="p-title" id="p-title">${esc(title(g))}</h2>
+<p class="p-sub p-code">${esc(g.n)}</p>
 <p class="p-sub">${esc(acc)} · ${g.on ? `집행 중 광고 ${g.on}개` : '현재 집행 중 아님'} · 묶인 광고 ${g.cnt}개</p>
 <div class="p-sec"><h3>기간 비교</h3>${periods}</div>
 ${memo}
@@ -278,11 +341,11 @@ function bind() {
   document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => { set('view', b.dataset.view); syncControls(); }));
   $('#list-more').addEventListener('click', () => { limit += 60; renderList(); });
   $('#checks-more').addEventListener('click', () => { checksOpen = !checksOpen; renderChecks(); });
-  document.addEventListener('click', e => { const el = e.target.closest('[data-id]'); if (el && !e.target.closest('a')) openPanel(el.dataset.id); });
+  document.addEventListener('click', e => { const el = e.target.closest('[data-id]'); if (el && !e.target.closest('a,details')) openPanel(el.dataset.id); });
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') return closePanel();
     const el = e.target.closest && e.target.closest('[data-id][tabindex]');
-    if (el && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openPanel(el.dataset.id); }
+    if (el && !e.target.closest('summary') && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openPanel(el.dataset.id); }
     if (e.key === 'Tab' && !$('#panel').hidden) {  // 포커스 가두기
       const f = [...$('#panel').querySelectorAll('button,a[href],[tabindex]')].filter(x => x.offsetParent !== null);
       if (!f.length) return;
@@ -290,6 +353,7 @@ function bind() {
       else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
     }
   });
+  $('#summary').addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) document.getElementById(b.dataset.go).scrollIntoView({block: 'start'}); });
   $('#p-close').addEventListener('click', closePanel);
   $('#scrim').addEventListener('click', closePanel);
   addEventListener('hashchange', () => { readHash(); syncControls(); renderList(); state.ad ? openPanel(state.ad, false) : closePanel(); });
@@ -312,7 +376,7 @@ async function init() {
   const used = new Set(D.groups.map(g => g.a));
   $('#f-acc').innerHTML = '<option value="">전체 계정</option>' + D.accounts.map((a, i) => used.has(i) ? `<option value="${i}">${esc(a.name)}</option>` : '').join('');
   readHash(); syncControls();
-  renderKPI(); renderChecks(); renderNotes(); renderList(); bind();
+  renderSummary(); renderKPI(); renderChecks(); renderNotes(); renderList(); bind();
   if (state.ad) openPanel(state.ad, false);
 }
 init();
