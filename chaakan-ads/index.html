@@ -5,49 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="robots" content="noindex">
-<title>착한구두 광고 성과</title>
+<title>착한구두 메타 광고</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<a class="skip" href="#ads">소재 목록으로 건너뛰기</a>
-<header class="top">
-  <div class="wrap top-in">
-    <div class="brand">
-      <span class="mark" aria-hidden="true"></span>
-      <h1>착한구두 광고 성과</h1>
-    </div>
-    <dl class="meta">
-      <div><dt>기간</dt><dd id="period">—</dd></div>
-      <div><dt>조회 기준</dt><dd id="asof">—</dd></div>
-    </dl>
-  </div>
-</header>
-
+<a class="skip" href="#ads">전체 광고 목록으로 건너뛰기</a>
 <main class="wrap" id="main">
-  <p class="summary" id="summary" aria-label="오늘 볼 것 요약"></p>
-  <section aria-labelledby="kpi-h" class="block block-kpi">
-    <div class="sec-head">
-      <h2 id="kpi-h">온라인 광고 합계</h2>
-      <p class="sec-note" id="kpi-note"></p>
-    </div>
-    <div class="kpis" id="kpis"></div>
-  </section>
+  <header class="hero">
+    <div class="brand"><span class="mark" aria-hidden="true"></span><span class="brand-l">착한구두</span></div>
+    <h1>착한구두 메타 광고 한눈에 보기</h1>
+    <p class="asof" id="asof">—</p>
+  </header>
+  <div class="tiles" id="tiles"></div>
+  <ul class="lead-notes" id="lead-notes"></ul>
+  <section class="block tier" aria-labelledby="t-good-h"><div class="tier-h"><h2 id="t-good-h"></h2><p></p></div><div class="tcards" id="t-good"></div></section>
+  <section class="block tier" aria-labelledby="t-ok-h"><div class="tier-h"><h2 id="t-ok-h"></h2><p></p></div><div class="tcards" id="t-ok"></div></section>
+  <section class="block tier" aria-labelledby="t-bad-h"><div class="tier-h"><h2 id="t-bad-h"></h2><p></p></div><div class="tcards" id="t-bad"></div></section>
 
-  <section aria-labelledby="check-h" class="block">
-    <div class="sec-head">
-      <h2 id="check-h">점검 필요</h2>
-      <p class="sec-note">직전 대비 ROAS가 30%p 이상 내렸거나 270% 미만인 집행 소재. 판정은 원인 후보이며 중단 지시가 아닙니다.</p>
-    </div>
-    <div class="checks" id="checks"></div>
-    <button class="more-btn" id="checks-more" type="button" hidden></button>
+  <section class="block all-h-wrap" aria-labelledby="all-h">
+    <h2 id="all-h" class="all-h">전체 광고 보기</h2>
+    <p class="sec-note left" id="all-note"></p>
     <div class="sub-block" id="stock-watch"></div>
-    <div class="sub-block" id="today-zero"></div>
   </section>
 
   <section aria-labelledby="ads-h" class="block" id="ads">
     <div class="sec-head">
-      <h2 id="ads-h">소재별 성과</h2>
+      <h2 id="ads-h">소재별 성과 <span class="h-sub">같은 게시물은 한 묶음</span></h2>
       <p class="sec-note" id="result-sum" aria-live="polite"></p>
     </div>
     <div class="toolbar" role="search">
@@ -100,6 +84,7 @@
   </section>
 </main>
 
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="썸네일 크게 보기" hidden><img id="lb-img" alt=""><button type="button" class="close lb-x" id="lb-x" aria-label="닫기"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
 <div class="scrim" id="scrim" hidden></div>
 <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="p-title" hidden>
   <div class="panel-head">

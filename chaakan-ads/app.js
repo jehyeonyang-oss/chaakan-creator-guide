@@ -33,7 +33,7 @@ const bdg = ([t, c], title) => `<span class="bdg ${c}"${title ? ` title="${esc(t
 const PA = /시딩|파트너|(?:^|_)PA(?:_|$)/i;
 const isPA = g => g.names.concat(g.camp).some(s => PA.test(s));
 
-let D, byId = {}, state = {}, limit = 60, checksOpen = false, lastFocus = null;
+let D, byId = {}, state = {}, limit = 60, lastFocus = null;
 const DEF = {q: '', acc: '', cat: '', stock: '', on: '', sort: 'spend', pa: '', view: 'card', ad: ''};
 
 function readHash() {
@@ -187,57 +187,8 @@ function syncControls() {
   document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.view === state.view ? 'true' : 'false'));
 }
 
-function renderKPI() {
-  const r = D.online.recent, p = D.online.previous, t = D.online.today;
-  const tile = (label, val, unit, dl, prev, today) => `<div class="kpi"><div class="kpi-l">${label}</div>
-<div class="kpi-v num">${val}<small>${unit}</small></div><div class="kpi-d">${dl}<span>직전 ${prev}</span><span>11/20 진행 중 ${today}</span></div></div>`;
-  $('#kpis').innerHTML =
-    tile('광고비', man(r.s).replace('만', ''), '만원', delta(rel(r.s, p.s), '%', {neutral: true}), man(p.s), man(t.s)) +
-    tile('구매', int(r.c), '건', delta(rel(r.c, p.c), '%'), int(p.c), int(t.c)) +
-    tile('매출', man(r.v).replace('만', ''), '만원', delta(rel(r.v, p.v), '%'), man(p.v), man(t.v)) +
-    tile('ROAS', Math.round(r.roas), '%', delta(r.roas - p.roas, '%p'), pct(p.roas), pct(t.roas));
-  $('#kpi-note').textContent = '온라인 3개 계정 합계(오프라인 계정 제외) · 광고비 증감은 좋고 나쁨 판단 없이 회색으로 표시';
-}
-
 const stockWatch = () => D.groups.filter(g => g.on > 0 && (g.stock.st === 'risk' || g.stock.st === 'soldout')).sort((a, b) => b.r.s - a.r.s);
-function renderSummary() {
-  const r = D.online.recent, p = D.online.previous;
-  const nDx = D.groups.filter(g => g.dx).length, sw = stockWatch(), top = Math.min(6, sw.length);
-  $('#summary').innerHTML = `<button type="button" data-go="check-h"><b class="num">점검 ${nDx}개</b></button><span class="sep" aria-hidden="true">·</span>
-<button type="button" data-go="stock-watch"><span>사이즈 품절 걸린 광고비 상위</span> <b class="num">${top}개</b><small>(집행 중 ${sw.length}개 중)</small></button><span class="sep" aria-hidden="true">·</span>
-<span><span>전체 ROAS</span> <b class="num">${pct(r.roas)}</b> ${delta(r.roas - p.roas, '%p')}</span>`;
-}
-
-function renderChecks() {
-  const dx = D.groups.filter(g => g.dx);
-  const lead = dx.filter(g => /7cmD/.test(g.n));
-  const rest = dx.filter(g => !lead.includes(g));
-  const ord = lead.concat(rest.filter(g => g.dx.v !== 'small_sample').sort((a, b) => b.r.s - a.r.s),
-    rest.filter(g => g.dx.v === 'small_sample').sort((a, b) => b.r.s - a.r.s));
-  const ch = (x, k, l) => x[k] == null ? '' : `<span>${l} <b>${x[k] > 0 ? '+' : ''}${x[k]}%</b></span>`;
-  const sgn = v => v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v) + '%';
-  const sm = g => g.img ? `<div class="ck-th"><img src="${g.img.src}" alt="" loading="lazy"></div>` : '';
-  const items = ord.map((g, i) => `<div class="ck${i === 0 && lead.length ? ' lead' : ''}" role="button" tabindex="0" data-id="${g.id}" aria-label="${esc(title(g))} 상세 보기">
-  <div class="ck-head">${sm(g)}<div class="ck-hd">
-    <div class="ck-top">${bdg(VERDICT[g.dx.v] || [g.dx.v, ''])}</div>
-    <h3 class="ck-name">${esc(title(g))}</h3>
-    <div class="c-code ck-code" title="${esc(g.n)}">${esc(g.n)}</div>
-  </div></div>
-  <dl class="ck-big">
-    <div><dt>광고비 7일</dt><dd>${man(g.r.s)}</dd></div>
-    <div><dt>ROAS 직전→최근</dt><dd>${pct(g.p.roas)}<span class="ar">→</span><em class="${(g.r.roas ?? 0) < (g.p.roas ?? 0) ? 'dn' : ''}">${pct(g.r.roas)}</em></dd></div>
-    <div><dt>지출 증감</dt><dd>${sgn(g.dx.chg.spend)}</dd></div>
-  </dl>
-  ${chipHTML(g)}
-  <details class="ck-more"><summary>판정 근거</summary><p class="ck-txt">${esc(g.dx.txt)}</p><div class="ck-m">${ch(g.dx.chg, 'cvr', '전환율')}${ch(g.dx.chg, 'ctr', 'CTR')}${ch(g.dx.chg, 'cpm', 'CPM')}</div></details>
-</div>`);
-  const n0 = 6;
-  $('#checks').innerHTML = items.slice(0, checksOpen ? items.length : n0).join('');
-  const b = $('#checks-more');
-  b.hidden = items.length <= n0;
-  b.textContent = checksOpen ? '접기' : `점검 소재 ${items.length}개 모두 보기`;
-  b.setAttribute('aria-expanded', checksOpen ? 'true' : 'false');
-
+function renderStockWatch() {
   const sw = stockWatch();
   const srow = g => `<button type="button" class="srow" data-id="${g.id}" title="${esc(g.stock.why)}">
 <span class="sr-n"><b>${esc(title(g))}</b><span class="c-code">${esc(g.n)}</span></span>
@@ -245,19 +196,100 @@ function renderChecks() {
 <span class="sr-v"><i>총재고</i>${int(totalStock(g))}</span><span class="sr-v"><i>광고비 7일</i>${man(g.r.s)}</span><span class="sr-v"><i>ROAS</i>${pct(g.r.roas)}</span></button>`;
   $('#stock-watch').innerHTML = sw.length ? `<div class="sub-h"><h3>재고 주의 · 지출 상위</h3><p>집행 중 ${sw.length}개 중 최근 7일 광고비 상위 6개. 참고 표시이며 광고 중단 판단이 아닙니다.</p></div>
 <div class="rows srows"><div class="srow sh" aria-hidden="true"><span>상품 · 소재</span><span>품절 색상·사이즈</span><span>총재고</span><span>광고비 7일</span><span>ROAS</span></div>${sw.slice(0, 6).map(srow).join('')}</div>` : '';
-  const z = D.groups.filter(g => g.z).sort((a, b) => b.z.s - a.z.s);
-  $('#today-zero').innerHTML = z.length ? `<div class="sub-h"><h3>11/20 당일 구매 0</h3><p>진행 중 집계라 판단 보류. 다음 날 마감치로 다시 확인.</p></div>
-<div class="rows">${z.map(g => `<button type="button" class="row" data-id="${g.id}">${bdg(VERDICT[g.z.v] || [g.z.v, ''])}<span class="row-n">${esc(title(g))}<span class="c-code">${esc(g.n)}</span></span><span class="row-w">${esc(g.z.txt)}</span><span class="row-s">${man(g.z.s)}<span>당일 광고비</span></span></button>`).join('')}</div>` : '';
+}
+
+/* v3 상단: 광고 1개 = 카드 1장 */
+const TV = {good: ['효율 좋음', 'pos'], ok: ['적당', 'warn'], bad: ['효율 안 좋음', 'neg']};
+const band = r => r == null ? 'none' : r >= 270 ? 'pos' : r >= 200 ? 'warn' : 'neg';
+const roasOf = (s, v) => s > 0 ? v / s * 100 : null;
+function stockFacts(x) {
+  const g = byId[x.g], ps = g.stock.p.map(p => D.products[p]).filter(Boolean), multi = ps.length > 1;
+  const gone = [], miss = [];
+  ps.forEach((pr, i) => {
+    const pre = multi ? `구성${i + 1} ` : '';
+    for (const c of pr.colors) {
+      if (c.qty <= 0) { gone.push(pre + c.color); continue; }
+      Object.keys(c.sizes).filter(z => c.sizes[z] === 0).sort((a, b) => (+a || 0) - (+b || 0)).forEach(z => miss.push(`${pre}${c.color}-${z}`));
+    }
+  });
+  return {linked: ps.length > 0, total: ps.reduce((t, p) => t + (p.total || 0), 0), gone, miss, names: [...new Set(ps.map(p => p.name))]};
+}
+const clip = (arr, n) => arr.length <= n ? esc(arr.join(' · ')) : `${esc(arr.slice(0, n).join(' · '))} <span class="more" title="${esc(arr.join('\n'))}">외 ${arr.length - n}개</span>`;
+function bars(x) {
+  const last = x.ch.length - 1;
+  const col = ([d, s, v, c], i) => {
+    const r = roasOf(s, v), h = r == null ? 0 : Math.min(r, 600) / 600 * 100, live = i === last;
+    return `<div class="bc${live ? ' live' : ''}"><div class="bp"><span class="bl" style="bottom:${h.toFixed(1)}%">${r == null ? '—' : pct(r)}</span>${r == null ? '' : `<i class="bar ${band(r)}${r > 600 ? ' clip' : ''}" style="height:${Math.max(h, 1.5).toFixed(1)}%"></i>`}</div>
+<div class="bx"><b>${md(d)}</b>${live ? '<em>진행 중</em>' : ''}<span>${man(s)}</span><span>${int(c)}건</span></div></div>`;
+  };
+  const lbl = '하루씩 ROAS: ' + x.ch.map(([d, s, v, c], i) => `${md(d)}${i === last ? '(진행 중)' : ''} ${pct(roasOf(s, v))} 쓴 돈 ${man(s)} 구매 ${int(c)}건`).join(', ');
+  return `<div class="chart" role="img" aria-label="${esc(lbl)}"><div class="ya" aria-hidden="true"><span style="bottom:100%">600%</span><span style="bottom:66.67%">400%</span><span style="bottom:33.33%">200%</span><span style="bottom:0">0</span></div>
+<div class="plot"><i class="ref" aria-hidden="true"></i>${x.ch.map(col).join('')}</div></div>`;
+}
+function budgetTxt(b) {
+  if (!b) return '예산 —';
+  if (b.k === 'lifetime') return `총예산 ${man(b.a)} · 어제 ${man(b.y)} 씀 <small>${esc(b.u)}</small>`;
+  return `예산 ${man(b.a)} · 어제 ${pct(b.y / b.a * 100)} 씀 <small>${esc(b.u)} 기준</small>`;
+}
+function tcard(x) {
+  const g = byId[x.g], sf = stockFacts(x), c = who(x.n) || sf.names[0] || g.n.split('_')[0];
+  const prod = (sf.names.join(' + ') || '상품 미연결') + (/1\+1/.test(x.n) && sf.names.length ? ' 1+1' : '');
+  const th = x.img ? `<button type="button" class="tthumb${x.img.lr ? ' lr' : ''}" data-zoom="${x.img.src}" aria-label="${esc(c)} 썸네일 크게 보기"><img src="${x.img.src}" alt="" loading="lazy"></button>`
+    : `<div class="tthumb ph">썸네일<br>없음</div>`;
+  const stockH = !sf.linked ? `<p class="ts muted">재고 연결 안 됨 · 광고 링크로 상품을 확정할 수 없음</p>`
+    : `<p class="ts"><b>재고 ${int(sf.total)}켤레</b></p>${sf.gone.length ? `<p class="ts">다 팔린 색 <span class="neg">${clip(sf.gone, 3)}</span></p>` : ''}${sf.miss.length ? `<p class="ts">없는 사이즈 <span class="warn">${clip(sf.miss, 3)}</span></p>` : ''}`;
+  return `<article class="tc ${x.v}" data-ad="${esc(x.ad)}"><div class="ttop">${th}<div class="tb">
+<div class="tn"><h3>${esc(c)}</h3>${bdg(TV[x.v])}</div>
+<p class="tp">${esc(prod)} · ${esc(x.acc)}</p>${stockH}</div></div>
+<div class="tlow">${bars(x)}
+<p class="big">7일 ${man(x.r.s)} → <b class="${band(x.r.roas)}">${pct(x.r.roas)}</b></p>
+<p class="sub">최근 이틀 <b class="${band(x.r2.roas)}">${pct(x.r2.roas)}</b> · ${budgetTxt(x.b)}</p>
+<div class="tf"><details class="code"><summary>광고 이름</summary><span>${esc(x.n)}</span><span>광고 ID ${esc(x.ad)}</span></details>
+<button type="button" class="tmore" data-id="${x.g}">자세히</button></div></div></article>`;
+}
+function renderTop() {
+  const T = D.top, w = D.windows, by = k => T.filter(x => x.v === k);
+  const sum = (k, f) => T.reduce((t, x) => t + x[k][f], 0);
+  const s7 = sum('r', 's'), v7 = sum('r', 'v'), c7 = sum('r', 'c'), issue = T.filter(x => stockFacts(x).miss.length).length;
+  const tile = (l, v, sub, cls = '') => `<div class="tile ${cls}"><div class="tl">${l}</div><div class="tv">${v}</div><div class="tsub">${sub}</div></div>`;
+  const nb = by('bad').length;
+  $('#tiles').innerHTML = tile('오늘 쓴 돈', man(sum('t', 's')), `여기 광고 ${T.length}개 합계 · ${md(w.today)} 진행 중`)
+    + tile('7일 ROAS', pct(roasOf(s7, v7)), `${man(s7)} 써서 ${int(c7)}건`)
+    + tile('효율 안 좋음', nb + '개', '끌 후보 · 하루씩 판정', nb ? 'neg' : '')
+    + tile('재고 확인사항', issue + '개', '없는 사이즈 등', issue ? 'warn' : '');
+  const badNames = by('bad').map(x => who(x.n) || x.n.split('_')[0]);
+  $('#lead-notes').innerHTML = [
+    '광고 한 장에 사진·쓴 돈→ROAS·하루씩 그래프·재고를 같이 놨어요',
+    `효율 좋음 ${by('good').length}개·적당 ${by('ok').length}개·안 좋음 ${nb}개${badNames.length ? ` (${esc(badNames.join(', '))})` : ''}`,
+    '막대 높이 = 그날 ROAS. 왼쪽 눈금 0·200·400·600%, 빨간 점선 200% 밑이면 손해 쪽이에요. 사진은 누르면 커져요.'
+  ].map(t => `<li>${t}</li>`).join('');
+  const sec = (k, h, p, empty) => {
+    const L = by(k), el = $('#t-' + k), sh = el.parentElement.querySelector('.tier-h');
+    sh.querySelector('h2').textContent = `${h} ${L.length}개`; sh.querySelector('p').textContent = p;
+    el.innerHTML = L.length ? L.map(tcard).join('') : `<div class="empty">${empty}</div>`;
+  };
+  sec('good', '효율 좋은 광고', '7일과 최근 이틀 모두 270% 넘음 — 예산 늘릴 후보', '없음');
+  sec('ok', '적당한 광고', '200~270% 사이 — 그대로 두고 매일 아침 어제 숫자로 다시 판정', '없음');
+  sec('bad', '효율 안 좋은 광고', '7일이나 최근 이틀이 200% 밑 — 끌 후보', `없음 — 상위 ${T.length}개 모두 7일·최근 이틀 200% 이상이에요`);
+  $('#all-note').textContent = `위 ${T.length}개는 광고 하나씩. 아래는 같은 게시물을 한 묶음으로 본 전체 목록이에요(계정·효율·재고 필터, 검색).`;
+}
+function lightbox(src) {
+  const lb = $('#lb');
+  if (!src) { lb.hidden = true; document.body.classList.remove('lock'); return; }
+  $('#lb-img').src = src; lb.hidden = false; document.body.classList.add('lock'); $('#lb-x').focus({preventScroll: true});
 }
 
 function renderNotes() {
+  const w = D.windows;
   const notes = [
+    `<b>판정</b>: 좋음 = 7일(${md(w.recent[0])}~${md(w.recent[1])}) ROAS 270% 이상 그리고 최근 이틀(${md(w.recent2[0])}·${md(w.recent2[1])}) 270% 이상 · 안 좋음 = 둘 중 하나라도 200% 미만 · 나머지 적당. 오늘(${md(w.today)})은 진행 중이라 판정에서 뺍니다.`,
+    `<b>위 ${D.top.length}개</b> = 온라인 계정 · 지금 켜진(ACTIVE) · 구매 최적화 광고 중 7일 쓴 돈 상위 ${D.top.length}개(광고 하나씩). 예산은 캠페인 예산(CBO)이면 캠페인, 아니면 광고세트 기준이며 "어제 ○% 씀"은 그 단위 전체의 어제 지출 ÷ 지금 하루 예산입니다(어제 중 예산이 바뀌었거나 메타가 하루 예산을 넘겨 쓰면 100%를 넘을 수 있음).`,
     '<b>구매</b>는 Meta 귀속 구매(omni_purchase 우선, 없으면 purchase, 그다음 픽셀 구매). 상품별 실제 판매 수량과 같지 않습니다.',
     '<b>ROAS</b> = 기간 귀속매출 합 ÷ 광고비 합. 일별 ROAS의 평균이 아닙니다.',
-    '<b>200% · 270%</b>는 소재 비교 구간일 뿐 손익분기점이 아닙니다. 표본 부족 = 최근 7일 광고비 3만원 미만 또는 집행일 3일 미만.',
-    '<b>재고</b>는 ' + esc(D.stockRule) + ' 참고 표시이며 광고 중단 판단이 아닙니다.',
-    `<b>스냅샷</b>입니다. 광고는 ${esc(fmtTime(D.retrieved))}, 재고는 ${esc(fmtTime(D.stockAsOf))} 조회 값이며 자동 갱신되지 않습니다. 11/20은 진행 중 하루치입니다.`,
-    '<b>소재 묶음</b>은 같은 게시물(없으면 같은 크리에이티브)을 계정·최적화 목적별로 합친 단위입니다. 온라인 합계는 온라인 3개 계정 기준이며 오프라인 계정은 제외했습니다.'
+    '<b>200% · 270%</b>는 소재 비교 구간이며 손익분기점이 아닙니다. 아래 전체 목록의 표본 부족 = 최근 7일 광고비 3만원 미만 또는 집행일 3일 미만.',
+    '<b>재고</b>는 ' + esc(D.stockRule) + ' 카드의 "없는 사이즈"는 재고가 남은 색상 중 판매 옵션 수량이 0인 사이즈, "다 팔린 색"은 색상 전체 0. 1+1 세트는 구성품별로 표시합니다. 참고 표시이며 광고 중단 판단이 아닙니다.',
+    `<b>스냅샷</b>입니다. 광고는 ${esc(fmtTime(D.retrieved))}, 재고는 ${esc(fmtTime(D.stockAsOf))} 조회 값이며 자동 갱신되지 않습니다.`,
+    '<b>전체 목록의 소재 묶음</b>은 같은 게시물(없으면 같은 크리에이티브)을 계정·최적화 목적별로 합친 단위입니다.'
   ];
   $('#notes').innerHTML = notes.map(n => `<li>${n}</li>`).join('');
 }
@@ -273,7 +305,7 @@ function fmtTime(iso) {
 function panelHTML(g) {
   const acc = D.accounts[g.a].name, n = D.dates.length;
   const per = (l, f) => `<tr><td>${l}</td><td class="n">${f(g.p)}</td><td class="n">${f(g.r)}</td><td class="n">${f(g.t)}</td></tr>`;
-  const periods = `<div class="p-box"><table><thead><tr><th></th><th class="n">직전 7일</th><th class="n">최근 7일</th><th class="n">11/20 진행 중</th></tr></thead><tbody>
+  const periods = `<div class="p-box"><table><thead><tr><th></th><th class="n">직전 7일</th><th class="n">최근 7일</th><th class="n">${md(D.windows.today)} 진행 중</th></tr></thead><tbody>
 ${per('광고비', x => won(x.s))}${per('구매', x => int(x.c))}${per('매출', x => won(x.v))}${per('ROAS', x => pct(x.roas))}${per('구매당 비용', x => won(x.cpa))}</tbody></table></div>`;
   let memo = '';
   if (g.dx) {
@@ -340,10 +372,9 @@ function bind() {
   $('#f-pa').addEventListener('click', e => { const on = !state.pa; e.currentTarget.setAttribute('aria-pressed', on); set('pa', on ? '1' : ''); });
   document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => { set('view', b.dataset.view); syncControls(); }));
   $('#list-more').addEventListener('click', () => { limit += 60; renderList(); });
-  $('#checks-more').addEventListener('click', () => { checksOpen = !checksOpen; renderChecks(); });
   document.addEventListener('click', e => { const el = e.target.closest('[data-id]'); if (el && !e.target.closest('a,details')) openPanel(el.dataset.id); });
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') return closePanel();
+    if (e.key === 'Escape') { if (!$('#lb').hidden) return lightbox(null); return closePanel(); }
     const el = e.target.closest && e.target.closest('[data-id][tabindex]');
     if (el && !e.target.closest('summary') && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openPanel(el.dataset.id); }
     if (e.key === 'Tab' && !$('#panel').hidden) {  // 포커스 가두기
@@ -353,7 +384,8 @@ function bind() {
       else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
     }
   });
-  $('#summary').addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) document.getElementById(b.dataset.go).scrollIntoView({block: 'start'}); });
+  document.addEventListener('click', e => { const z = e.target.closest('[data-zoom]'); if (z) { e.stopPropagation(); lightbox(z.dataset.zoom); } }, true);
+  $('#lb').addEventListener('click', () => lightbox(null));
   $('#p-close').addEventListener('click', closePanel);
   $('#scrim').addEventListener('click', closePanel);
   addEventListener('hashchange', () => { readHash(); syncControls(); renderList(); state.ad ? openPanel(state.ad, false) : closePanel(); });
@@ -370,13 +402,11 @@ async function init() {
     return;
   }
   D.groups.forEach(g => { byId[g.id] = g; });
-  const w = D.windows;
-  $('#period').textContent = `최근 7일 ${md(w.recent[0])}–${md(w.recent[1]).split('/')[1]} vs 직전 7일 ${md(w.previous[0])}–${md(w.previous[1]).split('/')[1]}`;
-  $('#asof').textContent = `광고 ${fmtTime(D.retrieved)} · 재고 ${fmtTime(D.stockAsOf)}`;
+  $('#asof').textContent = `${fmtTime(D.retrieved).replace(' KST', '')} 기준 · 메타 광고 관리자·자사몰 재고 직접 조회`;
   const used = new Set(D.groups.map(g => g.a));
   $('#f-acc').innerHTML = '<option value="">전체 계정</option>' + D.accounts.map((a, i) => used.has(i) ? `<option value="${i}">${esc(a.name)}</option>` : '').join('');
   readHash(); syncControls();
-  renderSummary(); renderKPI(); renderChecks(); renderNotes(); renderList(); bind();
+  renderTop(); renderStockWatch(); renderNotes(); renderList(); bind();
   if (state.ad) openPanel(state.ad, false);
 }
 init();
