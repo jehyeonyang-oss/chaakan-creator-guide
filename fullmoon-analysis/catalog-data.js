@@ -2,13 +2,23 @@ window.INTRO_CATALOG={
   "forms": [
     {
       "id": "full",
-      "title": "전신으로 시작",
-      "description": "서 있는 전신과 전체 비율을 첫 화면에 보여준다.",
+      "title": "얼굴 포함 전신으로 시작",
+      "description": "얼굴 영역과 코디·신발을 한 화면에 담는다. 거울 속 폰 가림도 얼굴 영역을 포함한 구도로 구분한다.",
       "example": "DeN7q2xyco4",
-      "count": 28,
-      "measured": 9,
+      "count": 22,
+      "measured": 3,
       "median": 1041,
       "originalCount": 19
+    },
+    {
+      "id": "cropped",
+      "title": "가슴 아래·하반신으로 시작",
+      "description": "얼굴을 화면 밖으로 자르고 상의 밑단·다리·신발 또는 다리·신발을 크게 담는다.",
+      "example": "DdAKlUryihs",
+      "count": 10,
+      "originalCount": 5,
+      "measured": 7,
+      "median": 4778
     },
     {
       "id": "face",
@@ -26,8 +36,8 @@ window.INTRO_CATALOG={
       "description": "첫 화면부터 좌우 두 모습을 나란히 비교한다.",
       "example": "Dfjc1_Jzv1K",
       "count": 17,
-      "measured": 6,
-      "median": 99.0,
+      "measured": 7,
+      "median": 169,
       "originalCount": 10
     },
     {
@@ -43,10 +53,12 @@ window.INTRO_CATALOG={
     {
       "id": "other",
       "title": "별도 컷·변형",
-      "description": "하반신 근접, 제품 단독, 박스 등 네 가지 밖의 시작.",
-      "example": "DcNzj53oSTy",
-      "count": 12,
-      "originalCount": 11
+      "description": "얼굴 설명 먼저, 제품 단독, 박스 등 착장·신발 시작과 다른 도입.",
+      "example": "DfEYoeRJOKx",
+      "count": 8,
+      "originalCount": 6,
+      "measured": 2,
+      "median": 832.5
     }
   ],
   "items": [
@@ -101,7 +113,7 @@ window.INTRO_CATALOG={
       "code": "DSWnkVjk8BL",
       "title": "\"로퍼 안에 하이힐급 굽이 들어있다고요?\" 의문형 수치훅, 만화 스피드라인",
       "owner": "",
-      "form": "other",
+      "form": "cropped",
       "subtype": "하반신 착화 근접",
       "opening": "하반신 착화 근접 → 약 2초 전신. 처음부터 ‘로퍼 안에 하이힐급 굽이 들어있다고요?’.",
       "userNote": "",
@@ -142,7 +154,8 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": "하반신 착화 근접 → 약 2초 전신. 처음부터 ‘로퍼 안에 하이힐급 굽이 들어있다고요?’."
+      "verification": "하반신 착화 근접 → 약 2초 전신. 처음부터 ‘로퍼 안에 하이힐급 굽이 들어있다고요?’.",
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
     },
     {
       "code": "DLrxcDspefh",
@@ -618,7 +631,7 @@ window.INTRO_CATALOG={
       "code": "DU5zy8Xjwp_",
       "title": "바닥에 앉은 자세로 교차한 다리와 검은 메리제인을 탑다운으로 비추며 '키작녀' 텍스트가 뜬다.",
       "owner": "",
-      "form": "other",
+      "form": "cropped",
       "subtype": "앉은 착장·신발 근접",
       "opening": "얼굴이 잘린 앉은 착장·다리와 신발 근접 → 약 1.5초 서 있는 착장 → 제품. 전신 시작과 구분.",
       "userNote": "",
@@ -659,7 +672,8 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": "얼굴이 잘린 앉은 착장·다리와 신발 근접 → 약 1.5초 서 있는 착장 → 제품. 전신 시작과 구분."
+      "verification": "얼굴이 잘린 앉은 착장·다리와 신발 근접 → 약 1.5초 서 있는 착장 → 제품. 전신 시작과 구분.",
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
     },
     {
       "code": "DPQZmj8Ew6c",
@@ -1417,7 +1431,7 @@ window.INTRO_CATALOG={
       "code": "DcNzj53oSTy",
       "title": "착화 모습을 먼저, 다음에 바지 밑단 문제",
       "owner": "",
-      "form": "other",
+      "form": "cropped",
       "subtype": "하반신 착화·바지 밑단",
       "opening": "낮은 카메라로 이미 신발을 신은 청바지 하반신을 크게 잡습니다. 발을 돌리며 “티 안 나게 +7cm 커지는 신발”을 띄운 뒤, 약 2.3초부터 신발 없이 바닥에 끌리는 밑단으로 전환합니다.",
       "userNote": "",
@@ -1463,7 +1477,8 @@ window.INTRO_CATALOG={
       "recent": true,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
     },
     {
       "code": "DZuRiWiSIXc",
@@ -2503,7 +2518,7 @@ window.INTRO_CATALOG={
       "code": "DegqqlyIkch",
       "title": "바지 고민을 자막으로 바로 부르기",
       "owner": "",
-      "form": "other",
+      "form": "cropped",
       "subtype": "하반신 착화·바지 밑단",
       "opening": "기존 예시 1과 2는 하반신 착화·바지 밑단 패턴 한 묶음으로 통합. 서로 다른 게시물의 반응 수치는 합산하지 않음. 이 영상은 1.8초 보관 도입 발췌이며 원본의 정확한 0~3초는 미확인.",
       "userNote": "",
@@ -2528,13 +2543,14 @@ window.INTRO_CATALOG={
       "recent": true,
       "comparisonOnly": false,
       "message": "바지 고민 직접 호출",
-      "verification": "기존 예시 1과 2는 하반신 착화·바지 밑단 패턴 한 묶음으로 통합. 서로 다른 게시물의 반응 수치는 합산하지 않음. 이 영상은 1.8초 보관 도입 발췌이며 원본의 정확한 0~3초는 미확인."
+      "verification": "기존 예시 1과 2는 하반신 착화·바지 밑단 패턴 한 묶음으로 통합. 서로 다른 게시물의 반응 수치는 합산하지 않음. 이 영상은 1.8초 보관 도입 발췌이며 원본의 정확한 0~3초는 미확인.",
+      "framingReview": "2026-11-21 보관 발췌의 구도만 분류. 원본의 정확한 시작은 미확인."
     },
     {
       "code": "De8r7fnT0Rb",
       "title": "하반신 착화 + 티 안 나게 7cm",
       "owner": "",
-      "form": "other",
+      "form": "cropped",
       "subtype": "하반신 착화·바지 밑단",
       "opening": "얼굴을 자른 하반신 측면에서 넓은 검정 바지와 신발을 보여줍니다. 발을 앞으로 내밀고 뒤꿈치를 들며 “티 안 나게 +7cm 커지는 신발”을 띄웁니다. 약 2초부터 발을 내려다보는 화면과 들어 올린 발로 바뀝니다.",
       "userNote": "",
@@ -2572,7 +2588,8 @@ window.INTRO_CATALOG={
       "recent": true,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
     },
     {
       "code": "DWix4Kfjyjb",
@@ -2895,7 +2912,7 @@ window.INTRO_CATALOG={
     },
     {
       "code": "Dd6AqtqTKtd",
-      "form": "full",
+      "form": "cropped",
       "userNote": "전신샷으로 시작한다.",
       "keywords": [],
       "owner": "suning_02",
@@ -2932,15 +2949,16 @@ window.INTRO_CATALOG={
       },
       "comparisonOnly": false,
       "subtype": "",
-      "opening": "한 화면 전신에서 Before→After로 순차 전환. ‘(남들 몰래) +8cm 비율 여신 되는법?’ → 약 2초 얼굴 옆에 신발을 들며 ‘그 비결은’.",
+      "opening": "얼굴을 프레임 밖으로 자른 목 아래 착장·신발로 Before→After 전환. “(남들 몰래) +8cm 비율 여신 되는법?” → 약 2초 신발을 손에 들어 보여줌.",
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
     },
     {
       "code": "DfEYoeRJOKx",
-      "form": "full",
+      "form": "other",
       "userNote": "전신샷으로 시작한다.",
       "keywords": [],
       "owner": "os1rin",
@@ -2976,12 +2994,13 @@ window.INTRO_CATALOG={
         "total": null
       },
       "comparisonOnly": false,
-      "subtype": "",
+      "subtype": "얼굴·마이크 먼저",
       "opening": "첫 3초에는 얼굴·마이크 중심의 가까운 구도. ‘다들 키가 몇이셩?..’ → 약 2.5초 ‘전 161 쪼꼬민데요..’.",
       "message": "키 변화·비교",
       "verification": "사용자는 전신 계열로 분류했지만 첫 3초 캡처에서는 신발까지 보이는 전신이 아니라 얼굴·마이크가 중심이다.",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "framingReview": "2026-11-21 첫 0.1·1.5·2.5초 대조: 첫 화면에 신발 끝까지 들어오지 않아 전신 시작에서 제외."
     },
     {
       "code": "Dd5-eyYBPmY",
@@ -3075,7 +3094,7 @@ window.INTRO_CATALOG={
     },
     {
       "code": "DOu-GErkbFF",
-      "form": "full",
+      "form": "cropped",
       "userNote": "전신으로 시작한다. 제품은 여러 개지만 ‘키작녀’ 키워드를 사용한다.",
       "keywords": [
         "키작녀"
@@ -3115,11 +3134,12 @@ window.INTRO_CATALOG={
       },
       "comparisonOnly": false,
       "subtype": "",
-      "opening": "거울 전신의 룩과 신발을 보여주며 ‘Today’s scoop SHOES / 키작녀 신발 4가지’. 키작녀 타깃을 지정한 여러 제품 추천.",
+      "opening": "얼굴을 자른 거울 착장과 신발로 시작. “Today’s scoop SHOES / 키작녀 신발 4가지”. 여러 제품 추천.",
       "message": "룩·제품 제시",
       "verification": "4는 제품 수이며 키·굽 숫자가 아니다. 여러 제품 추천이므로 단일 제품 광고와 별도 비교.",
       "numeric": false,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
     },
     {
       "code": "De8x3lEs178",
@@ -3168,7 +3188,7 @@ window.INTRO_CATALOG={
     },
     {
       "code": "DfmEIA4PxeX",
-      "form": "full",
+      "form": "other",
       "userNote": "전신으로 시작한다.",
       "keywords": [],
       "owner": "imjinudax",
@@ -3204,12 +3224,13 @@ window.INTRO_CATALOG={
         "total": null
       },
       "comparisonOnly": false,
-      "subtype": "",
-      "opening": "계단에서 착장을 보여주고 발을 뒤로 듦. ‘148cm→153cm / 키작녀 비율 사기템 / +5cm 플랫폼슈즈’. 약 2초 정면 전신.",
+      "subtype": "얼굴·상반신 → 전신",
+      "opening": "계단에서 얼굴·상반신을 가깝게 보여주며 시작하고 첫 화면에는 신발이 안 보임. 약 1.5초 발을 뒤로 들어 신발을 보여준 뒤 약 2초 정면 전신. “148cm→153cm / 키작녀 비율 사기템 / +5cm 플랫폼슈즈”.",
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "framingReview": "2026-11-21 첫 0.1·1.5·2.5초 대조: 첫 화면에 신발 끝까지 들어오지 않아 전신 시작에서 제외."
     },
     {
       "code": "Dd3aEqAhPYy",
@@ -3393,7 +3414,7 @@ window.INTRO_CATALOG={
     },
     {
       "code": "DfjXAjniDVZ",
-      "form": "full",
+      "form": "cropped",
       "userNote": "전신으로 시작하며 룩에 중점을 둔다.",
       "keywords": [
         "룩 강조"
@@ -3436,7 +3457,8 @@ window.INTRO_CATALOG={
       "message": "룩·제품 제시",
       "verification": "사용자 분류는 전신·룩 강조. 실제 첫 컷은 얼굴이 잘린 착장 중심 구도이며 +8cm가 함께 표시된다.",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
     },
     {
       "code": "DfExBnHM3a5",
@@ -3575,7 +3597,7 @@ window.INTRO_CATALOG={
     },
     {
       "code": "DdAKlUryihs",
-      "form": "full",
+      "form": "cropped",
       "userNote": "전신으로 시작하며 신발 자체가 예쁘게 보이는 컷. 인트로에 +8 히든굽 키워드를 넣는다.",
       "keywords": [
         "신발 디자인",
@@ -3619,11 +3641,12 @@ window.INTRO_CATALOG={
       "message": "룩·제품 제시",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
     },
     {
       "code": "DfpfYNqyilE",
-      "form": "other",
+      "form": "cropped",
       "userNote": "어그 그냥 신지 마세요라는 문구로 시선을 끄는 예시.",
       "keywords": [
         "어그 그냥 신지 마세요"
@@ -3666,7 +3689,8 @@ window.INTRO_CATALOG={
       "message": "일반 어그 훅",
       "verification": "",
       "numeric": null,
-      "mediaNote": "일반 어그·레그워머 훅 참고. 키높이 신발 반응 집계에서는 제외."
+      "mediaNote": "일반 어그·레그워머 훅 참고. 키높이 신발 반응 집계에서는 제외.",
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
     }
   ],
   "total": 78,
