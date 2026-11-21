@@ -33,8 +33,33 @@ const bdg = ([t, c], title) => `<span class="bdg ${c}"${title ? ` title="${esc(t
 const PA = /시딩|파트너|(?:^|_)PA(?:_|$)/i;
 const isPA = g => g.names.concat(g.camp).some(s => PA.test(s));
 
-let D, byId = {}, state = {}, limit = 60, lastFocus = null;
-const DEF = {q: '', acc: '', cat: '', stock: '', on: '', sort: 'spend', pa: '', view: 'card', ad: ''};
+let D, byId = {}, state = {}, limit = 60, lastFocus = null, productViews = [];
+const DEF = {q: '', acc: '', cat: '', stock: '', on: '', sort: 'spend', pa: '', view: 'card', ad: '', product: ''};
+const originFor = aid => D.originals?.[aid];
+const hasOriginal = g => g.ads.some(a => originFor(a)?.post || originFor(a)?.media?.length);
+function originalAction(aid,group,label='원본 보기') {
+  const o=originFor(aid);
+  if(o?.post && !o.media?.length)return `<a class="original-open" href="${esc(o.post)}" target="_blank" rel="noopener">${label} ↗</a>`;
+  return `<button type="button" class="original-open" data-original="${aid}" data-group="${group}">${label}</button>`;
+}
+function matchProduct(g) {
+  if (!state.product) return true;
+  const p = productViews.find(p => p.key === state.product); if (!p) return false;
+  const ids = g.stock.p.map(String).concat(g.ads.flatMap(a => originFor(a)?.products || []));
+  return p.ids.some(id => ids.includes(id));
+}
+function setupProducts() {
+  const names = new Map();
+  for (const [id, p] of Object.entries(D.products)) {
+    const name = p.name.trim();
+    if (!names.has(name)) names.set(name, []);
+    names.get(name).push(id);
+  }
+  productViews = [...names].map(([name, ids]) => ({name, ids: ids.sort((a,b)=>+a-+b), key: ids.join(',')})).sort((a,b)=>a.name.localeCompare(b.name,'ko'));
+  $('#product-select').innerHTML = '<option value="">전체 제품</option>' + productViews.map(p => `<option value="${p.key}">${esc(p.name)}</option>`).join('');
+  const shortcuts = [{key:'',name:'전체'},...['듀마','풀문'].map(n=>productViews.find(p=>p.name.includes(n))).filter(Boolean)];
+  $('#product-shortcuts').innerHTML = shortcuts.map(p=>`<button type="button" class="chip" data-product="${p.key}">${esc(p.key ? p.name.split(' ')[0] : p.name)}</button>`).join('');
+}
 
 function readHash() {
   const h = new URLSearchParams(location.hash.slice(1));
@@ -137,6 +162,7 @@ function card(g) {
     <div><dt>ROAS</dt><dd>${pct(g.r.roas)}${d == null ? '' : delta(d, '%p', {digits: 0})}</dd></div>
   </dl>
   <div class="spark">${spark(g)}<div class="spark-l"><span>${md(D.dates[0])}</span><span>직전 ${pct(g.p.roas)} · 당일 ${man(g.t.s)}</span><span>${md(D.dates[D.dates.length - 1])}</span></div></div>
+  <div class="card-original">${hasOriginal(g) ? originalAction(g.ads.find(a=>originFor(a)?.media?.length)||g.ads.find(a=>originFor(a)?.post)||g.ads[0],g.id,'광고 원본 보기') : '<span class="muted">원본 미확보</span>'}</div>
 </div>`;
 }
 
@@ -154,6 +180,7 @@ function table(list) {
 function filtered() {
   const q = state.q.trim().toLowerCase();
   const L = D.groups.filter(g =>
+    matchProduct(g) &&
     (state.on === 'all' || g.on > 0) &&
     (!state.acc || String(g.a) === state.acc) &&
     (!state.cat || g.cat === state.cat) &&
@@ -181,13 +208,15 @@ function renderList() {
 }
 
 function syncControls() {
+  $('#product-select').value = state.product;
+  document.querySelectorAll('[data-product]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.product===state.product)));
   $('#q').value = state.q;
   for (const [id, k] of [['#f-acc', 'acc'], ['#f-cat', 'cat'], ['#f-stock', 'stock'], ['#f-on', 'on'], ['#sort', 'sort']]) $(id).value = state[k];
   $('#f-pa').setAttribute('aria-pressed', state.pa ? 'true' : 'false');
   document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.view === state.view ? 'true' : 'false'));
 }
 
-const stockWatch = () => D.groups.filter(g => g.on > 0 && (g.stock.st === 'risk' || g.stock.st === 'soldout')).sort((a, b) => b.r.s - a.r.s);
+const stockWatch = () => D.groups.filter(g => matchProduct(g) && g.on > 0 && (g.stock.st === 'risk' || g.stock.st === 'soldout')).sort((a, b) => b.r.s - a.r.s);
 function renderStockWatch() {
   const sw = stockWatch();
   const srow = g => `<button type="button" class="srow" data-id="${g.id}" title="${esc(g.stock.why)}">
@@ -199,9 +228,18 @@ function renderStockWatch() {
 }
 
 /* v3 상단: 광고 1개 = 카드 1장 */
-const TV = {good: ['효율 좋음', 'pos'], ok: ['적당', 'warn'], bad: ['효율 안 좋음', 'neg']};
+const TV = {good: ['효율 좋음', 'pos'], ok: ['적당', 'warn'], bad: ['효율 안 좋음', 'neg'], sample:['표본 부족','line']};
 const band = r => r == null ? 'none' : r >= 270 ? 'pos' : r >= 200 ? 'warn' : 'neg';
 const roasOf = (s, v) => s > 0 ? v / s * 100 : null;
+function visibleTop() {
+  if (!state.product) return D.top;
+  return D.groups.filter(g=>matchProduct(g) && g.on>0 && g.ev==='PURCHASE' && ['OFFSITE_CONVERSIONS','VALUE'].includes(g.goal) && g.r.s>0)
+    .sort((a,b)=>b.r.s-a.r.s).slice(0,10).map(g=>{
+      const rr=g.dy.slice(-3,-1),s=rr.reduce((n,d)=>n+d[0],0),v=rr.reduce((n,d)=>n+d[1],0),c=rr.reduce((n,d)=>n+d[2],0),r2={s,v,c,roas:roasOf(s,v)};
+      const verdict=g.cat==='sample'?'sample':(g.r.roas||0)>=270&&(r2.roas||0)>=270?'good':(g.r.roas||0)<200||(r2.roas||0)<200?'bad':'ok';
+      return {g:g.id,ad:g.ads.find(a=>originFor(a)?.media?.length)||g.ads.find(a=>originFor(a)?.post)||g.ads[0],n:g.n,acc:D.accounts[g.a].name,img:g.img,r:g.r,r2,t:g.t,v:verdict,b:null,isGroup:true,ch:g.dy.slice(-4).map((d,i)=>[D.dates[D.dates.length-4+i],d[0],d[1],d[2]])};
+    });
+}
 function stockFacts(x) {
   const g = byId[x.g], ps = g.stock.p.map(p => D.products[p]).filter(Boolean), multi = ps.length > 1;
   const gone = [], miss = [];
@@ -246,32 +284,36 @@ ${th}<div class="tc-content"><div class="tn"><h3>${esc(name)}</h3>${bdg(TV[x.v])
 <p class="tp" title="${esc(x.n)}">${esc([c,hook].filter(Boolean).join(' · ') || x.n)}</p>
 <div class="tc-numbers"><div><span>7일 ROAS</span><strong class="${band(x.r.roas)}">${pct(x.r.roas)}</strong></div><div><span>7일 쓴 돈</span><b>${man(x.r.s)}</b></div><div><span>구매</span><b>${int(x.r.c)}건</b></div></div>
 ${bars(x)}<p class="sub">최근 이틀 <b class="${band(x.r2.roas)}">${pct(x.r2.roas)}</b></p>
-<div class="tc-stock">${stockH}</div><button type="button" class="tmore" data-id="${x.g}">상세 설명 · 재고 보기</button></div></article>`;
+<div class="tc-stock">${stockH}</div><div class="tc-actions">${originalAction(x.ad,x.g)}<button type="button" class="tmore" data-id="${x.g}">상세 · 재고</button></div></div></article>`;
 }
 function renderTop() {
-  const T = D.top, w = D.windows, by = k => T.filter(x => x.v === k);
-  const sum = (k, f) => T.reduce((t, x) => t + x[k][f], 0);
+  const T = visibleTop(), w = D.windows, by = k => T.filter(x => x.v === k || (k==='ok'&&x.v==='sample'));
+  const total = state.product ? D.groups.filter(g=>matchProduct(g)&&g.on>0) : T;
+  const sum = (k, f) => total.reduce((t, x) => t + x[k][f], 0);
   const s7 = sum('r', 's'), v7 = sum('r', 'v'), c7 = sum('r', 'c'), issue = T.filter(x => stockFacts(x).miss.length).length;
   const tile = (l, v, sub, cls = '') => `<div class="tile ${cls}"><div class="tl">${l}</div><div class="tv">${v}</div><div class="tsub">${sub}</div></div>`;
   const nb = by('bad').length;
-  $('#tiles').innerHTML = tile('오늘 쓴 돈', man(sum('t', 's')), `여기 광고 ${T.length}개 합계 · ${md(w.today)} 진행 중`)
+  $('#tiles').innerHTML = tile('오늘 쓴 돈', man(sum('t', 's')), `${state.product?'선택 제품 집행 중 전체':'여기 광고 '+T.length+'개'} 합계 · ${md(w.today)} 진행 중`)
     + tile('7일 ROAS', pct(roasOf(s7, v7)), `${man(s7)} 써서 ${int(c7)}건`)
     + tile('효율 안 좋음', nb + '개', `상위 ${T.length}개 광고 중`, nb ? 'neg' : '')
     + tile('재고 확인사항', issue + '개', '없는 사이즈 등', issue ? 'warn' : '');
   const badNames = by('bad').map(x => who(x.n) || x.n.split('_')[0]);
   $('#lead-notes').innerHTML = [
-    `광고비 상위 ${T.length}개 · 완료 7일 ${md(w.recent[0])}–${md(w.recent[1])} · 빗금 막대는 오늘(진행 중)`,
+    `${state.product?'선택 제품의 구매 목적 소재 묶음':'광고'} 지출 상위 ${T.length}개 · 완료 7일 ${md(w.recent[0])}–${md(w.recent[1])} · 빗금 막대는 오늘(진행 중)`,
     '카드를 누르면 상세 설명과 재고가 열립니다. 사진을 누르면 확대됩니다. 200%·270%는 비교 기준이며 손익분기점은 아닙니다.'
   ].map(t => `<li>${t}</li>`).join('');
   const sec = (k, h, p, empty) => {
     const L = by(k), el = $('#t-' + k), sh = el.parentElement.querySelector('.tier-h');
+    el.parentElement.hidden = L.length === 0;
     sh.querySelector('h2').textContent = `${h} ${L.length}개`; sh.querySelector('p').textContent = p;
     el.innerHTML = L.length ? L.map(tcard).join('') : `<div class="empty">${empty}</div>`;
   };
   sec('good', '효율 좋은 광고', '7일·최근 이틀 모두 270% 이상', '없음');
-  sec('ok', '지켜볼 광고', '200% 이상 · 최근 흐름 확인', '없음');
+  sec('ok', '지켜볼 광고', by('ok').some(x=>x.v==='sample') ? '효율 관찰 · 집행 표본 확인' : '200% 이상 · 최근 흐름 확인', '없음');
   sec('bad', '효율 낮은 광고', '7일 또는 최근 이틀 200% 미만', `상위 ${T.length}개 중 해당 없음 · 전체 목록은 아래에서 확인`);
-  $('#all-note').textContent = `위 ${T.length}개는 광고 하나씩. 아래는 같은 게시물을 한 묶음으로 본 전체 목록이에요(계정·효율·재고 필터, 검색).`;
+  $('#all-note').textContent = state.product ? '선택 제품의 전체 소재 묶음입니다. 일반·히든 판매페이지 광고와 이 제품이 포함된 1+1 광고를 함께 봅니다.' : `위 ${T.length}개는 광고 하나씩. 아래는 같은 게시물을 한 묶음으로 본 전체 목록이에요(계정·효율·재고 필터, 검색).`;
+  const selected = productViews.find(p=>p.key===state.product);
+  $('#product-note').textContent = selected ? `${selected.name} · 합계는 이 제품을 광고한 집행 중 소재 전체입니다. 여러 제품이 함께 나오는 광고는 각 제품 보기에 포함되므로 제품별 합계를 서로 더하면 중복됩니다.` : '제품을 선택하면 해당 제품의 광고와 합산 성과를 볼 수 있습니다. 같은 제품의 일반·히든 판매페이지는 함께 묶습니다.';
 }
 function lightbox(src) {
   const lb = $('#lb');
@@ -302,11 +344,23 @@ function fmtTime(iso) {
 }
 
 /* 패널 */
+function originalsHTML(g) {
+  const seen = new Set(), rows = [];
+  for (const aid of g.ads) {
+    const o=originFor(aid); if (!o || (!o.post && !o.media?.length)) continue;
+    const key=o.post || aid; if(seen.has(key))continue;seen.add(key);
+    const media=(o.media||[]).map(m=>m.type==='video'
+      ? `<video class="original-video" controls playsinline preload="metadata"${g.img?` poster="${esc(g.img.src)}"`:''}><source src="${esc(m.src)}" type="video/mp4">브라우저가 영상을 지원하지 않습니다.</video><a class="p-link" href="${esc(m.src)}" target="_blank" rel="noopener">광고 영상 새 창에서 보기</a>`
+      : `<a href="${esc(m.src)}" target="_blank" rel="noopener"><img class="original-image" src="${esc(m.src)}" alt="광고 등록 이미지 원본" loading="lazy"></a><a class="p-link" href="${esc(m.src)}" target="_blank" rel="noopener">광고 이미지 원본 열기</a>`).join('');
+    rows.push(`<div class="original-item" data-original-ad="${aid}">${media||'<p class="p-sub">아래 원본 게시물에서 전체 광고를 볼 수 있습니다.</p>'}${o.post?`<a class="original-post" href="${esc(o.post)}" target="_blank" rel="noopener">Instagram 원본 게시물 열기 ↗</a>`:''}<details class="code"><summary>이 원본의 광고 이름</summary><span>${esc(o.name)}</span></details></div>`);
+  }
+  return `<div class="p-sec p-originals" id="ad-originals"><h3>광고 원본</h3>${rows.join('')||`<p class="p-sub">${D.originLoadFailed?'원본 목록을 불러오지 못했습니다. 새로고침해 주세요.':'이 광고의 원본 주소는 현재 조회되지 않았습니다.'}</p>`}</div>`;
+}
 function explainHTML(g) {
-  const topAds = D.top.filter(x => x.g === g.id);
+  const topAds = visibleTop().filter(x => x.g === g.id);
   const explain = topAds.map(x => {
-    const reason = x.v === 'good' ? '7일과 최근 이틀의 ROAS가 모두 270% 이상입니다.' : x.v === 'bad' ? '7일 또는 최근 이틀의 ROAS가 200% 미만입니다.' : '두 기간 모두 200% 이상이지만, 한쪽 이상이 270%에 미치지 못합니다.';
-    return `<div class="p-memo"><b>${esc(TV[x.v][0])}으로 표시한 이유</b><p>최근 7일 ROAS <b>${pct(x.r.roas)}</b> · 최근 이틀 <b>${pct(x.r2.roas)}</b>. ${reason}</p><p>7일 광고비 ${won(x.r.s)}로 메타 귀속 구매 ${int(x.r.c)}건이 잡혔습니다. 오늘 ${md(D.windows.today)}은 진행 중이므로 위 판정에서 제외했습니다.</p>${x.b ? `<p>${budgetTxt(x.b)}. 여러 광고가 공유하는 예산일 수 있습니다.</p>` : ''}${g.cnt > 1 ? `<p>이 설명은 광고 ID ${esc(x.ad)} 기준이며, 아래 기간 비교는 같은 소재 광고 ${g.cnt}개를 합산합니다.</p>` : ''}</div>`;
+    const reason = x.v==='sample'?'광고비 3만원 또는 집행 3일 기준을 충족하지 못해 효율 판정을 보류합니다.':x.v === 'good' ? '7일과 최근 이틀의 ROAS가 모두 270% 이상입니다.' : x.v === 'bad' ? '7일 또는 최근 이틀의 ROAS가 200% 미만입니다.' : '두 기간 모두 200% 이상이지만, 한쪽 이상이 270%에 미치지 못합니다.';
+    return `<div class="p-memo"><b>${esc(TV[x.v][0])}으로 표시한 이유</b><p>최근 7일 ROAS <b>${pct(x.r.roas)}</b> · 최근 이틀 <b>${pct(x.r2.roas)}</b>. ${reason}</p><p>7일 광고비 ${won(x.r.s)}로 메타 귀속 구매 ${int(x.r.c)}건이 잡혔습니다. 오늘 ${md(D.windows.today)}은 진행 중이므로 위 판정에서 제외했습니다.</p>${x.b ? `<p>${budgetTxt(x.b)}. 여러 광고가 공유하는 예산일 수 있습니다.</p>` : ''}${g.cnt > 1 ? `<p>${x.isGroup?'이 설명과 아래 기간 비교는 같은 소재 광고 '+g.cnt+'개를 합산합니다.':'이 설명은 광고 ID '+esc(x.ad)+' 기준이며, 아래 기간 비교는 같은 소재 광고 '+g.cnt+'개를 합산합니다.'}</p>` : ''}</div>`;
   }).join('');
   let body = explain;
   if (!body) body = `<div class="p-memo"><b>${esc(CAT[g.cat][0])}</b><p>최근 7일 광고비 ${won(g.r.s)}, 구매 ${int(g.r.c)}건, ROAS ${pct(g.r.roas)}입니다.${g.cat === 'sample' ? ' 광고비 3만원 또는 집행 3일 기준을 충족하지 않아 효율 판정을 보류합니다.' : g.cat === 'other' ? ' 구매 목적이 아닌 광고는 구매 ROAS만으로 평가하지 않습니다.' : ' 전체 목록은 최근 7일 ROAS 구간으로 분류합니다.'}</p></div>`;
@@ -348,6 +402,7 @@ ${per('광고비', x => won(x.s))}${per('구매', x => int(x.c))}${per('매출',
   return `<h2 class="p-title" id="p-title">${esc(title(g))}</h2>
 <p class="p-sub p-code">${esc(g.n)}</p>
 <p class="p-sub">${esc(acc)} · ${g.on ? `집행 중 광고 ${g.on}개` : '현재 집행 중 아님'} · 묶인 광고 ${g.cnt}개</p>
+${originalsHTML(g)}
 ${explainHTML(g)}
 <div class="p-sec"><h3>${g.cnt > 1 ? '소재 묶음 기간 비교' : '기간 비교'}</h3>${periods}</div>
 ${memo}
@@ -373,6 +428,7 @@ function openPanel(id, push = true) {
 function closePanel() {
   const p = $('#panel'), s = $('#scrim');
   if (p.hidden) return;
+  p.querySelectorAll('video').forEach(v=>v.pause());
   p.classList.remove('show'); s.classList.remove('show'); document.body.classList.remove('lock');
   const done = () => { p.hidden = true; s.hidden = true; };
   matchMedia('(prefers-reduced-motion: reduce)').matches ? done() : setTimeout(done, 240);
@@ -381,13 +437,20 @@ function closePanel() {
 }
 
 function bind() {
+  const changeProduct = value => { closePanel(); state={...DEF,product:value,view:state.view};limit=60;writeHash();syncControls();renderTop();renderStockWatch();renderList(); };
+  $('#product-select').addEventListener('change',e=>changeProduct(e.target.value));
+  $('#product-shortcuts').addEventListener('click',e=>{const b=e.target.closest('[data-product]');if(b)changeProduct(b.dataset.product)});
   const set = (k, v) => { state[k] = v; limit = 60; writeHash(); renderList(); };
   let t; $('#q').addEventListener('input', e => { clearTimeout(t); t = setTimeout(() => set('q', e.target.value), 120); });
   for (const [id, k] of [['#f-acc', 'acc'], ['#f-cat', 'cat'], ['#f-stock', 'stock'], ['#f-on', 'on'], ['#sort', 'sort']]) $(id).addEventListener('change', e => set(k, e.target.value));
   $('#f-pa').addEventListener('click', e => { const on = !state.pa; e.currentTarget.setAttribute('aria-pressed', on); set('pa', on ? '1' : ''); });
   document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => { set('view', b.dataset.view); syncControls(); }));
   $('#list-more').addEventListener('click', () => { limit += 60; renderList(); });
-  document.addEventListener('click', e => { const el = e.target.closest('[data-id]'); if (el && !e.target.closest('a,details')) openPanel(el.dataset.id); });
+  document.addEventListener('click', e => {
+    const origin=e.target.closest('[data-original]');
+    if(origin){openPanel(origin.dataset.group);$('#ad-originals')?.scrollIntoView({block:'start'});return;}
+    const el = e.target.closest('[data-id]'); if (el && !e.target.closest('a,details,video')) openPanel(el.dataset.id);
+  });
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { if (!$('#lb').hidden) return lightbox(null); return closePanel(); }
     const el = e.target.closest && e.target.closest('[data-id][tabindex]');
@@ -403,7 +466,7 @@ function bind() {
   $('#lb').addEventListener('click', () => lightbox(null));
   $('#p-close').addEventListener('click', closePanel);
   $('#scrim').addEventListener('click', closePanel);
-  addEventListener('hashchange', () => { readHash(); syncControls(); renderList(); state.ad ? openPanel(state.ad, false) : closePanel(); });
+  addEventListener('hashchange', () => { readHash(); syncControls();renderTop();renderStockWatch(); renderList(); state.ad ? openPanel(state.ad, false) : closePanel(); });
 }
 
 async function init() {
@@ -416,7 +479,10 @@ async function init() {
     $('#main').innerHTML = '<div class="empty" style="margin-top:40px">데이터를 불러오지 못했습니다. 새로고침해 주세요.</div>';
     return;
   }
+  try { const o=await fetch('originals.json',{cache:'no-cache'});if(!o.ok)throw new Error(o.status);D.originals=(await o.json()).ads; }
+  catch(e){D.originals={};D.originLoadFailed=true;}
   D.groups.forEach(g => { byId[g.id] = g; });
+  setupProducts();
   $('#asof').textContent = `${fmtTime(D.retrieved).replace(' KST', '')} 기준 · 메타 광고 관리자·자사몰 재고 직접 조회`;
   const used = new Set(D.groups.map(g => g.a));
   $('#f-acc').innerHTML = '<option value="">전체 계정</option>' + D.accounts.map((a, i) => used.has(i) ? `<option value="${i}">${esc(a.name)}</option>` : '').join('');

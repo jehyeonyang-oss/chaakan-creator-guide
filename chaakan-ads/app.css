@@ -358,6 +358,17 @@ body.lock{overflow:hidden}
 .tc .tmore{font-size:11px;border:0;padding:3px 0;text-align:left;color:var(--info);align-self:flex-start;margin-top:auto}
 .tc .tmore:hover{background:none;text-decoration:underline}
 .p-explanation .p-memo p{margin:8px 0}.p-explain-trend{font-size:13px;line-height:1.7;margin:12px 0}
+.product-control{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;margin:0 0 8px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.product-control label{font-weight:700}.product-control select{min-width:250px;max-width:100%;padding:9px 30px 9px 12px;border:1px solid var(--line-2);border-radius:6px;background:white;font:inherit}
+#product-shortcuts{display:flex;gap:6px}.product-note{font-size:12px;color:var(--muted);margin:0 0 16px;max-width:900px}
+.tc-actions{display:flex;gap:9px;align-items:center;margin-top:auto;flex-wrap:wrap}
+.original-open{background:var(--info-bg);color:var(--info);border:1px solid #dce3f0;border-radius:5px;padding:4px 7px;font:inherit;font-size:11px;cursor:pointer;font-weight:600;white-space:nowrap}
+.original-open:hover{background:#dde6f7}.card-original{padding:0 14px 12px;font-size:12px}
+.original-item{padding:12px 0;border-bottom:1px solid var(--line)}.original-item:last-child{border-bottom:0}
+.original-video,.original-image{display:block;width:100%;max-height:480px;object-fit:contain;background:#f0f0ed;border-radius:8px;margin-bottom:10px}
+.original-video{min-height:200px}.original-post{display:inline-block;color:var(--info);font-size:13px;font-weight:600;padding:9px 0;text-decoration:underline}
+.original-item .p-link{display:block;margin:5px 0}.original-item .code{margin-top:7px}
+@media(max-width:720px){.product-control select{min-width:0;flex:1}.product-control label{font-size:12px}#product-shortcuts{width:100%}.product-note{font-size:11px}.original-video,.original-image{max-height:360px}}
 .tc.good{border-top-color:var(--pos)}.tc.ok{border-top-color:#d68a00}.tc.bad{border-top-color:var(--neg)}
 .tthumb{all:unset;cursor:zoom-in;display:block;width:108px;height:100%;min-height:230px;border-radius:5px;overflow:hidden;background:var(--sunk);align-self:stretch}
 .tthumb img{width:100%;height:100%;object-fit:cover;display:block}
