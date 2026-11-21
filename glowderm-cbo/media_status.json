@@ -1,11 +1,9 @@
 {
-  "checked_at": "2026-11-21T09:30:19+09:00",
+  "checked_at": "2026-11-21T09:35:15+09:00",
   "status": "fallback",
   "available": 3,
   "retained": 3,
   "unavailable_ids": [
-    "52637662104747",
-    "52637662139747",
     "52637662150747",
     "52637662170147",
     "52637662191547",
@@ -13,8 +11,6 @@
     "52637671925147",
     "52637675992147",
     "52637676384347",
-    "52637686954747",
-    "52637690788347",
     "52637990546347",
     "52637990666147",
     "52637990739747",
@@ -45,12 +41,14 @@
     "52640641159347",
     "52640641339747",
     "52640641627747",
+    "52641188450347",
     "52641188495347",
     "52641188657547",
+    "52641191834347",
     "52641219285747",
     "52641220924347",
     "52641222952147",
     "52641224565347"
   ],
-  "warning": "CCFM media preparation failed: CalledProcessError; retained validated local assets. 47 current creatives have no validated media connection."
+  "warning": "CCFM media preparation failed: CalledProcessError; retained validated local assets. 45 current creatives have no validated media connection."
 }
