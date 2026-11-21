@@ -232,20 +232,21 @@ function budgetTxt(b) {
   return `예산 ${man(b.a)} · 어제 ${pct(b.y / b.a * 100)} 씀 <small>${esc(b.u)} 기준</small>`;
 }
 function tcard(x) {
-  const g = byId[x.g], sf = stockFacts(x), c = who(x.n) || sf.names[0] || g.n.split('_')[0];
-  const prod = (sf.names.join(' + ') || '상품 미연결') + (/1\+1/.test(x.n) && sf.names.length ? ' 1+1' : '');
+  const g = byId[x.g], sf = stockFacts(x), c = who(x.n);
+  const prod = x.n.replace(/^ASC\S*\.\s*/, '').split('_').find(t => /[가-힣]/.test(t) && !/^전환$/.test(t)) || sf.names[0] || '광고';
+  const paProduct = /_PA_[^_]+_([^_]+)$/.exec(x.n)?.[1];
+  const name = (paProduct || prod) + (/1\+1/.test(x.n) ? ' 1+1' : '');
+  const hookParts = x.n.split('_'), mi = hookParts.indexOf('메타');
+  const hook = mi > 0 ? hookParts.slice(1, mi).filter(t => /[가-힣]/.test(t) && !['단품히든','히든','영상','세로','시딩','파트너콘텐츠','수정',c].includes(t)).slice(-1)[0] : '';
   const th = x.img ? `<button type="button" class="tthumb${x.img.lr ? ' lr' : ''}" data-zoom="${x.img.src}" aria-label="${esc(c)} 썸네일 크게 보기"><img src="${x.img.src}" alt="" loading="lazy"></button>`
     : `<div class="tthumb ph">썸네일<br>없음</div>`;
-  const stockH = !sf.linked ? `<p class="ts muted">재고 연결 안 됨 · 광고 링크로 상품을 확정할 수 없음</p>`
-    : `<p class="ts"><b>재고 ${int(sf.total)}켤레</b></p>${sf.gone.length ? `<p class="ts">다 팔린 색 <span class="neg">${clip(sf.gone, 3)}</span></p>` : ''}${sf.miss.length ? `<p class="ts">없는 사이즈 <span class="warn">${clip(sf.miss, 3)}</span></p>` : ''}`;
-  return `<article class="tc ${x.v}" data-ad="${esc(x.ad)}"><div class="ttop">${th}<div class="tb">
-<div class="tn"><h3>${esc(c)}</h3>${bdg(TV[x.v])}</div>
-<p class="tp">${esc(prod)} · ${esc(x.acc)}</p>${stockH}</div></div>
-<div class="tlow">${bars(x)}
-<p class="big">7일 ${man(x.r.s)} → <b class="${band(x.r.roas)}">${pct(x.r.roas)}</b></p>
-<p class="sub">최근 이틀 <b class="${band(x.r2.roas)}">${pct(x.r2.roas)}</b> · ${budgetTxt(x.b)}</p>
-<div class="tf"><details class="code"><summary>광고 이름</summary><span>${esc(x.n)}</span><span>광고 ID ${esc(x.ad)}</span></details>
-<button type="button" class="tmore" data-id="${x.g}">자세히</button></div></div></article>`;
+  const stockH = !sf.linked ? '<span class="muted">재고 미연결</span>' : `<span>재고 <b>${int(sf.total)}</b></span>${sf.miss.length || sf.gone.length ? `<span class="warn">옵션 품절 ${sf.miss.length ? sf.miss.length+'개':''}${sf.gone.length ? (sf.miss.length?' · ':'')+'색상 '+sf.gone.length+'개':''}</span>` : '<span>옵션 재고 있음</span>'}`;
+  return `<article class="tc ${x.v}" data-ad="${esc(x.ad)}" data-id="${x.g}" role="button" tabindex="0" aria-label="${esc(name)} 상세 설명 보기">
+${th}<div class="tc-content"><div class="tn"><h3>${esc(name)}</h3>${bdg(TV[x.v])}</div>
+<p class="tp" title="${esc(x.n)}">${esc([c,hook].filter(Boolean).join(' · ') || x.n)}</p>
+<div class="tc-numbers"><div><span>7일 ROAS</span><strong class="${band(x.r.roas)}">${pct(x.r.roas)}</strong></div><div><span>7일 쓴 돈</span><b>${man(x.r.s)}</b></div><div><span>구매</span><b>${int(x.r.c)}건</b></div></div>
+${bars(x)}<p class="sub">최근 이틀 <b class="${band(x.r2.roas)}">${pct(x.r2.roas)}</b></p>
+<div class="tc-stock">${stockH}</div><button type="button" class="tmore" data-id="${x.g}">상세 설명 · 재고 보기</button></div></article>`;
 }
 function renderTop() {
   const T = D.top, w = D.windows, by = k => T.filter(x => x.v === k);
@@ -255,22 +256,21 @@ function renderTop() {
   const nb = by('bad').length;
   $('#tiles').innerHTML = tile('오늘 쓴 돈', man(sum('t', 's')), `여기 광고 ${T.length}개 합계 · ${md(w.today)} 진행 중`)
     + tile('7일 ROAS', pct(roasOf(s7, v7)), `${man(s7)} 써서 ${int(c7)}건`)
-    + tile('효율 안 좋음', nb + '개', '끌 후보 · 하루씩 판정', nb ? 'neg' : '')
+    + tile('효율 안 좋음', nb + '개', `상위 ${T.length}개 광고 중`, nb ? 'neg' : '')
     + tile('재고 확인사항', issue + '개', '없는 사이즈 등', issue ? 'warn' : '');
   const badNames = by('bad').map(x => who(x.n) || x.n.split('_')[0]);
   $('#lead-notes').innerHTML = [
-    '광고 한 장에 사진·쓴 돈→ROAS·하루씩 그래프·재고를 같이 놨어요',
-    `효율 좋음 ${by('good').length}개·적당 ${by('ok').length}개·안 좋음 ${nb}개${badNames.length ? ` (${esc(badNames.join(', '))})` : ''}`,
-    '막대 높이 = 그날 ROAS. 왼쪽 눈금 0·200·400·600%, 빨간 점선 200% 밑이면 손해 쪽이에요. 사진은 누르면 커져요.'
+    `광고비 상위 ${T.length}개 · 완료 7일 ${md(w.recent[0])}–${md(w.recent[1])} · 빗금 막대는 오늘(진행 중)`,
+    '카드를 누르면 상세 설명과 재고가 열립니다. 사진을 누르면 확대됩니다. 200%·270%는 비교 기준이며 손익분기점은 아닙니다.'
   ].map(t => `<li>${t}</li>`).join('');
   const sec = (k, h, p, empty) => {
     const L = by(k), el = $('#t-' + k), sh = el.parentElement.querySelector('.tier-h');
     sh.querySelector('h2').textContent = `${h} ${L.length}개`; sh.querySelector('p').textContent = p;
     el.innerHTML = L.length ? L.map(tcard).join('') : `<div class="empty">${empty}</div>`;
   };
-  sec('good', '효율 좋은 광고', '7일과 최근 이틀 모두 270% 넘음 — 예산 늘릴 후보', '없음');
-  sec('ok', '적당한 광고', '200~270% 사이 — 그대로 두고 매일 아침 어제 숫자로 다시 판정', '없음');
-  sec('bad', '효율 안 좋은 광고', '7일이나 최근 이틀이 200% 밑 — 끌 후보', `없음 — 상위 ${T.length}개 모두 7일·최근 이틀 200% 이상이에요`);
+  sec('good', '효율 좋은 광고', '7일·최근 이틀 모두 270% 이상', '없음');
+  sec('ok', '지켜볼 광고', '200% 이상 · 최근 흐름 확인', '없음');
+  sec('bad', '효율 낮은 광고', '7일 또는 최근 이틀 200% 미만', `상위 ${T.length}개 중 해당 없음 · 전체 목록은 아래에서 확인`);
   $('#all-note').textContent = `위 ${T.length}개는 광고 하나씩. 아래는 같은 게시물을 한 묶음으로 본 전체 목록이에요(계정·효율·재고 필터, 검색).`;
 }
 function lightbox(src) {
@@ -302,6 +302,20 @@ function fmtTime(iso) {
 }
 
 /* 패널 */
+function explainHTML(g) {
+  const topAds = D.top.filter(x => x.g === g.id);
+  const explain = topAds.map(x => {
+    const reason = x.v === 'good' ? '7일과 최근 이틀의 ROAS가 모두 270% 이상입니다.' : x.v === 'bad' ? '7일 또는 최근 이틀의 ROAS가 200% 미만입니다.' : '두 기간 모두 200% 이상이지만, 한쪽 이상이 270%에 미치지 못합니다.';
+    return `<div class="p-memo"><b>${esc(TV[x.v][0])}으로 표시한 이유</b><p>최근 7일 ROAS <b>${pct(x.r.roas)}</b> · 최근 이틀 <b>${pct(x.r2.roas)}</b>. ${reason}</p><p>7일 광고비 ${won(x.r.s)}로 메타 귀속 구매 ${int(x.r.c)}건이 잡혔습니다. 오늘 ${md(D.windows.today)}은 진행 중이므로 위 판정에서 제외했습니다.</p>${x.b ? `<p>${budgetTxt(x.b)}. 여러 광고가 공유하는 예산일 수 있습니다.</p>` : ''}${g.cnt > 1 ? `<p>이 설명은 광고 ID ${esc(x.ad)} 기준이며, 아래 기간 비교는 같은 소재 광고 ${g.cnt}개를 합산합니다.</p>` : ''}</div>`;
+  }).join('');
+  let body = explain;
+  if (!body) body = `<div class="p-memo"><b>${esc(CAT[g.cat][0])}</b><p>최근 7일 광고비 ${won(g.r.s)}, 구매 ${int(g.r.c)}건, ROAS ${pct(g.r.roas)}입니다.${g.cat === 'sample' ? ' 광고비 3만원 또는 집행 3일 기준을 충족하지 않아 효율 판정을 보류합니다.' : g.cat === 'other' ? ' 구매 목적이 아닌 광고는 구매 ROAS만으로 평가하지 않습니다.' : ' 전체 목록은 최근 7일 ROAS 구간으로 분류합니다.'}</p></div>`;
+  if (g.p.roas != null && g.r.roas != null) {
+    const diff = g.r.roas - g.p.roas;
+    body += `<p class="p-explain-trend">${g.cnt > 1 ? '소재 묶음 기준 ' : ''}직전 7일 ${pct(g.p.roas)} → 최근 7일 ${pct(g.r.roas)}. ROAS가 ${Math.abs(diff).toFixed(1)}%p ${diff >= 0 ? '올랐습니다' : '내렸습니다'}. 광고비는 ${man(g.p.s)} → ${man(g.r.s)}입니다.</p>`;
+  }
+  return `<div class="p-sec p-explanation"><h3>상세 설명</h3>${body}<p class="p-sub">200%·270%는 비교 기준입니다. 손익 또는 증액·중단을 자동으로 결정하는 기준은 아닙니다.</p></div>`;
+}
 function panelHTML(g) {
   const acc = D.accounts[g.a].name, n = D.dates.length;
   const per = (l, f) => `<tr><td>${l}</td><td class="n">${f(g.p)}</td><td class="n">${f(g.r)}</td><td class="n">${f(g.t)}</td></tr>`;
@@ -334,7 +348,8 @@ ${per('광고비', x => won(x.s))}${per('구매', x => int(x.c))}${per('매출',
   return `<h2 class="p-title" id="p-title">${esc(title(g))}</h2>
 <p class="p-sub p-code">${esc(g.n)}</p>
 <p class="p-sub">${esc(acc)} · ${g.on ? `집행 중 광고 ${g.on}개` : '현재 집행 중 아님'} · 묶인 광고 ${g.cnt}개</p>
-<div class="p-sec"><h3>기간 비교</h3>${periods}</div>
+${explainHTML(g)}
+<div class="p-sec"><h3>${g.cnt > 1 ? '소재 묶음 기간 비교' : '기간 비교'}</h3>${periods}</div>
 ${memo}
 <div class="p-sec"><h3>재고 <span>${esc(fmtTime(D.stockAsOf))} 기준 · 참고 표시</span></h3>${stockH}</div>
 <div class="p-sec"><h3>일별 <span>최신순</span></h3><div class="p-box"><table><thead><tr><th>날짜</th><th class="n">광고비</th><th class="n">구매</th><th class="n">매출</th><th class="n">ROAS</th></tr></thead><tbody>${daily}</tbody></table></div></div>
@@ -376,7 +391,7 @@ function bind() {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { if (!$('#lb').hidden) return lightbox(null); return closePanel(); }
     const el = e.target.closest && e.target.closest('[data-id][tabindex]');
-    if (el && !e.target.closest('summary') && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openPanel(el.dataset.id); }
+    if (el && !e.target.closest('summary,button,a,details') && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openPanel(el.dataset.id); }
     if (e.key === 'Tab' && !$('#panel').hidden) {  // 포커스 가두기
       const f = [...$('#panel').querySelectorAll('button,a[href],[tabindex]')].filter(x => x.offsetParent !== null);
       if (!f.length) return;
