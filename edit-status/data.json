@@ -1752,7 +1752,7 @@
           "slot": "48h",
           "label": "48시간",
           "dueAt": "",
-          "actualCollectedAt": 1795336818854,
+          "actualCollectedAt": null,
           "state": "partial",
           "isLate": false,
           "collectionDelaySeconds": null,
@@ -1768,7 +1768,7 @@
           "slot": "1week",
           "label": "7일",
           "dueAt": "",
-          "actualCollectedAt": 1795336820686,
+          "actualCollectedAt": null,
           "state": "partial",
           "isLate": false,
           "collectionDelaySeconds": null,
@@ -2357,5 +2357,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-22T08:41:38.138135+00:00"
+  "syncedAt": "2026-11-22T12:49:54.654924+00:00"
 }
