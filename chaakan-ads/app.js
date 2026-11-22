@@ -138,8 +138,9 @@ function spark(g) {
   return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="${esc(lbl)}"><line class="sp-ref" x1="0" x2="${W}" y1="${ref}" y2="${ref}" vector-effect="non-scaling-stroke"/>${bars}<path class="sp-line" d="${path}" vector-effect="non-scaling-stroke"/></svg>`;
 }
 
+const SHOE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16.5V9.5c0-.6.4-1 1-1h3.2l1.6 2.6c1 1.6 2.6 2.4 4.4 2.6l5.6.6c1.4.2 2.2 1 2.2 2.2v.5c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M3 15h18" stroke="currentColor" stroke-width="1.2"/></svg>';
 function thumb(g) {
-  if (!g.img) return `<div class="thumb"><div class="ph">썸네일<br>미수집</div></div>`;
+  if (!g.img) return `<div class="thumb noimg"><div class="ph">${SHOE}<b>${esc(title(g).split(' · ')[0])}</b><span>이미지 없음</span></div></div>`;
   const alt = '소재 썸네일';
   if (g.img.lr) return `<div class="thumb lr"><img class="bg" src="${g.img.src}" alt="" loading="lazy" aria-hidden="true"><img class="fg" src="${g.img.src}" alt="${alt}" loading="lazy"></div>`;
   return `<div class="thumb"><img src="${g.img.src}" alt="${alt}" loading="lazy"></div>`;
@@ -257,7 +258,7 @@ function bars(x) {
   const last = x.ch.length - 1;
   const col = ([d, s, v, c], i) => {
     const r = roasOf(s, v), h = r == null ? 0 : Math.min(r, 600) / 600 * 100, live = i === last;
-    return `<div class="bc${live ? ' live' : ''}"><div class="bp"><span class="bl" style="bottom:${h.toFixed(1)}%">${r == null ? '—' : pct(r)}</span>${r == null ? '' : `<i class="bar ${band(r)}${r > 600 ? ' clip' : ''}" style="height:${Math.max(h, 1.5).toFixed(1)}%"></i>`}</div>
+    return `<div class="bc${live ? ' live' : ''}"><div class="bp"><span class="bl${r >= 1000 ? ' sm' : ''}" style="bottom:${h.toFixed(1)}%"${r > 600 ? ` title="${pct(r)} (600% 초과, 막대는 잘림)"` : ''}>${r == null ? '—' : r >= 10000 ? (r / 10000).toFixed(1) + '만%' : pct(r)}</span>${r == null ? '' : `<i class="bar ${band(r)}${r > 600 ? ' clip' : ''}" style="height:${Math.max(h, 1.5).toFixed(1)}%"></i>`}</div>
 <div class="bx"><b>${md(d)}</b>${live ? '<em>진행 중</em>' : ''}<span>${man(s)}</span><span>${int(c)}건</span></div></div>`;
   };
   const lbl = '하루씩 ROAS: ' + x.ch.map(([d, s, v, c], i) => `${md(d)}${i === last ? '(진행 중)' : ''} ${pct(roasOf(s, v))} 쓴 돈 ${man(s)} 구매 ${int(c)}건`).join(', ');
@@ -294,12 +295,12 @@ function renderTop() {
   const tile = (l, v, sub, cls = '') => `<div class="tile ${cls}"><div class="tl">${l}</div><div class="tv">${v}</div><div class="tsub">${sub}</div></div>`;
   const nb = by('bad').length;
   $('#tiles').innerHTML = tile('오늘 쓴 돈', man(sum('t', 's')), `${state.product?'선택 제품 집행 중 전체':'여기 광고 '+T.length+'개'} 합계 · ${md(w.today)} 진행 중`)
-    + tile('7일 ROAS', pct(roasOf(s7, v7)), `${man(s7)} 써서 ${int(c7)}건`)
+    + tile('7일 ROAS', pct(roasOf(s7, v7)), `${man(s7)} 써서 매출 <b>${man(v7)}</b> · ${int(c7)}건`)
     + tile('효율 안 좋음', nb + '개', `상위 ${T.length}개 광고 중`, nb ? 'neg' : '')
     + tile('재고 확인사항', issue + '개', '없는 사이즈 등', issue ? 'warn' : '');
   const badNames = by('bad').map(x => who(x.n) || x.n.split('_')[0]);
   $('#lead-notes').innerHTML = [
-    `${state.product?'선택 제품의 구매 목적 소재 묶음':'광고'} 지출 상위 ${T.length}개 · 완료 7일 ${md(w.recent[0])}–${md(w.recent[1])} · 빗금 막대는 오늘(진행 중)`,
+    `${state.product?'선택 제품의 구매 목적 소재 묶음':'광고'} 지출 상위 ${T.length}개 · 완료 7일 ${md(w.recent[0])}–${md(w.recent[1])} · 빗금 막대는 오늘(진행 중) · 끊긴 막대는 600% 초과`,
     '카드를 누르면 상세 설명과 재고가 열립니다. 사진을 누르면 확대됩니다. 200%·270%는 비교 기준이며 손익분기점은 아닙니다.'
   ].map(t => `<li>${t}</li>`).join('');
   const sec = (k, h, p, empty) => {
@@ -330,7 +331,7 @@ function renderNotes() {
     '<b>ROAS</b> = 기간 귀속매출 합 ÷ 광고비 합. 일별 ROAS의 평균이 아닙니다.',
     '<b>200% · 270%</b>는 소재 비교 구간이며 손익분기점이 아닙니다. 아래 전체 목록의 표본 부족 = 최근 7일 광고비 3만원 미만 또는 집행일 3일 미만.',
     '<b>재고</b>는 ' + esc(D.stockRule) + ' 카드의 "없는 사이즈"는 재고가 남은 색상 중 판매 옵션 수량이 0인 사이즈, "다 팔린 색"은 색상 전체 0. 1+1 세트는 구성품별로 표시합니다. 참고 표시이며 광고 중단 판단이 아닙니다.',
-    `성과·자사몰 주문 가능 수량은 <b>15분마다 갱신</b>합니다. 광고 ${esc(fmtTime(D.retrieved))} · 수량 ${esc(fmtTime(D.stockAsOf))} 조회 기준입니다. 메타의 집계 지연은 별도이며 창고 실재고·출고 가능 여부와는 다릅니다.`,
+    `성과는 <b>1시간마다</b>, 자사몰 주문 가능 수량은 <b>15분마다</b> 갱신합니다. 광고 ${esc(fmtTime(D.retrieved))} · 수량 ${esc(fmtTime(D.stockAsOf))} 조회 기준입니다. 메타의 집계 지연은 별도이며 창고 실재고·출고 가능 여부와는 다릅니다.`,
     '<b>전체 목록의 소재 묶음</b>은 같은 게시물(없으면 같은 크리에이티브)을 계정·최적화 목적별로 합친 단위입니다.'
   ];
   $('#notes').innerHTML = notes.map(n => `<li>${n}</li>`).join('');
@@ -493,11 +494,11 @@ async function init() {
   setInterval(checkRefresh, 60000);
 }
 function updateFreshness() {
-  const stale = [['성과', D.retrieved], ['자사몰 수량', D.stockAsOf]]
-    .filter(([, value]) => !Number.isFinite(Date.parse(value)) || Date.now() - Date.parse(value) > (D.staleAfterMinutes || 40) * 60000)
+  const stale = [['성과', D.retrieved, 90], ['자사몰 수량', D.stockAsOf, D.staleAfterMinutes || 40]]
+    .filter(([, value, limit]) => !Number.isFinite(Date.parse(value)) || Date.now() - Date.parse(value) > limit * 60000)
     .map(([name]) => name);
   const el = $('#asof');
-  el.textContent = `15분마다 갱신 · 성과 ${fmtTime(D.retrieved).replace(' KST', '')} · 자사몰 수량 ${fmtTime(D.stockAsOf).replace(' KST', '')}`
+  el.textContent = `성과 1시간·수량 15분마다 갱신 · 성과 ${fmtTime(D.retrieved).replace(' KST', '')} · 자사몰 수량 ${fmtTime(D.stockAsOf).replace(' KST', '')}`
     + (stale.length ? ` · ${stale.join('·')} 갱신 지연 — 이전 조회값` : '');
   el.style.color = stale.length ? '#b45309' : '';
   el.setAttribute('role', 'status');
