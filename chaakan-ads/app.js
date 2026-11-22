@@ -330,7 +330,7 @@ function renderNotes() {
     '<b>ROAS</b> = 기간 귀속매출 합 ÷ 광고비 합. 일별 ROAS의 평균이 아닙니다.',
     '<b>200% · 270%</b>는 소재 비교 구간이며 손익분기점이 아닙니다. 아래 전체 목록의 표본 부족 = 최근 7일 광고비 3만원 미만 또는 집행일 3일 미만.',
     '<b>재고</b>는 ' + esc(D.stockRule) + ' 카드의 "없는 사이즈"는 재고가 남은 색상 중 판매 옵션 수량이 0인 사이즈, "다 팔린 색"은 색상 전체 0. 1+1 세트는 구성품별로 표시합니다. 참고 표시이며 광고 중단 판단이 아닙니다.',
-    `<b>스냅샷</b>입니다. 광고는 ${esc(fmtTime(D.retrieved))}, 재고는 ${esc(fmtTime(D.stockAsOf))} 조회 값이며 자동 갱신되지 않습니다.`,
+    `성과·자사몰 주문 가능 수량은 <b>15분마다 갱신</b>합니다. 광고 ${esc(fmtTime(D.retrieved))} · 수량 ${esc(fmtTime(D.stockAsOf))} 조회 기준입니다. 메타의 집계 지연은 별도이며 창고 실재고·출고 가능 여부와는 다릅니다.`,
     '<b>전체 목록의 소재 묶음</b>은 같은 게시물(없으면 같은 크리에이티브)을 계정·최적화 목적별로 합친 단위입니다.'
   ];
   $('#notes').innerHTML = notes.map(n => `<li>${n}</li>`).join('');
@@ -483,12 +483,36 @@ async function init() {
   catch(e){D.originals={};D.originLoadFailed=true;}
   D.groups.forEach(g => { byId[g.id] = g; });
   setupProducts();
-  $('#asof').textContent = `${fmtTime(D.retrieved).replace(' KST', '')} 기준 · 메타 광고 관리자·자사몰 재고 직접 조회`;
+  updateFreshness();
   const used = new Set(D.groups.map(g => g.a));
   $('#f-acc').innerHTML = '<option value="">전체 계정</option>' + D.accounts.map((a, i) => used.has(i) ? `<option value="${i}">${esc(a.name)}</option>` : '').join('');
   readHash(); syncControls();
   renderTop(); renderStockWatch(); renderNotes(); renderList(); bind();
   if (state.ad) openPanel(state.ad, false);
+  setInterval(updateFreshness, 60000);
+  setInterval(checkRefresh, 60000);
+}
+function updateFreshness() {
+  const stale = [['성과', D.retrieved], ['자사몰 수량', D.stockAsOf]]
+    .filter(([, value]) => !Number.isFinite(Date.parse(value)) || Date.now() - Date.parse(value) > (D.staleAfterMinutes || 40) * 60000)
+    .map(([name]) => name);
+  const el = $('#asof');
+  el.textContent = `15분마다 갱신 · 성과 ${fmtTime(D.retrieved).replace(' KST', '')} · 자사몰 수량 ${fmtTime(D.stockAsOf).replace(' KST', '')}`
+    + (stale.length ? ` · ${stale.join('·')} 갱신 지연 — 이전 조회값` : '');
+  el.style.color = stale.length ? '#b45309' : '';
+  el.setAttribute('role', 'status');
+}
+async function checkRefresh() {
+  if (document.hidden) return;
+  try {
+    const r = await fetch('data.json?t=' + Date.now(), {cache: 'no-store'});
+    if (!r.ok) return;
+    const next = await r.json();
+    if (next.retrieved === D.retrieved && next.stockAsOf === D.stockAsOf) return;
+    // Do not interrupt a playing original or open detail; recheck next minute.
+    if (!$('#panel').hidden || !$('#lb').hidden) return;
+    location.reload(); // Product selection and filters are retained in the URL hash.
+  } catch (_) { /* Keep the last view and its truthful timestamp. */ }
 }
 init();
 })();
