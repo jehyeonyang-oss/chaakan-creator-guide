@@ -745,10 +745,10 @@
       "account": "eien_oshare",
       "product": "풀문 카멜 245",
       "fee": "원고료 0원 · 제품 협찬",
-      "status": "초안 승인",
-      "schedule": "11/5 수정본 승인 · 11/22 이후, 11월 마지막 주 게시",
-      "scheduleType": "협의 중",
-      "next": "게시 후 원본 링크·PA 코드 수신",
+      "status": "게시완료",
+      "schedule": "11/23 게시 완료 · 서울링크 보고 기준",
+      "scheduleType": "완료",
+      "next": "PA 누적 성과 추적",
       "collaborationType": "제품 제공",
       "events": [
         {
@@ -768,9 +768,15 @@
           "kind": "초안 승인",
           "detail": "DM 원문 대조: 11/5 수정본 승인 · 11/22 이후, 11월 마지막 주 게시 · 이전 기록: 수령 후 촬영 · 영상 확인 후 11/9~12/4 게시",
           "certainty": "기록"
+        },
+        {
+          "date": "2026-11-23",
+          "kind": "게시 완료",
+          "detail": "서울링크 슬랙 11/23 11:28 「오늘 11:13 게시」 · 릴 DgEEsyDuBLd · PA 코드 서울링크 수령",
+          "certainty": "기록"
         }
       ],
-      "postUrl": "",
+      "postUrl": "https://www.instagram.com/reel/DgEEsyDuBLd/",
       "guideUrl": "",
       "management": "서울링크",
       "managementEvidence": "서울링크 진행 기록 + chaakan_md 협업 DM 대조",
@@ -779,7 +785,8 @@
       "feeEvidence": "인스타 DM · chaakan_md · 최종 협찬 조건 대조",
       "dmCheckedAt": "2026-11-12T14:13:54+09:00",
       "dmLastMessageAt": "2026-11-05T13:51:33.373+00:00",
-      "rights": "제품 협찬 · 게시 후 PA 코드 전달 예정"
+      "rights": "제품 협찬 · 게시 후 PA 코드 전달 예정",
+      "postDate": "2026-11-23"
     },
     {
       "id": "kh:147lil_myo",
@@ -985,10 +992,10 @@
       "account": "youracccc",
       "product": "풀문 카멜 235",
       "fee": "15만 (부가세 별도)",
-      "status": "발송완료",
-      "schedule": "일정 미정",
-      "scheduleType": "미정",
-      "next": "초안·게시일 확인",
+      "status": "게시완료",
+      "schedule": "11/23 게시 완료 · 서울링크 보고 기준",
+      "scheduleType": "완료",
+      "next": "PA 누적 성과 추적",
       "collaborationType": "유가",
       "events": [
         {
@@ -996,15 +1003,22 @@
           "kind": "제품 발송",
           "detail": "발송 안내 기록 확인",
           "certainty": "기록"
+        },
+        {
+          "date": "2026-11-23",
+          "kind": "게시 완료",
+          "detail": "서울링크 슬랙 11/23 10:30 「10:22 메일로 릴스 게시 링크」(파일럿=체험판 릴스) · 릴 DgELUN3ygXO · PA 코드 서울링크 수령",
+          "certainty": "기록"
         }
       ],
-      "postUrl": "",
+      "postUrl": "https://www.instagram.com/reel/DgELUN3ygXO/",
       "guideUrl": "",
       "management": "서울링크",
       "managementEvidence": "서울링크 협업·출고 진행 기록",
       "feeAmount": 150000,
       "feeStatus": "기존 합의 기록",
-      "feeEvidence": "기존 DM 전달·메일 협의 기록"
+      "feeEvidence": "기존 DM 전달·메일 협의 기록",
+      "postDate": "2026-11-23"
     },
     {
       "id": "kh:tomy.rene",
