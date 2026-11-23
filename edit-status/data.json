@@ -501,8 +501,8 @@
         "actualCollectedAt": 1793002408213
       },
       "latestViews": {
-        "views": 5404.0,
-        "actualCollectedAt": 1795248703567
+        "views": 5426.0,
+        "actualCollectedAt": 1795421357217
       },
       "postUrl": "https://www.instagram.com/reel/Dey_FiYy12f/",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=XT9lAJZCWVutjQtjnNAo",
@@ -942,7 +942,10 @@
         "saves": 174,
         "actualCollectedAt": 1794541149000
       },
-      "latestViews": null,
+      "latestViews": {
+        "views": 30000.0,
+        "actualCollectedAt": 1795421570435
+      },
       "postUrl": "https://www.instagram.com/reel/DfoiaXDRSSD/",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261020_jYhsKvAZ0jyV6JfhktiW",
       "scheduleLog": [
@@ -2272,8 +2275,8 @@
         "actualCollectedAt": null
       },
       "latestViews": {
-        "views": 18000.0,
-        "actualCollectedAt": 1795248769964
+        "views": 19000.0,
+        "actualCollectedAt": 1795421544184
       },
       "postUrl": "https://www.instagram.com/reel/DfzIv-BuqWE/",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=ThbU42cPXkikDJFVS49o",
@@ -2357,5 +2360,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-23T08:09:54.141151+00:00"
+  "syncedAt": "2026-11-23T08:14:53.756462+00:00"
 }
