@@ -288,33 +288,33 @@
           "slot": "pub2week",
           "label": "공개 후 14일",
           "dueAt": "2026-11-23T12:13:00+09:00",
-          "actualCollectedAt": null,
-          "state": "pending",
+          "actualCollectedAt": 1795403719782,
+          "state": "captured",
           "isLate": false,
-          "collectionDelaySeconds": null,
+          "collectionDelaySeconds": 139,
           "viewsStatus": null,
           "missingMetrics": [],
-          "views": null,
-          "likes": null,
-          "comments": null,
-          "shares": null,
-          "saves": null
+          "views": 108000,
+          "likes": 309,
+          "comments": 316,
+          "shares": 562,
+          "saves": 412
         },
         {
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1795144219563,
+          "actualCollectedAt": 1795403719782,
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
           "viewsStatus": null,
           "missingMetrics": [],
-          "views": 90000,
-          "likes": 302,
-          "comments": 309,
-          "shares": 522,
-          "saves": 411
+          "views": 108000,
+          "likes": 309,
+          "comments": 316,
+          "shares": 562,
+          "saves": 412
         }
       ],
       "sales": {
@@ -2357,5 +2357,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-23T00:51:38.996032+00:00"
+  "syncedAt": "2026-11-23T03:16:33.825810+00:00"
 }
