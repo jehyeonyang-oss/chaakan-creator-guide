@@ -824,9 +824,9 @@
       "postDate": "2026-11-12",
       "deliveredDate": "2026-10-27",
       "detail": "10/22 조건·배송지 확정 · 셀메이트 등록 S261022152748 · 10/23 09:10 출고 송장 537765807633 → 10/29 수령 확인 · 11/11 수정본 승인 · 할인코드 mazoo2610(20%, 11/12~11/26)·구매 링크 메일 전달 완료 · 11/12 파일럿 게시 · 11/13 12:39 수신 인사이트 반영(촬영 시각 미확인·24h 자료 아님) · 페탈 차콜 품절로 전체 공개 보류 요청",
-      "schedule": "11/12 파일럿 게시 완료 · 전체 공개 보류(페탈 차콜 품절)",
+      "schedule": "11/12 파일럿 게시 · 11/22 전체 공개 전환",
       "scheduleType": "완료",
-      "next": "11/19 최신 인사이트 요청 · 회신 대기 · 파일럿 참여수 자동 추적 중 · 공개 전환일 별도 확인",
+      "next": "공개 후 24시간·48시간·1주·2주 서치폰 자동 추적 · 11/23 PA 코드 요청 메일 회신 대기",
       "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/mazoolook/boots/",
       "expires": "2026-11-15T00:00:00+09:00",
       "fee": "20만 (2차 1개월 포함)",
@@ -892,7 +892,71 @@
           "state": "pending",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": "trial_insights_required",
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "pub24h",
+          "label": "공개 후 24시간",
+          "dueAt": "2026-11-23T21:00:00+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "pub48h",
+          "label": "공개 후 48시간",
+          "dueAt": "2026-11-24T21:00:00+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "pub1week",
+          "label": "공개 후 7일",
+          "dueAt": "2026-11-29T21:00:00+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "pub2week",
+          "label": "공개 후 14일",
+          "dueAt": "2026-12-06T21:00:00+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
           "missingMetrics": [],
           "views": null,
           "likes": null,
@@ -972,6 +1036,12 @@
           "change": "11/12 파일럿 예정 → 파일럿 게시 완료 · 전체 공개 보류",
           "cause": "우리 제품 재고",
           "reason": "크리에이터 원본 링크·인사이트 수신 확인. 11/13 페탈 차콜 품절 확인으로 공개 보류 요청; 파일럿·공개 성과 별도 추적."
+        },
+        {
+          "date": "2026-11-22",
+          "change": "파일럿 → 전체 공개 전환",
+          "cause": "인게이지 둔화",
+          "reason": "11/20 인사이트 증가 둔화로 공개 요청, 11/23 사용자 공개 전환 확인. 공개 시각은 요청 시각 11/22 21:00 기준(실제 시각 미확인)."
         }
       ]
     },
@@ -2382,5 +2452,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-23T21:31:39.207257+00:00"
+  "syncedAt": "2026-11-24T01:46:38.262698+00:00"
 }
