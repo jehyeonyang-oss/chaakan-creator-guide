@@ -2460,6 +2460,132 @@
       "postUrl": "https://www.instagram.com/reel/DfzIv-BuqWE/",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=ThbU42cPXkikDJFVS49o",
       "scheduleLog": []
+    },
+    {
+      "name": "바치케",
+      "track": "매거진 · 피드 (test)",
+      "account": "bacheeke.kr",
+      "product": "제품 선택 예정",
+      "content": "26FW 시즌 매거진 · 피드 캐러셀 · 매거진(test) 건",
+      "stage": "게시 완료",
+      "status": "게시완료",
+      "sentDate": "",
+      "postDate": "2026-11-14",
+      "deliveredDate": "",
+      "detail": "매거진 test 건 · 원고료 30만 · 11/14 피드 게시 · 11/24 등록(지연 수집)",
+      "schedule": "11/14 게시 완료",
+      "scheduleType": "완료",
+      "next": "2주(11/28) 반응 수집 확인",
+      "guideUrl": "",
+      "expires": "",
+      "fee": "30만",
+      "productCost": null,
+      "engagement": [
+        {
+          "slot": "24h",
+          "label": "24시간",
+          "dueAt": "2026-11-15T20:36:42+09:00",
+          "actualCollectedAt": null,
+          "state": "missed",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "48h",
+          "label": "48시간",
+          "dueAt": "2026-11-16T20:36:42+09:00",
+          "actualCollectedAt": null,
+          "state": "missed",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "1week",
+          "label": "7일",
+          "dueAt": "2026-11-21T20:36:42+09:00",
+          "actualCollectedAt": 1795497137389,
+          "state": "partial",
+          "isLate": true,
+          "collectionDelaySeconds": 236134,
+          "viewsStatus": null,
+          "missingMetrics": [
+            "views",
+            "likes",
+            "shares",
+            "saves"
+          ],
+          "views": null,
+          "likes": null,
+          "comments": 2,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "2week",
+          "label": "14일",
+          "dueAt": "2026-11-28T20:36:42+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1795497137389,
+          "state": "partial",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [
+            "views",
+            "likes",
+            "shares",
+            "saves"
+          ],
+          "views": null,
+          "likes": null,
+          "comments": 2,
+          "shares": null,
+          "saves": null
+        }
+      ],
+      "sales": {},
+      "phoneTrackingReady": true,
+      "engagementBaseline": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "actualCollectedAt": null
+      },
+      "latestViews": null,
+      "postUrl": "https://www.instagram.com/p/DfuHSxBGIJ7/",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr",
+      "scheduleLog": []
     }
   ],
   "contacts": [
@@ -2532,12 +2658,7 @@
       "account": "159_ji0ng",
       "track": "키높이",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
-    },
-    {
-      "account": "bacheeke.kr",
-      "track": "26FW",
-      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-24T04:46:26.767046+00:00"
+  "syncedAt": "2026-11-24T05:13:06.696569+00:00"
 }
