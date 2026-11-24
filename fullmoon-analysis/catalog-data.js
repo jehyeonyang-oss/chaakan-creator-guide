@@ -107,7 +107,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "커플·타인 기준자 대비",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 4264207,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DSWnkVjk8BL",
@@ -155,7 +161,13 @@ window.INTRO_CATALOG={
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
       "verification": "하반신 착화 근접 → 약 2초 전신. 처음부터 ‘로퍼 안에 하이힐급 굽이 들어있다고요?’.",
-      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
+      "viewMetrics": {
+        "views": 3141056,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DLrxcDspefh",
@@ -202,7 +214,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "기타 · 분류 외",
-      "verification": "얼굴+머리 위 손 제스처로 키 숫자 158→161→165. 약 1.5초 신발을 머리 위로 들고, 2초 7cm 제스처. 얼굴+신발 계열 안의 제스처 선행 변형."
+      "verification": "얼굴+머리 위 손 제스처로 키 숫자 158→161→165. 약 1.5초 신발을 머리 위로 들고, 2초 7cm 제스처. 얼굴+신발 계열 안의 제스처 선행 변형.",
+      "viewMetrics": {
+        "views": 2048567,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DPoTG-MkoY-",
@@ -249,7 +267,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": "얼굴 없이 박스 위 신발 제품 근접으로 시작."
+      "verification": "얼굴 없이 박스 위 신발 제품 근접으로 시작.",
+      "viewMetrics": {
+        "views": 1756558,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DaKuZZdTtnf",
@@ -296,7 +320,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 1732048,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DOf-LFfD7p_",
@@ -343,7 +373,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "사회적 증명 (연예인·1등)",
-      "verification": "얼굴+신발 박스 → 1.5초 박스 안 신발 → 하반신 착화. 신발을 얼굴 옆에 직접 드는 시작과 구분."
+      "verification": "얼굴+신발 박스 → 1.5초 박스 안 신발 → 하반신 착화. 신발을 얼굴 옆에 직접 드는 시작과 구분.",
+      "viewMetrics": {
+        "views": 1654355,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DYWpsVWzmjs",
@@ -390,7 +426,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 1633950,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DNDq12cvCAi",
@@ -437,7 +479,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 1499260,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DQNd6ZZk2r7",
@@ -484,7 +532,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "언박싱 (박스가 오프닝)",
-      "verification": "얼굴 없이 바닥 위 신발과 박스 → 박스 개봉. 0.1초부터 +5cm 키높이 표시가 보임."
+      "verification": "얼굴 없이 바닥 위 신발과 박스 → 박스 개봉. 0.1초부터 +5cm 키높이 표시가 보임.",
+      "viewMetrics": {
+        "views": 1411093,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DRRccHBkyye",
@@ -531,7 +585,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "역설·질문훅 (수치 없음)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 1251724,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DOVYt_kkuXH",
@@ -578,7 +638,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "언박싱 (박스가 오프닝)",
-      "verification": "앉은 전신 거울 착장으로 시작하며 ‘키작녀 필수 시청 / 신발 뭐 사지?’ → 약 2초 얼굴+박스. 기존 언박싱 시작 설명을 수정."
+      "verification": "앉은 전신 거울 착장으로 시작하며 ‘키작녀 필수 시청 / 신발 뭐 사지?’ → 약 2초 얼굴+박스. 기존 언박싱 시작 설명을 수정.",
+      "viewMetrics": {
+        "views": 1229637,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DRE8tbxk-8B",
@@ -625,7 +691,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "사회적 증명 (연예인·1등)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 1224788,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DU5zy8Xjwp_",
@@ -673,7 +745,13 @@ window.INTRO_CATALOG={
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
       "verification": "얼굴이 잘린 앉은 착장·다리와 신발 근접 → 약 1.5초 서 있는 착장 → 제품. 전신 시작과 구분.",
-      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
+      "viewMetrics": {
+        "views": 1131988,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DPQZmj8Ew6c",
@@ -720,7 +798,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "사회적 증명 (연예인·1등)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 1106352,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DTpWwluD5Fw",
@@ -767,7 +851,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "커플·타인 기준자 대비",
-      "verification": "여성 얼굴 가까이에서 시작, 뒤의 남성이 들어오며 약 2초부터 두 사람 전신. 얼굴 옆에 신발을 드는 폼과 다름."
+      "verification": "여성 얼굴 가까이에서 시작, 뒤의 남성이 들어오며 약 2초부터 두 사람 전신. 얼굴 옆에 신발을 드는 폼과 다름.",
+      "viewMetrics": {
+        "views": 1065212,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DZw4AZpRa8x",
@@ -814,7 +904,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 1059137,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DSthrCYDz2U",
@@ -861,7 +957,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "역설·질문훅 (수치 없음)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 887614,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DTMY8fajxhA",
@@ -908,7 +1010,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 887244,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DRMhYr7kTUq",
@@ -955,7 +1063,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": "첫 0.1초부터 좌우 전신, 160→167cm와 +7cm가 표시됨. 기존 ‘수치는 3.5초 이후’ 설명을 수정."
+      "verification": "첫 0.1초부터 좌우 전신, 160→167cm와 +7cm가 표시됨. 기존 ‘수치는 3.5초 이후’ 설명을 수정.",
+      "viewMetrics": {
+        "views": 827275,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DVck9z0EjeY",
@@ -1002,7 +1116,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "기타 · 분류 외",
-      "verification": "얼굴 앞 테이블 위 부츠 두 짝+인사 → 손으로 부츠를 짚고 들기. 얼굴+제품 소개 계열."
+      "verification": "얼굴 앞 테이블 위 부츠 두 짝+인사 → 손으로 부츠를 짚고 들기. 얼굴+제품 소개 계열.",
+      "viewMetrics": {
+        "views": 706071,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DRYmBlMib-j",
@@ -1049,7 +1169,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "코디·룩북·GRWM·하울",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 671252,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DXgu-vlErc6",
@@ -1096,7 +1222,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "커플·타인 기준자 대비",
-      "verification": "커플 상반신 거울 셀피 → 약 2초 전신. 180/160에서187/167 숫자로 전환. 첫 프레임부터 전신은 아님."
+      "verification": "커플 상반신 거울 셀피 → 약 2초 전신. 180/160에서187/167 숫자로 전환. 첫 프레임부터 전신은 아님.",
+      "viewMetrics": {
+        "views": 616936,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DVLNp1IE9VC",
@@ -1143,7 +1275,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 605006,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DZpIPHiubzM",
@@ -1190,7 +1328,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": "얼굴 옆과 머리 위로 신발을 든 보관 첫 이미지. 원본 영상 미확보로 시간 전개는 판정하지 않음."
+      "verification": "얼굴 옆과 머리 위로 신발을 든 보관 첫 이미지. 원본 영상 미확보로 시간 전개는 판정하지 않음.",
+      "viewMetrics": {
+        "views": 538109,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DSplDkyk_Mc",
@@ -1237,7 +1381,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "역설·질문훅 (수치 없음)",
-      "verification": "상반신+박스를 안고 인사 → 약 1초 전신과 168→175cm → 박스 개봉. 얼굴+박스 시작."
+      "verification": "상반신+박스를 안고 인사 → 약 1초 전신과 168→175cm → 박스 개봉. 얼굴+박스 시작.",
+      "viewMetrics": {
+        "views": 506174,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DX5m-sIxlJw",
@@ -1284,7 +1434,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "역설·질문훅 (수치 없음)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 497773,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DTz12TIkjAj",
@@ -1331,7 +1487,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "기타 · 분류 외",
-      "verification": "첫 컷은 전신에서 160cm→167.5cm로 바뀌는 착화 전후. 기존 ‘손에 든 부츠로 시작’ 설명을 수정."
+      "verification": "첫 컷은 전신에서 160cm→167.5cm로 바뀌는 착화 전후. 기존 ‘손에 든 부츠로 시작’ 설명을 수정.",
+      "viewMetrics": {
+        "views": 469881,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DaKsGheuONB",
@@ -1378,7 +1540,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 391174,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Db5N4oYh7sN",
@@ -1425,7 +1593,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 379818,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcNzj53oSTy",
@@ -1478,7 +1652,13 @@ window.INTRO_CATALOG={
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
       "verification": "",
-      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
+      "viewMetrics": {
+        "views": 228676,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DZuRiWiSIXc",
@@ -1525,7 +1705,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 191721,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Dam6sr6ytox",
@@ -1572,7 +1758,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "역설·질문훅 (수치 없음)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 126057,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DbnMZ0tx3tJ",
@@ -1619,7 +1811,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 125576,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcLPfFahJUC",
@@ -1666,7 +1864,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 118730,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcN0UDQh83S",
@@ -1713,7 +1917,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "커플·타인 기준자 대비",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 111709,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DbIWePuokre",
@@ -1760,7 +1970,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 98555,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Db6hFIsz1Nh",
@@ -1807,7 +2023,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 94047,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcLPgS6hvPY",
@@ -1854,7 +2076,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 86703,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcP4WdJPGIZ",
@@ -1901,7 +2129,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": "얼굴+손에 든 로퍼로 시작한 뒤 약 2초 좌우 분할. 시작 폼은 얼굴+신발로 분류."
+      "verification": "얼굴+손에 든 로퍼로 시작한 뒤 약 2초 좌우 분할. 시작 폼은 얼굴+신발로 분류.",
+      "viewMetrics": {
+        "views": 84939,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcLQKJMAxbe",
@@ -1948,7 +2182,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": "얼굴+손에 든 신발로 시작한 뒤 약 2초 좌우 분할. 시작 폼은 얼굴+신발로 분류."
+      "verification": "얼굴+손에 든 신발로 시작한 뒤 약 2초 좌우 분할. 시작 폼은 얼굴+신발로 분류.",
+      "viewMetrics": {
+        "views": 84175,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DaKleGmy9q4",
@@ -1995,7 +2235,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": "앉은 전신 거울 착장+박스 → 약 1.5초 서 있는 좌우 비교. 전신→분할 계열."
+      "verification": "앉은 전신 거울 착장+박스 → 약 1.5초 서 있는 좌우 비교. 전신→분할 계열.",
+      "viewMetrics": {
+        "views": 79091,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Db5X_8kvhIj",
@@ -2042,7 +2288,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 71997,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Db8GWM9sKmG",
@@ -2089,7 +2341,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": "남성 상반신에서 약 0.5초 신발을 얼굴 옆으로 들어 올림. +8cm 키높이 슈즈 → 1.5초 착화 컷."
+      "verification": "남성 상반신에서 약 0.5초 신발을 얼굴 옆으로 들어 올림. +8cm 키높이 슈즈 → 1.5초 착화 컷.",
+      "viewMetrics": {
+        "views": 71228,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Db5cpCIsm4m",
@@ -2136,7 +2394,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": "얼굴+흰 운동화에 ‘20대 직장인은 한강갈때 뭐 신을까?’ 상황 문구. 첫 3초 프레임에서 +7cm는 확인되지 않아 기존 수치 중심 분류와 구분."
+      "verification": "얼굴+흰 운동화에 ‘20대 직장인은 한강갈때 뭐 신을까?’ 상황 문구. 첫 3초 프레임에서 +7cm는 확인되지 않아 기존 수치 중심 분류와 구분.",
+      "viewMetrics": {
+        "views": 69674,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DbFuATlSDRf",
@@ -2183,7 +2447,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 55122,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Db76IX2T17R",
@@ -2230,7 +2500,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 48013,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcN1wDKIh7k",
@@ -2277,7 +2553,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "커플·타인 기준자 대비",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 45367,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Db5QWopNWwc",
@@ -2324,7 +2606,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "역설·질문훅 (수치 없음)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 43936,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcLPcVThVdc",
@@ -2371,7 +2659,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 39294,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Dbsc9HcPLXF",
@@ -2418,7 +2712,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "기타 · 분류 외",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 38566,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Db3DVJ6OvfS",
@@ -2465,7 +2765,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 37539,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcN0fJ2PDo2",
@@ -2512,7 +2818,13 @@ window.INTRO_CATALOG={
       "recent": false,
       "comparisonOnly": false,
       "message": "문제제기 (밑단 끌림·불편)",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 33483,
+        "capturedAt": null,
+        "note": "기존 9/7 분석 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DegqqlyIkch",
@@ -2544,7 +2856,13 @@ window.INTRO_CATALOG={
       "comparisonOnly": false,
       "message": "바지 고민 직접 호출",
       "verification": "기존 예시 1과 2는 하반신 착화·바지 밑단 패턴 한 묶음으로 통합. 서로 다른 게시물의 반응 수치는 합산하지 않음. 이 영상은 1.8초 보관 도입 발췌이며 원본의 정확한 0~3초는 미확인.",
-      "framingReview": "2026-11-21 보관 발췌의 구도만 분류. 원본의 정확한 시작은 미확인."
+      "framingReview": "2026-11-21 보관 발췌의 구도만 분류. 원본의 정확한 시작은 미확인.",
+      "viewMetrics": {
+        "views": 69241,
+        "capturedAt": "2026-10-19",
+        "note": "2026.10.19 보관값",
+        "status": "archived"
+      }
     },
     {
       "code": "De8r7fnT0Rb",
@@ -2589,7 +2907,13 @@ window.INTRO_CATALOG={
       "comparisonOnly": false,
       "message": "수치훅 (cm 자막 + 착화/제품)",
       "verification": "",
-      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DWix4Kfjyjb",
@@ -2636,7 +2960,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DfCYk5Ohx52",
@@ -2680,7 +3010,15 @@ window.INTRO_CATALOG={
       "recent": true,
       "comparisonOnly": false,
       "message": "좌우 스플릿 비교",
-      "verification": ""
+      "verification": "",
+      "viewMetrics": {
+        "views": 221000,
+        "viewsDisplay": "22.1만",
+        "capturedAt": "2026-11-24",
+        "note": "2026.11.24 서치폰 실측",
+        "status": "phone-verified",
+        "screenshot": "assets/views_DfCYk5Ohx52_20261124.webp"
+      }
     },
     {
       "code": "Dfjc1_Jzv1K",
@@ -2725,7 +3063,14 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": 6421,
+        "capturedAt": "2026-11-24",
+        "note": "2026.11.24 서치폰 실측",
+        "status": "phone-verified",
+        "screenshot": "assets/views_Dfjc1_Jzv1K_20261124.webp"
+      }
     },
     {
       "code": "DfJ8EKFRwtg",
@@ -2770,7 +3115,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DeN7q2xyco4",
@@ -2815,7 +3166,13 @@ window.INTRO_CATALOG={
       "message": "룩·제품 제시",
       "verification": "",
       "numeric": false,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": 104265,
+        "capturedAt": null,
+        "note": "11/20 정리한 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcLZa7xTnzG",
@@ -2863,7 +3220,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": 35575,
+        "capturedAt": null,
+        "note": "11/20 정리한 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DcQo1c5SYj8",
@@ -2908,7 +3271,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": 31956,
+        "capturedAt": null,
+        "note": "11/20 정리한 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Dd6AqtqTKtd",
@@ -2954,7 +3323,15 @@ window.INTRO_CATALOG={
       "verification": "",
       "numeric": true,
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
-      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
+      "viewMetrics": {
+        "views": 34000,
+        "viewsDisplay": "3.4만",
+        "capturedAt": "2026-11-24",
+        "note": "2026.11.24 서치폰 실측",
+        "status": "phone-verified",
+        "screenshot": "assets/views_Dd6AqtqTKtd_20261124.webp"
+      }
     },
     {
       "code": "DfEYoeRJOKx",
@@ -3000,7 +3377,13 @@ window.INTRO_CATALOG={
       "verification": "사용자는 전신 계열로 분류했지만 첫 3초 캡처에서는 신발까지 보이는 전신이 아니라 얼굴·마이크가 중심이다.",
       "numeric": true,
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
-      "framingReview": "2026-11-21 첫 0.1·1.5·2.5초 대조: 첫 화면에 신발 끝까지 들어오지 않아 전신 시작에서 제외."
+      "framingReview": "2026-11-21 첫 0.1·1.5·2.5초 대조: 첫 화면에 신발 끝까지 들어오지 않아 전신 시작에서 제외.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "Dd5-eyYBPmY",
@@ -3045,7 +3428,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DeJZ8WhRhCR",
@@ -3090,7 +3479,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": 102148,
+        "capturedAt": null,
+        "note": "11/20 정리한 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DOu-GErkbFF",
@@ -3139,7 +3534,13 @@ window.INTRO_CATALOG={
       "verification": "4는 제품 수이며 키·굽 숫자가 아니다. 여러 제품 추천이므로 단일 제품 광고와 별도 비교.",
       "numeric": false,
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
-      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
+      "viewMetrics": {
+        "views": 465843,
+        "capturedAt": null,
+        "note": "11/20 정리한 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "De8x3lEs178",
@@ -3184,7 +3585,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DfmEIA4PxeX",
@@ -3230,7 +3637,13 @@ window.INTRO_CATALOG={
       "verification": "",
       "numeric": true,
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
-      "framingReview": "2026-11-21 첫 0.1·1.5·2.5초 대조: 첫 화면에 신발 끝까지 들어오지 않아 전신 시작에서 제외."
+      "framingReview": "2026-11-21 첫 0.1·1.5·2.5초 대조: 첫 화면에 신발 끝까지 들어오지 않아 전신 시작에서 제외.",
+      "viewMetrics": {
+        "views": 59311,
+        "capturedAt": null,
+        "note": "11/20 정리한 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "Dd3aEqAhPYy",
@@ -3275,7 +3688,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DbswxaySlTe",
@@ -3320,7 +3739,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": 15347,
+        "capturedAt": null,
+        "note": "11/20 정리한 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DeYx2SPyGc1",
@@ -3365,7 +3790,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DeYp3cni0wJ",
@@ -3410,7 +3841,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DfjXAjniDVZ",
@@ -3458,7 +3895,13 @@ window.INTRO_CATALOG={
       "verification": "사용자 분류는 전신·룩 강조. 실제 첫 컷은 얼굴이 잘린 착장 중심 구도이며 +8cm가 함께 표시된다.",
       "numeric": true,
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
-      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DfExBnHM3a5",
@@ -3503,7 +3946,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "Dfgyf7ruoIu",
@@ -3548,7 +3997,13 @@ window.INTRO_CATALOG={
       "message": "키 변화·비교",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DeMB5AXzxTc",
@@ -3593,7 +4048,13 @@ window.INTRO_CATALOG={
       "message": "룩·제품 제시",
       "verification": "",
       "numeric": true,
-      "mediaNote": "원본 영상. 첫 3초 프레임 대조."
+      "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
+      "viewMetrics": {
+        "views": 83838,
+        "capturedAt": null,
+        "note": "11/4 발굴 보관값 · 원 수집일 미상",
+        "status": "archived"
+      }
     },
     {
       "code": "DdAKlUryihs",
@@ -3642,7 +4103,13 @@ window.INTRO_CATALOG={
       "verification": "",
       "numeric": true,
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
-      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     },
     {
       "code": "DfpfYNqyilE",
@@ -3690,7 +4157,13 @@ window.INTRO_CATALOG={
       "verification": "",
       "numeric": null,
       "mediaNote": "일반 어그·레그워머 훅 참고. 키높이 신발 반응 집계에서는 제외.",
-      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작."
+      "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
+      "viewMetrics": {
+        "views": null,
+        "capturedAt": null,
+        "note": "조회수 미수집",
+        "status": "unverified"
+      }
     }
   ],
   "total": 78,
@@ -3710,5 +4183,6 @@ window.INTRO_CATALOG={
     "DegqqlyIkch",
     "DcNzj53oSTy"
   ],
-  "method": "기존 56편도 동일한 화면 구성 축으로 재분류. 첫 3초를 0.1/0.5/1/1.5/2/2.5/3초에서 직접 대조. Deg는 보관 도입 발췌, DZp는 보관 첫 이미지로만 판정."
+  "method": "기존 56편도 동일한 화면 구성 축으로 재분류. 첫 3초를 0.1/0.5/1/1.5/2/2.5/3초에서 직접 대조. Deg는 보관 도입 발췌, DZp는 보관 첫 이미지로만 판정.",
+  "viewsAvailable": 64
 };
