@@ -14,9 +14,9 @@
  function close(){dialog.querySelector('video')?.pause();dialog.close()}
  dialog.addEventListener('close',()=>dialog.querySelector('video')?.pause());
  function cards(refs,kind){return `<div class="flow-strip flow-examples">${refs.map((r,k)=>!r.img?'':`<article><span class="flow-time">${esc(r.source)}</span><button class="flow-picture" data-${kind}="${k}" aria-label="${esc(r.title)} 구간 재생">${preview(r,'해당 장면 ▶')}</button><h4>${esc(r.title)}</h4><p>${esc(r.note)}</p></article>`).join('')}</div>`}
- function draw(f){selected=f;tabs.innerHTML=data.map(x=>`<button type="button" data-flow="${x.id}" aria-pressed="${x.id===f.id}">${esc(x.title)}</button>`).join('');
+ function draw(f){selected=f;tabs.hidden=data.length<2;tabs.innerHTML=data.map(x=>`<button type="button" data-flow="${x.id}" aria-pressed="${x.id===f.id}">${esc(x.title)}</button>`).join('');
  root.innerHTML=`<h3>${esc(f.title)}</h3><p class="flow-shoot">${esc(f.shoot)}</p><div class="flow-strip">${f.shots.map((s,k)=>`<article><span class="flow-time">${s.time}</span><button class="flow-picture" data-reference="${k}" aria-label="${esc(s.title)} 원본 구간 재생">${preview(s.ref,'구도 예시 ▶')}</button><h4>${esc(s.title)}</h4></article>`).join('')}</div>`;
- if(f.examples?.length)root.insertAdjacentHTML('beforeend',`<h3 class="flow-examples-title">같은 시작 구도의 다른 예시</h3>${cards(f.examples,'opening')}<p class="flow-note"></p>`);
+ if(f.examples?.length)root.insertAdjacentHTML('beforeend',`<h3 class="flow-examples-title">민현님 원본 예시 하나 더</h3>${cards(f.examples,'opening')}<p class="flow-note"></p>`);
  tabs.querySelectorAll('[data-flow]').forEach(b=>b.onclick=()=>draw(data.find(x=>x.id===b.dataset.flow)));
  root.querySelectorAll('[data-reference]').forEach(b=>b.onclick=()=>open(selected.shots[+b.dataset.reference].ref));
  root.querySelectorAll('[data-opening]').forEach(b=>b.onclick=()=>open(selected.examples[+b.dataset.opening]));
