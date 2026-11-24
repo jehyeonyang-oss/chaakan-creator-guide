@@ -1,7 +1,8 @@
 """Stage Pages below its 1 GB limit without recompressing source videos.
 
-Large static libraries use byte-identical videos from this public repository at
-the deployed commit. Originals remain tracked. Dynamic/shared guide assets stay
+Large static libraries use byte-identical videos from this public repository,
+pinned to the newest commit that changed each file (stable URLs keep browser
+caches across deploys); any file that cannot be proven identical uses HEAD. Originals remain tracked. Dynamic/shared guide assets stay
 local. Only exact, resolvable quoted URLs are rewritten, never display text.
 """
 import argparse
@@ -40,6 +41,29 @@ def is_offload_candidate(source):
         Path(source).suffix in {'.jpg', '.jpeg', '.png', '.webp', '.mp4'})
 
 
+def pinned_commits(paths, head):
+    """Newest commit touching each path, kept only when its blob equals HEAD's."""
+    pins = {}
+    try:
+        log = subprocess.check_output(['git', '-c', 'core.quotePath=false', 'log', '--format=C %H',
+                                       '--name-only', '--no-renames', 'HEAD'], cwd=ROOT, text=True,
+                                      encoding='utf-8')
+        commit = None
+        for line in log.splitlines():
+            if line.startswith('C ') and len(line) == 42:
+                commit = line[2:]
+            elif line in paths and line not in pins:
+                pins[line] = commit
+        order = sorted(pins)
+        query = ''.join(f'{pins[p]}:{p}\n{head}:{p}\n' for p in order)
+        out = subprocess.run(['git', 'cat-file', '--batch-check=%(objectname)'], cwd=ROOT, input=query,
+                             capture_output=True, text=True, encoding='utf-8', check=True).stdout.split('\n')
+        return {p: pins[p] if out[2 * i] == out[2 * i + 1] and 'missing' not in out[2 * i] else head
+                for i, p in enumerate(order)}
+    except Exception as error:
+        print(f'pinning fell back to HEAD: {error}')
+        return {}
+
 def build(output):
     files = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
     files = [f for f in files if f and not f.startswith(('.', 'tools/'))]
@@ -57,6 +81,7 @@ def build(output):
                     referenced.add(target)
     # Unreferenced files stay local: they may be assembled dynamically.
     removed_bytes = sum((ROOT / f).stat().st_size for f in referenced)
+    pins = pinned_commits(referenced, commit)
     output.mkdir(parents=True, exist_ok=False)
     rewritten = 0
     for source in files:
@@ -71,7 +96,7 @@ def build(output):
                 if video not in referenced:
                     return match[0]
                 suffix = urlsplit(match[2])
-                url = f'https://raw.githubusercontent.com/jehyeonyang-oss/chaakan-creator-guide/{commit}/{quote(video)}'
+                url = f'https://raw.githubusercontent.com/jehyeonyang-oss/chaakan-creator-guide/{pins.get(video, commit)}/{quote(video)}'
                 if suffix.query: url += '?' + suffix.query
                 if suffix.fragment: url += '#' + suffix.fragment
                 rewritten += 1
@@ -85,7 +110,7 @@ def build(output):
     manifest = dict(commit=commit, bytes=size, offloaded_bytes=removed_bytes,
                     offloaded_videos=sum(f.endswith('.mp4') for f in referenced),
                     offloaded_images=sum(not f.endswith('.mp4') for f in referenced),
-                    rewritten_urls=rewritten)
+                    rewritten_urls=rewritten, pinned_before_head=sum(v != commit for v in pins.values()))
     (output / 'deployment.json').write_text(json.dumps(manifest), encoding='utf-8')
     print(json.dumps(manifest))
 
