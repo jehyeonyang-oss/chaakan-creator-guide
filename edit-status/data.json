@@ -673,7 +673,7 @@
           "label": "24시간",
           "dueAt": "2026-11-21T23:17:15+09:00",
           "actualCollectedAt": null,
-          "state": "pending",
+          "state": "missed",
           "isLate": false,
           "collectionDelaySeconds": null,
           "viewsStatus": null,
@@ -688,17 +688,19 @@
           "slot": "48h",
           "label": "48시간",
           "dueAt": "2026-11-22T23:17:15+09:00",
-          "actualCollectedAt": null,
-          "state": "pending",
-          "isLate": false,
-          "collectionDelaySeconds": null,
-          "viewsStatus": null,
-          "missingMetrics": [],
+          "actualCollectedAt": 1795495549090,
+          "state": "partial",
+          "isLate": true,
+          "collectionDelaySeconds": 138514,
+          "viewsStatus": "reference_missing",
+          "missingMetrics": [
+            "views"
+          ],
           "views": null,
-          "likes": null,
-          "comments": null,
-          "shares": null,
-          "saves": null
+          "likes": 59,
+          "comments": 8,
+          "shares": 15,
+          "saves": 17
         },
         {
           "slot": "1week",
@@ -731,6 +733,24 @@
           "comments": null,
           "shares": null,
           "saves": null
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1795495549090,
+          "state": "partial",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": "reference_missing",
+          "missingMetrics": [
+            "views"
+          ],
+          "views": null,
+          "likes": 59,
+          "comments": 8,
+          "shares": 15,
+          "saves": 17
         }
       ],
       "sales": {},
@@ -2519,5 +2539,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-24T04:33:34.720092+00:00"
+  "syncedAt": "2026-11-24T04:46:26.767046+00:00"
 }
