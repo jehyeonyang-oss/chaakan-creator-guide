@@ -905,14 +905,12 @@
           "label": "공개 후 24시간",
           "dueAt": "2026-11-23T21:00:00+09:00",
           "actualCollectedAt": 1795487220548,
-          "state": "partial",
+          "state": "captured",
           "isLate": true,
           "collectionDelaySeconds": 52020,
           "viewsStatus": "reference_missing",
-          "missingMetrics": [
-            "views"
-          ],
-          "views": null,
+          "missingMetrics": [],
+          "views": 30000,
           "likes": 231,
           "comments": 46,
           "shares": 259,
@@ -2456,5 +2454,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr"
     }
   ],
-  "syncedAt": "2026-11-24T02:27:19.257566+00:00"
+  "syncedAt": "2026-11-24T02:30:11.960731+00:00"
 }
