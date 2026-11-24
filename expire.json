@@ -138,5 +138,9 @@
   {
     "path": "amu__s2__/fullmoon",
     "expires": "2026-12-12T15:00:00Z"
+  },
+  {
+    "path": "_0ik.kk/fullmoon",
+    "expires": "2026-12-31T15:00:00Z"
   }
 ]
