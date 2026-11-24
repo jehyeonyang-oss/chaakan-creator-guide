@@ -2909,10 +2909,12 @@ window.INTRO_CATALOG={
       "verification": "",
       "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
       "viewMetrics": {
-        "views": null,
-        "capturedAt": null,
-        "note": "조회수 미수집",
-        "status": "unverified"
+        "views": 202000,
+        "viewsDisplay": "20.2만",
+        "capturedAt": "2026-11-24",
+        "note": "2026.11.24 서치폰 실측",
+        "status": "phone-verified",
+        "screenshot": "assets/views_De8r7fnT0Rb_20261124.webp"
       }
     },
     {
@@ -2964,7 +2966,7 @@ window.INTRO_CATALOG={
       "viewMetrics": {
         "views": null,
         "capturedAt": null,
-        "note": "조회수 미수집",
+        "note": "미확인",
         "status": "unverified"
       }
     },
@@ -3117,10 +3119,11 @@ window.INTRO_CATALOG={
       "numeric": true,
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
       "viewMetrics": {
-        "views": null,
-        "capturedAt": null,
-        "note": "조회수 미수집",
-        "status": "unverified"
+        "views": 9512,
+        "capturedAt": "2026-11-24",
+        "note": "2026.11.24 서치폰 실측",
+        "status": "phone-verified",
+        "screenshot": "assets/views_DfJ8EKFRwtg_20261124.webp"
       }
     },
     {
@@ -3381,7 +3384,7 @@ window.INTRO_CATALOG={
       "viewMetrics": {
         "views": null,
         "capturedAt": null,
-        "note": "조회수 미수집",
+        "note": "미확인",
         "status": "unverified"
       }
     },
@@ -3432,7 +3435,7 @@ window.INTRO_CATALOG={
       "viewMetrics": {
         "views": null,
         "capturedAt": null,
-        "note": "조회수 미수집",
+        "note": "미확인",
         "status": "unverified"
       }
     },
@@ -3589,7 +3592,7 @@ window.INTRO_CATALOG={
       "viewMetrics": {
         "views": null,
         "capturedAt": null,
-        "note": "조회수 미수집",
+        "note": "미확인",
         "status": "unverified"
       }
     },
@@ -3692,7 +3695,7 @@ window.INTRO_CATALOG={
       "viewMetrics": {
         "views": null,
         "capturedAt": null,
-        "note": "조회수 미수집",
+        "note": "미확인",
         "status": "unverified"
       }
     },
@@ -3794,7 +3797,7 @@ window.INTRO_CATALOG={
       "viewMetrics": {
         "views": null,
         "capturedAt": null,
-        "note": "조회수 미수집",
+        "note": "미확인",
         "status": "unverified"
       }
     },
@@ -3845,7 +3848,7 @@ window.INTRO_CATALOG={
       "viewMetrics": {
         "views": null,
         "capturedAt": null,
-        "note": "조회수 미수집",
+        "note": "미확인",
         "status": "unverified"
       }
     },
@@ -3897,10 +3900,11 @@ window.INTRO_CATALOG={
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
       "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
       "viewMetrics": {
-        "views": null,
-        "capturedAt": null,
-        "note": "조회수 미수집",
-        "status": "unverified"
+        "views": 5606,
+        "capturedAt": "2026-11-24",
+        "note": "2026.11.24 서치폰 실측",
+        "status": "phone-verified",
+        "screenshot": "assets/views_DfjXAjniDVZ_20261124.webp"
       }
     },
     {
@@ -3950,7 +3954,7 @@ window.INTRO_CATALOG={
       "viewMetrics": {
         "views": null,
         "capturedAt": null,
-        "note": "조회수 미수집",
+        "note": "미확인",
         "status": "unverified"
       }
     },
@@ -3999,10 +4003,12 @@ window.INTRO_CATALOG={
       "numeric": true,
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
       "viewMetrics": {
-        "views": null,
-        "capturedAt": null,
-        "note": "조회수 미수집",
-        "status": "unverified"
+        "views": 12000,
+        "viewsDisplay": "1.2만",
+        "capturedAt": "2026-11-24",
+        "note": "2026.11.24 서치폰 실측",
+        "status": "phone-verified",
+        "screenshot": "assets/views_Dfgyf7ruoIu_20261124.webp"
       }
     },
     {
@@ -4105,10 +4111,12 @@ window.INTRO_CATALOG={
       "mediaNote": "원본 영상. 첫 3초 프레임 대조.",
       "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
       "viewMetrics": {
-        "views": null,
-        "capturedAt": null,
-        "note": "조회수 미수집",
-        "status": "unverified"
+        "views": 880000,
+        "viewsDisplay": "88만",
+        "capturedAt": "2026-11-24",
+        "note": "2026.11.24 서치폰 실측",
+        "status": "phone-verified",
+        "screenshot": "assets/views_DdAKlUryihs_20261124.webp"
       }
     },
     {
@@ -4159,10 +4167,12 @@ window.INTRO_CATALOG={
       "mediaNote": "일반 어그·레그워머 훅 참고. 키높이 신발 반응 집계에서는 제외.",
       "framingReview": "2026-11-21 보관 첫 화면 대조: 얼굴을 프레임 밖으로 자르고 착장·다리·신발을 보여주는 시작.",
       "viewMetrics": {
-        "views": null,
-        "capturedAt": null,
-        "note": "조회수 미수집",
-        "status": "unverified"
+        "views": 106000,
+        "viewsDisplay": "10.6만",
+        "capturedAt": "2026-11-24",
+        "note": "2026.11.24 서치폰 실측",
+        "status": "phone-verified",
+        "screenshot": "assets/views_DfpfYNqyilE_20261124.webp"
       }
     }
   ],
@@ -4184,5 +4194,5 @@ window.INTRO_CATALOG={
     "DcNzj53oSTy"
   ],
   "method": "기존 56편도 동일한 화면 구성 축으로 재분류. 첫 3초를 0.1/0.5/1/1.5/2/2.5/3초에서 직접 대조. Deg는 보관 도입 발췌, DZp는 보관 첫 이미지로만 판정.",
-  "viewsAvailable": 64
+  "viewsAvailable": 70
 };
