@@ -2945,6 +2945,41 @@
       "postUrl": "https://www.instagram.com/p/DfuHSxBGIJ7/",
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_bacheeke_kr",
       "scheduleLog": []
+    },
+    {
+      "name": "휘안",
+      "track": "26FW",
+      "account": "hwian.log",
+      "product": "블래티 슬라우치 부츠 스웨이드 베이지 롱 BLSDR4i195 245",
+      "content": "디자인팀 요청 인원 · 종굵자 일자다리 롱부츠 · 착화 소개",
+      "stage": "초안 검수 완료",
+      "status": "영상초안",
+      "sentDate": "2026-11-11",
+      "postDate": "2026-11-30",
+      "deliveredDate": "2026-11-14",
+      "detail": "디자인팀 요청 인원 · 11/26 완성본 컨펌 · 할인코드 hwian2610 (11/30~12/14)",
+      "schedule": "11/30 업로드 예정",
+      "scheduleType": "확정",
+      "next": "11/30 업로드 확인 → 게시 등록·48시간·1주·2주 성과 추적",
+      "guideUrl": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/hwian.log/boots/",
+      "expires": "",
+      "fee": "10만 (세전) + PA 코드",
+      "productCost": 89900.0,
+      "engagement": [],
+      "sales": {},
+      "phoneTrackingReady": false,
+      "engagementBaseline": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null,
+        "actualCollectedAt": null
+      },
+      "latestViews": null,
+      "postUrl": "",
+      "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=hwian_20261126_PcJDUDMqyTiOY2PdO4fQ",
+      "scheduleLog": []
     }
   ],
   "contacts": [
@@ -3019,5 +3054,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-26T08:41:41.168543+00:00"
+  "syncedAt": "2026-11-26T09:36:41.511703+00:00"
 }
