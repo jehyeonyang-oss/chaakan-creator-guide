@@ -2009,17 +2009,17 @@
           "slot": "48h",
           "label": "48시간",
           "dueAt": "2026-11-26T21:37:15+09:00",
-          "actualCollectedAt": null,
-          "state": "pending",
+          "actualCollectedAt": 1795697128523,
+          "state": "captured",
           "isLate": false,
-          "collectionDelaySeconds": null,
+          "collectionDelaySeconds": 493,
           "viewsStatus": null,
           "missingMetrics": [],
-          "views": null,
-          "likes": null,
-          "comments": null,
-          "shares": null,
-          "saves": null
+          "views": 4092,
+          "likes": 29,
+          "comments": 22,
+          "shares": 2,
+          "saves": 24
         },
         {
           "slot": "1week",
@@ -2057,17 +2057,17 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1795610720744,
+          "actualCollectedAt": 1795697128523,
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
           "viewsStatus": null,
           "missingMetrics": [],
-          "views": 3865,
-          "likes": 25,
-          "comments": 20,
+          "views": 4092,
+          "likes": 29,
+          "comments": 22,
           "shares": 2,
-          "saves": 23
+          "saves": 24
         }
       ],
       "sales": {},
@@ -3083,5 +3083,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-26T11:46:06.340871+00:00"
+  "syncedAt": "2026-11-26T12:46:29.629191+00:00"
 }
