@@ -1173,6 +1173,12 @@
           "purchases": 1,
           "rev_utm": 0,
           "rev_code": 60720
+        },
+        "2week": {
+          "revenue": 60720,
+          "purchases": 1,
+          "rev_utm": 0,
+          "rev_code": 60720
         }
       },
       "phoneTrackingReady": true,
@@ -3013,5 +3019,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-26T08:19:54.683083+00:00"
+  "syncedAt": "2026-11-26T08:41:41.168543+00:00"
 }
