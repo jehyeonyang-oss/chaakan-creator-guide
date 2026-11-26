@@ -2369,6 +2369,70 @@
           "saves": null
         },
         {
+          "slot": "pub24h",
+          "label": "공개 후 24시간",
+          "dueAt": "2026-11-27T13:57:00+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "pub48h",
+          "label": "공개 후 48시간",
+          "dueAt": "2026-11-28T13:57:00+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "pub1week",
+          "label": "공개 후 7일",
+          "dueAt": "2026-12-03T13:57:00+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "pub2week",
+          "label": "공개 후 14일",
+          "dueAt": "2026-12-10T13:57:00+09:00",
+          "actualCollectedAt": null,
+          "state": "pending",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": null,
+          "missingMetrics": [],
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
@@ -2949,5 +3013,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-26T04:46:41.916735+00:00"
+  "syncedAt": "2026-11-26T05:14:57.717666+00:00"
 }
