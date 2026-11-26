@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="noindex" name="robots"/><title>홍서님 · 풀문 촬영 가이드</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet"/>
+<style>
+:root{color-scheme:light;--ink:#1c1b19;--ink2:#5b5953;--muted:#8a877f;--accent:#c9402a;--accent-deep:#a8311f;--wash:#fbeee9;--line:#e9e4dc;--bg:#f7f4ee;--card:#fff;--soft:#f6f2ea;--sh:0 1px 2px rgba(28,27,25,.04),0 10px 30px -14px rgba(28,27,25,.18)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;color:var(--ink);background:var(--bg);font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+main{max-width:920px;margin:auto;padding:40px 24px 80px}h1,h2,h3,p,figure{margin:0}p,li{word-break:keep-all;overflow-wrap:anywhere}a{color:var(--accent)}
+h1{font-size:34px;line-height:1.25;letter-spacing:-.035em;font-weight:800;word-break:keep-all}h1 mark{background:none;color:inherit;box-shadow:inset 0 -.32em 0 #f6c8bc}
+.intro{margin:10px 0 18px;color:var(--ink2);font-size:17px}
+.refs{display:flex;gap:10px}.refs a{flex:1;display:block;border:1px solid var(--line);border-radius:16px;padding:12px 16px;text-decoration:none;font-weight:700;background:var(--card);box-shadow:var(--sh);color:var(--ink)}.refs a b{color:var(--accent)}.refs small{display:block;color:var(--muted);font-size:12.5px;font-weight:500;margin-top:2px}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 0}.nav a{font-size:13.5px;font-weight:600;text-decoration:none;color:var(--ink2);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.sec-title{font-size:15px;font-weight:800;letter-spacing:-.01em;margin:28px 0 10px;color:var(--ink)}.sec-title small{color:var(--muted);font-weight:500;font-size:13px;margin-left:6px}
+.products{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:560px}.products a{color:var(--ink);text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:var(--sh)}.products img{width:100%;aspect-ratio:1;object-fit:cover;background:var(--soft);border-radius:12px}.products b,.products small{display:block}.products b{margin:10px 2px 0;font-size:18px;letter-spacing:-.01em}.products small{color:var(--muted);margin:0 2px 4px;font-size:13.5px}
+.box{margin-top:10px;padding:13px 16px;border-radius:14px;background:var(--wash);font-size:15px;line-height:1.65;border:1px solid #f3d9d0}.box b{color:var(--accent-deep);margin-right:8px}
+.scene{position:relative;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px 26px 26px;margin-top:18px;box-shadow:var(--sh);scroll-margin-top:12px}
+.time{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--accent-deep);margin-bottom:8px}.time i{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font-style:normal;font-size:12.5px;font-weight:800}.time span{background:var(--wash);border-radius:999px;padding:2px 10px}
+.scene h2{font-size:24px;line-height:1.35;letter-spacing:-.03em;font-weight:800;margin-bottom:16px;word-break:keep-all}
+.layout{display:flex;flex-direction:column;align-items:center;gap:22px}.layout>*{width:100%}
+.media{display:flex;gap:10px;align-items:start;justify-content:center;margin-left:auto;margin-right:auto}.media img,.media video{display:block;width:100%;border-radius:14px;object-fit:cover;background:var(--soft);border:1px solid var(--line)}.single{width:100%;max-width:320px}.single img,.single video{height:auto;aspect-ratio:9/16;object-fit:contain}.media.pair{max-width:520px}.media.trio{max-width:560px}.media figure{min-width:0;flex:1}.media figcaption{font-size:12.5px;color:var(--muted);margin-top:6px;font-weight:500}
+.instructions{max-width:620px;margin:0 auto;text-align:left}.instructions p+p{margin-top:9px}.instructions p b{font-weight:800}.step{display:inline-block;background:var(--ink);color:#fff;font-size:12.5px;font-weight:700;border-radius:6px;padding:1px 8px;margin-right:6px;vertical-align:1px}
+.label{font-size:12.5px;font-weight:800;color:var(--accent-deep);display:block;margin:16px 0 8px;letter-spacing:.01em;text-align:center}
+.copy{background:#17171a;color:#fff;border-radius:16px;padding:18px 16px;text-align:center;max-width:380px;margin-left:auto;margin-right:auto}.copy .logos{display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:10px}.copy .logos img{width:34px;height:34px;border-radius:8px;object-fit:contain}.copy .l1{font-size:15px;font-weight:700}.copy .l2{font-size:26px;font-weight:900;letter-spacing:-.03em;line-height:1.25;margin:4px 0;color:#ffe600}.copy .l3{font-size:13.5px;font-weight:700}
+.copy.light{background:var(--soft);color:var(--ink);text-align:left;font-size:16px;font-weight:600;max-width:none}
+.hint{font-size:13.5px;color:var(--ink2);margin-top:10px!important;line-height:1.6}
+.rank{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line)}.rank h3{font-size:17px;font-weight:800;letter-spacing:-.02em}.rank h3 span{color:var(--accent-deep);font-size:13px;margin-left:6px}.rank-ex{display:flex;gap:10px;margin:12px auto 0;max-width:520px}.rank-ex figure{flex:1;min-width:0}.rank-ex img{width:100%;border-radius:14px;border:1px solid var(--line);display:block}.rank-ex figcaption{font-size:12.5px;color:var(--muted);margin-top:6px;font-weight:500}
+.files{display:grid;grid-template-columns:repeat(2,minmax(0,120px));gap:10px;margin-top:4px;justify-content:center}.files.four{grid-template-columns:repeat(4,minmax(0,120px))}.files figure{margin:0}.files a:has(img){display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}.files img{width:100%;height:64px;object-fit:contain;display:block}.files figcaption{font-size:12.5px;color:var(--muted);margin-top:5px;font-weight:500}.files figcaption{word-break:keep-all}.files figcaption a{font-weight:700;white-space:nowrap}
+.downloads{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.downloads a{display:inline-block;padding:7px 12px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;font-weight:600;text-decoration:none;background:var(--soft);color:var(--ink)}
+details{border:1px solid var(--line);border-radius:14px;padding:0 16px;margin-top:12px;background:var(--soft)}summary{cursor:pointer;font-weight:700;padding:12px 0;line-height:1.5;list-style:none;display:flex;align-items:center;gap:8px}summary::-webkit-details-marker{display:none}summary::before{content:"";width:7px;height:7px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg);transition:transform .15s;flex:none}details[open] summary::before{transform:rotate(45deg)}details[open] summary{border-bottom:1px solid var(--line);margin-bottom:12px}details[open]{padding-bottom:14px}details p+p{margin-top:10px}ul,ol{padding-left:22px;margin:8px 0 0}li+li{margin-top:8px}
+.dont .instructions p b{color:var(--accent-deep)}
+.support{margin-top:30px;scroll-margin-top:16px}.support>h2{font-size:22px;letter-spacing:-.03em;font-weight:800;margin-bottom:8px}
+.script{padding:20px 22px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px 18px 18px 6px;margin-top:14px;font-size:17px;line-height:1.7;box-shadow:var(--sh)}.script p+p{margin-top:12px}.script small{display:block;font-size:12px;color:var(--accent-deep);font-weight:800;letter-spacing:.02em}
+.checks{list-style:none;padding:0;margin:0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:8px 18px;box-shadow:var(--sh)}.checks li{margin:0;padding:10px 0;border-bottom:1px solid var(--line)}.checks li:last-child{border-bottom:0}.checks label{display:flex;align-items:start;gap:12px}.checks input{margin-top:6px;accent-color:var(--accent);width:18px;height:18px;flex:none}
+a:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+@media(max-width:640px){main{padding:24px 16px 56px}h1{font-size:27px}.scene{padding:20px 18px 22px;border-radius:18px}.scene h2{font-size:21px}.layout{gap:14px}.single{max-width:240px}.media.pair{max-width:300px}.media.pair img{height:190px;object-fit:contain}.media.trio{width:100%;max-width:360px}.media.trio img,.media.trio video{height:auto;aspect-ratio:9/16;object-fit:cover}.instructions{width:100%}.refs a{padding:10px 12px}.copy{max-width:none}.copy .l2{font-size:22px}.products{max-width:none}.support>h2{font-size:20px}.files,.files.four{grid-template-columns:repeat(2,minmax(0,1fr))}.files{max-width:260px;margin-left:auto;margin-right:auto}}
+.products.one{grid-template-columns:1fr;max-width:300px}.single.wide{max-width:360px}.single.wide video{aspect-ratio:540/390;object-fit:cover}.scene.key{border:2px solid var(--accent)}.must{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:14px;border-radius:8px;padding:4px 12px;margin:-6px 0 16px}.scene .box{margin-top:14px}#empathy{margin-top:18px}.rank.cond{border:2px dashed var(--accent);border-radius:16px;padding:16px 18px;background:var(--wash)}.box.decide ul{margin:6px 0 0}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:18px}.opt h3{font-size:16px;margin-bottom:8px}.opt .media{margin-bottom:10px}@media(max-width:720px){.opts{grid-template-columns:1fr}}.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:12px}.gal figure{min-width:0}.gal video,.gal img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:12px;background:#111}.gal figcaption,.media figcaption{font-size:12.5px;line-height:1.4}.gal .linkonly{align-self:end}#other ul{margin:8px 0 0 18px}#other details+details{margin-top:10px}.media.trio{max-width:560px}.refmini{padding:14px 16px}.refrow{display:flex;gap:14px;align-items:center}.refrow video{width:96px;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:#111;flex:none}.refrow p{margin:0 0 4px}.media.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:560px;margin:0 auto 14px}.media video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:12px;background:#111}.media figcaption{font-size:12.5px;line-height:1.4;margin-top:6px}.products.one{grid-template-columns:minmax(0,220px)}</style></head><body><main>
+<header><h1>홍서님 <mark>풀문</mark> 촬영 가이드</h1>
+<p class="intro">지난번 부츠 영상처럼 찍어 주시면 돼요. 한쪽만 신은 첫 화면, 같은 자리 정면 구도, 팔 기준 빨간 선 +cm를 그대로 살려서 풀문으로 이어 주세요. 1번부터 순서대로 보시면 돼요. <a href="https://www.instagram.com/reel/DfMrQ14SbIf/" rel="noopener" target="_blank">지난 영상 보기 ↗</a></p>
+<nav aria-label="바로가기" class="nav"><a href="#st1">1 첫 화면</a><a href="#st2">2 착장 전환</a><a href="#st3">3 굽 집기</a><a href="#st4">4 +cm 비교</a><a href="#st5">5 신발 보여주기</a><a href="#st6">6 마무리</a><a href="#dont">부탁드려요</a><a href="#prepare">촬영 전 준비</a></nav>
+<h3 class="sec-title">촬영 제품</h3>
+<div class="products one"><a href="https://chaakan.co.kr/product/detail.html?product_no=4842" rel="noopener noreferrer" target="_blank"><img alt="풀문 키높이 퍼안감 방한 부츠" src="assets/product.jpg"/><b>풀문</b><small>키높이 퍼안감 방한 부츠 · 굽 7cm<br/>(겉굽 3.5cm + 속굽 3.5cm)</small></a></div>
+<div class="box" style="margin-top:14px"><b>코디</b>코디는 홍서님 평소처럼 해 주세요. 지난 영상처럼 짧은 하의에 양말이 살짝 보이면 부츠가 잘 살아요. 하의나 가방이 부츠를 가리지 않게, 발끝까지 담아 주세요.</div>
+<div class="box"><b>댓글 이벤트</b>업로드일부터 1주 동안 팔로워분들 대상으로 댓글 이벤트를 같이 해요. 당첨되신 3분께는 저희가 풀문 부츠를 보내 드려요.</div>
+</header>
+<section class="scene key" id="st1">
+<div class="time"><i>1</i>첫 화면·썸네일<span>0–2초</span></div>
+<h2>한쪽만 신고, 키작녀 +7cm로 시작해 주세요</h2>
+<div class="layout"><div class="media single"><figure><video controls="" loop="" muted="" playsinline="" poster="assets/own-thumb.jpg" preload="metadata" src="assets/own-thumb.mp4"></video><figcaption>홍서님 지난 영상 0–1.9초</figcaption></figure></div>
+<div class="instructions">
+<p>지난 영상처럼 한쪽은 풀문, 한쪽은 양말로 서서 시작해 주세요. 두 발 높이 차이가 바로 보이게 담아 주세요.</p>
+<span class="label">썸네일 텍스트 예시</span>
+<span class="label">위</span><div class="copy light">000 → 000cm<br/>+7cm</div>
+<span class="label">가운데</span><div class="copy light">키작녀 +7cm 부츠 추천!!</div><div class="copy light">한쪽만 신었는데 차이 보이시나요..</div>
+</div></div></section>
+<section class="scene" id="st2">
+<div class="time"><i>2</i>착장 전환<span>약 2–4초</span></div>
+<h2>같은 자리에서 2~3착장 빠르게</h2>
+<div class="layout"><div class="media single"><figure><video controls="" loop="" muted="" playsinline="" poster="assets/own-intro.jpg" preload="metadata" src="assets/own-intro.mp4"></video><figcaption>홍서님 지난 영상 15–19초</figcaption></figure></div>
+<div class="instructions">
+<p>지난 영상처럼 같은 자리, 같은 정면 구도에서 코디만 바꿔 2~3벌 빠르게 넘겨 주세요.</p>
+<p>가슴 아래부터 부츠 끝까지 담아 주세요. 번호 자막(1. 2. 3.)으로 넘기셔도 좋아요.</p>
+</div></div></section>
+<section class="scene key" id="st3">
+<div class="time"><i>3</i>굽 집기<span>약 4–6.5초</span></div>
+<h2>굽 집기 + 단면</h2>
+<div class="media pair"><figure><video controls="" loop="" muted="" playsinline="" poster="assets/own-heel.jpg" preload="metadata" src="assets/own-heel.mp4"></video><figcaption>홍서님 지난 영상 5.5–7초</figcaption></figure><figure><video controls="" loop="" muted="" playsinline="" poster="assets/heel-example.jpg" preload="metadata" src="assets/heel-example.mp4"></video><figcaption>예시 영상 · 풀문</figcaption></figure></div>
+<div class="instructions">
+<p><span class="step">굽 집기</span>부츠를 손에 들고 손가락으로 굽을 집어 보여 주세요.</p>
+<p><span class="step">단면</span>아래 단면 사진을 화면 가운데 크게 2초 넣어 주세요.</p>
+<span class="label">화면 글자 예시</span><div class="copy light">히든 굽이 무려 7cm!!</div>
+<div class="files"><figure><a href="assets/section_fullmoon_7cm.png" rel="noopener" target="_blank"><img alt="풀문 부츠 단면 사진, 겉굽과 속굽을 합쳐 총 7cm" src="assets/section_fullmoon_7cm.png"/></a><figcaption>풀문 단면 <a download="" href="assets/section_fullmoon_7cm.png">저장 ↓</a></figcaption></figure></div>
+</div></section>
+<section class="scene" id="st4">
+<div class="time"><i>4</i>+cm 비교<span>약 6.5–9초</span></div>
+<h2>팔 기준 빨간 선으로 +7cm 보여 주세요</h2>
+<div class="layout"><div class="media single"><figure><video controls="" loop="" muted="" playsinline="" poster="assets/own-height.jpg" preload="metadata" src="assets/own-height.mp4"></video><figcaption>홍서님 지난 영상 1.9–4초</figcaption></figure></div>
+<div class="instructions">
+<p>지난 영상처럼 같은 자리·같은 구도에서 신발만 풀문으로 바꿔 신어 주세요.</p>
+<p>팔 높이에 빨간 선 두 개를 긋고, 선 옆에 +7cm를 적어 주세요. 하의와 부츠가 화면에 잘 보이게 해 주세요.</p>
+<span class="label">자막 예시</span><div class="copy light">팔 기준으로 이만큼이나 차이 나요!!!<br/>+7cm</div>
+</div></div></section>
+<section class="scene" id="st5">
+<div class="time"><i>5</i>신발 보여주기<span>약 9–18초</span></div>
+<h2>서서 보여주는 컷 → 앉아서 보여주는 컷</h2>
+<div class="media pair"><figure><video controls="" loop="" muted="" playsinline="" poster="assets/own-close.jpg" preload="metadata" src="assets/own-close.mp4"></video><figcaption>① 서서 · 홍서님 지난 영상 12.5–14.5초</figcaption></figure><figure><video controls="" loop="" muted="" playsinline="" poster="assets/seat-example.jpg" preload="metadata" src="assets/seat-example.mp4"></video><figcaption>② 앉아서 · 예시 영상</figcaption></figure></div>
+<div class="instructions">
+<p>부츠가 화면 가운데 크게 보이게 2~3초씩 담아 주세요.</p>
+<p>앉은 컷은 다리를 비스듬히 두거나 무릎을 세워서 부츠 옆면이 크게 보이게 해 주세요.</p>
+</div></section>
+<section class="scene" id="st6">
+<div class="time"><i>6</i>마무리<span>마지막 2–3초 · 전체 약 20초</span></div>
+<h2>댓글 안내 + 혜택</h2>
+<div class="layout"><div class="media single"><figure><video controls="" loop="" muted="" playsinline="" poster="assets/own-cta.jpg" preload="metadata" src="assets/own-cta.mp4"></video><figcaption>홍서님 지난 영상 마지막 장면</figcaption></figure></div>
+<div class="instructions">
+<p>부츠를 신고 서 있는 모습 2~3초로 마무리해 주세요. 지난 영상처럼 “오늘 어떤 코디가 제일 예뻐요?” 질문을 같이 넣으셔도 좋아요.</p>
+<span class="label">화면 자막</span><div class="copy light">댓글에 ‘○○’ 남겨 주시면<br/>할인코드랑 제품 링크 보내드릴게요</div>
+<div class="copy light">자세한 내용은 캡션 확인</div>
+<span class="label">캡션에 꼭 넣어 주세요</span><div class="copy light">댓글 남겨 주시면 20% 할인코드랑 제품 링크 보내드려요!</div>
+<p class="hint">댓글 이벤트 안내도 캡션에 같이 적어 주세요. 할인코드는 업로드일이 정해지면 따로 보내 드릴게요.</p>
+</div></div></section>
+<section class="scene dont" id="dont"><div class="time"><i>!</i>부탁드려요</div><h2>이것만 피해 주세요</h2><div class="layout"><div class="instructions">
+<p>신발이 작게 보이거나 가려지지 않게 부탁드려요. 첫 화면부터 신발 모양이 보이게 거리와 하의 길이만 맞춰 주세요.</p>
+<p>상자 열기·포장 뜯기는 빼고, 첫 화면으로 바로 시작해 주세요.</p>
+<p>보내 드린 제품은 자르거나 안창을 빼지 말아 주세요.</p>
+<p>다른 신발 브랜드 이름·로고·상자, 유명인 이름, 저작권 있는 음원은 넣지 말아 주세요.</p>
+</div></div></section>
+<section class="support" id="prepare"><h2>촬영 전 준비</h2><details><summary>준비물 · 촬영 전 연락</summary><ol>
+<li>원하시는 색상·사이즈를 알려 주세요.</li>
+<li>지난번처럼 폰을 고정할 받침대나 삼각대, 양말을 준비해 주세요.</li>
+<li>어떻게 찍으실지 몇 줄만 먼저 알려 주세요. 확인 답변 드린 뒤 촬영해 주시면 돼요.</li>
+<li>초안 전달 날짜·게시 날짜·댓글 키워드를 같이 정해요.</li>
+<li>게시하실 때 @chaakan_kr 공동작업자 초대가 가능한지 알려 주세요.</li>
+</ol><p class="hint">연락은 가이드를 받으신 메일로 편하게 주세요.</p></details></section>
+<section class="support"><h2>초안 보내 주시기 전에 확인해 주세요</h2><ul class="checks">
+<li><label><input type="checkbox"/>첫 화면에 한쪽 부츠·한쪽 양말과 “키작녀 +7cm” 글자가 보이나요?</label></li>
+<li><label><input type="checkbox"/>같은 자리에서 2~3착장이 빠르게 넘어가나요?</label></li>
+<li><label><input type="checkbox"/>굽 집기와 단면 사진이 들어갔나요?</label></li>
+<li><label><input type="checkbox"/>팔 기준 빨간 선과 +7cm 자막이 보이나요?</label></li>
+<li><label><input type="checkbox"/>서서 보여주는 컷과 앉아서 보여주는 컷이 들어갔나요?</label></li>
+<li><label><input type="checkbox"/>자막이 화면 위아래 끝에 걸리지 않고, 옷·가방이 신발을 가리지 않나요?</label></li>
+<li><label><input type="checkbox"/>마무리에 댓글 안내와 “자세한 내용은 캡션 확인”이 있고, 캡션에 20% 할인코드·제품 링크 안내가 있나요?</label></li>
+</ul></section>
+</main><script>document.querySelectorAll("video[data-start]").forEach(v=>{const a=+v.dataset.start,b=+v.dataset.end;v.addEventListener("play",()=>{if(v.currentTime<a-.05||v.currentTime>=b-.05)v.currentTime=a});v.addEventListener("timeupdate",()=>{if(v.currentTime>=b)v.pause()})});</script></body></html>
