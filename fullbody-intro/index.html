@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>전신인트로예시</title>
+<style>
+:root{--bg:#fff;--fg:#1b1b1f;--mut:#6b6b76;--card:#f4f4f7;--line:#e1e1e8;--acc:#2b59ff;--accfg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#121216;--fg:#eeeef2;--mut:#9a9aa8;--card:#1d1d24;--line:#2d2d38;--acc:#7b9bff;--accfg:#10131f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;overflow-x:hidden}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 48px}
+h1{margin:0 0 6px;font-size:24px}
+.sub{margin:0 0 18px;color:var(--mut)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:8px 16px;font:inherit;cursor:pointer}
+.tab[aria-selected=true]{background:var(--acc);color:var(--accfg);border-color:var(--acc);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.th{position:relative;aspect-ratio:9/16;background:#000;border:0;padding:0;cursor:pointer;display:block;width:100%}
+.th img{width:100%;height:100%;object-fit:cover;display:block}
+.th .play{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.6);color:#fff;border-radius:999px;padding:2px 9px;font-size:12px}
+.th .none{color:#aaa;font-size:13px;position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.body{padding:10px;display:flex;flex-direction:column;gap:6px;flex:1}
+.desc{font-size:13px;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;word-break:keep-all}
+.shoe{font-size:12px;color:var(--mut)}
+.m{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;text-align:center;font-size:12px}
+.m b{display:block;font-size:14px}
+.m span{color:var(--mut)}
+.date{font-size:11px;color:var(--mut);margin:0}
+.link{margin-top:auto;text-align:center;border:1px solid var(--acc);color:var(--acc);border-radius:8px;padding:6px;text-decoration:none;font-size:13px}
+dialog{border:0;padding:0;background:#000;border-radius:12px;max-width:min(92vw,420px);width:100%}
+dialog::backdrop{background:rgba(0,0,0,.75)}
+dialog video{width:100%;max-height:82vh;display:block}
+dialog .x{position:absolute;top:6px;right:6px;z-index:2;background:rgba(0,0,0,.6);color:#fff;border:0;border-radius:999px;width:32px;height:32px;font-size:18px;cursor:pointer}
+.empty{color:var(--mut)}
+@media (max-width:420px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<main>
+<h1>전신인트로예시</h1>
+<p class="sub">얼굴부터 신발까지 한 화면에 나오는 시작 장면 모음. 하의별로 나눴어요.</p>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="grid" id="grid"></div>
+</main>
+<dialog id="dlg"><button class="x" id="close" aria-label="닫기">×</button><video id="vid" controls playsinline></video></dialog>
+<script src="data.js"></script>
+<script>
+(function(){
+var CATS=[['short-skirt','짧은치마'],['short-pants','짧은바지'],['long-skirt','긴치마']];
+var D=(window.FULLBODY_INTRO||{}).categories||{};
+var tabs=document.getElementById('tabs'),grid=document.getElementById('grid'),dlg=document.getElementById('dlg'),vid=document.getElementById('vid');
+function num(v){return typeof v==='number'?v.toLocaleString('ko-KR'):(v==null?'미확인':String(v))}
+function sc(x){return (x.shares==null&&x.saves==null)?-1:(x.shares||0)+(x.saves||0)}
+function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e}
+function dt(s){return s?String(s).slice(0,10):''}
+function metric(label,v){var d=el('div');d.appendChild(el('b',null,num(v)));d.appendChild(el('span',null,label));return d}
+function card(x){
+  var c=el('div','card'),th=el('button','th');th.type='button';
+  if(x.poster){var i=el('img');i.src=x.poster;i.loading='lazy';i.alt=x.desc||x.code;th.appendChild(i)}else th.appendChild(el('span','none','미리보기 없음'));
+  if(x.video){th.appendChild(el('span','play','▶ 재생'));th.onclick=function(){open(x)}}
+  else{th.onclick=function(){window.open(x.post,'_blank','noopener')}}
+  c.appendChild(th);
+  var b=el('div','body');
+  b.appendChild(el('p','desc',x.desc||''));
+  if(x.shoe)b.appendChild(el('div','shoe','신발 · '+x.shoe));
+  var m=el('div','m');m.appendChild(metric('조회',x.views));m.appendChild(metric('공유',x.shares));m.appendChild(metric('저장',x.saves));b.appendChild(m);
+  var ds=[];if(x.viewsCapturedAt)ds.push('조회 '+dt(x.viewsCapturedAt));if(x.metricsCapturedAt)ds.push('공유·저장 '+dt(x.metricsCapturedAt));
+  if(ds.length)b.appendChild(el('p','date',ds.join(' / ')+' 확인'));
+  var a=el('a','link','원본 링크');a.href=x.post;a.target='_blank';a.rel='noopener';b.appendChild(a);
+  c.appendChild(b);return c}
+function open(x){
+  vid.src=x.video;vid.onloadedmetadata=function(){try{vid.currentTime=x.start||0}catch(e){}vid.play().catch(function(){})};
+  vid.ontimeupdate=function(){if(x.end&&vid.currentTime>=x.end){vid.pause();vid.currentTime=x.start||0}};
+  dlg.showModal()}
+function stop(){vid.pause();vid.removeAttribute('src');vid.load()}
+document.getElementById('close').onclick=function(){dlg.close()};
+dlg.addEventListener('close',stop);
+dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
+function show(id){
+  var list=(D[id]||[]).slice().sort(function(a,b){return sc(b)-sc(a)});
+  grid.innerHTML='';
+  if(!list.length)grid.appendChild(el('p','empty','아직 없어요.'));
+  list.forEach(function(x){grid.appendChild(card(x))});
+  Array.prototype.forEach.call(tabs.children,function(t){t.setAttribute('aria-selected',t.dataset.id===id)})}
+function pick(id){if(location.hash!=='#'+id)history.replaceState(null,'','#'+id);show(id)}
+CATS.forEach(function(c){var t=el('button','tab',c[1]+' '+((D[c[0]]||[]).length));t.type='button';t.dataset.id=c[0];t.setAttribute('role','tab');t.onclick=function(){pick(c[0])};tabs.appendChild(t)});
+function cur(){var h=location.hash.slice(1);return CATS.some(function(c){return c[0]===h})?h:CATS[0][0]}
+window.addEventListener('hashchange',function(){show(cur())});
+show(cur());
+})();
+</script>
+</body>
+</html>
