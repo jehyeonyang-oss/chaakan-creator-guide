@@ -330,15 +330,22 @@
       "handle": "glossbead",
       "region": "부산",
       "store": "NC덕천점(북구 만덕대로 23 뉴코아 1층)",
-      "status": "확정",
+      "status": "종료(취소 안내 대기)",
       "contact": "2026-11-26",
-      "shoot": "2026-12-02",
+      "shoot": null,
       "draft": null,
-      "post": "2026-12-07",
-      "kind": "예정",
-      "price": "50만 + 2차 6개월 7만",
+      "post": null,
+      "kind": "미정",
       "source": "큐레이션 채널",
-      "postEnd": "2026-12-08"
+      "postEnd": null,
+      "previousSchedule": {
+        "shoot": "2026-12-02",
+        "post": "2026-12-07",
+        "postEnd": "2026-12-08"
+      },
+      "agreedPrice": "50만 + 2차 6개월 7만",
+      "shootEnd": null,
+      "draftEnd": null
     },
     {
       "handle": "sson_go",
@@ -440,15 +447,22 @@
       "handle": "kkeong_25",
       "region": "제주",
       "store": "연동점 또는 칠성점(제주시)",
-      "status": "확정",
+      "status": "종료(취소 안내 대기)",
       "contact": "2026-11-26",
-      "shoot": "2026-12-02",
+      "shoot": null,
       "draft": null,
-      "post": "2026-12-15",
-      "kind": "예정",
-      "price": "18만 + 2차 6개월 5만",
+      "post": null,
+      "kind": "미정",
       "source": "큐레이션 채널",
-      "shootEnd": "2026-12-06"
+      "shootEnd": null,
+      "previousSchedule": {
+        "shoot": "2026-12-02",
+        "shootEnd": "2026-12-06",
+        "post": "2026-12-15"
+      },
+      "agreedPrice": "18만 + 2차 6개월 5만",
+      "draftEnd": null,
+      "postEnd": null
     },
     {
       "handle": "enjoy.jeju.travel",
@@ -546,7 +560,7 @@
       "handle": "jeonju.wwtg",
       "region": "전주",
       "store": "변경 필요(전주 객사점 폐점)",
-      "status": "보류(매장 변경)",
+      "status": "종료(취소 안내 대기)",
       "contact": "2026-11-26",
       "shoot": null,
       "draft": null,
@@ -721,7 +735,7 @@
     }
   ],
   "sync": {
-    "updatedAt": "2026-11-27T22:44:30+09:00",
+    "updatedAt": "2026-11-27T22:46:20+09:00",
     "intervalMinutes": 60,
     "sources": [
       "큐레이션 채널",
