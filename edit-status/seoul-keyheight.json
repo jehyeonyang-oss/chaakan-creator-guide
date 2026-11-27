@@ -40,17 +40,20 @@
       "feeEvidence": "기존 DM 전달·메일 협의 기록",
       "contentMetrics": {
         "postUrl": "https://www.instagram.com/reel/DfPCtrYvwhP/",
-        "source": "전용 서치폰 공개 게시물 화면 확인 · 2026-11-12",
+        "source": "맥미니 서치폰 원본 링크·화면 재검증 · 2026-11-27",
         "windows": {
           "latest": {
             "views": 266000,
             "likes": null,
-            "comments": 10,
-            "shares": 2209,
-            "saves": 1320,
-            "at": 1794462230023,
-            "viewsAt": 1794469180862,
-            "viewsText": "26.6만"
+            "comments": 16,
+            "shares": 2336,
+            "saves": 1383,
+            "at": 1795776163291,
+            "metricStatus": {
+              "likes": "hidden"
+            },
+            "viewsStatus": null,
+            "viewsAt": 1794469180862
           }
         }
       }
@@ -91,17 +94,18 @@
       "feeEvidence": "서울링크 협업·출고 기록",
       "contentMetrics": {
         "postUrl": "https://www.instagram.com/reel/DfZQrptB7vg/",
-        "source": "전용 서치폰·dada.mag_ 웹 공개 화면 확인 · 2026-11-12",
+        "source": "맥미니 서치폰 원본 링크·화면 재검증 · 2026-11-27",
         "windows": {
           "latest": {
             "views": 48000,
-            "likes": null,
-            "comments": 122,
-            "shares": 462,
-            "saves": 495,
-            "at": 1794469306405,
-            "viewsAt": 1794469208789,
-            "viewsText": "4.8만"
+            "likes": 716,
+            "comments": 180,
+            "shares": 845,
+            "saves": 810,
+            "at": 1795776100312,
+            "metricStatus": {},
+            "viewsStatus": null,
+            "viewsAt": 1794469208789
           }
         }
       }
@@ -181,17 +185,18 @@
       "feeEvidence": "기존 DM 전달·메일 협의 기록",
       "contentMetrics": {
         "postUrl": "https://www.instagram.com/reel/DfbSggjhxof/",
-        "source": "전용 서치폰·dada.mag_ 웹 공개 화면 확인 · 2026-11-12",
+        "source": "맥미니 서치폰 원본 링크·화면 재검증 · 2026-11-27",
         "windows": {
           "latest": {
             "views": 84000,
-            "likes": null,
-            "comments": 89,
-            "shares": 1748,
-            "saves": 1575,
-            "at": 1794469322616,
-            "viewsAt": 1794469222025,
-            "viewsText": "8.4만"
+            "likes": 1621,
+            "comments": 123,
+            "shares": 2762,
+            "saves": 2295,
+            "at": 1795776045890,
+            "metricStatus": {},
+            "viewsStatus": null,
+            "viewsAt": 1794469222025
           }
         }
       }
@@ -243,17 +248,20 @@
       "rights": "클린본·PA 코드·2차 활용 포함",
       "contentMetrics": {
         "postUrl": "https://www.instagram.com/reel/Dfj2F47y77R/",
-        "source": "전용 서치폰 공개 게시물 화면 확인 · 2026-11-12",
+        "source": "맥미니 서치폰 원본 링크·화면 재검증 · 2026-11-27",
         "windows": {
           "latest": {
             "views": 4470,
             "likes": null,
-            "comments": 12,
-            "shares": 14,
-            "saves": 26,
-            "at": 1794462265200,
-            "viewsAt": 1794469194615,
-            "viewsText": "4470"
+            "comments": 15,
+            "shares": 19,
+            "saves": 34,
+            "at": 1795776229658,
+            "metricStatus": {
+              "likes": "hidden"
+            },
+            "viewsStatus": null,
+            "viewsAt": 1794469194615
           }
         }
       }
@@ -786,7 +794,24 @@
       "dmCheckedAt": "2026-11-12T14:13:54+09:00",
       "dmLastMessageAt": "2026-11-05T13:51:33.373+00:00",
       "rights": "제품 협찬 · 게시 후 PA 코드 전달 예정",
-      "postDate": "2026-11-23"
+      "postDate": "2026-11-23",
+      "contentMetrics": {
+        "postUrl": "https://www.instagram.com/reel/DgEEsyDuBLd/",
+        "source": "맥미니 서치폰 원본 링크·화면 재검증 · 2026-11-27",
+        "windows": {
+          "latest": {
+            "views": 20000,
+            "likes": 55,
+            "comments": 19,
+            "shares": 1,
+            "saves": 6,
+            "at": 1795775785889,
+            "metricStatus": {},
+            "viewsStatus": "verified",
+            "viewsAt": 1795775834820
+          }
+        }
+      }
     },
     {
       "id": "kh:147lil_myo",
@@ -1018,7 +1043,26 @@
       "feeAmount": 150000,
       "feeStatus": "기존 합의 기록",
       "feeEvidence": "기존 DM 전달·메일 협의 기록",
-      "postDate": "2026-11-23"
+      "postDate": "2026-11-23",
+      "contentMetrics": {
+        "postUrl": "https://www.instagram.com/reel/DgELUN3ygXO/",
+        "source": "맥미니 서치폰 원본 링크·화면 재검증 · 2026-11-27",
+        "windows": {
+          "latest": {
+            "views": null,
+            "likes": null,
+            "comments": null,
+            "shares": 3,
+            "saves": 3,
+            "at": 1795775884781,
+            "metricStatus": {
+              "likes": "hidden",
+              "comments": "not_displayed"
+            },
+            "viewsStatus": null
+          }
+        }
+      }
     },
     {
       "id": "kh:tomy.rene",
