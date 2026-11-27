@@ -9,7 +9,8 @@
    "contact": "2026-11-11",
    "draft": null,
    "post": null,
-   "kind": "미정"
+   "kind": "미정",
+   "price": "50만 (2차 6개월 포함)"
   },
   {
    "handle": "mulymin",
@@ -18,7 +19,8 @@
    "contact": "2026-11-24",
    "draft": null,
    "post": null,
-   "kind": "미정"
+   "kind": "미정",
+   "price": "25만 (2차 1~3개월 포함)"
   },
   {
    "handle": "aaaa.__.room",
@@ -135,7 +137,8 @@
    "contact": "2026-11-24",
    "draft": null,
    "post": null,
-   "kind": "미정"
+   "kind": "미정",
+   "price": "10만 (PA 포함)"
   },
   {
    "handle": "dada.allthings",
@@ -189,7 +192,8 @@
    "contact": "2026-10-20",
    "draft": "2026-12-04",
    "post": "2026-12-06",
-   "kind": "예정"
+   "kind": "예정",
+   "price": "18만 (PA·2차 포함, 세전)"
   },
   {
    "handle": "2heeeeeedung",
@@ -198,7 +202,8 @@
    "contact": "2026-10-20",
    "draft": "2026-11-25",
    "post": "2026-11-26",
-   "kind": "예정"
+   "kind": "예정",
+   "price": "확인 안 됨"
   },
   {
    "handle": "amu__s2__",
@@ -207,7 +212,8 @@
    "contact": "2026-10-29",
    "draft": "2026-11-26",
    "post": "2026-11-27",
-   "kind": "예정"
+   "kind": "예정",
+   "price": "50만 + 2차 5만 (VAT 별도)"
   },
   {
    "handle": "ye_instar_",
@@ -216,7 +222,8 @@
    "contact": "2026-11-04",
    "draft": null,
    "post": null,
-   "kind": "미정"
+   "kind": "미정",
+   "price": "20만"
   },
   {
    "handle": "yurimyue",
@@ -225,7 +232,8 @@
    "contact": "2026-10-26",
    "draft": null,
    "post": null,
-   "kind": "미정"
+   "kind": "미정",
+   "price": "30만 (2차 포함)"
   },
   {
    "handle": "minkko.ng",
@@ -234,7 +242,8 @@
    "contact": "2026-10-06",
    "draft": null,
    "post": "2026-11-24",
-   "kind": "확정"
+   "kind": "확정",
+   "price": "40만"
   },
   {
    "handle": "woongyange",
@@ -243,7 +252,8 @@
    "contact": "2026-10-20",
    "draft": null,
    "post": "2026-10-30",
-   "kind": "확정"
+   "kind": "확정",
+   "price": "35만"
   },
   {
    "handle": "cororiiii",
@@ -309,7 +319,8 @@
    "shoot": "2026-12-02",
    "draft": null,
    "post": "2026-12-07",
-   "kind": "예정"
+   "kind": "예정",
+   "price": "50만 + 2차 6개월 7만"
   },
   {
    "handle": "sson_go",
@@ -408,7 +419,8 @@
    "shoot": "2026-12-02",
    "draft": null,
    "post": "2026-12-09",
-   "kind": "예정"
+   "kind": "예정",
+   "price": "18만 + 2차 6개월 5만"
   },
   {
    "handle": "enjoy.jeju.travel",
@@ -507,7 +519,8 @@
    "shoot": "2026-12-04",
    "draft": null,
    "post": null,
-   "kind": "미정"
+   "kind": "미정",
+   "price": "50만 (릴스)"
   },
   {
    "handle": "taste.jeonju",
