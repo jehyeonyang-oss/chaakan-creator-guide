@@ -139,22 +139,19 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1795693529100,
-          "viewsCollectedAt": null,
+          "actualCollectedAt": 1795775046520,
+          "viewsCollectedAt": 1795775098278,
           "metricStatus": {},
-          "state": "partial",
+          "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": "reference_missing",
-          "missingMetrics": [
-            "views",
-            "saves"
-          ],
-          "views": null,
-          "likes": 20,
-          "comments": 69,
-          "shares": 22,
-          "saves": null
+          "viewsStatus": "verified",
+          "missingMetrics": [],
+          "views": 9446,
+          "likes": 24,
+          "comments": 75,
+          "shares": 25,
+          "saves": 35
         }
       ],
       "sales": {
@@ -850,19 +847,19 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1795618088000,
-          "viewsCollectedAt": null,
+          "actualCollectedAt": 1795775251232,
+          "viewsCollectedAt": 1795775299887,
           "metricStatus": {},
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
           "viewsStatus": "verified",
           "missingMetrics": [],
-          "views": 4228,
-          "likes": 59,
-          "comments": 8,
-          "shares": 15,
-          "saves": 17
+          "views": 4318,
+          "likes": 63,
+          "comments": 13,
+          "shares": 19,
+          "saves": 19
         }
       ],
       "sales": {
@@ -2504,22 +2501,19 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1795756528948,
-          "viewsCollectedAt": null,
+          "actualCollectedAt": 1795775148834,
+          "viewsCollectedAt": 1795775199062,
           "metricStatus": {},
-          "state": "partial",
+          "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": "reference_missing",
-          "missingMetrics": [
-            "views",
-            "saves"
-          ],
-          "views": null,
-          "likes": 229,
-          "comments": 48,
-          "shares": 320,
-          "saves": null
+          "viewsStatus": "verified",
+          "missingMetrics": [],
+          "views": 26000,
+          "likes": 242,
+          "comments": 52,
+          "shares": 351,
+          "saves": 341
         }
       ],
       "sales": {
@@ -2979,13 +2973,18 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1795497137389,
+          "actualCollectedAt": 1795775346722,
           "viewsCollectedAt": null,
-          "metricStatus": {},
+          "metricStatus": {
+            "saves": "not_public",
+            "likes": "hidden",
+            "views": "not_public",
+            "shares": "not_displayed"
+          },
           "state": "partial",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": null,
+          "viewsStatus": "not_public",
           "missingMetrics": [
             "views",
             "likes",
@@ -3136,5 +3135,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-27T10:26:42.151927+00:00"
+  "syncedAt": "2026-11-27T10:31:42.064902+00:00"
 }
