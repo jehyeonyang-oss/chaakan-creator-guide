@@ -559,21 +559,23 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1794964730545,
-          "viewsCollectedAt": null,
-          "metricStatus": {},
+          "actualCollectedAt": 1795775699079,
+          "viewsCollectedAt": 1794964730545,
+          "metricStatus": {
+            "likes": "hidden"
+          },
           "state": "partial",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": null,
+          "viewsStatus": "verified",
           "missingMetrics": [
             "likes"
           ],
           "views": 5330,
           "likes": null,
-          "comments": 39,
-          "shares": 42,
-          "saves": 47
+          "comments": 41,
+          "shares": 45,
+          "saves": 49
         }
       ],
       "sales": {
@@ -3213,5 +3215,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-27T10:36:41.626011+00:00"
+  "syncedAt": "2026-11-27T10:41:54.493358+00:00"
 }
