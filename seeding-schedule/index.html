@@ -14,6 +14,10 @@ h1{font-size:22px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 10px}
 .bar{height:8px;background:#ece9e0;border-radius:4px;overflow:hidden;margin:6px 0}
 .bar i{display:block;height:100%;background:var(--c,var(--on))}
 .sm{font-size:12px;color:var(--mut)}
+.budget{margin:10px 0;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.budget strong{font-size:18px;margin-right:8px}.fee strong{display:block}.fee .sm{display:block;white-space:normal;max-width:240px}
+.tw .fee{display:block;min-width:160px}#ft td:nth-child(2){min-width:180px;max-width:280px;white-space:normal}
+.cs .c .fee{padding:6px 0;border-top:1px solid var(--line);margin-top:6px}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
 .tabs button{border:1px solid var(--line);background:#fff;border-radius:16px;padding:6px 14px;font:inherit;cursor:pointer}
 .tabs button.on{background:#222;color:#fff;border-color:#222}
@@ -48,8 +52,8 @@ a{color:inherit}
 <div class="sm" id="sync" role="status" aria-live="polite">일정을 불러오는 중…</div>
 <div class="tabs" id="tabs"><button data-t="all" class="on">전체</button><button data-t="on">온라인</button><button data-t="off">오프라인</button></div>
 <label class="sm"><input type="checkbox" id="hide" checked> 종료 건 숨기기</label>
-<section id="s-on"><h2>온라인 인플루언서</h2><div class="grid" id="oc"></div><div id="ot"></div></section>
-<section id="s-off"><h2>오프라인 매장 (제현 담당)</h2><div class="grid" id="fc"></div><div id="ft"></div></section>
+<section id="s-on"><h2>온라인 인플루언서</h2><div class="budget" id="ob"></div><div class="grid" id="oc"></div><div id="ot"></div></section>
+<section id="s-off"><h2>오프라인 매장 (제현 담당)</h2><div class="budget" id="fb"></div><div class="grid" id="fc"></div><div id="ft"></div></section>
 <section><h2>타임라인</h2><div class="tl"><div class="lg"><span style="color:var(--on)">● 온라인</span><span style="color:var(--off)">● 오프라인</span><span>연한 글씨 = 예정(미확정)</span></div><div id="ax"></div></div></section>
 </main>
 <script>
@@ -59,22 +63,42 @@ const $=id=>document.getElementById(id),T={'클로이':20,'컬리지':10,'풀문
  ig=h=>`<a href="https://www.instagram.com/${encodeURIComponent(h)}/" target="_blank" rel="noopener">@${esc(h)}</a>`,
  md=s=>s?s.slice(5).replace('-','/'):'';
 let D,tab='all';
+const won=n=>new Intl.NumberFormat('ko-KR',{maximumFractionDigits:2}).format(n/10000)+'만 원';
+function feeTotal(r){
+ if(!OK.includes(r.status)||!r.price)return null;
+ // Count explicit additive fees only; durations and parenthetical terms are not amounts.
+ const parts=r.price.replace(/\([^)]*\)/g,'').split('+').map(s=>s.trim());
+ const amounts=parts.map(s=>s.match(/^(?:2차(?:활용)?\s*(?:\d+\s*개월\s*)?)?(\d+(?:\.\d+)?)\s*만(?:원)?$/));
+ return amounts.every(Boolean)?amounts.reduce((sum,m)=>sum+Math.round(Number(m[1])*10000),0):null;
+}
+function feeCell(r){
+ if(!OK.includes(r.status))return '-';
+ const total=feeTotal(r);
+ if(total===null)return `<span class="chk">${esc(r.price||'금액 확인 필요')}</span>`;
+ const detail=/[+(]/.test(r.price)?`<span class="sm">${esc(r.price)}</span>`:'';
+ return `<span class="fee"><strong>${won(total)}</strong>${detail}</span>`;
+}
+function budget(rows){
+ const confirmed=rows.filter(r=>OK.includes(r.status)),amounts=confirmed.map(feeTotal),known=amounts.filter(v=>v!==null),missing=confirmed.length-known.length;
+ return `<div><strong>확정 금액 ${known.length?won(known.reduce((a,b)=>a+b,0)):'확인 필요'}</strong><span>금액 확인 ${known.length}건${missing?` · <span class="chk">미확인 ${missing}건</span>`:''}</span></div><div class="sm">확정·진행·게시완료 건의 확인된 금액 합계 · 합의된 2차활용비 포함 · VAT·원천징수는 각 건 조건에 따름</div>`;
+}
 const dt=(v,r,need,field)=>v?`<span class="${r.kind==='확정'?'':'plan'}">${esc(md(v))}${r[field+'End']?'~'+esc(md(r[field+'End'])):''}${r.kind==='확정'?'':' (예정)'}</span>${r.kind!=='확정'&&(r[field+'End']||v)<D.asof?' <span class="chk">확인 필요</span>':''}`:need?'<span class="need">받아야 함</span>':'-';
 const card=(n,c,t,x,col)=>`<div class="card" style="--c:${col}"><h3><span>${n}</span><span>${c}${t?'/'+t:''}</span></h3>${t?`<div class="bar"><i style="width:${Math.min(100,c/t*100)}%"></i></div>`:''}<div class="sm">${x}</div></div>`;
-const tbl=(h,rows,lab,nd)=>`<div class="tw"><table><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr>${rows.map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</table></div><div class="cs">${rows.map(r=>`<div class="c"><b>${r[0]}</b><div>${r[1]}</div><div>${r[2]}</div><div>${r.slice(3).map((x,i)=>lab[i]+' '+x).join(' · ')}</div></div>`).join('')}</div>`;
+const tbl=(h,rows,lab)=>`<div class="tw"><table><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr>${rows.map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</table></div><div class="cs">${rows.map(r=>`<div class="c"><b>${r[0]}</b><div>${r[1]}</div><div>${r[2]}</div><div>확정 금액 ${r[3]}</div><div>${r.slice(4).map((x,i)=>lab[i]+' '+x).join(' · ')}</div></div>`).join('')}</div>`;
 function render(){
  if(!D)return;
  const hide=$('hide').checked,f=a=>hide?a.filter(r=>!end(r.status)):a;
  $('s-on').hidden=tab==='off';$('s-off').hidden=tab==='on';
  const on=D.online,off=D.offline;
+ $('ob').innerHTML=budget(on);$('fb').innerHTML=budget(off);
  $('oc').innerHTML=[...Object.keys(T),'제품 선택 대기'].map(p=>{const a=on.filter(r=>r.product===p),c=a.filter(r=>OK.includes(r.status));
   return card(p,(p==='제품 선택 대기'?'금액합의 '+a.filter(r=>r.status.startsWith('금액합의')).length:c.length),T[p],(p==='제품 선택 대기'?'':`게시완료 ${a.filter(r=>r.status==='게시완료').length} · `)+`전체 ${a.length}명`,'var(--on)')}).join('');
- $('ot').innerHTML=tbl(['핸들','품번','상태','확정단가','초안일','게시일'],f(on).map(r=>{const w=OK.includes(r.status),dn=r.status!=='게시완료';
-  return [ig(r.handle)+(r.source==='혜나’s pick'?'<br><span class="sm">혜나’s pick</span>':''),esc(r.product),esc(r.status),(r.price?(r.price==='확인 안 됨'?'<span class="chk">확인 안 됨</span>':esc(r.price)):'-'),dt(r.draft,r,w&&dn,'draft'),dt(r.post,r,w,'post')]}),['단가','초안','게시']);
+ $('ot').innerHTML=tbl(['핸들','품번','상태','확정 금액','초안일','게시일'],f(on).map(r=>{const w=OK.includes(r.status),dn=r.status!=='게시완료';
+  return [ig(r.handle)+(r.source==='혜나’s pick'?'<br><span class="sm">혜나’s pick</span>':''),esc(r.product),esc(r.status),feeCell(r),dt(r.draft,r,w&&dn,'draft'),dt(r.post,r,w,'post')]}),['초안','게시']);
  $('fc').innerHTML=[...Object.keys(R),'전국/복수'].map(g=>{const a=off.filter(r=>r.region===g),c=a.filter(r=>OK.includes(r.status)).length,n=a.filter(r=>/^(컨택|견적|금액합의)/.test(r.status)).length;
   return card(g==='전국/복수'?'복수 지역':g,c,R[g],`컨택중·협의 ${n}명 · 전체 ${a.length}명`,'var(--off)')}).join('');
- $('ft').innerHTML=tbl(['핸들','지역·매장','상태','확정단가','촬영일','초안일','게시일'],f(off).map(r=>{const w=OK.includes(r.status);
-  return [ig(r.handle),esc(r.store),esc(r.status),(r.price?(r.price==='확인 안 됨'?'<span class="chk">확인 안 됨</span>':esc(r.price)):'-'),dt(r.shoot,r,w,'shoot'),dt(r.draft,r,w,'draft'),dt(r.post,r,w,'post')]}),['단가','촬영','초안','게시']);
+ $('ft').innerHTML=tbl(['핸들','지역·매장','상태','확정 금액','촬영일','초안일','게시일'],f(off).map(r=>{const w=OK.includes(r.status);
+  return [ig(r.handle),esc(r.store),esc(r.status),feeCell(r),dt(r.shoot,r,w,'shoot'),dt(r.draft,r,w,'draft'),dt(r.post,r,w,'post')]}),['촬영','초안','게시']);
  const ev={},add=(k,h,l,v,r)=>{if(v&&!end(r.status)&&v<=D.deadline&&v>=D.asof)(ev[v]=ev[v]||[]).push([k,h,l,r])};
  on.forEach(r=>{add('on',r.handle,'초안',r.draft,r);add('on',r.handle,'게시',r.post,r)});
  off.forEach(r=>{add('off',r.handle,'촬영',r.shoot,r);add('off',r.handle,'초안',r.draft,r);add('off',r.handle,'게시',r.post,r)});
