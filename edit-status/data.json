@@ -155,7 +155,14 @@
           "saves": null
         }
       ],
-      "sales": {},
+      "sales": {
+        "48h": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": 0
+        }
+      },
       "phoneTrackingReady": true,
       "engagementBaseline": {
         "views": null,
@@ -2070,7 +2077,14 @@
           "saves": 24
         }
       ],
-      "sales": {},
+      "sales": {
+        "48h": {
+          "revenue": 60720,
+          "purchases": 1,
+          "rev_utm": 60720,
+          "rev_code": 60720
+        }
+      },
       "phoneTrackingReady": true,
       "engagementBaseline": {
         "views": null,
@@ -2488,7 +2502,14 @@
           "saves": null
         }
       ],
-      "sales": {},
+      "sales": {
+        "48h": {
+          "revenue": 0,
+          "purchases": 0,
+          "rev_utm": 0,
+          "rev_code": 0
+        }
+      },
       "phoneTrackingReady": true,
       "engagementBaseline": {
         "views": null,
@@ -3089,5 +3110,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-27T08:15:02.566857+00:00"
+  "syncedAt": "2026-11-27T08:41:41.093077+00:00"
 }
