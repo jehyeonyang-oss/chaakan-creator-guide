@@ -428,12 +428,12 @@
       "handle": "cruise_ssun",
       "region": "부산",
       "store": "NC덕천점(북구 만덕대로 23 뉴코아 1층)",
-      "status": "컨택함",
+      "status": "확정",
       "contact": "2026-11-26",
-      "shoot": null,
+      "shoot": "2026-12-11",
       "draft": null,
-      "post": null,
-      "kind": "미정",
+      "post": "2026-12-14",
+      "kind": "예정",
       "source": "큐레이션 채널"
     },
     {
@@ -444,7 +444,7 @@
       "contact": "2026-11-26",
       "shoot": "2026-12-02",
       "draft": null,
-      "post": "2026-12-09",
+      "post": "2026-12-15",
       "kind": "예정",
       "price": "18만 + 2차 6개월 5만",
       "source": "큐레이션 채널",
@@ -603,12 +603,12 @@
       "handle": "kangsins3",
       "region": "전주",
       "store": "전주 객사점(완산구)",
-      "status": "컨택함",
+      "status": "보류",
       "contact": "2026-11-26",
       "shoot": null,
       "draft": null,
-      "post": null,
-      "kind": "미정",
+      "post": "2026-12-14",
+      "kind": "예정",
       "source": "큐레이션 채널"
     },
     {
@@ -697,7 +697,7 @@
     }
   ],
   "sync": {
-    "updatedAt": "2026-11-27T16:16:06+09:00",
+    "updatedAt": "2026-11-27T17:16:04+09:00",
     "intervalMinutes": 60,
     "sources": [
       "큐레이션 채널",
