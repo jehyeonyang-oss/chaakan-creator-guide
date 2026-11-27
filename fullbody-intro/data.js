@@ -405,6 +405,88 @@ window.FULLBODY_INTRO = {
     "shoe": "",
     "category": "long-skirt"
    }
+  ],
+  "long-pants": [
+   {
+    "code": "DWix4Kfjyjb",
+    "post": "https://www.instagram.com/p/DWix4Kfjyjb/",
+    "video": "../fullmoon-analysis/assets/form_DWix4Kfjyjb.mp4",
+    "poster": "../fullmoon-analysis/assets/form_DWix4Kfjyjb_2.5.webp",
+    "start": null,
+    "end": null,
+    "views": null,
+    "shares": 942,
+    "saves": 99,
+    "metricsCapturedAt": "2026-11-20T19:01:32.211263+09:00",
+    "viewsCapturedAt": null,
+    "desc": "전신으로 걷고 발을 듦. ‘매일 학교로 등산하는 157cm의 비율사기템’. 약 1.5초 얼굴+마이크 ‘저 사기 쳤어요’, 2.5초 전신 ‘비율 사기 쳤어요’.",
+    "shoe": "운동화",
+    "category": "long-pants"
+   },
+   {
+    "code": "DU5zy8Xjwp_",
+    "post": "https://www.instagram.com/p/DU5zy8Xjwp_/",
+    "video": "../hooks/assets/hero_full/DU5zy8Xjwp_.mp4",
+    "poster": "../fullmoon-analysis/assets/catalog_DU5zy8Xjwp__1.5.webp",
+    "start": null,
+    "end": null,
+    "views": 1131988,
+    "shares": 1002,
+    "saves": 47,
+    "metricsCapturedAt": "2026-11-06",
+    "viewsCapturedAt": null,
+    "desc": "얼굴이 잘린 앉은 착장·다리와 신발 근접 → 약 1.5초 서 있는 착장 → 제품. 전신 시작과 구분.",
+    "shoe": "메리제인",
+    "category": "long-pants"
+   },
+   {
+    "code": "DSplDkyk_Mc",
+    "post": "https://www.instagram.com/p/DSplDkyk_Mc/",
+    "video": "../hooks/assets/hero_full/DSplDkyk_Mc.mp4",
+    "poster": "../fullmoon-analysis/assets/catalog_DSplDkyk_Mc_1.5.webp",
+    "start": null,
+    "end": null,
+    "views": 506174,
+    "shares": 16,
+    "saves": 8,
+    "metricsCapturedAt": "2026-11-06",
+    "viewsCapturedAt": null,
+    "desc": "상반신+박스를 안고 인사 → 약 1초 전신과 168→175cm → 박스 개봉. 얼굴+박스 시작.",
+    "shoe": "",
+    "category": "long-pants"
+   },
+   {
+    "code": "DX5m-sIxlJw",
+    "post": "https://www.instagram.com/p/DX5m-sIxlJw/",
+    "video": "../hooks/assets/hero_full/DX5m-sIxlJw.mp4",
+    "poster": "../fullmoon-analysis/assets/catalog_DX5m-sIxlJw_0.1.webp",
+    "start": null,
+    "end": null,
+    "views": 497773,
+    "shares": 47,
+    "saves": 19,
+    "metricsCapturedAt": "2026-11-06",
+    "viewsCapturedAt": null,
+    "desc": "\"제 비율이 좋아 보이는 이유? with. Differ Shoe\" 호기심형 훅+손을 머리 위로 올려 비율 측정하는 남성 모델 포즈",
+    "shoe": "로퍼",
+    "category": "long-pants"
+   },
+   {
+    "code": "Db5QWopNWwc",
+    "post": "https://www.instagram.com/p/Db5QWopNWwc/",
+    "video": "../hooks/assets/hero_full/Db5QWopNWwc.mp4",
+    "poster": "../fullmoon-analysis/assets/catalog_Db5QWopNWwc_1.5.webp",
+    "start": null,
+    "end": null,
+    "views": 43936,
+    "shares": 309,
+    "saves": 10,
+    "metricsCapturedAt": "2026-11-06",
+    "viewsCapturedAt": null,
+    "desc": "지하철역 벤치에 앉은 남성 전신, '신자마자 키가 커지는 신발?'",
+    "shoe": "운동화",
+    "category": "long-pants"
+   }
   ]
  }
 };
