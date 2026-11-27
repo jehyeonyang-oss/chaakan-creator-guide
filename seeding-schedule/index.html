@@ -64,11 +64,11 @@ function render(){
  const hide=$('hide').checked,f=a=>hide?a.filter(r=>!end(r.status)):a;
  $('s-on').hidden=tab==='off';$('s-off').hidden=tab==='on';
  const on=D.online,off=D.offline;
- $('oc').innerHTML=[...Object.keys(T),'품번 미정'].map(p=>{const a=on.filter(r=>r.product===p),c=a.filter(r=>OK.includes(r.status));
-  return card(p,(p==='품번 미정'?'확정 ':'')+c.length,T[p],(p==='품번 미정'?'':`게시완료 ${a.filter(r=>r.status==='게시완료').length} · `)+`전체 ${a.length}명`,'var(--on)')}).join('');
+ $('oc').innerHTML=[...Object.keys(T),'제품 선택 대기'].map(p=>{const a=on.filter(r=>r.product===p),c=a.filter(r=>OK.includes(r.status));
+  return card(p,(p==='제품 선택 대기'?'금액합의 '+a.filter(r=>r.status.startsWith('금액합의')).length:c.length),T[p],(p==='제품 선택 대기'?'':`게시완료 ${a.filter(r=>r.status==='게시완료').length} · `)+`전체 ${a.length}명`,'var(--on)')}).join('');
  $('ot').innerHTML=tbl(['핸들','품번','상태','초안일','게시일'],f(on).map(r=>{const w=OK.includes(r.status),dn=r.status!=='게시완료';
   return [ig(r.handle),r.product,r.status,dt(r.draft,r,w&&dn),dt(r.post,r,w)]}),['초안','게시']);
- $('fc').innerHTML=[...Object.keys(R),'전국/복수'].map(g=>{const a=off.filter(r=>r.region===g),c=a.filter(r=>r.status==='확정').length,n=a.filter(r=>/^(컨택|견적)/.test(r.status)).length;
+ $('fc').innerHTML=[...Object.keys(R),'전국/복수'].map(g=>{const a=off.filter(r=>r.region===g),c=a.filter(r=>r.status==='확정').length,n=a.filter(r=>/^(컨택|견적|금액합의)/.test(r.status)).length;
   return card(g==='전국/복수'?'복수 지역':g,c,R[g],`컨택중·협의 ${n}명 · 전체 ${a.length}명`,'var(--off)')}).join('');
  $('ft').innerHTML=tbl(['핸들','지역·매장','상태','촬영일','초안일','게시일'],f(off).map(r=>{const w=r.status==='확정';
   return [ig(r.handle),r.store,r.status,dt(r.shoot,r,w),dt(r.draft,r,w),dt(r.post,r,w)]}),['촬영','초안','게시']);
