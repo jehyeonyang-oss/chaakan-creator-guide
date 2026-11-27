@@ -1349,6 +1349,29 @@
           "comments": 286,
           "shares": 726,
           "saves": 509
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1795775533775,
+          "viewsCollectedAt": null,
+          "metricStatus": {
+            "likes": "hidden"
+          },
+          "state": "partial",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": "not_collected_in_refresh",
+          "missingMetrics": [
+            "views",
+            "likes"
+          ],
+          "views": null,
+          "likes": null,
+          "comments": 317,
+          "shares": 906,
+          "saves": 515
         }
       ],
       "sales": {
@@ -1624,6 +1647,31 @@
           "comments": 42,
           "shares": null,
           "saves": 180
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1795775584803,
+          "viewsCollectedAt": null,
+          "metricStatus": {
+            "likes": "hidden",
+            "shares": "not_displayed"
+          },
+          "state": "partial",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": "not_collected_in_refresh",
+          "missingMetrics": [
+            "views",
+            "likes",
+            "shares"
+          ],
+          "views": null,
+          "likes": null,
+          "comments": 42,
+          "shares": null,
+          "saves": 180
         }
       ],
       "sales": {
@@ -1759,6 +1807,31 @@
           "comments": 44,
           "shares": null,
           "saves": 38
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1795775643525,
+          "viewsCollectedAt": null,
+          "metricStatus": {
+            "likes": "hidden",
+            "shares": "not_displayed"
+          },
+          "state": "partial",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": "not_collected_in_refresh",
+          "missingMetrics": [
+            "views",
+            "likes",
+            "shares"
+          ],
+          "views": null,
+          "likes": null,
+          "comments": 44,
+          "shares": null,
+          "saves": 40
         }
       ],
       "sales": {
@@ -2639,13 +2712,16 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1795426218896,
-          "viewsCollectedAt": null,
-          "metricStatus": {},
+          "actualCollectedAt": 1795775470776,
+          "viewsCollectedAt": 1795426218896,
+          "metricStatus": {
+            "likes": "hidden",
+            "shares": "not_displayed"
+          },
           "state": "partial",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": null,
+          "viewsStatus": "verified",
           "missingMetrics": [
             "likes",
             "shares"
@@ -2831,9 +2907,11 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1795617957000,
-          "viewsCollectedAt": null,
-          "metricStatus": {},
+          "actualCollectedAt": 1795775409166,
+          "viewsCollectedAt": 1795617957000,
+          "metricStatus": {
+            "likes": "hidden"
+          },
           "state": "partial",
           "isLate": false,
           "collectionDelaySeconds": null,
@@ -2843,9 +2921,9 @@
           ],
           "views": 20000,
           "likes": null,
-          "comments": 223,
+          "comments": 239,
           "shares": 68,
-          "saves": 86
+          "saves": 90
         }
       ],
       "sales": {
@@ -3135,5 +3213,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-27T10:31:42.064902+00:00"
+  "syncedAt": "2026-11-27T10:36:41.626011+00:00"
 }
