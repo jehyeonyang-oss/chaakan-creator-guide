@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>방한화 시딩 일정표</title>
+<style>
+:root{color-scheme:light;--bg:#f6f5f1;--card:#fff;--ink:#222;--mut:#77756e;--line:#e6e3da;--on:#2f6fed;--off:#e07a1f;--red:#d33}
+*{box-sizing:border-box}
+body{margin:0;background:#f6f5f1;color:var(--ink);font:14px/1.5 -apple-system,"Malgun Gothic",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:17px;margin:28px 0 10px}
+.sum{color:var(--mut)}.sum b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;min-width:0}
+.card h3{margin:0 0 6px;font-size:15px;display:flex;justify-content:space-between;gap:6px}
+.bar{height:8px;background:#ece9e0;border-radius:4px;overflow:hidden;margin:6px 0}
+.bar i{display:block;height:100%;background:var(--c,var(--on))}
+.sm{font-size:12px;color:var(--mut)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:16px;padding:6px 14px;font:inherit;cursor:pointer}
+.tabs button.on{background:#222;color:#fff;border-color:#222}
+.tw{overflow-x:auto;margin-top:10px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}
+th,td{text-align:left;padding:5px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:600}
+a{color:inherit}
+.need{background:#fde8e8;color:var(--red);border-radius:8px;padding:0 6px;font-size:11px;font-weight:700}
+.plan{color:var(--mut);font-style:italic}
+.tl{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 24px;overflow-x:auto}
+.ax{position:relative;min-width:640px;height:150px;border-bottom:1px solid var(--line)}
+.d{position:absolute;width:11px;height:11px;border-radius:50%;margin-left:-5px}
+.d.on{background:var(--on);border:2px solid var(--on)}.d.off{background:var(--off);border:2px solid var(--off)}
+.d.plan{background:#fff;border-style:dashed;opacity:.75;font-style:normal}
+.tk{position:absolute;bottom:-18px;font-size:10px;color:var(--mut);transform:translateX(-50%)}
+.lg{font-size:12px;color:var(--mut);margin-top:26px}
+.lg span{margin-right:12px}
+[hidden]{display:none!important}
+</style></head><body><main>
+<h1>방한화 시딩 일정표</h1>
+<div class="sum" id="sum"></div>
+<div class="tabs" id="tabs"><button data-t="all" class="on">전체</button><button data-t="on">온라인</button><button data-t="off">오프라인</button></div>
+<label class="sm"><input type="checkbox" id="hide" checked> 종료 건 숨기기</label>
+<section id="s-on"><h2>온라인 인플루언서</h2><div class="grid" id="oc"></div><div id="ot"></div></section>
+<section id="s-off"><h2>오프라인 매장 (제현 담당)</h2><div class="grid" id="fc"></div><div id="ft"></div></section>
+<section><h2>타임라인</h2><div class="tl"><div class="ax" id="ax"></div>
+<div class="lg"><span style="color:var(--on)">● 온라인</span><span style="color:var(--off)">● 오프라인</span><span>○ 점선 = 예정(미확정)</span></div></div></section>
+</main>
+<script>
+const $=id=>document.getElementById(id),T={'클로이':20,'컬리지':10,'풀문':10,'포븐':10,'시트롱':10},
+ R={'대전':12,'부산':10,'제주':10,'동탄':3,'강릉':3,'전주':2},OK=['확정','가이드전달','초안받음','게시완료'],
+ end=s=>s.startsWith('종료'),ig=h=>`<a href="https://www.instagram.com/${h}/" target="_blank" rel="noopener">@${h}</a>`,
+ md=s=>s?s.slice(5).replace('-','/'):'';
+let D,tab='all';
+const dt=(v,r,need)=>v?`<span class="${r.kind==='확정'?'':'plan'}">${md(v)}${r.kind==='확정'?'':' (예정)'}</span>`:need?'<span class="need">받아야 함</span>':'-';
+const card=(n,c,t,x,col)=>`<div class="card" style="--c:${col}"><h3><span>${n}</span><span>${c}${t?'/'+t:''}</span></h3>${t?`<div class="bar"><i style="width:${Math.min(100,c/t*100)}%"></i></div>`:''}<div class="sm">${x}</div></div>`;
+const tbl=(h,rows)=>`<div class="tw"><table><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr>${rows.map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</table></div>`;
+function render(){
+ const hide=$('hide').checked,f=a=>hide?a.filter(r=>!end(r.status)):a;
+ $('s-on').hidden=tab==='off';$('s-off').hidden=tab==='on';
+ const on=D.online,off=D.offline;
+ $('oc').innerHTML=[...Object.keys(T),'품번 미정'].map(p=>{const a=on.filter(r=>r.product===p),c=a.filter(r=>OK.includes(r.status));
+  return card(p,c.length,T[p],`게시완료 ${a.filter(r=>r.status==='게시완료').length} · 전체 ${a.length}명`,'var(--on)')}).join('');
+ $('ot').innerHTML=tbl(['핸들','품번','상태','초안일','게시일'],f(on).map(r=>{const w=OK.includes(r.status),dn=r.status!=='게시완료';
+  return [ig(r.handle),r.product,r.status,dt(r.draft,r,w&&dn),dt(r.post,r,w)]}));
+ $('fc').innerHTML=[...Object.keys(R),'전국/복수'].map(g=>{const a=off.filter(r=>r.region===g),c=a.filter(r=>r.status==='확정').length,n=a.filter(r=>/^(컨택|견적)/.test(r.status)).length;
+  return card(g==='전국/복수'?'복수 지역':g,c,R[g],`컨택중·협의 ${n}명 · 전체 ${a.length}명`,'var(--off)')}).join('');
+ $('ft').innerHTML=tbl(['핸들','지역·매장','상태','촬영일','초안일','게시일'],f(off).map(r=>{const w=r.status==='확정';
+  return [ig(r.handle),r.store,r.status,dt(r.shoot,r,w),dt(r.draft,r,w),dt(r.post,r,w)]}));
+ const s=new Date('2026-11-27'),days=18,ev=[],ax=$('ax');
+ const add=(k,h,l,v,r)=>{if(v&&!end(r.status))ev.push([k,h,l,v,r.kind==='확정'])};
+ on.forEach(r=>{add('on',r.handle,'초안',r.draft,r);add('on',r.handle,'게시',r.post,r)});
+ off.forEach(r=>{add('off',r.handle,'촬영',r.shoot,r);add('off',r.handle,'초안',r.draft,r);add('off',r.handle,'게시',r.post,r)});
+ const slot={};let h='';
+ for(let i=0;i<=days;i++){const dd=new Date(s.getTime()+i*864e5);h+=`<span class="tk" style="left:${i/days*100}%">${dd.getMonth()+1}/${dd.getDate()}</span>`}
+ ev.filter(e=>tab==='all'||tab===e[0]).forEach(e=>{const i=Math.round((new Date(e[3])-s)/864e5);if(i<0||i>days)return;
+  const k=slot[i]=(slot[i]||0)+1;h+=`<span class="d ${e[0]} ${e[4]?'':'plan'}" style="left:${i/days*100}%;top:${(k-1)*16+4}px" title="${md(e[3])} @${e[1]} ${e[2]}"></span>`});
+ ax.innerHTML=h;
+}
+fetch('data.json').then(r=>r.json()).then(d=>{D=d;
+ const dd=Math.ceil((new Date(d.deadline)-new Date(d.asof))/864e5);
+ $('sum').innerHTML=`기준일 <b>${d.asof}</b> · 게시 마감 <b>12/15</b> (<b>D-${dd}</b>)`;render()});
+$('hide').onchange=render;
+$('tabs').onclick=e=>{if(e.target.dataset.t){tab=e.target.dataset.t;[...$('tabs').children].forEach(b=>b.classList.toggle('on',b===e.target));render()}};
+</script></body></html>

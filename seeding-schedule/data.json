@@ -1,0 +1,645 @@
+{
+ "asof": "2026-11-27",
+ "deadline": "2026-12-15",
+ "online": [
+  {
+   "handle": "aneyoes",
+   "product": "컬리지",
+   "status": "가이드전달",
+   "contact": "2026-11-11",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "mulymin",
+   "product": "품번 미정",
+   "status": "확정",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "aaaa.__.room",
+   "product": "품번 미정",
+   "status": "견적협의",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": "2026-12-13",
+   "kind": "예정"
+  },
+  {
+   "handle": "neoyse0o",
+   "product": "품번 미정",
+   "status": "견적협의",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "yo0junng",
+   "product": "품번 미정",
+   "status": "견적협의",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "mxnj.xng",
+   "product": "품번 미정",
+   "status": "컨택함",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "kotosiii",
+   "product": "품번 미정",
+   "status": "컨택함",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "bimka.archive",
+   "product": "품번 미정",
+   "status": "종료(어그류 불가)",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "soongu____",
+   "product": "품번 미정",
+   "status": "종료(거절)",
+   "contact": "2026-11-11",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "greemott",
+   "product": "품번 미정",
+   "status": "종료(거절)",
+   "contact": "2026-11-11",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "kavyeaa",
+   "product": "품번 미정",
+   "status": "견적협의",
+   "contact": "2026-11-11",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "twocember",
+   "product": "품번 미정",
+   "status": "컨택함",
+   "contact": "2026-11-11",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "2biiiini__",
+   "product": "품번 미정",
+   "status": "컨택함",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "__________minjung_sang",
+   "product": "품번 미정",
+   "status": "컨택함",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "_0ik.kk",
+   "product": "풀문",
+   "status": "가이드전달",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "dada.allthings",
+   "product": "풀문",
+   "status": "견적협의",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "x.eun319",
+   "product": "풀문",
+   "status": "컨택함",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "kxxoung",
+   "product": "풀문",
+   "status": "컨택함",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "mypick.review",
+   "product": "풀문",
+   "status": "컨택함",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "ancotor._",
+   "product": "풀문",
+   "status": "컨택함",
+   "contact": "2026-11-24",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "dlghdtj",
+   "product": "풀문",
+   "status": "확정",
+   "contact": "2026-10-20",
+   "draft": "2026-12-04",
+   "post": "2026-12-06",
+   "kind": "예정"
+  },
+  {
+   "handle": "2heeeeeedung",
+   "product": "풀문",
+   "status": "가이드전달",
+   "contact": "2026-10-20",
+   "draft": "2026-11-25",
+   "post": "2026-11-26",
+   "kind": "예정"
+  },
+  {
+   "handle": "amu__s2__",
+   "product": "풀문",
+   "status": "초안받음",
+   "contact": "2026-10-29",
+   "draft": "2026-11-26",
+   "post": "2026-11-27",
+   "kind": "예정"
+  },
+  {
+   "handle": "ye_instar_",
+   "product": "풀문",
+   "status": "확정",
+   "contact": "2026-11-04",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "yurimyue",
+   "product": "풀문",
+   "status": "가이드전달",
+   "contact": "2026-10-26",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "minkko.ng",
+   "product": "풀문",
+   "status": "게시완료",
+   "contact": "2026-10-06",
+   "draft": null,
+   "post": "2026-11-24",
+   "kind": "확정"
+  },
+  {
+   "handle": "woongyange",
+   "product": "풀문",
+   "status": "게시완료",
+   "contact": "2026-10-20",
+   "draft": null,
+   "post": "2026-10-30",
+   "kind": "확정"
+  },
+  {
+   "handle": "cororiiii",
+   "product": "풀문",
+   "status": "견적협의",
+   "contact": "2026-11-19",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  }
+ ],
+ "offline": [
+  {
+   "handle": "nolmuk_daejeon",
+   "region": "대전",
+   "store": "대전 둔산·은행지하상가",
+   "status": "견적협의(홀딩)",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "needsman_daejeon",
+   "region": "대전",
+   "store": "대전 둔산·은행지하상가",
+   "status": "견적협의",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "daejeontobaki",
+   "region": "대전",
+   "store": "대전 둔산·은행지하상가",
+   "status": "종료(거절)",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "channelbusan",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "glossbead",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "확정",
+   "contact": "2026-11-26",
+   "shoot": "2026-12-02",
+   "draft": null,
+   "post": "2026-12-07",
+   "kind": "예정"
+  },
+  {
+   "handle": "sson_go",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "보류",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "j_a_n723",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "종료(거절)",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "muk.seori",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "컨택함(메일)",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "busan_eunwoo",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "m_yojung",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "eatbocke",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "seula.busan",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "cruise_ssun",
+   "region": "부산",
+   "store": "부산 NC덕천",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "kkeong_25",
+   "region": "제주",
+   "store": "제주 연동점 또는 칠성점",
+   "status": "확정",
+   "contact": "2026-11-26",
+   "shoot": "2026-12-02",
+   "draft": null,
+   "post": "2026-12-09",
+   "kind": "예정"
+  },
+  {
+   "handle": "enjoy.jeju.travel",
+   "region": "제주",
+   "store": "제주 연동·칠성",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "jurere_sister",
+   "region": "제주",
+   "store": "제주 연동·칠성",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "sokcho_nadri",
+   "region": "강릉",
+   "store": "강릉 중앙점",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "_seoulhotplace",
+   "region": "강릉",
+   "store": "강릉 중앙점",
+   "status": "종료(패스)",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "all.about.suwon",
+   "region": "동탄",
+   "store": "동탄 스타필드",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "baebulruh_robins",
+   "region": "동탄",
+   "store": "동탄 스타필드",
+   "status": "견적협의(홀딩)",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "za_manco",
+   "region": "동탄",
+   "store": "동탄 스타필드",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "tturaveller",
+   "region": "동탄",
+   "store": "동탄 스타필드",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "jeonju.wwtg",
+   "region": "전주",
+   "store": "전주 객사점",
+   "status": "확정",
+   "contact": "2026-11-26",
+   "shoot": "2026-12-04",
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "taste.jeonju",
+   "region": "전주",
+   "store": "전주 객사점",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "opened_jeonju",
+   "region": "전주",
+   "store": "전주 객사점",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "eats.jeonju",
+   "region": "전주",
+   "store": "전주 객사점",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "rubialee007",
+   "region": "전주",
+   "store": "전주 객사점",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "kangsins3",
+   "region": "전주",
+   "store": "전주 객사점",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "bangbang_place",
+   "region": "전국/복수",
+   "store": "NC덕천·강릉",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "hotplenow",
+   "region": "전국/복수",
+   "store": "대전·부산·제주·강릉·동탄·전주 중 지정",
+   "status": "종료(패스)",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "hot_plog_",
+   "region": "전국/복수",
+   "store": "매장 미정",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "chaerrier",
+   "region": "전국/복수",
+   "store": "매장 미정",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "soimom_trip",
+   "region": "대전",
+   "store": "대전 둔산·은행",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "record_green_",
+   "region": "대전",
+   "store": "대전 둔산·은행",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  },
+  {
+   "handle": "muk_daddy",
+   "region": "대전",
+   "store": "대전 둔산·은행",
+   "status": "컨택함",
+   "contact": "2026-11-26",
+   "shoot": null,
+   "draft": null,
+   "post": null,
+   "kind": "미정"
+  }
+ ]
+}
