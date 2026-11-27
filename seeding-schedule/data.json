@@ -697,7 +697,7 @@
     }
   ],
   "sync": {
-    "updatedAt": "2026-11-27T17:30:50+09:00",
+    "updatedAt": "2026-11-27T17:32:32+09:00",
     "intervalMinutes": 60,
     "sources": [
       "큐레이션 채널",
@@ -759,7 +759,7 @@
     ],
     "marketingAllocation": {
       "클로이": {
-        "status": "추가 배정 예정",
+        "status": "추가 예산 문의 중 · 나라 파트장님 답변 대기",
         "amount": null
       }
     }
