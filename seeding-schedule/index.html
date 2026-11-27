@@ -45,6 +45,7 @@ a{color:inherit}
 </style></head><body><main>
 <h1>방한화 시딩 일정표</h1>
 <div class="sum" id="sum"></div>
+<div class="sm" id="sync" role="status" aria-live="polite">일정을 불러오는 중…</div>
 <div class="tabs" id="tabs"><button data-t="all" class="on">전체</button><button data-t="on">온라인</button><button data-t="off">오프라인</button></div>
 <label class="sm"><input type="checkbox" id="hide" checked> 종료 건 숨기기</label>
 <section id="s-on"><h2>온라인 인플루언서</h2><div class="grid" id="oc"></div><div id="ot"></div></section>
@@ -54,32 +55,47 @@ a{color:inherit}
 <script>
 const $=id=>document.getElementById(id),T={'클로이':20,'컬리지':10,'풀문':10,'포븐':10,'시트롱':10},
  R={'대전':10,'부산':7,'제주':8,'동탄':6,'강릉':5,'전주':4},OK=['확정','가이드전달','초안받음','게시완료'],
- end=s=>s.startsWith('종료'),ig=h=>`<a href="https://www.instagram.com/${h}/" target="_blank" rel="noopener">@${h}</a>`,
+ end=s=>s.startsWith('종료'),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),
+ ig=h=>`<a href="https://www.instagram.com/${encodeURIComponent(h)}/" target="_blank" rel="noopener">@${esc(h)}</a>`,
  md=s=>s?s.slice(5).replace('-','/'):'';
 let D,tab='all';
-const dt=(v,r,need)=>v?`<span class="${r.kind==='확정'?'':'plan'}">${md(v)}${r.kind==='확정'?'':' (예정)'}</span>${r.kind!=='확정'&&v<D.asof?' <span class="chk">확인 필요</span>':''}`:need?'<span class="need">받아야 함</span>':'-';
+const dt=(v,r,need,field)=>v?`<span class="${r.kind==='확정'?'':'plan'}">${esc(md(v))}${r[field+'End']?'~'+esc(md(r[field+'End'])):''}${r.kind==='확정'?'':' (예정)'}</span>${r.kind!=='확정'&&(r[field+'End']||v)<D.asof?' <span class="chk">확인 필요</span>':''}`:need?'<span class="need">받아야 함</span>':'-';
 const card=(n,c,t,x,col)=>`<div class="card" style="--c:${col}"><h3><span>${n}</span><span>${c}${t?'/'+t:''}</span></h3>${t?`<div class="bar"><i style="width:${Math.min(100,c/t*100)}%"></i></div>`:''}<div class="sm">${x}</div></div>`;
 const tbl=(h,rows,lab,nd)=>`<div class="tw"><table><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr>${rows.map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</table></div><div class="cs">${rows.map(r=>`<div class="c"><b>${r[0]}</b><div>${r[1]}</div><div>${r[2]}</div><div>${r.slice(3).map((x,i)=>lab[i]+' '+x).join(' · ')}</div></div>`).join('')}</div>`;
 function render(){
+ if(!D)return;
  const hide=$('hide').checked,f=a=>hide?a.filter(r=>!end(r.status)):a;
  $('s-on').hidden=tab==='off';$('s-off').hidden=tab==='on';
  const on=D.online,off=D.offline;
  $('oc').innerHTML=[...Object.keys(T),'제품 선택 대기'].map(p=>{const a=on.filter(r=>r.product===p),c=a.filter(r=>OK.includes(r.status));
   return card(p,(p==='제품 선택 대기'?'금액합의 '+a.filter(r=>r.status.startsWith('금액합의')).length:c.length),T[p],(p==='제품 선택 대기'?'':`게시완료 ${a.filter(r=>r.status==='게시완료').length} · `)+`전체 ${a.length}명`,'var(--on)')}).join('');
  $('ot').innerHTML=tbl(['핸들','품번','상태','확정단가','초안일','게시일'],f(on).map(r=>{const w=OK.includes(r.status),dn=r.status!=='게시완료';
-  return [ig(r.handle),r.product,r.status,(r.price?(r.price==='확인 안 됨'?'<span class="chk">확인 안 됨</span>':r.price):'-'),dt(r.draft,r,w&&dn),dt(r.post,r,w)]}),['단가','초안','게시']);
- $('fc').innerHTML=[...Object.keys(R),'전국/복수'].map(g=>{const a=off.filter(r=>r.region===g),c=a.filter(r=>r.status==='확정').length,n=a.filter(r=>/^(컨택|견적|금액합의)/.test(r.status)).length;
+  return [ig(r.handle)+(r.source==='혜나’s pick'?'<br><span class="sm">혜나’s pick</span>':''),esc(r.product),esc(r.status),(r.price?(r.price==='확인 안 됨'?'<span class="chk">확인 안 됨</span>':esc(r.price)):'-'),dt(r.draft,r,w&&dn,'draft'),dt(r.post,r,w,'post')]}),['단가','초안','게시']);
+ $('fc').innerHTML=[...Object.keys(R),'전국/복수'].map(g=>{const a=off.filter(r=>r.region===g),c=a.filter(r=>OK.includes(r.status)).length,n=a.filter(r=>/^(컨택|견적|금액합의)/.test(r.status)).length;
   return card(g==='전국/복수'?'복수 지역':g,c,R[g],`컨택중·협의 ${n}명 · 전체 ${a.length}명`,'var(--off)')}).join('');
- $('ft').innerHTML=tbl(['핸들','지역·매장','상태','확정단가','촬영일','초안일','게시일'],f(off).map(r=>{const w=r.status==='확정';
-  return [ig(r.handle),r.store,r.status,(r.price?(r.price==='확인 안 됨'?'<span class="chk">확인 안 됨</span>':r.price):'-'),dt(r.shoot,r,w),dt(r.draft,r,w),dt(r.post,r,w)]}),['단가','촬영','초안','게시']);
+ $('ft').innerHTML=tbl(['핸들','지역·매장','상태','확정단가','촬영일','초안일','게시일'],f(off).map(r=>{const w=OK.includes(r.status);
+  return [ig(r.handle),esc(r.store),esc(r.status),(r.price?(r.price==='확인 안 됨'?'<span class="chk">확인 안 됨</span>':esc(r.price)):'-'),dt(r.shoot,r,w,'shoot'),dt(r.draft,r,w,'draft'),dt(r.post,r,w,'post')]}),['단가','촬영','초안','게시']);
  const ev={},add=(k,h,l,v,r)=>{if(v&&!end(r.status)&&v<=D.deadline&&v>=D.asof)(ev[v]=ev[v]||[]).push([k,h,l,r])};
  on.forEach(r=>{add('on',r.handle,'초안',r.draft,r);add('on',r.handle,'게시',r.post,r)});
  off.forEach(r=>{add('off',r.handle,'촬영',r.shoot,r);add('off',r.handle,'초안',r.draft,r);add('off',r.handle,'게시',r.post,r)});
  $('ax').innerHTML=Object.keys(ev).sort().filter(v=>ev[v].some(e=>tab==='all'||tab===e[0])).map(v=>`<div class="tr${v===D.asof?' today':''}"><span class="dd">${md(v)}${v===D.asof?'<br><span class="sm">오늘</span>':''}</span><span class="it">${ev[v].filter(e=>tab==='all'||tab===e[0]).map(e=>`<div class="${e[3].kind==='확정'?'':'plan'}">${ig(e[1])} · ${e[2]} <span class="bg ${e[0]}">${e[0]==='on'?'온':'오프'}</span>${e[3].kind==='확정'?'':' (예정)'}</div>`).join('')}</span></div>`).join('');
 }
-fetch('data.json').then(r=>r.json()).then(d=>{D=d;
- const dd=Math.ceil((new Date(d.deadline)-new Date(d.asof))/864e5);
- $('sum').innerHTML=`기준일 <b>${d.asof}</b> · 게시 마감 <b>12/15</b> (<b>D-${dd}</b>)`;render()});
+async function refresh(){
+ try{
+  const response=await fetch('data.json?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(15000)});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  const d=await response.json();
+  if(!Array.isArray(d.online)||!Array.isArray(d.offline))throw new Error('Invalid schedule');
+  D=d;
+  const dd=Math.ceil((new Date(d.deadline)-new Date(d.asof))/864e5);
+  $('sum').innerHTML=`기준일 <b>${esc(d.asof)}</b> · 게시 마감 <b>${esc(md(d.deadline))}</b> (<b>D-${dd}</b>)`;
+  $('sync').textContent=d.sync?`시트 변경 자동 반영 · 마지막 반영 ${new Date(d.sync.updatedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})} · 동기화 ${d.sync.intervalMinutes}분 간격`:'시트 자동 연동 준비 중';
+  render();
+ }catch(error){$('sync').textContent=D?'새 일정을 불러오지 못했습니다. 마지막으로 확인한 일정을 표시합니다.':'일정을 불러오지 못했습니다. 잠시 후 다시 시도합니다.';}
+}
+refresh();
+setInterval(()=>{if(!document.hidden)refresh()},60000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh()});
 $('hide').onchange=render;
 $('tabs').onclick=e=>{if(e.target.dataset.t){tab=e.target.dataset.t;[...$('tabs').children].forEach(b=>b.classList.toggle('on',b===e.target));render()}};
 </script></body></html>
