@@ -267,6 +267,15 @@
       "draft": null,
       "post": null,
       "kind": "미정"
+    },
+    {
+      "handle": "minddyaa",
+      "draft": "2026-12-03",
+      "post": "2026-12-05",
+      "kind": "예정",
+      "status": "확정",
+      "source": "혜나’s pick",
+      "product": "클로이"
     }
   ],
   "offline": [
@@ -688,8 +697,8 @@
     }
   ],
   "sync": {
-    "updatedAt": "2026-11-27T16:04:38+09:00",
-    "intervalMinutes": 10,
+    "updatedAt": "2026-11-27T16:16:06+09:00",
+    "intervalMinutes": 60,
     "sources": [
       "큐레이션 채널",
       "혜나’s pick"
