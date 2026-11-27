@@ -337,15 +337,14 @@
       "post": null,
       "kind": "미정",
       "source": "큐레이션 채널",
-      "postEnd": null,
       "previousSchedule": {
         "shoot": "2026-12-02",
         "post": "2026-12-07",
         "postEnd": "2026-12-08"
       },
       "agreedPrice": "50만 + 2차 6개월 7만",
-      "shootEnd": null,
-      "draftEnd": null
+      "draftEnd": null,
+      "postEnd": null
     },
     {
       "handle": "sson_go",
@@ -442,7 +441,8 @@
       "post": "2026-12-14",
       "kind": "예정",
       "source": "큐레이션 채널",
-      "priority": "2순위"
+      "priority": "2순위",
+      "priorityReason": "영돈 검토: 패션 매장 리뷰 후보 우선, 후보 부족 시 검토"
     },
     {
       "handle": "kkeong_25",
@@ -455,7 +455,6 @@
       "post": null,
       "kind": "미정",
       "source": "큐레이션 채널",
-      "shootEnd": null,
       "previousSchedule": {
         "shoot": "2026-12-02",
         "shootEnd": "2026-12-06",
@@ -463,7 +462,7 @@
       },
       "agreedPrice": "18만 + 2차 6개월 5만",
       "draftEnd": null,
-      "postEnd": null
+      "shootEnd": null
     },
     {
       "handle": "enjoy.jeju.travel",
@@ -558,99 +557,6 @@
       "source": "큐레이션 채널"
     },
     {
-      "handle": "jeonju.wwtg",
-      "region": "전주",
-      "store": "변경 필요(전주 객사점 폐점)",
-      "status": "종료(취소 안내 완료)",
-      "contact": "2026-11-26",
-      "shoot": null,
-      "draft": null,
-      "post": null,
-      "kind": "미정",
-      "previousSchedule": {
-        "shoot": "2026-12-04"
-      },
-      "agreedPrice": "50만 (릴스)",
-      "shootEnd": null,
-      "draftEnd": null,
-      "postEnd": null
-    },
-    {
-      "handle": "taste.jeonju",
-      "region": "전주",
-      "store": "변경 필요(전주 객사점 폐점)",
-      "status": "보류(매장 변경)",
-      "contact": "2026-11-26",
-      "shoot": null,
-      "draft": null,
-      "post": null,
-      "kind": "미정",
-      "shootEnd": null,
-      "draftEnd": null,
-      "postEnd": null
-    },
-    {
-      "handle": "opened_jeonju",
-      "region": "전주",
-      "store": "변경 필요(전주 객사점 폐점)",
-      "status": "보류(매장 변경)",
-      "contact": "2026-11-26",
-      "shoot": null,
-      "draft": null,
-      "post": null,
-      "kind": "미정",
-      "shootEnd": null,
-      "draftEnd": null,
-      "postEnd": null
-    },
-    {
-      "handle": "eats.jeonju",
-      "region": "전주",
-      "store": "변경 필요(전주 객사점 폐점)",
-      "status": "보류(매장 변경)",
-      "contact": "2026-11-26",
-      "shoot": null,
-      "draft": null,
-      "post": null,
-      "kind": "미정",
-      "shootEnd": null,
-      "draftEnd": null,
-      "postEnd": null
-    },
-    {
-      "handle": "rubialee007",
-      "region": "전주",
-      "store": "변경 필요(전주 객사점 폐점)",
-      "status": "보류(매장 변경)",
-      "contact": "2026-11-26",
-      "shoot": null,
-      "draft": null,
-      "post": null,
-      "kind": "미정",
-      "source": "큐레이션 채널",
-      "shootEnd": null,
-      "draftEnd": null,
-      "postEnd": null
-    },
-    {
-      "handle": "kangsins3",
-      "region": "전주",
-      "store": "변경 필요(전주 객사점 폐점)",
-      "status": "보류(매장 변경)",
-      "contact": "2026-11-26",
-      "shoot": null,
-      "draft": null,
-      "post": null,
-      "kind": "미정",
-      "source": "큐레이션 채널",
-      "previousSchedule": {
-        "post": "2026-12-14"
-      },
-      "shootEnd": null,
-      "draftEnd": null,
-      "postEnd": null
-    },
-    {
       "handle": "bangbang_place",
       "region": "전국/복수",
       "store": "NC덕천점(북구 만덕대로 23 뉴코아 1층)·강릉 중앙점(금성로56번길 8)",
@@ -736,7 +642,7 @@
     }
   ],
   "sync": {
-    "updatedAt": "2026-11-27T22:57:50+09:00",
+    "updatedAt": "2026-11-27T23:11:59+09:00",
     "intervalMinutes": 60,
     "sources": [
       "큐레이션 채널",
