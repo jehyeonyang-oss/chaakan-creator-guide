@@ -118,7 +118,7 @@ function render(){
  $('fc').innerHTML=[...Object.keys(R),'전국/복수'].map(g=>{const a=off.filter(r=>r.region===g),c=a.filter(r=>OK.includes(r.status)).length,n=a.filter(r=>/^(컨택|견적|금액합의)/.test(r.status)).length;
   return card(g==='전국/복수'?'복수 지역':g==='전주'?'전주 · 매장 변경 필요':g,c,R[g],g==='전주'?'객사점 폐점 · 기존 건 재조율':`컨택중·협의 ${n}명 · 전체 ${a.length}명`,'var(--off)')}).join('');
  $('ft').innerHTML=tbl(['핸들','지역·매장','상태','확정 금액','촬영일','초안일','게시일'],f(off).map(r=>{const w=OK.includes(r.status);
-  return [ig(r.handle),esc(r.store),esc(r.status),feeCell(r),dt(r.shoot,r,w,'shoot'),dt(r.draft,r,w,'draft'),dt(r.post,r,w,'post')]}),['촬영','초안','게시']);
+  return [ig(r.handle),esc(r.store),esc(r.status)+(r.priority?'<br><span class="chk">'+esc(r.priority)+'</span>':''),feeCell(r),dt(r.shoot,r,w,'shoot'),dt(r.draft,r,w,'draft'),dt(r.post,r,w,'post')]}),['촬영','초안','게시']);
  const ev={},add=(k,h,l,v,r)=>{if(v&&!end(r.status)&&v<=D.deadline&&v>=D.asof)(ev[v]=ev[v]||[]).push([k,h,l,r])};
  on.forEach(r=>{add('on',r.handle,'초안',r.draft,r);add('on',r.handle,'게시',r.post,r)});
  off.forEach(r=>{add('off',r.handle,'촬영',r.shoot,r);add('off',r.handle,'초안',r.draft,r);add('off',r.handle,'게시',r.post,r)});

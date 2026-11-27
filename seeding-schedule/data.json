@@ -330,7 +330,7 @@
       "handle": "glossbead",
       "region": "부산",
       "store": "NC덕천점(북구 만덕대로 23 뉴코아 1층)",
-      "status": "종료(취소 안내 대기)",
+      "status": "종료(취소 안내 완료)",
       "contact": "2026-11-26",
       "shoot": null,
       "draft": null,
@@ -441,13 +441,14 @@
       "draft": null,
       "post": "2026-12-14",
       "kind": "예정",
-      "source": "큐레이션 채널"
+      "source": "큐레이션 채널",
+      "priority": "2순위"
     },
     {
       "handle": "kkeong_25",
       "region": "제주",
       "store": "연동점 또는 칠성점(제주시)",
-      "status": "종료(취소 안내 대기)",
+      "status": "종료(취소 안내 완료)",
       "contact": "2026-11-26",
       "shoot": null,
       "draft": null,
@@ -560,7 +561,7 @@
       "handle": "jeonju.wwtg",
       "region": "전주",
       "store": "변경 필요(전주 객사점 폐점)",
-      "status": "종료(취소 안내 대기)",
+      "status": "종료(취소 안내 완료)",
       "contact": "2026-11-26",
       "shoot": null,
       "draft": null,
@@ -735,7 +736,7 @@
     }
   ],
   "sync": {
-    "updatedAt": "2026-11-27T22:46:20+09:00",
+    "updatedAt": "2026-11-27T22:57:50+09:00",
     "intervalMinutes": 60,
     "sources": [
       "큐레이션 채널",
