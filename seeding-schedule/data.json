@@ -545,71 +545,95 @@
     {
       "handle": "jeonju.wwtg",
       "region": "전주",
-      "store": "전주 객사점",
-      "status": "확정",
+      "store": "변경 필요(전주 객사점 폐점)",
+      "status": "보류(매장 변경)",
       "contact": "2026-11-26",
-      "shoot": "2026-12-04",
+      "shoot": null,
       "draft": null,
       "post": null,
       "kind": "미정",
-      "price": "50만 (릴스)"
+      "previousSchedule": {
+        "shoot": "2026-12-04"
+      },
+      "agreedPrice": "50만 (릴스)",
+      "shootEnd": null,
+      "draftEnd": null,
+      "postEnd": null
     },
     {
       "handle": "taste.jeonju",
       "region": "전주",
-      "store": "전주 객사점",
-      "status": "컨택함",
-      "contact": "2026-11-26",
-      "shoot": null,
-      "draft": null,
-      "post": null,
-      "kind": "미정"
-    },
-    {
-      "handle": "opened_jeonju",
-      "region": "전주",
-      "store": "전주 객사점",
-      "status": "컨택함",
-      "contact": "2026-11-26",
-      "shoot": null,
-      "draft": null,
-      "post": null,
-      "kind": "미정"
-    },
-    {
-      "handle": "eats.jeonju",
-      "region": "전주",
-      "store": "전주 객사점",
-      "status": "컨택함",
-      "contact": "2026-11-26",
-      "shoot": null,
-      "draft": null,
-      "post": null,
-      "kind": "미정"
-    },
-    {
-      "handle": "rubialee007",
-      "region": "전주",
-      "store": "전주 객사점(완산구)",
-      "status": "컨택함",
+      "store": "변경 필요(전주 객사점 폐점)",
+      "status": "보류(매장 변경)",
       "contact": "2026-11-26",
       "shoot": null,
       "draft": null,
       "post": null,
       "kind": "미정",
-      "source": "큐레이션 채널"
+      "shootEnd": null,
+      "draftEnd": null,
+      "postEnd": null
+    },
+    {
+      "handle": "opened_jeonju",
+      "region": "전주",
+      "store": "변경 필요(전주 객사점 폐점)",
+      "status": "보류(매장 변경)",
+      "contact": "2026-11-26",
+      "shoot": null,
+      "draft": null,
+      "post": null,
+      "kind": "미정",
+      "shootEnd": null,
+      "draftEnd": null,
+      "postEnd": null
+    },
+    {
+      "handle": "eats.jeonju",
+      "region": "전주",
+      "store": "변경 필요(전주 객사점 폐점)",
+      "status": "보류(매장 변경)",
+      "contact": "2026-11-26",
+      "shoot": null,
+      "draft": null,
+      "post": null,
+      "kind": "미정",
+      "shootEnd": null,
+      "draftEnd": null,
+      "postEnd": null
+    },
+    {
+      "handle": "rubialee007",
+      "region": "전주",
+      "store": "변경 필요(전주 객사점 폐점)",
+      "status": "보류(매장 변경)",
+      "contact": "2026-11-26",
+      "shoot": null,
+      "draft": null,
+      "post": null,
+      "kind": "미정",
+      "source": "큐레이션 채널",
+      "shootEnd": null,
+      "draftEnd": null,
+      "postEnd": null
     },
     {
       "handle": "kangsins3",
       "region": "전주",
-      "store": "전주 객사점(완산구)",
-      "status": "보류",
+      "store": "변경 필요(전주 객사점 폐점)",
+      "status": "보류(매장 변경)",
       "contact": "2026-11-26",
       "shoot": null,
       "draft": null,
-      "post": "2026-12-14",
-      "kind": "예정",
-      "source": "큐레이션 채널"
+      "post": null,
+      "kind": "미정",
+      "source": "큐레이션 채널",
+      "previousSchedule": {
+        "post": "2026-12-14"
+      },
+      "shootEnd": null,
+      "draftEnd": null,
+      "postEnd": null
     },
     {
       "handle": "bangbang_place",
@@ -626,7 +650,7 @@
     {
       "handle": "hotplenow",
       "region": "전국/복수",
-      "store": "대전·부산·제주·강릉·동탄·전주 중 지정",
+      "store": "대전·부산·제주·강릉·동탄 중 지정",
       "status": "종료(패스)",
       "contact": "2026-11-26",
       "shoot": null,
@@ -638,7 +662,7 @@
     {
       "handle": "hot_plog_",
       "region": "전국/복수",
-      "store": "대전·부산·제주·강릉·동탄·전주 중 지정",
+      "store": "대전·부산·제주·강릉·동탄 중 지정",
       "status": "컨택함",
       "contact": "2026-11-26",
       "shoot": null,
@@ -650,7 +674,7 @@
     {
       "handle": "chaerrier",
       "region": "전국/복수",
-      "store": "대전·부산·제주·강릉·동탄·전주 중 지정",
+      "store": "대전·부산·제주·강릉·동탄 중 지정",
       "status": "컨택함",
       "contact": "2026-11-26",
       "shoot": null,
@@ -697,7 +721,7 @@
     }
   ],
   "sync": {
-    "updatedAt": "2026-11-27T17:34:57+09:00",
+    "updatedAt": "2026-11-27T22:44:30+09:00",
     "intervalMinutes": 60,
     "sources": [
       "큐레이션 채널",
