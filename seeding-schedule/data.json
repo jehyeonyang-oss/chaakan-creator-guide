@@ -697,11 +697,71 @@
     }
   ],
   "sync": {
-    "updatedAt": "2026-11-27T17:16:04+09:00",
+    "updatedAt": "2026-11-27T17:30:50+09:00",
     "intervalMinutes": 60,
     "sources": [
       "큐레이션 채널",
       "혜나’s pick"
     ]
+  },
+  "onlineTargets": {
+    "클로이": 20,
+    "풀문": 10,
+    "포븐": 10,
+    "시트롱": 10
+  },
+  "retiredProducts": [
+    "컬리지"
+  ],
+  "budget": {
+    "basis": "PLAN A",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1XSHlbUyGoIt5iC8_qb4QqKB-Bn2Kd4Wv/edit?gid=1144165662#gid=1144165662",
+    "sourceSheet": "품번별",
+    "sourceModifiedAt": "2026-11-27T08:23:18.917Z",
+    "creatorShare": 0.6,
+    "paShare": 0.4,
+    "rows": [
+      {
+        "sku": "WTACR4c261",
+        "product": "클로이",
+        "total": 24438056.37,
+        "creator": 14662833.82,
+        "pa": 9775222.548
+      },
+      {
+        "sku": "WTSDR4f206",
+        "product": "포븐",
+        "total": 19585029.6,
+        "creator": 11751017.76,
+        "pa": 7834011.84
+      },
+      {
+        "sku": "WTSDR4i177",
+        "product": "시트롱",
+        "total": 13199947.2,
+        "creator": 7919968.32,
+        "pa": 5279978.88
+      },
+      {
+        "sku": "WTSDR4i181",
+        "product": "시트롱",
+        "total": 16517108.4,
+        "creator": 9910265.04,
+        "pa": 6606843.36
+      },
+      {
+        "sku": "WTSDR4i006",
+        "product": "풀문",
+        "total": 25503742.8,
+        "creator": 15302245.68,
+        "pa": 10201497.12
+      }
+    ],
+    "marketingAllocation": {
+      "클로이": {
+        "status": "추가 배정 예정",
+        "amount": null
+      }
+    }
   }
 }
