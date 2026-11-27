@@ -50,7 +50,7 @@ a{color:inherit}
 <h1>방한화 시딩 일정표</h1>
 <div class="sum" id="sum"></div>
 <div class="sm" id="sync" role="status" aria-live="polite">일정을 불러오는 중…</div>
-<section aria-label="제품별 시딩 예산"><h2>제품별 시딩 예산 <span class="sm">PA 포함 · PLAN A</span></h2><div class="sm" id="plan-summary"></div><div class="grid" id="plan-budget"></div></section>
+<section aria-label="시딩 집행 계획"><h2>시딩 집행 계획</h2><div class="budget" id="execution-budget"></div><div class="sm" id="plan-summary"></div><details><summary class="sm" id="reference-summary">시트 참고 예산</summary><div class="grid" id="plan-budget"></div></details></section>
 <div class="tabs" id="tabs"><button data-t="all" class="on">전체</button><button data-t="on">온라인</button><button data-t="off">오프라인</button></div>
 <label class="sm"><input type="checkbox" id="hide" checked> 종료 건 숨기기</label>
 <section id="s-on"><h2>온라인 인플루언서</h2><div class="budget" id="ob"></div><div class="grid" id="oc"></div><div id="ot"></div></section>
@@ -86,14 +86,18 @@ function budget(rows){
 function renderPlan(T){
  const b=D.budget;
  $('plan-summary').textContent=`모집 목표 ${Object.keys(T).length}종 · ${Object.values(T).reduce((a,v)=>a+v,0)}명 · 컬리지 신규 모집 종료`;
- if(!b){$('plan-budget').innerHTML='';return;}
+ if(!b){$('plan-budget').innerHTML='';$('execution-budget').innerHTML='';return;}
  const total=b.rows.reduce((n,r)=>n+r.total,0);
  const rounded=n=>'약 '+new Intl.NumberFormat('ko-KR',{maximumFractionDigits:0}).format(n/10000)+'만 원';
- $('plan-summary').textContent+=` · 전체 ${rounded(total)} · 섭외비 ${b.creatorShare*100}% / PA ${b.paShare*100}% · 예산 기준 ${b.sourceModifiedAt.slice(0,10)}`;
+ const e=b.executionPlan;
+ $('execution-budget').innerHTML=e?`<strong>${won(e.limit)} 이내</strong><span>${esc(e.scope)}</span><div class="sm">퍼포먼스 예산 별도 · 품번별 집행액 배분 미정 · 11/27 집행 계획</div>`:'';
+ $('reference-summary').textContent=`시트 참고 예산 보기 · ${rounded(total)} (PA 포함 원안 / 실제 시딩 집행 계획과 별도)`;
  $('plan-budget').innerHTML=Object.keys(T).map(p=>{
   const rows=b.rows.filter(r=>r.product===p),sum=k=>rows.reduce((n,r)=>n+r[k],0),m=b.marketingAllocation?.[p];
-  return `<div class="card"><h3><span>${esc(p)}${rows.length>1?' ('+rows.length+'품번)':''}</span><span>${rounded(sum('total'))}</span></h3><div class="sm">섭외비 ${rounded(sum('creator'))} · PA ${rounded(sum('pa'))}</div>${m?`<div class="sm">마케팅팀 ${esc(m.status)} · ${m.amount===null?'금액 미정':won(m.amount)}</div>`:''}</div>`;
+  return `<div class="card"><h3><span>${esc(p)}${rows.length>1?' ('+rows.length+'품번)':''}</span><span>${rounded(sum('total'))}</span></h3><div class="sm">시트 원안: 섭외비 ${rounded(sum('creator'))} · PA ${rounded(sum('pa'))}</div></div>`;
  }).join('');
+ const m=b.marketingAllocation?.['클로이'];
+ if(m)$('execution-budget').innerHTML+=`<div class="sm">클로이 마케팅팀 ${esc(m.status)} · ${m.amount===null?'금액 미정':won(m.amount)}</div>`;
 }
 const dt=(v,r,need,field)=>v?`<span class="${r.kind==='확정'?'':'plan'}">${esc(md(v))}${r[field+'End']?'~'+esc(md(r[field+'End'])):''}${r.kind==='확정'?'':' (예정)'}</span>${r.kind!=='확정'&&(r[field+'End']||v)<D.asof?' <span class="chk">확인 필요</span>':''}`:need?'<span class="need">받아야 함</span>':'-';
 const card=(n,c,t,x,col)=>`<div class="card" style="--c:${col}"><h3><span>${n}</span><span>${c}${t?'/'+t:''}</span></h3>${t?`<div class="bar"><i style="width:${Math.min(100,c/t*100)}%"></i></div>`:''}<div class="sm">${x}</div></div>`;

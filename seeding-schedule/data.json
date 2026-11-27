@@ -697,7 +697,7 @@
     }
   ],
   "sync": {
-    "updatedAt": "2026-11-27T17:32:32+09:00",
+    "updatedAt": "2026-11-27T17:34:57+09:00",
     "intervalMinutes": 60,
     "sources": [
       "큐레이션 채널",
@@ -714,6 +714,14 @@
     "컬리지"
   ],
   "budget": {
+    "executionPlan": {
+      "limit": 40000000,
+      "scope": "전매장 + 온라인 시딩",
+      "performanceSeparate": true,
+      "status": "집행 계획",
+      "source": "2026-11-27 17:24 영돈 대표님 카카오톡",
+      "productAllocation": "미정"
+    },
     "basis": "PLAN A",
     "sourceUrl": "https://docs.google.com/spreadsheets/d/1XSHlbUyGoIt5iC8_qb4QqKB-Bn2Kd4Wv/edit?gid=1144165662#gid=1144165662",
     "sourceSheet": "품번별",
