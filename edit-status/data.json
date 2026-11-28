@@ -2424,16 +2424,21 @@
           "slot": "24h",
           "label": "24시간",
           "dueAt": "2026-11-28T19:30:54+09:00",
-          "actualCollectedAt": null,
+          "actualCollectedAt": 1795884022078,
           "viewsCollectedAt": null,
-          "state": "pending",
-          "isLate": false,
-          "collectionDelaySeconds": null,
-          "viewsStatus": null,
-          "missingMetrics": [],
+          "state": "partial",
+          "isLate": true,
+          "collectionDelaySeconds": 22168,
+          "viewsStatus": "reference_missing",
+          "missingMetrics": [
+            "views",
+            "likes",
+            "shares",
+            "saves"
+          ],
           "views": null,
           "likes": null,
-          "comments": null,
+          "comments": 5,
           "shares": null,
           "saves": null
         },
@@ -2485,6 +2490,29 @@
           "views": null,
           "likes": null,
           "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        {
+          "slot": "latest",
+          "label": "최신 실측",
+          "dueAt": "",
+          "actualCollectedAt": 1795884022078,
+          "viewsCollectedAt": null,
+          "metricStatus": {},
+          "state": "partial",
+          "isLate": false,
+          "collectionDelaySeconds": null,
+          "viewsStatus": "reference_missing",
+          "missingMetrics": [
+            "views",
+            "likes",
+            "shares",
+            "saves"
+          ],
+          "views": null,
+          "likes": null,
+          "comments": 5,
           "shares": null,
           "saves": null
         }
@@ -3367,5 +3395,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-28T16:32:58.796188+00:00"
+  "syncedAt": "2026-11-28T16:40:51.515016+00:00"
 }
