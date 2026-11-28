@@ -2694,18 +2694,18 @@
           "slot": "pub48h",
           "label": "공개 후 48시간",
           "dueAt": "2026-11-28T13:57:00+09:00",
-          "actualCollectedAt": null,
-          "viewsCollectedAt": null,
-          "state": "pending",
-          "isLate": false,
-          "collectionDelaySeconds": null,
+          "actualCollectedAt": 1795886119060,
+          "viewsCollectedAt": 1795886162725,
+          "state": "captured",
+          "isLate": true,
+          "collectionDelaySeconds": 44299,
           "viewsStatus": null,
           "missingMetrics": [],
-          "views": null,
-          "likes": null,
-          "comments": null,
-          "shares": null,
-          "saves": null
+          "views": 34000,
+          "likes": 275,
+          "comments": 65,
+          "shares": 463,
+          "saves": 391
         },
         {
           "slot": "pub1week",
@@ -2745,19 +2745,19 @@
           "slot": "latest",
           "label": "최신 실측",
           "dueAt": "",
-          "actualCollectedAt": 1795775148834,
-          "viewsCollectedAt": 1795775199062,
+          "actualCollectedAt": 1795886119060,
+          "viewsCollectedAt": 1795886162725,
           "metricStatus": {},
           "state": "captured",
           "isLate": false,
           "collectionDelaySeconds": null,
-          "viewsStatus": "verified",
+          "viewsStatus": null,
           "missingMetrics": [],
-          "views": 26000,
-          "likes": 242,
-          "comments": 52,
-          "shares": 351,
-          "saves": 341
+          "views": 34000,
+          "likes": 275,
+          "comments": 65,
+          "shares": 463,
+          "saves": 391
         }
       ],
       "sales": {
@@ -3395,5 +3395,5 @@
       "recordUrl": "https://seeding-a700a.web.app/creator-review.html?id=contact_20261026_159_ji0ng"
     }
   ],
-  "syncedAt": "2026-11-28T16:45:46.661721+00:00"
+  "syncedAt": "2026-11-28T17:16:23.016261+00:00"
 }
